@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Topic, Unit } from "../types";
 import { Img } from "./text";
 import { Banner } from "./ui";
@@ -19,12 +18,12 @@ export function TypologyBank({ topic }: { topic: Topic }) {
 }
 
 const TABS = ["Vocabulary", "Practice", "Exam tasks"];
-export function UnitView({ unit, topic }: { unit: Unit; topic: Topic }) {
-  const [tab, setTab] = useState(0);
+/** The open tab lives in the page address (see route.ts), so App passes it in */
+export function UnitView({ unit, topic, tab, onTab }: { unit: Unit; topic: Topic; tab: number; onTab: (tab: number) => void }) {
   let essayIdx = 0;
   return <section className="page">
     <Banner kick={`Unit ${unit.num}`} title={unit.title} lede={unit.lede} pics={unit.pics} />
-    <nav className="track">{TABS.map((t, i) => <button key={t} className={i === tab ? "on" : ""} onClick={() => setTab(i)}><b>{i + 1}</b>{t}</button>)}</nav>
+    <nav className="track">{TABS.map((t, i) => <button key={t} className={i === tab ? "on" : ""} onClick={() => onTab(i)}><b>{i + 1}</b>{t}</button>)}</nav>
     {tab === 0 && <><Legend />{unit.vocab.map((b, i) => <VocabBlock key={i} b={b} />)}</>}
     {tab === 1 && unit.exercises.map((e, i) => <ExerciseView key={i} e={e} n={i + 1} />)}
     {tab === 2 && unit.speech.flat().map((s, i) => <SpeechView key={i} s={s} topic={topic} idx={s.type === "essay" ? essayIdx++ : 0} />)}
