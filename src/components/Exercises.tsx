@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Exercise } from "../types";
 import { isCorrect, Slots } from "./text";
+import { cheer } from "./Rabbit";
 
 const Head = ({ n, title, instr }: { n: number; title: string; instr: string }) =>
   <div className="exh"><span className="exn">{n}</span><div><div className="ext">{title}</div><div className="exi">{instr}</div></div></div>;
 
 /** Footer with Check / Reset; after checking, the correct answers are shown */
 export const CheckBar = ({ checked, score, total, onCheck, onReset }: { checked: boolean; score: number; total: number; onCheck: () => void; onReset: () => void }) => (
-  <div className="checkbar">{!checked ? <button className="big" onClick={onCheck}>Check answers</button>
+  <div className="checkbar">{!checked ? <button className="big" onClick={() => { onCheck(); cheer(score, total); }}>Check answers</button>
     : <><span className="score">{score} / {total} correct</span><button className="mini" onClick={onReset}>Try again</button></>}</div>
 );
 

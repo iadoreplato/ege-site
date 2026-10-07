@@ -8,6 +8,7 @@ import { TypologyBank, UnitView } from "./components/Topic";
 import Revision from "./components/Revision";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
+import { Buddy } from "./components/Rabbit";
 import { View, fromHash, label, samePage, sequence, toHash } from "./route";
 
 const universal = universalData as unknown as Universal;
@@ -85,10 +86,11 @@ export default function App() {
         {view.k === "unit" && <UnitView key={`${view.t}-${view.i}`} unit={topics[view.t].units[view.i]} topic={topics[view.t]} tab={view.tab} onTab={setTab} />}
         {view.k === "rev" && <Revision key={view.t} topic={topics[view.t]} />}
         {at >= 0 && <nav className="pager" aria-label="Previous and next page">
-          {prev ? <a className="pg prev" href={href(prev)}><span>← Previous</span><b>{name(prev)}</b></a> : <i />}
-          {next ? <a className="pg next" href={href(next)}><span>Next →</span><b>{name(next)}</b></a> : <a className="pg next" href="#/"><span>Done →</span><b>Back to contents</b></a>}
+          {prev ? <a className="pgn prev" href={href(prev)}><span>← Previous</span><b>{name(prev)}</b></a> : <i />}
+          {next ? <a className="pgn next" href={href(next)}><span>Next →</span><b>{name(next)}</b></a> : <a className="pgn next" href="#/"><span>Done →</span><b>Back to contents</b></a>}
         </nav>}
       </main>
+      {view.k !== "home" && <Buddy page={toHash({ ...view, tab: 0 } as View, topics)} />}
     </div>
   );
 }
