@@ -1,0 +1,3517 @@
+{
+ "id": "russia",
+ "title": "Russia: Land, Culture & Celebrations",
+ "subtitle": "Topic module · EGE codifier topics: my country, holidays and traditions, outstanding people",
+ "cover_pics": [
+  "globe_with_meridians",
+  "castle",
+  "nesting_dolls",
+  "fireworks",
+  "rocket",
+  "pancakes",
+  "evergreen_tree",
+  "classical_building",
+  "wrapped_gift",
+  "test_tube",
+  "locomotive",
+  "ballet_shoes"
+ ],
+ "typology": [
+  [
+   "locomotive",
+   "Travelling by train",
+   "camping",
+   "Hiking and camping",
+   "how do you travel?",
+   [
+    "see the country from the window",
+    "comfortable, you can rest"
+   ],
+   [
+    "long journeys",
+    "you only see places from a distance"
+   ],
+   [
+    "close contact with nature",
+    "cheap and adventurous"
+   ],
+   [
+    "physically demanding",
+    "depends on the weather"
+   ],
+   "comfort — adventure · watching — doing"
+  ],
+  [
+   "classical_building",
+   "Visiting a museum",
+   "artist_palette",
+   "Taking a masterclass",
+   "watch or do?",
+   [
+    "see priceless originals",
+    "learn from expert guides"
+   ],
+   [
+    "can be crowded",
+    "you only look, you don't try"
+   ],
+   [
+    "learn a craft with your own hands",
+    "take home something you made"
+   ],
+   [
+    "small groups, expensive",
+    "takes a lot of time"
+   ],
+   "passive — hands-on · looking — making"
+  ],
+  [
+   "christmas_tree",
+   "Celebrating at home",
+   "party_popper",
+   "Celebrating out",
+   "where and with whom?",
+   [
+    "a cosy family atmosphere",
+    "traditional food and customs"
+   ],
+   [
+    "a lot of cooking and cleaning",
+    "can feel routine"
+   ],
+   [
+    "no preparation at home",
+    "fun with friends"
+   ],
+   [
+    "can be expensive",
+    "noisy, less personal"
+   ],
+   "at home with the family — out with friends"
+  ],
+  [
+   "cityscape",
+   "City sightseeing",
+   "national_park",
+   "A trip to nature",
+   "town or countryside?",
+   [
+    "history and architecture",
+    "museums, cafés, easy transport"
+   ],
+   [
+    "crowds and queues",
+    "expensive hotels"
+   ],
+   [
+    "fresh air and unspoilt nature",
+    "peace and quiet"
+   ],
+   [
+    "hard to get to",
+    "few facilities"
+   ],
+   "man-made heritage — natural heritage"
+  ],
+  [
+   "rocket",
+   "Space exploration",
+   "microscope",
+   "Laboratory research",
+   "what does it study?",
+   [
+    "inspiring, pushes the limits of knowledge",
+    "national pride"
+   ],
+   [
+    "extremely expensive",
+    "dangerous for people"
+   ],
+   [
+    "practical results, e.g. new medicines",
+    "safer"
+   ],
+   [
+    "slow progress",
+    "routine work"
+   ],
+   "the biggest distances — the tiniest things"
+  ],
+  [
+   "clipboard",
+   "A guided tour",
+   "compass",
+   "Exploring on your own",
+   "with a guide or alone?",
+   [
+    "learn facts and stories",
+    "no need to plan"
+   ],
+   [
+    "fixed pace and route",
+    "large groups"
+   ],
+   [
+    "freedom and your own pace",
+    "discover hidden gems"
+   ],
+   [
+    "you may miss important facts",
+    "easy to get lost"
+   ],
+   "organised — independent"
+  ]
+ ],
+ "units": [
+  {
+   "num": 1,
+   "title": "Russia on the Map",
+   "lede": "Geography, regions, cities and climate",
+   "pics": [
+    "globe_with_meridians",
+    "evergreen_tree",
+    "compass"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "A vast country",
+     "cols": 5,
+     "items": [
+      {
+       "img": "world_map",
+       "en": "a vast territory",
+       "ru": "огромная территория"
+      },
+      {
+       "img": "mountain",
+       "en": "the Urals",
+       "ru": "Уральские горы"
+      },
+      {
+       "img": "water_wave",
+       "en": "Lake Baikal",
+       "ru": "озеро Байкал"
+      },
+      {
+       "img": "evergreen_tree",
+       "en": "taiga (U)",
+       "ru": "тайга"
+      },
+      {
+       "img": "snowflake",
+       "en": "a harsh climate",
+       "ru": "суровый климат"
+      },
+      {
+       "img": "bear",
+       "en": "wildlife (U)",
+       "ru": "дикая природа"
+      },
+      {
+       "img": "locomotive",
+       "en": "the Trans-Siberian Railway",
+       "ru": "Транссибирская магистраль"
+      },
+      {
+       "img": "cityscape",
+       "en": "a megacity",
+       "ru": "мегаполис"
+      },
+      {
+       "img": "volcano",
+       "en": "the volcanoes of Kamchatka",
+       "ru": "вулканы Камчатки"
+      },
+      {
+       "img": "national_park",
+       "en": "a nature reserve",
+       "ru": "заповедник"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Geography",
+     "items": [
+      {
+       "en": "[[to stretch from]] … [[to]] …",
+       "ru": "простираться от … до",
+       "ex": "Russia [[stretches from]] the Baltic Sea [[to]] the Pacific Ocean."
+      },
+      {
+       "en": "[[to border]] · [[to share a border with]]",
+       "ru": "граничить с",
+       "ex": "Russia [[shares a border with]] China."
+      },
+      {
+       "en": "[[to span]] eleven time zones",
+       "ru": "охватывать 11 часовых поясов",
+       "ex": "Russia [[spans]] eleven time zones."
+      },
+      {
+       "en": "[[to be washed by]] seas",
+       "ru": "омываться морями",
+       "ex": "Russia [[is washed by]] the waters of three oceans."
+      },
+      {
+       "en": "[[the largest]] country [[in]] the world",
+       "ru": "крупнейшая страна в мире",
+       "ex": "Russia is [[the largest]] country [[in]] the world."
+      },
+      {
+       "en": "[[to be rich in]] natural resources",
+       "ru": "быть богатым природными ресурсами",
+       "ex": "Siberia [[is rich in]] oil, gas and timber."
+      },
+      {
+       "en": "a [[multinational]] country",
+       "ru": "многонациональная страна",
+       "ex": "Russia is a [[multinational]] country."
+      },
+      {
+       "en": "[[to be home to]]",
+       "ru": "быть домом для",
+       "ex": "Russia [[is home to]] more than 190 ethnic groups."
+      },
+      {
+       "en": "a [[continental]] climate",
+       "ru": "континентальный климат",
+       "ex": "Most of Russia has a [[continental]] climate."
+      },
+      {
+       "en": "[[permafrost]] (U)",
+       "ru": "вечная мерзлота",
+       "ex": "In Yakutia, houses are built on [[permafrost]]."
+      },
+      {
+       "en": "[[sparsely]] / [[densely]] populated",
+       "ru": "малонаселённый / густонаселённый",
+       "ex": "The Far North is [[sparsely]] populated."
+      },
+      {
+       "en": "the [[capital]] · a [[regional]] centre",
+       "ru": "столица · областной центр",
+       "ex": "Yekaterinburg is a large [[regional]] centre."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "title": "Tricky for Russian speakers: articles with place names",
+     "html": "<b>the</b> + rivers, seas, oceans, mountain ranges, groups of islands, some buildings: <i><b>the</b> Volga, <b>the</b> Black Sea, <b>the</b> Urals, <b>the</b> Kremlin, <b>the</b> Hermitage</i>. <b>No article</b> + single lakes and mountains, squares, cities: <i>Lake Baikal, Mount Elbrus, Red Square, Moscow</i>. Also: <i>in <b>the</b> north <b>of</b> Russia</i> = <i>in northern Russia</i>."
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[off the beaten track]]",
+       "ru": "вдали от туристических маршрутов",
+       "ex": "We travelled to villages [[off the beaten track]]."
+      },
+      {
+       "en": "[[breathtaking]] scenery (U)",
+       "ru": "захватывающие пейзажи",
+       "ex": "Kamchatka is famous for its [[breathtaking]] scenery."
+      },
+      {
+       "en": "a [[melting pot]] of cultures",
+       "ru": "смешение культур",
+       "ex": "Kazan is a [[melting pot]] of cultures."
+      },
+      {
+       "en": "[[unspoilt]] nature (U)",
+       "ru": "нетронутая природа",
+       "ex": "Karelia is known for its [[unspoilt]] nature."
+      },
+      {
+       "en": "the back [[of beyond]]",
+       "ru": "глушь (informal)",
+       "ex": "My grandparents live in the back [[of beyond]]."
+      },
+      {
+       "en": "[[from coast to coast]]",
+       "ru": "от края до края",
+       "ex": "The holiday is celebrated [[from coast to coast]]."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a border with",
+       [
+        "share",
+        "have",
+        "cross",
+        "make"
+       ],
+       "make"
+      ],
+      [
+       "a ___ climate",
+       [
+        "heavy",
+        "harsh",
+        "severe",
+        "continental"
+       ],
+       "heavy"
+      ],
+      [
+       "___ in natural resources",
+       [
+        "rich",
+        "poor",
+        "full",
+        "abundant"
+       ],
+       "full"
+      ],
+      [
+       "___ scenery",
+       [
+        "breathtaking",
+        "stunning",
+        "spectacular",
+        "tasty"
+       ],
+       "tasty"
+      ],
+      [
+       "___ a nature reserve",
+       [
+        "set up",
+        "play",
+        "visit",
+        "protect"
+       ],
+       "play"
+      ],
+      [
+       "___ eleven time zones",
+       [
+        "span",
+        "cover",
+        "wash",
+        "cross"
+       ],
+       "wash"
+      ],
+      [
+       "___ populated",
+       [
+        "widely",
+        "densely",
+        "sparsely",
+        "heavily"
+       ],
+       "widely"
+      ],
+      [
+       "a ___ of cultures",
+       [
+        "melting pot",
+        "mix",
+        "soup",
+        "blend"
+       ],
+       "soup"
+      ],
+      [
+       "a nature ___",
+       [
+        "room",
+        "reserve",
+        "park",
+        "trail"
+       ],
+       "room"
+      ],
+      [
+       "___ in the north",
+       [
+        "live",
+        "lie",
+        "be situated",
+        "stand up"
+       ],
+       "stand up"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "Russia {expands|enlarges|stretches} from the Baltic Sea to the Pacific Ocean.",
+       "stretches"
+      ],
+      [
+       "Lake Baikal is {the most deep|the deepest|the deeper} lake in the world.",
+       "the deepest"
+      ],
+      [
+       "Yakutia is very {rarely|seldom|sparsely} populated.",
+       "sparsely"
+      ],
+      [
+       "Russia {is washed|washes|is washing} by the waters of three oceans.",
+       "is washed"
+      ],
+      [
+       "We travelled off the beaten {road|track|way}.",
+       "track"
+      ],
+      [
+       "Russia is home {for|of|to} more than 190 ethnic groups.",
+       "to"
+      ],
+      [
+       "Most of Russia has a {continental|continent|continentally} climate.",
+       "continental"
+      ],
+      [
+       "In the Far North houses are built on {forever frost|constant ice|permafrost}.",
+       "permafrost"
+      ],
+      [
+       "Russia shares a border {with|to|for} China.",
+       "with"
+      ],
+      [
+       "Kamchatka is famous for its {breathless|breathtaking|breathing} scenery.",
+       "breathtaking"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "No other country in the world is as large as Russia.",
+       "LARGEST",
+       "Russia is ___ the world.",
+       "the largest country in"
+      ],
+      [
+       "The Volga is longer than any other river in Europe.",
+       "LONGEST",
+       "The Volga is ___ in Europe.",
+       "the longest river"
+      ],
+      [
+       "Few people live in the north of Russia.",
+       "POPULATED",
+       "The north of Russia is ___.",
+       "sparsely populated"
+      ],
+      [
+       "Russia and Norway have a common border.",
+       "SHARES",
+       "Russia ___ Norway.",
+       "shares a border with"
+      ],
+      [
+       "More than 190 ethnic groups live in Russia.",
+       "HOME",
+       "Russia ___ more than 190 ethnic groups.",
+       "is home to"
+      ],
+      [
+       "Siberia has a lot of natural resources.",
+       "RICH",
+       "Siberia ___ natural resources.",
+       "is rich in"
+      ],
+      [
+       "The country covers eleven time zones.",
+       "SPANS",
+       "The country ___.",
+       "spans eleven time zones"
+      ],
+      [
+       "Tourists rarely visit this village.",
+       "TRACK",
+       "This village is ___.",
+       "off the beaten track"
+      ],
+      [
+       "People from many cultures live together in Kazan.",
+       "POT",
+       "Kazan is ___ of cultures.",
+       "a melting pot"
+      ],
+      [
+       "The scenery in Altai is amazingly beautiful.",
+       "BREATHTAKING",
+       "Altai has ___.",
+       "breathtaking scenery"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Россия граничит с Китаем и Монголией.",
+       "Russia borders China and Mongolia. / Russia shares a border with China and Mongolia."
+      ],
+      [
+       "Байкал — самое глубокое озеро в мире.",
+       "Lake Baikal is the deepest lake in the world."
+      ],
+      [
+       "Север России малонаселён из-за сурового климата.",
+       "The north of Russia is sparsely populated because of its harsh climate."
+      ],
+      [
+       "Мы путешествовали по местам вдали от туристических маршрутов.",
+       "We travelled to places off the beaten track."
+      ],
+      [
+       "Россия омывается водами трёх океанов.",
+       "Russia is washed by the waters of three oceans."
+      ],
+      [
+       "Сибирь богата природными ресурсами.",
+       "Siberia is rich in natural resources."
+      ],
+      [
+       "Россия — многонациональная страна.",
+       "Russia is a multinational country."
+      ],
+      [
+       "В большей части страны континентальный климат.",
+       "Most of the country has a continental climate."
+      ],
+      [
+       "Карелия славится нетронутой природой.",
+       "Karelia is famous for its unspoilt nature."
+      ],
+      [
+       "Мои бабушка и дедушка живут в глуши.",
+       "My grandparents live in the back of beyond."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "My region",
+      "questions": [
+       {
+        "q": "What region of Russia do you live in? What is it famous for?",
+        "pool": [
+         "I live in…",
+         "be famous for",
+         "its nature / history",
+         "a regional centre"
+        ]
+       },
+       {
+        "q": "What is the climate like in your region?",
+        "pool": [
+         "a continental climate",
+         "harsh winters",
+         "hot summers",
+         "it rarely snows"
+        ]
+       },
+       {
+        "q": "What places in your region would you recommend a foreign tourist to visit? Why?",
+        "pool": [
+         "I'd recommend…",
+         "breathtaking scenery",
+         "off the beaten track",
+         "a nature reserve"
+        ]
+       },
+       {
+        "q": "What region of Russia would you like to visit in the future? Why?",
+        "pool": [
+         "I've always dreamt of…",
+         "Lake Baikal",
+         "the volcanoes of Kamchatka",
+         "the Trans-Siberian Railway"
+        ]
+       },
+       {
+        "q": "Do you think people should travel around their own country before going abroad? Why?",
+        "pool": [
+         "get to know",
+         "a vast territory",
+         "cheaper",
+         "discover your roots"
+        ]
+       }
+      ],
+      "trap": "Q4 is about the future: <i>I'd like to / I'm going to…</i>, not the Past."
+     }
+    ],
+    [
+     {
+      "type": "photo",
+      "project": "Travelling around Russia",
+      "p1": [
+       [
+        "locomotive"
+       ],
+       "tourists travelling on the Trans-Siberian Railway"
+      ],
+      "p2": [
+       [
+        "camping",
+        "mountain"
+       ],
+       "a group of hikers camping in the mountains"
+      ],
+      "focus": "the two ways of travelling",
+      "opinion": "which way of travelling presented in the pictures you would prefer and why",
+      "basis": "how do you travel? (bank: 1)",
+      "pool": {
+       "describe": [
+        "look out of the window",
+        "a long-distance train",
+        "a compartment",
+        "put up a tent",
+        "in the mountains",
+        "backpacks"
+       ],
+       "difference": [
+        "comfort — adventure",
+        "watching — doing",
+        "by train — on foot"
+       ],
+       "pros": [
+        "see the whole country",
+        "rest on the way",
+        "close to nature",
+        "cheap"
+       ],
+       "cons": [
+        "a long journey",
+        "see places from a distance",
+        "physically demanding",
+        "depend on the weather"
+       ]
+      }
+     },
+     {
+      "type": "ad",
+      "title": "Tour of the Golden Ring",
+      "slogan": "Discover old Russia!",
+      "img": "church",
+      "points": [
+       "starting point",
+       "duration of the tour",
+       "price for students",
+       "number of people in the group"
+      ],
+      "consider": "going on the tour of the Golden Ring"
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "how young Zetlanders prefer to travel around their country",
+      "audience": "young Zetlanders",
+      "q": "How do you prefer to travel around your country?",
+      "data": [
+       [
+        "By train",
+        36
+       ],
+       [
+        "By car",
+        27
+       ],
+       [
+        "By plane",
+        19
+       ],
+       [
+        "By bus",
+        12
+       ],
+       [
+        "On foot / hiking",
+        6
+       ]
+      ],
+      "problem": "that can arise while travelling around your country",
+      "conclusion": "the best way to explore your own country",
+      "focus4": "a problem connected with <b>travelling</b> around the country",
+      "pool": [
+       "explore",
+       "a vast territory",
+       "long distances",
+       "affordable",
+       "comfortable",
+       "delays",
+       "book tickets in advance",
+       "plan the route",
+       "get to know your country"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Holidays & Celebrations",
+   "lede": "National holidays, family celebrations and presents",
+   "pics": [
+    "fireworks",
+    "wrapped_gift",
+    "birthday_cake"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "The calendar of holidays",
+     "cols": 5,
+     "items": [
+      {
+       "img": "christmas_tree",
+       "en": "New Year's Eve",
+       "ru": "новогодняя ночь"
+      },
+      {
+       "img": "pancakes",
+       "en": "Maslenitsa",
+       "ru": "Масленица"
+      },
+      {
+       "img": "tulip",
+       "en": "International Women's Day",
+       "ru": "8 Марта"
+      },
+      {
+       "img": "military_medal",
+       "en": "Defender of the Fatherland Day",
+       "ru": "23 февраля"
+      },
+      {
+       "img": "fireworks",
+       "en": "Victory Day",
+       "ru": "День Победы"
+      },
+      {
+       "img": "ribbon",
+       "en": "Russia Day",
+       "ru": "День России"
+      },
+      {
+       "img": "handshake",
+       "en": "National Unity Day",
+       "ru": "День народного единства"
+      },
+      {
+       "img": "birthday_cake",
+       "en": "a birthday party",
+       "ru": "день рождения"
+      },
+      {
+       "img": "wrapped_gift",
+       "en": "a present / a gift",
+       "ru": "подарок"
+      },
+      {
+       "img": "bouquet",
+       "en": "a bunch of flowers",
+       "ru": "букет"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Celebrating",
+     "items": [
+      {
+       "en": "[[to celebrate]] a holiday / a birthday",
+       "ru": "праздновать",
+       "ex": "We [[celebrate]] my birthday at home."
+      },
+      {
+       "en": "[[to congratulate]] sb [[on]] sth",
+       "ru": "поздравлять кого-то с чем-то",
+       "ex": "I [[congratulated]] my dad [[on]] Defender of the Fatherland Day."
+      },
+      {
+       "en": "[[to commemorate]] an event",
+       "ru": "чтить память, отмечать",
+       "ex": "Victory Day [[commemorates]] the victory in the Great Patriotic War."
+      },
+      {
+       "en": "[[to honour]] veterans",
+       "ru": "чествовать ветеранов",
+       "ex": "On 9 May we [[honour]] veterans."
+      },
+      {
+       "en": "[[to lay]] flowers [[at]] a monument",
+       "ru": "возлагать цветы к памятнику",
+       "ex": "Schoolchildren [[lay]] flowers [[at]] the monument."
+      },
+      {
+       "en": "[[to observe]] a minute of silence",
+       "ru": "соблюдать минуту молчания",
+       "ex": "Everyone [[observed]] a minute of silence."
+      },
+      {
+       "en": "[[to hold]] a military parade",
+       "ru": "проводить военный парад",
+       "ex": "A military parade [[is held]] on Red Square."
+      },
+      {
+       "en": "[[to take part in]] the Immortal Regiment march",
+       "ru": "участвовать в шествии «Бессмертного полка»",
+       "ex": "My family [[takes part in]] the Immortal Regiment march every year."
+      },
+      {
+       "en": "[[to set off]] fireworks · a firework [[display]]",
+       "ru": "запускать фейерверк · салют",
+       "ex": "In the evening there is a huge firework [[display]]."
+      },
+      {
+       "en": "[[to give]] sb a present [[for]] their birthday",
+       "ru": "дарить подарок на день рождения",
+       "ex": "My friends [[gave]] me a camera [[for]] my birthday."
+      },
+      {
+       "en": "[[to throw]] a party",
+       "ru": "устроить вечеринку",
+       "ex": "My parents [[threw]] a party for my 16th birthday."
+      },
+      {
+       "en": "[[to get together]] with the family",
+       "ru": "собираться всей семьёй",
+       "ex": "We [[get together]] with the whole family on New Year's Eve."
+      },
+      {
+       "en": "a [[public]] holiday · a day [[off]]",
+       "ru": "государственный праздник · выходной",
+       "ex": "4 November is a [[public]] holiday in Russia."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "title": "Tricky for Russian speakers",
+     "html": "✗ <i>congratulate <b>with</b></i> → ✓ <i>congratulate sb <b>on</b> sth</i>. We <b>celebrate</b> a holiday but <b>congratulate</b> a person. <b>on</b> 9 May / <b>on</b> Victory Day / <b>on</b> my birthday, but <b>at</b> New Year (BrE). Wishes: <i>Happy birthday! · Happy New Year! · Many happy returns!</i>"
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[to mark]] the occasion",
+       "ru": "отметить событие",
+       "ex": "We had a family dinner to [[mark]] the occasion."
+      },
+      {
+       "en": "a [[milestone]] birthday",
+       "ru": "юбилей",
+       "ex": "Grandpa's 80th was a real [[milestone]] birthday."
+      },
+      {
+       "en": "[[to go all out]]",
+       "ru": "постараться на славу (informal)",
+       "ex": "My mum [[went all out]] for my birthday party."
+      },
+      {
+       "en": "[[to pay tribute to]]",
+       "ru": "отдать дань уважения",
+       "ex": "On 9 May we [[pay tribute to]] the heroes of the war."
+      },
+      {
+       "en": "the [[life and soul]] of the party",
+       "ru": "душа компании",
+       "ex": "My uncle is always the [[life and soul]] of the party."
+      },
+      {
+       "en": "It's [[the thought that counts]].",
+       "ru": "дорог не подарок, а внимание",
+       "ex": "The present was small, but [[it's the thought that counts]]."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a party",
+       [
+        "throw",
+        "have",
+        "make",
+        "hold"
+       ],
+       "make"
+      ],
+      [
+       "___ flowers at a monument",
+       [
+        "drop",
+        "lay",
+        "place",
+        "put"
+       ],
+       "drop"
+      ],
+      [
+       "___ a minute of silence",
+       [
+        "observe",
+        "hold",
+        "make",
+        "keep"
+       ],
+       "make"
+      ],
+      [
+       "___ a present",
+       [
+        "celebrate",
+        "wrap",
+        "give",
+        "unwrap"
+       ],
+       "celebrate"
+      ],
+      [
+       "a firework ___",
+       [
+        "display",
+        "show",
+        "party",
+        "board"
+       ],
+       "board"
+      ],
+      [
+       "___ a birthday",
+       [
+        "celebrate",
+        "congratulate",
+        "mark",
+        "spend"
+       ],
+       "congratulate"
+      ],
+      [
+       "___ a military parade",
+       [
+        "hold",
+        "make",
+        "watch",
+        "take part in"
+       ],
+       "make"
+      ],
+      [
+       "a ___ holiday",
+       [
+        "public",
+        "national",
+        "religious",
+        "state-owned"
+       ],
+       "state-owned"
+      ],
+      [
+       "a ___ birthday",
+       [
+        "jubilee",
+        "milestone",
+        "happy",
+        "sixteenth"
+       ],
+       "jubilee"
+      ],
+      [
+       "___ a wreath",
+       [
+        "lay",
+        "place",
+        "throw",
+        "put"
+       ],
+       "throw"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "I {celebrated|greeted|congratulated} my grandfather on Victory Day.",
+       "congratulated"
+      ],
+      [
+       "Victory Day {commemorates|remembers|reminds} the victory in the Great Patriotic War.",
+       "commemorates"
+      ],
+      [
+       "People {lie|lain|lay} flowers at the Eternal Flame.",
+       "lay"
+      ],
+      [
+       "My parents {threw|made|did} a surprise party for my sixteenth birthday.",
+       "threw"
+      ],
+      [
+       "On 23 February boys at school usually get small presents {by|from|of} their classmates.",
+       "from"
+      ],
+      [
+       "A huge firework {display|exhibit|showing} lit up the sky.",
+       "display"
+      ],
+      [
+       "Happy birthday! Many happy {returnings|returns|returned}!",
+       "returns"
+      ],
+      [
+       "We celebrate New Year {in|on|at} home with the family.",
+       "at"
+      ],
+      [
+       "My uncle is always the life and {heart|soul|mind} of the party.",
+       "soul"
+      ],
+      [
+       "4 November is a public holiday, so we have a day {out|free|off}.",
+       "off"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "The whole family meets at my grandparents' flat on New Year's Eve.",
+       "TOGETHER",
+       "The whole family ___ at my grandparents' flat on New Year's Eve.",
+       "gets together"
+      ],
+      [
+       "My aunt organised a big party for my birthday.",
+       "THREW",
+       "My aunt ___ for my birthday.",
+       "threw a big party"
+      ],
+      [
+       "“Happy birthday, Anna!” said her friends.",
+       "CONGRATULATED",
+       "Anna's friends ___ birthday.",
+       "congratulated her on her"
+      ],
+      [
+       "People remember and honour the heroes of the war on 9 May.",
+       "TRIBUTE",
+       "People ___ the heroes of the war on 9 May.",
+       "pay tribute to"
+      ],
+      [
+       "We had a special dinner to celebrate the event.",
+       "MARK",
+       "We had a special dinner to ___.",
+       "mark the occasion"
+      ],
+      [
+       "The present was cheap, but what matters is that he remembered.",
+       "THOUGHT",
+       "The present was cheap, but it's ___ counts.",
+       "the thought that"
+      ],
+      [
+       "My mother did everything possible to make my party perfect.",
+       "OUT",
+       "My mother ___ to make my party perfect.",
+       "went all out"
+      ],
+      [
+       "On Victory Day people remember the victory in the war.",
+       "COMMEMORATES",
+       "Victory Day ___ in the war.",
+       "commemorates the victory"
+      ],
+      [
+       "Everybody stood in silence for one minute.",
+       "OBSERVED",
+       "Everybody ___ silence.",
+       "observed a minute of"
+      ],
+      [
+       "My grandmother gave me a watch as a birthday present.",
+       "FOR",
+       "My grandmother gave me a watch ___.",
+       "for my birthday"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Мы всегда собираемся всей семьёй на Новый год.",
+       "We always get together with the whole family at New Year."
+      ],
+      [
+       "В День Победы люди возлагают цветы к Вечному огню.",
+       "On Victory Day people lay flowers at the Eternal Flame."
+      ],
+      [
+       "Я поздравил папу с Днём защитника Отечества и подарил ему книгу.",
+       "I congratulated my dad on Defender of the Fatherland Day and gave him a book."
+      ],
+      [
+       "Дорог не подарок, а внимание.",
+       "It's the thought that counts."
+      ],
+      [
+       "В этот день на Красной площади проходит военный парад.",
+       "On this day a military parade is held on Red Square."
+      ],
+      [
+       "Мы участвуем в шествии «Бессмертного полка».",
+       "We take part in the Immortal Regiment march."
+      ],
+      [
+       "Вечером был праздничный салют.",
+       "In the evening there was a firework display."
+      ],
+      [
+       "Мама постаралась на славу к моему дню рождения.",
+       "My mum went all out for my birthday."
+      ],
+      [
+       "Мы отдаём дань уважения героям войны.",
+       "We pay tribute to the heroes of the war."
+      ],
+      [
+       "Дедушкин юбилей мы отметили всей семьёй.",
+       "We marked my grandfather's milestone birthday with the whole family."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "email",
+      "sender": "Ella",
+      "subject": "Birthday",
+      "text": "…I've checked my diary and found out that I missed your birthday. I'm so sorry about that! I hope you enjoyed it this year! Which birthday gifts are popular in Russia? How do you usually celebrate your birthday? What is the best gift you've ever got?<br>I'm going to visit my friends in London soon…",
+      "ask": "about her trip to London",
+      "pool": {
+       "answers": [
+        "popular gifts are…",
+        "gadgets · gift cards · books",
+        "throw a party",
+        "get together with",
+        "the best present I've ever got",
+        "It's the thought that counts."
+       ],
+       "questions": [
+        "How long…?",
+        "Where will you stay…?",
+        "What sights…?",
+        "Who…?"
+       ]
+      }
+     },
+     {
+      "type": "email",
+      "sender": "Sophia",
+      "subject": "Victory Day",
+      "text": "…I'm doing a project on “Holidays in Different Countries of the World.” I've learnt that in Russia, Victory Day is celebrated on May 9th. What event does this holiday commemorate? What official events are held on this day? What do you and your family usually do on this day?<br>…I've joined a local volunteer group…",
+      "ask": "about the volunteer group",
+      "pool": {
+       "answers": [
+        "commemorate the victory in the Great Patriotic War",
+        "1941–1945",
+        "a military parade",
+        "a firework display",
+        "the Immortal Regiment",
+        "lay flowers at the Eternal Flame",
+        "honour veterans"
+       ],
+       "questions": [
+        "What does the group…?",
+        "How often…?",
+        "Why did you decide…?",
+        "How many…?"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Maslenitsa festival",
+      "slogan": "Say goodbye to winter!",
+      "img": "pancakes",
+      "consider": "going to the Maslenitsa festival",
+      "points": [
+       "location",
+       "dates of the festival",
+       "entrance fee",
+       "activities for children"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "email",
+      "sender": "William",
+      "subject": "Defender of the Fatherland Day",
+      "text": "…I'm doing a project on “Holidays in Different Countries of the World.” I've learnt that in Russia, Defender of the Fatherland Day is celebrated on February 23rd. What official events take place on this day? What kinds of presents are usually given? How do you and your family celebrate it?<br>…Yesterday I watched a football match at the stadium…",
+      "ask": "about the stadium",
+      "pool": {
+       "answers": [
+        "honour those who serve in the army",
+        "lay wreaths at the Tomb of the Unknown Soldier",
+        "festive concerts",
+        "a firework display",
+        "congratulate men and boys",
+        "small presents · a family dinner"
+       ],
+       "questions": [
+        "How many spectators…?",
+        "Is the stadium…?",
+        "Where…?",
+        "How much…? ✗ — prices are impolite!"
+       ]
+      }
+     },
+     {
+      "type": "interview",
+      "topic": "National holidays",
+      "questions": [
+       {
+        "q": "What is your favourite holiday? Why?",
+        "pool": [
+         "my favourite holiday is…",
+         "get together with",
+         "exchange presents",
+         "a festive atmosphere"
+        ]
+       },
+       {
+        "q": "How do people in Russia celebrate New Year?",
+        "pool": [
+         "decorate a New Year tree",
+         "a festive dinner",
+         "the President's speech",
+         "set off fireworks"
+        ]
+       },
+       {
+        "q": "What official events take place on Victory Day?",
+        "pool": [
+         "a military parade",
+         "the Immortal Regiment",
+         "lay flowers",
+         "a firework display"
+        ]
+       },
+       {
+        "q": "How did you celebrate your last birthday?",
+        "pool": [
+         "throw a party",
+         "invite friends",
+         "a birthday cake",
+         "I got … as a present"
+        ]
+       },
+       {
+        "q": "Do you think traditional holidays will still be popular in the future? Why?",
+        "pool": [
+         "be passed down",
+         "family traditions",
+         "I'm sure",
+         "lose their meaning"
+        ]
+       }
+      ],
+      "trap": "Q4 is about your <b>last</b> birthday: the Past Simple, not <i>I usually…</i>."
+     }
+    ],
+    [
+     {
+      "type": "photo",
+      "project": "Family holidays",
+      "p1": [
+       [
+        "christmas_tree",
+        "wrapped_gift"
+       ],
+       "a family decorating a New Year tree at home"
+      ],
+      "p2": [
+       [
+        "birthday_cake",
+        "balloon"
+       ],
+       "friends celebrating a birthday in a café"
+      ],
+      "focus": "the two types of celebration",
+      "opinion": "which celebration presented in the pictures you would prefer and why",
+      "basis": "where and with whom? (bank: 3)",
+      "pool": {
+       "describe": [
+        "decorate a New Year tree",
+        "at home",
+        "the whole family",
+        "blow out the candles",
+        "in a café",
+        "balloons"
+       ],
+       "difference": [
+        "a family holiday — a party with friends",
+        "at home — out",
+        "traditional — modern"
+       ],
+       "pros": [
+        "a cosy atmosphere",
+        "spend time with relatives",
+        "have fun",
+        "no cooking"
+       ],
+       "cons": [
+        "a lot of preparation",
+        "can be expensive",
+        "noisy",
+        "less personal"
+       ]
+      }
+     },
+     {
+      "type": "reading",
+      "title": "Maslenitsa",
+      "text": "Maslenitsa is one of the oldest and most cheerful Russian holidays. It is celebrated during the last week before Lent and marks the end of winter and the coming of spring. The main symbol of the holiday is the pancake, or blin: round, golden and warm, it reminds people of the sun. During Maslenitsa week families visit each other, eat pancakes with sour cream, honey or caviar and take part in outdoor fun. In many towns people ride in sledges, have snowball fights and organise competitions. On the last day, known as Forgiveness Sunday, people ask one another for forgiveness, and a large straw figure of Lady Maslenitsa is burnt to say goodbye to winter."
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "what young Zetlanders give their friends as birthday presents",
+      "audience": "young Zetlanders",
+      "q": "What do you usually give your friends for their birthday?",
+      "data": [
+       [
+        "Gift cards",
+        34
+       ],
+       [
+        "Clothes and accessories",
+        25
+       ],
+       [
+        "Gadgets",
+        18
+       ],
+       [
+        "Books",
+        13
+       ],
+       [
+        "Handmade presents",
+        10
+       ]
+      ],
+      "problem": "that can arise when choosing a present",
+      "conclusion": "what makes a good present",
+      "focus4": "a problem connected with <b>choosing</b> a present",
+      "pool": [
+       "a gift card",
+       "a gadget",
+       "a handmade present",
+       "It's the thought that counts.",
+       "spend too much",
+       "not know the person's taste",
+       "ask in advance",
+       "a wish list",
+       "show you care"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Sights & Cultural Heritage",
+   "lede": "Famous sights, museums and traditional crafts",
+   "pics": [
+    "classical_building",
+    "castle",
+    "nesting_dolls"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "Must-see places and crafts",
+     "cols": 4,
+     "items": [
+      {
+       "img": "castle",
+       "en": "the Kremlin",
+       "ru": "Кремль"
+      },
+      {
+       "img": "church",
+       "en": "St Basil's Cathedral",
+       "ru": "собор Василия Блаженного"
+      },
+      {
+       "img": "classical_building",
+       "en": "the Hermitage",
+       "ru": "Эрмитаж"
+      },
+      {
+       "img": "framed_picture",
+       "en": "the Tretyakov Gallery",
+       "ru": "Третьяковская галерея"
+      },
+      {
+       "img": "performing_arts",
+       "en": "the Bolshoi Theatre",
+       "ru": "Большой театр"
+      },
+      {
+       "img": "nesting_dolls",
+       "en": "matryoshka dolls",
+       "ru": "матрёшки"
+      },
+      {
+       "img": "teacup_without_handle",
+       "en": "Gzhel porcelain",
+       "ru": "гжель"
+      },
+      {
+       "img": "artist_palette",
+       "en": "Khokhloma painting",
+       "ru": "хохлома"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Sightseeing and heritage",
+     "items": [
+      {
+       "en": "a [[landmark]] · a [[sight]]",
+       "ru": "достопримечательность",
+       "ex": "The Kremlin is Moscow's most famous [[landmark]]."
+      },
+      {
+       "en": "[[to see]] / [[to take in]] the sights",
+       "ru": "осматривать достопримечательности",
+       "ex": "We spent the day [[taking in]] the sights."
+      },
+      {
+       "en": "[[to be listed as]] a UNESCO World Heritage Site",
+       "ru": "входить в список всемирного наследия ЮНЕСКО",
+       "ex": "Kizhi [[is listed as]] a UNESCO World Heritage Site."
+      },
+      {
+       "en": "[[to date back to]] the 15th century",
+       "ru": "относиться к XV веку",
+       "ex": "The Kremlin walls [[date back to]] the late 15th century."
+      },
+      {
+       "en": "[[to be founded by]] / [[in]]",
+       "ru": "быть основанным",
+       "ex": "The Hermitage [[was founded by]] Catherine the Great [[in]] 1764."
+      },
+      {
+       "en": "a [[masterpiece]]",
+       "ru": "шедевр",
+       "ex": "Rublev's “Trinity” is a [[masterpiece]] of Russian art."
+      },
+      {
+       "en": "[[to boast]] a collection [[of]]",
+       "ru": "может похвастаться коллекцией",
+       "ex": "The Tretyakov Gallery [[boasts]] a huge collection [[of]] Russian art."
+      },
+      {
+       "en": "[[priceless]] works of art",
+       "ru": "бесценные произведения искусства",
+       "ex": "The museum is full of [[priceless]] works of art."
+      },
+      {
+       "en": "a [[guided]] tour",
+       "ru": "экскурсия с гидом",
+       "ex": "We went on a [[guided]] tour of the Kremlin."
+      },
+      {
+       "en": "[[traditional]] crafts · [[hand-painted]]",
+       "ru": "народные промыслы · расписанный вручную",
+       "ex": "Every matryoshka is [[hand-painted]]."
+      },
+      {
+       "en": "[[to attract]] tourists [[from]] all over the world",
+       "ru": "привлекать туристов со всего мира",
+       "ex": "Red Square [[attracts]] tourists [[from]] all over the world."
+      },
+      {
+       "en": "[[well worth]] a visit",
+       "ru": "стоит посетить",
+       "ex": "Suzdal is [[well worth]] a visit."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "title": "Tricky for Russian speakers",
+     "html": "a <b>sight</b> (достопримечательность) ≠ a <b>view</b> (вид). <b>visit</b> a museum — no preposition. Go <b>on</b> a tour / an excursion. <b>in</b> St Petersburg, but <b>at</b> the Hermitage. <b>priceless</b> = extremely valuable, not «without a price»."
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "a [[must-see]]",
+       "ru": "обязательно к посещению",
+       "ex": "The Hermitage is a [[must-see]] for every visitor."
+      },
+      {
+       "en": "a [[hidden gem]]",
+       "ru": "малоизвестная жемчужина",
+       "ex": "This small museum is a [[hidden gem]]."
+      },
+      {
+       "en": "a [[tourist trap]]",
+       "ru": "место, где переплачивают туристы",
+       "ex": "The cafés on the main square are [[tourist traps]]."
+      },
+      {
+       "en": "[[steeped in]] history",
+       "ru": "пропитанный историей",
+       "ex": "Novgorod is a city [[steeped in]] history."
+      },
+      {
+       "en": "[[world-renowned]]",
+       "ru": "всемирно известный",
+       "ex": "The Bolshoi is a [[world-renowned]] theatre."
+      },
+      {
+       "en": "[[to soak up]] the atmosphere",
+       "ru": "проникнуться атмосферой",
+       "ex": "We sat in the square to [[soak up]] the atmosphere."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ the sights",
+       [
+        "see",
+        "make",
+        "take in",
+        "visit"
+       ],
+       "make"
+      ],
+      [
+       "___ a guided tour",
+       [
+        "go on",
+        "visit",
+        "take",
+        "join"
+       ],
+       "visit"
+      ],
+      [
+       "a UNESCO World Heritage ___",
+       [
+        "Site",
+        "List",
+        "status",
+        "place"
+       ],
+       "place"
+      ],
+      [
+       "___ back to the 15th century",
+       [
+        "come",
+        "date",
+        "go",
+        "trace"
+       ],
+       "come"
+      ],
+      [
+       "a ___ tour",
+       [
+        "guided",
+        "sightseeing",
+        "looking",
+        "walking"
+       ],
+       "looking"
+      ],
+      [
+       "___ the atmosphere",
+       [
+        "soak up",
+        "enjoy",
+        "feel",
+        "drink"
+       ],
+       "drink"
+      ],
+      [
+       "a ___ trap",
+       [
+        "tourist",
+        "museum",
+        "speed",
+        "mouse"
+       ],
+       "museum"
+      ],
+      [
+       "___ in history",
+       [
+        "steeped",
+        "rich",
+        "deep",
+        "soaked"
+       ],
+       "deep"
+      ],
+      [
+       "___ tourists",
+       [
+        "visit",
+        "attract",
+        "draw",
+        "welcome"
+       ],
+       "visit"
+      ],
+      [
+       "a ___ work of art",
+       [
+        "priceless",
+        "famous",
+        "costless",
+        "valuable"
+       ],
+       "costless"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "Red Square is one of the most famous {sights|views|looks} in Moscow.",
+       "sights"
+      ],
+      [
+       "The cathedral {goes|dates|comes} back to the 16th century.",
+       "dates"
+      ],
+      [
+       "The museum {brags|shows off|boasts} a collection of over three million works of art.",
+       "boasts"
+      ],
+      [
+       "We {visited to|visited|went} the Tretyakov Gallery last summer.",
+       "visited"
+      ],
+      [
+       "The Hermitage was founded {from|with|by} Catherine the Great.",
+       "by"
+      ],
+      [
+       "Kizhi is a real hidden {gem|rock|coin}.",
+       "gem"
+      ],
+      [
+       "The cathedral is a real {master piece|masterpiece|masterwork piece} of architecture.",
+       "masterpiece"
+      ],
+      [
+       "Suzdal is well {worthy|value|worth} a visit.",
+       "worth"
+      ],
+      [
+       "We went {on|in|at} a guided tour of the Kremlin.",
+       "on"
+      ],
+      [
+       "Every matryoshka is hand-{paint|painting|painted}.",
+       "painted"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "You really should visit the Hermitage.",
+       "WORTH",
+       "The Hermitage is ___.",
+       "well worth a visit / (well) worth visiting"
+      ],
+      [
+       "The Kremlin walls were built more than 500 years ago.",
+       "DATE",
+       "The Kremlin walls ___ the 15th century.",
+       "date back to"
+      ],
+      [
+       "Tourists from all over the world come to see the Golden Ring.",
+       "ATTRACTS",
+       "The Golden Ring ___ from all over the world.",
+       "attracts tourists"
+      ],
+      [
+       "Catherine the Great founded the Hermitage.",
+       "WAS",
+       "The Hermitage ___ Catherine the Great.",
+       "was founded by"
+      ],
+      [
+       "Many tourists visit the Kremlin every day.",
+       "ATTRACTS",
+       "The Kremlin ___ every day.",
+       "attracts many tourists"
+      ],
+      [
+       "This village is beautiful, but few people know about it.",
+       "GEM",
+       "This village is ___.",
+       "a hidden gem"
+      ],
+      [
+       "The museum has an enormous collection of paintings.",
+       "BOASTS",
+       "The museum ___ of paintings.",
+       "boasts an enormous collection"
+      ],
+      [
+       "You must see this place when you are in Moscow.",
+       "MUST-SEE",
+       "This place is ___ in Moscow.",
+       "a must-see"
+      ],
+      [
+       "We spent the afternoon looking at the sights.",
+       "TOOK",
+       "We ___ in the afternoon.",
+       "took in the sights"
+      ],
+      [
+       "The prices in this café are much too high for tourists.",
+       "TRAP",
+       "This café is ___.",
+       "a tourist trap"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Кремль внесён в список всемирного наследия ЮНЕСКО.",
+       "The Kremlin is listed as a UNESCO World Heritage Site."
+      ],
+      [
+       "Эрмитаж может похвастаться коллекцией из более чем трёх миллионов экспонатов.",
+       "The Hermitage boasts a collection of more than three million items."
+      ],
+      [
+       "Матрёшки и гжель — известные народные промыслы.",
+       "Matryoshka dolls and Gzhel porcelain are well-known traditional crafts."
+      ],
+      [
+       "Кижи обязательно стоит посетить.",
+       "Kizhi is a must-see. / Kizhi is well worth a visit."
+      ],
+      [
+       "Большой театр — всемирно известный театр.",
+       "The Bolshoi is a world-renowned theatre."
+      ],
+      [
+       "Этот город пропитан историей.",
+       "This city is steeped in history."
+      ],
+      [
+       "Мы весь день осматривали достопримечательности.",
+       "We spent the whole day taking in the sights."
+      ],
+      [
+       "В музее много бесценных произведений искусства.",
+       "The museum has many priceless works of art."
+      ],
+      [
+       "Мы сели на площади, чтобы проникнуться атмосферой.",
+       "We sat in the square to soak up the atmosphere."
+      ],
+      [
+       "Эрмитаж был открыт для публики в 1852 году.",
+       "The Hermitage was opened to the public in 1852."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Sights of Russia",
+      "questions": [
+       {
+        "q": "What sights is your city or region famous for?",
+        "pool": [
+         "be famous for",
+         "a landmark",
+         "date back to",
+         "a monument"
+        ]
+       },
+       {
+        "q": "What is the most interesting museum you have ever visited? Why?",
+        "pool": [
+         "the most interesting museum I've ever visited",
+         "a collection of",
+         "priceless",
+         "impress"
+        ]
+       },
+       {
+        "q": "What Russian traditional crafts do you know?",
+        "pool": [
+         "matryoshka dolls",
+         "Gzhel porcelain",
+         "Khokhloma",
+         "hand-painted"
+        ]
+       },
+       {
+        "q": "What place in Russia would you recommend to a foreign friend? Why?",
+        "pool": [
+         "a must-see",
+         "well worth a visit",
+         "breathtaking",
+         "steeped in history"
+        ]
+       },
+       {
+        "q": "Do you prefer guided tours or exploring a place on your own? Why?",
+        "pool": [
+         "a guided tour",
+         "at my own pace",
+         "learn more",
+         "get lost"
+        ]
+       }
+      ],
+      "trap": "Q2 uses the Present Perfect (<i>have you ever visited</i>), but a specific visit in the past needs the Past Simple: <i>I went there last year.</i>"
+     },
+     {
+      "type": "reading",
+      "title": "The Hermitage",
+      "text": "The State Hermitage in St Petersburg is one of the largest and oldest museums in the world. It was founded in 1764 by Catherine the Great, who bought a collection of paintings from a merchant in Berlin. At first the collection was private, and only the empress and her guests could see it. The museum was opened to the public in 1852. Today the Hermitage occupies several historic buildings, including the magnificent Winter Palace, the former residence of the Russian tsars. Its collection includes over three million items, from ancient Egyptian objects to works by Leonardo da Vinci, Rembrandt and Picasso. It is said that if you spent just one minute looking at each exhibit, it would take you many years to see them all."
+     }
+    ],
+    [
+     {
+      "type": "photo",
+      "project": "Getting to know Russian culture",
+      "p1": [
+       [
+        "classical_building",
+        "framed_picture"
+       ],
+       "tourists looking at paintings in an art museum"
+      ],
+      "p2": [
+       [
+        "nesting_dolls",
+        "artist_palette"
+       ],
+       "teenagers painting matryoshka dolls at a masterclass"
+      ],
+      "focus": "the two ways of getting to know Russian culture",
+      "opinion": "which way presented in the pictures you would prefer and why",
+      "basis": "watch or do? (bank: 2)",
+      "pool": {
+       "describe": [
+        "look at paintings",
+        "a guide",
+        "an art museum",
+        "paint matryoshka dolls",
+        "a workshop",
+        "brushes"
+       ],
+       "difference": [
+        "passive — hands-on",
+        "looking — making",
+        "originals — souvenirs"
+       ],
+       "pros": [
+        "see priceless originals",
+        "learn from experts",
+        "learn a craft",
+        "take home what you made"
+       ],
+       "cons": [
+        "crowds",
+        "you only look",
+        "expensive",
+        "takes time"
+       ]
+      }
+     },
+     {
+      "type": "ad",
+      "title": "Khokhloma masterclass",
+      "slogan": "Paint your own masterpiece!",
+      "img": "artist_palette",
+      "points": [
+       "location",
+       "duration of the class",
+       "necessary materials",
+       "price"
+      ],
+      "consider": "going to the Khokhloma masterclass"
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "which places young Zetlanders would like to visit in their country",
+      "audience": "young Zetlanders",
+      "q": "Which places in your country would you most like to visit?",
+      "data": [
+       [
+        "Historic cities",
+        38
+       ],
+       [
+        "National parks",
+        26
+       ],
+       [
+        "Museums and galleries",
+        17
+       ],
+       [
+        "Seaside resorts",
+        12
+       ],
+       [
+        "Industrial sites",
+        7
+       ]
+      ],
+      "problem": "that tourists may face while visiting popular sights",
+      "conclusion": "the importance of knowing your country's cultural heritage",
+      "focus4": "a problem tourists face at <b>popular sights</b>",
+      "pool": [
+       "historic cities",
+       "crowds of tourists",
+       "long queues",
+       "book tickets online",
+       "visit off-season",
+       "a guided tour",
+       "cultural heritage",
+       "take pride in",
+       "a hidden gem"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Outstanding People & Achievements",
+   "lede": "Russian scientists, writers, composers and explorers",
+   "pics": [
+    "rocket",
+    "test_tube",
+    "musical_score"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "Russia's contribution to the world",
+     "cols": 4,
+     "items": [
+      {
+       "img": "rocket",
+       "en": "space exploration (U)",
+       "ru": "освоение космоса"
+      },
+      {
+       "img": "satellite",
+       "en": "the first satellite",
+       "ru": "первый спутник"
+      },
+      {
+       "img": "test_tube",
+       "en": "a scientific discovery",
+       "ru": "научное открытие"
+      },
+      {
+       "img": "books",
+       "en": "a literary classic",
+       "ru": "классика литературы"
+      },
+      {
+       "img": "violin",
+       "en": "a composer",
+       "ru": "композитор"
+      },
+      {
+       "img": "ballet_shoes",
+       "en": "ballet (U)",
+       "ru": "балет"
+      },
+      {
+       "img": "compass",
+       "en": "an explorer",
+       "ru": "исследователь-путешественник"
+      },
+      {
+       "img": "graduation_cap",
+       "en": "a university",
+       "ru": "университет"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Achievements",
+     "items": [
+      {
+       "en": "[[to make]] a discovery",
+       "ru": "совершить открытие",
+       "ex": "Scientists [[made]] an important discovery."
+      },
+      {
+       "en": "[[to invent]] · an [[invention]]",
+       "ru": "изобретать · изобретение",
+       "ex": "Who [[invented]] the radio is still debated."
+      },
+      {
+       "en": "[[to contribute to]] · a [[contribution to]]",
+       "ru": "вносить вклад в",
+       "ex": "Mendeleev made a huge [[contribution to]] chemistry."
+      },
+      {
+       "en": "[[to be the first]] (person) [[to do]] sth",
+       "ru": "быть первым, кто…",
+       "ex": "Yuri Gagarin [[was the first]] person [[to travel]] into space."
+      },
+      {
+       "en": "[[to go down in]] history",
+       "ru": "войти в историю",
+       "ex": "Gagarin's flight [[went down in]] history."
+      },
+      {
+       "en": "[[to gain]] / [[to win]] worldwide recognition (U)",
+       "ru": "получить мировое признание",
+       "ex": "Tchaikovsky's music [[gained]] worldwide recognition."
+      },
+      {
+       "en": "[[to be named after]]",
+       "ru": "быть названным в честь",
+       "ex": "Moscow University [[is named after]] Lomonosov."
+      },
+      {
+       "en": "[[to devote]] your life [[to]]",
+       "ru": "посвятить жизнь",
+       "ex": "Mendeleev [[devoted]] his life [[to]] science."
+      },
+      {
+       "en": "a [[breakthrough]] in science",
+       "ru": "прорыв в науке",
+       "ex": "The first satellite was a [[breakthrough]] in science."
+      },
+      {
+       "en": "[[to pave the way]] for",
+       "ru": "проложить путь для",
+       "ex": "Sputnik [[paved the way]] for space exploration."
+      },
+      {
+       "en": "[[to be awarded]] a prize",
+       "ru": "получить премию",
+       "ex": "She [[was awarded]] a prize for her research."
+      },
+      {
+       "en": "[[outstanding]] · [[renowned]] · [[gifted]]",
+       "ru": "выдающийся · известный · одарённый",
+       "ex": "Pushkin was a [[gifted]] poet."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "title": "Tricky for Russian speakers",
+     "html": "<b>discover</b> = find something that already existed (the periodic law, an island) · <b>invent</b> = create something new (a machine). <b>the first to do</b>: ✓ <i>He was the first to fly into space.</i> A <b>scientist</b> works in the natural sciences; a <b>scholar</b> — in the humanities."
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[ahead of]] your time",
+       "ru": "опередивший своё время",
+       "ex": "Tsiolkovsky was a man [[ahead of]] his time."
+      },
+      {
+       "en": "[[to leave a mark on]]",
+       "ru": "оставить след в",
+       "ex": "Tolstoy [[left a mark on]] world literature."
+      },
+      {
+       "en": "a [[trailblazer]]",
+       "ru": "первопроходец",
+       "ex": "Valentina Tereshkova was a real [[trailblazer]]."
+      },
+      {
+       "en": "[[to make headlines]]",
+       "ru": "попасть в заголовки",
+       "ex": "The launch [[made headlines]] around the world."
+      },
+      {
+       "en": "[[to rise to fame]]",
+       "ru": "прославиться",
+       "ex": "Chekhov [[rose to fame]] with his short stories."
+      },
+      {
+       "en": "[[to stand on the shoulders]] of giants",
+       "ru": "опираться на труды предшественников",
+       "ex": "Every scientist [[stands on the shoulders]] of giants."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a discovery",
+       [
+        "make",
+        "announce",
+        "report",
+        "do"
+       ],
+       "do"
+      ],
+      [
+       "a ___ contribution",
+       [
+        "huge",
+        "tall",
+        "significant",
+        "major"
+       ],
+       "tall"
+      ],
+      [
+       "___ the way for",
+       [
+        "pave",
+        "prepare",
+        "build",
+        "clear"
+       ],
+       "build"
+      ],
+      [
+       "___ recognition",
+       [
+        "make",
+        "gain",
+        "win",
+        "receive"
+       ],
+       "make"
+      ],
+      [
+       "___ your life to",
+       [
+        "devote",
+        "dedicate",
+        "spend",
+        "give"
+       ],
+       "spend"
+      ],
+      [
+       "___ an invention",
+       [
+        "do",
+        "patent",
+        "make",
+        "come up with"
+       ],
+       "do"
+      ],
+      [
+       "___ history",
+       [
+        "make",
+        "go down in",
+        "change",
+        "take"
+       ],
+       "take"
+      ],
+      [
+       "a ___ in science",
+       [
+        "breakthrough",
+        "breakdown",
+        "career",
+        "revolution"
+       ],
+       "breakdown"
+      ],
+      [
+       "___ fame",
+       [
+        "rise to",
+        "do",
+        "achieve",
+        "gain"
+       ],
+       "do"
+      ],
+      [
+       "a ___ poet",
+       [
+        "gifted",
+        "renowned",
+        "outstanding",
+        "gifting"
+       ],
+       "gifting"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "Gagarin was the first person {to fly|flying|fly} into space.",
+       "to fly"
+      ],
+      [
+       "Mendeleev made a great contribution {in|to|for} chemistry.",
+       "to"
+      ],
+      [
+       "Sputnik {laid|built|paved} the way for space exploration.",
+       "paved"
+      ],
+      [
+       "The university is named {after|by|from} Lomonosov.",
+       "after"
+      ],
+      [
+       "Tchaikovsky's music {got up|earned up|gained} worldwide recognition.",
+       "gained"
+      ],
+      [
+       "She was {awarded|rewarded|given away} the Nobel Prize.",
+       "awarded"
+      ],
+      [
+       "Tereshkova was the first woman {travelling|to travel|travel} into space.",
+       "to travel"
+      ],
+      [
+       "Mendeleev {devoted|dedicated to|spent} his life to science.",
+       "devoted"
+      ],
+      [
+       "The launch of Sputnik {did|made|took} headlines around the world.",
+       "made"
+      ],
+      [
+       "Tsiolkovsky was far ahead {from|than|of} his time.",
+       "of"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "Nobody had flown into space before Gagarin.",
+       "FIRST",
+       "Gagarin was ___ into space.",
+       "the first person to fly"
+      ],
+      [
+       "Mendeleev's work was very important for chemistry.",
+       "CONTRIBUTION",
+       "Mendeleev ___ to chemistry.",
+       "made an important contribution"
+      ],
+      [
+       "Everybody in Russia knows Pushkin's name.",
+       "HOUSEHOLD",
+       "In Russia Pushkin is ___.",
+       "a household name"
+      ],
+      [
+       "Lomonosov founded Moscow University in 1755.",
+       "WAS",
+       "Moscow University ___ Lomonosov in 1755.",
+       "was founded by"
+      ],
+      [
+       "Many streets in Russia have Gagarin's name.",
+       "NAMED",
+       "Many streets in Russia ___ Gagarin.",
+       "are named after"
+      ],
+      [
+       "Chekhov's short stories made him famous.",
+       "FAME",
+       "Chekhov ___ thanks to his short stories.",
+       "rose to fame"
+      ],
+      [
+       "Today's scientists build on the work of great scientists of the past.",
+       "SHOULDERS",
+       "Today's scientists stand ___ giants.",
+       "on the shoulders of"
+      ],
+      [
+       "His ideas were too modern for the people of his time.",
+       "AHEAD",
+       "He was ___ time.",
+       "ahead of his"
+      ],
+      [
+       "Tolstoy had a great influence on world literature.",
+       "MARK",
+       "Tolstoy ___ world literature.",
+       "left a mark on"
+      ],
+      [
+       "She received the Nobel Prize for her research.",
+       "AWARDED",
+       "She ___ the Nobel Prize for her research.",
+       "was awarded"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Юрий Гагарин вошёл в историю как первый человек в космосе.",
+       "Yuri Gagarin went down in history as the first person in space."
+      ],
+      [
+       "Менделеев внёс огромный вклад в науку.",
+       "Mendeleev made a huge contribution to science."
+      ],
+      [
+       "Московский университет назван в честь Ломоносова.",
+       "Moscow University is named after Lomonosov."
+      ],
+      [
+       "Многие великие учёные опередили своё время.",
+       "Many great scientists were ahead of their time."
+      ],
+      [
+       "Спутник проложил путь для освоения космоса.",
+       "Sputnik paved the way for space exploration."
+      ],
+      [
+       "Валентина Терешкова стала первой женщиной в космосе.",
+       "Valentina Tereshkova became the first woman in space."
+      ],
+      [
+       "Музыка Чайковского получила мировое признание.",
+       "Tchaikovsky's music gained worldwide recognition."
+      ],
+      [
+       "Этот прорыв в науке попал во все заголовки.",
+       "This breakthrough in science made headlines everywhere."
+      ],
+      [
+       "Он посвятил свою жизнь медицине.",
+       "He devoted his life to medicine."
+      ],
+      [
+       "До сих пор спорят, кто изобрёл радио.",
+       "People still argue about who invented the radio."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Great people of Russia",
+      "questions": [
+       {
+        "q": "Which famous Russian do you admire most? Why?",
+        "pool": [
+         "I admire…",
+         "outstanding",
+         "achievements",
+         "inspire me"
+        ]
+       },
+       {
+        "q": "What Russian scientists or inventors do you know? What are they famous for?",
+        "pool": [
+         "make a discovery",
+         "the periodic table",
+         "the first satellite",
+         "be named after"
+        ]
+       },
+       {
+        "q": "Which Russian writer would you recommend to a foreign friend? Why?",
+        "pool": [
+         "a literary classic",
+         "Pushkin · Tolstoy · Chekhov",
+         "be translated into",
+         "make you think"
+        ]
+       },
+       {
+        "q": "Why is it important to know about outstanding people of your country?",
+        "pool": [
+         "take pride in",
+         "learn from",
+         "role models",
+         "cultural heritage"
+        ]
+       },
+       {
+        "q": "What would you like to achieve in the future?",
+        "pool": [
+         "I'd like to…",
+         "devote my life to",
+         "make a contribution to",
+         "my dream is…"
+        ]
+       }
+      ],
+      "trap": "Q2 contains two questions: name the people <b>and</b> say what they are famous for."
+     }
+    ],
+    [
+     {
+      "type": "reading",
+      "title": "Yuri Gagarin",
+      "text": "On 12 April 1961 Yuri Gagarin became the first person to travel into space. His spacecraft, Vostok 1, orbited the Earth once, and the whole flight lasted just 108 minutes. Gagarin was born in 1934 in a small village in the Smolensk region. As a young man he studied at an industrial college, joined a flying club and later became a military pilot. He was chosen for the space programme from many candidates because of his calm character, quick reactions and excellent health. After his historic flight, Gagarin became a hero not only in his own country but all over the world. Today 12 April is celebrated in Russia as Cosmonautics Day, and many streets, schools and even a crater on the Moon are named after him."
+     },
+     {
+      "type": "reading",
+      "title": "Dmitri Mendeleev",
+      "text": "Dmitri Mendeleev was one of the greatest chemists in history. In 1869 he created the periodic table, a system that arranged all the chemical elements known at that time according to their properties. What made his work truly brilliant was that he left empty spaces in the table for elements that had not yet been discovered. He even predicted what these elements would be like. In the years that followed, scientists found three of them — gallium, scandium and germanium — and their properties matched his predictions remarkably well. Mendeleev was also interested in many other fields, from oil production to shipbuilding. Today the element mendelevium is named after him, and his table hangs in almost every school classroom in the world."
+     }
+    ],
+    [
+     {
+      "type": "photo",
+      "project": "Science and technology",
+      "p1": [
+       [
+        "rocket"
+       ],
+       "a rocket being launched into space"
+      ],
+      "p2": [
+       [
+        "microscope",
+        "test_tube"
+       ],
+       "a young scientist doing an experiment in a laboratory"
+      ],
+      "focus": "the two areas of science",
+      "opinion": "which area presented in the pictures you would prefer to work in and why",
+      "basis": "what does it study? (bank: 5)",
+      "pool": {
+       "describe": [
+        "a rocket launch",
+        "take off",
+        "a spacecraft",
+        "a laboratory",
+        "do an experiment",
+        "a microscope"
+       ],
+       "difference": [
+        "the biggest distances — the tiniest things",
+        "space exploration — lab research"
+       ],
+       "pros": [
+        "inspiring",
+        "push the limits of knowledge",
+        "help cure diseases",
+        "practical results"
+       ],
+       "cons": [
+        "dangerous",
+        "extremely expensive",
+        "slow progress",
+        "routine work"
+       ]
+      }
+     },
+     {
+      "type": "ad",
+      "title": "Museum of Cosmonautics",
+      "slogan": "Reach for the stars!",
+      "img": "satellite",
+      "points": [
+       "opening hours",
+       "ticket price for students",
+       "guided tours in English",
+       "interactive exhibits"
+      ],
+      "consider": "visiting the Museum of Cosmonautics"
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "which famous people young Zetlanders consider role models",
+      "audience": "young Zetlanders",
+      "q": "Which famous people do you consider role models?",
+      "data": [
+       [
+        "Scientists",
+        31
+       ],
+       [
+        "Athletes",
+        27
+       ],
+       [
+        "Actors and musicians",
+        22
+       ],
+       [
+        "Writers",
+        12
+       ],
+       [
+        "Politicians",
+        8
+       ]
+      ],
+      "problem": "that can arise when young people choose a role model",
+      "conclusion": "what makes a person a good role model",
+      "focus4": "a problem in <b>choosing</b> a role model",
+      "pool": [
+       "a role model",
+       "inspire",
+       "achievements",
+       "hard work",
+       "follow blindly",
+       "celebrities",
+       "fame",
+       "values",
+       "think critically"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Traditions, Customs & Food",
+   "lede": "Everyday traditions, customs, cuisine and hospitality",
+   "pics": [
+    "dumpling",
+    "teacup_without_handle",
+    "hut"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "At the table and at the dacha",
+     "cols": 5,
+     "items": [
+      {
+       "img": "pancakes",
+       "en": "blini",
+       "ru": "блины"
+      },
+      {
+       "img": "dumpling",
+       "en": "pelmeni",
+       "ru": "пельмени"
+      },
+      {
+       "img": "bowl_with_spoon",
+       "en": "borsch (U)",
+       "ru": "борщ"
+      },
+      {
+       "img": "hot_beverage",
+       "en": "tea (U) from a samovar",
+       "ru": "чай из самовара"
+      },
+      {
+       "img": "hut",
+       "en": "a dacha",
+       "ru": "дача"
+      },
+      {
+       "img": "fire",
+       "en": "a banya",
+       "ru": "баня"
+      },
+      {
+       "img": "candle",
+       "en": "a superstition",
+       "ru": "примета"
+      },
+      {
+       "img": "handshake",
+       "en": "hospitality (U)",
+       "ru": "гостеприимство"
+      },
+      {
+       "img": "busts_in_silhouette",
+       "en": "a family tradition",
+       "ru": "семейная традиция"
+      },
+      {
+       "img": "snowman",
+       "en": "winter fun",
+       "ru": "зимние забавы"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Customs and cuisine",
+     "items": [
+      {
+       "en": "a [[custom]] · a [[tradition]]",
+       "ru": "обычай · традиция",
+       "ex": "It's a Russian [[custom]] to sit down before a long journey."
+      },
+      {
+       "en": "[[to keep up]] / [[to follow]] a tradition",
+       "ru": "поддерживать / соблюдать традицию",
+       "ex": "My family still [[keeps up]] this tradition."
+      },
+      {
+       "en": "[[to be passed down]] [[from]] generation [[to]] generation",
+       "ru": "передаваться из поколения в поколение",
+       "ex": "Grandma's recipe [[has been passed down]] [[from]] generation [[to]] generation."
+      },
+      {
+       "en": "[[to treat]] guests [[to]] sth",
+       "ru": "угощать гостей",
+       "ex": "My grandma always [[treats]] guests [[to]] homemade pies."
+      },
+      {
+       "en": "[[to welcome]] guests [[with]] bread and salt",
+       "ru": "встречать хлебом-солью",
+       "ex": "In the village they [[welcomed]] us [[with]] bread and salt."
+      },
+      {
+       "en": "a [[national]] dish · [[cuisine]] (U)",
+       "ru": "национальное блюдо · кухня",
+       "ex": "Borsch is a [[national]] dish."
+      },
+      {
+       "en": "[[to be served with]]",
+       "ru": "подаваться с",
+       "ex": "Blini are often [[served with]] sour cream."
+      },
+      {
+       "en": "a [[superstition]] · [[superstitious]]",
+       "ru": "примета · суеверный",
+       "ex": "My grandmother is very [[superstitious]]."
+      },
+      {
+       "en": "[[to bring]] good / bad luck",
+       "ru": "приносить удачу / неудачу",
+       "ex": "Some people think black cats [[bring]] bad luck."
+      },
+      {
+       "en": "[[to spend]] the summer [[at]] the dacha",
+       "ru": "проводить лето на даче",
+       "ex": "We [[spend]] every summer [[at]] the dacha."
+      },
+      {
+       "en": "[[to grow]] vegetables",
+       "ru": "выращивать овощи",
+       "ex": "My grandparents [[grow]] vegetables and berries."
+      },
+      {
+       "en": "a [[warm]] welcome",
+       "ru": "радушный приём",
+       "ex": "Our hosts gave us a [[warm]] welcome."
+      },
+      {
+       "en": "[[hospitality]] (U)",
+       "ru": "гостеприимство",
+       "ex": "Russian [[hospitality]] is famous all over the world."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "title": "Tricky for Russian speakers",
+     "html": "<b>treat</b> sb <b>to</b> sth = угостить (not «лечить» — that is <b>treat</b> a patient / <b>cure</b> a disease). <b>cuisine</b> = national cooking ≠ <b>kitchen</b> = a room. <b>custom</b> = обычай ≠ <b>customs</b> = таможня."
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[Make yourself at home]]!",
+       "ru": "будьте как дома",
+       "ex": "“Come in and [[make yourself at home]]!”"
+      },
+      {
+       "en": "[[touch wood]] (BrE) · [[knock on wood]] (AmE)",
+       "ru": "постучать по дереву",
+       "ex": "I've never failed an exam, [[touch wood]]."
+      },
+      {
+       "en": "[[Old habits die hard]].",
+       "ru": "старые привычки трудно искоренить",
+       "ex": "Grandpa still gets up at 5 a.m. — [[old habits die hard]]."
+      },
+      {
+       "en": "a home [[away from home]]",
+       "ru": "второй дом",
+       "ex": "The dacha is our home [[away from home]]."
+      },
+      {
+       "en": "[[to go back]] generations",
+       "ru": "уходить корнями в прошлое",
+       "ex": "This recipe [[goes back]] generations."
+      },
+      {
+       "en": "[[to break bread]] with",
+       "ru": "разделить трапезу (formal)",
+       "ex": "It is an honour to [[break bread]] with your hosts."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ good luck",
+       [
+        "do",
+        "bring",
+        "wish",
+        "have"
+       ],
+       "do"
+      ],
+      [
+       "a national ___",
+       [
+        "dish",
+        "cuisine",
+        "holiday",
+        "kitchen"
+       ],
+       "kitchen"
+      ],
+      [
+       "___ vegetables",
+       [
+        "grow",
+        "rise",
+        "pick",
+        "plant"
+       ],
+       "rise"
+      ],
+      [
+       "a ___ welcome",
+       [
+        "warm",
+        "hot",
+        "hearty",
+        "friendly"
+       ],
+       "hot"
+      ],
+      [
+       "___ a custom",
+       [
+        "follow",
+        "observe",
+        "keep",
+        "do"
+       ],
+       "do"
+      ],
+      [
+       "___ a superstition",
+       [
+        "do",
+        "believe in",
+        "follow",
+        "have"
+       ],
+       "do"
+      ],
+      [
+       "___ hospitality",
+       [
+        "show",
+        "offer",
+        "make",
+        "enjoy"
+       ],
+       "make"
+      ],
+      [
+       "___ jam",
+       [
+        "make",
+        "cook",
+        "eat",
+        "brew"
+       ],
+       "brew"
+      ],
+      [
+       "___ the banya",
+       [
+        "heat",
+        "cook",
+        "go to",
+        "visit"
+       ],
+       "cook"
+      ],
+      [
+       "___ wood",
+       [
+        "touch",
+        "knock on",
+        "hit on",
+        "chop"
+       ],
+       "hit on"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "My grandmother always {treats|cures|serves} her guests to homemade pies.",
+       "treats"
+      ],
+      [
+       "Russian {kitchen|cuisine|cooking room} is famous for its soups.",
+       "cuisine"
+      ],
+      [
+       "Blini are usually served {with|by|at} sour cream or honey.",
+       "with"
+      ],
+      [
+       "Many people believe that whistling indoors {carries|brings|takes} bad luck.",
+       "brings"
+      ],
+      [
+       "We {pass|lead|spend} every summer at our dacha.",
+       "spend"
+      ],
+      [
+       "This custom has been passed down {since|from|by} generation to generation.",
+       "from"
+      ],
+      [
+       "It's a Russian {customs|costume|custom} to sit down before a long journey.",
+       "custom"
+      ],
+      [
+       "Grandpa still gets up at five — old habits {die|dies|dying} hard.",
+       "die"
+      ],
+      [
+       "Please come in and make yourself {in|at|on} home.",
+       "at"
+      ],
+      [
+       "This recipe goes {off|out|back} generations.",
+       "back"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "Everyone in my family still follows this old tradition.",
+       "KEEPS",
+       "My family still ___ this old tradition.",
+       "keeps up"
+      ],
+      [
+       "My aunt gave us delicious pancakes when we visited her.",
+       "TREATED",
+       "My aunt ___ delicious pancakes when we visited her.",
+       "treated us to"
+      ],
+      [
+       "People in the village welcomed us very warmly.",
+       "WELCOME",
+       "People in the village gave us ___.",
+       "a (very) warm welcome"
+      ],
+      [
+       "I'm sure this tradition started a very long time ago.",
+       "MUST",
+       "This tradition ___ a very long time ago.",
+       "must have started"
+      ],
+      [
+       "My grandmother believes in lots of superstitions.",
+       "SUPERSTITIOUS",
+       "My grandmother is ___.",
+       "very superstitious"
+      ],
+      [
+       "We always go to the dacha for the summer.",
+       "SPEND",
+       "We always ___ at the dacha.",
+       "spend the summer"
+      ],
+      [
+       "Borsch usually comes with sour cream.",
+       "SERVED",
+       "Borsch is usually ___ sour cream.",
+       "served with"
+      ],
+      [
+       "The dacha is like a second home for us.",
+       "AWAY",
+       "The dacha is our ___.",
+       "home away from home"
+      ],
+      [
+       "People think that whistling indoors is unlucky.",
+       "BRINGS",
+       "People think that whistling indoors ___.",
+       "brings bad luck"
+      ],
+      [
+       "It is difficult to change old habits.",
+       "HARD",
+       "Old habits ___.",
+       "die hard"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Бабушка всегда угощает нас пирогами.",
+       "My grandmother always treats us to pies."
+      ],
+      [
+       "Русская кухня славится блинами и пельменями.",
+       "Russian cuisine is famous for blini and pelmeni."
+      ],
+      [
+       "Считается, что свистеть в доме — к неудаче.",
+       "It is believed that whistling indoors brings bad luck."
+      ],
+      [
+       "Будьте как дома!",
+       "Make yourself at home!"
+      ],
+      [
+       "Гостей встречали хлебом-солью.",
+       "The guests were welcomed with bread and salt."
+      ],
+      [
+       "Эта традиция уходит корнями в прошлое.",
+       "This tradition goes back generations."
+      ],
+      [
+       "Мы проводим всё лето на даче и выращиваем овощи.",
+       "We spend the whole summer at the dacha and grow vegetables."
+      ],
+      [
+       "Моя бабушка очень суеверная.",
+       "My grandmother is very superstitious."
+      ],
+      [
+       "Хозяева оказали нам радушный приём.",
+       "Our hosts gave us a warm welcome."
+      ],
+      [
+       "Постучи по дереву!",
+       "Touch wood!"
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Russian traditions",
+      "questions": [
+       {
+        "q": "What traditional Russian dishes do you like? Why?",
+        "pool": [
+         "blini",
+         "pelmeni",
+         "borsch",
+         "be served with",
+         "delicious"
+        ]
+       },
+       {
+        "q": "What traditions does your family keep up?",
+        "pool": [
+         "keep up",
+         "get together",
+         "on Sundays",
+         "be passed down"
+        ]
+       },
+       {
+        "q": "Do you believe in superstitions? Why or why not?",
+        "pool": [
+         "superstitious",
+         "bring bad luck",
+         "whistle indoors",
+         "sit down before a journey"
+        ]
+       },
+       {
+        "q": "How do Russian people usually welcome guests?",
+        "pool": [
+         "a warm welcome",
+         "treat guests to",
+         "homemade food",
+         "Make yourself at home!"
+        ]
+       },
+       {
+        "q": "Do you think young people should keep up old traditions? Why?",
+        "pool": [
+         "keep up",
+         "cultural heritage",
+         "old-fashioned",
+         "pass down"
+        ]
+       }
+      ]
+     },
+     {
+      "type": "reading",
+      "title": "The Russian dacha",
+      "text": "For many Russian families, the dacha is much more than a country house. It is a place where people escape from the noise of the city, breathe fresh air and spend time with their relatives. Most dachas are small wooden houses with a garden, where families grow potatoes, cucumbers, tomatoes and berries. In summer, city dwellers travel there every weekend, and children often spend the whole holiday there with their grandparents. Life at the dacha has its own traditions: making jam from home-grown berries, heating the banya on Saturday evening and having long conversations over a cup of tea. Even today, when supermarkets sell everything all year round, millions of Russians still love working in their gardens."
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Russian cooking masterclass",
+      "slogan": "Cook like a Russian grandma!",
+      "img": "dumpling",
+      "points": [
+       "location",
+       "duration of the class",
+       "dishes you will cook",
+       "price"
+      ],
+      "consider": "going to the Russian cooking masterclass"
+     },
+     {
+      "type": "essay",
+      "subject": "family traditions of young Zetlanders",
+      "audience": "young Zetlanders",
+      "q": "Which family tradition is the most important to you?",
+      "data": [
+       [
+        "Celebrating holidays together",
+        37
+       ],
+       [
+        "Sunday family dinners",
+        26
+       ],
+       [
+        "Going on holiday together",
+        19
+       ],
+       [
+        "Visiting grandparents",
+        11
+       ],
+       [
+        "Playing board games",
+        7
+       ]
+      ],
+      "problem": "that can arise with keeping up family traditions",
+      "conclusion": "the role of traditions in modern life",
+      "focus4": "a problem in <b>keeping up</b> family traditions",
+      "pool": [
+       "keep up",
+       "get together",
+       "busy schedules",
+       "live far away",
+       "lose touch",
+       "video calls",
+       "plan in advance",
+       "feel connected",
+       "be passed down"
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "revision": {
+  "reading11": {
+   "title": "Russia: a country of contrasts",
+   "text": "Russia is the largest country in the world, and it stretches from the Baltic Sea in the west {A}. Because of its size, the country has an enormous variety of landscapes and climates.<br>In the north, where winters are long and harsh, the land is covered with tundra and taiga, {B}. The south, by contrast, has a mild climate, and people can enjoy the warm beaches of the Black Sea.<br>Russia is also rich in cultural heritage. Its cities boast magnificent cathedrals, palaces and museums {C}. Many of these sights are listed as UNESCO World Heritage Sites.<br>The country is home to more than 190 ethnic groups, {D}. That is why Russian cuisine, traditions and holidays are so diverse.<br>Russians are proud of their history and {E}: Mendeleev's periodic table, the first artificial satellite and Yuri Gagarin's flight. {F}, Russia remains one of the most fascinating countries to explore.",
+   "parts": [
+    "that attract tourists from all over the world",
+    "to the Pacific Ocean in the east",
+    "Although travelling across it can take days",
+    "which are home to bears, wolves and reindeer",
+    "each with its own language, customs and dishes",
+    "the outstanding achievements of their scientists",
+    "because the weather there is always warm"
+   ],
+   "key": "A — 2 · B — 4 · C — 1 · D — 5 · E — 6 · F — 3 (7 is extra)"
+  },
+  "g1": [
+   [
+    19,
+    "Victory Day",
+    "in Russia on 9 May.",
+    "CELEBRATE"
+   ],
+   [
+    20,
+    "It",
+    "the end of the Great Patriotic War, which lasted from 1941 to 1945.",
+    "MARK"
+   ],
+   [
+    21,
+    "Every year",
+    "of people take part in the Immortal Regiment march.",
+    "THOUSAND"
+   ],
+   [
+    22,
+    "They carry photos of their relatives who",
+    "in the war.",
+    "FIGHT"
+   ],
+   [
+    23,
+    "My great-grandfather was one of the",
+    "soldiers in his unit.",
+    "YOUNG"
+   ],
+   [
+    24,
+    "My grandmother told me that he",
+    "never forget those years.",
+    "CAN"
+   ]
+  ],
+  "g2": [
+   [
+    25,
+    "Matryoshka dolls are one of the most",
+    "symbols of Russia.",
+    "RECOGNISE"
+   ],
+   [
+    26,
+    "Each doll is painted by hand, so no two are",
+    ".",
+    "IDENTITY"
+   ],
+   [
+    27,
+    "Gzhel porcelain is famous for its",
+    "blue and white patterns.",
+    "DISTINCT"
+   ],
+   [
+    28,
+    "Craftsmen have kept this tradition alive for",
+    ".",
+    "GENERATE"
+   ],
+   [
+    29,
+    "Today these crafts are",
+    "popular with foreign tourists.",
+    "INCREDIBLE"
+   ]
+  ],
+  "cloze": "Last summer my family went to St Petersburg, a city <b>30</b> ______ in history. On the first day we went on a guided <b>31</b> ______ of the Hermitage. The museum <b>32</b> ______ a collection of over three million works of art, so we only managed to see a small part of it. The next day we <b>33</b> ______ the sights of the city centre on foot. Our guide told us that the city <b>34</b> ______ back to 1703, when Peter the Great founded it. In the evening we took a boat trip along the Neva, which was an unforgettable <b>35</b> ______. St Petersburg is a real must-see, and it is well worth a <b>36</b> ______.",
+  "opts": [
+   [
+    30,
+    "filled",
+    "covered",
+    "steeped",
+    "packed"
+   ],
+   [
+    31,
+    "tour",
+    "trip",
+    "journey",
+    "travel"
+   ],
+   [
+    32,
+    "brags",
+    "shows",
+    "praises",
+    "boasts"
+   ],
+   [
+    33,
+    "looked",
+    "took in",
+    "went",
+    "watched"
+   ],
+   [
+    34,
+    "returns",
+    "comes",
+    "turns",
+    "dates"
+   ],
+   [
+    35,
+    "experience",
+    "experiment",
+    "expedition",
+    "expertise"
+   ],
+   [
+    36,
+    "see",
+    "visit",
+    "sight",
+    "watch"
+   ]
+  ],
+  "keys": [
+   [
+    "19–24",
+    "is celebrated · marks · thousands · fought · youngest · could"
+   ],
+   [
+    "25–29",
+    "recognisable / recognizable · identical · distinctive · generations · incredibly"
+   ],
+   [
+    "30–36",
+    "30 — 3 steeped · 31 — 1 tour · 32 — 4 boasts · 33 — 2 took in · 34 — 4 dates · 35 — 1 experience · 36 — 2 visit"
+   ]
+  ],
+  "transform": [
+   [
+    "Lake Baikal is deeper than any other lake in the world.",
+    "DEEPEST",
+    "Lake Baikal is ___ the world.",
+    "the deepest lake in"
+   ],
+   [
+    "My parents organised a surprise party for my birthday.",
+    "THREW",
+    "My parents ___ for my birthday.",
+    "threw a surprise party"
+   ],
+   [
+    "People say that the tradition started centuries ago.",
+    "SAID",
+    "The tradition ___ centuries ago.",
+    "is said to have started"
+   ],
+   [
+    "Tourists from many countries visit the Golden Ring.",
+    "ATTRACTS",
+    "The Golden Ring ___ many countries.",
+    "attracts tourists from"
+   ],
+   [
+    "Nobody had travelled into space before Gagarin.",
+    "FIRST",
+    "Gagarin was ___ into space.",
+    "the first person to travel"
+   ],
+   [
+    "My family still follows the tradition of Sunday dinners.",
+    "KEEPS",
+    "My family still ___ of Sunday dinners.",
+    "keeps up the tradition"
+   ]
+  ],
+  "translate": [
+   [
+    "Россия простирается от Балтийского моря до Тихого океана.",
+    "Russia stretches from the Baltic Sea to the Pacific Ocean."
+   ],
+   [
+    "В День Победы мы поздравляем ветеранов и возлагаем цветы к памятникам.",
+    "On Victory Day we congratulate veterans and lay flowers at monuments."
+   ],
+   [
+    "Эрмитаж был основан Екатериной Великой в 1764 году.",
+    "The Hermitage was founded by Catherine the Great in 1764."
+   ],
+   [
+    "Гагарин был первым человеком, полетевшим в космос.",
+    "Gagarin was the first person to fly into space."
+   ],
+   [
+    "Моя бабушка всегда угощает гостей блинами.",
+    "My grandmother always treats her guests to blini."
+   ],
+   [
+    "Кижи — настоящая жемчужина, которую обязательно стоит посетить.",
+    "Kizhi is a real hidden gem that is well worth a visit."
+   ]
+  ]
+ },
+ "ad_keys": [
+  [
+   "Tour of the Golden Ring",
+   "Where does the tour start? · How long does the tour last? · How much does the tour cost for students? · How many people are there in the group?"
+  ],
+  [
+   "Khokhloma masterclass",
+   "Where does the masterclass take place? · How long does the class last? · What materials do I need to bring? · How much does the class cost?"
+  ],
+  [
+   "Museum of Cosmonautics",
+   "What are the museum's opening hours? · How much is a ticket for students? · Are there guided tours in English? · Are there any interactive exhibits?"
+  ],
+  [
+   "Russian cooking masterclass",
+   "Where is the masterclass held? · How long does the class last? · What dishes will we cook? · How much does the class cost?"
+  ],
+  [
+   "Maslenitsa festival",
+   "Where does the festival take place? · When does the festival start? · How much is the entrance fee? · What activities are there for children?"
+  ]
+ ],
+ "photo_pool_base": {
+  "describe": [
+   "in one picture / in the other picture",
+   "in the foreground",
+   "is / are + -ing",
+   "seems to be",
+   "outdoors / indoors"
+  ],
+  "opinion": [
+   "As for me, I'd prefer…",
+   "I'd rather… because…",
+   "It suits me better as…"
+  ],
+  "close": [
+   "That's all for now.",
+   "Give me a call!",
+   "Talk to you soon!",
+   "Bye!"
+  ]
+ },
+ "data_verbs": [
+  "chose",
+  "opted for",
+  "picked",
+  "gave preference to",
+  "the proportion of … who",
+  "twice / three times as high as",
+  "whereas"
+ ]
+}

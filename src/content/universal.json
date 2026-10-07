@@ -1,0 +1,1246 @@
+{
+ "id": "universal",
+ "title": "EGE English: Universal Block",
+ "subtitle": "Exam structure, assessment criteria, answer frames and typical mistakes — one foundation for every topic module",
+ "source_note": "Based on the EGE 2027 specification and demo version (draft) and the FIPI report on typical mistakes in EGE 2026",
+ "cover_pics": [
+  "studio_microphone",
+  "speech_balloon",
+  "speaking_head",
+  "envelope",
+  "bar_chart",
+  "open_book",
+  "memo",
+  "check_mark_button"
+ ],
+ "pages": [
+  {
+   "kick": "The exam at a glance",
+   "title": "EGE 2027: structure",
+   "lede": "42 tasks · 82 primary points · 207 minutes",
+   "pics": [
+    "clipboard",
+    "stopwatch"
+   ],
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Written part · 3 h 10 min",
+     "icon": "memo",
+     "head": [
+      "Section",
+      "Tasks",
+      "What is tested",
+      "Points",
+      "Time*"
+     ],
+     "rows": [
+      [
+       "Listening",
+       "1–9",
+       "gist · specific information · detailed understanding",
+       "12",
+       "30 min"
+      ],
+      [
+       "Reading",
+       "10–18",
+       "gist · text structure · detailed understanding",
+       "12",
+       "30 min"
+      ],
+      [
+       "Grammar and vocabulary",
+       "19–36",
+       "grammar forms · word formation · word choice in context",
+       "18",
+       "40 min"
+      ],
+      [
+       "Writing",
+       "37–38",
+       "a personal email · an essay based on a table or chart",
+       "20",
+       "90 min"
+      ]
+     ],
+     "note": "* recommended time from the demo version"
+    },
+    {
+     "type": "table",
+     "title": "Speaking · 17 min including preparation",
+     "icon": "studio_microphone",
+     "head": [
+      "Task",
+      "Format",
+      "Preparation",
+      "Answer",
+      "Points"
+     ],
+     "rows": [
+      [
+       "1",
+       "reading a popular science text aloud",
+       "1.5 min",
+       "up to 1.5 min",
+       "1"
+      ],
+      [
+       "2",
+       "asking 4 direct questions about an advert",
+       "1.5 min",
+       "20 sec per question",
+       "4"
+      ],
+      [
+       "3",
+       "an interview: answering 5 questions",
+       "—",
+       "40 sec per answer",
+       "5"
+      ],
+      [
+       "4",
+       "a monologue: choosing 2 photos for a project + your opinion",
+       "2.5 min",
+       "up to 3 min",
+       "10"
+      ]
+     ]
+    },
+    {
+     "type": "stats",
+     "items": [
+      [
+       "18",
+       "basic-level tasks",
+       "32 points"
+      ],
+      [
+       "24",
+       "high-level tasks",
+       "50 points"
+      ],
+      [
+       "82",
+       "maximum",
+       "primary points"
+      ],
+      [
+       "22",
+       "pass mark (test score)",
+       "= 18 primary points"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "How answers are marked",
+   "title": "Criteria · Writing",
+   "lede": "Tasks 37 and 38 · based on the EGE 2027 demo version",
+   "pics": [
+    "envelope",
+    "bar_chart"
+   ],
+   "blocks": [
+    {
+     "type": "criteria_detail",
+     "task": "37",
+     "title": "Task 37 · Email · max 6 points",
+     "tone": "t37",
+     "icon": "envelope",
+     "scores": [
+      "2",
+      "1",
+      "0"
+     ],
+     "rows": [
+      [
+       "C1 Task completion",
+       [
+        "Fully completed: all aspects covered (full, accurate answers to all questions; 3 questions correctly asked on the given topic); informal style; politeness norms observed. <b>1 incomplete or inaccurate aspect is allowed.</b>",
+        "Not fully completed: not all aspects covered (every case not described under 2 and 0 points).",
+        "Not completed: 3 or more aspects missing, OR all 6 aspects incomplete/inaccurate, OR 1 missing + 4–5 incomplete, OR 2 missing + 2–4 incomplete, OR wrong length."
+       ]
+      ],
+      [
+       "C2 Organisation",
+       [
+        "Logical; linking devices used correctly; correct paragraphs; layout follows the norms. <b>1 error allowed.</b>",
+        "2–3 errors in organisation.",
+        "4 or more errors in organisation."
+       ]
+      ],
+      [
+       "C3 Language",
+       [
+        "Vocabulary and grammar suit the basic level; <b>1–2 lexico-grammatical AND/OR 1–2 spelling/punctuation errors</b>.",
+        "3–4 lexico-grammatical AND/OR 3–4 spelling/punctuation errors.",
+        "5 or more lexico-grammatical AND/OR 5 or more spelling/punctuation errors."
+       ]
+      ]
+     ],
+     "aspects": [
+      "Answer to question 1",
+      "Answer to question 2",
+      "Answer to question 3",
+      "3 questions on the topic given in the task",
+      "Politeness: thanks for the email and/or pleasure at getting it + hope for future contact",
+      "Informal style: greeting, closing phrase, signature"
+     ],
+     "checklist": "C2 checks: logic · paragraphs · linking devices · greeting on a separate line · closing phrase on a separate line · signature on a separate line"
+    },
+    {
+     "type": "criteria_detail",
+     "task": "38",
+     "title": "Task 38 · Essay based on data · max 14 points",
+     "tone": "t38",
+     "icon": "bar_chart",
+     "scores": [
+      "3",
+      "2",
+      "1",
+      "0"
+     ],
+     "rows": [
+      [
+       "C1 Task completion",
+       [
+        "Fully: all aspects covered fully and accurately; neutral style. <b>1 incomplete aspect and 1 style violation allowed.</b>",
+        "Mostly: 1 aspect missing, OR 1 missing + 1 incomplete, OR 2–3 incomplete; 2–3 style violations.",
+        "Not fully: 1 missing + 2–3 incomplete, OR 2 missing, OR 2 missing + 1 incomplete, OR 4–5 incomplete; 4 style violations.",
+        "All other cases, OR wrong length, OR over 30% of the text copied from a published source."
+       ]
+      ],
+      [
+       "C2 Organisation",
+       [
+        "Logical; follows the plan; correct paragraphs; linking devices used correctly.",
+        "The same, but 1–3 errors.",
+        "4–5 errors AND/OR no introduction or no conclusion.",
+        "6+ errors AND/OR no introduction and no conclusion AND/OR the plan is not followed AND/OR no paragraphs."
+       ]
+      ],
+      [
+       "C3 Vocabulary",
+       [
+        "High-level vocabulary; <b>1 lexical error allowed</b>.",
+        "2–3 lexical errors, OR limited but correct vocabulary.",
+        "4 lexical errors.",
+        "5 or more lexical errors."
+       ]
+      ],
+      [
+       "C4 Grammar",
+       [
+        "High-level grammar; <b>1–2 non-repeated errors allowed</b>.",
+        "3–4 grammar errors.",
+        "5–7 grammar errors.",
+        "8 or more grammar errors."
+       ]
+      ],
+      [
+       "C5 Spelling & punctuation",
+       [
+        "— (max 2 points)",
+        "1 spelling AND/OR 1 punctuation error allowed.",
+        "2–4 spelling and/or punctuation errors.",
+        "5 or more spelling and/or punctuation errors."
+       ]
+      ]
+     ],
+     "aspects": [
+      "Introduction matches the topic of the project",
+      "2–3 facts from the data",
+      "1–2 relevant comparisons with comments",
+      "A problem from the area named in the plan + a solution",
+      "Conclusion: opinion on the question in the plan + a reason",
+      "Neutral style"
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Rules for both tasks",
+     "icon": "warning",
+     "items": [
+      "0 points for C1 = 0 points for the whole task.",
+      "Word count: Task 37 — 100–140 words (90–154 accepted); Task 38 — 200–250 words (180–275 accepted).",
+      "Too short (under 90 / under 180 words) → the answer is not checked: 0 points.",
+      "Too long (over 154 / over 275 words) → only the <b>first 140</b> / <b>first 250</b> words are checked.",
+      "Linking devices are required between <b>all</b> parts of the text.",
+      "Task 38: write all numbers in figures. If you answer both 38.1 and 38.2 and do not cross one out, the second one is checked."
+     ]
+    },
+    {
+     "type": "wordcount",
+     "title": "How words are counted",
+     "icon": "memo",
+     "items": [
+      "every word counts, including articles, prepositions, the greeting and your name",
+      "can't, I'm, didn't = one word",
+      "numbers in figures (25, 2026, 42%) = one word",
+      "good-looking, twenty-five = one word",
+      "USA, e-mail, TV = one word"
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "How answers are marked",
+   "title": "Criteria · Speaking",
+   "lede": "Tasks 1–4 · max 20 points · based on the EGE 2027 demo version",
+   "pics": [
+    "studio_microphone",
+    "speaking_head"
+   ],
+   "blocks": [
+    {
+     "type": "criteria_detail",
+     "task": "1",
+     "title": "Task 1 · Reading aloud · max 1 point",
+     "tone": "t1",
+     "icon": "open_book",
+     "scores": [
+      "1",
+      "0"
+     ],
+     "rows": [
+      [
+       "Pronunciation",
+       [
+        "Easy to understand: no unjustified pauses; sentence stress, intonation and word pronunciation are correct. <b>Up to 5 phonetic errors allowed, including 1–2 that distort the meaning.</b>",
+        "Hard to understand: many unnatural pauses and hesitations, wrong stress and mispronounced words, OR more than 5 phonetic errors, OR 3 or more errors that distort the meaning."
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "criteria_detail",
+     "task": "2",
+     "title": "Task 2 · Direct questions · 4 × 1 point",
+     "tone": "t2",
+     "icon": "speech_balloon",
+     "scores": [
+      "1",
+      "0"
+     ],
+     "rows": [
+      [
+       "Each question",
+       [
+        "The question asks for the information required and has the correct form of a <b>direct</b> question; small phonetic or lexical slips do not hinder understanding.",
+        "No question, OR it asks for different information, AND/OR it is not a correct direct question, AND/OR errors block communication."
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "criteria_detail",
+     "task": "3",
+     "title": "Task 3 · Interview · 5 × 1 point",
+     "tone": "t3",
+     "icon": "studio_microphone",
+     "scores": [
+      "1",
+      "0"
+     ],
+     "rows": [
+      [
+       "Each answer",
+       [
+        "A full and accurate answer: <b>2–3 communicatively motivated sentences</b> with no elementary lexico-grammatical or phonetic errors.",
+        "No answer, OR the answer does not match the question, OR fewer than 2 sentences, OR elementary errors (including a mere list of words)."
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "criteria_detail",
+     "task": "4",
+     "title": "Task 4 · Photo monologue · max 10 points",
+     "tone": "t4",
+     "icon": "speaking_head",
+     "scores": [
+      "4",
+      "3",
+      "2",
+      "1",
+      "0"
+     ],
+     "rows": [
+      [
+       "C1 Content",
+       [
+        "All 4 aspects fully, accurately and in detail · 12–15 sentences",
+        "1 aspect missing, OR 1–2 incomplete · 12–15 sentences",
+        "1 missing + 1 incomplete, OR 3 incomplete · 10–11 sentences",
+        "1 missing + 2 incomplete, OR 2 missing, OR all incomplete · 8–9 sentences",
+        "3+ missing, OR 2 missing + 1 incomplete, OR 1 missing + rest incomplete, OR 7 sentences or fewer"
+       ]
+      ],
+      [
+       "C2 Organisation",
+       [
+        "—",
+        "Logical and complete: an opening with an address to your friend <b>and</b> a closing phrase; linking correct; 1 error allowed",
+        "Mostly logical, complete (opening with address and closing); 2–3 errors",
+        "No opening OR no closing, AND/OR 4–5 errors",
+        "No opening and no closing, AND/OR 6+ errors"
+       ]
+      ],
+      [
+       "C3 Language",
+       [
+        "—",
+        "Up to 3 minor lexico-grammatical AND/OR up to 3 minor phonetic errors",
+        "Up to 4–5 lexico-grammatical (max 2 gross) AND/OR 4–5 phonetic (max 2 gross)",
+        "Up to 6–7 lexico-grammatical (max 3 gross) AND/OR 6–7 phonetic (max 3 gross)",
+        "8+ lexico-grammatical OR 4+ gross, AND/OR 8+ phonetic OR 4+ gross, OR a list of words"
+       ]
+      ]
+     ],
+     "aspects": [
+      "Choice of photos explained: brief description, differences, link to the project",
+      "Advantages (1–2) of both options",
+      "Disadvantages (1–2) of both options",
+      "Opinion on the subject of the project: which option you'd prefer and why"
+     ],
+     "checklist": "Gross errors = elementary-level errors and errors that lead to a breakdown in communication. 0 for C1 = 0 for the whole task."
+    }
+   ]
+  },
+  {
+   "kick": "Speaking",
+   "title": "Task 1 · Reading aloud",
+   "lede": "1.5 min to prepare · up to 1.5 min to read · 1 point",
+   "pics": [
+    "open_book",
+    "speaking_head"
+   ],
+   "blocks": [
+    {
+     "type": "demo",
+     "text": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it."
+    },
+    {
+     "type": "steps",
+     "title": "Mark up the text in 90 seconds",
+     "icon": "pencil",
+     "items": [
+      "<b>Pauses /</b> — after introductory phrases, before <i>and, but, which</i>, between a long subject and the verb.",
+      "<b>Stress</b> — on content words: nouns, main verbs, adjectives, numbers. Function words are unstressed.",
+      "<b>Linking r ‿</b> — a word ending in <i>-r / -re</i> before a vowel: <i>for‿example, more‿often, better‿at</i>.",
+      "<b>Intonation</b> — ↘ at the end of statements and wh-questions, ↗ inside lists and in yes/no questions.",
+      "<b>Whisper</b> numbers, names and long words before you start."
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Pairs where one mistake changes the meaning",
+     "icon": "speaking_head",
+     "items": [
+      "hit / heat",
+      "leave / live",
+      "working / walking",
+      "loud / load",
+      "noises / noses",
+      "causes / cases",
+      "fit / feet",
+      "pool / pull",
+      "full / fool",
+      "sport / spot",
+      "coach / couch",
+      "race / rice"
+     ]
+    },
+    {
+     "type": "fipi",
+     "items": [
+      [
+       "no",
+       "Candidates <b>add</b> words that are not in the text: articles, prepositions, <i>-s / -ed</i> endings."
+      ],
+      [
+       "no",
+       "They mix British and American pronunciation, stress words wrongly and ignore linking r."
+      ],
+      [
+       "no",
+       "They do not split long sentences into sense groups and get the final intonation wrong."
+      ],
+      [
+       "yes",
+       "What helps: regular text mark-up and reading aloud with classmates spotting the mistakes."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "Speaking",
+   "title": "Task 2 · Direct questions",
+   "lede": "1.5 min to prepare · 20 seconds per question · 4 points",
+   "pics": [
+    "speech_balloon",
+    "telephone_receiver"
+   ],
+   "blocks": [
+    {
+     "type": "demo",
+     "text": "Task 2. Study the advertisement. [advertisement] You are considering going to the cooking masterclass and now you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: 1) kinds of dishes; 2) number of people in the group; 3) the duration of the masterclass; 4) tuition fee. You have 20 seconds to ask each question."
+    },
+    {
+     "type": "frame",
+     "title": "Question structure",
+     "icon": "clipboard",
+     "slots": [
+      "Wh-word",
+      "auxiliary verb",
+      "the / your + noun",
+      "main verb",
+      "?"
+     ],
+     "examples": [
+      "Where · is · the club · located ?",
+      "How long · does · the trip · last ?",
+      "What equipment · do · I · need to bring ?",
+      "Can · the game · be played · outdoors ?"
+     ]
+    },
+    {
+     "type": "pool",
+     "title": "Prompt → question starter",
+     "icon": "light_bulb",
+     "groups": [
+      [
+       "place",
+       [
+        "Where is the … located?",
+        "Where does the … start?"
+       ]
+      ],
+      [
+       "time",
+       [
+        "How long does the … last?",
+        "What dates are available?",
+        "When does the … open?"
+       ]
+      ],
+      [
+       "money",
+       [
+        "How much does the … cost?",
+        "How much is the entrance fee?",
+        "Is there a discount for …?"
+       ]
+      ],
+      [
+       "requirements",
+       [
+        "What equipment do I need?",
+        "What clothes should I wear?",
+        "What is the minimum age to join the …?"
+       ]
+      ],
+      [
+       "conditions",
+       [
+        "How many players can take part?",
+        "How difficult is the …?",
+        "Can the … be played outdoors?"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "fipi",
+     "items": [
+      [
+       "no",
+       "<b>Where is a new fitness centre?</b> asks about any centre. You are calling a particular one: <b>the / your</b> fitness centre."
+      ],
+      [
+       "no",
+       "<b>What is starting point?</b> The prompts have no articles, but your question needs them. ✓ <i>Where is the starting point?</i>"
+      ],
+      [
+       "no",
+       "<b>What is the minimum age of the trainers?</b> asks for the wrong information. ✓ <i>What is the minimum age to join the club?</i>"
+      ],
+      [
+       "no",
+       "If you ask several versions of one question, only the <b>last</b> one is marked."
+      ],
+      [
+       "yes",
+       "Look at the picture and the slogan: they often tell you what the organisation is."
+      ],
+      [
+       "yes",
+       "Questions about prices are fine here (you are a customer), but not in an email to a friend."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "Speaking",
+   "title": "Task 3 · Interview",
+   "lede": "40 seconds per answer · 2–3 sentences · 5 points",
+   "pics": [
+    "studio_microphone",
+    "speech_balloon"
+   ],
+   "blocks": [
+    {
+     "type": "demo",
+     "text": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question."
+    },
+    {
+     "type": "formula",
+     "items": [
+      "A direct answer",
+      "A reason or detail",
+      "An example or conclusion"
+     ]
+    },
+    {
+     "type": "pool",
+     "title": "Sentence starters",
+     "icon": "speech_balloon",
+     "groups": [
+      [
+       "answer",
+       [
+        "Personally, I…",
+        "To be honest, …",
+        "Yes, I have. / No, I don't."
+       ]
+      ],
+      [
+       "reason",
+       [
+        "The main reason is that…",
+        "That's because…",
+        "This is why…"
+       ]
+      ],
+      [
+       "example",
+       [
+        "For example, …",
+        "Last summer I…",
+        "Every weekend we…"
+       ]
+      ],
+      [
+       "past",
+       [
+        "When I was a child, I used to…",
+        "A few years ago I…"
+       ]
+      ],
+      [
+       "future / imagined",
+       [
+        "In the future I'd love to…",
+        "If I had the chance, I would…"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "title": "Check yourself",
+     "icon": "cross_mark",
+     "items": [
+      [
+       "no",
+       "Team sports. It's fun."
+      ],
+      [
+       "yes",
+       "I prefer team sports because… + a second full sentence"
+      ],
+      [
+       "no",
+       "Yes, I do. I like it. (repeats the question)"
+      ],
+      [
+       "yes",
+       "Yes, I do. + new information"
+      ],
+      [
+       "no",
+       "What did you do as a kid? — I do karate."
+      ],
+      [
+       "yes",
+       "When I was a kid, I did karate."
+      ]
+     ]
+    },
+    {
+     "type": "a2list",
+     "title": "Elementary level: what must be error-free in Task 3 (Appendix 1 of the demo)",
+     "items": [
+      "Adjectives: comparative and superlative",
+      "Adjectives and adverbs",
+      "Articles (when they change the meaning)",
+      "Future: will, going to, Present Continuous",
+      "Imperatives",
+      "Linking verbs: to be, to look, to feel, to seem",
+      "I prefer … / I'd prefer",
+      "Modals: can/could, have to, should, must",
+      "Nouns: countable/uncountable, plurals, no plural, plural-only nouns, subject–verb agreement, much/many",
+      "Passive (Present and Past Simple)",
+      "Present and Past Continuous",
+      "Present and Past Simple",
+      "Possessive case of nouns",
+      "Prepositions of place, time, direction",
+      "Present Perfect",
+      "Pronouns",
+      "There + to be / It + to be",
+      "enjoy / like / hate / love doing",
+      "like / hate / love / want to do",
+      "Word order in statements and questions"
+     ]
+    },
+    {
+     "type": "fipi",
+     "items": [
+      [
+       "no",
+       "<b>Misunderstanding the question.</b> <i>What jobs…?</i> — name jobs, not companies. <i>…rather than…?</i> — it asks you to choose between two options."
+      ],
+      [
+       "no",
+       "<b>Short answers</b> without a subject and verb are not accepted."
+      ],
+      [
+       "no",
+       "<b>Ignoring the tense.</b> A question in the Present needs an answer in the Present."
+      ],
+      [
+       "no",
+       "<i>That's an interesting question · I think · Thank you for your question</i> do not count as a second sentence."
+      ],
+      [
+       "no",
+       "Any basic (A2-level) mistake gives 0 for the answer. Russian words are not allowed."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "Speaking",
+   "title": "Task 4 · Photo monologue",
+   "lede": "2.5 min to prepare · up to 3 min · 12–15 sentences · 10 points",
+   "pics": [
+    "speaking_head",
+    "camping"
+   ],
+   "blocks": [
+    {
+     "type": "demo",
+     "text": "Task 4. Imagine that you and your friend are doing a school project “Solo or in company”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: • explain the choice of the illustrations for the project by briefly describing them and noting the differences; • mention the advantages (1–2) of the two ways of travelling; • mention the disadvantages (1–2) of the two ways of travelling; • express your opinion on the subject of the project – say which way of travelling presented in the pictures you'd prefer and why. You will speak for not more than 3 minutes (12–15 sentences). You have to talk continuously."
+    },
+    {
+     "type": "skeleton",
+     "title": "Structure of the voice message",
+     "icon": "telephone_receiver",
+     "lines": [
+      [
+       "1 · Greeting",
+       "Hi, ___! I've found some pictures to illustrate our project about ___. I'm recording this message because I can't share the images right now, so I'm going to talk about them."
+      ],
+      [
+       "2 · Description",
+       "So, in both pictures, there are ___. In one picture, ___ (action, place). In the other picture, ___ (action, place)."
+      ],
+      [
+       "2 · Difference",
+       "The main difference between them is that ___, whereas ___."
+      ],
+      [
+       "2 · Link to the project",
+       "I think both pictures suit our project because ___."
+      ],
+      [
+       "3 · Pros and cons",
+       "Of course, both ___ presented in the pictures have their own advantages and disadvantages."
+      ],
+      [
+       "3 · Advantages",
+       "Speaking of advantages, I can say that ___. On the other hand, ___."
+      ],
+      [
+       "3 · Disadvantages",
+       "Speaking of disadvantages, I can say that ___. As for ___, I suppose that ___."
+      ],
+      [
+       "4 · Opinion",
+       "Personally, I prefer ___ / If I had to choose, I would lean towards ___. I think it is ___ because ___."
+      ],
+      [
+       "5 · Conclusion",
+       "So, that's what I think about the pictures for our project. I'd love to hear your thoughts, too. Please let me know once you receive my message."
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "title": "Tips for Task 4",
+     "icon": "light_bulb",
+     "items": [
+      "Your friend cannot see the photos: say <b>in one picture / in the other picture</b>, not <i>in the first / second photo</i>.",
+      "Use a wide range of vocabulary: synonyms, different parts of speech. Avoid repeating the same words.",
+      "Watch verb tenses and subject–verb agreement.",
+      "Speak clearly and at a moderate pace: don't rush, but avoid long pauses.",
+      "Don't worry — anxiety makes speech less logical. The more you practise, the better you get."
+     ]
+    },
+    {
+     "type": "fipi",
+     "items": [
+      [
+       "no",
+       "This is a voice message to a friend. Without a greeting and a goodbye you lose points for Organisation. Email phrases (<i>Write back soon, Best wishes, All the best, I'll be waiting for your answer</i>) are wrong here."
+      ],
+      [
+       "no",
+       "Differences based on a template, not on a real feature. In 2026 chemistry and geography were compared as “science vs humanities” instead of “needs a lab and experiments” vs “does not”."
+      ],
+      [
+       "yes",
+       "Practise finding the feature with Odd-one-out tasks and discuss the task instructions before answering."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "Writing",
+   "title": "Task 37 · Email to a friend",
+   "lede": "100–140 words · 6 points · informal style",
+   "pics": [
+    "envelope",
+    "pencil"
+   ],
+   "blocks": [
+    {
+     "type": "demo",
+     "text": "You have received an email message from your English-speaking pen-friend Sophia: [email] Write an email to Sophia. In your message: – answer her questions; – ask 3 questions about the volunteer group. Write 100–140 words. Remember the rules of email writing."
+    },
+    {
+     "type": "skeleton",
+     "title": "Structure of the email",
+     "icon": "envelope",
+     "lines": [
+      [
+       "Greeting",
+       "Hi / Dear ___,"
+      ],
+      [
+       "Thanks",
+       "Thanks for your email! It was great to hear from you."
+      ],
+      [
+       "Answers to 3 questions",
+       "You asked me about ___. Well, ___. As for ___, ___. Speaking of ___, ___."
+      ],
+      [
+       "Link + 3 questions",
+       "By the way, I was glad to hear that ___! ___? ___? ___?"
+      ],
+      [
+       "Closing + future contact",
+       "Anyway, I have to go now — ___."
+      ],
+      [
+       "Closing phrase",
+       "Write back soon!"
+      ],
+      [
+       "Ending",
+       "Best wishes, / Love,"
+      ],
+      [
+       "Signature",
+       "___ (first name only)"
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "title": "The five aspects of C1",
+     "icon": "clipboard",
+     "items": [
+      "Full answers to all <b>three</b> of your friend's questions.",
+      "Exactly <b>three</b> questions on the topic given in the task.",
+      "Politeness: thanks or pleasure at getting the email + hope for future contact.",
+      "Informal style: greeting, closing phrase and name on separate lines.",
+      "Contractions are fine: <i>I'm, don't, it's</i>."
+     ]
+    },
+    {
+     "type": "fipi",
+     "items": [
+      [
+       "no",
+       "The weakest criterion is <b>language</b>: tenses, articles, <i>-s</i>. Reread your email once just for grammar."
+      ],
+      [
+       "no",
+       "Impolite questions: how much a present, a course or a trip cost."
+      ],
+      [
+       "yes",
+       "In 2026 friends asked about Victory Day and 8 March: be ready to describe national holidays and key events in Russian history."
+      ],
+      [
+       "yes",
+       "Guess unfamiliar words from context and word parts: <i>memory → commemorate</i>."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "Writing",
+   "title": "Task 38 · Analyse the task first",
+   "lede": "200–250 words · 14 points · neutral style · numbers in figures",
+   "pics": [
+    "bar_chart",
+    "magnifying_glass_tilted_left"
+   ],
+   "blocks": [
+    {
+     "type": "demo",
+     "text": "Imagine that you are doing a project on living conditions in rural areas in Zetland. You have found some data on the subject – the results of a survey conducted among Zetland school students (see the table below). Comment on the survey data and give your opinion on the subject of the project. The survey question: … Choose one option. Write 200–250 words. Use the following plan: – make an opening statement on the subject of the project; – select and report 2–3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a possible problem that can arise when living in the countryside and suggest a way of solving it; – conclude by giving and explaining your opinion on how to improve rural living conditions."
+    },
+    {
+     "type": "steps",
+     "title": "Seven questions to ask before you write",
+     "icon": "magnifying_glass_tilted_left",
+     "items": [
+      "What is the situation? — I am doing a <b>project</b> on a given topic.",
+      "Where do the data come from? — a survey. Conducted among <b>whom</b>? (<i>a survey conducted among…</i>)",
+      "What question were the respondents asked?",
+      "How many options could each person choose? — <b>Choose one option</b>: one, total 100%.",
+      "Point 3: what am I comparing, and how will I explain the difference?",
+      "Point 4: a problem in <b>which area</b> does the plan ask for?",
+      "Point 5: my opinion on <b>which question</b>?"
+     ]
+    },
+    {
+     "type": "thesis",
+     "title": "Outline plan · 5 minutes",
+     "icon": "memo",
+     "items": [
+      "Project topic + source: a survey among …",
+      "2–3 facts: option · % · verb of choice",
+      "Comparison: A (…%) vs B (…%) → explanation",
+      "A problem from the area in point 4 → a specific solution",
+      "Opinion on the question in point 5 + a reason"
+     ]
+    },
+    {
+     "type": "rule",
+     "title": "What respondents did",
+     "icon": "check_mark_button",
+     "items": [
+      [
+       "no",
+       "10% of the respondents mentioned… / said…"
+      ],
+      [
+       "yes",
+       "chose · opted for · picked · gave preference to · voted for"
+      ]
+     ],
+     "note": "Respondents did not “mention” anything — they chose one option from a list."
+    },
+    {
+     "type": "fipi",
+     "items": [
+      [
+       "no",
+       "<b>The audience changes</b>: teenagers in the introduction, “people in Zetland” later. Keep one group throughout."
+      ],
+      [
+       "no",
+       "<b>Point 4 is the hardest</b>: the problem is not from the project area and the solution is “universal”."
+      ],
+      [
+       "no",
+       "A project is a question without a ready answer. Memorised “best essays” do not work; over 30% copied text = 0."
+      ],
+      [
+       "no",
+       "The lowest criterion is <b>grammar</b>. Save 5 minutes for checking."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "Writing",
+   "title": "Task 38 · Structure",
+   "lede": "Five points in the plan = five paragraphs",
+   "pics": [
+    "bar_chart",
+    "memo"
+   ],
+   "blocks": [
+    {
+     "type": "skeleton",
+     "title": "Frame with gaps",
+     "icon": "memo",
+     "lines": [
+      [
+       "1 · Introduction",
+       "___ have become increasingly popular among ___, and this trend ___. ___. For my project on ___, I have found a table showing the results of a survey on the topic conducted among ___. I have analysed the data and would like to share my findings and give my opinion on the problem."
+      ],
+      [
+       "2 · Facts",
+       "Judging by the statistics, ___ is the second most popular option, the figure standing at ___% of the respondents. Another option is ___, chosen by almost 1 in 10 of the people asked (___%)."
+      ],
+      [
+       "3 · Comparison",
+       "According to the data in the table, about half of the survey participants (___%) chose ___. Meanwhile, “___” and “___” were chosen ___ times less often (___% and ___% respectively). This difference shows that ___ are more likely to ___ rather than ___."
+      ],
+      [
+       "4 · Problem + solution",
+       "It should also be mentioned that ___. That is why ___ can ___. For that reason, I would recommend ___."
+      ],
+      [
+       "5 · Conclusion",
+       "To conclude, ___ often ___. ___ allow(s) ___ to ___. Because of this, ___ should not ___, but should ___."
+      ]
+     ]
+    },
+    {
+     "type": "pool",
+     "title": "Language for data",
+     "icon": "chart_increasing",
+     "groups": [
+      [
+       "proportions",
+       [
+        "the majority of",
+        "nearly half (48%)",
+        "a third / a quarter",
+        "one in five",
+        "a small minority"
+       ]
+      ],
+      [
+       "comparing",
+       [
+        "twice / three times as high as",
+        "slightly / considerably higher than",
+        "almost the same proportion",
+        "whereas / while"
+       ]
+      ],
+      [
+       "linking",
+       [
+        "Firstly,",
+        "Moreover,",
+        "However,",
+        "As a result,",
+        "Therefore,",
+        "In conclusion,"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "title": "Neutral style",
+     "icon": "pencil",
+     "items": [
+      [
+       "no",
+       "don't · it's · kids · a lot of · !"
+      ],
+      [
+       "yes",
+       "do not · it is · children · many · ."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kick": "Written part",
+   "title": "Tasks 19–36",
+   "lede": "Read the instructions — that is half the answer",
+   "pics": [
+    "memo",
+    "check_mark_button"
+   ],
+   "blocks": [
+    {
+     "type": "compare",
+     "items": [
+      [
+       "19–24",
+       "change the <b>grammatical form</b> of the same word",
+       "RUN → have been running · CHILD → children"
+      ],
+      [
+       "25–29",
+       "make a <b>related word</b>, often a different part of speech",
+       "VARY → various · PRICE → priceless"
+      ],
+      [
+       "30–36",
+       "choose a word by <b>meaning and collocation</b>",
+       "manage + to do · succeed in doing"
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "title": "Strategy for Tasks 25–29",
+     "icon": "magnifying_glass_tilted_left",
+     "items": [
+      "Read the whole sentence, not only the line with the gap.",
+      "An article or adjective before the gap → you need a <b>noun</b>.",
+      "A noun after the gap → you need an <b>adjective</b>: <i>with ___ fillings → various</i>.",
+      "Next to a verb → often an <b>adverb</b>.",
+      "Check number: <i>a huge ___ → collection · there are ___ → achievements · both locals and ___ → visitors</i>.",
+      "A negative meaning? <b>un- / in- / im- / il- / ir-</b> or <b>-less</b>: <i>priceless</i>, not <i>unprice</i>."
+     ]
+    },
+    {
+     "type": "fipi",
+     "items": [
+      [
+       "no",
+       "Candidates confuse the instructions for 19–24 and 25–29: they change the part of speech where only the form is needed, and vice versa."
+      ],
+      [
+       "no",
+       "Spelling counts: a misspelt word is a wrong answer, even when the mistake is in the base word given in capitals."
+      ],
+      [
+       "no",
+       "Hardest in 19–24: sequence of tenses, reported speech, Perfect tenses, the Passive — and even <i>children, these</i>."
+      ],
+      [
+       "no",
+       "In 30–36, synonyms with different collocations and patterns cause problems. <i>tasty</i> = food, <i>tasteful</i> = design."
+      ],
+      [
+       "yes",
+       "Linking words are done best: check whether the idea is addition or contrast."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "frames": {
+  "t4": [
+   [
+    "1 · Greeting",
+    "Hi, ___! I've found some pictures to illustrate our project about ___. I'm recording this message because I can't share the images right now, so I'm going to talk about them."
+   ],
+   [
+    "2 · Description",
+    "So, in both pictures, there are ___. In one picture, ___ (action, place). In the other picture, ___ (action, place)."
+   ],
+   [
+    "2 · Difference",
+    "The main difference between them is that ___, whereas ___."
+   ],
+   [
+    "2 · Link to the project",
+    "I think both pictures suit our project because ___."
+   ],
+   [
+    "3 · Pros and cons",
+    "Of course, both ___ presented in the pictures have their own advantages and disadvantages."
+   ],
+   [
+    "3 · Advantages",
+    "Speaking of advantages, I can say that ___. On the other hand, ___."
+   ],
+   [
+    "3 · Disadvantages",
+    "Speaking of disadvantages, I can say that ___. As for ___, I suppose that ___."
+   ],
+   [
+    "4 · Opinion",
+    "Personally, I prefer ___ / If I had to choose, I would lean towards ___. I think it is ___ because ___."
+   ],
+   [
+    "5 · Conclusion",
+    "So, that's what I think about the pictures for our project. I'd love to hear your thoughts, too. Please let me know once you receive my message."
+   ]
+  ],
+  "t38": [
+   [
+    "1 · Introduction",
+    "___ have become increasingly popular among ___, and this trend ___. ___. For my project on ___, I have found a table showing the results of a survey on the topic conducted among ___. I have analysed the data and would like to share my findings and give my opinion on the problem."
+   ],
+   [
+    "2 · Facts",
+    "Judging by the statistics, ___ is the second most popular option, the figure standing at ___% of the respondents. Another option is ___, chosen by almost 1 in 10 of the people asked (___%)."
+   ],
+   [
+    "3 · Comparison",
+    "According to the data in the table, about half of the survey participants (___%) chose ___. Meanwhile, “___” and “___” were chosen ___ times less often (___% and ___% respectively). This difference shows that ___ are more likely to ___ rather than ___."
+   ],
+   [
+    "4 · Problem + solution",
+    "It should also be mentioned that ___. That is why ___ can ___. For that reason, I would recommend ___."
+   ],
+   [
+    "5 · Conclusion",
+    "To conclude, ___ often ___. ___ allow(s) ___ to ___. Because of this, ___ should not ___, but should ___."
+   ]
+  ],
+  "t37": [
+   [
+    "Greeting",
+    "Hi / Dear ___,"
+   ],
+   [
+    "Thanks",
+    "Thanks for your email! It was great to hear from you."
+   ],
+   [
+    "Answers to 3 questions",
+    "You asked me about ___. Well, ___. As for ___, ___. Speaking of ___, ___."
+   ],
+   [
+    "Link + 3 questions",
+    "By the way, I was glad to hear that ___! ___? ___? ___?"
+   ],
+   [
+    "Closing + future contact",
+    "Anyway, I have to go now — ___."
+   ],
+   [
+    "Closing phrase",
+    "Write back soon!"
+   ],
+   [
+    "Ending",
+    "Best wishes, / Love,"
+   ],
+   [
+    "Signature",
+    "___ (first name only)"
+   ]
+  ]
+ }
+}

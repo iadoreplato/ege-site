@@ -1,0 +1,5174 @@
+{
+ "id": "sport",
+ "title": "Sport & Healthy Lifestyle",
+ "subtitle": "Topic module · EGE codifier topics: healthy lifestyle, youth leisure, sport",
+ "cover_pics": [
+  "soccer_ball",
+  "person_swimming",
+  "skier",
+  "person_in_lotus_position",
+  "broccoli",
+  "stopwatch",
+  "trophy",
+  "person_biking",
+  "tennis",
+  "red_apple",
+  "person_climbing",
+  "chess_pawn"
+ ],
+ "typology": [
+  [
+   "volleyball",
+   "Team sports",
+   "person_fencing",
+   "Individual sports",
+   "who with?",
+   [
+    "learn teamwork and communication",
+    "moral support from team-mates"
+   ],
+   [
+    "depend on other players",
+    "conflicts, a fixed schedule"
+   ],
+   [
+    "train at your own pace",
+    "develop independence and self-discipline"
+   ],
+   [
+    "nobody to share success or failure with",
+    "easy to lose motivation"
+   ],
+   "team game — individual sport · on your own — in a team"
+  ],
+  [
+   "soccer_ball",
+   "Physical sports",
+   "chess_pawn",
+   "Mind sports",
+   "what does it develop?",
+   [
+    "keep your body fit and strong",
+    "give you energy"
+   ],
+   [
+    "risk of injury",
+    "need good health and stamina"
+   ],
+   [
+    "develop logic, memory and concentration",
+    "suitable for any age"
+   ],
+   [
+    "you sit still for hours",
+    "no physical exercise"
+   ],
+   "physical effort — mental effort · body — mind"
+  ],
+  [
+   "sun",
+   "Exercising outdoors",
+   "person_lifting_weights",
+   "Exercising indoors",
+   "where?",
+   [
+    "fresh air and nature",
+    "usually free"
+   ],
+   [
+    "depends on the weather",
+    "not safe in the dark"
+   ],
+   [
+    "any weather, any season",
+    "all the equipment is there"
+   ],
+   [
+    "can be stuffy and crowded",
+    "often costs money"
+   ],
+   "outdoors — indoors · in the open air — in a gym"
+  ],
+  [
+   "person_biking",
+   "Active pastime",
+   "yarn",
+   "Calm, creative pastime",
+   "do you move?",
+   [
+    "good for health and energy",
+    "a chance to explore new places"
+   ],
+   [
+    "can be tiring or dangerous",
+    "needs equipment"
+   ],
+   [
+    "relaxing, reduces stress",
+    "develops patience and creativity"
+   ],
+   [
+    "no physical activity",
+    "may seem boring"
+   ],
+   "active — calm · physical — creative"
+  ],
+  [
+   "parachute",
+   "Extreme sports",
+   "person_walking",
+   "Everyday activities",
+   "how risky?",
+   [
+    "an adrenaline rush",
+    "help you overcome fears"
+   ],
+   [
+    "high risk of serious injury",
+    "expensive gear and training"
+   ],
+   [
+    "safe and accessible to everyone",
+    "easy to do regularly"
+   ],
+   [
+    "can become routine",
+    "less exciting"
+   ],
+   "high-risk — safe · thrilling — relaxing"
+  ],
+  [
+   "person_swimming",
+   "Water sports",
+   "soccer_ball",
+   "Land sports",
+   "water or land?",
+   [
+    "train all the muscles, easy on the joints",
+    "relaxing"
+   ],
+   [
+    "need a pool or open water",
+    "dangerous without supervision"
+   ],
+   [
+    "need only a ball and a pitch",
+    "develop team spirit"
+   ],
+   [
+    "risk of injuries",
+    "depend on the weather"
+   ],
+   "in the water — on a pitch"
+  ],
+  [
+   "person_biking",
+   "Summer sports",
+   "skier",
+   "Winter sports",
+   "when?",
+   [
+    "long warm days",
+    "easy to do with friends"
+   ],
+   [
+    "heat can be exhausting",
+    "crowded places"
+   ],
+   [
+    "frosty air hardens the body",
+    "snowy landscapes"
+   ],
+   [
+    "risk of injury on ice and slopes",
+    "expensive equipment and resorts"
+   ],
+   "typical of summer — only possible in winter"
+  ],
+  [
+   "person_running",
+   "Cardio",
+   "person_in_lotus_position",
+   "Mind-body (yoga)",
+   "what does it train?",
+   [
+    "strengthens the heart",
+    "easy to start"
+   ],
+   [
+    "hard on the knees",
+    "can be monotonous"
+   ],
+   [
+    "improves flexibility and balance",
+    "calms the mind"
+   ],
+   [
+    "results come slowly",
+    "needs an instructor at first"
+   ],
+   "endurance — flexibility · energising — calming"
+  ],
+  [
+   "person_lifting_weights",
+   "In a gym",
+   "mobile_phone",
+   "At home (online)",
+   "where and with what?",
+   [
+    "modern equipment and expert advice",
+    "motivating atmosphere"
+   ],
+   [
+    "membership can be expensive",
+    "time to get there"
+   ],
+   [
+    "save time and money",
+    "train whenever you like"
+   ],
+   [
+    "easy to lose motivation",
+    "poor technique without a coach"
+   ],
+   "special equipment — no equipment · supervised — unsupervised"
+  ],
+  [
+   "clipboard",
+   "With a trainer",
+   "person_running",
+   "On your own",
+   "supervised or alone?",
+   [
+    "correct technique, fewer injuries",
+    "a personal programme"
+   ],
+   [
+    "expensive",
+    "depends on the trainer's schedule"
+   ],
+   [
+    "free and flexible",
+    "teaches independence"
+   ],
+   [
+    "wrong technique → injury",
+    "easy to give up"
+   ],
+   "under supervision — alone"
+  ],
+  [
+   "stadium",
+   "Watching live",
+   "television",
+   "Watching on screen",
+   "where do you watch?",
+   [
+    "unforgettable atmosphere",
+    "support your team in person"
+   ],
+   [
+    "expensive tickets",
+    "crowds and bad weather"
+   ],
+   [
+    "replays and expert commentary",
+    "comfortable and free"
+   ],
+   [
+    "no real atmosphere",
+    "easy to get distracted"
+   ],
+   "at the stadium — at home · live — on screen"
+  ],
+  [
+   "handshake",
+   "In company",
+   "person_walking",
+   "Solo",
+   "with friends or alone?",
+   [
+    "more fun, mutual support",
+    "harder to skip a session"
+   ],
+   [
+    "adapt to others' pace",
+    "chatting instead of training"
+   ],
+   [
+    "your own pace and plans",
+    "time to think"
+   ],
+   [
+    "can feel lonely",
+    "nobody to help if something goes wrong"
+   ],
+   "in a group — on your own"
+  ],
+  [
+   "alarm_clock",
+   "Morning workouts",
+   "watch",
+   "Evening workouts",
+   "when do you train?",
+   [
+    "energise you for the day",
+    "gyms are less crowded"
+   ],
+   [
+    "hard to get up early",
+    "need a longer warm-up"
+   ],
+   [
+    "relieve stress after the day",
+    "muscles already warm"
+   ],
+   [
+    "may affect sleep",
+    "easy to skip when tired"
+   ],
+   "at dawn — after a busy day"
+  ],
+  [
+   "trophy",
+   "Professional sport",
+   "thumbs_up",
+   "Amateur sport",
+   "what for?",
+   [
+    "fame, money and travel",
+    "representing your country"
+   ],
+   [
+    "huge pressure and injuries",
+    "a short career"
+   ],
+   [
+    "for fun and health",
+    "no pressure to win"
+   ],
+   [
+    "no income",
+    "fewer chances to compete"
+   ],
+   "a career — a hobby · to win — for fun"
+  ]
+ ],
+ "units": [
+  {
+   "num": 1,
+   "title": "Sports & Competitions",
+   "lede": "Sports, venues, equipment and competitions",
+   "pics": [
+    "soccer_ball",
+    "stadium",
+    "trophy"
+   ],
+   "vocab": [
+    {
+     "type": "gpd",
+     "groups": [
+      [
+       "GO",
+       "+ -ing · moving from place to place",
+       [
+        {
+         "img": "person_swimming",
+         "en": "to go swimm[[ing]]",
+         "ru": ""
+        },
+        {
+         "img": "skier",
+         "en": "to go ski[[ing]]",
+         "ru": ""
+        },
+        {
+         "img": "person_biking",
+         "en": "to go cycl[[ing]]",
+         "ru": ""
+        },
+        {
+         "img": "person_climbing",
+         "en": "to go climb[[ing]]",
+         "ru": ""
+        }
+       ]
+      ],
+      [
+       "PLAY",
+       "games with a ball, a puck or an opponent",
+       [
+        {
+         "img": "soccer_ball",
+         "en": "to play football",
+         "ru": ""
+        },
+        {
+         "img": "tennis",
+         "en": "to play tennis",
+         "ru": ""
+        },
+        {
+         "img": "chess_pawn",
+         "en": "to play chess",
+         "ru": ""
+        },
+        {
+         "img": "ice_hockey",
+         "en": "to play hockey",
+         "ru": ""
+        }
+       ]
+      ],
+      [
+       "DO",
+       "no ball · martial arts · fitness",
+       [
+        {
+         "img": "person_in_lotus_position",
+         "en": "to do yoga",
+         "ru": ""
+        },
+        {
+         "img": "martial_arts_uniform",
+         "en": "to do karate",
+         "ru": ""
+        },
+        {
+         "img": "person_cartwheeling",
+         "en": "to do gymnastics",
+         "ru": ""
+        },
+        {
+         "img": "person_lifting_weights",
+         "en": "to do weightlifting",
+         "ru": ""
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "venues",
+     "title": "Where sport happens: which word for which sport",
+     "items": [
+      {
+       "img": "goal_net",
+       "en": "pitch",
+       "ru": "поле",
+       "sports": "football, rugby, cricket, field hockey",
+       "prep": "[[on]] the pitch",
+       "note": "grass with lines · AmE: field"
+      },
+      {
+       "img": "baseball",
+       "en": "field",
+       "ru": "поле",
+       "sports": "baseball, lapta; field events in athletics",
+       "prep": "[[on]] the field",
+       "note": "open outdoor area"
+      },
+      {
+       "img": "tennis",
+       "en": "court",
+       "ru": "корт, площадка",
+       "sports": "tennis, basketball, volleyball, badminton, squash",
+       "prep": "[[on]] the court",
+       "note": "hard surface, a net or hoops"
+      },
+      {
+       "img": "ice_skate",
+       "en": "rink",
+       "ru": "каток",
+       "sports": "ice hockey, figure skating, speed skating",
+       "prep": "[[on]] / [[at]] the rink",
+       "note": "ice rink · roller rink"
+      },
+      {
+       "img": "running_shoe",
+       "en": "track",
+       "ru": "беговая дорожка, трек",
+       "sports": "running, track cycling, motor racing",
+       "prep": "[[on]] the track",
+       "note": "in a pool it is a [[lane]]"
+      },
+      {
+       "img": "person_golfing",
+       "en": "course",
+       "ru": "поле, трасса",
+       "sports": "golf, horse racing, cross-country running",
+       "prep": "[[on]] the golf course",
+       "note": "a golf course · a racecourse"
+      },
+      {
+       "img": "skier",
+       "en": "slope / piste",
+       "ru": "склон, трасса",
+       "sports": "skiing, snowboarding",
+       "prep": "[[on]] the slopes",
+       "note": "usually plural: the slopes"
+      },
+      {
+       "img": "boxing_glove",
+       "en": "ring",
+       "ru": "ринг",
+       "sports": "boxing, professional wrestling",
+       "prep": "[[in]] the ring",
+       "note": "ring ≠ rink!"
+      },
+      {
+       "img": "martial_arts_uniform",
+       "en": "mat",
+       "ru": "ковёр, мат",
+       "sports": "judo, sambo, wrestling, gymnastics, yoga",
+       "prep": "[[on]] the mat",
+       "note": "judo and sambo: a mat, not a ring"
+      },
+      {
+       "img": "person_swimming",
+       "en": "pool",
+       "ru": "бассейн",
+       "sports": "swimming, diving, water polo",
+       "prep": "[[in]] the pool",
+       "note": "swim in your own lane"
+      },
+      {
+       "img": "person_lifting_weights",
+       "en": "gym / sports hall",
+       "ru": "спортзал",
+       "sports": "fitness, weightlifting · indoor games, gymnastics",
+       "prep": "[[in]] / [[at]] the gym",
+       "note": "go [[to]] the gym"
+      },
+      {
+       "img": "stadium",
+       "en": "stadium / arena",
+       "ru": "стадион / арена",
+       "sports": "football, athletics / ice hockey, basketball",
+       "prep": "[[at]] the stadium",
+       "note": "an arena is usually indoors"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Competitions and people",
+     "items": [
+      {
+       "en": "a competitor · an opponent · a rival",
+       "ru": "участник · соперник",
+       "ex": "Our [[rival]] had won the cup three times."
+      },
+      {
+       "en": "a coach",
+       "ru": "тренер",
+       "ex": "Our [[coach]] makes us train twice a day."
+      },
+      {
+       "en": "a [[referee]] (football) · an [[umpire]] (tennis)",
+       "ru": "судья",
+       "ex": "The [[referee]] gave him a yellow card."
+      },
+      {
+       "en": "spectators · supporters · [[the crowd]]",
+       "ru": "зрители · болельщики · трибуны",
+       "ex": "[[The crowd]] went wild when we scored."
+      },
+      {
+       "en": "[[to host]] / [[to hold]] a tournament",
+       "ru": "проводить турнир",
+       "ex": "Kazan [[hosted]] the championship."
+      },
+      {
+       "en": "[[to qualify for]] / [[to reach]] the final",
+       "ru": "выйти в финал",
+       "ex": "Only two teams [[reached]] the final."
+      },
+      {
+       "en": "[[to be knocked out of]] a tournament",
+       "ru": "вылететь из турнира",
+       "ex": "We [[were knocked out of]] the cup in the semi-final."
+      },
+      {
+       "en": "[[to win]] / [[to defend]] a title",
+       "ru": "завоевать / защитить титул",
+       "ex": "She [[defended]] her title for the third year."
+      },
+      {
+       "en": "[[to beat]] a rival",
+       "ru": "обыграть соперника",
+       "ex": "We [[beat]] our old rivals 3:1."
+      },
+      {
+       "en": "a [[narrow]] defeat · a [[comfortable]] win",
+       "ru": "минимальное поражение · уверенная победа",
+       "ex": "It was a [[narrow]] defeat: 0:1."
+      },
+      {
+       "en": "[[to end in a draw]] · [[to equalise]]",
+       "ru": "закончиться вничью · сравнять счёт",
+       "ex": "They [[equalised]] in the last minute."
+      },
+      {
+       "en": "[[to score]] / [[to concede]] a goal",
+       "ru": "забить / пропустить гол",
+       "ex": "Our goalkeeper didn't [[concede]] a single goal."
+      },
+      {
+       "en": "[[to set]] / [[to break]] / [[to hold]] a record",
+       "ru": "установить / побить / удерживать рекорд",
+       "ex": "He [[broke]] the national record last year."
+      },
+      {
+       "en": "[[to kick off]]",
+       "ru": "начаться (о матче)",
+       "ex": "The game [[kicks off]] at seven."
+      },
+      {
+       "en": "a [[home]] / an [[away]] game",
+       "ru": "домашний / выездной матч",
+       "ex": "We always play better in [[home]] games."
+      },
+      {
+       "en": "a [[season]] ticket",
+       "ru": "абонемент на сезон",
+       "ex": "My dad has a [[season]] ticket for Zenit games."
+      },
+      {
+       "en": "[[equipment]] (U)",
+       "ru": "снаряжение",
+       "ex": "You don't need much [[equipment]] to start running."
+      }
+     ]
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "a [[level playing field]]",
+       "ru": "равные условия для всех",
+       "ex": "Strict doping tests create [[a level playing field]]."
+      },
+      {
+       "en": "[[the underdog]]",
+       "ru": "аутсайдер",
+       "ex": "Everyone was cheering on [[the underdog]]."
+      },
+      {
+       "en": "a [[nail-biting]] finish",
+       "ru": "напряжённая концовка",
+       "ex": "The final had [[a nail-biting]] finish."
+      },
+      {
+       "en": "[[home advantage]] (U)",
+       "ru": "преимущество своего поля",
+       "ex": "The team used its [[home advantage]] well."
+      },
+      {
+       "en": "[[to be a good / bad loser]]",
+       "ru": "уметь / не уметь проигрывать",
+       "ex": "He's [[a bad loser]]: he never shakes hands after a defeat."
+      },
+      {
+       "en": "[[to keep your eye on the ball]]",
+       "ru": "не терять концентрацию",
+       "ex": "You must [[keep your eye on the ball]] until the final whistle."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "title": "win or beat?",
+     "html": "<b>win</b> + a match, a game, a medal, the cup, a title · <b>beat</b> + a person, a team. ✗ <i>We won Spartak.</i> ✓ <i>We beat Spartak and won the match.</i>"
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a record",
+       [
+        "break",
+        "set",
+        "hold",
+        "win"
+       ],
+       "win"
+      ],
+      [
+       "___ a match",
+       [
+        "beat",
+        "win",
+        "lose",
+        "draw"
+       ],
+       "beat"
+      ],
+      [
+       "___ a goal",
+       [
+        "score",
+        "concede",
+        "earn",
+        "let in"
+       ],
+       "earn"
+      ],
+      [
+       "___ a tournament",
+       [
+        "host",
+        "hold",
+        "win",
+        "beat"
+       ],
+       "beat"
+      ],
+      [
+       "___ the final",
+       [
+        "reach",
+        "arrive",
+        "qualify for",
+        "lose"
+       ],
+       "arrive"
+      ],
+      [
+       "___ a title",
+       [
+        "win",
+        "defend",
+        "beat",
+        "lose"
+       ],
+       "beat"
+      ],
+      [
+       "a ___ defeat",
+       [
+        "thin",
+        "narrow",
+        "heavy",
+        "crushing"
+       ],
+       "thin"
+      ],
+      [
+       "___ the crowd",
+       [
+        "cheer",
+        "thrill",
+        "score",
+        "silence"
+       ],
+       "score"
+      ],
+      [
+       "a ___ game",
+       [
+        "house",
+        "home",
+        "away",
+        "friendly"
+       ],
+       "house"
+      ],
+      [
+       "___ a penalty",
+       [
+        "take",
+        "miss",
+        "save",
+        "do"
+       ],
+       "do"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "Tennis players need a flat, hard {pitch|field|court}.",
+       "court"
+      ],
+      [
+       "The skaters were already warming up on the {ring|rink|track}.",
+       "rink"
+      ],
+      [
+       "The boxer was knocked down and left the {rink|court|ring}.",
+       "ring"
+      ],
+      [
+       "Our team {beat|won|defeated to} Spartak 2:1.",
+       "beat"
+      ],
+      [
+       "The {umpire|referee|judge} showed the defender a red card.",
+       "referee"
+      ],
+      [
+       "More than 40,000 {audience|viewers|spectators} filled the stadium.",
+       "spectators"
+      ],
+      [
+       "We {equalised|equalled|evened} in the last minute of the match.",
+       "equalised"
+      ],
+      [
+       "The golfers played on a beautiful {court|pitch|course} by the sea.",
+       "course"
+      ],
+      [
+       "She {broke|beat|won} the world record at the age of seventeen.",
+       "broke"
+      ],
+      [
+       "Our team was {kicked|knocked|thrown} out of the tournament in the first round.",
+       "knocked"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "Nobody has ever run the 100 metres faster than him.",
+       "RECORD",
+       "He ___ the 100 metres.",
+       "holds the record for"
+      ],
+      [
+       "The game was extremely exciting right up to the last minute.",
+       "FINISH",
+       "The game ___.",
+       "had a nail-biting finish"
+      ],
+      [
+       "Our team didn't manage to reach the final.",
+       "KNOCKED",
+       "Our team ___ before the final.",
+       "was knocked out"
+      ],
+      [
+       "The match starts at 7 p.m.",
+       "KICKS",
+       "The match ___ 7 p.m.",
+       "kicks off at"
+      ],
+      [
+       "The two teams scored the same number of goals.",
+       "DRAW",
+       "The match ___.",
+       "ended in a draw"
+      ],
+      [
+       "Our team lost by only one goal.",
+       "NARROW",
+       "Our team suffered ___.",
+       "a narrow defeat"
+      ],
+      [
+       "Nobody expected the small club to win.",
+       "UNDERDOG",
+       "The small club was ___.",
+       "the underdog"
+      ],
+      [
+       "The city will host the next championship.",
+       "HELD",
+       "The next championship ___ in the city.",
+       "will be held"
+      ],
+      [
+       "The fans were shouting to support their team.",
+       "CHEERING",
+       "The fans ___ their team.",
+       "were cheering on"
+      ],
+      [
+       "She has been champion for three years and wants to win again.",
+       "DEFEND",
+       "She wants to ___ for the fourth time.",
+       "defend her title"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "На корте нельзя играть в футбол — для этого нужно поле.",
+       "You can't play football on a court — you need a pitch for that."
+      ],
+      [
+       "Наша команда вышла в финал, но уступила с минимальным счётом.",
+       "Our team reached the final but suffered a narrow defeat."
+      ],
+      [
+       "Судья должен обеспечить всем равные условия.",
+       "The referee must ensure a level playing field for everyone."
+      ],
+      [
+       "Все болели за аутсайдера.",
+       "Everyone was cheering on the underdog."
+      ],
+      [
+       "Игра начнётся в семь вечера.",
+       "The game kicks off at 7 p.m."
+      ],
+      [
+       "Мы пропустили гол в первой же минуте.",
+       "We conceded a goal in the very first minute."
+      ],
+      [
+       "Он удерживает рекорд уже пять лет.",
+       "He has held the record for five years."
+      ],
+      [
+       "Хоккеисты тренируются на катке каждый день.",
+       "The hockey players train on the rink every day."
+      ],
+      [
+       "Она уверенно победила в финале.",
+       "She had a comfortable win in the final."
+      ],
+      [
+       "Боксёры вышли на ринг под крики публики.",
+       "The boxers entered the ring to the cheers of the crowd."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Sports in Russia",
+      "questions": [
+       {
+        "q": "What region of Russia do you live in? Are there any prominent sports teams there?",
+        "pool": [
+         "I live in…",
+         "the local team",
+         "play in the Premier League",
+         "win the championship",
+         "support"
+        ]
+       },
+       {
+        "q": "What else could you tell about your region?",
+        "pool": [
+         "be famous for",
+         "sports facilities",
+         "ski slopes / stadiums",
+         "host competitions"
+        ]
+       },
+       {
+        "q": "What kinds of sports are popular in Russia? Which aren't?",
+        "pool": [
+         "football · hockey · figure skating",
+         "be (hugely) popular",
+         "cricket · baseball",
+         "be almost unknown"
+        ]
+       },
+       {
+        "q": "What kind of sports is your favourite? Why?",
+        "pool": [
+         "my favourite sport is…",
+         "develop speed / teamwork",
+         "keep me fit",
+         "exciting to watch"
+        ]
+       },
+       {
+        "q": "Are your friends interested in sports? If so, what kinds of sports?",
+        "pool": [
+         "be into…",
+         "work out in the gym",
+         "go to a sports school",
+         "not very sporty"
+        ]
+       }
+      ],
+      "trap": "Q3 asks <b>which sports</b>, not where people do them."
+     },
+     {
+      "type": "interview",
+      "topic": "Sport",
+      "questions": [
+       {
+        "q": "Do you or your friends support any team? What football team is the most popular in Russia?",
+        "pool": [
+         "support",
+         "a fan of",
+         "the most popular team",
+         "have millions of supporters"
+        ]
+       },
+       {
+        "q": "What can you tell us about sport preferences in your family? Do your parents do any sports?",
+        "pool": [
+         "my dad plays…",
+         "my mum does…",
+         "go skiing together",
+         "watch matches on TV"
+        ]
+       },
+       {
+        "q": "Do you watch sport online? Do you think it is the same as watching it live?",
+        "pool": [
+         "stream matches",
+         "can't compare with",
+         "the atmosphere of a live game",
+         "replays"
+        ]
+       },
+       {
+        "q": "In your opinion, which is the best way to watch a match: to go to the stadium or at home? Why?",
+        "pool": [
+         "the good thing about…",
+         "cheer on the team",
+         "expensive tickets",
+         "comfortable"
+        ]
+       },
+       {
+        "q": "Did you do any sports when you were younger?",
+        "pool": [
+         "When I was younger, I did…",
+         "I used to…",
+         "give up",
+         "a sports school"
+        ]
+       }
+      ],
+      "trap": "Q5 is about the past: use the Past Simple or <i>used to</i>."
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Football summer camp",
+      "slogan": "Train like a pro!",
+      "img": "soccer_ball",
+      "consider": "going to the football summer camp",
+      "points": [
+       "location",
+       "age restrictions",
+       "duration of the camp",
+       "price"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "photo",
+      "project": "Sports",
+      "p1": [
+       [
+        "person_swimming"
+       ],
+       "a man swimming underwater in a pool"
+      ],
+      "p2": [
+       [
+        "soccer_ball",
+        "person_running"
+       ],
+       "two children playing football on a pitch"
+      ],
+      "focus": "the two types of sport",
+      "opinion": "which type of sport presented in the pictures you would like to do and why",
+      "basis": "water or land? · who with? (bank: 1, 6)",
+      "pool": {
+       "describe": [
+        "swim underwater",
+        "in a pool",
+        "wear goggles",
+        "kick a ball",
+        "on a pitch",
+        "little kids"
+       ],
+       "difference": [
+        "an individual water sport",
+        "a team game",
+        "in the water — on a pitch",
+        "on your own — together"
+       ],
+       "pros": [
+        "train all the muscles",
+        "easy on the joints",
+        "develop team spirit",
+        "only need a ball"
+       ],
+       "cons": [
+        "need a pool",
+        "risk of injuries",
+        "depend on the weather",
+        "depend on team-mates"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Fitness & Training",
+   "lede": "Training, physical qualities, where and when to exercise",
+   "pics": [
+    "person_lifting_weights",
+    "stopwatch",
+    "flexed_biceps"
+   ],
+   "vocab": [
+    {
+     "type": "list",
+     "title": "Training",
+     "items": [
+      {
+       "en": "[[to keep]] / [[to stay]] fit",
+       "ru": "поддерживать форму",
+       "ex": "I cycle to school to [[keep]] fit."
+      },
+      {
+       "en": "[[to get into]] shape · [[to be out of]] shape",
+       "ru": "прийти в форму · быть не в форме",
+       "ex": "I'm [[out of]] shape after the holidays."
+      },
+      {
+       "en": "[[to work out]] · a [[workout]]",
+       "ru": "тренироваться · тренировка",
+       "ex": "I [[work out]] three times a week."
+      },
+      {
+       "en": "[[to warm up]] · [[to cool down]]",
+       "ru": "разминаться · делать заминку",
+       "ex": "Always [[warm up]] before you run."
+      },
+      {
+       "en": "[[to build up]] stamina (U)",
+       "ru": "развивать выносливость",
+       "ex": "Swimming helps you [[build up]] stamina."
+      },
+      {
+       "en": "[[to improve]] your fitness level",
+       "ru": "улучшить физическую форму",
+       "ex": "My goal is to [[improve]] my fitness level by summer."
+      },
+      {
+       "en": "[[strenuous]] exercise (U)",
+       "ru": "интенсивная нагрузка",
+       "ex": "Avoid [[strenuous]] exercise after an illness."
+      },
+      {
+       "en": "[[to burn]] calories · [[to build]] muscle",
+       "ru": "сжигать калории · наращивать мышцы",
+       "ex": "A long run [[burns]] a lot of calories."
+      },
+      {
+       "en": "[[to pull]] a muscle",
+       "ru": "потянуть мышцу",
+       "ex": "He [[pulled]] a muscle during the match."
+      },
+      {
+       "en": "[[to overdo]] it",
+       "ru": "перестараться",
+       "ex": "Don't [[overdo]] it on your first day at the gym."
+      },
+      {
+       "en": "a training [[routine]]",
+       "ru": "режим тренировок",
+       "ex": "A good training [[routine]] includes rest days."
+      },
+      {
+       "en": "a gym [[membership]]",
+       "ru": "абонемент в зал",
+       "ex": "A gym [[membership]] costs a lot in our city."
+      }
+     ]
+    },
+    {
+     "type": "pics",
+     "title": "Physical qualities · [[require]] / [[develop]] + noun",
+     "cols": 5,
+     "items": [
+      {
+       "img": "flexed_biceps",
+       "en": "strength (U)",
+       "ru": "сила"
+      },
+      {
+       "img": "person_running",
+       "en": "stamina (U)",
+       "ru": "выносливость"
+      },
+      {
+       "img": "stopwatch",
+       "en": "speed (U)",
+       "ru": "скорость"
+      },
+      {
+       "img": "person_cartwheeling",
+       "en": "agility (U)",
+       "ru": "ловкость"
+      },
+      {
+       "img": "person_in_lotus_position",
+       "en": "flexibility (U)",
+       "ru": "гибкость"
+      },
+      {
+       "img": "person_juggling",
+       "en": "coordination (U)",
+       "ru": "координация"
+      },
+      {
+       "img": "snowboarder",
+       "en": "balance (U)",
+       "ru": "равновесие"
+      },
+      {
+       "img": "bullseye",
+       "en": "accuracy (U)",
+       "ru": "точность"
+      },
+      {
+       "img": "brain",
+       "en": "concentration (U)",
+       "ru": "концентрация"
+      },
+      {
+       "img": "hourglass_done",
+       "en": "patience (U)",
+       "ru": "терпение"
+      }
+     ]
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[to hit the gym]]",
+       "ru": "пойти в зал (informal)",
+       "ex": "After school I usually [[hit the gym]]."
+      },
+      {
+       "en": "[[to work up a sweat]]",
+       "ru": "хорошенько пропотеть",
+       "ex": "Ten minutes of skipping will [[work up a sweat]]."
+      },
+      {
+       "en": "[[to get into the habit of]] + -ing",
+       "ru": "взять за привычку",
+       "ex": "I've [[got into the habit of]] jogging before school."
+      },
+      {
+       "en": "[[to push yourself]] to the limit",
+       "ru": "выкладываться на пределе",
+       "ex": "Athletes [[push themselves]] to the limit every day."
+      },
+      {
+       "en": "[[No pain, no gain.]]",
+       "ru": "без труда ничего не добьёшься",
+       "ex": "My coach always says, “[[No pain, no gain.]]”"
+      },
+      {
+       "en": "[[to be a morning person]]",
+       "ru": "быть жаворонком",
+       "ex": "I'm not [[a morning person]], so I train in the evening."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ fit",
+       [
+        "keep",
+        "stay",
+        "make",
+        "get"
+       ],
+       "make"
+      ],
+      [
+       "___ a muscle",
+       [
+        "do",
+        "pull",
+        "build",
+        "strain"
+       ],
+       "do"
+      ],
+      [
+       "___ calories",
+       [
+        "burn",
+        "count",
+        "lose",
+        "cut"
+       ],
+       "lose"
+      ],
+      [
+       "___ stamina",
+       [
+        "score",
+        "develop",
+        "build up",
+        "improve"
+       ],
+       "score"
+      ],
+      [
+       "___ a workout",
+       [
+        "do",
+        "have",
+        "skip",
+        "play"
+       ],
+       "play"
+      ],
+      [
+       "___ shape",
+       [
+        "get into",
+        "make",
+        "be in",
+        "keep in"
+       ],
+       "make"
+      ],
+      [
+       "___ exercise",
+       [
+        "do",
+        "play",
+        "take",
+        "get"
+       ],
+       "play"
+      ],
+      [
+       "a training ___",
+       [
+        "routine",
+        "session",
+        "programme",
+        "sport"
+       ],
+       "sport"
+      ],
+      [
+       "a gym ___",
+       [
+        "ticket",
+        "membership",
+        "session",
+        "instructor"
+       ],
+       "ticket"
+      ],
+      [
+       "___ your fitness level",
+       [
+        "improve",
+        "raise",
+        "grow",
+        "increase"
+       ],
+       "grow"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "My {trainer|coach|trainers} got soaked in the rain, so I ran in old ones.",
+       "trainers"
+      ],
+      [
+       "Always {warm up|heat up|warm on} before a run.",
+       "warm up"
+      ],
+      [
+       "Doctors advise against {strong|heavy|strenuous} exercise after flu.",
+       "strenuous"
+      ],
+      [
+       "I'm completely {out of shape|out of form|off shape} after the holidays.",
+       "out of shape"
+      ],
+      [
+       "Long-distance running builds up your {patience|stamina|staying}.",
+       "stamina"
+      ],
+      [
+       "Don't {overdo|overtake|overcome} it at your first workout.",
+       "overdo"
+      ],
+      [
+       "She does yoga to improve her {flexible|flexibility|flexibly}.",
+       "flexibility"
+      ],
+      [
+       "Swimming is good exercise, but don't {overwork|overlook|overdo} it.",
+       "overdo"
+      ],
+      [
+       "I {work up|work out|work off} in the gym three times a week.",
+       "work out"
+      ],
+      [
+       "After a long run, it's important to {cold down|cool off down|cool down}.",
+       "cool down"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "I started going to the gym three months ago.",
+       "BEEN",
+       "I ___ to the gym for three months.",
+       "have been going"
+      ],
+      [
+       "Running every morning isn't difficult for me any more.",
+       "USED",
+       "I ___ every morning.",
+       "am used to running"
+      ],
+      [
+       "Yoga requires a lot of flexibility.",
+       "FLEXIBLE",
+       "To do yoga, you ___.",
+       "need to be very flexible"
+      ],
+      [
+       "It's a good idea to warm up before training.",
+       "BETTER",
+       "You ___ before training.",
+       "had better warm up"
+      ],
+      [
+       "I'm not in good physical condition at the moment.",
+       "SHAPE",
+       "I'm ___ at the moment.",
+       "out of shape"
+      ],
+      [
+       "I started running every morning, and now I do it automatically.",
+       "HABIT",
+       "I've got ___ every morning.",
+       "into the habit of running"
+      ],
+      [
+       "You need good balance to snowboard.",
+       "REQUIRES",
+       "Snowboarding ___.",
+       "requires good balance"
+      ],
+      [
+       "He trained too much, so he was very tired.",
+       "OVERDID",
+       "He ___ in training, so he was very tired.",
+       "overdid it"
+      ],
+      [
+       "My brother goes to the gym more often than I do.",
+       "AS",
+       "I don't go to the gym ___ my brother.",
+       "as often as"
+      ],
+      [
+       "It's a long time since I last went jogging.",
+       "FOR",
+       "I ___ a long time.",
+       "haven't been jogging for / haven't gone jogging for"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Я взял за привычку делать зарядку каждое утро.",
+       "I've got into the habit of doing morning exercises."
+      ],
+      [
+       "Не перестарайся на первой тренировке, иначе потянешь мышцу.",
+       "Don't overdo it at your first workout, or you'll pull a muscle."
+      ],
+      [
+       "Чтобы развить выносливость, нужно тренироваться регулярно.",
+       "To build up stamina, you need to train regularly."
+      ],
+      [
+       "Я не жаворонок, поэтому предпочитаю вечерние тренировки.",
+       "I'm not a morning person, so I prefer evening workouts."
+      ],
+      [
+       "Растяжка улучшает гибкость.",
+       "Stretching improves flexibility."
+      ],
+      [
+       "Я потянул мышцу, потому что не размялся.",
+       "I pulled a muscle because I didn't warm up."
+      ],
+      [
+       "Абонемент в спортзал стоит слишком дорого.",
+       "A gym membership is too expensive."
+      ],
+      [
+       "Бег помогает сжигать калории.",
+       "Running helps you burn calories."
+      ],
+      [
+       "Без труда ничего не добьёшься.",
+       "No pain, no gain."
+      ],
+      [
+       "После каникул я совсем не в форме.",
+       "I'm completely out of shape after the holidays."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Exercising and sports",
+      "questions": [
+       {
+        "q": "What part of Russia do you live in? What is it famous for?",
+        "pool": [
+         "I live in…",
+         "be famous for",
+         "its nature / history",
+         "sports traditions"
+        ]
+       },
+       {
+        "q": "What are some traditional sports in your part of the country?",
+        "pool": [
+         "be fond of",
+         "skiing · wrestling · ice fishing",
+         "traditional games",
+         "held every winter"
+        ]
+       },
+       {
+        "q": "What do you do to stay fit?",
+        "pool": [
+         "keep fit by + -ing",
+         "work out",
+         "go jogging",
+         "do morning exercises",
+         "twice a week"
+        ]
+       },
+       {
+        "q": "What sports did you do when you were a little kid?",
+        "pool": [
+         "When I was little, I did…",
+         "I used to…",
+         "a sports club",
+         "give up"
+        ]
+       },
+       {
+        "q": "What new sports would you like to try in the future?",
+        "pool": [
+         "I'd love to try…",
+         "I've always wanted to…",
+         "step out of my comfort zone"
+        ]
+       }
+      ]
+     },
+     {
+      "type": "interview",
+      "topic": "Importance of doing exercise",
+      "questions": [
+       {
+        "q": "Do you and your family members do morning exercises?",
+        "pool": [
+         "do morning exercises",
+         "wake up",
+         "energise",
+         "not a morning person"
+        ]
+       },
+       {
+        "q": "In your opinion, is it better to do sport in the morning or in the evening? Why?",
+        "pool": [
+         "energise you for the day",
+         "relieve stress",
+         "affect your sleep"
+        ]
+       },
+       {
+        "q": "What is the best place to work out: a gym or your home? Why?",
+        "pool": [
+         "modern equipment",
+         "expert advice",
+         "save time and money",
+         "lose motivation"
+        ]
+       },
+       {
+        "q": "Can you say that today sport is more affordable for people than in the past?",
+        "pool": [
+         "affordable",
+         "free outdoor gyms",
+         "online workouts",
+         "an expensive membership"
+        ]
+       },
+       {
+        "q": "How can regular exercise influence people's health? How often do you have a workout?",
+        "pool": [
+         "strengthen the heart",
+         "boost immunity",
+         "cope with stress",
+         "I work out … a week"
+        ]
+       }
+      ],
+      "trap": "Q5 contains two questions — answer both."
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "New fitness centre",
+      "slogan": "Your body, your rules!",
+      "img": "person_lifting_weights",
+      "consider": "joining the new fitness centre",
+      "points": [
+       "location",
+       "opening hours",
+       "price of a monthly membership",
+       "personal trainers"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "photo",
+      "project": "Outdoors physical activities",
+      "p1": [
+       [
+        "person_running",
+        "dog"
+       ],
+       "a young woman jogging with her dog in a park"
+      ],
+      "p2": [
+       [
+        "person_in_lotus_position",
+        "sun"
+       ],
+       "a man doing yoga on the beach"
+      ],
+      "focus": "the two types of physical activity",
+      "opinion": "which physical activity presented in the pictures you would prefer to do in summer and why",
+      "basis": "what does it train? (bank: 8)",
+      "pool": {
+       "describe": [
+        "go jogging",
+        "with her dog",
+        "a park path",
+        "do yoga",
+        "on the beach",
+        "by the sea"
+       ],
+       "difference": [
+        "a cardio activity",
+        "develop flexibility",
+        "energising — calming",
+        "endurance — balance"
+       ],
+       "pros": [
+        "strengthen the heart",
+        "easy to start",
+        "calm the mind",
+        "improve flexibility"
+       ],
+       "cons": [
+        "hard on the knees",
+        "exhausting in the heat",
+        "results come slowly",
+        "need an instructor at first"
+       ]
+      }
+     },
+     {
+      "type": "email",
+      "sender": "Ted",
+      "subject": "To play tennis or not to play?",
+      "text": "…You know I've never been a sporty person, but our new PE teacher wants each of us to choose a sport and report on our progress every month. I'm thinking about tennis. Which sport do you think is the easiest to start with, and why? What qualities does a person need to be successful in sport? Are you and your friends into sport? By the way, last weekend my family went to a ski resort…",
+      "ask": "about his trip to the ski resort",
+      "pool": {
+       "answers": [
+        "the easiest to start with",
+        "you don't need special skills",
+        "discipline · patience · determination",
+        "learn from your mistakes",
+        "be (not) very sporty",
+        "most of my friends are into…"
+       ],
+       "questions": [
+        "Who did you go with?",
+        "Did you try…?",
+        "What was the best part…?",
+        "How long…?"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "how young people in Zetland stay fit",
+      "audience": "young Zetlanders",
+      "q": "How do you stay fit?",
+      "data": [
+       [
+        "Go to the gym with a friend",
+        33
+       ],
+       [
+        "Go jogging in the local park",
+        31
+       ],
+       [
+        "Work out at home",
+        19
+       ],
+       [
+        "Go swimming",
+        11
+       ],
+       [
+        "Do yoga",
+        6
+       ]
+      ],
+      "problem": "that can arise with working out with a friend",
+      "conclusion": "the role of sport in our lives",
+      "focus4": "the problem must be about working out <b>with a friend</b>",
+      "pool": [
+       "keep fit",
+       "work out",
+       "a workout buddy",
+       "get distracted",
+       "chat instead of training",
+       "skip a session",
+       "agree on a plan",
+       "motivate each other",
+       "a healthy lifestyle"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "reasons for working out at home in Zetland",
+      "audience": "middle-aged Zetlanders",
+      "q": "Why do you work out at home?",
+      "data": [
+       [
+        "Saving money",
+        35
+       ],
+       [
+        "No need to travel anywhere",
+        25
+       ],
+       [
+        "No schedule",
+        22
+       ],
+       [
+        "A comfortable environment",
+        10
+       ],
+       [
+        "No chance to catch a virus",
+        8
+       ]
+      ],
+      "problem": "that can arise while working out at home",
+      "conclusion": "the importance of keeping fit",
+      "focus4": "the problem must be about working out <b>at home</b>",
+      "pool": [
+       "save money / time",
+       "a gym membership",
+       "a flexible schedule",
+       "poor technique",
+       "without supervision",
+       "hurt your back",
+       "an online programme",
+       "a qualified trainer",
+       "keep fit at any age"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Team, Individual & Extreme",
+   "lede": "Team, individual and extreme sports",
+   "pics": [
+    "parachute",
+    "person_climbing",
+    "volleyball"
+   ],
+   "vocab": [
+    {
+     "type": "definition",
+     "html": "Extreme sports are activities that involve a high level of <b>risk</b>, <b>speed</b> or <b>height</b> and require special training and equipment."
+    },
+    {
+     "type": "pics",
+     "title": "Types",
+     "cols": 4,
+     "items": [
+      {
+       "img": "parachute",
+       "en": "skydiving",
+       "ru": "прыжки с парашютом"
+      },
+      {
+       "img": "person_climbing",
+       "en": "rock climbing",
+       "ru": "скалолазание"
+      },
+      {
+       "img": "snowboarder",
+       "en": "snowboarding",
+       "ru": "сноуборд"
+      },
+      {
+       "img": "person_surfing",
+       "en": "surfing",
+       "ru": "сёрфинг"
+      },
+      {
+       "img": "person_rowing_boat",
+       "en": "white-water rafting",
+       "ru": "рафтинг"
+      },
+      {
+       "img": "kite",
+       "en": "kitesurfing",
+       "ru": "кайтсёрфинг"
+      },
+      {
+       "img": "person_biking",
+       "en": "mountain biking",
+       "ru": "маунтинбайк"
+      },
+      {
+       "img": "mountain",
+       "en": "mountaineering",
+       "ru": "альпинизм"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Risk and teamwork",
+     "items": [
+      {
+       "en": "a [[thrill]]-seeker",
+       "ru": "любитель острых ощущений",
+       "ex": "My brother is a real [[thrill]]-seeker: he loves skydiving."
+      },
+      {
+       "en": "an adrenaline [[rush]]",
+       "ru": "выброс адреналина",
+       "ex": "Bungee jumping gives you an incredible adrenaline [[rush]]."
+      },
+      {
+       "en": "[[to take]] (calculated) risks",
+       "ru": "идти на (обдуманный) риск",
+       "ex": "Good climbers only [[take]] calculated risks."
+      },
+      {
+       "en": "[[to push]] your limits",
+       "ru": "испытывать свои возможности",
+       "ex": "Marathons help you [[push]] your limits."
+      },
+      {
+       "en": "[[to step out of]] your comfort zone",
+       "ru": "выйти из зоны комфорта",
+       "ex": "Trying surfing made me [[step out of]] my comfort zone."
+      },
+      {
+       "en": "[[to overcome]] / [[to face]] your fears",
+       "ru": "преодолеть страхи",
+       "ex": "She [[overcame]] her fear of heights."
+      },
+      {
+       "en": "safety [[gear]] (U)",
+       "ru": "защитное снаряжение",
+       "ex": "Never climb without proper safety [[gear]]."
+      },
+      {
+       "en": "a [[qualified]] instructor",
+       "ru": "квалифицированный инструктор",
+       "ex": "Beginners should ski with a [[qualified]] instructor."
+      },
+      {
+       "en": "a [[serious]] / [[life-threatening]] injury",
+       "ru": "серьёзная / опасная для жизни травма",
+       "ex": "Without a helmet, a fall can cause a [[serious]] injury."
+      },
+      {
+       "en": "team [[spirit]] (U) · a team [[player]]",
+       "ru": "командный дух · командный игрок",
+       "ex": "Our coach values team [[spirit]] more than talent."
+      },
+      {
+       "en": "[[to rely on]] your team-mates",
+       "ru": "полагаться на товарищей",
+       "ex": "In volleyball you have to [[rely on]] your team-mates."
+      },
+      {
+       "en": "[[at]] your own pace",
+       "ru": "в своём темпе",
+       "ex": "In yoga you can train [[at]] your own pace."
+      }
+     ]
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "an adrenaline [[junkie]]",
+       "ru": "адреналиновый наркоман (informal)",
+       "ex": "He's an adrenaline [[junkie]] who tries every extreme sport."
+      },
+      {
+       "en": "[[to live on the edge]]",
+       "ru": "жить на грани",
+       "ex": "Some people love to [[live on the edge]]."
+      },
+      {
+       "en": "[[to take your breath away]]",
+       "ru": "захватывать дух",
+       "ex": "The view [[took my breath away]]."
+      },
+      {
+       "en": "[[to pull your weight]]",
+       "ru": "делать свою часть работы",
+       "ex": "Everyone in the team must [[pull their weight]]."
+      },
+      {
+       "en": "[[to let the team down]]",
+       "ru": "подвести команду",
+       "ex": "I trained hard because I didn't want to [[let the team down]]."
+      },
+      {
+       "en": "[[to go it alone]]",
+       "ru": "действовать в одиночку",
+       "ex": "After years in a team, she decided to [[go it alone]]."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a risk",
+       [
+        "take",
+        "make",
+        "run",
+        "reduce"
+       ],
+       "make"
+      ],
+      [
+       "___ your fears",
+       [
+        "overcome",
+        "win",
+        "face",
+        "conquer"
+       ],
+       "win"
+      ],
+      [
+       "a ___ injury",
+       [
+        "serious",
+        "severe",
+        "minor",
+        "heavy"
+       ],
+       "heavy"
+      ],
+      [
+       "___ safety gear",
+       [
+        "dress",
+        "wear",
+        "check",
+        "put on"
+       ],
+       "dress"
+      ],
+      [
+       "team ___",
+       [
+        "spirit",
+        "player",
+        "friend",
+        "work"
+       ],
+       "friend"
+      ],
+      [
+       "___ your limits",
+       [
+        "push",
+        "test",
+        "know",
+        "do"
+       ],
+       "do"
+      ],
+      [
+       "an adrenaline ___",
+       [
+        "rush",
+        "shower",
+        "junkie",
+        "kick"
+       ],
+       "shower"
+      ],
+      [
+       "___ on your team-mates",
+       [
+        "rely",
+        "depend",
+        "trust",
+        "count"
+       ],
+       "trust"
+      ],
+      [
+       "a ___ risk",
+       [
+        "tall",
+        "calculated",
+        "serious",
+        "huge"
+       ],
+       "tall"
+      ],
+      [
+       "___ an injury",
+       [
+        "suffer",
+        "avoid",
+        "take",
+        "get"
+       ],
+       "take"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "He never {pulls|pushes|carries} his weight, so the others have to work harder.",
+       "pulls"
+      ],
+      [
+       "Rafting without an instructor is {extreme|extremely|extremal} dangerous.",
+       "extremely"
+      ],
+      [
+       "Climbers have to {rely at|depend from|rely on} their partners.",
+       "rely on"
+      ],
+      [
+       "I don't want to {make|let|leave} the team down.",
+       "let"
+      ],
+      [
+       "The view from the top {gave|made|took} my breath away.",
+       "took"
+      ],
+      [
+       "Some people become {addicted|devoted|keen} to adrenaline.",
+       "addicted"
+      ],
+      [
+       "She finally {overtook|overcame|overdid} her fear of water.",
+       "overcame"
+      ],
+      [
+       "Always wear safety {gears|gearing|gear} when you climb.",
+       "gear"
+      ],
+      [
+       "In individual sports you can train at your own {pace|speed|step}.",
+       "pace"
+      ],
+      [
+       "He never lets his team {off|out|down}.",
+       "down"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "I have never tried anything as exciting as skydiving.",
+       "MOST",
+       "Skydiving is ___ I have ever tried.",
+       "the most exciting thing"
+      ],
+      [
+       "You mustn't climb without a helmet.",
+       "ALLOWED",
+       "You ___ without a helmet.",
+       "are not allowed to climb"
+      ],
+      [
+       "He prefers to train alone.",
+       "RATHER",
+       "He ___ alone.",
+       "would rather train"
+      ],
+      [
+       "If you don't train properly, you might get injured.",
+       "UNLESS",
+       "You might get injured ___ properly.",
+       "unless you train"
+      ],
+      [
+       "Skydiving makes you feel extremely excited.",
+       "RUSH",
+       "Skydiving gives you ___.",
+       "an adrenaline rush"
+      ],
+      [
+       "She is always looking for excitement and danger.",
+       "SEEKER",
+       "She is ___.",
+       "a real thrill-seeker"
+      ],
+      [
+       "Trying new things makes you leave the situations you feel safe in.",
+       "STEP",
+       "Trying new things makes you ___ comfort zone.",
+       "step out of your"
+      ],
+      [
+       "He does not do his share of work in the team.",
+       "WEIGHT",
+       "He does not ___ in the team.",
+       "pull his weight"
+      ],
+      [
+       "Thanks to the coach, she stopped being afraid of heights.",
+       "OVERCAME",
+       "Thanks to the coach, she ___ of heights.",
+       "overcame her fear"
+      ],
+      [
+       "It's a pity I didn't try surfing last summer.",
+       "WISH",
+       "I ___ surfing last summer.",
+       "wish I had tried"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Я не любитель острых ощущений, но однажды хочу выйти из зоны комфорта.",
+       "I'm not a thrill-seeker, but one day I want to step out of my comfort zone."
+      ],
+      [
+       "В командном виде спорта нельзя подвести товарищей.",
+       "In a team sport you can't let your team-mates down."
+      ],
+      [
+       "Экстремальные виды спорта позволяют испытать свои возможности.",
+       "Extreme sports allow you to push your limits."
+      ],
+      [
+       "Без защитного снаряжения даже небольшая ошибка может привести к серьёзной травме.",
+       "Without safety gear, even a small mistake can lead to a serious injury."
+      ],
+      [
+       "Полагайся на товарищей по команде.",
+       "Rely on your team-mates."
+      ],
+      [
+       "Рафтинг без инструктора может быть опасен для жизни.",
+       "Rafting without an instructor can be life-threatening."
+      ],
+      [
+       "Вид с вершины захватывал дух.",
+       "The view from the top took my breath away."
+      ],
+      [
+       "Он решил действовать в одиночку.",
+       "He decided to go it alone."
+      ],
+      [
+       "Командный дух важнее таланта.",
+       "Team spirit is more important than talent."
+      ],
+      [
+       "Каждый должен делать свою часть работы.",
+       "Everyone must pull their weight."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Extreme sports",
+      "questions": [
+       {
+        "q": "What are the dangers of extreme sports?",
+        "pool": [
+         "a serious injury",
+         "life-threatening",
+         "without proper training",
+         "bad weather"
+        ]
+       },
+       {
+        "q": "Which kinds of extreme sports are popular in Russia? Which aren't?",
+        "pool": [
+         "snowboarding · rock climbing · rafting",
+         "be popular with young people",
+         "surfing",
+         "be rare"
+        ]
+       },
+       {
+        "q": "If you had to choose, what kind of extreme sports would you try and why?",
+        "pool": [
+         "If I had to choose, I would…",
+         "I've always dreamt of…",
+         "take my breath away"
+        ]
+       },
+       {
+        "q": "What benefits do extreme sports provide?",
+        "pool": [
+         "build confidence",
+         "overcome fears",
+         "an adrenaline rush",
+         "push your limits"
+        ]
+       },
+       {
+        "q": "Are you interested in extreme sports? Why?",
+        "pool": [
+         "(not) a thrill-seeker",
+         "too risky for me",
+         "I'd like to give it a go"
+        ]
+       }
+      ],
+      "trap": "Q3: <i>If you had to…</i> → <i>I <b>would</b> try</i>, not <i>I will try</i>."
+     },
+     {
+      "type": "interview",
+      "topic": "Popularity of team sports",
+      "questions": [
+       {
+        "q": "What team sports are popular among teenagers in Russia? Which one would you like to take up?",
+        "pool": [
+         "football · volleyball · basketball",
+         "take up",
+         "I'd like to…"
+        ]
+       },
+       {
+        "q": "Do you prefer team sports or individual ones? Why?",
+        "pool": [
+         "team spirit",
+         "rely on team-mates",
+         "at my own pace",
+         "go it alone"
+        ]
+       },
+       {
+        "q": "Why do so many teenagers take up extreme sports, in your opinion?",
+        "pool": [
+         "an adrenaline rush",
+         "prove something to themselves",
+         "impress friends",
+         "peer pressure"
+        ]
+       },
+       {
+        "q": "Do you think in your city teenagers have enough facilities to do sport? What would you like to be improved?",
+        "pool": [
+         "sports grounds",
+         "a swimming pool",
+         "free outdoor gyms",
+         "be improved"
+        ]
+       },
+       {
+        "q": "Will people do more sport in the future? What kind of sports will be popular?",
+        "pool": [
+         "probably · I'm sure",
+         "fitness apps",
+         "e-sports",
+         "extreme sports"
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "type": "photo",
+      "project": "To become successful children must go in for sports",
+      "p1": [
+       [
+        "soccer_ball",
+        "person_running"
+       ],
+       "teenagers playing football on a lawn"
+      ],
+      "p2": [
+       [
+        "chess_pawn"
+       ],
+       "two people playing chess at home"
+      ],
+      "focus": "the two types of sports",
+      "opinion": "which sport presented in the pictures you would prefer to do and why",
+      "basis": "what does it develop? (bank: 2)",
+      "pool": {
+       "describe": [
+        "run after a ball",
+        "on a lawn",
+        "play chess",
+        "at home",
+        "think over the next move"
+       ],
+       "difference": [
+        "a physical team game",
+        "a mind sport",
+        "outdoors — indoors",
+        "body — mind"
+       ],
+       "pros": [
+        "keep you fit",
+        "teach teamwork",
+        "develop logic",
+        "improve concentration"
+       ],
+       "cons": [
+        "lead to injuries",
+        "sit still for hours",
+        "no physical exercise",
+        "depend on team-mates"
+       ]
+      }
+     },
+     {
+      "type": "ad",
+      "title": "Paragliding ride",
+      "slogan": "Touch the sky!",
+      "img": "parachute",
+      "points": [
+       "location",
+       "necessary equipment",
+       "available dates",
+       "duration of the ride"
+      ],
+      "consider": "taking a paragliding ride"
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "why many young Zetlanders choose to major in sports",
+      "audience": "young Zetlanders studying sports",
+      "q": "Why have you chosen to major in sports?",
+      "data": [
+       [
+        "Teamwork and collaboration",
+        40
+       ],
+       [
+        "Career opportunities",
+        28
+       ],
+       [
+        "Passion for sports",
+        18
+       ],
+       [
+        "Focus on health and fitness",
+        9
+       ],
+       [
+        "Scholarship opportunities",
+        5
+       ]
+      ],
+      "problem": "that a student of sports may face during competitions",
+      "conclusion": "the importance of professional sport for modern society",
+      "focus4": "a problem a sports student faces <b>during competitions</b>",
+      "pool": [
+       "major in sports",
+       "career opportunities",
+       "a scholarship",
+       "pressure before a competition",
+       "cannot sleep",
+       "a sports psychologist",
+       "a pre-competition routine",
+       "inspire young people",
+       "national pride"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Traditions & Champions",
+   "lede": "Traditional Russian sports and outstanding athletes",
+   "pics": [
+    "wood",
+    "martial_arts_uniform",
+    "1st_place_medal"
+   ],
+   "vocab": [
+    {
+     "type": "trio",
+     "items": [
+      [
+       "wood",
+       "Gorodki",
+       "городки",
+       "Players throw a wooden bat to knock pieces out of a marked square. Requires accuracy and strength."
+      ],
+      [
+       "baseball",
+       "Lapta",
+       "лапта",
+       "A team game with a bat and a ball, often compared to baseball. Develops speed and teamwork."
+      ],
+      [
+       "martial_arts_uniform",
+       "Sambo",
+       "самбо",
+       "A martial art whose name means “self-defence without weapons”. Based on throws and holds."
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Traditions and champions",
+     "items": [
+      {
+       "en": "cultural [[heritage]] (U)",
+       "ru": "культурное наследие",
+       "ex": "Folk games are part of our cultural [[heritage]]."
+      },
+      {
+       "en": "[[to preserve]] / [[to revive]] a tradition",
+       "ru": "сохранять / возрождать традицию",
+       "ex": "Enthusiasts are trying to [[revive]] the tradition of lapta."
+      },
+      {
+       "en": "accessible [[to]] people of all ages",
+       "ru": "доступный людям любого возраста",
+       "ex": "Gorodki is accessible [[to]] people of all ages."
+      },
+      {
+       "en": "[[throws]] and [[holds]]",
+       "ru": "броски и захваты",
+       "ex": "Sambo is based on [[throws]] and [[holds]]."
+      },
+      {
+       "en": "self-[[defence]] (U)",
+       "ru": "самооборона",
+       "ex": "Many girls learn sambo for self-[[defence]]."
+      },
+      {
+       "en": "an [[outstanding]] athlete",
+       "ru": "выдающийся спортсмен",
+       "ex": "She is one of the most [[outstanding]] athletes of her generation."
+      },
+      {
+       "en": "[[to represent]] your country",
+       "ru": "представлять страну",
+       "ex": "It is a great honour to [[represent]] your country."
+      },
+      {
+       "en": "[[determination]] · [[perseverance]] (U)",
+       "ru": "целеустремлённость · упорство",
+       "ex": "Her [[determination]] helped her recover after the injury."
+      },
+      {
+       "en": "a role [[model]]",
+       "ru": "пример для подражания",
+       "ex": "For many children, champions are role [[models]]."
+      },
+      {
+       "en": "a [[promising]] athlete",
+       "ru": "перспективный спортсмен",
+       "ex": "The coach noticed a [[promising]] young athlete."
+      },
+      {
+       "en": "[[to inspire]] sb [[to]] take up sport",
+       "ru": "вдохновлять заняться спортом",
+       "ex": "Her victory [[inspired]] thousands of girls [[to]] take up skating."
+      },
+      {
+       "en": "[[to handle]] pressure (U)",
+       "ru": "справляться с давлением",
+       "ex": "Great athletes know how to [[handle]] pressure."
+      }
+     ]
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "a [[household]] name",
+       "ru": "имя, известное каждому",
+       "ex": "After the Olympics she became a [[household]] name."
+      },
+      {
+       "en": "[[to rise to fame]]",
+       "ru": "прославиться",
+       "ex": "He [[rose to fame]] after winning the world championship."
+      },
+      {
+       "en": "[[to make history]]",
+       "ru": "войти в историю",
+       "ex": "The team [[made history]] by winning their first title."
+      },
+      {
+       "en": "[[to live up to]] expectations",
+       "ru": "оправдать ожидания",
+       "ex": "The young player [[lived up to]] everyone's expectations."
+      },
+      {
+       "en": "[[to stand the test of time]]",
+       "ru": "выдержать проверку временем",
+       "ex": "Gorodki has [[stood the test of time]]."
+      },
+      {
+       "en": "[[to be passed down]] from generation to generation",
+       "ru": "передаваться из поколения в поколение",
+       "ex": "The rules [[have been passed down]] from generation to generation."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a tradition",
+       [
+        "preserve",
+        "revive",
+        "break with",
+        "win"
+       ],
+       "win"
+      ],
+      [
+       "___ history",
+       [
+        "make",
+        "take",
+        "rewrite",
+        "go down in"
+       ],
+       "take"
+      ],
+      [
+       "___ a gold medal",
+       [
+        "win",
+        "earn",
+        "beat",
+        "get"
+       ],
+       "beat"
+      ],
+      [
+       "___ expectations",
+       [
+        "make",
+        "live up to",
+        "meet",
+        "exceed"
+       ],
+       "make"
+      ],
+      [
+       "a ___ name",
+       [
+        "household",
+        "famous",
+        "home",
+        "well-known"
+       ],
+       "home"
+      ],
+      [
+       "___ pressure",
+       [
+        "make",
+        "handle",
+        "cope with",
+        "deal with"
+       ],
+       "make"
+      ],
+      [
+       "a ___ athlete",
+       [
+        "promising",
+        "outstanding",
+        "gifted",
+        "promised"
+       ],
+       "promised"
+      ],
+      [
+       "___ your country",
+       [
+        "represent",
+        "present",
+        "defend",
+        "serve"
+       ],
+       "present"
+      ],
+      [
+       "a role ___",
+       [
+        "model",
+        "person",
+        "player",
+        "reversal"
+       ],
+       "person"
+      ],
+      [
+       "___ sb to take up sport",
+       [
+        "inspire",
+        "encourage",
+        "motivate",
+        "make"
+       ],
+       "make"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "Gorodki requires great {accuracy|accurate|accurately}.",
+       "accuracy"
+      ],
+      [
+       "She {presented|represented|introduced} Russia at the European Championships.",
+       "represented"
+      ],
+      [
+       "Sambo is based on throws and {catches|keeps|holds}.",
+       "holds"
+      ],
+      [
+       "This game has been passed {down|over|out} from generation to generation.",
+       "down"
+      ],
+      [
+       "After the Olympics he became a {house|home|household} name.",
+       "household"
+      ],
+      [
+       "Her {determination|decision|definition} helped her reach the top.",
+       "determination"
+      ],
+      [
+       "The game has stood the {trial|test|exam} of time.",
+       "test"
+      ],
+      [
+       "Sambo teaches self-{defence|defend|defensive}.",
+       "defence"
+      ],
+      [
+       "She rose {at|to|in} fame after the Olympics.",
+       "to"
+      ],
+      [
+       "Champions often {aspire|expire|inspire} children to take up sport.",
+       "inspire"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "Nobody had done this jump at the Olympics before her.",
+       "FIRST",
+       "She was ___ this jump at the Olympics.",
+       "the first to do"
+      ],
+      [
+       "The team did not play as well as people had expected.",
+       "UP",
+       "The team did not ___.",
+       "live up to expectations"
+      ],
+      [
+       "Sambo was developed in the USSR.",
+       "WHERE",
+       "The USSR is the country ___ developed.",
+       "where sambo was"
+      ],
+      [
+       "People have played lapta for centuries, and it is still popular.",
+       "TEST",
+       "Lapta has ___ of time.",
+       "stood the test"
+      ],
+      [
+       "She was very determined, and this helped her win.",
+       "DETERMINATION",
+       "Her ___ win.",
+       "determination helped her"
+      ],
+      [
+       "He became famous very quickly.",
+       "ROSE",
+       "He ___ very quickly.",
+       "rose to fame"
+      ],
+      [
+       "Many children want to be like her.",
+       "MODEL",
+       "She is ___ for many children.",
+       "a role model"
+      ],
+      [
+       "It's important to keep this tradition alive.",
+       "PRESERVE",
+       "It's important ___ tradition.",
+       "to preserve this"
+      ],
+      [
+       "The team won the championship for the first time ever.",
+       "HISTORY",
+       "The team ___ by winning the championship.",
+       "made history"
+      ],
+      [
+       "Gorodki is so simple that people of all ages can play it.",
+       "ACCESSIBLE",
+       "Gorodki is ___ of all ages.",
+       "accessible to people"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Городки — часть нашего культурного наследия, и их важно сохранить.",
+       "Gorodki is part of our cultural heritage, and it is important to preserve it."
+      ],
+      [
+       "Она оправдала ожидания болельщиков и вошла в историю.",
+       "She lived up to the fans' expectations and made history."
+      ],
+      [
+       "Эта игра выдержала проверку временем.",
+       "This game has stood the test of time."
+      ],
+      [
+       "Выдающиеся спортсмены становятся для детей примером для подражания.",
+       "Outstanding athletes become role models for children."
+      ],
+      [
+       "Самбо основано на бросках и захватах.",
+       "Sambo is based on throws and holds."
+      ],
+      [
+       "Он представлял страну на Олимпийских играх.",
+       "He represented his country at the Olympic Games."
+      ],
+      [
+       "Юный спортсмен оправдал ожидания тренера.",
+       "The young athlete lived up to his coach's expectations."
+      ],
+      [
+       "Энтузиасты пытаются возродить лапту.",
+       "Enthusiasts are trying to revive lapta."
+      ],
+      [
+       "Великие спортсмены умеют справляться с давлением.",
+       "Great athletes know how to handle pressure."
+      ],
+      [
+       "Её имя стало известно каждому.",
+       "She became a household name."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "reading",
+      "title": "Gorodki",
+      "text": "Gorodki is one of the oldest Russian games. Players stand at a certain distance from a square marked on the ground and throw a heavy wooden bat at small wooden pieces called “gorodki”. The aim is to knock all the pieces out of the square in as few throws as possible. The game looks simple, but it demands a good eye, a strong arm and a lot of practice. For centuries, gorodki was played in villages and city yards by people of all ages. Today clubs hold regular competitions, and some parks have special courts for the game. For many Russians, gorodki is not just a sport but a living part of their cultural heritage."
+     },
+     {
+      "type": "reading",
+      "title": "Lapta",
+      "text": "Lapta is a traditional Russian bat-and-ball game that is often compared to baseball. Two teams take turns: one team hits the ball with a wooden bat and tries to run across the field and back, while the other team tries to catch the ball or hit the runner with it. In the past, lapta was especially popular in villages, where people played it on holidays and at family gatherings. The game develops speed, quick reactions and, above all, teamwork, because no player can win alone. Although lapta is less famous today, enthusiasts organise tournaments and teach the game to children, helping to keep this old tradition alive."
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Sambo classes",
+      "slogan": "Strength. Discipline. Respect.",
+      "img": "martial_arts_uniform",
+      "consider": "taking up sambo",
+      "points": [
+       "location",
+       "age of students",
+       "number of lessons per week",
+       "necessary equipment"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "reading",
+      "title": "Sambo",
+      "text": "Sambo is a martial art that was developed in the Soviet Union in the 1920s and 1930s. Its name is short for the Russian words meaning “self-defence without weapons”. Sambo combines techniques from judo, wrestling and several traditional fighting styles, and it is based on throws, holds and quick reactions. At first it was used to train soldiers, but soon it became a sport with its own rules and championships. Today sambo is practised in many countries. It helps people become stronger and more flexible, but it also teaches discipline, respect for the opponent and self-control."
+     },
+     {
+      "type": "reading",
+      "title": "A young figure skater",
+      "text": "Kamila Valieva is a Russian figure skater who was born in Kazan in 2006. She started skating as a small child and soon impressed her coaches with her flexibility, elegance and excellent technique. In 2022 she won the European Championships and became famous for performing quadruple jumps, which very few women in the world can land. Her career has already seen both great victories and serious challenges. For many young skaters, her story shows how much hard work, patience and determination it takes to reach the top in sport."
+     }
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Healthy Lifestyle & Health",
+   "lede": "Diet, habits, illness and health care",
+   "pics": [
+    "broccoli",
+    "red_apple",
+    "stethoscope"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "Food and daily routine",
+     "cols": 5,
+     "items": [
+      {
+       "img": "bowl_with_spoon",
+       "en": "porridge (U)",
+       "ru": "каша"
+      },
+      {
+       "img": "pancakes",
+       "en": "pancakes · syrniki",
+       "ru": "блины · сырники"
+      },
+      {
+       "img": "glass_of_milk",
+       "en": "cottage cheese (U)",
+       "ru": "творог"
+      },
+      {
+       "img": "red_apple",
+       "en": "fresh fruit (U)",
+       "ru": "свежие фрукты"
+      },
+      {
+       "img": "broccoli",
+       "en": "vegetables",
+       "ru": "овощи"
+      },
+      {
+       "img": "droplet",
+       "en": "to stay hydrated",
+       "ru": "пить воду"
+      },
+      {
+       "img": "hamburger",
+       "en": "junk food (U)",
+       "ru": "вредная еда"
+      },
+      {
+       "img": "french_fries",
+       "en": "processed food (U)",
+       "ru": "полуфабрикаты"
+      },
+      {
+       "img": "bed",
+       "en": "to get enough sleep",
+       "ru": "высыпаться"
+      },
+      {
+       "img": "mobile_phone",
+       "en": "screen time (U)",
+       "ru": "время у экрана"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Lifestyle",
+     "items": [
+      {
+       "en": "[[to lead]] a healthy lifestyle",
+       "ru": "вести здоровый образ жизни",
+       "ex": "My parents [[lead]] a very healthy lifestyle."
+      },
+      {
+       "en": "a [[sedentary]] lifestyle",
+       "ru": "сидячий образ жизни",
+       "ex": "A [[sedentary]] lifestyle can cause back problems."
+      },
+      {
+       "en": "[[to follow]] a balanced diet",
+       "ru": "придерживаться сбалансированного питания",
+       "ex": "Athletes [[follow]] a balanced diet."
+      },
+      {
+       "en": "[[to cut down on]] sugar (U)",
+       "ru": "сократить сахар",
+       "ex": "I'm trying to [[cut down on]] sugar."
+      },
+      {
+       "en": "[[to skip]] meals",
+       "ru": "пропускать приёмы пищи",
+       "ex": "Students often [[skip]] meals during exams."
+      },
+      {
+       "en": "[[to give up]] / [[to kick]] a bad habit",
+       "ru": "бросить вредную привычку",
+       "ex": "He finally [[gave up]] junk food."
+      }
+     ]
+    },
+    {
+     "type": "pics",
+     "title": "Health",
+     "cols": 4,
+     "items": [
+      {
+       "img": "face_with_thermometer",
+       "en": "to catch a cold",
+       "ru": "простудиться"
+      },
+      {
+       "img": "thermometer",
+       "en": "to have a temperature",
+       "ru": "температура"
+      },
+      {
+       "img": "stethoscope",
+       "en": "to have a check-up",
+       "ru": "пройти осмотр"
+      },
+      {
+       "img": "pill",
+       "en": "to take medicine (U)",
+       "ru": "принимать лекарство"
+      },
+      {
+       "img": "anatomical_heart",
+       "en": "a healthy heart",
+       "ru": "здоровое сердце"
+      },
+      {
+       "img": "brain",
+       "en": "mental well-being (U)",
+       "ru": "душевное благополучие"
+      },
+      {
+       "img": "low_battery",
+       "en": "burnout (U)",
+       "ru": "выгорание"
+      },
+      {
+       "img": "watch",
+       "en": "a fitness tracker",
+       "ru": "фитнес-браслет"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Illness and prevention",
+     "items": [
+      {
+       "en": "[[to fall ill]] · [[to recover from]]",
+       "ru": "заболеть · выздороветь после",
+       "ex": "She [[recovered from]] flu in a week."
+      },
+      {
+       "en": "[[to boost]] your immune system",
+       "ru": "укрепить иммунитет",
+       "ex": "Fresh air [[boosts]] your immune system."
+      },
+      {
+       "en": "a [[chronic]] disease",
+       "ru": "хроническое заболевание",
+       "ex": "Regular exercise lowers the risk of [[chronic]] diseases."
+      },
+      {
+       "en": "[[to be overweight]]",
+       "ru": "иметь лишний вес",
+       "ex": "Doctors say more and more teenagers [[are overweight]]."
+      },
+      {
+       "en": "[[poor]] posture / eyesight (U)",
+       "ru": "плохая осанка / зрение",
+       "ex": "Hours at the computer can cause [[poor]] eyesight."
+      },
+      {
+       "en": "side [[effects]]",
+       "ru": "побочные эффекты",
+       "ex": "Every medicine can have side [[effects]]."
+      }
+     ]
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[to eat on the go]]",
+       "ru": "есть на ходу",
+       "ex": "I often [[eat on the go]] between classes."
+      },
+      {
+       "en": "[[to be under the weather]]",
+       "ru": "неважно себя чувствовать",
+       "ex": "I'm a bit [[under the weather]] today."
+      },
+      {
+       "en": "[[to feel run-down]]",
+       "ru": "чувствовать себя вымотанным",
+       "ex": "After the exams I [[felt]] completely [[run-down]]."
+      },
+      {
+       "en": "[[fighting]] fit",
+       "ru": "в отличной форме",
+       "ex": "After a week at the sea I felt [[fighting]] fit."
+      },
+      {
+       "en": "[[to burn the candle at both ends]]",
+       "ru": "работать на износ",
+       "ex": "If you [[burn the candle at both ends]], you'll fall ill."
+      },
+      {
+       "en": "a [[clean bill]] of health",
+       "ru": "заключение «здоров»",
+       "ex": "The doctor gave me a [[clean bill]] of health."
+      },
+      {
+       "en": "an [[early bird]] · a [[night owl]]",
+       "ru": "жаворонок · сова",
+       "ex": "I'm a [[night owl]]: I can't fall asleep before midnight."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a diet",
+       [
+        "make",
+        "follow",
+        "go on",
+        "stick to"
+       ],
+       "make"
+      ],
+      [
+       "___ a cold",
+       [
+        "catch",
+        "have",
+        "get over",
+        "take"
+       ],
+       "take"
+      ],
+      [
+       "___ a bad habit",
+       [
+        "give up",
+        "do",
+        "break",
+        "kick"
+       ],
+       "do"
+      ],
+      [
+       "___ your immune system",
+       [
+        "boost",
+        "raise",
+        "strengthen",
+        "weaken"
+       ],
+       "raise"
+      ],
+      [
+       "___ weight",
+       [
+        "lose",
+        "put on",
+        "gain",
+        "win"
+       ],
+       "win"
+      ],
+      [
+       "___ meals",
+       [
+        "jump",
+        "skip",
+        "miss",
+        "eat"
+       ],
+       "jump"
+      ],
+      [
+       "a ___ disease",
+       [
+        "chronic",
+        "serious",
+        "heavy",
+        "rare"
+       ],
+       "heavy"
+      ],
+      [
+       "___ a check-up",
+       [
+        "have",
+        "go for",
+        "get",
+        "do"
+       ],
+       "do"
+      ],
+      [
+       "___ medicine",
+       [
+        "take",
+        "drink",
+        "prescribe",
+        "need"
+       ],
+       "drink"
+      ],
+      [
+       "___ a temperature",
+       [
+        "have",
+        "run",
+        "make",
+        "take"
+       ],
+       "make"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "I'm feeling a bit under the {weather|climate|rain} today.",
+       "weather"
+      ],
+      [
+       "Too much sugar is {harmless|harmful|harm} to your teeth.",
+       "harmful"
+      ],
+      [
+       "She has been {recovering|recovered|recover} from flu for a week.",
+       "recovering"
+      ],
+      [
+       "Try to cut {down|down on|off on} fizzy drinks.",
+       "down on"
+      ],
+      [
+       "I've been burning the candle at both {sides|parts|ends} lately.",
+       "ends"
+      ],
+      [
+       "A {sitting|sedentary|seated} job can cause back problems.",
+       "sedentary"
+      ],
+      [
+       "He was off school because he {took|got up|caught} a cold.",
+       "caught"
+      ],
+      [
+       "Regular exercise {boosts|raises up|lifts} your immune system.",
+       "boosts"
+      ],
+      [
+       "Doctors say I should {cut off|cut down on|cut out on} salt.",
+       "cut down on"
+      ],
+      [
+       "I'm a real night {bird|cat|owl}.",
+       "owl"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "I stopped eating fast food a year ago.",
+       "GAVE",
+       "I ___ a year ago.",
+       "gave up fast food"
+      ],
+      [
+       "She was healthier in the past than she is now.",
+       "USED",
+       "She ___ than she is now.",
+       "used to be healthier"
+      ],
+      [
+       "The doctor said I was completely healthy.",
+       "BILL",
+       "The doctor gave me ___ health.",
+       "a clean bill of"
+      ],
+      [
+       "I don't feel very well today.",
+       "WEATHER",
+       "I feel ___ today.",
+       "a bit under the weather"
+      ],
+      [
+       "I usually eat while I'm doing other things.",
+       "GO",
+       "I usually eat ___.",
+       "on the go"
+      ],
+      [
+       "You shouldn't eat so much sugar.",
+       "CUT",
+       "You should ___ sugar.",
+       "cut down on"
+      ],
+      [
+       "She stopped smoking last year.",
+       "GAVE",
+       "She ___ last year.",
+       "gave up smoking"
+      ],
+      [
+       "Doing sport makes you less likely to get ill.",
+       "RISK",
+       "Doing sport reduces ___ ill.",
+       "the risk of getting"
+      ],
+      [
+       "Sitting all day is bad for your back.",
+       "HARMFUL",
+       "Sitting all day ___ your back.",
+       "is harmful to"
+      ],
+      [
+       "He was ill for a week but is fine now.",
+       "RECOVERED",
+       "He has ___ illness.",
+       "recovered from his"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Я постоянно ем на ходу и совсем не высыпаюсь.",
+       "I constantly eat on the go and never get enough sleep."
+      ],
+      [
+       "Сидячий образ жизни и стресс перед экзаменами ослабляют иммунитет.",
+       "A sedentary lifestyle and exam stress weaken the immune system."
+      ],
+      [
+       "Я сова, поэтому мне трудно рано ложиться.",
+       "I'm a night owl, so it's hard for me to go to bed early."
+      ],
+      [
+       "После каникул я чувствую себя в отличной форме.",
+       "After the holidays I feel fighting fit."
+      ],
+      [
+       "Я стараюсь не пропускать завтрак.",
+       "I try not to skip breakfast."
+      ],
+      [
+       "Сидячий образ жизни вредит здоровью.",
+       "A sedentary lifestyle is harmful to your health."
+      ],
+      [
+       "Врач сказал, что мне нужно принимать лекарство три дня.",
+       "The doctor said I needed to take medicine for three days."
+      ],
+      [
+       "Если работать на износ, можно заболеть.",
+       "If you burn the candle at both ends, you can fall ill."
+      ],
+      [
+       "Я жаворонок, поэтому легко встаю рано.",
+       "I'm an early bird, so it's easy for me to get up early."
+      ],
+      [
+       "Свежий воздух укрепляет иммунитет.",
+       "Fresh air boosts your immune system."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Health",
+      "questions": [
+       {
+        "q": "What region of Russia do you live in? Is it a healthy place to live in?",
+        "pool": [
+         "clean air",
+         "forests and parks",
+         "heavy traffic",
+         "industrial city"
+        ]
+       },
+       {
+        "q": "What role do sports play in staying healthy?",
+        "pool": [
+         "keep fit",
+         "boost immunity",
+         "cope with stress",
+         "a healthy heart"
+        ]
+       },
+       {
+        "q": "What kind of diet is good for your body?",
+        "pool": [
+         "a balanced diet",
+         "fresh fruit and vegetables",
+         "cut down on sugar",
+         "avoid processed food"
+        ]
+       },
+       {
+        "q": "How would you describe your lifestyle?",
+        "pool": [
+         "fairly active",
+         "rather sedentary",
+         "because of exams",
+         "get enough sleep"
+        ]
+       },
+       {
+        "q": "Do your friends and family have an active lifestyle?",
+        "pool": [
+         "go jogging",
+         "be into…",
+         "spend hours online",
+         "go hiking at weekends"
+        ]
+       }
+      ]
+     },
+     {
+      "type": "interview",
+      "topic": "Healthy breakfast food",
+      "questions": [
+       {
+        "q": "What part of Russia do you live in? What is it famous for?",
+        "pool": [
+         "I live in…",
+         "be famous for",
+         "local dishes"
+        ]
+       },
+       {
+        "q": "What are some traditional breakfast foods in your part of the country?",
+        "pool": [
+         "porridge",
+         "pancakes · syrniki",
+         "cottage cheese",
+         "traditionally"
+        ]
+       },
+       {
+        "q": "What can you tell us about your family breakfast traditions? Do you eat healthy food?",
+        "pool": [
+         "have breakfast together",
+         "at weekends",
+         "eat on the go",
+         "skip breakfast"
+        ]
+       },
+       {
+        "q": "What was your favourite breakfast food when you were a little kid?",
+        "pool": [
+         "When I was little, I loved…",
+         "my grandma used to make…"
+        ]
+       },
+       {
+        "q": "In what way will your breakfast be different from now when you start living on your own?",
+        "pool": [
+         "I'll probably…",
+         "be short of time",
+         "cook for myself",
+         "unlike now"
+        ]
+       }
+      ],
+      "trap": "Q5 asks about the <b>difference</b>: not just what you will eat, but how it will differ from your breakfast now."
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Healthy cooking course",
+      "slogan": "Eat well, feel great!",
+      "img": "broccoli",
+      "consider": "taking the healthy cooking course",
+      "points": [
+       "duration of the course",
+       "price",
+       "dishes you will learn to cook",
+       "number of people in the group"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "interview",
+      "topic": "Health issues",
+      "questions": [
+       {
+        "q": "Have you ever caught a cold? When was the last time you fell ill?",
+        "pool": [
+         "Yes, I have.",
+         "catch a cold",
+         "have a temperature",
+         "recover in a few days",
+         "last March"
+        ]
+       },
+       {
+        "q": "Do you have any bad habits that can negatively impact on your health?",
+        "pool": [
+         "stay up late",
+         "too much screen time",
+         "eat on the go",
+         "try to give up"
+        ]
+       },
+       {
+        "q": "In your opinion, what are the most frequent health problems with young people in your country?",
+        "pool": [
+         "poor posture",
+         "poor eyesight",
+         "exam stress",
+         "burnout"
+        ]
+       },
+       {
+        "q": "What do you do to take care of your health?",
+        "pool": [
+         "get enough sleep",
+         "do sport",
+         "eat healthily",
+         "have a check-up"
+        ]
+       },
+       {
+        "q": "What technologies can help people become healthier in future?",
+        "pool": [
+         "fitness trackers",
+         "health apps",
+         "online consultations",
+         "monitor heart rate"
+        ]
+       }
+      ],
+      "trap": "Q1: <i>Have you ever…?</i> → <i>Yes, I have.</i> + the Past Simple for a specific occasion."
+     },
+     {
+      "type": "essay",
+      "subject": "how people stay healthy in Zetland",
+      "audience": "Zetland adults",
+      "q": "What do you do to stay healthy?",
+      "data": [
+       [
+        "Not eating fast food",
+        42
+       ],
+       [
+        "Having a balanced diet",
+        24
+       ],
+       [
+        "Doing sports",
+        22
+       ],
+       [
+        "Getting to bed early",
+        10
+       ],
+       [
+        "Doing morning exercises",
+        2
+       ]
+      ],
+      "problem": "that can arise with some approaches to staying healthy",
+      "conclusion": "the importance of staying healthy",
+      "focus4": "a problem with one of the <b>approaches</b> in the table",
+      "pool": [
+       "avoid fast food",
+       "a balanced diet",
+       "skip meals",
+       "feel run-down",
+       "a lack of vitamins",
+       "consult a doctor",
+       "regular meals",
+       "get enough sleep",
+       "prevent diseases"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Motivation & Barriers",
+   "lede": "Why people do sport and what stops them — language for Task 38",
+   "pics": [
+    "bullseye",
+    "chart_increasing",
+    "money_bag"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "Reasons",
+     "cols": 6,
+     "items": [
+      {
+       "img": "flexed_biceps",
+       "en": "to keep fit",
+       "ru": "поддерживать форму"
+      },
+      {
+       "img": "brain",
+       "en": "to cope [[with]] stress",
+       "ru": "справляться со стрессом"
+      },
+      {
+       "img": "sparkles",
+       "en": "to boost self-esteem",
+       "ru": "повысить самооценку"
+      },
+      {
+       "img": "handshake",
+       "en": "to meet new people",
+       "ru": "знакомиться"
+      },
+      {
+       "img": "trophy",
+       "en": "to make a career",
+       "ru": "сделать карьеру"
+      },
+      {
+       "img": "books",
+       "en": "to get a scholarship",
+       "ru": "получить стипендию"
+      }
+     ]
+    },
+    {
+     "type": "pics",
+     "title": "Barriers",
+     "cols": 6,
+     "items": [
+      {
+       "img": "low_battery",
+       "en": "lack [[of]] motivation (U)",
+       "ru": "нет мотивации"
+      },
+      {
+       "img": "alarm_clock",
+       "en": "lack [[of]] time (U)",
+       "ru": "нет времени"
+      },
+      {
+       "img": "money_bag",
+       "en": "can't [[afford]] it",
+       "ru": "не по карману"
+      },
+      {
+       "img": "person_walking",
+       "en": "too far to go",
+       "ru": "далеко ездить"
+      },
+      {
+       "img": "person_shrugging",
+       "en": "not naturally sporty",
+       "ru": "не спортивен"
+      },
+      {
+       "img": "puzzle_piece",
+       "en": "nobody to share it [[with]]",
+       "ru": "не с кем"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Motivation",
+     "items": [
+      {
+       "en": "an [[incentive]]",
+       "ru": "стимул",
+       "ex": "Prize money is a strong [[incentive]]."
+      },
+      {
+       "en": "[[commitment]] (to) (U)",
+       "ru": "преданность делу",
+       "ex": "Professional sport requires total [[commitment]]."
+      },
+      {
+       "en": "[[peer]] pressure (U)",
+       "ru": "давление сверстников",
+       "ex": "Some teenagers start smoking because of [[peer]] pressure."
+      },
+      {
+       "en": "[[to stick to]] a routine",
+       "ru": "придерживаться режима",
+       "ex": "It's hard to [[stick to]] a routine during the holidays."
+      },
+      {
+       "en": "[[to set]] realistic goals",
+       "ru": "ставить реалистичные цели",
+       "ex": "[[Set]] realistic goals, or you'll soon give up."
+      },
+      {
+       "en": "[[to track]] your progress",
+       "ru": "отслеживать прогресс",
+       "ex": "I use an app to [[track]] my progress."
+      },
+      {
+       "en": "a sense [[of achievement]]",
+       "ru": "удовлетворение от результата",
+       "ex": "Finishing the race gave me a sense [[of achievement]]."
+      },
+      {
+       "en": "[[to lose]] interest · [[to make]] excuses",
+       "ru": "терять интерес · искать отговорки",
+       "ex": "Stop [[making]] excuses and go for a run!"
+      },
+      {
+       "en": "a workout [[buddy]]",
+       "ru": "напарник по тренировкам",
+       "ex": "My workout [[buddy]] never lets me skip training."
+      },
+      {
+       "en": "sports [[facilities]]",
+       "ru": "спортивные сооружения",
+       "ex": "Our town needs better sports [[facilities]]."
+      }
+     ]
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[can't be bothered]] (to do)",
+       "ru": "лень, неохота (informal)",
+       "ex": "I [[can't be bothered]] to go to the gym today."
+      },
+      {
+       "en": "[[to find the time]]",
+       "ru": "найти время",
+       "ex": "Even busy people can [[find the time]] for a walk."
+      },
+      {
+       "en": "[[to give it a go]]",
+       "ru": "попробовать",
+       "ex": "I've never tried yoga, but I'll [[give it a go]]."
+      },
+      {
+       "en": "The hardest part is [[getting started]].",
+       "ru": "главное — начать",
+       "ex": "“The hardest part is [[getting started]],” my coach says."
+      },
+      {
+       "en": "[[to get back on track]]",
+       "ru": "вернуться к режиму",
+       "ex": "After the holidays I [[got back on track]] with my training."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a goal",
+       [
+        "make",
+        "set",
+        "achieve",
+        "reach"
+       ],
+       "make"
+      ],
+      [
+       "___ a routine",
+       [
+        "stick to",
+        "follow",
+        "win",
+        "establish"
+       ],
+       "win"
+      ],
+      [
+       "___ excuses",
+       [
+        "make",
+        "find",
+        "come up with",
+        "do"
+       ],
+       "do"
+      ],
+      [
+       "___ progress",
+       [
+        "track",
+        "take",
+        "make",
+        "measure"
+       ],
+       "take"
+      ],
+      [
+       "___ motivation",
+       [
+        "lack",
+        "lose",
+        "miss",
+        "find"
+       ],
+       "miss"
+      ],
+      [
+       "___ an incentive",
+       [
+        "make",
+        "offer",
+        "provide",
+        "give"
+       ],
+       "make"
+      ],
+      [
+       "___ a sense of achievement",
+       [
+        "give",
+        "feel",
+        "do",
+        "get"
+       ],
+       "do"
+      ],
+      [
+       "___ interest",
+       [
+        "miss",
+        "lose",
+        "show",
+        "take"
+       ],
+       "miss"
+      ],
+      [
+       "___ back on track",
+       [
+        "get",
+        "be",
+        "stay",
+        "make"
+       ],
+       "make"
+      ],
+      [
+       "peer ___",
+       [
+        "pressure",
+        "stress",
+        "group",
+        "support"
+       ],
+       "stress"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "Many students can't {allow|afford|let} a gym membership.",
+       "afford"
+      ],
+      [
+       "Prize money is a strong {intention|invention|incentive} for athletes.",
+       "incentive"
+      ],
+      [
+       "I've managed to {stick|keep|hold} to my training plan for a month.",
+       "stick"
+      ],
+      [
+       "Teenagers often start smoking because of peer {press|pressure|stress}.",
+       "pressure"
+      ],
+      [
+       "I just can't be {disturbed|worried|bothered} to go to the gym after school.",
+       "bothered"
+      ],
+      [
+       "Finishing my first marathon gave me a real sense of {achievement|achieving|achieve}.",
+       "achievement"
+      ],
+      [
+       "My workout {mate-up|partnership|buddy} never lets me skip a session.",
+       "buddy"
+      ],
+      [
+       "I can't {afford|allow|let} to buy new trainers this month.",
+       "afford"
+      ],
+      [
+       "The hardest part is getting {start|started|to start}.",
+       "started"
+      ],
+      [
+       "Try to set {realistic|real|reality} goals.",
+       "realistic"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "I don't have enough money to pay for a personal trainer.",
+       "AFFORD",
+       "I ___ a personal trainer.",
+       "cannot afford"
+      ],
+      [
+       "He started training again after a long break.",
+       "BACK",
+       "After a long break he ___ training.",
+       "got back into"
+      ],
+      [
+       "“Why don't you try yoga?” my friend said to me.",
+       "SUGGESTED",
+       "My friend ___ yoga.",
+       "suggested (that) I try / suggested trying"
+      ],
+      [
+       "I'm too lazy to go jogging today.",
+       "BOTHERED",
+       "I ___ go jogging today.",
+       "can't be bothered to"
+      ],
+      [
+       "I'll try yoga, although I've never done it before.",
+       "GO",
+       "I've never done yoga, but I'll ___.",
+       "give it a go"
+      ],
+      [
+       "She follows her training plan very carefully.",
+       "STICKS",
+       "She ___ very carefully.",
+       "sticks to her training plan"
+      ],
+      [
+       "He always finds reasons not to train.",
+       "EXCUSES",
+       "He always ___ not to train.",
+       "makes excuses"
+      ],
+      [
+       "It isn't easy for students to pay for a gym.",
+       "AFFORD",
+       "Students can't easily ___ a gym.",
+       "afford to pay for"
+      ],
+      [
+       "I stopped being interested in football.",
+       "LOST",
+       "I ___ football.",
+       "lost interest in"
+      ],
+      [
+       "After the holidays I started training regularly again.",
+       "TRACK",
+       "After the holidays I got ___ my training.",
+       "back on track with"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "Главное — начать, дальше становится легче.",
+       "The hardest part is getting started; after that it gets easier."
+      ],
+      [
+       "Найди напарника по тренировкам: так труднее искать отговорки.",
+       "Find a workout buddy: it makes it harder to make excuses."
+      ],
+      [
+       "42% респондентов выбрали этот вариант.",
+       "42% of the respondents chose this option."
+      ],
+      [
+       "Отслеживание прогресса даёт чувство удовлетворения.",
+       "Tracking your progress gives you a sense of achievement."
+      ],
+      [
+       "Для многих стимулом становится желание быть здоровым.",
+       "For many people, the wish to be healthy becomes an incentive."
+      ],
+      [
+       "Давление сверстников может мешать заниматься спортом.",
+       "Peer pressure can stop people from doing sport."
+      ],
+      [
+       "Я отслеживаю прогресс в приложении.",
+       "I track my progress in an app."
+      ],
+      [
+       "Мне было лень идти на тренировку.",
+       "I couldn't be bothered to go to training."
+      ],
+      [
+       "Главное — ставить реалистичные цели.",
+       "The main thing is to set realistic goals."
+      ],
+      [
+       "В нашем городе не хватает спортивных сооружений.",
+       "Our town lacks sports facilities."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "essay",
+      "subject": "why adults in Zetland do sports",
+      "audience": "Zetland adults",
+      "q": "Why do you do sports?",
+      "data": [
+       [
+        "To keep fit",
+        42
+       ],
+       [
+        "To make a career in sports",
+        30
+       ],
+       [
+        "To cope with stress",
+        14
+       ],
+       [
+        "To spend time with friends",
+        9
+       ],
+       [
+        "To spend more time outdoors",
+        5
+       ]
+      ],
+      "problem": "that can arise with doing sports",
+      "conclusion": "the importance of doing sports",
+      "focus4": "a problem with <b>doing sports</b> as an adult",
+      "pool": [
+       "keep fit",
+       "cope with stress",
+       "take up sport after a long break",
+       "do too much too soon",
+       "get injured",
+       "increase the load gradually",
+       "consult a trainer",
+       "improve mood",
+       "self-confidence"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Running club",
+      "slogan": "Every step counts!",
+      "img": "running_shoe",
+      "consider": "joining the running club",
+      "points": [
+       "meeting point",
+       "time of training sessions",
+       "membership fee",
+       "level of runners"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "why some Zetland adults refuse to do sports regularly",
+      "audience": "Zetland adults",
+      "q": "Why do you refuse to do sports regularly?",
+      "data": [
+       [
+        "No pleasure",
+        48
+       ],
+       [
+        "No motivation",
+        18
+       ],
+       [
+        "Too expensive",
+        13
+       ],
+       [
+        "No time for it",
+        11
+       ],
+       [
+        "Nobody to share it with",
+        10
+       ]
+      ],
+      "problem": "that can arise if a person does not do sports regularly",
+      "conclusion": "how to motivate people to do sports",
+      "focus4": "consequences of <b>not exercising regularly</b>; conclusion: <b>how to motivate people</b>",
+      "pool": [
+       "get no pleasure from",
+       "lack of motivation",
+       "exercise now and then",
+       "lose progress",
+       "feel sore",
+       "fix sessions in the calendar",
+       "a workout buddy",
+       "find an activity you enjoy",
+       "an incentive"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "why many Zetland teenagers refuse to do any sports",
+      "audience": "Zetland teenagers",
+      "q": "Why do you refuse to do sports?",
+      "data": [
+       [
+        "Too busy with my exams",
+        39
+       ],
+       [
+        "Too far to go",
+        24
+       ],
+       [
+        "Too expensive",
+        17
+       ],
+       [
+        "Not naturally sporty",
+        12
+       ],
+       [
+        "Not interested",
+        8
+       ]
+      ],
+      "problem": "with lack of exercise",
+      "conclusion": "the best sport activity for teenagers",
+      "focus4": "consequences of <b>a lack of exercise</b> for teenagers",
+      "pool": [
+       "be busy with exams",
+       "sit at a desk all day",
+       "back pain",
+       "poor posture",
+       "short workouts between lessons",
+       "school sports clubs",
+       "swimming",
+       "cope with exam stress",
+       "accessible and cheap"
+      ]
+     }
+    ],
+    [
+     {
+      "type": "essay",
+      "subject": "reasons why elderly people in Zetland take up sports",
+      "audience": "senior Zetlanders",
+      "q": "Why do you do sports?",
+      "data": [
+       [
+        "Improving my fitness level",
+        35
+       ],
+       [
+        "Reducing stress",
+        27
+       ],
+       [
+        "Improving health",
+        19
+       ],
+       [
+        "Boosting self-esteem",
+        12
+       ],
+       [
+        "Meeting new people",
+        7
+       ]
+      ],
+      "problem": "that can arise while choosing a sport to take up",
+      "conclusion": "what makes a good athlete",
+      "focus4": "a problem in <b>choosing</b> a sport at an older age",
+      "pool": [
+       "senior citizens",
+       "improve fitness",
+       "a sport that is too intense",
+       "hurt the joints",
+       "consult a doctor",
+       "gentle trial classes",
+       "Nordic walking",
+       "discipline and determination",
+       "learn from defeats"
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Leisure & Pastime",
+   "lede": "Free time and hobbies — a neighbouring topic in speaking and writing",
+   "pics": [
+    "yarn",
+    "game_die",
+    "fishing_pole"
+   ],
+   "vocab": [
+    {
+     "type": "pics",
+     "title": "Things to do",
+     "cols": 5,
+     "items": [
+      {
+       "img": "yarn",
+       "en": "knitting (U)",
+       "ru": "вязание"
+      },
+      {
+       "img": "fishing_pole",
+       "en": "to go fishing",
+       "ru": "рыбалка"
+      },
+      {
+       "img": "game_die",
+       "en": "board games",
+       "ru": "настольные игры"
+      },
+      {
+       "img": "books",
+       "en": "reading (U)",
+       "ru": "чтение"
+      },
+      {
+       "img": "puzzle_piece",
+       "en": "to do puzzles",
+       "ru": "пазлы"
+      },
+      {
+       "img": "video_game",
+       "en": "video games",
+       "ru": "видеоигры"
+      },
+      {
+       "img": "bicycle",
+       "en": "to go for a bike ride",
+       "ru": "велопрогулка"
+      },
+      {
+       "img": "camping",
+       "en": "to go camping",
+       "ru": "поход"
+      },
+      {
+       "img": "television",
+       "en": "to watch TV",
+       "ru": "смотреть ТВ"
+      },
+      {
+       "img": "chess_pawn",
+       "en": "to play chess",
+       "ru": "шахматы"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "title": "Free time",
+     "items": [
+      {
+       "en": "[[spare]] time (U) · [[leisure]] activities",
+       "ru": "свободное время · виды досуга",
+       "ex": "In my [[spare]] time I draw."
+      },
+      {
+       "en": "a [[pastime]]",
+       "ru": "времяпрепровождение",
+       "ex": "Reading is my favourite [[pastime]]."
+      },
+      {
+       "en": "[[to take up]] / [[to pursue]] a hobby",
+       "ru": "начать заниматься / заниматься хобби",
+       "ex": "I [[took up]] photography last year."
+      },
+      {
+       "en": "[[to be into]] · [[to be keen on]] + -ing",
+       "ru": "увлекаться",
+       "ex": "My sister [[is keen on]] dancing."
+      },
+      {
+       "en": "[[to join]] a club",
+       "ru": "вступить в клуб",
+       "ex": "I [[joined]] a chess club in September."
+      },
+      {
+       "en": "[[to hang out]] with friends",
+       "ru": "проводить время с друзьями",
+       "ex": "We [[hang out]] in the park after school."
+      },
+      {
+       "en": "[[to collect]] coins / stamps",
+       "ru": "коллекционировать",
+       "ex": "My grandad [[collects]] old coins."
+      },
+      {
+       "en": "a creative [[outlet]]",
+       "ru": "способ самовыражения",
+       "ex": "Drawing is a great creative [[outlet]] for me."
+      }
+     ]
+    },
+    {
+     "type": "expressions",
+     "title": "B2+ expressions",
+     "items": [
+      {
+       "en": "[[to unwind]]",
+       "ru": "расслабиться",
+       "ex": "I read before bed to [[unwind]]."
+      },
+      {
+       "en": "[[to recharge]] your batteries",
+       "ru": "восстановить силы",
+       "ex": "A weekend in the country helps me [[recharge]] my batteries."
+      },
+      {
+       "en": "[[to kill]] time",
+       "ru": "убить время",
+       "ex": "We played cards to [[kill]] time at the airport."
+      },
+      {
+       "en": "a couch [[potato]]",
+       "ru": "лежебока (informal)",
+       "ex": "Don't be a couch [[potato]] — go outside!"
+      },
+      {
+       "en": "[[to get hooked on]]",
+       "ru": "подсесть на",
+       "ex": "He [[got hooked on]] computer games last winter."
+      },
+      {
+       "en": "[[to while away]] the hours",
+       "ru": "коротать время",
+       "ex": "We [[whiled away]] the hours playing board games."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "title": "Then and now · used to",
+     "html": "Thirty years ago teenagers <b>used to</b> spend more time outdoors, <b>whereas</b> nowadays much of their free time is spent online."
+    }
+   ],
+   "exercises": [
+    {
+     "type": "collocation",
+     "items": [
+      [
+       "___ a hobby",
+       [
+        "play",
+        "take up",
+        "have",
+        "pursue"
+       ],
+       "play"
+      ],
+      [
+       "___ time",
+       [
+        "kill",
+        "spend",
+        "go",
+        "waste"
+       ],
+       "go"
+      ],
+      [
+       "___ a club",
+       [
+        "gain",
+        "join",
+        "start",
+        "run"
+       ],
+       "gain"
+      ],
+      [
+       "___ your batteries",
+       [
+        "recharge",
+        "charge",
+        "drain",
+        "rebuild"
+       ],
+       "rebuild"
+      ],
+      [
+       "___ hooked on",
+       [
+        "get",
+        "make",
+        "become",
+        "be"
+       ],
+       "make"
+      ],
+      [
+       "___ out with friends",
+       [
+        "hang",
+        "sit",
+        "go",
+        "chill"
+       ],
+       "sit"
+      ],
+      [
+       "a creative ___",
+       [
+        "outlet",
+        "hobby",
+        "activity",
+        "exit"
+       ],
+       "exit"
+      ],
+      [
+       "___ a board game",
+       [
+        "do",
+        "play",
+        "set up",
+        "win"
+       ],
+       "do"
+      ],
+      [
+       "___ your free time",
+       [
+        "spend",
+        "fill",
+        "pass by",
+        "enjoy"
+       ],
+       "pass by"
+      ],
+      [
+       "___ fishing",
+       [
+        "go",
+        "enjoy",
+        "love",
+        "make"
+       ],
+       "make"
+      ]
+     ],
+     "title": "Collocations: odd one out",
+     "instr": "Which word does NOT go with the phrase? Cross it out."
+    },
+    {
+     "type": "choose",
+     "items": [
+      [
+       "Reading is my favourite {pastime|past time|pass time}.",
+       "pastime"
+      ],
+      [
+       "After a busy week I need to {unwrap|undo|unwind}.",
+       "unwind"
+      ],
+      [
+       "My brother is a real couch {potato|tomato|vegetable}.",
+       "potato"
+      ],
+      [
+       "I'm really {in|into|onto} board games at the moment.",
+       "into"
+      ],
+      [
+       "We used to {spend|pass|lose} hours playing in the yard.",
+       "spend"
+      ],
+      [
+       "For my mum, knitting is a creative {output|outlet|outcome}.",
+       "outlet"
+      ],
+      [
+       "My dad {took on|took off|took up} fishing when he retired.",
+       "took up"
+      ],
+      [
+       "We played cards to {murder|kill|shoot} time.",
+       "kill"
+      ],
+      [
+       "I got hooked {in|at|on} this series.",
+       "on"
+      ],
+      [
+       "She is very keen {on|at|in} drawing.",
+       "on"
+      ]
+     ],
+     "title": "Word choice in context",
+     "instr": "Choose the correct word. Think about meaning and collocation."
+    },
+    {
+     "type": "transform",
+     "items": [
+      [
+       "I started collecting stamps two years ago.",
+       "FOR",
+       "I ___ two years.",
+       "have been collecting stamps for"
+      ],
+      [
+       "I'm not interested in video games any more.",
+       "OFF",
+       "I ___ video games.",
+       "have gone off"
+      ],
+      [
+       "When I was little, I spent every summer at my grandma's.",
+       "USED",
+       "When I was little, I ___ every summer at my grandma's.",
+       "used to spend"
+      ],
+      [
+       "It's a pity I don't have more free time.",
+       "WISH",
+       "I ___ more free time.",
+       "wish I had"
+      ],
+      [
+       "I started playing chess when I was six.",
+       "TOOK",
+       "I ___ when I was six.",
+       "took up chess"
+      ],
+      [
+       "I really enjoy board games.",
+       "INTO",
+       "I'm really ___.",
+       "into board games"
+      ],
+      [
+       "I need to relax after the exams.",
+       "UNWIND",
+       "I need ___ after the exams.",
+       "to unwind"
+      ],
+      [
+       "He spends the whole day watching TV on the sofa.",
+       "POTATO",
+       "He is a real ___.",
+       "couch potato"
+      ],
+      [
+       "We spent the evening playing cards, and time passed quickly.",
+       "WHILED",
+       "We ___ playing cards.",
+       "whiled away the evening"
+      ],
+      [
+       "I became a member of the drama club in September.",
+       "JOINED",
+       "I ___ in September.",
+       "joined the drama club"
+      ]
+     ],
+     "title": "Paraphrase: key word transformation",
+     "instr": "Complete the second sentence so that it has a similar meaning to the first. Use the word given and do not change it. Use two to five words."
+    },
+    {
+     "type": "translate",
+     "items": [
+      [
+       "В свободное время я вяжу — это помогает мне расслабиться.",
+       "In my spare time I knit — it helps me unwind."
+      ],
+      [
+       "Мой брат подсел на видеоигры и почти не выходит из дома.",
+       "My brother has got hooked on video games and hardly ever goes out."
+      ],
+      [
+       "Раньше подростки проводили больше времени на улице.",
+       "Teenagers used to spend more time outdoors."
+      ],
+      [
+       "После экзаменов мне нужно восстановить силы.",
+       "I need to recharge my batteries after the exams."
+      ],
+      [
+       "В детстве я коллекционировал марки.",
+       "As a child, I used to collect stamps."
+      ],
+      [
+       "Мы часто проводим время с друзьями в парке.",
+       "We often hang out with friends in the park."
+      ],
+      [
+       "Настольные игры — отличный способ убить время.",
+       "Board games are a great way to kill time."
+      ],
+      [
+       "Вязание стало для мамы способом творческого самовыражения.",
+       "Knitting has become a creative outlet for my mum."
+      ],
+      [
+       "Я хочу вступить в шахматный клуб.",
+       "I want to join a chess club."
+      ],
+      [
+       "Мой брат — настоящий лежебока.",
+       "My brother is a real couch potato."
+      ]
+     ],
+     "title": "Translation",
+     "instr": "Translate into English using the vocabulary of the unit."
+    }
+   ],
+   "speech": [
+    [
+     {
+      "type": "interview",
+      "topic": "Ways of spending pastime",
+      "questions": [
+       {
+        "q": "How do teenagers spend pastime in your country? What hobbies are popular among your friends?",
+        "pool": [
+         "hang out",
+         "play video games",
+         "do sport",
+         "be into…"
+        ]
+       },
+       {
+        "q": "What do you and your friends do when you have free time? What games do you play?",
+        "pool": [
+         "play board games",
+         "go for a bike ride",
+         "play football in the yard"
+        ]
+       },
+       {
+        "q": "How did people in your country use to spend their time 30 years ago? Did they have more free time than we have today?",
+        "pool": [
+         "used to",
+         "play outdoors",
+         "read books",
+         "fewer gadgets"
+        ]
+       },
+       {
+        "q": "What can you tell us about leisure activities of your family members? How do you and your parents spend weekends?",
+        "pool": [
+         "go fishing",
+         "go to the countryside",
+         "unwind",
+         "watch films together"
+        ]
+       },
+       {
+        "q": "What was your favourite TV programme when you were younger? Why did you like watching it?",
+        "pool": [
+         "When I was little, I loved…",
+         "a cartoon series",
+         "funny characters"
+        ]
+       }
+      ],
+      "trap": "Q3 is about the past: <i>used to</i> / the Past Simple. Don't switch to the Present."
+     },
+     {
+      "type": "photo",
+      "project": "The best pastime for teenagers",
+      "p1": [
+       [
+        "yarn"
+       ],
+       "a young woman knitting, sitting on the grass"
+      ],
+      "p2": [
+       [
+        "person_biking",
+        "mountain"
+       ],
+       "two teenagers cycling through a forest"
+      ],
+      "focus": "the two types of pastime",
+      "opinion": "which type of pastime presented in the pictures you would prefer and why",
+      "basis": "do you move or not? (bank: 4)",
+      "pool": {
+       "describe": [
+        "knit",
+        "sit on the grass",
+        "ride bikes",
+        "in a forest",
+        "wear helmets"
+       ],
+       "difference": [
+        "a calm creative hobby",
+        "an active outdoor pastime",
+        "physical — creative"
+       ],
+       "pros": [
+        "relaxing",
+        "develop patience",
+        "keep you fit",
+        "explore new places"
+       ],
+       "cons": [
+        "no physical activity",
+        "may seem boring",
+        "can be tiring",
+        "need a bike"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Reading club",
+      "slogan": "Read. Share. Discuss.",
+      "img": "books",
+      "points": [
+       "location",
+       "entrance fee",
+       "range of books discussed",
+       "age restrictions"
+      ],
+      "consider": "joining the reading club"
+     },
+     {
+      "type": "ad",
+      "title": "A new board game",
+      "slogan": "Fun for the whole family!",
+      "img": "game_die",
+      "points": [
+       "number of players",
+       "duration of the game",
+       "level of difficulty",
+       "possibility to play outdoors"
+      ],
+      "consider": "buying the new board game"
+     }
+    ],
+    [
+     {
+      "type": "ad",
+      "title": "Fishing trip",
+      "slogan": "Catch the big one!",
+      "img": "fishing_pole",
+      "points": [
+       "starting point",
+       "duration of the trip",
+       "necessary clothes",
+       "available dates"
+      ],
+      "consider": "going on the fishing trip"
+     },
+     {
+      "type": "email",
+      "sender": "Helen",
+      "subject": "Hobbies",
+      "text": "…Guess what? My family wants to take part in a TV show about unusual collections! My little brother collects toy trains, my mum collects old postcards and my granny collects handwritten recipes. Sometimes our flat looks like a museum. Do you or your friends collect anything? What sports are popular among your friends? Are there any activities you'd like to try soon? Anyway, last Thursday I went to a football match…",
+      "ask": "about the football match",
+      "pool": {
+       "answers": [
+        "collect",
+        "a collection of",
+        "most of my friends are into…",
+        "I'd love to give … a go",
+        "step out of my comfort zone"
+       ],
+       "questions": [
+        "Who played…?",
+        "What was the score?",
+        "Who did you go with?",
+        "What was the atmosphere like?"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ],
+ "revision": {
+  "g1": [
+   [
+    19,
+    "Last spring my best friend and I",
+    "to run our first half-marathon.",
+    "DECIDE"
+   ],
+   [
+    20,
+    "By the time the race came, we",
+    "for four months.",
+    "TRAIN"
+   ],
+   [
+    21,
+    "Our coach said that starting too fast was the",
+    "mistake a beginner could make.",
+    "BAD"
+   ],
+   [
+    22,
+    "On race day, thousands of",
+    "lined the streets to cheer us on.",
+    "PERSON"
+   ],
+   [
+    23,
+    "At the eighteenth kilometre my legs hurt so much that I",
+    "hardly walk.",
+    "CAN"
+   ],
+   [
+    24,
+    "Since then we",
+    "together every weekend.",
+    "RUN"
+   ]
+  ],
+  "g2": [
+   [
+    25,
+    "Regular exercise is",
+    "for both the body and the mind.",
+    "BENEFIT"
+   ],
+   [
+    26,
+    "Doctors warn that physical",
+    "is one of the main causes of heart disease.",
+    "ACTIVE"
+   ],
+   [
+    27,
+    "Sport teaches young people",
+    "and discipline.",
+    "DETERMINE"
+   ],
+   [
+    28,
+    "Teenagers who train regularly usually feel more",
+    ".",
+    "CONFIDENCE"
+   ],
+   [
+    29,
+    "Without a proper warm-up, sports",
+    "are quite common.",
+    "INJURE"
+   ]
+  ],
+  "cloze": "I had always been afraid of heights, so last month I decided to <b>30</b> ______ my fear and signed up for a climbing class. The instructor told us to <b>31</b> ______ our time and not to rush. Climbing is not only about strength — you also need good <b>32</b> ______. Halfway up the wall I wanted to <b>33</b> ______ up, but my friends kept cheering me on. When I finally reached the top, I felt an incredible <b>34</b> ______ rush. Now I go to the climbing centre twice a week, and I have <b>35</b> ______ a lot of new friends there. My instructor says I have made great <b>36</b> ______ in just two months.",
+  "opts": [
+   [
+    30,
+    "overtake",
+    "overlook",
+    "overcome",
+    "overdo"
+   ],
+   [
+    31,
+    "spend",
+    "take",
+    "pass",
+    "make"
+   ],
+   [
+    32,
+    "weight",
+    "height",
+    "size",
+    "balance"
+   ],
+   [
+    33,
+    "make",
+    "give",
+    "put",
+    "take"
+   ],
+   [
+    34,
+    "energy",
+    "power",
+    "adrenaline",
+    "blood"
+   ],
+   [
+    35,
+    "found",
+    "got",
+    "done",
+    "made"
+   ],
+   [
+    36,
+    "progress",
+    "success",
+    "improvement",
+    "development"
+   ]
+  ],
+  "keys": [
+   [
+    "19–24",
+    "decided · had been training / had trained · worst · people · could · have been running / have run"
+   ],
+   [
+    "25–29",
+    "beneficial · inactivity · determination · confident · injuries"
+   ],
+   [
+    "30–36",
+    "30 — 3 overcome · 31 — 2 take · 32 — 4 balance · 33 — 2 give · 34 — 3 adrenaline · 35 — 4 made · 36 — 1 progress"
+   ]
+  ],
+  "reading11": {
+   "title": "Why teenagers need to get moving",
+   "text": "Doctors agree that regular exercise is one of the best ways {A}. Yet many teenagers spend most of their day sitting at a desk or in front of a screen, {B}.<br>The good news is that you do not need expensive equipment or a gym membership {C}. A brisk walk to school, a bike ride with friends or a quick workout at home can make a real difference.<br>The hardest part, most experts say, is getting started. That is why it is important to choose an activity {D}: if you hate running, you will soon find excuses to give it up. Team sports are a good option for those {E}, while individual sports suit people who prefer to train at their own pace.<br>Finally, remember to warm up properly before every session. Many beginners try to do too much too soon {F}.",
+   "parts": [
+    "which is why gyms are always crowded",
+    "of staying healthy and coping with stress",
+    "who enjoy the support of their team-mates",
+    "which can lead to back pain and poor posture",
+    "and end up pulling a muscle in the first week",
+    "if you want to stay active",
+    "that you genuinely enjoy"
+   ],
+   "key": "A — 2 · B — 4 · C — 6 · D — 7 · E — 3 · F — 5 (1 is extra)"
+  },
+  "transform": [
+   [
+    "I haven't been to the gym for a month.",
+    "LAST",
+    "The ___ to the gym was a month ago.",
+    "last time I went"
+   ],
+   [
+    "It was the most exciting match I had ever seen.",
+    "SUCH",
+    "I had never seen ___ match.",
+    "such an exciting"
+   ],
+   [
+    "Unless you warm up, you may pull a muscle.",
+    "IF",
+    "You may pull a muscle ___ up.",
+    "if you do not warm / if you don't warm"
+   ],
+   [
+    "Running is not as popular as football in our school.",
+    "MORE",
+    "In our school football is ___ running.",
+    "more popular than"
+   ],
+   [
+    "She started doing yoga two years ago.",
+    "BEEN",
+    "She ___ two years.",
+    "has been doing yoga for"
+   ],
+   [
+    "It's a pity I didn't take up sport earlier.",
+    "WISH",
+    "I ___ sport earlier.",
+    "wish I had taken up"
+   ]
+  ],
+  "translate": [
+   [
+    "Мы вылетели из турнира в полуфинале, но болельщики гордились командой.",
+    "We were knocked out of the tournament in the semi-final, but the fans were proud of the team."
+   ],
+   [
+    "Чтобы развить выносливость, нужно тренироваться регулярно и не перестараться.",
+    "To build up stamina, you need to train regularly and not overdo it."
+   ],
+   [
+    "Скалолазание помогает преодолеть страхи, но без защитного снаряжения это опасно.",
+    "Rock climbing helps you overcome your fears, but it is dangerous without safety gear."
+   ],
+   [
+    "Эта традиция передаётся из поколения в поколение.",
+    "This tradition has been passed down from generation to generation."
+   ],
+   [
+    "Я стараюсь не есть на ходу и сократить сладкое.",
+    "I try not to eat on the go and to cut down on sweets."
+   ],
+   [
+    "Многие взрослые не могут позволить себе абонемент в спортзал.",
+    "Many adults cannot afford a gym membership."
+   ]
+  ]
+ },
+ "ad_keys": [
+  [
+   "Paragliding",
+   "Where does the ride take place? · What equipment do I need to bring? · What dates are available? · How long does the ride last?"
+  ],
+  [
+   "Reading club",
+   "Where is the club located? · How much is the entrance fee? · What kind of books do you discuss? · What is the minimum age to join the club?"
+  ],
+  [
+   "Board game",
+   "How many players can take part in the game? · How long does the game last? · How difficult is the game? · Can the game be played outdoors?"
+  ],
+  [
+   "Fishing trip",
+   "Where does the trip start? · How long does the trip last? · What clothes should I wear? · What dates are available?"
+  ],
+  [
+   "Football summer camp",
+   "Where is the camp located? · What is the age limit for the camp? · How long does the camp last? · How much does the camp cost?"
+  ],
+  [
+   "New fitness centre",
+   "Where is the fitness centre located? · What are its opening hours? · How much does a monthly membership cost? · Are there personal trainers at the centre?"
+  ],
+  [
+   "Sambo classes",
+   "Where do the classes take place? · How old are the students? · How many lessons are there per week? · What equipment do I need?"
+  ],
+  [
+   "Healthy cooking course",
+   "How long does the course last? · How much does the course cost? · What dishes will I learn to cook? · How many people are there in the group?"
+  ],
+  [
+   "Running club",
+   "Where does the club meet? · When do the training sessions start? · How much is the membership fee? · What level are the runners in the club?"
+  ]
+ ],
+ "photo_pool_base": {
+  "describe": [
+   "in one picture / in the other picture",
+   "in the foreground",
+   "is / are + -ing",
+   "seems to be",
+   "outdoors / indoors"
+  ],
+  "opinion": [
+   "As for me, I'd prefer…",
+   "I'd rather… because…",
+   "It suits me better as…"
+  ],
+  "close": [
+   "That's all for now.",
+   "Give me a call!",
+   "Talk to you soon!",
+   "Bye!"
+  ]
+ },
+ "data_verbs": [
+  "chose",
+  "opted for",
+  "picked",
+  "gave preference to",
+  "the proportion of … who",
+  "twice / three times as high as",
+  "whereas"
+ ]
+}
