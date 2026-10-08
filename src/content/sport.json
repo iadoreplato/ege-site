@@ -455,7 +455,7 @@
       {
        "img": "goal_net",
        "en": "pitch",
-       "ru": "поле",
+       "ru": "поле (футбол, регби)",
        "sports": "football, rugby, cricket, field hockey",
        "prep": "[[on]] the pitch",
        "note": "grass with lines · AmE: field"
@@ -463,7 +463,7 @@
       {
        "img": "baseball",
        "en": "field",
-       "ru": "поле",
+       "ru": "поле (бейсбол, лапта)",
        "sports": "baseball, lapta; field events in athletics",
        "prep": "[[on]] the field",
        "note": "open outdoor area"
@@ -495,7 +495,7 @@
       {
        "img": "person_golfing",
        "en": "course",
-       "ru": "поле, трасса",
+       "ru": "поле для гольфа, трасса",
        "sports": "golf, horse racing, cross-country running",
        "prep": "[[on]] the golf course",
        "note": "a golf course · a racecourse"

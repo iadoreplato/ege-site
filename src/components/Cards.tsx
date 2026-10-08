@@ -7,9 +7,20 @@ import { cheer } from "./Rabbit";
 type Card = { en: string; ru: string; ex?: string };
 const shuffle = <T,>(items: T[]) => [...items].sort(() => Math.random() - 0.5);
 
-/** Every word or phrase of the unit that has a translation (lists, expressions, venues, pictures) */
+/** "a · b · c" with as many Russian parts becomes separate cards; the example stays only with a single card */
+const split = (x: Card): Card[] => {
+  const en = x.en.split(" · "), ru = x.ru.split(" · ");
+  return en.length > 1 && en.length === ru.length ? en.map((e, i) => ({ en: e, ru: ru[i] })) : [x];
+};
+const plain = (s: string) => s.replace(/\[\[|\]\]/g, "").toLowerCase();
+
+/** Every word or phrase of the unit that has a translation (lists, expressions, venues, pictures), each word once */
 export const unitCards = (unit: Unit): Card[] =>
-  unit.vocab.flatMap((block: any) => (block.items ?? []).filter((x: any) => x?.en && x?.ru).map((x: any) => ({ en: x.en, ru: x.ru, ex: x.ex })));
+  unit.vocab.flatMap((block: any) => (block.items ?? []).filter((x: any) => x?.en && x?.ru).flatMap((x: any) => split({ en: x.en, ru: x.ru, ex: x.ex })))
+    .filter((c: Card, i: number, all: Card[]) => all.findIndex(o => plain(o.en) === plain(c.en)) === i);
+
+/** One word or expression per card: no groups ("a · b") and no alternatives ("a / b") */
+const isSingle = (c: Card) => ![c.en, c.ru].some(s => / · | \/ /.test(s));
 
 /** Memorise tab, part 1: flash cards, Russian on the front, English and an example on the back */
 export function FlashCards({ cards }: { cards: Card[] }) {
@@ -37,7 +48,7 @@ export function FlashCards({ cards }: { cards: Card[] }) {
 export function MatchPairs({ cards, number }: { cards: Card[]; number: number }) {
   const [round, setRound] = useState(0);
   // eight pairs with different Russian phrases, so every pair has only one right answer
-  const set = useMemo(() => shuffle(cards).filter((c, i, all) => all.findIndex(x => x.ru === c.ru) === i).slice(0, 8), [cards, round]);
+  const set = useMemo(() => shuffle(cards.filter(isSingle)).filter((c, i, all) => all.findIndex(x => x.ru === c.ru) === i).slice(0, 8), [cards, round]);
   const english = useMemo(() => shuffle(set), [set]);
   const [selected, setSelected] = useState<Card | null>(null);
   const [matched, setMatched] = useState<Card[]>([]);
