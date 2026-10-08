@@ -5,16 +5,15 @@ import russiaData from "./content/russia.json";
 import { Topic, Universal } from "./types";
 import UniversalPage from "./components/Universal";
 import { TypologyBank, UnitView } from "./components/Topic";
-import Revision from "./components/Revision";
+import Revision, { Review } from "./components/Revision";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
-import { Buddy } from "./components/Rabbit";
-import { View, fromHash, label, samePage, sequence, toHash } from "./route";
+import { Praise } from "./components/Rabbit";
+import { View, fromHash, label, toHash } from "./route";
 
 const universal = universalData as unknown as Universal;
 // New topic modules: import the JSON and add it here
 const topics = [sportData, russiaData] as unknown as Topic[];
-const order = sequence(topics, universal);
 
 /* The last open page and scroll position are kept in this browser only (localStorage), nothing goes to a server */
 const LAST = "ege:last", SCROLL = "ege:scroll";
@@ -74,23 +73,18 @@ export default function App() {
     setView(v);
   };
 
-  const at = order.findIndex(v => samePage(v, view));
-  const prev = order[at - 1], next = order[at + 1];
   return (
-    <div className="app">
+    <div className="site">
       <Header topics={topics} universal={universal} here={view} last={last} />
-      <main>
+      <main className="site__main">
         {view.k === "home" && <Cover topics={topics} universal={universal} here={view} last={last} />}
         {view.k === "u" && <UniversalPage page={universal.pages[view.i]} />}
         {view.k === "bank" && <TypologyBank topic={topics[view.t]} />}
         {view.k === "unit" && <UnitView key={`${view.t}-${view.i}`} unit={topics[view.t].units[view.i]} topic={topics[view.t]} tab={view.tab} onTab={setTab} />}
         {view.k === "rev" && <Revision key={view.t} topic={topics[view.t]} />}
-        {at >= 0 && <nav className="pager" aria-label="Previous and next page">
-          {prev ? <a className="pgn prev" href={href(prev)}><span>← Previous</span><b>{name(prev)}</b></a> : <i />}
-          {next ? <a className="pgn next" href={href(next)}><span>Next →</span><b>{name(next)}</b></a> : <a className="pgn next" href="#/"><span>Done →</span><b>Back to contents</b></a>}
-        </nav>}
+        {view.k === "review" && <Review key={`${view.t}-${view.i}`} topic={topics[view.t]} i={view.i} />}
       </main>
-      {view.k !== "home" && <Buddy page={toHash({ ...view, tab: 0 } as View, topics)} />}
+      <Praise />
     </div>
   );
 }

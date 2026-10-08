@@ -2,33 +2,34 @@ import { useEffect, useState } from "react";
 import { Img, Rich } from "./text";
 
 export const Banner = ({ kick, title, lede, pics = [] }: { kick: string; title: string; lede?: string; pics?: string[] }) => (
-  <header className="bn">
-    <div className="bn-t"><div className="bn-k">{kick}</div><h2>{title}</h2>{lede && <p>{lede}</p>}</div>
-    <div className="bn-p">{pics.map(p => <Img key={p} name={p} className="bn-im" />)}</div>
+  <header className="page-banner">
+    <div className="page-banner__text"><div className="page-banner__kicker">{kick}</div><h2 className="page-banner__title">{title}</h2>{lede && <p className="page-banner__lead">{lede}</p>}</div>
+    <div className="page-banner__pictures">{pics.map(p => <Img key={p} name={p} className="page-banner__picture" />)}</div>
   </header>
 );
 
+/** Typical mistakes from the FIPI report; data marks each line "no" (mistake) or "yes" (correct) */
 export const Fipi = ({ items }: { items: [string, string][] }) => (
-  <div className="fipi">
-    <div className="fipi-h"><Img name="warning" className="fp-ic" /><span>Watch out</span><em>FIPI report · EGE 2026</em></div>
-    {items.map(([k, t], i) => <Rich key={i} as="div" className={`fp ${k}`} html={t} />)}
+  <div className="exam-warnings">
+    <div className="exam-warnings__header"><Img name="warning" className="exam-warnings__icon" /><span className="exam-warnings__title">Watch out</span><em className="exam-warnings__source">FIPI report · EGE 2026</em></div>
+    {items.map(([k, t], i) => <Rich key={i} as="div" className={`exam-warnings__item exam-warnings__item--${k === "yes" ? "correct" : "mistake"}`} html={t} />)}
   </div>
 );
 
 export function Timer({ seconds, label }: { seconds: number; label: string }) {
   const [left, setLeft] = useState(seconds);
-  const [run, setRun] = useState(false);
+  const [running, setRunning] = useState(false);
   useEffect(() => {
-    if (!run) return;
-    if (left <= 0) { setRun(false); return; }
+    if (!running) return;
+    if (left <= 0) { setRunning(false); return; }
     const id = setTimeout(() => setLeft(l => l - 1), 1000);
     return () => clearTimeout(id);
-  }, [run, left]);
+  }, [running, left]);
   return (
-    <div className={`timer${left === 0 ? " done" : ""}`}>
-      <span className="timer-l">{label}</span><b>{Math.floor(left / 60)}:{String(left % 60).padStart(2, "0")}</b>
-      <button onClick={() => setRun(r => !r)}>{run ? "Pause" : "Start"}</button>
-      <button onClick={() => { setRun(false); setLeft(seconds); }}>Reset</button>
+    <div className={`timer${left === 0 ? " timer--finished" : ""}`}>
+      <span className="timer__label">{label}</span><b className="timer__time">{Math.floor(left / 60)}:{String(left % 60).padStart(2, "0")}</b>
+      <button className="timer__button" onClick={() => setRunning(r => !r)}>{running ? "Pause" : "Start"}</button>
+      <button className="timer__button" onClick={() => { setRunning(false); setLeft(seconds); }}>Reset</button>
     </div>
   );
 }
@@ -36,6 +37,6 @@ export function Timer({ seconds, label }: { seconds: number; label: string }) {
 /** EGE word count: every token separated by spaces counts; 25%, can't, good-looking = one word */
 export const countWords = (t: string) => (t.trim() ? t.trim().split(/\s+/).length : 0);
 export function WordStatus({ n, min, max, ok }: { n: number; min: number; max: number; ok: [number, number] }) {
-  const st = n === 0 ? "" : n < min ? `under ${min} words: the answer gets 0` : n > max ? `over ${max}: only the first ${ok[1]} words are checked` : n < ok[0] || n > ok[1] ? "within the ±10% tolerance" : "word count OK";
-  return <div className="wc-b"><b>{n}</b> words · target {ok[0]}–{ok[1]} · <span>{st}</span></div>;
+  const status = n === 0 ? "" : n < min ? `under ${min} words: the answer gets 0` : n > max ? `over ${max}: only the first ${ok[1]} words are checked` : n < ok[0] || n > ok[1] ? "within the ±10% tolerance" : "word count OK";
+  return <div className="word-count"><b className="word-count__number">{n}</b> words · target {ok[0]}–{ok[1]} · <span className="word-count__status">{status}</span></div>;
 }

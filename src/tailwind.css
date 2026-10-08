@@ -10,24 +10,24 @@
 
 /* Цвета shadcn → палитра сайта из styles.css */
 @theme inline {
-  --color-background: #fff;
-  --color-foreground: var(--navy);
-  --color-card: #fff;
-  --color-card-foreground: var(--navy);
-  --color-popover: #fff;
-  --color-popover-foreground: var(--navy);
-  --color-primary: var(--terra);
-  --color-primary-foreground: #fff;
-  --color-secondary: var(--sand);
-  --color-secondary-foreground: var(--navy);
-  --color-muted: var(--sand);
-  --color-muted-foreground: var(--muted);
-  --color-accent: var(--blush);
-  --color-accent-foreground: var(--navy);
-  --color-destructive: #B3261E;
-  --color-border: var(--line);
-  --color-input: var(--line);
-  --color-ring: var(--terra);
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-main);
+  --color-card: var(--color-surface);
+  --color-card-foreground: var(--color-main);
+  --color-popover: var(--color-surface);
+  --color-popover-foreground: var(--color-main);
+  --color-primary: var(--color-accent);
+  --color-primary-foreground: var(--color-surface);
+  --color-secondary: var(--color-surface-muted);
+  --color-secondary-foreground: var(--color-main);
+  --color-muted: var(--color-surface-muted);
+  --color-muted-foreground: var(--color-text-muted);
+  --color-accent: var(--color-highlight);
+  --color-accent-foreground: var(--color-main);
+  --color-destructive: var(--color-accent-hover);
+  --color-border: var(--color-border);
+  --color-input: var(--color-border);
+  --color-ring: var(--color-accent);
 
   /* Magic UI Marquee */
   --animate-marquee: marquee var(--duration) infinite linear;
@@ -43,5 +43,5 @@
 }
 
 @layer base {
-  *, ::before, ::after { border-color: var(--line); }
+  *, ::before, ::after { border-color: var(--color-border); }
 }

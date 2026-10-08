@@ -1,9 +1,8 @@
-/* The course mascot: an original SVG rabbit. Animation (blinking, ears, head tilt, hops) lives in styles.css, section "rabbit". */
-import { RefObject, useEffect, useRef, useState } from "react";
+/* The course mascot: an original SVG rabbit. Colours are CSS variables --color-rabbit-* (styles.css, :root);
+   animation lives in styles.css, sections "rabbit" and "praise". */
+import { CSSProperties, RefObject, useEffect, useRef, useState } from "react";
 
-const FUR = "#F3E7D7", SHADE = "#E2CFB6", BELLY = "#FBF5EC", EAR = "#EFAF95", CHEEK = "#F4BFA6", NAVY = "#1D2B4A", TERRA = "#C2643A";
-
-/** Eyes and head follow the pointer: sets --rb-* offsets on the svg (used in styles.css, section "rabbit") */
+/** Eyes and head follow the pointer: sets --rabbit-* offsets on the svg */
 function useLook(ref: RefObject<SVGSVGElement>) {
   useEffect(() => {
     let raf = 0;
@@ -14,11 +13,10 @@ function useLook(ref: RefObject<SVGSVGElement>) {
         if (!el) return;
         const r = el.getBoundingClientRect();
         const dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height * 0.35);
-        const d = Math.hypot(dx, dy) || 1, k = Math.min(1, d / 250);
-        const x = dx / d * k, y = dy / d * k;
+        const d = Math.hypot(dx, dy) || 1, k = Math.min(1, d / 250), x = dx / d * k, y = dy / d * k;
         const set = (name: string, v: number, unit: string) => el.style.setProperty(name, v.toFixed(2) + unit);
-        set("--rb-rot", x * 7, "deg"); set("--rb-hx", x, "px"); set("--rb-hy", y * 0.6, "px");
-        set("--rb-ex", x * 1.7, "px"); set("--rb-ey", y * 1.4, "px");
+        set("--rabbit-head-rotation", x * 7, "deg"); set("--rabbit-head-x", x, "px"); set("--rabbit-head-y", y * 0.6, "px");
+        set("--rabbit-pupils-x", x * 1.7, "px"); set("--rabbit-pupils-y", y * 1.4, "px");
       });
     };
     window.addEventListener("pointermove", move, { passive: true });
@@ -26,29 +24,29 @@ function useLook(ref: RefObject<SVGSVGElement>) {
   }, [ref]);
 }
 
-/** Head with ears, drawn in a 64×64 box; the bigger rabbits scale it */
+/** Head with ears, drawn in a 64×64 box; every rabbit scales it */
 const Head = () => (
-  <g className="rb-head">
-    <g className="rb-ear rb-ear-l">
-      <ellipse cx="24" cy="15" rx="6.5" ry="14" fill={FUR} transform="rotate(-12 24 15)" />
-      <ellipse cx="24" cy="16.5" rx="3.2" ry="10" fill={EAR} transform="rotate(-12 24 16.5)" />
+  <g className="rabbit__head">
+    <g className="rabbit__ear rabbit__ear--left">
+      <ellipse className="rabbit__fur" cx="24" cy="15" rx="6.5" ry="14" transform="rotate(-12 24 15)" />
+      <ellipse className="rabbit__pink" cx="24" cy="16.5" rx="3.2" ry="10" transform="rotate(-12 24 16.5)" />
     </g>
-    <g className="rb-ear rb-ear-r">
-      <ellipse cx="40" cy="15" rx="6.5" ry="14" fill={FUR} transform="rotate(12 40 15)" />
-      <ellipse cx="40" cy="16.5" rx="3.2" ry="10" fill={EAR} transform="rotate(12 40 16.5)" />
+    <g className="rabbit__ear rabbit__ear--right">
+      <ellipse className="rabbit__fur" cx="40" cy="15" rx="6.5" ry="14" transform="rotate(12 40 15)" />
+      <ellipse className="rabbit__pink" cx="40" cy="16.5" rx="3.2" ry="10" transform="rotate(12 40 16.5)" />
     </g>
-    <ellipse cx="32" cy="41" rx="18" ry="16" fill={FUR} />
-    <ellipse cx="32" cy="49" rx="9" ry="6" fill={SHADE} opacity=".55" />
-    <circle cx="21.5" cy="46" r="3.2" fill={CHEEK} opacity=".75" />
-    <circle cx="42.5" cy="46" r="3.2" fill={CHEEK} opacity=".75" />
-    <g className="rb-eyes"><g className="rb-look">
-      <ellipse cx="25" cy="39" rx="2.5" ry="3.1" fill={NAVY} />
-      <ellipse cx="39" cy="39" rx="2.5" ry="3.1" fill={NAVY} />
-      <circle cx="25.9" cy="37.9" r=".9" fill="#fff" />
-      <circle cx="39.9" cy="37.9" r=".9" fill="#fff" />
+    <ellipse className="rabbit__fur" cx="32" cy="41" rx="18" ry="16" />
+    <ellipse className="rabbit__shadow" cx="32" cy="49" rx="9" ry="6" opacity=".55" />
+    <circle className="rabbit__pink" cx="21.5" cy="46" r="3.2" opacity=".75" />
+    <circle className="rabbit__pink" cx="42.5" cy="46" r="3.2" opacity=".75" />
+    <g className="rabbit__eyes"><g className="rabbit__pupils">
+      <ellipse className="rabbit__eye" cx="25" cy="39" rx="2.5" ry="3.1" />
+      <ellipse className="rabbit__eye" cx="39" cy="39" rx="2.5" ry="3.1" />
+      <circle className="rabbit__eye-glint" cx="25.9" cy="37.9" r=".9" />
+      <circle className="rabbit__eye-glint" cx="39.9" cy="37.9" r=".9" />
     </g></g>
-    <path className="rb-nose" d="M29.6 44.4Q32 43.2 34.4 44.4Q33.2 46.7 32 46.9Q30.8 46.7 29.6 44.4Z" fill={TERRA} />
-    <path d="M32 46.9v1.5m0 0q-1.9 1.7-3.5.5m3.5-.5q1.9 1.7 3.5.5" fill="none" stroke={NAVY} strokeWidth="1" strokeLinecap="round" />
+    <path className="rabbit__nose" d="M29.6 44.4Q32 43.2 34.4 44.4Q33.2 46.7 32 46.9Q30.8 46.7 29.6 44.4Z" />
+    <path className="rabbit__mouth" d="M32 46.9v1.5m0 0q-1.9 1.7-3.5.5m3.5-.5q1.9 1.7 3.5.5" strokeWidth="1" />
   </g>
 );
 
@@ -56,7 +54,7 @@ const Head = () => (
 export function RabbitMark() {
   const ref = useRef<SVGSVGElement>(null);
   useLook(ref);
-  return <svg ref={ref} className="rb rb-mark" viewBox="0 0 64 64" aria-hidden="true"><Head /></svg>;
+  return <svg ref={ref} className="rabbit rabbit--logo" viewBox="0 0 64 64" aria-hidden="true"><Head /></svg>;
 }
 
 /** Rabbit reading an open book, for the cover; hops when clicked */
@@ -64,94 +62,84 @@ export function RabbitReader() {
   const ref = useRef<SVGSVGElement>(null);
   const [n, setN] = useState(0);
   useLook(ref);
-  return <button className="rb-btn" onClick={() => setN(n + 1)} aria-label="Make the rabbit hop">
-    <span key={n} className={`rb-fx${n ? " hop" : ""}`}>
-      <svg ref={ref} className="rb rb-reader" viewBox="0 0 240 240" aria-hidden="true">
-        <ellipse cx="120" cy="222" rx="92" ry="9" fill="#000" opacity=".18" />
-        <ellipse className="rb-body" cx="120" cy="178" rx="54" ry="44" fill={SHADE} />
-        <g transform="translate(46 8) scale(2.3)"><Head /></g>
-        <path d="M44 184Q83 174 120 190Q157 174 196 184V218Q157 209 120 223Q83 209 44 218Z" fill={TERRA} />
-        <path d="M52 180Q88 170 120 186V216Q88 202 52 210Z" fill="#FFFDF9" />
-        <path d="M188 180Q152 170 120 186V216Q152 202 188 210Z" fill="#FBF3E8" />
-        <path d="M64 186q22-6 46 2M64 194q22-6 46 2M64 202q14-4 28 0M130 188q22-8 46-2M130 196q22-8 46-2M130 204q14-5 30-2" fill="none" stroke="#D9C8B0" strokeWidth="2.6" strokeLinecap="round" />
-        <ellipse cx="92" cy="182" rx="11" ry="8.5" fill={FUR} />
-        <ellipse cx="148" cy="182" rx="11" ry="8.5" fill={FUR} />
-        <path d="M88 178.5v5M96 178.5v5M144 178.5v5M152 178.5v5" stroke={SHADE} strokeWidth="1.6" strokeLinecap="round" />
+  return <button className="cover__rabbit-button" onClick={() => setN(n + 1)} aria-label="Make the rabbit hop">
+    <span key={n} className={`rabbit-hop${n ? " rabbit-hop--active" : ""}`}>
+      <svg ref={ref} className="rabbit rabbit--reader" viewBox="0 0 240 240" aria-hidden="true">
+        <ellipse className="rabbit__ground" cx="120" cy="222" rx="92" ry="9" />
+        <ellipse className="rabbit__body rabbit__shadow" cx="120" cy="180" rx="42" ry="36" />
+        <g transform="translate(38 0) scale(2.56)"><Head /></g>
+        <path className="rabbit__book-cover" d="M44 184Q83 174 120 190Q157 174 196 184V218Q157 209 120 223Q83 209 44 218Z" />
+        <path className="rabbit__book-page" d="M52 180Q88 170 120 186V216Q88 202 52 210Z" />
+        <path className="rabbit__book-page rabbit__book-page--right" d="M188 180Q152 170 120 186V216Q152 202 188 210Z" />
+        <path className="rabbit__book-lines" d="M64 186q22-6 46 2M64 194q22-6 46 2M64 202q14-4 28 0M130 188q22-8 46-2M130 196q22-8 46-2M130 204q14-5 30-2" strokeWidth="2.6" />
+        <ellipse className="rabbit__fur" cx="92" cy="182" rx="11" ry="8.5" />
+        <ellipse className="rabbit__fur" cx="148" cy="182" rx="11" ry="8.5" />
+        <path className="rabbit__toe-lines" d="M88 178.5v5M96 178.5v5M144 178.5v5M152 178.5v5" strokeWidth="1.6" />
       </svg>
     </span>
   </button>;
 }
 
-/** Sitting rabbit for the corner companion */
-const BuddySvg = ({ svgRef }: { svgRef: RefObject<SVGSVGElement> }) => (
-  <svg ref={svgRef} className="rb rb-buddy" viewBox="0 0 120 142" aria-hidden="true">
-    <ellipse cx="60" cy="137" rx="36" ry="5" fill="#1D2B4A" opacity=".16" />
-    <g className="rb-body">
-      <ellipse cx="60" cy="98" rx="31" ry="36" fill={FUR} />
-      <ellipse cx="60" cy="106" rx="17" ry="22" fill={BELLY} />
-      <ellipse cx="49" cy="93" rx="6.5" ry="8" fill={FUR} stroke={SHADE} strokeWidth="1.2" />
-      <ellipse cx="71" cy="93" rx="6.5" ry="8" fill={FUR} stroke={SHADE} strokeWidth="1.2" />
-      <ellipse cx="43" cy="131" rx="13" ry="6.5" fill={FUR} stroke={SHADE} strokeWidth="1.2" />
-      <ellipse cx="77" cy="131" rx="13" ry="6.5" fill={FUR} stroke={SHADE} strokeWidth="1.2" />
+/** Whole rabbit: big head, small body. Peeks up from the bottom edge to praise */
+const PraiseRabbit = ({ svgRef }: { svgRef: RefObject<SVGSVGElement> }) => (
+  <svg ref={svgRef} className="rabbit rabbit--praise" viewBox="0 0 120 156" aria-hidden="true">
+    <g className="rabbit__body">
+      <ellipse className="rabbit__fur" cx="60" cy="120" rx="22" ry="24" />
+      <ellipse className="rabbit__belly" cx="60" cy="124" rx="13" ry="15" />
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="46" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="74" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
     </g>
-    <g transform="translate(24 -2) scale(1.125)"><Head /></g>
+    <g transform="translate(8.8 2) scale(1.6)"><Head /></g>
+    <g className="rabbit__paws">
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="48" cy="101" rx="7" ry="6.5" strokeWidth="1.2" />
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="72" cy="101" rx="7" ry="6.5" strokeWidth="1.2" />
+    </g>
   </svg>
 );
 
-const TIPS = [
-  "Say new phrases out loud: it helps them stick.",
-  "Learn words in pairs: take a risk, face your fears.",
-  "Read the task twice before you start writing.",
-  "Check your word count before you finish an essay.",
-  "Stuck? Do the Vocabulary tab first, then come back.",
-];
+/** Report a finished task to the rabbit (from "Check answers" and the AI check). `big` = large task: brighter praise */
+export const cheer = (score: number, total: number, big = total >= 15) =>
+  window.dispatchEvent(new CustomEvent("praise", { detail: { score, total, big } }));
 
-/** Tell the corner rabbit how an exercise went (called by the "Check answers" button) */
-export const cheer = (score: number, total: number) => window.dispatchEvent(new CustomEvent("buddy", { detail: { score, total } }));
+const pick = (xs: string[]) => xs[Math.floor(Math.random() * xs.length)];
+/** Always positive: the wording only gets warmer as the score grows */
+function praise(score: number, total: number, big: boolean): [string, string] {
+  const r = total ? score / total : 0, s = `${score} / ${total}`;
+  if (big) return r >= 0.8 ? [pick(["Amazing work!", "Outstanding!", "You nailed it!"]), `${s} on a big task. Be proud of that!`]
+    : r >= 0.5 ? [pick(["Great effort!", "Well done!"]), `${s} on a big task. Check the corrections and you're there.`]
+    : ["You finished it!", `${s}. Big tasks take practice. Have another go!`];
+  return r >= 0.9 ? [pick(["Brilliant!", "Spot on!", "Top marks!"]), s]
+    : r >= 0.6 ? [pick(["Nice work!", "Good job!"]), `${s}. Look at the corrections.`]
+    : ["Good try!", `${s}. Have another go!`];
+}
 
-type Mood = "hop" | "happy" | "sad";
+/* Confetti for big tasks: end positions as ready-made values (no calc in CSS) */
+const BITS = Array.from({ length: 14 }, (_, i) => {
+  const a = -Math.PI * (0.1 + 0.8 * i / 13), d = 70 + (i % 3) * 22;
+  return { "--confetti-x": `${Math.round(Math.cos(a) * d)}px`, "--confetti-y": `${Math.round(Math.sin(a) * d)}px`, "--confetti-rotation": `${(i * 67) % 360}deg` } as CSSProperties;
+});
 
-/** Corner companion on every page except the cover: hops on page change, gives tips, reacts to checked answers */
-export function Buddy({ page }: { page: string }) {
+/** Rabbit that peeks out and praises after a finished task; hidden the rest of the time */
+export function Praise() {
   const ref = useRef<SVGSVGElement>(null);
-  const [hidden, setHidden] = useState(() => { try { return localStorage.getItem("ege:buddy") === "off"; } catch { return false; } });
-  const [act, setAct] = useState<{ mood: Mood; n: number }>({ mood: "hop", n: 0 });
-  const [say, setSay] = useState("");
-  const tip = useRef(0);
+  const [show, setShow] = useState<{ n: number; big: boolean; title: string; text: string } | null>(null);
   useLook(ref);
-
-  const play = (mood: Mood, text = "") => { setAct(a => ({ mood, n: a.n + 1 })); setSay(text); };
-  const toggle = (off: boolean) => { setHidden(off); try { localStorage.setItem("ege:buddy", off ? "off" : "on"); } catch { /* not remembered */ } };
-
-  const first = useRef(true);
-  useEffect(() => { if (first.current) { first.current = false; return; } play("hop"); }, [page]);
-
   useEffect(() => {
+    let n = 0;
     const on = (e: Event) => {
-      const { score, total } = (e as CustomEvent<{ score: number; total: number }>).detail;
-      const r = total ? score / total : 0;
-      if (r >= 0.9) play("happy", `Brilliant! ${score} / ${total}`);
-      else if (r >= 0.6) play("happy", `Nice work: ${score} / ${total}. Look at the corrections and try again.`);
-      else play("sad", `${score} / ${total}. Don't give up: look at the corrections and try again.`);
+      const { score, total, big } = (e as CustomEvent<{ score: number; total: number; big: boolean }>).detail;
+      const [title, text] = praise(score, total, big);
+      setShow({ n: ++n, big, title, text });
     };
-    window.addEventListener("buddy", on);
-    return () => window.removeEventListener("buddy", on);
+    window.addEventListener("praise", on);
+    return () => window.removeEventListener("praise", on);
   }, []);
-
-  useEffect(() => { if (!say) return; const id = setTimeout(() => setSay(""), 5000); return () => clearTimeout(id); }, [say, act.n]);
-
-  if (hidden) return <button className="bd-peek" onClick={() => toggle(false)} aria-label="Show the rabbit">
-    <svg viewBox="0 0 40 26" aria-hidden="true"><g transform="translate(-4 -2)"><ellipse cx="16" cy="18" rx="5.5" ry="14" fill={FUR} transform="rotate(-10 16 18)" /><ellipse cx="16" cy="19" rx="2.6" ry="10" fill={EAR} transform="rotate(-10 16 19)" /><ellipse cx="32" cy="18" rx="5.5" ry="14" fill={FUR} transform="rotate(10 32 18)" /><ellipse cx="32" cy="19" rx="2.6" ry="10" fill={EAR} transform="rotate(10 32 19)" /></g></svg>
-  </button>;
-
-  return <div className="bd">
-    <p className={`bd-say${say ? " on" : ""}`} role="status">{say}</p>
-    <button className="bd-me" onClick={() => play("hop", TIPS[tip.current++ % TIPS.length])} aria-label="Rabbit: tap for a study tip">
-      <span key={act.n} className={`rb-fx ${act.n ? act.mood : ""}`}>
-        <BuddySvg svgRef={ref} />
-        {act.mood === "happy" && act.n > 0 && <span className="bd-hearts" aria-hidden="true"><i>♥</i><i>✦</i><i>♥</i></span>}
-      </span>
+  if (!show) return null;
+  return <div key={show.n} className={`praise${show.big ? " praise--big" : ""}`} onAnimationEnd={e => e.target === e.currentTarget && setShow(null)}>
+    <p className="praise__speech" role="status"><b className="praise__speech-title">{show.title}</b> {show.text}</p>
+    <button className="praise__rabbit-button" onClick={() => setShow(null)} aria-label="Close">
+      <PraiseRabbit svgRef={ref} />
+      {show.big && <span className="praise__confetti" aria-hidden="true">{BITS.map((style, i) => <i className="praise__confetti-piece" key={i} style={style} />)}</span>}
     </button>
-    <button className="bd-x" onClick={() => toggle(true)} aria-label="Hide the rabbit">×</button>
   </div>;
 }

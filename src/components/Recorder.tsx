@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Timer } from "./ui";
 
 /** Records the student's spoken answer; lets them listen, download and share the file */
 export default function Recorder({ name, maxSeconds }: { name: string; maxSeconds: number }) {
@@ -43,11 +44,16 @@ export default function Recorder({ name, maxSeconds }: { name: string; maxSecond
 
   return (
     <div className="recorder">
-      <span className="rec-l">🎙 Record your answer</span>
-      {state !== "rec" && <button className="rec-b" onClick={start}>{state === "done" ? "Record again" : "Start recording"}</button>}
-      {state === "rec" && <><span className="rec-dot" /><b>{Math.floor(sec / 60)}:{String(sec % 60).padStart(2, "0")}</b><span className="rec-max">/ {Math.floor(maxSeconds / 60)}:{String(maxSeconds % 60).padStart(2, "0")}</span><button className="rec-b" onClick={stop}>Stop</button></>}
-      {state === "done" && url && <><audio controls src={url} /><a className="mini" href={url} download={fileName}>Download</a><button className="mini" onClick={share}>Send</button></>}
-      {state === "error" && <span className="err">No access to the microphone. Allow it in the browser settings.</span>}
+      <span className="recorder__label">🎙 Record your answer</span>
+      {state !== "rec" && <button className="recorder__button" onClick={start}>{state === "done" ? "Record again" : "Start recording"}</button>}
+      {state === "rec" && <><span className="recorder__dot" /><b className="recorder__time">{Math.floor(sec / 60)}:{String(sec % 60).padStart(2, "0")}</b><span className="recorder__limit">/ {Math.floor(maxSeconds / 60)}:{String(maxSeconds % 60).padStart(2, "0")}</span><button className="recorder__button" onClick={stop}>Stop</button></>}
+      {state === "done" && url && <><audio className="recorder__audio" controls src={url} /><a className="button button--secondary" href={url} download={fileName}>Download</a><button className="button button--secondary" onClick={share}>Send</button></>}
+      {state === "error" && <span className="error-text">No access to the microphone. Allow it in the browser settings.</span>}
     </div>
   );
 }
+
+/** Speaking tools in one row that wraps when it doesn't fit: an optional preparation timer,
+    a timer for answering aloud without recording, and the recorder */
+export const SpeakBar = ({ name, seconds, label, maxSeconds = seconds, preparation }: { name: string; seconds: number; label: string; maxSeconds?: number; preparation?: number }) =>
+  <div className="speaking-tools">{preparation && <Timer seconds={preparation} label="Preparation" />}<Timer seconds={seconds} label={label} /><Recorder name={name} maxSeconds={maxSeconds} /></div>;
