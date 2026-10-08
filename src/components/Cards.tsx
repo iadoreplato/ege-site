@@ -1,26 +1,17 @@
 import { useEffect, useMemo, useState } from "react";
-import { CardTests, Unit } from "../types";
-import { Rich } from "./text";
+import { CardTests, Unit, VocabItem } from "../types";
 import ExerciseView, { Head } from "./Exercises";
 import { cheer } from "./Rabbit";
 
 type Card = { en: string; ru: string; ex?: string };
 const shuffle = <T,>(items: T[]) => [...items].sort(() => Math.random() - 0.5);
 
-/** "a · b · c" with as many Russian parts becomes separate cards; the example stays only with a single card */
-const split = (x: Card): Card[] => {
-  const en = x.en.split(" · "), ru = x.ru.split(" · ");
-  return en.length > 1 && en.length === ru.length ? en.map((e, i) => ({ en: e, ru: ru[i] })) : [x];
-};
-const plain = (s: string) => s.replace(/\[\[|\]\]/g, "").toLowerCase();
-
-/** Every word or phrase of the unit that has a translation (lists, expressions, venues, pictures), each word once */
+/** Every word or phrase of the unit with a translation, each once; plain text, without the word-list highlighting */
 export const unitCards = (unit: Unit): Card[] =>
-  unit.vocab.flatMap((block: any) => (block.items ?? []).filter((x: any) => x?.en && x?.ru).flatMap((x: any) => split({ en: x.en, ru: x.ru, ex: x.ex })))
-    .filter((c: Card, i: number, all: Card[]) => all.findIndex(o => plain(o.en) === plain(c.en)) === i);
-
-/** One word or expression per card: no groups ("a · b") and no alternatives ("a / b") */
-const isSingle = (c: Card) => ![c.en, c.ru].some(s => / · | \/ /.test(s));
+  unit.vocab.flatMap((block: any) => [...(block.items ?? []), ...(block.groups ?? []).flatMap((g: any[]) => g[2])])
+    .filter((x: VocabItem) => x?.en && x.ru)
+    .map((x: VocabItem) => ({ en: x.en, ru: x.ru, ex: x.ex }))
+    .filter((c: Card, i: number, all: Card[]) => all.findIndex(o => o.en.toLowerCase() === c.en.toLowerCase()) === i);
 
 /** Memorise tab, part 1: flash cards, Russian on the front, English and an example on the back */
 export function FlashCards({ cards }: { cards: Card[] }) {
@@ -33,7 +24,7 @@ export function FlashCards({ cards }: { cards: Card[] }) {
   return <div className="flash-cards">
     <button className={`flash-card${flipped ? " flash-card--flipped" : ""}`} onClick={() => setFlipped(!flipped)} aria-label="Turn the card over">
       <span className="flash-card__side flash-card__side--front"><small className="flash-card__language">Russian</small><b className="flash-card__phrase">{card.ru}</b><em className="flash-card__hint">tap to see the English</em></span>
-      <span className="flash-card__side flash-card__side--back"><small className="flash-card__language">English</small><Rich as="b" className="flash-card__phrase" html={card.en} />{card.ex && <Rich as="em" className="flash-card__hint" html={card.ex} />}</span>
+      <span className="flash-card__side flash-card__side--back"><small className="flash-card__language">English</small><b className="flash-card__phrase">{card.en}</b>{card.ex && <em className="flash-card__hint">{card.ex}</em>}</span>
     </button>
     <div className="flash-cards__controls">
       <button className="button button--secondary" onClick={() => go(-1)}>← Back</button>
@@ -48,7 +39,7 @@ export function FlashCards({ cards }: { cards: Card[] }) {
 export function MatchPairs({ cards, number }: { cards: Card[]; number: number }) {
   const [round, setRound] = useState(0);
   // eight pairs with different Russian phrases, so every pair has only one right answer
-  const set = useMemo(() => shuffle(cards.filter(isSingle)).filter((c, i, all) => all.findIndex(x => x.ru === c.ru) === i).slice(0, 8), [cards, round]);
+  const set = useMemo(() => shuffle(cards).filter((c, i, all) => all.findIndex(x => x.ru === c.ru) === i).slice(0, 8), [cards, round]);
   const english = useMemo(() => shuffle(set), [set]);
   const [selected, setSelected] = useState<Card | null>(null);
   const [matched, setMatched] = useState<Card[]>([]);
@@ -69,7 +60,7 @@ export function MatchPairs({ cards, number }: { cards: Card[]; number: number })
     <Head n={number} title="Match the pairs" instr={`Tap a Russian phrase, then its English equivalent. Mistakes: ${mistakes}`} />
     <div className="match">
       <div className="match__column">{set.map(c => <button key={c.en} className={state(c, selected)} disabled={matched.includes(c)} onClick={() => setSelected(c)}>{c.ru}</button>)}</div>
-      <div className="match__column">{english.map(c => <button key={c.en} className={state(c, wrong)} disabled={matched.includes(c)} onClick={() => choose(c)}><Rich html={c.en} /></button>)}</div>
+      <div className="match__column">{english.map(c => <button key={c.en} className={state(c, wrong)} disabled={matched.includes(c)} onClick={() => choose(c)}>{c.en}</button>)}</div>
     </div>
     <div className="exercise__check-bar"><button className="button button--primary" onClick={() => setRound(round + 1)}>{matched.length === set.length ? "Next set" : "New set"}</button></div>
   </div>;

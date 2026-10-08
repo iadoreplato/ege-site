@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react";
 import { Topic } from "../types";
-import { Chips, Img, Rich } from "./text";
+import { Chips, Img, Text } from "./text";
 import { countWords, Timer, WordStatus } from "./ui";
 import { Pool, Skel } from "./Universal";
 import { SpeakBar } from "./Recorder";
@@ -65,7 +65,7 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         {s.questions.map((q: any, i: number) => <div className="interview-question" key={i}><div className="interview-question__text"><span className="interview-question__number">{i + 1}</span><span><b>Interviewer:</b> {q.q}</span></div>
           <Chips items={q.pool} className="interview-question__support" /></div>)}
         <p className="interviewer-line"><b>Interviewer:</b> Thank you very much for your interview.</p>
-        {s.trap && <div className="exam-tip"><b className="exam-tip__title">Watch out</b><Rich html={s.trap} /></div>}
+        {s.trap && <div className="exam-tip"><b className="exam-tip__title">Watch out</b><Text value={s.trap} /></div>}
         <Transcript task="S3" prompt={prompt} />
       </TCard>;
     }
@@ -97,16 +97,16 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         <Plan items={["make an opening statement on the subject of the project;", "select and report 2–3 facts;", "make 1–2 comparisons where relevant and give your comments;",
           `outline a problem ${s.problem} and suggest a way of solving it;`, `conclude by giving and explaining your opinion on ${s.conclusion}.`]} />
         <p className="russian-instruction">В ответе на задание 38 числительные пишите цифрами.</p>
-        <Support><div><div className="support__focus"><span className="support__focus-label">Point 4</span><b className="support__focus-text"><Rich html={s.focus4} /> · audience throughout: {s.audience}</b></div><Pool groups={[["topic", s.pool], ["data", topic.data_verbs]]} /></div><Skel lines={FR.t38} small /></Support>
+        <Support><div><div className="support__focus"><span className="support__focus-label">Point 4</span><b className="support__focus-text"><Text value={s.focus4} /> · audience throughout: {s.audience}</b></div><Pool groups={[["topic", s.pool], ["data", topic.data_verbs]]} /></div><Skel lines={FR.t38} small /></Support>
         <Writing min={180} max={275} ok={[200, 250]} task="38" prompt={prompt} />
       </TCard>;
     }
     case "email": {
       const pr = HER.has(s.sender) ? "her" : "his";
-      const prompt = `Task 37. Email from ${s.sender}, subject "${s.subject}": ${s.text.replace(/<br>/g, " ")} Task: answer ${pr} questions; ask 3 questions ${s.ask}.`;
+      const prompt = `Task 37. Email from ${s.sender}, subject "${s.subject}": ${s.text.replace(/\n/g, " ")} Task: answer ${pr} questions; ask 3 questions ${s.ask}.`;
       return <TCard task={37} title={`An email from ${s.sender}`} icon="envelope">
         <Instruction>You have received an email message from your English-speaking pen-friend {s.sender}:</Instruction>
-        <div className="email-message"><div className="email-message__header"><span>From: {s.sender}@mail.uk</span><span>To: Russian_friend@ege.ru</span><span>Subject: {s.subject}</span></div><Rich as="p" className="email-message__text" html={s.text} /></div>
+        <div className="email-message"><div className="email-message__header"><span>From: {s.sender}@mail.uk</span><span>To: Russian_friend@ege.ru</span><span>Subject: {s.subject}</span></div><Text as="p" className="email-message__text" value={s.text} /></div>
         <Instruction>Write an email to {s.sender}.<br />In your message:</Instruction>
         <Plan items={[`answer ${pr} questions;`, `ask 3 questions ${s.ask}.`]} />
         <Instruction>Write 100–140 words.<br />Remember the rules of email writing.</Instruction>

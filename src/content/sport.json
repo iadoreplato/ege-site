@@ -374,23 +374,35 @@
        [
         {
          "img": "person_swimming",
-         "en": "to go swimm[[ing]]",
-         "ru": ""
+         "en": "to go swimming",
+         "ru": "",
+         "key": [
+          "-ing"
+         ]
         },
         {
          "img": "skier",
-         "en": "to go ski[[ing]]",
-         "ru": ""
+         "en": "to go skiing",
+         "ru": "",
+         "key": [
+          "-ing"
+         ]
         },
         {
          "img": "person_biking",
-         "en": "to go cycl[[ing]]",
-         "ru": ""
+         "en": "to go cycling",
+         "ru": "",
+         "key": [
+          "-ing"
+         ]
         },
         {
          "img": "person_climbing",
-         "en": "to go climb[[ing]]",
-         "ru": ""
+         "en": "to go climbing",
+         "ru": "",
+         "key": [
+          "-ing"
+         ]
         }
        ]
       ],
@@ -457,96 +469,177 @@
        "en": "pitch",
        "ru": "поле (футбол, регби)",
        "sports": "football, rugby, cricket, field hockey",
-       "prep": "[[on]] the pitch",
-       "note": "grass with lines · AmE: field"
+       "prep": "on the pitch",
+       "note": "grass with lines · AmE: field",
+       "key": [
+        "on"
+       ]
       },
       {
        "img": "baseball",
        "en": "field",
        "ru": "поле (бейсбол, лапта)",
        "sports": "baseball, lapta; field events in athletics",
-       "prep": "[[on]] the field",
-       "note": "open outdoor area"
+       "prep": "on the field",
+       "note": "open outdoor area",
+       "key": [
+        "on"
+       ]
       },
       {
        "img": "tennis",
        "en": "court",
        "ru": "корт, площадка",
        "sports": "tennis, basketball, volleyball, badminton, squash",
-       "prep": "[[on]] the court",
-       "note": "hard surface, a net or hoops"
+       "prep": "on the court",
+       "note": "hard surface, a net or hoops",
+       "key": [
+        "on"
+       ]
       },
       {
        "img": "ice_skate",
        "en": "rink",
        "ru": "каток",
        "sports": "ice hockey, figure skating, speed skating",
-       "prep": "[[on]] / [[at]] the rink",
-       "note": "ice rink · roller rink"
+       "prep": "on / at the rink",
+       "note": "ice rink · roller rink",
+       "key": [
+        "on",
+        "at"
+       ]
       },
       {
        "img": "running_shoe",
        "en": "track",
        "ru": "беговая дорожка, трек",
        "sports": "running, track cycling, motor racing",
-       "prep": "[[on]] the track",
-       "note": "in a pool it is a [[lane]]"
+       "prep": "on the track",
+       "note": "in a pool it is a lane",
+       "key": [
+        "on",
+        "lane"
+       ]
       },
       {
        "img": "person_golfing",
        "en": "course",
        "ru": "поле для гольфа, трасса",
        "sports": "golf, horse racing, cross-country running",
-       "prep": "[[on]] the golf course",
-       "note": "a golf course · a racecourse"
+       "prep": "on the golf course",
+       "note": "a golf course · a racecourse",
+       "key": [
+        "on"
+       ]
       },
       {
        "img": "skier",
-       "en": "slope / piste",
-       "ru": "склон, трасса",
        "sports": "skiing, snowboarding",
-       "prep": "[[on]] the slopes",
-       "note": "usually plural: the slopes"
+       "prep": "on the slopes",
+       "note": "usually plural: the slopes",
+       "en": "slope",
+       "ru": "склон",
+       "key": [
+        "on"
+       ],
+       "group": 1
+      },
+      {
+       "img": "skier",
+       "sports": "skiing, snowboarding",
+       "prep": "on the slopes",
+       "note": "usually plural: the slopes",
+       "en": "piste",
+       "ru": "лыжная трасса",
+       "key": [
+        "on"
+       ],
+       "group": 1
       },
       {
        "img": "boxing_glove",
        "en": "ring",
        "ru": "ринг",
        "sports": "boxing, professional wrestling",
-       "prep": "[[in]] the ring",
-       "note": "ring ≠ rink!"
+       "prep": "in the ring",
+       "note": "ring ≠ rink!",
+       "key": [
+        "in"
+       ]
       },
       {
        "img": "martial_arts_uniform",
        "en": "mat",
        "ru": "ковёр, мат",
        "sports": "judo, sambo, wrestling, gymnastics, yoga",
-       "prep": "[[on]] the mat",
-       "note": "judo and sambo: a mat, not a ring"
+       "prep": "on the mat",
+       "note": "judo and sambo: a mat, not a ring",
+       "key": [
+        "on"
+       ]
       },
       {
        "img": "person_swimming",
        "en": "pool",
        "ru": "бассейн",
        "sports": "swimming, diving, water polo",
-       "prep": "[[in]] the pool",
-       "note": "swim in your own lane"
+       "prep": "in the pool",
+       "note": "swim in your own lane",
+       "key": [
+        "in"
+       ]
       },
       {
        "img": "person_lifting_weights",
-       "en": "gym / sports hall",
-       "ru": "спортзал",
        "sports": "fitness, weightlifting · indoor games, gymnastics",
-       "prep": "[[in]] / [[at]] the gym",
-       "note": "go [[to]] the gym"
+       "prep": "in / at the gym",
+       "note": "go to the gym",
+       "en": "gym",
+       "ru": "спортзал",
+       "key": [
+        "in",
+        "at",
+        "to"
+       ],
+       "group": 2
+      },
+      {
+       "img": "person_lifting_weights",
+       "sports": "fitness, weightlifting · indoor games, gymnastics",
+       "prep": "in / at the gym",
+       "note": "go to the gym",
+       "en": "sports hall",
+       "ru": "спортивный зал (для игр)",
+       "key": [
+        "in",
+        "at",
+        "to"
+       ],
+       "group": 2
       },
       {
        "img": "stadium",
-       "en": "stadium / arena",
-       "ru": "стадион / арена",
        "sports": "football, athletics / ice hockey, basketball",
-       "prep": "[[at]] the stadium",
-       "note": "an arena is usually indoors"
+       "prep": "at the stadium",
+       "note": "an arena is usually indoors",
+       "en": "stadium",
+       "ru": "стадион",
+       "key": [
+        "at"
+       ],
+       "group": 3
+      },
+      {
+       "img": "stadium",
+       "sports": "football, athletics / ice hockey, basketball",
+       "prep": "at the stadium",
+       "note": "an arena is usually indoors",
+       "en": "arena",
+       "ru": "арена",
+       "key": [
+        "at"
+       ],
+       "group": 3
       }
      ]
     },
@@ -555,89 +648,262 @@
      "title": "Competitions and people",
      "items": [
       {
-       "en": "a competitor · an opponent · a rival",
-       "ru": "участник · соперник",
-       "ex": "Our [[rival]] had won the cup three times."
+       "en": "a competitor",
+       "ru": "участник соревнований",
+       "group": 4
+      },
+      {
+       "en": "an opponent",
+       "ru": "соперник (в игре)",
+       "group": 4
+      },
+      {
+       "en": "a rival",
+       "ru": "соперник, конкурент",
+       "ex": "Our rival had won the cup three times.",
+       "key": [
+        "rival"
+       ],
+       "group": 4
       },
       {
        "en": "a coach",
        "ru": "тренер",
-       "ex": "Our [[coach]] makes us train twice a day."
+       "ex": "Our coach makes us train twice a day.",
+       "key": [
+        "coach"
+       ]
       },
       {
-       "en": "a [[referee]] (football) · an [[umpire]] (tennis)",
-       "ru": "судья",
-       "ex": "The [[referee]] gave him a yellow card."
+       "en": "a referee (football)",
+       "ru": "судья (футбол)",
+       "ex": "The referee gave him a yellow card.",
+       "key": [
+        "referee"
+       ],
+       "group": 5
       },
       {
-       "en": "spectators · supporters · [[the crowd]]",
-       "ru": "зрители · болельщики · трибуны",
-       "ex": "[[The crowd]] went wild when we scored."
+       "en": "an umpire (tennis)",
+       "ru": "судья (теннис)",
+       "key": [
+        "umpire"
+       ],
+       "group": 5
       },
       {
-       "en": "[[to host]] / [[to hold]] a tournament",
+       "en": "spectators",
+       "ru": "зрители",
+       "group": 6
+      },
+      {
+       "en": "supporters",
+       "ru": "болельщики",
+       "group": 6
+      },
+      {
+       "en": "the crowd",
+       "ru": "толпа на трибунах",
+       "ex": "The crowd went wild when we scored.",
+       "key": [
+        "the crowd",
+        "The crowd"
+       ],
+       "group": 6
+      },
+      {
+       "en": "to host a tournament",
+       "ru": "принимать турнир (у себя)",
+       "ex": "Kazan hosted the championship.",
+       "key": [
+        "to host",
+        "hosted"
+       ],
+       "group": 7
+      },
+      {
+       "en": "to hold a tournament",
        "ru": "проводить турнир",
-       "ex": "Kazan [[hosted]] the championship."
+       "key": [
+        "to hold"
+       ],
+       "group": 7
       },
       {
-       "en": "[[to qualify for]] / [[to reach]] the final",
+       "en": "to qualify for the final",
+       "ru": "пройти отбор в финал",
+       "key": [
+        "to qualify for"
+       ],
+       "group": 8
+      },
+      {
+       "en": "to reach the final",
        "ru": "выйти в финал",
-       "ex": "Only two teams [[reached]] the final."
+       "ex": "Only two teams reached the final.",
+       "key": [
+        "to reach",
+        "reached"
+       ],
+       "group": 8
       },
       {
-       "en": "[[to be knocked out of]] a tournament",
+       "en": "to be knocked out of a tournament",
        "ru": "вылететь из турнира",
-       "ex": "We [[were knocked out of]] the cup in the semi-final."
+       "ex": "We were knocked out of the cup in the semi-final.",
+       "key": [
+        "to be knocked out of",
+        "were knocked out of"
+       ]
       },
       {
-       "en": "[[to win]] / [[to defend]] a title",
-       "ru": "завоевать / защитить титул",
-       "ex": "She [[defended]] her title for the third year."
+       "en": "to win a title",
+       "ru": "завоевать титул",
+       "key": [
+        "to win"
+       ],
+       "group": 9
       },
       {
-       "en": "[[to beat]] a rival",
+       "en": "to defend a title",
+       "ru": "защитить титул",
+       "ex": "She defended her title for the third year.",
+       "key": [
+        "to defend",
+        "defended"
+       ],
+       "group": 9
+      },
+      {
+       "en": "to beat a rival",
        "ru": "обыграть соперника",
-       "ex": "We [[beat]] our old rivals 3–1."
+       "ex": "We beat our old rivals 3–1.",
+       "key": [
+        "to beat",
+        "beat"
+       ]
       },
       {
-       "en": "a [[narrow]] defeat · a [[comfortable]] win",
-       "ru": "минимальное поражение · уверенная победа",
-       "ex": "We lost 1–0: it was a [[narrow]] defeat."
+       "en": "a narrow defeat",
+       "ru": "минимальное поражение",
+       "ex": "We lost 1–0: it was a narrow defeat.",
+       "key": [
+        "narrow"
+       ],
+       "group": 10
       },
       {
-       "en": "[[to end in a draw]] · [[to equalise]]",
-       "ru": "закончиться вничью · сравнять счёт",
-       "ex": "They [[equalised]] in the last minute."
+       "en": "a comfortable win",
+       "ru": "уверенная победа",
+       "key": [
+        "comfortable"
+       ],
+       "group": 10
       },
       {
-       "en": "[[to score]] / [[to concede]] a goal",
-       "ru": "забить / пропустить гол",
-       "ex": "Our goalkeeper didn't [[concede]] a single goal."
+       "en": "to end in a draw",
+       "ru": "закончиться вничью",
+       "key": [
+        "to end in a draw"
+       ],
+       "group": 11
       },
       {
-       "en": "[[to set]] / [[to break]] / [[to hold]] a record",
-       "ru": "установить / побить / удерживать рекорд",
-       "ex": "He [[broke]] the national record last year."
+       "en": "to equalise",
+       "ru": "сравнять счёт",
+       "ex": "They equalised in the last minute.",
+       "key": [
+        "to equalise",
+        "equalised"
+       ],
+       "group": 11
       },
       {
-       "en": "[[to kick off]]",
+       "en": "to score a goal",
+       "ru": "забить гол",
+       "key": [
+        "to score"
+       ],
+       "group": 12
+      },
+      {
+       "en": "to concede a goal",
+       "ru": "пропустить гол",
+       "ex": "Our goalkeeper didn't concede a single goal.",
+       "key": [
+        "to concede",
+        "concede"
+       ],
+       "group": 12
+      },
+      {
+       "en": "to set a record",
+       "ru": "установить рекорд",
+       "key": [
+        "to set"
+       ],
+       "group": 13
+      },
+      {
+       "en": "to break a record",
+       "ru": "побить рекорд",
+       "ex": "He broke the national record last year.",
+       "key": [
+        "to break",
+        "broke"
+       ],
+       "group": 13
+      },
+      {
+       "en": "to hold a record",
+       "ru": "удерживать рекорд",
+       "key": [
+        "to hold"
+       ],
+       "group": 13
+      },
+      {
+       "en": "to kick off",
        "ru": "начаться (о матче)",
-       "ex": "The game [[kicks off]] at seven."
+       "ex": "The game kicks off at seven.",
+       "key": [
+        "to kick off",
+        "kicks off"
+       ]
       },
       {
-       "en": "a [[home]] / an [[away]] game",
-       "ru": "домашний / выездной матч",
-       "ex": "We always play better in [[home]] games."
+       "en": "a home game",
+       "ru": "домашний матч",
+       "ex": "We always play better in home games.",
+       "key": [
+        "home"
+       ],
+       "group": 14
       },
       {
-       "en": "a [[season]] ticket",
+       "en": "an away game",
+       "ru": "выездной матч",
+       "key": [
+        "away"
+       ],
+       "group": 14
+      },
+      {
+       "en": "a season ticket",
        "ru": "абонемент на сезон",
-       "ex": "My dad has a [[season]] ticket for Zenit games."
+       "ex": "My dad has a season ticket for Zenit games.",
+       "key": [
+        "season"
+       ]
       },
       {
-       "en": "[[equipment]] (U)",
+       "en": "equipment",
        "ru": "снаряжение",
-       "ex": "You don't need much [[equipment]] to start running."
+       "ex": "You don't need much equipment to start running.",
+       "key": [
+        "equipment"
+       ],
+       "uncountable": true
       }
      ]
     },
@@ -646,41 +912,83 @@
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "a [[level playing field]]",
+       "en": "a level playing field",
        "ru": "равные условия для всех",
-       "ex": "Strict doping tests create [[a level playing field]]."
+       "ex": "Strict doping tests create a level playing field.",
+       "key": [
+        "level playing field",
+        "a level playing field"
+       ]
       },
       {
-       "en": "[[the underdog]]",
+       "en": "the underdog",
        "ru": "аутсайдер",
-       "ex": "Everyone was cheering on [[the underdog]]."
+       "ex": "Everyone was cheering on the underdog.",
+       "key": [
+        "the underdog"
+       ]
       },
       {
-       "en": "a [[nail-biting]] finish",
+       "en": "a nail-biting finish",
        "ru": "напряжённая концовка",
-       "ex": "The final had [[a nail-biting]] finish."
+       "ex": "The final had a nail-biting finish.",
+       "key": [
+        "nail-biting",
+        "a nail-biting"
+       ]
       },
       {
-       "en": "[[home advantage]] (U)",
+       "en": "home advantage",
        "ru": "преимущество своего поля",
-       "ex": "The team used its [[home advantage]] well."
+       "ex": "The team used its home advantage well.",
+       "key": [
+        "home advantage"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[to be a good / bad loser]]",
-       "ru": "уметь / не уметь проигрывать",
-       "ex": "He's [[a bad loser]]: he never shakes hands after a defeat."
+       "en": "to be a good loser",
+       "ru": "уметь проигрывать",
+       "key": [
+        "to be a good loser"
+       ],
+       "group": 15
       },
       {
-       "en": "[[to keep your eye on the ball]]",
+       "en": "to be a bad loser",
+       "ru": "не уметь проигрывать",
+       "ex": "He's a bad loser: he never shakes hands after a defeat.",
+       "key": [
+        "to be a bad loser",
+        "a bad loser"
+       ],
+       "group": 15
+      },
+      {
+       "en": "to keep your eye on the ball",
        "ru": "не терять концентрацию",
-       "ex": "You must [[keep your eye on the ball]] until the final whistle."
+       "ex": "You must keep your eye on the ball until the final whistle.",
+       "key": [
+        "to keep your eye on the ball",
+        "keep your eye on the ball"
+       ]
       }
      ]
     },
     {
      "type": "note",
      "title": "win or beat?",
-     "html": "<b>win</b> + a match, a game, a medal, the cup, a title · <b>beat</b> + a person, a team. ✗ <i>We won Spartak.</i> ✓ <i>We beat Spartak and won the match.</i>"
+     "text": {
+      "text": "win + a match, a game, a medal, the cup, a title · beat + a person, a team. ✗ We won Spartak. ✓ We beat Spartak and won the match.",
+      "key": [
+       "win",
+       "beat"
+      ],
+      "example": [
+       "We won Spartak.",
+       "We beat Spartak and won the match."
+      ]
+     }
     }
    ],
    "exercises": [
@@ -1192,9 +1500,22 @@
       "water polo · boxing · figure skating · volleyball"
      ],
      "vocab": [
-      "It's played [[on]] a court / pitch / rink…",
-      "It takes place [[in]] the ring / pool…",
-      "You need special equipment (U)…",
+      {
+       "text": "It's played on a court / pitch / rink…",
+       "key": [
+        "on"
+       ]
+      },
+      {
+       "text": "It takes place in the ring / pool…",
+       "key": [
+        "in"
+       ]
+      },
+      {
+       "text": "You need special equipment…",
+       "uncountable": true
+      },
       "The referee / umpire…",
       "You score by…",
       "It's an individual / a team sport."
@@ -1210,25 +1531,81 @@
       "How did the crowd react?"
      ],
      "vocab": [
-      "The game [[kicked off]] at…",
-      "Nobody expected [[the underdog]] to…",
-      "We [[conceded]] a goal in the … minute",
-      "They [[equalised]] in the last minute",
-      "It was [[a nail-biting finish]]",
-      "[[The crowd]] went wild",
-      "a [[narrow]] defeat / a [[comfortable]] win",
-      "to be [[knocked out of]] the cup"
+      {
+       "text": "The game kicked off at…",
+       "key": [
+        "kicked off"
+       ]
+      },
+      {
+       "text": "Nobody expected the underdog to…",
+       "key": [
+        "the underdog"
+       ]
+      },
+      {
+       "text": "We conceded a goal in the … minute",
+       "key": [
+        "conceded"
+       ]
+      },
+      {
+       "text": "They equalised in the last minute",
+       "key": [
+        "equalised"
+       ]
+      },
+      {
+       "text": "It was a nail-biting finish",
+       "key": [
+        "a nail-biting finish"
+       ]
+      },
+      {
+       "text": "The crowd went wild",
+       "key": [
+        "The crowd"
+       ]
+      },
+      {
+       "text": "a narrow defeat / a comfortable win",
+       "key": [
+        "narrow",
+        "comfortable"
+       ]
+      },
+      {
+       "text": "to be knocked out of the cup",
+       "key": [
+        "knocked out of"
+       ]
+      }
      ]
     },
     {
      "title": "Good loser or bad loser?",
      "task": "Is it more important to win or to lose with dignity? Give your opinion, two reasons and an example from sport or from your own life.",
      "vocab": [
-      "to be a [[good / bad loser]]",
+      {
+       "text": "to be a good / bad loser",
+       "key": [
+        "good / bad loser"
+       ]
+      },
       "to shake hands with your opponent",
-      "a [[level playing field]]",
+      {
+       "text": "a level playing field",
+       "key": [
+        "level playing field"
+       ]
+      },
       "to respect your rivals",
-      "to [[keep your eye on the ball]]",
+      {
+       "text": "to keep your eye on the ball",
+       "key": [
+        "keep your eye on the ball"
+       ]
+      },
       "As far as I'm concerned, …",
       "That's why …"
      ]
@@ -1242,9 +1619,26 @@
       "home advantage for local athletes"
      ],
      "vocab": [
-      "[[to host]] / [[to hold]] a championship",
-      "thousands of [[spectators]]",
-      "[[home advantage]] (U)",
+      {
+       "text": "to host / to hold a championship",
+       "key": [
+        "to host",
+        "to hold"
+       ]
+      },
+      {
+       "text": "thousands of spectators",
+       "key": [
+        "spectators"
+       ]
+      },
+      {
+       "text": "home advantage",
+       "key": [
+        "home advantage"
+       ],
+       "uncountable": true
+      },
       "to attract tourists",
       "to cost a fortune",
       "On the one hand, … On the other hand, …",
@@ -1305,7 +1699,12 @@
         ]
        }
       ],
-      "trap": "Q3 asks <b>which sports</b>, not where people do them."
+      "trap": {
+       "text": "Q3 asks which sports, not where people do them.",
+       "key": [
+        "which sports"
+       ]
+      }
      },
      {
       "type": "interview",
@@ -1357,7 +1756,12 @@
         ]
        }
       ],
-      "trap": "Q5 is about the past: use the Past Simple or <i>used to</i>."
+      "trap": {
+       "text": "Q5 is about the past: use the Past Simple or used to.",
+       "example": [
+        "used to"
+       ]
+      }
      }
     ],
     [
@@ -1548,121 +1952,230 @@
      "title": "Training",
      "items": [
       {
-       "en": "[[to keep]] / [[to stay]] fit",
+       "en": "to keep fit",
        "ru": "поддерживать форму",
-       "ex": "I cycle to school to [[keep]] fit."
+       "ex": "I cycle to school to keep fit.",
+       "key": [
+        "to keep",
+        "keep"
+       ],
+       "group": 1
       },
       {
-       "en": "[[to get into]] shape · [[to be out of]] shape",
-       "ru": "прийти в форму · быть не в форме",
-       "ex": "I'm [[out of]] shape after the holidays."
+       "en": "to stay fit",
+       "ru": "оставаться в форме",
+       "key": [
+        "to stay"
+       ],
+       "group": 1
       },
       {
-       "en": "[[to work out]] · a [[workout]]",
-       "ru": "тренироваться · тренировка",
-       "ex": "I [[work out]] three times a week."
+       "en": "to get into shape",
+       "ru": "прийти в форму",
+       "key": [
+        "to get into"
+       ],
+       "group": 2
       },
       {
-       "en": "[[to warm up]] · [[to cool down]]",
-       "ru": "разминаться · делать заминку",
-       "ex": "Always [[warm up]] before you run."
+       "en": "to be out of shape",
+       "ru": "быть не в форме",
+       "ex": "I'm out of shape after the holidays.",
+       "key": [
+        "to be out of",
+        "out of"
+       ],
+       "group": 2
       },
       {
-       "en": "[[to build up]] stamina (U)",
+       "en": "to work out",
+       "ru": "тренироваться",
+       "ex": "I work out three times a week.",
+       "key": [
+        "to work out",
+        "work out"
+       ],
+       "group": 3
+      },
+      {
+       "en": "a workout",
+       "ru": "тренировка",
+       "key": [
+        "workout"
+       ],
+       "group": 3
+      },
+      {
+       "en": "to warm up",
+       "ru": "разминаться",
+       "ex": "Always warm up before you run.",
+       "key": [
+        "to warm up",
+        "warm up"
+       ],
+       "group": 4
+      },
+      {
+       "en": "to cool down",
+       "ru": "делать заминку",
+       "key": [
+        "to cool down"
+       ],
+       "group": 4
+      },
+      {
+       "en": "to build up stamina",
        "ru": "развивать выносливость",
-       "ex": "Swimming helps you [[build up]] stamina."
+       "ex": "Swimming helps you build up stamina.",
+       "key": [
+        "to build up",
+        "build up"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[to improve]] your fitness level",
+       "en": "to improve your fitness level",
        "ru": "улучшить физическую форму",
-       "ex": "My goal is to [[improve]] my fitness level by summer."
+       "ex": "My goal is to improve my fitness level by summer.",
+       "key": [
+        "to improve",
+        "improve"
+       ]
       },
       {
-       "en": "[[strenuous]] exercise (U)",
+       "en": "strenuous exercise",
        "ru": "интенсивная нагрузка",
-       "ex": "Avoid [[strenuous]] exercise after an illness."
+       "ex": "Avoid strenuous exercise after an illness.",
+       "key": [
+        "strenuous"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[to burn]] calories · [[to build]] muscle (U)",
-       "ru": "сжигать калории · наращивать мышцы",
-       "ex": "A long run [[burns]] a lot of calories."
+       "en": "to burn calories",
+       "ru": "сжигать калории",
+       "ex": "A long run burns a lot of calories.",
+       "key": [
+        "to burn",
+        "burns"
+       ],
+       "group": 5
       },
       {
-       "en": "[[to pull]] a muscle",
+       "en": "to build muscle",
+       "ru": "наращивать мышцы",
+       "key": [
+        "to build"
+       ],
+       "uncountable": true,
+       "group": 5
+      },
+      {
+       "en": "to pull a muscle",
        "ru": "потянуть мышцу",
-       "ex": "He [[pulled]] a muscle during the match."
+       "ex": "He pulled a muscle during the match.",
+       "key": [
+        "to pull",
+        "pulled"
+       ]
       },
       {
-       "en": "[[to overdo]] it",
+       "en": "to overdo it",
        "ru": "перестараться",
-       "ex": "Don't [[overdo]] it on your first day at the gym."
+       "ex": "Don't overdo it on your first day at the gym.",
+       "key": [
+        "to overdo",
+        "overdo"
+       ]
       },
       {
-       "en": "a training [[routine]]",
+       "en": "a training routine",
        "ru": "режим тренировок",
-       "ex": "A good training [[routine]] includes rest days."
+       "ex": "A good training routine includes rest days.",
+       "key": [
+        "routine"
+       ]
       },
       {
-       "en": "a gym [[membership]]",
+       "en": "a gym membership",
        "ru": "абонемент в зал",
-       "ex": "A gym [[membership]] costs a lot in our city."
+       "ex": "A gym membership costs a lot in our city.",
+       "key": [
+        "membership"
+       ]
       }
      ]
     },
     {
      "type": "pics",
-     "title": "Physical qualities · [[require]] / [[develop]] + noun",
+     "title": {
+      "text": "Physical qualities · require / develop + noun",
+      "key": [
+       "require",
+       "develop"
+      ]
+     },
      "cols": 5,
      "items": [
       {
        "img": "flexed_biceps",
-       "en": "strength (U)",
-       "ru": "сила"
+       "en": "strength",
+       "ru": "сила",
+       "uncountable": true
       },
       {
        "img": "person_running",
-       "en": "stamina (U)",
-       "ru": "выносливость"
+       "en": "stamina",
+       "ru": "выносливость",
+       "uncountable": true
       },
       {
        "img": "stopwatch",
-       "en": "speed (U)",
-       "ru": "скорость"
+       "en": "speed",
+       "ru": "скорость",
+       "uncountable": true
       },
       {
        "img": "person_cartwheeling",
-       "en": "agility (U)",
-       "ru": "ловкость"
+       "en": "agility",
+       "ru": "ловкость",
+       "uncountable": true
       },
       {
        "img": "person_in_lotus_position",
-       "en": "flexibility (U)",
-       "ru": "гибкость"
+       "en": "flexibility",
+       "ru": "гибкость",
+       "uncountable": true
       },
       {
        "img": "person_juggling",
-       "en": "coordination (U)",
-       "ru": "координация"
+       "en": "coordination",
+       "ru": "координация",
+       "uncountable": true
       },
       {
        "img": "snowboarder",
-       "en": "balance (U)",
-       "ru": "равновесие"
+       "en": "balance",
+       "ru": "равновесие",
+       "uncountable": true
       },
       {
        "img": "bullseye",
-       "en": "accuracy (U)",
-       "ru": "точность"
+       "en": "accuracy",
+       "ru": "точность",
+       "uncountable": true
       },
       {
        "img": "brain",
-       "en": "concentration (U)",
-       "ru": "концентрация"
+       "en": "concentration",
+       "ru": "концентрация",
+       "uncountable": true
       },
       {
        "img": "hourglass_done",
-       "en": "patience (U)",
-       "ru": "терпение"
+       "en": "patience",
+       "ru": "терпение",
+       "uncountable": true
       }
      ]
     },
@@ -1671,34 +2184,57 @@
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[to hit the gym]]",
+       "en": "to hit the gym",
        "ru": "пойти в зал (informal)",
-       "ex": "After school I usually [[hit the gym]]."
+       "ex": "After school I usually hit the gym.",
+       "key": [
+        "to hit the gym",
+        "hit the gym"
+       ]
       },
       {
-       "en": "[[to work up a sweat]]",
+       "en": "to work up a sweat",
        "ru": "хорошенько пропотеть",
-       "ex": "You'll [[work up a sweat]] after ten minutes of skipping."
+       "ex": "You'll work up a sweat after ten minutes of skipping.",
+       "key": [
+        "to work up a sweat",
+        "work up a sweat"
+       ]
       },
       {
-       "en": "[[to get into the habit of]] + -ing",
+       "en": "to get into the habit of + -ing",
        "ru": "взять за привычку",
-       "ex": "I've [[got into the habit of]] jogging before school."
+       "ex": "I've got into the habit of jogging before school.",
+       "key": [
+        "to get into the habit of",
+        "got into the habit of"
+       ]
       },
       {
-       "en": "[[to push yourself]] to the limit",
+       "en": "to push yourself to the limit",
        "ru": "выкладываться на пределе",
-       "ex": "Athletes [[push themselves]] to the limit every day."
+       "ex": "Athletes push themselves to the limit every day.",
+       "key": [
+        "to push yourself",
+        "push themselves"
+       ]
       },
       {
-       "en": "[[No pain, no gain.]]",
+       "en": "No pain, no gain.",
        "ru": "без труда ничего не добьёшься",
-       "ex": "My coach always says, “[[No pain, no gain.]]”"
+       "ex": "My coach always says, “No pain, no gain.”",
+       "key": [
+        "No pain, no gain."
+       ]
       },
       {
-       "en": "[[to be a morning person]]",
+       "en": "to be a morning person",
        "ru": "быть жаворонком",
-       "ex": "I'm not [[a morning person]], so I train in the evening."
+       "ex": "I'm not a morning person, so I train in the evening.",
+       "key": [
+        "to be a morning person",
+        "a morning person"
+       ]
       }
      ]
     }
@@ -2213,11 +2749,39 @@
       "What do you want to improve, and why?"
      ],
      "vocab": [
-      "to [[work out]] / to [[hit the gym]]",
-      "a training [[routine]]",
-      "to [[warm up]] · to [[cool down]]",
-      "to [[build up]] stamina (U)",
-      "to [[improve]] my fitness level",
+      {
+       "text": "to work out / to hit the gym",
+       "key": [
+        "work out",
+        "hit the gym"
+       ]
+      },
+      {
+       "text": "a training routine",
+       "key": [
+        "routine"
+       ]
+      },
+      {
+       "text": "to warm up · to cool down",
+       "key": [
+        "warm up",
+        "cool down"
+       ]
+      },
+      {
+       "text": "to build up stamina",
+       "key": [
+        "build up"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "to improve my fitness level",
+       "key": [
+        "improve"
+       ]
+      },
       "rest days help muscles recover"
      ]
     },
@@ -2229,11 +2793,30 @@
       "snowboarding · boxing · chess"
      ],
      "vocab": [
-      "It [[requires]] a lot of …",
-      "It helps you [[develop]] …",
-      "strength (U) · stamina (U) · agility (U)",
-      "flexibility (U) · coordination (U) · balance (U)",
-      "accuracy (U) · concentration (U)",
+      {
+       "text": "It requires a lot of …",
+       "key": [
+        "requires"
+       ]
+      },
+      {
+       "text": "It helps you develop …",
+       "key": [
+        "develop"
+       ]
+      },
+      {
+       "text": "strength · stamina · agility",
+       "uncountable": true
+      },
+      {
+       "text": "flexibility · coordination · balance",
+       "uncountable": true
+      },
+      {
+       "text": "accuracy · concentration",
+       "uncountable": true
+      },
       "First and foremost, … / Last but not least, …"
      ]
     },
@@ -2241,24 +2824,65 @@
      "title": "Advice to a friend",
      "task": "Your friend wants to get into shape in a month and plans to train for two hours every single day. Explain why this is risky and suggest a better plan.",
      "vocab": [
-      "Don't [[overdo]] it.",
-      "You might [[pull a muscle]].",
-      "[[strenuous]] exercise (U)",
+      {
+       "text": "Don't overdo it.",
+       "key": [
+        "overdo"
+       ]
+      },
+      {
+       "text": "You might pull a muscle.",
+       "key": [
+        "pull a muscle"
+       ]
+      },
+      {
+       "text": "strenuous exercise",
+       "key": [
+        "strenuous"
+       ],
+       "uncountable": true
+      },
       "to build up gradually",
-      "to [[get into the habit of]] + -ing",
+      {
+       "text": "to get into the habit of + -ing",
+       "key": [
+        "get into the habit of"
+       ]
+      },
       "If I were you, I'd …",
-      "“[[No pain, no gain]]” is not always true."
+      {
+       "text": "“No pain, no gain” is not always true.",
+       "key": [
+        "No pain, no gain"
+       ]
+      }
      ]
     },
     {
      "title": "Morning person or night owl?",
      "task": "When is the best time for you to exercise, and why? Compare training in the morning and in the evening, then give your personal choice.",
      "vocab": [
-      "to be [[a morning person]]",
-      "to [[work up a sweat]]",
+      {
+       "text": "to be a morning person",
+       "key": [
+        "a morning person"
+       ]
+      },
+      {
+       "text": "to work up a sweat",
+       "key": [
+        "work up a sweat"
+       ]
+      },
       "to give you energy for the whole day",
       "to affect your sleep",
-      "to [[push yourself]] to the limit",
+      {
+       "text": "to push yourself to the limit",
+       "key": [
+        "push yourself"
+       ]
+      },
       "I find it much easier to …",
       "Personally, I'd rather …"
      ]
@@ -2488,7 +3112,12 @@
       ],
       "problem": "that can arise with working out with a friend",
       "conclusion": "the role of sport in our lives",
-      "focus4": "the problem must be about working out <b>with a friend</b>",
+      "focus4": {
+       "text": "the problem must be about working out with a friend",
+       "key": [
+        "with a friend"
+       ]
+      },
       "pool": [
        "keep fit",
        "work out",
@@ -2532,7 +3161,12 @@
       ],
       "problem": "that can arise while working out at home",
       "conclusion": "the importance of keeping fit",
-      "focus4": "the problem must be about working out <b>at home</b>",
+      "focus4": {
+       "text": "the problem must be about working out at home",
+       "key": [
+        "at home"
+       ]
+      },
       "pool": [
        "save money / time",
        "a gym membership",
@@ -2646,7 +3280,14 @@
    "vocab": [
     {
      "type": "definition",
-     "html": "Extreme sports are activities that involve a high level of <b>risk</b>, <b>speed</b> or <b>height</b> and require special training and equipment."
+     "text": {
+      "text": "Extreme sports are activities that involve a high level of risk, speed or height and require special training and equipment.",
+      "key": [
+       "risk",
+       "speed",
+       "height"
+      ]
+     }
     },
     {
      "type": "pics",
@@ -2700,64 +3341,134 @@
      "title": "Risk and teamwork",
      "items": [
       {
-       "en": "a [[thrill]]-seeker",
+       "en": "a thrill-seeker",
        "ru": "любитель острых ощущений",
-       "ex": "My brother is a real [[thrill]]-seeker: he loves skydiving."
+       "ex": "My brother is a real thrill-seeker: he loves skydiving.",
+       "key": [
+        "thrill"
+       ]
       },
       {
-       "en": "an adrenaline [[rush]]",
+       "en": "an adrenaline rush",
        "ru": "выброс адреналина",
-       "ex": "Bungee jumping gives you an incredible adrenaline [[rush]]."
+       "ex": "Bungee jumping gives you an incredible adrenaline rush.",
+       "key": [
+        "rush"
+       ]
       },
       {
-       "en": "[[to take]] (calculated) risks",
+       "en": "to take (calculated) risks",
        "ru": "идти на (обдуманный) риск",
-       "ex": "Good climbers only [[take]] calculated risks."
+       "ex": "Good climbers only take calculated risks.",
+       "key": [
+        "to take",
+        "take"
+       ]
       },
       {
-       "en": "[[to push]] your limits",
+       "en": "to push your limits",
        "ru": "испытывать свои возможности",
-       "ex": "Marathons help you [[push]] your limits."
+       "ex": "Marathons help you push your limits.",
+       "key": [
+        "to push",
+        "push"
+       ]
       },
       {
-       "en": "[[to step out of]] your comfort zone",
+       "en": "to step out of your comfort zone",
        "ru": "выйти из зоны комфорта",
-       "ex": "Trying surfing made me [[step out of]] my comfort zone."
+       "ex": "Trying surfing made me step out of my comfort zone.",
+       "key": [
+        "to step out of",
+        "step out of"
+       ]
       },
       {
-       "en": "[[to overcome]] / [[to face]] your fears",
+       "en": "to overcome your fears",
        "ru": "преодолеть страхи",
-       "ex": "She [[overcame]] her fear of heights."
+       "ex": "She overcame her fear of heights.",
+       "key": [
+        "to overcome",
+        "overcame"
+       ],
+       "group": 1
       },
       {
-       "en": "safety [[gear]] (U)",
+       "en": "to face your fears",
+       "ru": "посмотреть страху в глаза",
+       "key": [
+        "to face"
+       ],
+       "group": 1
+      },
+      {
+       "en": "safety gear",
        "ru": "защитное снаряжение",
-       "ex": "Never climb without proper safety [[gear]]."
+       "ex": "Never climb without proper safety gear.",
+       "key": [
+        "gear"
+       ],
+       "uncountable": true
       },
       {
-       "en": "a [[qualified]] instructor",
+       "en": "a qualified instructor",
        "ru": "квалифицированный инструктор",
-       "ex": "Beginners should ski with a [[qualified]] instructor."
+       "ex": "Beginners should ski with a qualified instructor.",
+       "key": [
+        "qualified"
+       ]
       },
       {
-       "en": "a [[serious]] / [[life-threatening]] injury",
-       "ru": "серьёзная / опасная для жизни травма",
-       "ex": "Without a helmet, a fall can cause a [[serious]] injury."
+       "en": "a serious injury",
+       "ru": "серьёзная травма",
+       "ex": "Without a helmet, a fall can cause a serious injury.",
+       "key": [
+        "serious"
+       ],
+       "group": 2
       },
       {
-       "en": "team [[spirit]] (U) · a team [[player]]",
-       "ru": "командный дух · командный игрок",
-       "ex": "Our coach values team [[spirit]] more than talent."
+       "en": "a life-threatening injury",
+       "ru": "опасная для жизни травма",
+       "key": [
+        "life-threatening"
+       ],
+       "group": 2
       },
       {
-       "en": "[[to rely on]] your team-mates",
+       "en": "team spirit",
+       "ru": "командный дух",
+       "ex": "Our coach values team spirit more than talent.",
+       "key": [
+        "spirit"
+       ],
+       "uncountable": true,
+       "group": 3
+      },
+      {
+       "en": "a team player",
+       "ru": "командный игрок",
+       "key": [
+        "player"
+       ],
+       "group": 3
+      },
+      {
+       "en": "to rely on your team-mates",
        "ru": "полагаться на товарищей",
-       "ex": "In volleyball you have to [[rely on]] your team-mates."
+       "ex": "In volleyball you have to rely on your team-mates.",
+       "key": [
+        "to rely on",
+        "rely on"
+       ]
       },
       {
-       "en": "[[at]] your own pace",
+       "en": "at your own pace",
        "ru": "в своём темпе",
-       "ex": "In yoga you can train [[at]] your own pace."
+       "ex": "In yoga you can train at your own pace.",
+       "key": [
+        "at"
+       ]
       }
      ]
     },
@@ -2766,34 +3477,57 @@
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "an adrenaline [[junkie]]",
+       "en": "an adrenaline junkie",
        "ru": "адреналиновый наркоман (informal)",
-       "ex": "He's an adrenaline [[junkie]] who tries every extreme sport."
+       "ex": "He's an adrenaline junkie who tries every extreme sport.",
+       "key": [
+        "junkie"
+       ]
       },
       {
-       "en": "[[to live on the edge]]",
+       "en": "to live on the edge",
        "ru": "жить на грани",
-       "ex": "Some people love to [[live on the edge]]."
+       "ex": "Some people love to live on the edge.",
+       "key": [
+        "to live on the edge",
+        "live on the edge"
+       ]
       },
       {
-       "en": "[[to take your breath away]]",
+       "en": "to take your breath away",
        "ru": "захватывать дух",
-       "ex": "The view [[took my breath away]]."
+       "ex": "The view took my breath away.",
+       "key": [
+        "to take your breath away",
+        "took my breath away"
+       ]
       },
       {
-       "en": "[[to pull your weight]]",
+       "en": "to pull your weight",
        "ru": "делать свою часть работы",
-       "ex": "Everyone in the team must [[pull their weight]]."
+       "ex": "Everyone in the team must pull their weight.",
+       "key": [
+        "to pull your weight",
+        "pull their weight"
+       ]
       },
       {
-       "en": "[[to let the team down]]",
+       "en": "to let the team down",
        "ru": "подвести команду",
-       "ex": "I trained hard because I didn't want to [[let the team down]]."
+       "ex": "I trained hard because I didn't want to let the team down.",
+       "key": [
+        "to let the team down",
+        "let the team down"
+       ]
       },
       {
-       "en": "[[to go it alone]]",
+       "en": "to go it alone",
        "ru": "действовать в одиночку",
-       "ex": "After years in a team, she decided to [[go it alone]]."
+       "ex": "After years in a team, she decided to go it alone.",
+       "key": [
+        "to go it alone",
+        "go it alone"
+       ]
       }
      ]
     }
@@ -3307,13 +4041,48 @@
       "kitesurfing · mountaineering · mountain biking"
      ],
      "vocab": [
-      "a [[thrill]]-seeker",
-      "an adrenaline [[rush]]",
-      "to [[take]] calculated risks",
-      "to [[push]] my limits",
-      "to [[step out of]] my comfort zone",
-      "It would [[take my breath away]].",
-      "It's far too [[life-threatening]] for me."
+      {
+       "text": "a thrill-seeker",
+       "key": [
+        "thrill"
+       ]
+      },
+      {
+       "text": "an adrenaline rush",
+       "key": [
+        "rush"
+       ]
+      },
+      {
+       "text": "to take calculated risks",
+       "key": [
+        "take"
+       ]
+      },
+      {
+       "text": "to push my limits",
+       "key": [
+        "push"
+       ]
+      },
+      {
+       "text": "to step out of my comfort zone",
+       "key": [
+        "step out of"
+       ]
+      },
+      {
+       "text": "It would take my breath away.",
+       "key": [
+        "take my breath away"
+       ]
+      },
+      {
+       "text": "It's far too life-threatening for me.",
+       "key": [
+        "life-threatening"
+       ]
+      }
      ]
     },
     {
@@ -3325,22 +4094,74 @@
       "who you can blame when things go wrong"
      ],
      "vocab": [
-      "team [[spirit]] (U)",
-      "a team [[player]]",
-      "to [[rely on]] your team-mates",
-      "to [[pull your weight]]",
-      "to [[let the team down]]",
-      "[[at]] your own pace",
-      "to [[go it alone]]"
+      {
+       "text": "team spirit",
+       "key": [
+        "spirit"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "a team player",
+       "key": [
+        "player"
+       ]
+      },
+      {
+       "text": "to rely on your team-mates",
+       "key": [
+        "rely on"
+       ]
+      },
+      {
+       "text": "to pull your weight",
+       "key": [
+        "pull your weight"
+       ]
+      },
+      {
+       "text": "to let the team down",
+       "key": [
+        "let the team down"
+       ]
+      },
+      {
+       "text": "at your own pace",
+       "key": [
+        "at"
+       ]
+      },
+      {
+       "text": "to go it alone",
+       "key": [
+        "go it alone"
+       ]
+      }
      ]
     },
     {
      "title": "Safety first",
      "task": "You are an instructor. Explain the safety rules to a group of beginners before a climbing or rafting trip. Give at least four rules and say why each one matters.",
      "vocab": [
-      "safety [[gear]] (U)",
-      "a [[qualified]] instructor",
-      "a [[serious]] injury",
+      {
+       "text": "safety gear",
+       "key": [
+        "gear"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "a qualified instructor",
+       "key": [
+        "qualified"
+       ]
+      },
+      {
+       "text": "a serious injury",
+       "key": [
+        "serious"
+       ]
+      },
       "Never … without …",
       "Make sure you …",
       "It's essential to …",
@@ -3351,9 +4172,24 @@
      "title": "Why do people risk their lives?",
      "task": "Give three reasons why people take up extreme sports. Then give your own opinion: are the risks worth it?",
      "vocab": [
-      "to [[live on the edge]]",
-      "an adrenaline [[junkie]]",
-      "to [[overcome]] your fears",
+      {
+       "text": "to live on the edge",
+       "key": [
+        "live on the edge"
+       ]
+      },
+      {
+       "text": "an adrenaline junkie",
+       "key": [
+        "junkie"
+       ]
+      },
+      {
+       "text": "to overcome your fears",
+       "key": [
+        "overcome"
+       ]
+      },
       "a sense of freedom",
       "I can see why …, but personally …",
       "On balance, I believe …"
@@ -3496,7 +4332,17 @@
         ]
        }
       ],
-      "trap": "Q3: <i>If you had to…</i> → <i>I <b>would</b> try</i>, not <i>I will try</i>."
+      "trap": {
+       "text": "Q3: If you had to… → I would try, not I will try.",
+       "key": [
+        "would"
+       ],
+       "example": [
+        "If you had to…",
+        "I would try",
+        "I will try"
+       ]
+      }
      },
      {
       "type": "interview",
@@ -3641,7 +4487,12 @@
       ],
       "problem": "that a student of sports may face during competitions",
       "conclusion": "the importance of professional sport for modern society",
-      "focus4": "a problem a sports student faces <b>during competitions</b>",
+      "focus4": {
+       "text": "a problem a sports student faces during competitions",
+       "key": [
+        "during competitions"
+       ]
+      },
       "pool": [
        "major in sports",
        "career opportunities",
@@ -3695,64 +4546,130 @@
      "title": "Traditions and champions",
      "items": [
       {
-       "en": "cultural [[heritage]] (U)",
+       "en": "cultural heritage",
        "ru": "культурное наследие",
-       "ex": "Folk games are part of our cultural [[heritage]]."
+       "ex": "Folk games are part of our cultural heritage.",
+       "key": [
+        "heritage"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[to preserve]] / [[to revive]] a tradition",
-       "ru": "сохранять / возрождать традицию",
-       "ex": "Enthusiasts are trying to [[revive]] the tradition of lapta."
+       "en": "to preserve a tradition",
+       "ru": "сохранять традицию",
+       "key": [
+        "to preserve"
+       ],
+       "group": 1
       },
       {
-       "en": "accessible [[to]] people of all ages",
+       "en": "to revive a tradition",
+       "ru": "возрождать традицию",
+       "ex": "Enthusiasts are trying to revive the tradition of lapta.",
+       "key": [
+        "to revive",
+        "revive"
+       ],
+       "group": 1
+      },
+      {
+       "en": "accessible to people of all ages",
        "ru": "доступный людям любого возраста",
-       "ex": "Gorodki is accessible [[to]] people of all ages."
+       "ex": "Gorodki is accessible to people of all ages.",
+       "key": [
+        "to"
+       ]
       },
       {
-       "en": "[[throws]] and [[holds]]",
+       "en": "throws and holds",
        "ru": "броски и захваты",
-       "ex": "Sambo is based on [[throws]] and [[holds]]."
+       "ex": "Sambo is based on throws and holds.",
+       "key": [
+        "throws",
+        "holds"
+       ]
       },
       {
-       "en": "self-[[defence]] (U)",
+       "en": "self-defence",
        "ru": "самооборона",
-       "ex": "Many girls learn sambo for self-[[defence]]."
+       "ex": "Many girls learn sambo for self-defence.",
+       "key": [
+        "defence"
+       ],
+       "uncountable": true
       },
       {
-       "en": "an [[outstanding]] athlete",
+       "en": "an outstanding athlete",
        "ru": "выдающийся спортсмен",
-       "ex": "She is one of the most [[outstanding]] athletes of her generation."
+       "ex": "She is one of the most outstanding athletes of her generation.",
+       "key": [
+        "outstanding"
+       ]
       },
       {
-       "en": "[[to represent]] your country",
+       "en": "to represent your country",
        "ru": "представлять страну",
-       "ex": "It is a great honour to [[represent]] your country."
+       "ex": "It is a great honour to represent your country.",
+       "key": [
+        "to represent",
+        "represent"
+       ]
       },
       {
-       "en": "[[determination]] · [[perseverance]] (U)",
-       "ru": "целеустремлённость · упорство",
-       "ex": "Her [[determination]] helped her recover after the injury."
+       "en": "determination",
+       "ru": "целеустремлённость",
+       "ex": "Her determination helped her recover after the injury.",
+       "key": [
+        "determination"
+       ],
+       "uncountable": true,
+       "group": 2
       },
       {
-       "en": "a role [[model]]",
+       "en": "perseverance",
+       "ru": "упорство",
+       "key": [
+        "perseverance"
+       ],
+       "uncountable": true,
+       "group": 2
+      },
+      {
+       "en": "a role model",
        "ru": "пример для подражания",
-       "ex": "For many children, champions are role [[models]]."
+       "ex": "For many children, champions are role models.",
+       "key": [
+        "model",
+        "models"
+       ]
       },
       {
-       "en": "a [[promising]] athlete",
+       "en": "a promising athlete",
        "ru": "перспективный спортсмен",
-       "ex": "The coach noticed a [[promising]] young athlete."
+       "ex": "The coach noticed a promising young athlete.",
+       "key": [
+        "promising"
+       ]
       },
       {
-       "en": "[[to inspire]] sb [[to]] take up sport",
+       "en": "to inspire sb to take up sport",
        "ru": "вдохновлять заняться спортом",
-       "ex": "Her victory [[inspired]] thousands of girls [[to]] take up skating."
+       "ex": "Her victory inspired thousands of girls to take up skating.",
+       "key": [
+        "to inspire",
+        "to",
+        "inspired"
+       ]
       },
       {
-       "en": "[[to handle]] pressure (U)",
+       "en": "to handle pressure",
        "ru": "справляться с давлением",
-       "ex": "Great athletes know how to [[handle]] pressure."
+       "ex": "Great athletes know how to handle pressure.",
+       "key": [
+        "to handle",
+        "handle"
+       ],
+       "uncountable": true
       }
      ]
     },
@@ -3761,34 +4678,57 @@
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "a [[household]] name",
+       "en": "a household name",
        "ru": "имя, известное каждому",
-       "ex": "After the Olympics she became a [[household]] name."
+       "ex": "After the Olympics she became a household name.",
+       "key": [
+        "household"
+       ]
       },
       {
-       "en": "[[to rise to fame]]",
+       "en": "to rise to fame",
        "ru": "прославиться",
-       "ex": "He [[rose to fame]] after winning the world championship."
+       "ex": "He rose to fame after winning the world championship.",
+       "key": [
+        "to rise to fame",
+        "rose to fame"
+       ]
       },
       {
-       "en": "[[to make history]]",
+       "en": "to make history",
        "ru": "войти в историю",
-       "ex": "The team [[made history]] by winning their first title."
+       "ex": "The team made history by winning their first title.",
+       "key": [
+        "to make history",
+        "made history"
+       ]
       },
       {
-       "en": "[[to live up to]] expectations",
+       "en": "to live up to expectations",
        "ru": "оправдать ожидания",
-       "ex": "The young player [[lived up to]] everyone's expectations."
+       "ex": "The young player lived up to everyone's expectations.",
+       "key": [
+        "to live up to",
+        "lived up to"
+       ]
       },
       {
-       "en": "[[to stand the test of time]]",
+       "en": "to stand the test of time",
        "ru": "выдержать проверку временем",
-       "ex": "Gorodki has [[stood the test of time]]."
+       "ex": "Gorodki has stood the test of time.",
+       "key": [
+        "to stand the test of time",
+        "stood the test of time"
+       ]
       },
       {
-       "en": "[[to be passed down]] from generation to generation",
+       "en": "to be passed down from generation to generation",
        "ru": "передаваться из поколения в поколение",
-       "ex": "The rules [[have been passed down]] from generation to generation."
+       "ex": "The rules have been passed down from generation to generation.",
+       "key": [
+        "to be passed down",
+        "have been passed down"
+       ]
       }
      ]
     }
@@ -3992,7 +4932,7 @@
        "revive"
       ],
       [
-       "cultural ___ (U)",
+       "cultural ___ (uncountable)",
        [
         "heritage",
         "heirloom",
@@ -4304,34 +5244,118 @@
      ],
      "vocab": [
       "It's based on …",
-      "accessible [[to]] people of all ages",
-      "It requires accuracy (U) / speed (U).",
-      "cultural [[heritage]] (U)",
-      "to [[preserve]] / to [[revive]] a tradition",
-      "to [[be passed down]] from generation to generation",
-      "It has [[stood the test of time]]."
+      {
+       "text": "accessible to people of all ages",
+       "key": [
+        "to"
+       ]
+      },
+      {
+       "text": "It requires accuracy / speed.",
+       "uncountable": true
+      },
+      {
+       "text": "cultural heritage",
+       "key": [
+        "heritage"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "to preserve / to revive a tradition",
+       "key": [
+        "preserve",
+        "revive"
+       ]
+      },
+      {
+       "text": "to be passed down from generation to generation",
+       "key": [
+        "be passed down"
+       ]
+      },
+      {
+       "text": "It has stood the test of time.",
+       "key": [
+        "stood the test of time"
+       ]
+      }
      ]
     },
     {
      "title": "My sports hero",
      "task": "Talk about an outstanding athlete you admire: their achievements, their character and why they are a role model.",
      "vocab": [
-      "an [[outstanding]] athlete",
-      "to [[rise to fame]]",
-      "to [[make history]]",
-      "a [[household]] name",
-      "[[determination]] · [[perseverance]] (U)",
-      "to [[handle]] pressure",
-      "to [[inspire]] sb [[to]] …"
+      {
+       "text": "an outstanding athlete",
+       "key": [
+        "outstanding"
+       ]
+      },
+      {
+       "text": "to rise to fame",
+       "key": [
+        "rise to fame"
+       ]
+      },
+      {
+       "text": "to make history",
+       "key": [
+        "make history"
+       ]
+      },
+      {
+       "text": "a household name",
+       "key": [
+        "household"
+       ]
+      },
+      {
+       "text": "determination · perseverance",
+       "key": [
+        "determination",
+        "perseverance"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "to handle pressure",
+       "key": [
+        "handle"
+       ]
+      },
+      {
+       "text": "to inspire sb to …",
+       "key": [
+        "inspire",
+        "to"
+       ]
+      }
      ]
     },
     {
      "title": "The price of success",
      "task": "Young athletes often train six hours a day and miss a normal childhood. Is it worth it? Give arguments for and against, then your own view.",
      "vocab": [
-      "a [[promising]] athlete",
-      "to [[live up to]] expectations",
-      "to [[handle]] pressure (U)",
+      {
+       "text": "a promising athlete",
+       "key": [
+        "promising"
+       ]
+      },
+      {
+       "text": "to live up to expectations",
+       "key": [
+        "live up to"
+       ]
+      },
+      {
+       "text": "to handle pressure",
+       "key": [
+        "handle"
+       ],
+       "uncountable": true
+      },
       "to give up free time",
       "It pays off in the end.",
       "On the one hand, … On the other hand, …",
@@ -4342,10 +5366,32 @@
      "title": "Should schools teach folk games?",
      "task": "Your school wants to add gorodki and lapta to PE lessons. Do you support the idea? Give two reasons and suggest how to make the lessons popular.",
      "vocab": [
-      "to [[revive]] a tradition",
-      "cultural [[heritage]] (U)",
-      "accessible [[to]] everyone",
-      "team [[spirit]] (U)",
+      {
+       "text": "to revive a tradition",
+       "key": [
+        "revive"
+       ]
+      },
+      {
+       "text": "cultural heritage",
+       "key": [
+        "heritage"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "accessible to everyone",
+       "key": [
+        "to"
+       ]
+      },
+      {
+       "text": "team spirit",
+       "key": [
+        "spirit"
+       ],
+       "uncountable": true
+      },
       "In my view, …",
       "A good way to … would be to …"
      ]
@@ -4496,23 +5542,33 @@
      "items": [
       {
        "img": "bowl_with_spoon",
-       "en": "porridge (U)",
-       "ru": "каша"
+       "en": "porridge",
+       "ru": "каша",
+       "uncountable": true
       },
       {
        "img": "pancakes",
-       "en": "pancakes · syrniki",
-       "ru": "блины · сырники"
+       "en": "pancakes",
+       "ru": "блины",
+       "group": 1
+      },
+      {
+       "img": "pancakes",
+       "en": "syrniki",
+       "ru": "сырники",
+       "group": 1
       },
       {
        "img": "glass_of_milk",
-       "en": "cottage cheese (U)",
-       "ru": "творог"
+       "en": "cottage cheese",
+       "ru": "творог",
+       "uncountable": true
       },
       {
        "img": "red_apple",
-       "en": "fresh fruit (U)",
-       "ru": "свежие фрукты"
+       "en": "fresh fruit",
+       "ru": "свежие фрукты",
+       "uncountable": true
       },
       {
        "img": "broccoli",
@@ -4526,13 +5582,15 @@
       },
       {
        "img": "hamburger",
-       "en": "junk food (U)",
-       "ru": "вредная еда"
+       "en": "junk food",
+       "ru": "вредная еда",
+       "uncountable": true
       },
       {
        "img": "french_fries",
-       "en": "processed food (U)",
-       "ru": "полуфабрикаты"
+       "en": "processed food",
+       "ru": "полуфабрикаты",
+       "uncountable": true
       },
       {
        "img": "bed",
@@ -4541,8 +5599,9 @@
       },
       {
        "img": "mobile_phone",
-       "en": "screen time (U)",
-       "ru": "время у экрана"
+       "en": "screen time",
+       "ru": "время у экрана",
+       "uncountable": true
       }
      ]
     },
@@ -4551,34 +5610,67 @@
      "title": "Lifestyle",
      "items": [
       {
-       "en": "[[to lead]] a healthy lifestyle",
+       "en": "to lead a healthy lifestyle",
        "ru": "вести здоровый образ жизни",
-       "ex": "My parents [[lead]] a very healthy lifestyle."
+       "ex": "My parents lead a very healthy lifestyle.",
+       "key": [
+        "to lead",
+        "lead"
+       ]
       },
       {
-       "en": "a [[sedentary]] lifestyle",
+       "en": "a sedentary lifestyle",
        "ru": "сидячий образ жизни",
-       "ex": "A [[sedentary]] lifestyle can cause back problems."
+       "ex": "A sedentary lifestyle can cause back problems.",
+       "key": [
+        "sedentary"
+       ]
       },
       {
-       "en": "[[to follow]] a balanced diet",
+       "en": "to follow a balanced diet",
        "ru": "придерживаться сбалансированного питания",
-       "ex": "Athletes [[follow]] a balanced diet."
+       "ex": "Athletes follow a balanced diet.",
+       "key": [
+        "to follow",
+        "follow"
+       ]
       },
       {
-       "en": "[[to cut down on]] sugar (U)",
+       "en": "to cut down on sugar",
        "ru": "сократить сахар",
-       "ex": "I'm trying to [[cut down on]] sugar."
+       "ex": "I'm trying to cut down on sugar.",
+       "key": [
+        "to cut down on",
+        "cut down on"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[to skip]] meals",
+       "en": "to skip meals",
        "ru": "пропускать приёмы пищи",
-       "ex": "Students often [[skip]] meals during exams."
+       "ex": "Students often skip meals during exams.",
+       "key": [
+        "to skip",
+        "skip"
+       ]
       },
       {
-       "en": "[[to give up]] / [[to kick]] a bad habit",
+       "en": "to give up a bad habit",
        "ru": "бросить вредную привычку",
-       "ex": "He finally [[gave up]] junk food."
+       "ex": "He finally gave up junk food.",
+       "key": [
+        "to give up",
+        "gave up"
+       ],
+       "group": 2
+      },
+      {
+       "en": "to kick a bad habit",
+       "ru": "избавиться от вредной привычки (informal)",
+       "key": [
+        "to kick"
+       ],
+       "group": 2
       }
      ]
     },
@@ -4604,8 +5696,9 @@
       },
       {
        "img": "pill",
-       "en": "to take medicine (U)",
-       "ru": "принимать лекарство"
+       "en": "to take medicine",
+       "ru": "принимать лекарство",
+       "uncountable": true
       },
       {
        "img": "anatomical_heart",
@@ -4614,13 +5707,15 @@
       },
       {
        "img": "brain",
-       "en": "mental well-being (U)",
-       "ru": "душевное благополучие"
+       "en": "mental well-being",
+       "ru": "душевное благополучие",
+       "uncountable": true
       },
       {
        "img": "low_battery",
-       "en": "burnout (U)",
-       "ru": "выгорание"
+       "en": "burnout",
+       "ru": "выгорание",
+       "uncountable": true
       },
       {
        "img": "watch",
@@ -4634,34 +5729,75 @@
      "title": "Illness and prevention",
      "items": [
       {
-       "en": "[[to fall ill]] · [[to recover from]]",
-       "ru": "заболеть · выздороветь после",
-       "ex": "She [[recovered from]] flu in a week."
+       "en": "to fall ill",
+       "ru": "заболеть",
+       "key": [
+        "to fall ill"
+       ],
+       "group": 3
       },
       {
-       "en": "[[to boost]] your immune system",
+       "en": "to recover from",
+       "ru": "выздороветь после",
+       "ex": "She recovered from flu in a week.",
+       "key": [
+        "to recover from",
+        "recovered from"
+       ],
+       "group": 3
+      },
+      {
+       "en": "to boost your immune system",
        "ru": "укрепить иммунитет",
-       "ex": "Fresh air [[boosts]] your immune system."
+       "ex": "Fresh air boosts your immune system.",
+       "key": [
+        "to boost",
+        "boosts"
+       ]
       },
       {
-       "en": "a [[chronic]] disease",
+       "en": "a chronic disease",
        "ru": "хроническое заболевание",
-       "ex": "Regular exercise lowers the risk of [[chronic]] diseases."
+       "ex": "Regular exercise lowers the risk of chronic diseases.",
+       "key": [
+        "chronic"
+       ]
       },
       {
-       "en": "[[to be overweight]]",
+       "en": "to be overweight",
        "ru": "иметь лишний вес",
-       "ex": "Doctors say more and more teenagers [[are overweight]]."
+       "ex": "Doctors say more and more teenagers are overweight.",
+       "key": [
+        "to be overweight",
+        "are overweight"
+       ]
       },
       {
-       "en": "[[poor]] posture / eyesight (U)",
-       "ru": "плохая осанка / зрение",
-       "ex": "Hours at the computer can cause [[poor]] eyesight."
+       "en": "poor posture",
+       "ru": "плохая осанка",
+       "key": [
+        "poor"
+       ],
+       "uncountable": true,
+       "group": 4
       },
       {
-       "en": "side [[effects]]",
+       "en": "poor eyesight",
+       "ru": "плохое зрение",
+       "ex": "Hours at the computer can cause poor eyesight.",
+       "key": [
+        "poor"
+       ],
+       "uncountable": true,
+       "group": 4
+      },
+      {
+       "en": "side effects",
        "ru": "побочные эффекты",
-       "ex": "Every medicine can have side [[effects]]."
+       "ex": "Every medicine can have side effects.",
+       "key": [
+        "effects"
+       ]
       }
      ]
     },
@@ -4670,39 +5806,74 @@
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[to eat on the go]]",
+       "en": "to eat on the go",
        "ru": "есть на ходу",
-       "ex": "I often [[eat on the go]] between classes."
+       "ex": "I often eat on the go between classes.",
+       "key": [
+        "to eat on the go",
+        "eat on the go"
+       ]
       },
       {
-       "en": "[[to be under the weather]]",
+       "en": "to be under the weather",
        "ru": "неважно себя чувствовать",
-       "ex": "I'm a bit [[under the weather]] today."
+       "ex": "I'm a bit under the weather today.",
+       "key": [
+        "to be under the weather",
+        "under the weather"
+       ]
       },
       {
-       "en": "[[to feel run-down]]",
+       "en": "to feel run-down",
        "ru": "чувствовать себя вымотанным",
-       "ex": "After the exams I [[felt]] completely [[run-down]]."
+       "ex": "After the exams I felt completely run-down.",
+       "key": [
+        "to feel run-down",
+        "felt",
+        "run-down"
+       ]
       },
       {
-       "en": "[[fighting]] fit",
+       "en": "fighting fit",
        "ru": "в отличной форме",
-       "ex": "After a week at the sea I felt [[fighting]] fit."
+       "ex": "After a week at the sea I felt fighting fit.",
+       "key": [
+        "fighting"
+       ]
       },
       {
-       "en": "[[to burn the candle at both ends]]",
+       "en": "to burn the candle at both ends",
        "ru": "работать на износ",
-       "ex": "If you [[burn the candle at both ends]], you'll fall ill."
+       "ex": "If you burn the candle at both ends, you'll fall ill.",
+       "key": [
+        "to burn the candle at both ends",
+        "burn the candle at both ends"
+       ]
       },
       {
-       "en": "a [[clean bill]] of health",
+       "en": "a clean bill of health",
        "ru": "заключение «здоров»",
-       "ex": "The doctor gave me a [[clean bill]] of health."
+       "ex": "The doctor gave me a clean bill of health.",
+       "key": [
+        "clean bill"
+       ]
       },
       {
-       "en": "an [[early bird]] · a [[night owl]]",
-       "ru": "жаворонок · сова",
-       "ex": "I'm a [[night owl]]: I can't fall asleep before midnight."
+       "en": "an early bird",
+       "ru": "жаворонок",
+       "key": [
+        "early bird"
+       ],
+       "group": 5
+      },
+      {
+       "en": "a night owl",
+       "ru": "сова",
+       "ex": "I'm a night owl: I can't fall asleep before midnight.",
+       "key": [
+        "night owl"
+       ],
+       "group": 5
       }
      ]
     }
@@ -5212,14 +6383,48 @@
      "title": "A day in my life",
      "task": "Describe your typical school day: meals, sleep, screen time and exercise. How healthy is it? Name two things you would like to change and explain how.",
      "vocab": [
-      "to [[lead]] a healthy lifestyle",
-      "a [[sedentary]] lifestyle",
-      "to [[skip]] meals",
-      "to [[eat on the go]]",
+      {
+       "text": "to lead a healthy lifestyle",
+       "key": [
+        "lead"
+       ]
+      },
+      {
+       "text": "a sedentary lifestyle",
+       "key": [
+        "sedentary"
+       ]
+      },
+      {
+       "text": "to skip meals",
+       "key": [
+        "skip"
+       ]
+      },
+      {
+       "text": "to eat on the go",
+       "key": [
+        "eat on the go"
+       ]
+      },
       "to get enough sleep",
-      "screen time (U)",
-      "to [[cut down on]] …",
-      "I'm an [[early bird]] / a [[night owl]]."
+      {
+       "text": "screen time",
+       "uncountable": true
+      },
+      {
+       "text": "to cut down on …",
+       "key": [
+        "cut down on"
+       ]
+      },
+      {
+       "text": "I'm an early bird / a night owl.",
+       "key": [
+        "early bird",
+        "night owl"
+       ]
+      }
      ]
     },
     {
@@ -5231,13 +6436,36 @@
       "What would you recommend?"
      ],
      "vocab": [
-      "to [[be under the weather]]",
+      {
+       "text": "to be under the weather",
+       "key": [
+        "be under the weather"
+       ]
+      },
       "to catch a cold",
       "to have a temperature",
-      "to [[feel run-down]]",
-      "to take medicine (U)",
-      "side [[effects]]",
-      "to [[recover from]] …",
+      {
+       "text": "to feel run-down",
+       "key": [
+        "feel run-down"
+       ]
+      },
+      {
+       "text": "to take medicine",
+       "uncountable": true
+      },
+      {
+       "text": "side effects",
+       "key": [
+        "effects"
+       ]
+      },
+      {
+       "text": "to recover from …",
+       "key": [
+        "recover from"
+       ]
+      },
       "You'd better …"
      ]
     },
@@ -5245,11 +6473,27 @@
      "title": "Exam stress",
      "task": "A classmate studies until 2 a.m. every night before the exams and feels exhausted. Explain the risks and give them a realistic plan.",
      "vocab": [
-      "to [[burn the candle at both ends]]",
-      "burnout (U)",
-      "mental well-being (U)",
+      {
+       "text": "to burn the candle at both ends",
+       "key": [
+        "burn the candle at both ends"
+       ]
+      },
+      {
+       "text": "burnout",
+       "uncountable": true
+      },
+      {
+       "text": "mental well-being",
+       "uncountable": true
+      },
       "to get enough sleep",
-      "to [[boost]] your immune system",
+      {
+       "text": "to boost your immune system",
+       "key": [
+        "boost"
+       ]
+      },
       "If I were you, I'd …",
       "It's much better to … than to …"
      ]
@@ -5258,11 +6502,25 @@
      "title": "Healthy school challenge",
      "task": "Suggest three changes that would make your school a healthier place. Explain how each change would help students.",
      "vocab": [
-      "junk food (U) · processed food (U)",
+      {
+       "text": "junk food · processed food",
+       "uncountable": true
+      },
       "a balanced diet",
       "to stay hydrated",
-      "[[poor]] posture (U)",
-      "a [[sedentary]] lifestyle",
+      {
+       "text": "poor posture",
+       "key": [
+        "poor"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "a sedentary lifestyle",
+       "key": [
+        "sedentary"
+       ]
+      },
       "I'd suggest …",
       "This would help students to …"
      ]
@@ -5454,7 +6712,12 @@
         ]
        }
       ],
-      "trap": "Q5 asks about the <b>difference</b>: not just what you will eat, but how it will differ from your breakfast now."
+      "trap": {
+       "text": "Q5 asks about the difference: not just what you will eat, but how it will differ from your breakfast now.",
+       "key": [
+        "difference"
+       ]
+      }
      }
     ],
     [
@@ -5524,7 +6787,13 @@
         ]
        }
       ],
-      "trap": "Q1: <i>Have you ever…?</i> → <i>Yes, I have.</i> + the Past Simple for a specific occasion."
+      "trap": {
+       "text": "Q1: Have you ever…? → Yes, I have. + the Past Simple for a specific occasion.",
+       "example": [
+        "Have you ever…?",
+        "Yes, I have."
+       ]
+      }
      },
      {
       "type": "essay",
@@ -5555,7 +6824,12 @@
       ],
       "problem": "that can arise with some approaches to staying healthy",
       "conclusion": "the importance of staying healthy",
-      "focus4": "a problem with one of the <b>approaches</b> in the table",
+      "focus4": {
+       "text": "a problem with one of the approaches in the table",
+       "key": [
+        "approaches"
+       ]
+      },
       "pool": [
        "avoid fast food",
        "a balanced diet",
@@ -5593,8 +6867,11 @@
       },
       {
        "img": "brain",
-       "en": "to cope [[with]] stress",
-       "ru": "справляться со стрессом"
+       "en": "to cope with stress",
+       "ru": "справляться со стрессом",
+       "key": [
+        "with"
+       ]
       },
       {
        "img": "sparkles",
@@ -5625,18 +6902,29 @@
      "items": [
       {
        "img": "low_battery",
-       "en": "lack [[of]] motivation (U)",
-       "ru": "нет мотивации"
+       "en": "lack of motivation",
+       "ru": "нет мотивации",
+       "key": [
+        "of"
+       ],
+       "uncountable": true
       },
       {
        "img": "alarm_clock",
-       "en": "lack [[of]] time (U)",
-       "ru": "нет времени"
+       "en": "lack of time",
+       "ru": "нет времени",
+       "key": [
+        "of"
+       ],
+       "uncountable": true
       },
       {
        "img": "money_bag",
-       "en": "can't [[afford]] it",
-       "ru": "не по карману"
+       "en": "can't afford it",
+       "ru": "не по карману",
+       "key": [
+        "afford"
+       ]
       },
       {
        "img": "person_walking",
@@ -5650,8 +6938,11 @@
       },
       {
        "img": "puzzle_piece",
-       "en": "nobody to share it [[with]]",
-       "ru": "не с кем"
+       "en": "nobody to share it with",
+       "ru": "не с кем",
+       "key": [
+        "with"
+       ]
       }
      ]
     },
@@ -5660,54 +6951,99 @@
      "title": "Motivation",
      "items": [
       {
-       "en": "an [[incentive]]",
+       "en": "an incentive",
        "ru": "стимул",
-       "ex": "Prize money is a strong [[incentive]]."
+       "ex": "Prize money is a strong incentive.",
+       "key": [
+        "incentive"
+       ]
       },
       {
-       "en": "[[commitment]] (to) (U)",
+       "en": "commitment (to)",
        "ru": "преданность делу",
-       "ex": "Professional sport requires total [[commitment]]."
+       "ex": "Professional sport requires total commitment.",
+       "key": [
+        "commitment"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[peer]] pressure (U)",
+       "en": "peer pressure",
        "ru": "давление сверстников",
-       "ex": "Some teenagers start smoking because of [[peer]] pressure."
+       "ex": "Some teenagers start smoking because of peer pressure.",
+       "key": [
+        "peer"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[to stick to]] a routine",
+       "en": "to stick to a routine",
        "ru": "придерживаться режима",
-       "ex": "It's hard to [[stick to]] a routine during the holidays."
+       "ex": "It's hard to stick to a routine during the holidays.",
+       "key": [
+        "to stick to",
+        "stick to"
+       ]
       },
       {
-       "en": "[[to set]] realistic goals",
+       "en": "to set realistic goals",
        "ru": "ставить реалистичные цели",
-       "ex": "[[Set]] realistic goals, or you'll soon give up."
+       "ex": "Set realistic goals, or you'll soon give up.",
+       "key": [
+        "to set",
+        "Set"
+       ]
       },
       {
-       "en": "[[to track]] your progress",
+       "en": "to track your progress",
        "ru": "отслеживать прогресс",
-       "ex": "I use an app to [[track]] my progress."
+       "ex": "I use an app to track my progress.",
+       "key": [
+        "to track",
+        "track"
+       ]
       },
       {
-       "en": "a sense [[of achievement]]",
+       "en": "a sense of achievement",
        "ru": "удовлетворение от результата",
-       "ex": "Finishing the race gave me a sense [[of achievement]]."
+       "ex": "Finishing the race gave me a sense of achievement.",
+       "key": [
+        "of achievement"
+       ]
       },
       {
-       "en": "[[to lose]] interest · [[to make]] excuses",
-       "ru": "терять интерес · искать отговорки",
-       "ex": "Stop [[making]] excuses and go for a run!"
+       "en": "to lose interest",
+       "ru": "терять интерес",
+       "key": [
+        "to lose"
+       ],
+       "group": 1
       },
       {
-       "en": "a workout [[buddy]]",
+       "en": "to make excuses",
+       "ru": "искать отговорки",
+       "ex": "Stop making excuses and go for a run!",
+       "key": [
+        "to make",
+        "making"
+       ],
+       "group": 1
+      },
+      {
+       "en": "a workout buddy",
        "ru": "напарник по тренировкам",
-       "ex": "My workout [[buddy]] never lets me skip training."
+       "ex": "My workout buddy never lets me skip training.",
+       "key": [
+        "buddy"
+       ]
       },
       {
-       "en": "sports [[facilities]]",
+       "en": "sports facilities",
        "ru": "спортивные сооружения",
-       "ex": "Our town needs better sports [[facilities]]."
+       "ex": "Our town needs better sports facilities.",
+       "key": [
+        "facilities"
+       ]
       }
      ]
     },
@@ -5716,29 +7052,47 @@
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[can't be bothered]] (to do)",
+       "en": "can't be bothered (to do)",
        "ru": "лень, неохота (informal)",
-       "ex": "I [[can't be bothered]] to go to the gym today."
+       "ex": "I can't be bothered to go to the gym today.",
+       "key": [
+        "can't be bothered"
+       ]
       },
       {
-       "en": "[[to find the time]]",
+       "en": "to find the time",
        "ru": "найти время",
-       "ex": "Even busy people can [[find the time]] for a walk."
+       "ex": "Even busy people can find the time for a walk.",
+       "key": [
+        "to find the time",
+        "find the time"
+       ]
       },
       {
-       "en": "[[to give it a go]]",
+       "en": "to give it a go",
        "ru": "попробовать",
-       "ex": "I've never tried yoga, but I'll [[give it a go]]."
+       "ex": "I've never tried yoga, but I'll give it a go.",
+       "key": [
+        "to give it a go",
+        "give it a go"
+       ]
       },
       {
-       "en": "The hardest part is [[getting started]].",
+       "en": "The hardest part is getting started.",
        "ru": "главное — начать",
-       "ex": "“The hardest part is [[getting started]],” my coach says."
+       "ex": "“The hardest part is getting started,” my coach says.",
+       "key": [
+        "getting started"
+       ]
       },
       {
-       "en": "[[to get back on track]]",
+       "en": "to get back on track",
        "ru": "вернуться к режиму",
-       "ex": "After the holidays I [[got back on track]] with my training."
+       "ex": "After the holidays I got back on track with my training.",
+       "key": [
+        "to get back on track",
+        "got back on track"
+       ]
       }
      ]
     }
@@ -5982,7 +7336,7 @@
        "excuses"
       ],
       [
-       "peer ___ (U)",
+       "peer ___ (uncountable)",
        [
         "press",
         "push",
@@ -6032,7 +7386,7 @@
        "track"
       ],
       [
-       "lack ___ time (U)",
+       "lack ___ time (uncountable)",
        [
         "in",
         "of",
@@ -6248,12 +7602,43 @@
      "title": "What stops you?",
      "task": "Name the two biggest barriers that stop teenagers from doing sport. For each one, suggest a realistic solution.",
      "vocab": [
-      "lack [[of]] time / motivation (U)",
-      "can't [[afford]] it",
-      "to [[make]] excuses",
-      "[[can't be bothered]] to …",
-      "to [[find the time]]",
-      "The hardest part is [[getting started]].",
+      {
+       "text": "lack of time / motivation",
+       "key": [
+        "of"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "can't afford it",
+       "key": [
+        "afford"
+       ]
+      },
+      {
+       "text": "to make excuses",
+       "key": [
+        "make"
+       ]
+      },
+      {
+       "text": "can't be bothered to …",
+       "key": [
+        "can't be bothered"
+       ]
+      },
+      {
+       "text": "to find the time",
+       "key": [
+        "find the time"
+       ]
+      },
+      {
+       "text": "The hardest part is getting started.",
+       "key": [
+        "getting started"
+       ]
+      },
       "One way to solve this is to …"
      ]
     },
@@ -6261,12 +7646,42 @@
      "title": "Set a goal",
      "task": "Tell your partner about a fitness goal for the next three months. Explain how you will track your progress and stay motivated. Your partner gives you one more tip.",
      "vocab": [
-      "[[to set]] realistic goals",
-      "[[to stick to]] a routine",
-      "[[to track]] your progress",
-      "a workout [[buddy]]",
-      "a sense [[of achievement]]",
-      "to [[get back on track]]",
+      {
+       "text": "to set realistic goals",
+       "key": [
+        "to set"
+       ]
+      },
+      {
+       "text": "to stick to a routine",
+       "key": [
+        "to stick to"
+       ]
+      },
+      {
+       "text": "to track your progress",
+       "key": [
+        "to track"
+       ]
+      },
+      {
+       "text": "a workout buddy",
+       "key": [
+        "buddy"
+       ]
+      },
+      {
+       "text": "a sense of achievement",
+       "key": [
+        "of achievement"
+       ]
+      },
+      {
+       "text": "to get back on track",
+       "key": [
+        "get back on track"
+       ]
+      },
       "My plan is to …"
      ]
     },
@@ -6293,11 +7708,33 @@
      "title": "Rewards or love of the game?",
      "task": "Should schools give students prizes for sporting achievements? Give arguments for and against, then your opinion.",
      "vocab": [
-      "an [[incentive]]",
-      "[[commitment]] (U)",
-      "[[peer]] pressure (U)",
+      {
+       "text": "an incentive",
+       "key": [
+        "incentive"
+       ]
+      },
+      {
+       "text": "commitment",
+       "key": [
+        "commitment"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "peer pressure",
+       "key": [
+        "peer"
+       ],
+       "uncountable": true
+      },
       "to boost self-esteem",
-      "to [[lose]] interest",
+      {
+       "text": "to lose interest",
+       "key": [
+        "lose"
+       ]
+      },
       "In my opinion, …",
       "That's why …"
      ]
@@ -6420,7 +7857,12 @@
       ],
       "problem": "that can arise with doing sports",
       "conclusion": "the importance of doing sports",
-      "focus4": "a problem with <b>doing sports</b> as an adult",
+      "focus4": {
+       "text": "a problem with doing sports as an adult",
+       "key": [
+        "doing sports"
+       ]
+      },
       "pool": [
        "keep fit",
        "cope with stress",
@@ -6479,7 +7921,13 @@
       ],
       "problem": "that can arise if a person does not do sports regularly",
       "conclusion": "how to motivate people to do sports",
-      "focus4": "consequences of <b>not exercising regularly</b>; conclusion: <b>how to motivate people</b>",
+      "focus4": {
+       "text": "consequences of not exercising regularly; conclusion: how to motivate people",
+       "key": [
+        "not exercising regularly",
+        "how to motivate people"
+       ]
+      },
       "pool": [
        "get no pleasure from",
        "lack of motivation",
@@ -6523,7 +7971,12 @@
       ],
       "problem": "with lack of exercise",
       "conclusion": "the best sport activity for teenagers",
-      "focus4": "consequences of <b>a lack of exercise</b> for teenagers",
+      "focus4": {
+       "text": "consequences of a lack of exercise for teenagers",
+       "key": [
+        "a lack of exercise"
+       ]
+      },
       "pool": [
        "be busy with exams",
        "sit at a desk all day",
@@ -6567,7 +8020,12 @@
       ],
       "problem": "that can arise while choosing a sport to take up",
       "conclusion": "what makes a good athlete",
-      "focus4": "a problem in <b>choosing</b> a sport at an older age",
+      "focus4": {
+       "text": "a problem in choosing a sport at an older age",
+       "key": [
+        "choosing"
+       ]
+      },
       "pool": [
        "senior citizens",
        "improve fitness",
@@ -6600,8 +8058,9 @@
      "items": [
       {
        "img": "yarn",
-       "en": "knitting (U)",
-       "ru": "вязание"
+       "en": "knitting",
+       "ru": "вязание",
+       "uncountable": true
       },
       {
        "img": "fishing_pole",
@@ -6615,8 +8074,9 @@
       },
       {
        "img": "books",
-       "en": "reading (U)",
-       "ru": "чтение"
+       "en": "reading",
+       "ru": "чтение",
+       "uncountable": true
       },
       {
        "img": "puzzle_piece",
@@ -6655,44 +8115,110 @@
      "title": "Free time",
      "items": [
       {
-       "en": "[[spare]] time (U) · [[leisure]] activities",
-       "ru": "свободное время · виды досуга",
-       "ex": "In my [[spare]] time I draw."
+       "en": "spare time",
+       "ru": "свободное время",
+       "ex": "In my spare time I draw.",
+       "key": [
+        "spare"
+       ],
+       "uncountable": true,
+       "group": 1
       },
       {
-       "en": "a [[pastime]]",
+       "en": "leisure activities",
+       "ru": "виды досуга",
+       "key": [
+        "leisure"
+       ],
+       "group": 1
+      },
+      {
+       "en": "a pastime",
        "ru": "времяпрепровождение",
-       "ex": "Reading is my favourite [[pastime]]."
+       "ex": "Reading is my favourite pastime.",
+       "key": [
+        "pastime"
+       ]
       },
       {
-       "en": "[[to take up]] / [[to pursue]] a hobby",
-       "ru": "начать заниматься / заниматься хобби",
-       "ex": "I [[took up]] photography last year."
+       "en": "to take up a hobby",
+       "ru": "начать заниматься хобби",
+       "ex": "I took up photography last year.",
+       "key": [
+        "to take up",
+        "took up"
+       ],
+       "group": 2
       },
       {
-       "en": "[[to be into]] · [[to be keen on]] + -ing",
+       "en": "to pursue a hobby",
+       "ru": "заниматься хобби",
+       "key": [
+        "to pursue"
+       ],
+       "group": 2
+      },
+      {
+       "en": "to be into + -ing",
        "ru": "увлекаться",
-       "ex": "My sister [[is keen on]] dancing."
+       "key": [
+        "to be into"
+       ],
+       "group": 3
       },
       {
-       "en": "[[to join]] a club",
+       "en": "to be keen on + -ing",
+       "ru": "очень любить, увлекаться",
+       "ex": "My sister is keen on dancing.",
+       "key": [
+        "to be keen on",
+        "is keen on"
+       ],
+       "group": 3
+      },
+      {
+       "en": "to join a club",
        "ru": "вступить в клуб",
-       "ex": "I [[joined]] a chess club in September."
+       "ex": "I joined a chess club in September.",
+       "key": [
+        "to join",
+        "joined"
+       ]
       },
       {
-       "en": "[[to hang out]] with friends",
+       "en": "to hang out with friends",
        "ru": "проводить время с друзьями",
-       "ex": "We [[hang out]] in the park after school."
+       "ex": "We hang out in the park after school.",
+       "key": [
+        "to hang out",
+        "hang out"
+       ]
       },
       {
-       "en": "[[to collect]] coins / stamps",
-       "ru": "коллекционировать",
-       "ex": "My grandad [[collects]] old coins."
+       "en": "to collect coins",
+       "ru": "коллекционировать монеты",
+       "ex": "My grandad collects old coins.",
+       "key": [
+        "to collect",
+        "collects"
+       ],
+       "group": 4
       },
       {
-       "en": "a creative [[outlet]]",
+       "en": "to collect stamps",
+       "ru": "коллекционировать марки",
+       "key": [
+        "to collect"
+       ],
+       "group": 4
+      },
+      {
+       "en": "a creative outlet",
        "ru": "способ самовыражения",
-       "ex": "Drawing is a great creative [[outlet]] for me."
+       "ex": "Drawing is a great creative outlet for me.",
+       "key": [
+        "outlet"
+       ]
       }
      ]
     },
@@ -6701,41 +8227,70 @@
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[to unwind]]",
+       "en": "to unwind",
        "ru": "расслабиться",
-       "ex": "I read before bed to [[unwind]]."
+       "ex": "I read before bed to unwind.",
+       "key": [
+        "to unwind",
+        "unwind"
+       ]
       },
       {
-       "en": "[[to recharge]] your batteries",
+       "en": "to recharge your batteries",
        "ru": "восстановить силы",
-       "ex": "A weekend in the country helps me [[recharge]] my batteries."
+       "ex": "A weekend in the country helps me recharge my batteries.",
+       "key": [
+        "to recharge",
+        "recharge"
+       ]
       },
       {
-       "en": "[[to kill]] time",
+       "en": "to kill time",
        "ru": "убить время",
-       "ex": "We played cards to [[kill]] time at the airport."
+       "ex": "We played cards to kill time at the airport.",
+       "key": [
+        "to kill",
+        "kill"
+       ]
       },
       {
-       "en": "a couch [[potato]]",
+       "en": "a couch potato",
        "ru": "лежебока (informal)",
-       "ex": "Don't be a couch [[potato]] — go outside!"
+       "ex": "Don't be a couch potato — go outside!",
+       "key": [
+        "potato"
+       ]
       },
       {
-       "en": "[[to get hooked on]]",
+       "en": "to get hooked on",
        "ru": "подсесть на",
-       "ex": "He [[got hooked on]] computer games last winter."
+       "ex": "He got hooked on computer games last winter.",
+       "key": [
+        "to get hooked on",
+        "got hooked on"
+       ]
       },
       {
-       "en": "[[to while away]] the hours",
+       "en": "to while away the hours",
        "ru": "коротать время",
-       "ex": "We [[whiled away]] the hours playing board games."
+       "ex": "We whiled away the hours playing board games.",
+       "key": [
+        "to while away",
+        "whiled away"
+       ]
       }
      ]
     },
     {
      "type": "note",
      "title": "Then and now · used to",
-     "html": "Thirty years ago teenagers <b>used to</b> spend more time outdoors, <b>whereas</b> nowadays much of their free time is spent online."
+     "text": {
+      "text": "Thirty years ago teenagers used to spend more time outdoors, whereas nowadays much of their free time is spent online.",
+      "key": [
+       "used to",
+       "whereas"
+      ]
+     }
     }
    ],
    "exercises": [
@@ -6927,7 +8482,7 @@
      "instr": "Choose the word that completes each phrase.",
      "items": [
       [
-       "___ time (U) (= free time)",
+       "___ time (uncountable) (= free time)",
        [
         "extra",
         "spare",
@@ -7243,11 +8798,37 @@
      "title": "My perfect weekend",
      "task": "Describe your perfect weekend, then compare it with a real weekend of yours. What would you need to change to make them closer?",
      "vocab": [
-      "[[spare]] time (U)",
-      "to [[unwind]]",
-      "to [[recharge]] your batteries",
-      "to [[hang out]] with friends",
-      "to [[be into]] …",
+      {
+       "text": "spare time",
+       "key": [
+        "spare"
+       ],
+       "uncountable": true
+      },
+      {
+       "text": "to unwind",
+       "key": [
+        "unwind"
+       ]
+      },
+      {
+       "text": "to recharge your batteries",
+       "key": [
+        "recharge"
+       ]
+      },
+      {
+       "text": "to hang out with friends",
+       "key": [
+        "hang out"
+       ]
+      },
+      {
+       "text": "to be into …",
+       "key": [
+        "be into"
+       ]
+      },
       "…, whereas …"
      ]
     },
@@ -7255,11 +8836,24 @@
      "title": "Then and now",
      "task": "Compare how your grandparents spent their free time as teenagers with how you spend yours. Use at least three examples.",
      "vocab": [
-      "They [[used to]] …",
+      {
+       "text": "They used to …",
+       "key": [
+        "used to"
+       ]
+      },
       "…, whereas nowadays …",
       "to spend hours + -ing",
-      "to [[get hooked on]] …",
-      "screen time (U)",
+      {
+       "text": "to get hooked on …",
+       "key": [
+        "get hooked on"
+       ]
+      },
+      {
+       "text": "screen time",
+       "uncountable": true
+      },
       "Unlike them, we …"
      ]
     },
@@ -7267,10 +8861,30 @@
      "title": "Find a hobby",
      "task": "Your friend is bored and spends all day on the phone. Suggest three hobbies and convince them to try one of them.",
      "vocab": [
-      "to [[take up]] a hobby",
-      "to [[join]] a club",
-      "a creative [[outlet]]",
-      "to [[give it a go]]",
+      {
+       "text": "to take up a hobby",
+       "key": [
+        "take up"
+       ]
+      },
+      {
+       "text": "to join a club",
+       "key": [
+        "join"
+       ]
+      },
+      {
+       "text": "a creative outlet",
+       "key": [
+        "outlet"
+       ]
+      },
+      {
+       "text": "to give it a go",
+       "key": [
+        "give it a go"
+       ]
+      },
       "Why don't you …?",
       "It's a great way to …"
      ]
@@ -7279,10 +8893,30 @@
      "title": "Screens: waste of time or real hobby?",
      "task": "Are video games a waste of time or a real hobby? Give arguments for both sides and your own opinion.",
      "vocab": [
-      "to [[kill]] time",
-      "to [[while away]] the hours",
-      "a couch [[potato]]",
-      "to [[get hooked on]]",
+      {
+       "text": "to kill time",
+       "key": [
+        "kill"
+       ]
+      },
+      {
+       "text": "to while away the hours",
+       "key": [
+        "while away"
+       ]
+      },
+      {
+       "text": "a couch potato",
+       "key": [
+        "potato"
+       ]
+      },
+      {
+       "text": "to get hooked on",
+       "key": [
+        "get hooked on"
+       ]
+      },
       "to develop skills",
       "I'd argue that …",
       "All in all, …"
@@ -7425,7 +9059,12 @@
         ]
        }
       ],
-      "trap": "Q3 is about the past: <i>used to</i> / the Past Simple. Don't switch to the Present."
+      "trap": {
+       "text": "Q3 is about the past: used to / the Past Simple. Don't switch to the Present.",
+       "example": [
+        "used to"
+       ]
+      }
      },
      {
       "type": "photo",
@@ -7613,7 +9252,7 @@
     "INJURE"
    ]
   ],
-  "cloze": "I had always been afraid of heights, so last month I decided to <b>30</b> ______ my fear and signed up for a climbing class. The instructor told us to <b>31</b> ______ our time and not to rush. Climbing is not only about strength — you also need good <b>32</b> ______. Halfway up the wall I wanted to <b>33</b> ______ up, but my friends kept cheering me on. When I finally reached the top, I felt an incredible <b>34</b> ______ rush. Now I go to the climbing centre twice a week, and I have <b>35</b> ______ a lot of new friends there. My instructor says I have made great <b>36</b> ______ in just two months.",
+  "cloze": "I had always been afraid of heights, so last month I decided to {30} my fear and signed up for a climbing class. The instructor told us to {31} our time and not to rush. Climbing is not only about strength — you also need good {32}. Halfway up the wall I wanted to {33} up, but my friends kept cheering me on. When I finally reached the top, I felt an incredible {34} rush. Now I go to the climbing centre twice a week, and I have {35} a lot of new friends there. My instructor says I have made great {36} in just two months.",
   "opts": [
    [
     30,
@@ -7681,7 +9320,7 @@
   ],
   "reading11": {
    "title": "Why teenagers need to get moving",
-   "text": "Doctors agree that regular exercise is one of the best ways {A}. Yet many teenagers spend most of their day sitting at a desk or in front of a screen, {B}.<br>The good news is that you do not need expensive equipment or a gym membership {C}. A brisk walk to school, a bike ride with friends or a quick workout at home can make a real difference.<br>The hardest part, most experts say, is getting started. That is why it is important to choose an activity {D}: if you hate running, you will soon find excuses to give it up. Team sports are a good option for those {E}, while individual sports suit people who prefer to train at their own pace.<br>Finally, remember to warm up properly before every session. Many beginners try to do too much too soon {F}.",
+   "text": "Doctors agree that regular exercise is one of the best ways {A}. Yet many teenagers spend most of their day sitting at a desk or in front of a screen, {B}.\nThe good news is that you do not need expensive equipment or a gym membership {C}. A brisk walk to school, a bike ride with friends or a quick workout at home can make a real difference.\nThe hardest part, most experts say, is getting started. That is why it is important to choose an activity {D}: if you hate running, you will soon find excuses to give it up. Team sports are a good option for those {E}, while individual sports suit people who prefer to train at their own pace.\nFinally, remember to warm up properly before every session. Many beginners try to do too much too soon {F}.",
    "parts": [
     "which is why gyms are always crowded",
     "of staying healthy and coping with stress",
@@ -7800,7 +9439,7 @@
    "cloze": [
     {
      "title": "A night to remember",
-     "text": "Last season our small town club reached the cup final for the first time. Nobody gave us a chance: we were the <b>30</b> ______, and our opponents had won the title three years in a row. The match <b>31</b> ______ off at eight, and the stadium was packed with 40,000 <b>32</b> ______. We <b>33</b> ______ a goal in the fifth minute and spent most of the game chasing the ball. Then, in the 89th minute, our captain <b>34</b> ______ with a brilliant header. Extra time was a <b>35</b> ______ affair, and when the referee blew the final whistle, it was still 1–1. We lost on penalties, but it was only a <b>36</b> ______ defeat, and the crowd gave us a standing ovation.",
+     "text": "Last season our small town club reached the cup final for the first time. Nobody gave us a chance: we were the {30}, and our opponents had won the title three years in a row. The match {31} off at eight, and the stadium was packed with 40,000 {32}. We {33} a goal in the fifth minute and spent most of the game chasing the ball. Then, in the 89th minute, our captain {34} with a brilliant header. Extra time was a {35} affair, and when the referee blew the final whistle, it was still 1–1. We lost on penalties, but it was only a {36} defeat, and the crowd gave us a standing ovation.",
      "opts": [
       [
        30,
@@ -7864,7 +9503,7 @@
     },
     {
      "title": "Back in shape",
-     "text": "After a long winter on the sofa, I was completely out of <b>30</b> ______. My doctor told me to start slowly and not to <b>31</b> ______ it, so I made a plan. Every morning I <b>32</b> ______ up for ten minutes before going for a short jog. At first I could hardly breathe, but gradually I <b>33</b> ______ up my stamina. Three months later I can run five kilometres without stopping, and I have <b>34</b> ______ into the habit of stretching every evening to improve my <b>35</b> ______. Last week I even took part in a charity run. I didn't win, of course, but I <b>36</b> ______ myself to the limit and finished in the top fifty.",
+     "text": "After a long winter on the sofa, I was completely out of {30}. My doctor told me to start slowly and not to {31} it, so I made a plan. Every morning I {32} up for ten minutes before going for a short jog. At first I could hardly breathe, but gradually I {33} up my stamina. Three months later I can run five kilometres without stopping, and I have {34} into the habit of stretching every evening to improve my {35}. Last week I even took part in a charity run. I didn't win, of course, but I {36} myself to the limit and finished in the top fifty.",
      "opts": [
       [
        30,
@@ -7995,7 +9634,7 @@
    "cloze": [
     {
      "title": "Sky high",
-     "text": "Last summer my cousin, a real thrill-<b>30</b> ______, persuaded me to try paragliding. I had always been afraid of heights, but I decided to <b>31</b> ______ out of my comfort zone. Our instructor was fully <b>32</b> ______ and explained every safety rule twice. Before take-off we checked our safety <b>33</b> ______: helmets, harnesses and radios. When we finally left the ground, the view took my <b>34</b> ______ away, and I felt an incredible adrenaline <b>35</b> ______. Paragliding is not for everyone, but if you take <b>36</b> ______ risks, it is far safer than most people think.",
+     "text": "Last summer my cousin, a real thrill-{30}, persuaded me to try paragliding. I had always been afraid of heights, but I decided to {31} out of my comfort zone. Our instructor was fully {32} and explained every safety rule twice. Before take-off we checked our safety {33}: helmets, harnesses and radios. When we finally left the ground, the view took my {34} away, and I felt an incredible adrenaline {35}. Paragliding is not for everyone, but if you take {36} risks, it is far safer than most people think.",
      "opts": [
       [
        30,
@@ -8059,7 +9698,7 @@
     },
     {
      "title": "A living legend",
-     "text": "Not many athletes become a <b>30</b> ______ name, but our town's sambo champion did. She took up the sport at the age of ten and quickly <b>31</b> ______ to fame. Her coach says that her <b>32</b> ______ was even more important than her talent: she trained every day, even after a serious injury. She has <b>33</b> ______ our country at four world championships and <b>34</b> ______ history by winning all of them. Today she is a role <b>35</b> ______ for hundreds of girls, and she spends her free time teaching sambo to children, hoping to <b>36</b> ______ them to take up sport.",
+     "text": "Not many athletes become a {30} name, but our town's sambo champion did. She took up the sport at the age of ten and quickly {31} to fame. Her coach says that her {32} was even more important than her talent: she trained every day, even after a serious injury. She has {33} our country at four world championships and {34} history by winning all of them. Today she is a role {35} for hundreds of girls, and she spends her free time teaching sambo to children, hoping to {36} them to take up sport.",
      "opts": [
       [
        30,
@@ -8190,7 +9829,7 @@
    "cloze": [
     {
      "title": "Running on empty",
-     "text": "During the exam period I was burning the candle at both <b>30</b> ______. I studied until 2 a.m., skipped <b>31</b> ______ and ate on the <b>32</b> ______. After two weeks I felt completely run-<b>33</b> ______ and caught a cold. The doctor told me to cut <b>34</b> ______ on coffee and sugar, get enough sleep and spend more time outdoors to <b>35</b> ______ my immune system. A month later I went for a check-up, and she gave me a clean <b>36</b> ______ of health.",
+     "text": "During the exam period I was burning the candle at both {30}. I studied until 2 a.m., skipped {31} and ate on the {32}. After two weeks I felt completely run-{33} and caught a cold. The doctor told me to cut {34} on coffee and sugar, get enough sleep and spend more time outdoors to {35} my immune system. A month later I went for a check-up, and she gave me a clean {36} of health.",
      "opts": [
       [
        30,
@@ -8254,7 +9893,7 @@
     },
     {
      "title": "Get moving",
-     "text": "Our school recently asked 500 students why they don't do more sport. The <b>30</b> ______ of respondents named lack of time as the main barrier. Others said they simply can't be <b>31</b> ______ or can't <b>32</b> ______ a gym membership. The PE teachers decided to act. They opened the school gym in the evenings, offered free classes and used a points system as an <b>33</b> ______. Students now set realistic <b>34</b> ______ and <b>35</b> ______ their progress in an app. Many of them say that training with a workout <b>36</b> ______ makes it much harder to make excuses.",
+     "text": "Our school recently asked 500 students why they don't do more sport. The {30} of respondents named lack of time as the main barrier. Others said they simply can't be {31} or can't {32} a gym membership. The PE teachers decided to act. They opened the school gym in the evenings, offered free classes and used a points system as an {33}. Students now set realistic {34} and {35} their progress in an app. Many of them say that training with a workout {36} makes it much harder to make excuses.",
      "opts": [
       [
        30,

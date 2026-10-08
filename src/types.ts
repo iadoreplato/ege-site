@@ -1,5 +1,10 @@
 // Content types (loose on purpose: the JSON is the single source of truth for PDF and site)
 export type Any = any;
+/** Text from the content: a plain string, or the text plus its meaning. key = key elements to highlight
+    (whole words; "-ing" = a word ending), example = language examples, uncountable = show the (U) badge */
+export type RichText = string | { text: string; key?: string[]; example?: string[]; uncountable?: boolean };
+/** Vocabulary entry: one word or phrase. Entries with the same `group` number are shown together in the word list */
+export interface VocabItem { en: string; ru: string; ex?: string; key?: string[]; uncountable?: boolean; group?: number; img?: string; sports?: string; prep?: string; note?: string }
 export interface Universal { title: string; subtitle: string; source_note: string; cover_pics: string[]; pages: Page[]; frames: Record<string, [string, string][]> }
 export interface Page { kick: string; title: string; lede: string; pics: string[]; blocks: Any[] }
 export interface Unit { num: number; title: string; lede: string; pics: string[]; vocab: Any[]; exercises: Exercise[]; speech: Any[][]; speaking?: SpeakTask[]; cards?: CardTests }
@@ -9,7 +14,7 @@ export interface Review { after: number; cloze: { title: string; text: string; o
 /** Quick test in the Practice tab: quick gaps [sentence with ___, answer] and vocabulary in contrast [sentence with {a|b|c}, answer] */
 export interface CardTests { gaps: [string, string][]; contrast: [string, string][] }
 /** "Speaking" tab: a short task outside the exam format; `vocab` = useful language shown with the task */
-export interface SpeakTask { title: string; task: string; prompts?: string[]; vocab: string[] }
+export interface SpeakTask { title: string; task: string; prompts?: RichText[]; vocab: RichText[] }
 export interface Exercise { type: "collocation" | "choose" | "transform" | "translate" | "gaps"; title: string; instr: string; items: Any[] }
 export interface Topic {
   id: string; title: string; subtitle: string; cover_pics: string[]; typology: Any[]; units: Unit[];

@@ -159,7 +159,12 @@
       [
        "C1 Task completion",
        [
-        "Fully completed: all aspects covered (full, accurate answers to all questions; 3 questions correctly asked on the given topic); informal style; politeness norms observed. <b>1 incomplete or inaccurate aspect is allowed.</b>",
+        {
+         "text": "Fully completed: all aspects covered (full, accurate answers to all questions; 3 questions correctly asked on the given topic); informal style; politeness norms observed. 1 incomplete or inaccurate aspect is allowed.",
+         "key": [
+          "1 incomplete or inaccurate aspect is allowed."
+         ]
+        },
         "Not fully completed: not all aspects covered (every case not described under 2 and 0 points).",
         "Not completed: 3 or more aspects missing, OR all 6 aspects incomplete/inaccurate, OR 1 missing + 4–5 incomplete, OR 2 missing + 2–4 incomplete, OR wrong length."
        ]
@@ -167,7 +172,12 @@
       [
        "C2 Organisation",
        [
-        "Logical; linking devices used correctly; correct paragraphs; layout follows the norms. <b>1 error allowed.</b>",
+        {
+         "text": "Logical; linking devices used correctly; correct paragraphs; layout follows the norms. 1 error allowed.",
+         "key": [
+          "1 error allowed."
+         ]
+        },
         "2–3 errors in organisation.",
         "4 or more errors in organisation."
        ]
@@ -175,7 +185,12 @@
       [
        "C3 Language",
        [
-        "Vocabulary and grammar suit the basic level; <b>1–2 lexico-grammatical AND/OR 1–2 spelling/punctuation errors</b>.",
+        {
+         "text": "Vocabulary and grammar suit the basic level; 1–2 lexico-grammatical AND/OR 1–2 spelling/punctuation errors.",
+         "key": [
+          "1–2 lexico-grammatical AND/OR 1–2 spelling/punctuation errors"
+         ]
+        },
         "3–4 lexico-grammatical AND/OR 3–4 spelling/punctuation errors.",
         "5 or more lexico-grammatical AND/OR 5 or more spelling/punctuation errors."
        ]
@@ -207,7 +222,12 @@
       [
        "C1 Task completion",
        [
-        "Fully: all aspects covered fully and accurately; neutral style. <b>1 incomplete aspect and 1 style violation allowed.</b>",
+        {
+         "text": "Fully: all aspects covered fully and accurately; neutral style. 1 incomplete aspect and 1 style violation allowed.",
+         "key": [
+          "1 incomplete aspect and 1 style violation allowed."
+         ]
+        },
         "Mostly: 1 aspect missing, OR 1 missing + 1 incomplete, OR 2–3 incomplete; 2–3 style violations.",
         "Not fully: 1 missing + 2–3 incomplete, OR 2 missing, OR 2 missing + 1 incomplete, OR 4–5 incomplete; 4 style violations.",
         "All other cases, OR wrong length, OR over 30% of the text copied from a published source."
@@ -225,7 +245,12 @@
       [
        "C3 Vocabulary",
        [
-        "High-level vocabulary; <b>1 lexical error allowed</b>.",
+        {
+         "text": "High-level vocabulary; 1 lexical error allowed.",
+         "key": [
+          "1 lexical error allowed"
+         ]
+        },
         "2–3 lexical errors, OR limited but correct vocabulary.",
         "4 lexical errors.",
         "5 or more lexical errors."
@@ -234,7 +259,12 @@
       [
        "C4 Grammar",
        [
-        "High-level grammar; <b>1–2 non-repeated errors allowed</b>.",
+        {
+         "text": "High-level grammar; 1–2 non-repeated errors allowed.",
+         "key": [
+          "1–2 non-repeated errors allowed"
+         ]
+        },
         "3–4 grammar errors.",
         "5–7 grammar errors.",
         "8 or more grammar errors."
@@ -267,8 +297,19 @@
       "0 points for C1 = 0 points for the whole task.",
       "Word count: Task 37 — 100–140 words (90–154 accepted); Task 38 — 200–250 words (180–275 accepted).",
       "Too short (under 90 / under 180 words) → the answer is not checked: 0 points.",
-      "Too long (over 154 / over 275 words) → only the <b>first 140</b> / <b>first 250</b> words are checked.",
-      "Linking devices are required between <b>all</b> parts of the text.",
+      {
+       "text": "Too long (over 154 / over 275 words) → only the first 140 / first 250 words are checked.",
+       "key": [
+        "first 140",
+        "first 250"
+       ]
+      },
+      {
+       "text": "Linking devices are required between all parts of the text.",
+       "key": [
+        "all"
+       ]
+      },
       "Task 38: write all numbers in figures. If you answer both 38.1 and 38.2 and do not cross one out, the second one is checked."
      ]
     },
@@ -309,7 +350,12 @@
       [
        "Pronunciation",
        [
-        "Easy to understand: no unjustified pauses; sentence stress, intonation and word pronunciation are correct. <b>Up to 5 phonetic errors allowed, including 1–2 that distort the meaning.</b>",
+        {
+         "text": "Easy to understand: no unjustified pauses; sentence stress, intonation and word pronunciation are correct. Up to 5 phonetic errors allowed, including 1–2 that distort the meaning.",
+         "key": [
+          "Up to 5 phonetic errors allowed, including 1–2 that distort the meaning."
+         ]
+        },
         "Hard to understand: many unnatural pauses and hesitations, wrong stress and mispronounced words, OR more than 5 phonetic errors, OR 3 or more errors that distort the meaning."
        ]
       ]
@@ -329,7 +375,12 @@
       [
        "Each question",
        [
-        "The question asks for the information required and has the correct form of a <b>direct</b> question; small phonetic or lexical slips do not hinder understanding.",
+        {
+         "text": "The question asks for the information required and has the correct form of a direct question; small phonetic or lexical slips do not hinder understanding.",
+         "key": [
+          "direct"
+         ]
+        },
         "No question, OR it asks for different information, AND/OR it is not a correct direct question, AND/OR errors block communication."
        ]
       ]
@@ -349,7 +400,12 @@
       [
        "Each answer",
        [
-        "A full and accurate answer: <b>2–3 communicatively motivated sentences</b> with no elementary lexico-grammatical or phonetic errors.",
+        {
+         "text": "A full and accurate answer: 2–3 communicatively motivated sentences with no elementary lexico-grammatical or phonetic errors.",
+         "key": [
+          "2–3 communicatively motivated sentences"
+         ]
+        },
         "No answer, OR the answer does not match the question, OR fewer than 2 sentences, OR elementary errors (including a mere list of words)."
        ]
       ]
@@ -383,7 +439,12 @@
        "C2 Organisation",
        [
         "—",
-        "Logical and complete: an opening with an address to your friend <b>and</b> a closing phrase; linking correct; 1 error allowed",
+        {
+         "text": "Logical and complete: an opening with an address to your friend and a closing phrase; linking correct; 1 error allowed",
+         "key": [
+          "and"
+         ]
+        },
         "Mostly logical, complete (opening with address and closing); 2–3 errors",
         "No opening OR no closing, AND/OR 4–5 errors",
         "No opening and no closing, AND/OR 6+ errors"
@@ -428,11 +489,43 @@
      "title": "Mark up the text in 90 seconds",
      "icon": "pencil",
      "items": [
-      "<b>Pauses /</b> — after introductory phrases, before <i>and, but, which</i>, between a long subject and the verb.",
-      "<b>Stress</b> — on content words: nouns, main verbs, adjectives, numbers. Function words are unstressed.",
-      "<b>Linking r ‿</b> — a word ending in <i>-r / -re</i> before a vowel: <i>for‿example, more‿often, better‿at</i>.",
-      "<b>Intonation</b> — ↘ at the end of statements and wh-questions, ↗ inside lists and in yes/no questions.",
-      "<b>Whisper</b> numbers, names and long words before you start."
+      {
+       "text": "Pauses / — after introductory phrases, before and, but, which, between a long subject and the verb.",
+       "key": [
+        "Pauses /"
+       ],
+       "example": [
+        "and, but, which"
+       ]
+      },
+      {
+       "text": "Stress — on content words: nouns, main verbs, adjectives, numbers. Function words are unstressed.",
+       "key": [
+        "Stress"
+       ]
+      },
+      {
+       "text": "Linking r ‿ — a word ending in -r / -re before a vowel: for‿example, more‿often, better‿at.",
+       "key": [
+        "Linking r ‿"
+       ],
+       "example": [
+        "-r / -re",
+        "for‿example, more‿often, better‿at"
+       ]
+      },
+      {
+       "text": "Intonation — ↘ at the end of statements and wh-questions, ↗ inside lists and in yes/no questions.",
+       "key": [
+        "Intonation"
+       ]
+      },
+      {
+       "text": "Whisper numbers, names and long words before you start.",
+       "key": [
+        "Whisper"
+       ]
+      }
      ]
     },
     {
@@ -459,7 +552,15 @@
      "items": [
       [
        "no",
-       "Candidates <b>add</b> words that are not in the text: articles, prepositions, <i>-s / -ed</i> endings."
+       {
+        "text": "Candidates add words that are not in the text: articles, prepositions, -s / -ed endings.",
+        "key": [
+         "add"
+        ],
+        "example": [
+         "-s / -ed"
+        ]
+       }
       ],
       [
        "no",
@@ -559,19 +660,46 @@
      "items": [
       [
        "no",
-       "<b>Where is a new fitness centre?</b> asks about any centre. You are calling a particular one: <b>the / your</b> fitness centre."
+       {
+        "text": "Where is a new fitness centre? asks about any centre. You are calling a particular one: the / your fitness centre.",
+        "key": [
+         "Where is a new fitness centre?",
+         "the / your"
+        ]
+       }
       ],
       [
        "no",
-       "<b>What is starting point?</b> The prompts have no articles, but your question needs them. ✓ <i>Where is the starting point?</i>"
+       {
+        "text": "What is starting point? The prompts have no articles, but your question needs them. ✓ Where is the starting point?",
+        "key": [
+         "What is starting point?"
+        ],
+        "example": [
+         "Where is the starting point?"
+        ]
+       }
       ],
       [
        "no",
-       "<b>What is the minimum age of the trainers?</b> asks for the wrong information. ✓ <i>What is the minimum age to join the club?</i>"
+       {
+        "text": "What is the minimum age of the trainers? asks for the wrong information. ✓ What is the minimum age to join the club?",
+        "key": [
+         "What is the minimum age of the trainers?"
+        ],
+        "example": [
+         "What is the minimum age to join the club?"
+        ]
+       }
       ],
       [
        "no",
-       "If you ask several versions of one question, only the <b>last</b> one is marked."
+       {
+        "text": "If you ask several versions of one question, only the last one is marked.",
+        "key": [
+         "last"
+        ]
+       }
       ],
       [
        "yes",
@@ -713,19 +841,43 @@
      "items": [
       [
        "no",
-       "<b>Misunderstanding the question.</b> <i>What jobs…?</i> — name jobs, not companies. <i>…rather than…?</i> — it asks you to choose between two options."
+       {
+        "text": "Misunderstanding the question. What jobs…? — name jobs, not companies. …rather than…? — it asks you to choose between two options.",
+        "key": [
+         "Misunderstanding the question."
+        ],
+        "example": [
+         "What jobs…?",
+         "…rather than…?"
+        ]
+       }
       ],
       [
        "no",
-       "<b>Short answers</b> without a subject and verb are not accepted."
+       {
+        "text": "Short answers without a subject and verb are not accepted.",
+        "key": [
+         "Short answers"
+        ]
+       }
       ],
       [
        "no",
-       "<b>Ignoring the tense.</b> A question in the Present needs an answer in the Present."
+       {
+        "text": "Ignoring the tense. A question in the Present needs an answer in the Present.",
+        "key": [
+         "Ignoring the tense."
+        ]
+       }
       ],
       [
        "no",
-       "<i>That's an interesting question · I think · Thank you for your question</i> do not count as a second sentence."
+       {
+        "text": "That's an interesting question · I think · Thank you for your question do not count as a second sentence.",
+        "example": [
+         "That's an interesting question · I think · Thank you for your question"
+        ]
+       }
       ],
       [
        "no",
@@ -796,7 +948,15 @@
      "title": "Tips for Task 4",
      "icon": "light_bulb",
      "items": [
-      "Your friend cannot see the photos: say <b>in one picture / in the other picture</b>, not <i>in the first / second photo</i>.",
+      {
+       "text": "Your friend cannot see the photos: say in one picture / in the other picture, not in the first / second photo.",
+       "key": [
+        "in one picture / in the other picture"
+       ],
+       "example": [
+        "in the first / second photo"
+       ]
+      },
       "Use a wide range of vocabulary: synonyms, different parts of speech. Avoid repeating the same words.",
       "Watch verb tenses and subject–verb agreement.",
       "Speak clearly and at a moderate pace: don't rush, but avoid long pauses.",
@@ -808,7 +968,12 @@
      "items": [
       [
        "no",
-       "This is a voice message to a friend. Without a greeting and a goodbye you lose points for Organisation. Email phrases (<i>Write back soon, Best wishes, All the best, I'll be waiting for your answer</i>) are wrong here."
+       {
+        "text": "This is a voice message to a friend. Without a greeting and a goodbye you lose points for Organisation. Email phrases (Write back soon, Best wishes, All the best, I'll be waiting for your answer) are wrong here.",
+        "example": [
+         "Write back soon, Best wishes, All the best, I'll be waiting for your answer"
+        ]
+       }
       ],
       [
        "no",
@@ -879,11 +1044,26 @@
      "title": "The five aspects of C1",
      "icon": "clipboard",
      "items": [
-      "Full answers to all <b>three</b> of your friend's questions.",
-      "Exactly <b>three</b> questions on the topic given in the task.",
+      {
+       "text": "Full answers to all three of your friend's questions.",
+       "key": [
+        "three"
+       ]
+      },
+      {
+       "text": "Exactly three questions on the topic given in the task.",
+       "key": [
+        "three"
+       ]
+      },
       "Politeness: thanks or pleasure at getting the email + hope for future contact.",
       "Informal style: greeting, closing phrase and name on separate lines.",
-      "Contractions are fine: <i>I'm, don't, it's</i>."
+      {
+       "text": "Contractions are fine: I'm, don't, it's.",
+       "example": [
+        "I'm, don't, it's"
+       ]
+      }
      ]
     },
     {
@@ -891,7 +1071,15 @@
      "items": [
       [
        "no",
-       "The weakest criterion is <b>language</b>: tenses, articles, <i>-s</i>. Reread your email once just for grammar."
+       {
+        "text": "The weakest criterion is language: tenses, articles, -s. Reread your email once just for grammar.",
+        "key": [
+         "language"
+        ],
+        "example": [
+         "-s"
+        ]
+       }
       ],
       [
        "no",
@@ -903,7 +1091,12 @@
       ],
       [
        "yes",
-       "Guess unfamiliar words from context and word parts: <i>memory → commemorate</i>."
+       {
+        "text": "Guess unfamiliar words from context and word parts: memory → commemorate.",
+        "example": [
+         "memory → commemorate"
+        ]
+       }
       ]
      ]
     }
@@ -927,13 +1120,41 @@
      "title": "Seven questions to ask before you write",
      "icon": "magnifying_glass_tilted_left",
      "items": [
-      "What is the situation? — I am doing a <b>project</b> on a given topic.",
-      "Where do the data come from? — a survey. Conducted among <b>whom</b>? (<i>a survey conducted among…</i>)",
+      {
+       "text": "What is the situation? — I am doing a project on a given topic.",
+       "key": [
+        "project"
+       ]
+      },
+      {
+       "text": "Where do the data come from? — a survey. Conducted among whom? (a survey conducted among…)",
+       "key": [
+        "whom"
+       ],
+       "example": [
+        "a survey conducted among…"
+       ]
+      },
       "What question were the respondents asked?",
-      "How many options could each person choose? — <b>Choose one option</b>: one, total 100%.",
+      {
+       "text": "How many options could each person choose? — Choose one option: one, total 100%.",
+       "key": [
+        "Choose one option"
+       ]
+      },
       "Point 3: what am I comparing, and how will I explain the difference?",
-      "Point 4: a problem in <b>which area</b> does the plan ask for?",
-      "Point 5: my opinion on <b>which question</b>?"
+      {
+       "text": "Point 4: a problem in which area does the plan ask for?",
+       "key": [
+        "which area"
+       ]
+      },
+      {
+       "text": "Point 5: my opinion on which question?",
+       "key": [
+        "which question"
+       ]
+      }
      ]
     },
     {
@@ -969,11 +1190,21 @@
      "items": [
       [
        "no",
-       "<b>The audience changes</b>: teenagers in the introduction, “people in Zetland” later. Keep one group throughout."
+       {
+        "text": "The audience changes: teenagers in the introduction, “people in Zetland” later. Keep one group throughout.",
+        "key": [
+         "The audience changes"
+        ]
+       }
       ],
       [
        "no",
-       "<b>Point 4 is the hardest</b>: the problem is not from the project area and the solution is “universal”."
+       {
+        "text": "Point 4 is the hardest: the problem is not from the project area and the solution is “universal”.",
+        "key": [
+         "Point 4 is the hardest"
+        ]
+       }
       ],
       [
        "no",
@@ -981,7 +1212,12 @@
       ],
       [
        "no",
-       "The lowest criterion is <b>grammar</b>. Save 5 minutes for checking."
+       {
+        "text": "The lowest criterion is grammar. Save 5 minutes for checking.",
+        "key": [
+         "grammar"
+        ]
+       }
       ]
      ]
     }
@@ -1091,17 +1327,32 @@
      "items": [
       [
        "19–24",
-       "change the <b>grammatical form</b> of the same word",
+       {
+        "text": "change the grammatical form of the same word",
+        "key": [
+         "grammatical form"
+        ]
+       },
        "RUN → have been running · CHILD → children"
       ],
       [
        "25–29",
-       "make a <b>related word</b>, often a different part of speech",
+       {
+        "text": "make a related word, often a different part of speech",
+        "key": [
+         "related word"
+        ]
+       },
        "VARY → various · PRICE → priceless"
       ],
       [
        "30–36",
-       "choose a word by <b>meaning and collocation</b>",
+       {
+        "text": "choose a word by meaning and collocation",
+        "key": [
+         "meaning and collocation"
+        ]
+       },
        "manage + to do · succeed in doing"
       ]
      ]
@@ -1112,11 +1363,44 @@
      "icon": "magnifying_glass_tilted_left",
      "items": [
       "Read the whole sentence, not only the line with the gap.",
-      "An article or adjective before the gap → you need a <b>noun</b>.",
-      "A noun after the gap → you need an <b>adjective</b>: <i>with ___ fillings → various</i>.",
-      "Next to a verb → often an <b>adverb</b>.",
-      "Check number: <i>a huge ___ → collection · there are ___ → achievements · both locals and ___ → visitors</i>.",
-      "A negative meaning? <b>un- / in- / im- / il- / ir-</b> or <b>-less</b>: <i>priceless</i>, not <i>unprice</i>."
+      {
+       "text": "An article or adjective before the gap → you need a noun.",
+       "key": [
+        "noun"
+       ]
+      },
+      {
+       "text": "A noun after the gap → you need an adjective: with ___ fillings → various.",
+       "key": [
+        "adjective"
+       ],
+       "example": [
+        "with ___ fillings → various"
+       ]
+      },
+      {
+       "text": "Next to a verb → often an adverb.",
+       "key": [
+        "adverb"
+       ]
+      },
+      {
+       "text": "Check number: a huge ___ → collection · there are ___ → achievements · both locals and ___ → visitors.",
+       "example": [
+        "a huge ___ → collection · there are ___ → achievements · both locals and ___ → visitors"
+       ]
+      },
+      {
+       "text": "A negative meaning? un- / in- / im- / il- / ir- or -less: priceless, not unprice.",
+       "key": [
+        "un- / in- / im- / il- / ir-",
+        "-less"
+       ],
+       "example": [
+        "priceless",
+        "unprice"
+       ]
+      }
      ]
     },
     {
@@ -1132,11 +1416,22 @@
       ],
       [
        "no",
-       "Hardest in 19–24: sequence of tenses, reported speech, Perfect tenses, the Passive — and even <i>children, these</i>."
+       {
+        "text": "Hardest in 19–24: sequence of tenses, reported speech, Perfect tenses, the Passive — and even children, these.",
+        "example": [
+         "children, these"
+        ]
+       }
       ],
       [
        "no",
-       "In 30–36, synonyms with different collocations and patterns cause problems. <i>tasty</i> = food, <i>tasteful</i> = design."
+       {
+        "text": "In 30–36, synonyms with different collocations and patterns cause problems. tasty = food, tasteful = design.",
+        "example": [
+         "tasty",
+         "tasteful"
+        ]
+       }
       ],
       [
        "yes",

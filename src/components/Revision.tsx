@@ -2,7 +2,7 @@ import { useState } from "react";
 import { DropdownMenu } from "radix-ui";
 import { Topic } from "../types";
 import { reviewTitle } from "../route";
-import { isCorrect } from "./text";
+import { isCorrect, Text } from "./text";
 import { Banner } from "./ui";
 import { CheckBar, Transform, Translate } from "./Exercises";
 
@@ -31,7 +31,7 @@ function Task11({ r }: { r: any }) {
   const parts = r.text.split(/\{([A-F])\}/);
   return <div className="exercise">
     <p className="russian-instruction">{RU.t11}</p>
-    <div className="sentence-gaps"><div className="sentence-gaps__text"><b className="sentence-gaps__title">{r.title}</b><br />{parts.map((p: string, i: number) => i % 2 === 0 ? <span key={i} dangerouslySetInnerHTML={{ __html: p }} /> :
+    <div className="sentence-gaps"><div className="sentence-gaps__text"><b className="sentence-gaps__title">{r.title}</b><br />{parts.map((p: string, i: number) => i % 2 === 0 ? <Text key={i} value={p} /> :
       <span key={i} className="sentence-gaps__gap"><b className="sentence-gaps__letter">{p}</b><NumberChoice value={val[p] || ""} disabled={checked} state={checked ? (val[p] === key[p] ? "correct" : "wrong") : ""} onChange={v => setVal({ ...val, [p]: v })} />{checked && val[p] !== key[p] && <em className="exercise__answer exercise__answer--inline">✓ {key[p]}</em>}</span>)}</div>
       <div className="sentence-gaps__parts">{r.parts.map((p: string, i: number) => <div className="sentence-gaps__part" key={i}><span className="exercise__item-number">{i + 1}.</span>{p}</div>)}</div></div>
     <CheckBar big checked={checked} score={score} total={6} onCheck={() => setChecked(true)} onReset={() => { setChecked(false); setVal({}); }} />
@@ -53,7 +53,8 @@ function Cloze({ text, opts, key3 }: { text: string; opts: any[]; key3: Record<s
   const [val, setVal] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState(false);
   const score = opts.filter(([n]) => val[n] === key3[n]).length;
-  return <div className="exercise"><p className="russian-instruction">{RU.t30}</p><div className="cloze-text" dangerouslySetInnerHTML={{ __html: text }} />
+  return <div className="exercise"><p className="russian-instruction">{RU.t30}</p><div className="cloze-text">{text.split(/\{(\d+)\}/).map((part, i) => i % 2 === 0 ? <Text key={i} value={part} /> :
+      <span key={i}><b className="cloze-text__number">{part}</b><span className="gap-line" /></span>)}</div>
     {opts.map(([n, ...ws]) => <div className="exercise__item exercise__item--collocation" key={n}><span className="exercise__item-number">{n}</span><div className="exercise__options">{ws.map((w: string, i: number) => {
       const v = String(i + 1), chosen = val[n] === v;
       const state = checked ? (v === key3[n] ? " option--correct" : chosen ? " option--wrong" : "") : chosen ? " option--selected" : "";

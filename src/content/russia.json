@@ -195,8 +195,9 @@
       },
       {
        "img": "evergreen_tree",
-       "en": "taiga (U)",
-       "ru": "тайга"
+       "en": "taiga",
+       "ru": "тайга",
+       "uncountable": true
       },
       {
        "img": "snowflake",
@@ -205,8 +206,9 @@
       },
       {
        "img": "bear",
-       "en": "wildlife (U)",
-       "ru": "дикая природа"
+       "en": "wildlife",
+       "ru": "дикая природа",
+       "uncountable": true
       },
       {
        "img": "locomotive",
@@ -235,105 +237,210 @@
      "title": "Geography",
      "items": [
       {
-       "en": "[[to stretch from]] … [[to]] …",
+       "en": "to stretch from … to …",
        "ru": "простираться от … до",
-       "ex": "Russia [[stretches from]] the Baltic Sea [[to]] the Pacific Ocean."
+       "ex": "Russia stretches from the Baltic Sea to the Pacific Ocean.",
+       "key": [
+        "to stretch from",
+        "to",
+        "stretches from"
+       ]
       },
       {
-       "en": "[[to border]] · [[to share a border with]]",
+       "en": "to border",
        "ru": "граничить с",
-       "ex": "Russia [[shares a border with]] China."
+       "key": [
+        "to border"
+       ],
+       "group": 1
       },
       {
-       "en": "[[to span]] eleven time zones",
+       "en": "to share a border with",
+       "ru": "иметь общую границу с",
+       "ex": "Russia shares a border with China.",
+       "key": [
+        "to share a border with",
+        "shares a border with"
+       ],
+       "group": 1
+      },
+      {
+       "en": "to span eleven time zones",
        "ru": "охватывать 11 часовых поясов",
-       "ex": "Russia [[spans]] eleven time zones."
+       "ex": "Russia spans eleven time zones.",
+       "key": [
+        "to span",
+        "spans"
+       ]
       },
       {
-       "en": "[[to be washed by]] seas",
+       "en": "to be washed by seas",
        "ru": "омываться морями",
-       "ex": "Russia [[is washed by]] the waters of three oceans."
+       "ex": "Russia is washed by the waters of three oceans.",
+       "key": [
+        "to be washed by",
+        "is washed by"
+       ]
       },
       {
-       "en": "[[the largest]] country [[in]] the world",
+       "en": "the largest country in the world",
        "ru": "крупнейшая страна в мире",
-       "ex": "Russia is [[the largest]] country [[in]] the world."
+       "ex": "Russia is the largest country in the world.",
+       "key": [
+        "the largest",
+        "in"
+       ]
       },
       {
-       "en": "[[to be rich in]] natural resources",
+       "en": "to be rich in natural resources",
        "ru": "быть богатым природными ресурсами",
-       "ex": "Siberia [[is rich in]] oil, gas and timber."
+       "ex": "Siberia is rich in oil, gas and timber.",
+       "key": [
+        "to be rich in",
+        "is rich in"
+       ]
       },
       {
-       "en": "a [[multinational]] country",
+       "en": "a multinational country",
        "ru": "многонациональная страна",
-       "ex": "Russia is a [[multinational]] country."
+       "ex": "Russia is a multinational country.",
+       "key": [
+        "multinational"
+       ]
       },
       {
-       "en": "[[to be home to]]",
+       "en": "to be home to",
        "ru": "быть домом для",
-       "ex": "Russia [[is home to]] more than 190 ethnic groups."
+       "ex": "Russia is home to more than 190 ethnic groups.",
+       "key": [
+        "to be home to",
+        "is home to"
+       ]
       },
       {
-       "en": "a [[continental]] climate",
+       "en": "a continental climate",
        "ru": "континентальный климат",
-       "ex": "Most of Russia has a [[continental]] climate."
+       "ex": "Most of Russia has a continental climate.",
+       "key": [
+        "continental"
+       ]
       },
       {
-       "en": "[[permafrost]] (U)",
+       "en": "permafrost",
        "ru": "вечная мерзлота",
-       "ex": "In Yakutia, houses are built on [[permafrost]]."
+       "ex": "In Yakutia, houses are built on permafrost.",
+       "key": [
+        "permafrost"
+       ],
+       "uncountable": true
       },
       {
-       "en": "[[sparsely]] / [[densely]] populated",
-       "ru": "малонаселённый / густонаселённый",
-       "ex": "The Far North is [[sparsely]] populated."
+       "en": "sparsely populated",
+       "ru": "малонаселённый",
+       "ex": "The Far North is sparsely populated.",
+       "key": [
+        "sparsely"
+       ],
+       "group": 2
       },
       {
-       "en": "the [[capital]] · a [[regional]] centre",
-       "ru": "столица · областной центр",
-       "ex": "Yekaterinburg is a large [[regional]] centre."
+       "en": "densely populated",
+       "ru": "густонаселённый",
+       "key": [
+        "densely"
+       ],
+       "group": 2
+      },
+      {
+       "en": "the capital",
+       "ru": "столица",
+       "key": [
+        "capital"
+       ],
+       "group": 3
+      },
+      {
+       "en": "a regional centre",
+       "ru": "областной центр",
+       "ex": "Yekaterinburg is a large regional centre.",
+       "key": [
+        "regional"
+       ],
+       "group": 3
       }
      ]
     },
     {
      "type": "note",
      "title": "Tricky for Russian speakers: articles with place names",
-     "html": "<b>the</b> + rivers, seas, oceans, mountain ranges, groups of islands, some buildings: <i><b>the</b> Volga, <b>the</b> Black Sea, <b>the</b> Urals, <b>the</b> Kremlin, <b>the</b> Hermitage</i>. <b>No article</b> + single lakes and mountains, squares, cities: <i>Lake Baikal, Mount Elbrus, Red Square, Moscow</i>. Also: <i>in <b>the</b> north <b>of</b> Russia</i> = <i>in northern Russia</i>."
+     "text": {
+      "text": "the + rivers, seas, oceans, mountain ranges, groups of islands, some buildings: the Volga, the Black Sea, the Urals, the Kremlin, the Hermitage. No article + single lakes and mountains, squares, cities: Lake Baikal, Mount Elbrus, Red Square, Moscow. Also: in the north of Russia = in northern Russia.",
+      "key": [
+       "the",
+       "No article",
+       "of"
+      ],
+      "example": [
+       "the Volga, the Black Sea, the Urals, the Kremlin, the Hermitage",
+       "Lake Baikal, Mount Elbrus, Red Square, Moscow",
+       "in the north of Russia",
+       "in northern Russia"
+      ]
+     }
     },
     {
      "type": "expressions",
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[off the beaten track]]",
+       "en": "off the beaten track",
        "ru": "вдали от туристических маршрутов",
-       "ex": "We travelled to villages [[off the beaten track]]."
+       "ex": "We travelled to villages off the beaten track.",
+       "key": [
+        "off the beaten track"
+       ]
       },
       {
-       "en": "[[breathtaking]] scenery (U)",
+       "en": "breathtaking scenery",
        "ru": "захватывающие пейзажи",
-       "ex": "Kamchatka is famous for its [[breathtaking]] scenery."
+       "ex": "Kamchatka is famous for its breathtaking scenery.",
+       "key": [
+        "breathtaking"
+       ],
+       "uncountable": true
       },
       {
-       "en": "a [[melting pot]] of cultures",
+       "en": "a melting pot of cultures",
        "ru": "смешение культур",
-       "ex": "Kazan is a [[melting pot]] of cultures."
+       "ex": "Kazan is a melting pot of cultures.",
+       "key": [
+        "melting pot"
+       ]
       },
       {
-       "en": "[[unspoilt]] nature (U)",
+       "en": "unspoilt nature",
        "ru": "нетронутая природа",
-       "ex": "Karelia is known for its [[unspoilt]] nature."
+       "ex": "Karelia is known for its unspoilt nature.",
+       "key": [
+        "unspoilt"
+       ],
+       "uncountable": true
       },
       {
-       "en": "the back [[of beyond]]",
+       "en": "the back of beyond",
        "ru": "глушь (informal)",
-       "ex": "My grandparents live in the back [[of beyond]]."
+       "ex": "My grandparents live in the back of beyond.",
+       "key": [
+        "of beyond"
+       ]
       },
       {
-       "en": "[[from coast to coast]]",
+       "en": "from coast to coast",
        "ru": "от края до края",
-       "ex": "The holiday is celebrated [[from coast to coast]]."
+       "ex": "The holiday is celebrated from coast to coast.",
+       "key": [
+        "from coast to coast"
+       ]
       }
      ]
     }
@@ -660,7 +767,12 @@
         ]
        }
       ],
-      "trap": "Q4 is about the future: <i>I'd like to / I'm going to…</i>, not the Past."
+      "trap": {
+       "text": "Q4 is about the future: I'd like to / I'm going to…, not the Past.",
+       "example": [
+        "I'd like to / I'm going to…"
+       ]
+      }
      }
     ],
     [
@@ -755,7 +867,12 @@
       ],
       "problem": "that can arise while travelling around your country",
       "conclusion": "the best way to explore your own country",
-      "focus4": "a problem connected with <b>travelling</b> around the country",
+      "focus4": {
+       "text": "a problem connected with travelling around the country",
+       "key": [
+        "travelling"
+       ]
+      },
       "pool": [
        "explore",
        "a vast territory",
@@ -828,8 +945,15 @@
       },
       {
        "img": "wrapped_gift",
-       "en": "a present / a gift",
-       "ru": "подарок"
+       "en": "a present",
+       "ru": "подарок",
+       "group": 1
+      },
+      {
+       "img": "wrapped_gift",
+       "en": "a gift",
+       "ru": "подарок, дар",
+       "group": 1
       },
       {
        "img": "bouquet",
@@ -843,110 +967,226 @@
      "title": "Celebrating",
      "items": [
       {
-       "en": "[[to celebrate]] a holiday / a birthday",
-       "ru": "праздновать",
-       "ex": "We [[celebrate]] my birthday at home."
+       "en": "to celebrate a holiday",
+       "ru": "праздновать праздник",
+       "key": [
+        "to celebrate"
+       ],
+       "group": 2
       },
       {
-       "en": "[[to congratulate]] sb [[on]] sth",
+       "en": "to celebrate a birthday",
+       "ru": "праздновать день рождения",
+       "ex": "We celebrate my birthday at home.",
+       "key": [
+        "to celebrate",
+        "celebrate"
+       ],
+       "group": 2
+      },
+      {
+       "en": "to congratulate sb on sth",
        "ru": "поздравлять кого-то с чем-то",
-       "ex": "I [[congratulated]] my dad [[on]] Defender of the Fatherland Day."
+       "ex": "I congratulated my dad on Defender of the Fatherland Day.",
+       "key": [
+        "to congratulate",
+        "on",
+        "congratulated"
+       ]
       },
       {
-       "en": "[[to commemorate]] an event",
+       "en": "to commemorate an event",
        "ru": "чтить память, отмечать",
-       "ex": "Victory Day [[commemorates]] the victory in the Great Patriotic War."
+       "ex": "Victory Day commemorates the victory in the Great Patriotic War.",
+       "key": [
+        "to commemorate",
+        "commemorates"
+       ]
       },
       {
-       "en": "[[to honour]] veterans",
+       "en": "to honour veterans",
        "ru": "чествовать ветеранов",
-       "ex": "On 9 May we [[honour]] veterans."
+       "ex": "On 9 May we honour veterans.",
+       "key": [
+        "to honour",
+        "honour"
+       ]
       },
       {
-       "en": "[[to lay]] flowers [[at]] a monument",
+       "en": "to lay flowers at a monument",
        "ru": "возлагать цветы к памятнику",
-       "ex": "Schoolchildren [[lay]] flowers [[at]] the monument."
+       "ex": "Schoolchildren lay flowers at the monument.",
+       "key": [
+        "to lay",
+        "at",
+        "lay"
+       ]
       },
       {
-       "en": "[[to observe]] a minute of silence",
+       "en": "to observe a minute of silence",
        "ru": "соблюдать минуту молчания",
-       "ex": "Everyone [[observed]] a minute of silence."
+       "ex": "Everyone observed a minute of silence.",
+       "key": [
+        "to observe",
+        "observed"
+       ]
       },
       {
-       "en": "[[to hold]] a military parade",
+       "en": "to hold a military parade",
        "ru": "проводить военный парад",
-       "ex": "A military parade [[is held]] on Red Square."
+       "ex": "A military parade is held on Red Square.",
+       "key": [
+        "to hold",
+        "is held"
+       ]
       },
       {
-       "en": "[[to take part in]] the Immortal Regiment march",
+       "en": "to take part in the Immortal Regiment march",
        "ru": "участвовать в шествии «Бессмертного полка»",
-       "ex": "My family [[takes part in]] the Immortal Regiment march every year."
+       "ex": "My family takes part in the Immortal Regiment march every year.",
+       "key": [
+        "to take part in",
+        "takes part in"
+       ]
       },
       {
-       "en": "[[to set off]] fireworks · a firework [[display]]",
-       "ru": "запускать фейерверк · салют",
-       "ex": "In the evening there is a huge firework [[display]]."
+       "en": "to set off fireworks",
+       "ru": "запускать фейерверк",
+       "key": [
+        "to set off"
+       ],
+       "group": 3
       },
       {
-       "en": "[[to give]] sb a present [[for]] their birthday",
+       "en": "a firework display",
+       "ru": "салют",
+       "ex": "In the evening there is a huge firework display.",
+       "key": [
+        "display"
+       ],
+       "group": 3
+      },
+      {
+       "en": "to give sb a present for their birthday",
        "ru": "дарить подарок на день рождения",
-       "ex": "My friends [[gave]] me a camera [[for]] my birthday."
+       "ex": "My friends gave me a camera for my birthday.",
+       "key": [
+        "to give",
+        "for",
+        "gave"
+       ]
       },
       {
-       "en": "[[to throw]] a party",
+       "en": "to throw a party",
        "ru": "устроить вечеринку",
-       "ex": "My parents [[threw]] a party for my 16th birthday."
+       "ex": "My parents threw a party for my 16th birthday.",
+       "key": [
+        "to throw",
+        "threw"
+       ]
       },
       {
-       "en": "[[to get together]] with the family",
+       "en": "to get together with the family",
        "ru": "собираться всей семьёй",
-       "ex": "We [[get together]] with the whole family on New Year's Eve."
+       "ex": "We get together with the whole family on New Year's Eve.",
+       "key": [
+        "to get together",
+        "get together"
+       ]
       },
       {
-       "en": "a [[public]] holiday · a day [[off]]",
-       "ru": "государственный праздник · выходной",
-       "ex": "4 November is a [[public]] holiday in Russia."
+       "en": "a public holiday",
+       "ru": "государственный праздник",
+       "ex": "4 November is a public holiday in Russia.",
+       "key": [
+        "public"
+       ],
+       "group": 4
+      },
+      {
+       "en": "a day off",
+       "ru": "выходной",
+       "key": [
+        "off"
+       ],
+       "group": 4
       }
      ]
     },
     {
      "type": "note",
      "title": "Tricky for Russian speakers",
-     "html": "✗ <i>congratulate <b>with</b></i> → ✓ <i>congratulate sb <b>on</b> sth</i>. We <b>celebrate</b> a holiday but <b>congratulate</b> a person. <b>on</b> 9 May / <b>on</b> Victory Day / <b>on</b> my birthday, but <b>at</b> New Year (BrE). Wishes: <i>Happy birthday! · Happy New Year! · Many happy returns!</i>"
+     "text": {
+      "text": "✗ congratulate with → ✓ congratulate sb on sth. We celebrate a holiday but congratulate a person. on 9 May / on Victory Day / on my birthday, but at New Year (BrE). Wishes: Happy birthday! · Happy New Year! · Many happy returns!",
+      "key": [
+       "with",
+       "on",
+       "celebrate",
+       "congratulate",
+       "at"
+      ],
+      "example": [
+       "congratulate with",
+       "congratulate sb on sth",
+       "Happy birthday! · Happy New Year! · Many happy returns!"
+      ]
+     }
     },
     {
      "type": "expressions",
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[to mark]] the occasion",
+       "en": "to mark the occasion",
        "ru": "отметить событие",
-       "ex": "We had a family dinner to [[mark]] the occasion."
+       "ex": "We had a family dinner to mark the occasion.",
+       "key": [
+        "to mark",
+        "mark"
+       ]
       },
       {
-       "en": "a [[milestone]] birthday",
+       "en": "a milestone birthday",
        "ru": "юбилей",
-       "ex": "Grandpa's 80th was a real [[milestone]] birthday."
+       "ex": "Grandpa's 80th was a real milestone birthday.",
+       "key": [
+        "milestone"
+       ]
       },
       {
-       "en": "[[to go all out]]",
+       "en": "to go all out",
        "ru": "постараться на славу (informal)",
-       "ex": "My mum [[went all out]] for my birthday party."
+       "ex": "My mum went all out for my birthday party.",
+       "key": [
+        "to go all out",
+        "went all out"
+       ]
       },
       {
-       "en": "[[to pay tribute to]]",
+       "en": "to pay tribute to",
        "ru": "отдать дань уважения",
-       "ex": "On 9 May we [[pay tribute to]] the heroes of the war."
+       "ex": "On 9 May we pay tribute to the heroes of the war.",
+       "key": [
+        "to pay tribute to",
+        "pay tribute to"
+       ]
       },
       {
-       "en": "the [[life and soul]] of the party",
+       "en": "the life and soul of the party",
        "ru": "душа компании",
-       "ex": "My uncle is always the [[life and soul]] of the party."
+       "ex": "My uncle is always the life and soul of the party.",
+       "key": [
+        "life and soul"
+       ]
       },
       {
-       "en": "It's [[the thought that counts]].",
+       "en": "It's the thought that counts.",
        "ru": "дорог не подарок, а внимание",
-       "ex": "The present was small, but [[it's the thought that counts]]."
+       "ex": "The present was small, but it's the thought that counts.",
+       "key": [
+        "the thought that counts",
+        "it's the thought that counts"
+       ]
       }
      ]
     }
@@ -1227,7 +1467,7 @@
       "type": "email",
       "sender": "Ella",
       "subject": "Birthday",
-      "text": "…I've checked my diary and found out that I missed your birthday. I'm so sorry about that! I hope you enjoyed it this year! Which birthday gifts are popular in Russia? How do you usually celebrate your birthday? What is the best gift you've ever got?<br>I'm going to visit my friends in London soon…",
+      "text": "…I've checked my diary and found out that I missed your birthday. I'm so sorry about that! I hope you enjoyed it this year! Which birthday gifts are popular in Russia? How do you usually celebrate your birthday? What is the best gift you've ever got?\nI'm going to visit my friends in London soon…",
       "ask": "about her trip to London",
       "pool": {
        "answers": [
@@ -1250,7 +1490,7 @@
       "type": "email",
       "sender": "Sophia",
       "subject": "Victory Day",
-      "text": "…I'm doing a project on “Holidays in Different Countries of the World.” I've learnt that in Russia, Victory Day is celebrated on May 9th. What event does this holiday commemorate? What official events are held on this day? What do you and your family usually do on this day?<br>…I've joined a local volunteer group…",
+      "text": "…I'm doing a project on “Holidays in Different Countries of the World.” I've learnt that in Russia, Victory Day is celebrated on May 9th. What event does this holiday commemorate? What official events are held on this day? What do you and your family usually do on this day?\n…I've joined a local volunteer group…",
       "ask": "about the volunteer group",
       "pool": {
        "answers": [
@@ -1291,7 +1531,7 @@
       "type": "email",
       "sender": "William",
       "subject": "Defender of the Fatherland Day",
-      "text": "…I'm doing a project on “Holidays in Different Countries of the World.” I've learnt that in Russia, Defender of the Fatherland Day is celebrated on February 23rd. What official events take place on this day? What kinds of presents are usually given? How do you and your family celebrate it?<br>…Yesterday I watched a football match at the stadium…",
+      "text": "…I'm doing a project on “Holidays in Different Countries of the World.” I've learnt that in Russia, Defender of the Fatherland Day is celebrated on February 23rd. What official events take place on this day? What kinds of presents are usually given? How do you and your family celebrate it?\n…Yesterday I watched a football match at the stadium…",
       "ask": "about the stadium",
       "pool": {
        "answers": [
@@ -1360,7 +1600,15 @@
         ]
        }
       ],
-      "trap": "Q4 is about your <b>last</b> birthday: the Past Simple, not <i>I usually…</i>."
+      "trap": {
+       "text": "Q4 is about your last birthday: the Past Simple, not I usually….",
+       "key": [
+        "last"
+       ],
+       "example": [
+        "I usually…"
+       ]
+      }
      }
     ],
     [
@@ -1448,7 +1696,12 @@
       ],
       "problem": "that can arise when choosing a present",
       "conclusion": "what makes a good present",
-      "focus4": "a problem connected with <b>choosing</b> a present",
+      "focus4": {
+       "text": "a problem connected with choosing a present",
+       "key": [
+        "choosing"
+       ]
+      },
       "pool": [
        "a gift card",
        "a gadget",
@@ -1526,105 +1779,216 @@
      "title": "Sightseeing and heritage",
      "items": [
       {
-       "en": "a [[landmark]] · a [[sight]]",
+       "en": "a landmark",
+       "ru": "достопримечательность, ориентир",
+       "ex": "The Kremlin is Moscow's most famous landmark.",
+       "key": [
+        "landmark"
+       ],
+       "group": 1
+      },
+      {
+       "en": "a sight",
        "ru": "достопримечательность",
-       "ex": "The Kremlin is Moscow's most famous [[landmark]]."
+       "key": [
+        "sight"
+       ],
+       "group": 1
       },
       {
-       "en": "[[to see]] / [[to take in]] the sights",
+       "en": "to see the sights",
        "ru": "осматривать достопримечательности",
-       "ex": "We spent the day [[taking in]] the sights."
+       "key": [
+        "to see"
+       ],
+       "group": 2
       },
       {
-       "en": "[[to be listed as]] a UNESCO World Heritage Site",
+       "en": "to take in the sights",
+       "ru": "знакомиться с достопримечательностями",
+       "ex": "We spent the day taking in the sights.",
+       "key": [
+        "to take in",
+        "taking in"
+       ],
+       "group": 2
+      },
+      {
+       "en": "to be listed as a UNESCO World Heritage Site",
        "ru": "входить в список всемирного наследия ЮНЕСКО",
-       "ex": "Kizhi [[is listed as]] a UNESCO World Heritage Site."
+       "ex": "Kizhi is listed as a UNESCO World Heritage Site.",
+       "key": [
+        "to be listed as",
+        "is listed as"
+       ]
       },
       {
-       "en": "[[to date back to]] the 15th century",
+       "en": "to date back to the 15th century",
        "ru": "относиться к XV веку",
-       "ex": "The Kremlin walls [[date back to]] the late 15th century."
+       "ex": "The Kremlin walls date back to the late 15th century.",
+       "key": [
+        "to date back to",
+        "date back to"
+       ]
       },
       {
-       "en": "[[to be founded by]] / [[in]]",
-       "ru": "быть основанным",
-       "ex": "The Hermitage [[was founded by]] Catherine the Great [[in]] 1764."
+       "en": "to be founded by sb",
+       "ru": "быть основанным кем-то",
+       "ex": "The Hermitage was founded by Catherine the Great in 1764.",
+       "key": [
+        "to be founded by",
+        "was founded by"
+       ],
+       "group": 3
       },
       {
-       "en": "a [[masterpiece]]",
+       "en": "to be founded in + year",
+       "ru": "быть основанным в каком-то году",
+       "key": [
+        "to be founded in"
+       ],
+       "group": 3
+      },
+      {
+       "en": "a masterpiece",
        "ru": "шедевр",
-       "ex": "Rublev's “Trinity” is a [[masterpiece]] of Russian art."
+       "ex": "Rublev's “Trinity” is a masterpiece of Russian art.",
+       "key": [
+        "masterpiece"
+       ]
       },
       {
-       "en": "[[to boast]] a collection [[of]]",
+       "en": "to boast a collection of",
        "ru": "может похвастаться коллекцией",
-       "ex": "The Tretyakov Gallery [[boasts]] a huge collection [[of]] Russian art."
+       "ex": "The Tretyakov Gallery boasts a huge collection of Russian art.",
+       "key": [
+        "to boast",
+        "of",
+        "boasts"
+       ]
       },
       {
-       "en": "[[priceless]] works of art",
+       "en": "priceless works of art",
        "ru": "бесценные произведения искусства",
-       "ex": "The museum is full of [[priceless]] works of art."
+       "ex": "The museum is full of priceless works of art.",
+       "key": [
+        "priceless"
+       ]
       },
       {
-       "en": "a [[guided]] tour",
+       "en": "a guided tour",
        "ru": "экскурсия с гидом",
-       "ex": "We went on a [[guided]] tour of the Kremlin."
+       "ex": "We went on a guided tour of the Kremlin.",
+       "key": [
+        "guided"
+       ]
       },
       {
-       "en": "[[traditional]] crafts · [[hand-painted]]",
-       "ru": "народные промыслы · расписанный вручную",
-       "ex": "Every matryoshka is [[hand-painted]]."
+       "en": "traditional crafts",
+       "ru": "народные промыслы",
+       "key": [
+        "traditional"
+       ],
+       "group": 4
       },
       {
-       "en": "[[to attract]] tourists [[from]] all over the world",
+       "en": "hand-painted",
+       "ru": "расписанный вручную",
+       "ex": "Every matryoshka is hand-painted.",
+       "key": [
+        "hand-painted"
+       ],
+       "group": 4
+      },
+      {
+       "en": "to attract tourists from all over the world",
        "ru": "привлекать туристов со всего мира",
-       "ex": "Red Square [[attracts]] tourists [[from]] all over the world."
+       "ex": "Red Square attracts tourists from all over the world.",
+       "key": [
+        "to attract",
+        "from",
+        "attracts"
+       ]
       },
       {
-       "en": "[[well worth]] a visit",
+       "en": "well worth a visit",
        "ru": "стоит посетить",
-       "ex": "Suzdal is [[well worth]] a visit."
+       "ex": "Suzdal is well worth a visit.",
+       "key": [
+        "well worth"
+       ]
       }
      ]
     },
     {
      "type": "note",
      "title": "Tricky for Russian speakers",
-     "html": "a <b>sight</b> (достопримечательность) ≠ a <b>view</b> (вид). <b>visit</b> a museum — no preposition. Go <b>on</b> a tour / an excursion. <b>in</b> St Petersburg, but <b>at</b> the Hermitage. <b>priceless</b> = extremely valuable, not «without a price»."
+     "text": {
+      "text": "a sight (достопримечательность) ≠ a view (вид). visit a museum — no preposition. Go on a tour / an excursion. in St Petersburg, but at the Hermitage. priceless = extremely valuable, not «without a price».",
+      "key": [
+       "sight",
+       "view",
+       "visit",
+       "on",
+       "in",
+       "at",
+       "priceless"
+      ]
+     }
     },
     {
      "type": "expressions",
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "a [[must-see]]",
+       "en": "a must-see",
        "ru": "обязательно к посещению",
-       "ex": "The Hermitage is a [[must-see]] for every visitor."
+       "ex": "The Hermitage is a must-see for every visitor.",
+       "key": [
+        "must-see"
+       ]
       },
       {
-       "en": "a [[hidden gem]]",
+       "en": "a hidden gem",
        "ru": "малоизвестная жемчужина",
-       "ex": "This small museum is a [[hidden gem]]."
+       "ex": "This small museum is a hidden gem.",
+       "key": [
+        "hidden gem"
+       ]
       },
       {
-       "en": "a [[tourist trap]]",
+       "en": "a tourist trap",
        "ru": "место, где переплачивают туристы",
-       "ex": "The cafés on the main square are [[tourist traps]]."
+       "ex": "The cafés on the main square are tourist traps.",
+       "key": [
+        "tourist trap",
+        "tourist traps"
+       ]
       },
       {
-       "en": "[[steeped in]] history",
+       "en": "steeped in history",
        "ru": "пропитанный историей",
-       "ex": "Novgorod is a city [[steeped in]] history."
+       "ex": "Novgorod is a city steeped in history.",
+       "key": [
+        "steeped in"
+       ]
       },
       {
-       "en": "[[world-renowned]]",
+       "en": "world-renowned",
        "ru": "всемирно известный",
-       "ex": "The Bolshoi is a [[world-renowned]] theatre."
+       "ex": "The Bolshoi is a world-renowned theatre.",
+       "key": [
+        "world-renowned"
+       ]
       },
       {
-       "en": "[[to soak up]] the atmosphere",
+       "en": "to soak up the atmosphere",
        "ru": "проникнуться атмосферой",
-       "ex": "We sat in the square to [[soak up]] the atmosphere."
+       "ex": "We sat in the square to soak up the atmosphere.",
+       "key": [
+        "to soak up",
+        "soak up"
+       ]
       }
      ]
     }
@@ -1951,7 +2315,13 @@
         ]
        }
       ],
-      "trap": "Q2 uses the Present Perfect (<i>have you ever visited</i>), but a specific visit in the past needs the Past Simple: <i>I went there last year.</i>"
+      "trap": {
+       "text": "Q2 uses the Present Perfect (have you ever visited), but a specific visit in the past needs the Past Simple: I went there last year.",
+       "example": [
+        "have you ever visited",
+        "I went there last year."
+       ]
+      }
      },
      {
       "type": "reading",
@@ -2052,7 +2422,12 @@
       ],
       "problem": "that tourists may face while visiting popular sights",
       "conclusion": "the importance of knowing your country's cultural heritage",
-      "focus4": "a problem tourists face at <b>popular sights</b>",
+      "focus4": {
+       "text": "a problem tourists face at popular sights",
+       "key": [
+        "popular sights"
+       ]
+      },
       "pool": [
        "historic cities",
        "crowds of tourists",
@@ -2085,8 +2460,9 @@
      "items": [
       {
        "img": "rocket",
-       "en": "space exploration (U)",
-       "ru": "освоение космоса"
+       "en": "space exploration",
+       "ru": "освоение космоса",
+       "uncountable": true
       },
       {
        "img": "satellite",
@@ -2110,8 +2486,9 @@
       },
       {
        "img": "ballet_shoes",
-       "en": "ballet (U)",
-       "ru": "балет"
+       "en": "ballet",
+       "ru": "балет",
+       "uncountable": true
       },
       {
        "img": "compass",
@@ -2130,105 +2507,233 @@
      "title": "Achievements",
      "items": [
       {
-       "en": "[[to make]] a discovery",
+       "en": "to make a discovery",
        "ru": "совершить открытие",
-       "ex": "Scientists [[made]] an important discovery."
+       "ex": "Scientists made an important discovery.",
+       "key": [
+        "to make",
+        "made"
+       ]
       },
       {
-       "en": "[[to invent]] · an [[invention]]",
-       "ru": "изобретать · изобретение",
-       "ex": "Who [[invented]] the radio is still debated."
+       "en": "to invent",
+       "ru": "изобретать",
+       "ex": "Who invented the radio is still debated.",
+       "key": [
+        "to invent",
+        "invented"
+       ],
+       "group": 1
       },
       {
-       "en": "[[to contribute to]] · a [[contribution to]]",
+       "en": "an invention",
+       "ru": "изобретение",
+       "key": [
+        "invention"
+       ],
+       "group": 1
+      },
+      {
+       "en": "to contribute to",
        "ru": "вносить вклад в",
-       "ex": "Mendeleev made a huge [[contribution to]] chemistry."
+       "key": [
+        "to contribute to"
+       ],
+       "group": 2
       },
       {
-       "en": "[[to be the first]] (person) [[to do]] sth",
+       "en": "a contribution to",
+       "ru": "вклад в",
+       "ex": "Mendeleev made a huge contribution to chemistry.",
+       "key": [
+        "contribution to"
+       ],
+       "group": 2
+      },
+      {
+       "en": "to be the first (person) to do sth",
        "ru": "быть первым, кто…",
-       "ex": "Yuri Gagarin [[was the first]] person [[to travel]] into space."
+       "ex": "Yuri Gagarin was the first person to travel into space.",
+       "key": [
+        "to be the first",
+        "to do",
+        "was the first",
+        "to travel"
+       ]
       },
       {
-       "en": "[[to go down in]] history",
+       "en": "to go down in history",
        "ru": "войти в историю",
-       "ex": "Gagarin's flight [[went down in]] history."
+       "ex": "Gagarin's flight went down in history.",
+       "key": [
+        "to go down in",
+        "went down in"
+       ]
       },
       {
-       "en": "[[to gain]] / [[to win]] worldwide recognition (U)",
+       "en": "to gain worldwide recognition",
        "ru": "получить мировое признание",
-       "ex": "Tchaikovsky's music [[gained]] worldwide recognition."
+       "ex": "Tchaikovsky's music gained worldwide recognition.",
+       "key": [
+        "to gain",
+        "gained"
+       ],
+       "uncountable": true,
+       "group": 3
       },
       {
-       "en": "[[to be named after]]",
+       "en": "to win worldwide recognition",
+       "ru": "завоевать мировое признание",
+       "key": [
+        "to win"
+       ],
+       "uncountable": true,
+       "group": 3
+      },
+      {
+       "en": "to be named after",
        "ru": "быть названным в честь",
-       "ex": "Moscow University [[is named after]] Lomonosov."
+       "ex": "Moscow University is named after Lomonosov.",
+       "key": [
+        "to be named after",
+        "is named after"
+       ]
       },
       {
-       "en": "[[to devote]] your life [[to]]",
+       "en": "to devote your life to",
        "ru": "посвятить жизнь",
-       "ex": "Mendeleev [[devoted]] his life [[to]] science."
+       "ex": "Mendeleev devoted his life to science.",
+       "key": [
+        "to devote",
+        "to",
+        "devoted"
+       ]
       },
       {
-       "en": "a [[breakthrough]] in science",
+       "en": "a breakthrough in science",
        "ru": "прорыв в науке",
-       "ex": "The first satellite was a [[breakthrough]] in science."
+       "ex": "The first satellite was a breakthrough in science.",
+       "key": [
+        "breakthrough"
+       ]
       },
       {
-       "en": "[[to pave the way]] for",
+       "en": "to pave the way for",
        "ru": "проложить путь для",
-       "ex": "Sputnik [[paved the way]] for space exploration."
+       "ex": "Sputnik paved the way for space exploration.",
+       "key": [
+        "to pave the way",
+        "paved the way"
+       ]
       },
       {
-       "en": "[[to be awarded]] a prize",
+       "en": "to be awarded a prize",
        "ru": "получить премию",
-       "ex": "She [[was awarded]] a prize for her research."
+       "ex": "She was awarded a prize for her research.",
+       "key": [
+        "to be awarded",
+        "was awarded"
+       ]
       },
       {
-       "en": "[[outstanding]] · [[renowned]] · [[gifted]]",
-       "ru": "выдающийся · известный · одарённый",
-       "ex": "Pushkin was a [[gifted]] poet."
+       "en": "outstanding",
+       "ru": "выдающийся",
+       "key": [
+        "outstanding"
+       ],
+       "group": 4
+      },
+      {
+       "en": "renowned",
+       "ru": "известный, прославленный",
+       "key": [
+        "renowned"
+       ],
+       "group": 4
+      },
+      {
+       "en": "gifted",
+       "ru": "одарённый",
+       "ex": "Pushkin was a gifted poet.",
+       "key": [
+        "gifted"
+       ],
+       "group": 4
       }
      ]
     },
     {
      "type": "note",
      "title": "Tricky for Russian speakers",
-     "html": "<b>discover</b> = find something that already existed (the periodic law, an island) · <b>invent</b> = create something new (a machine). <b>the first to do</b>: ✓ <i>He was the first to fly into space.</i> A <b>scientist</b> works in the natural sciences; a <b>scholar</b> — in the humanities."
+     "text": {
+      "text": "discover = find something that already existed (the periodic law, an island) · invent = create something new (a machine). the first to do: ✓ He was the first to fly into space. A scientist works in the natural sciences; a scholar — in the humanities.",
+      "key": [
+       "discover",
+       "invent",
+       "the first to do",
+       "scientist",
+       "scholar"
+      ],
+      "example": [
+       "He was the first to fly into space."
+      ]
+     }
     },
     {
      "type": "expressions",
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[ahead of]] your time",
+       "en": "ahead of your time",
        "ru": "опередивший своё время",
-       "ex": "Tsiolkovsky was a man [[ahead of]] his time."
+       "ex": "Tsiolkovsky was a man ahead of his time.",
+       "key": [
+        "ahead of"
+       ]
       },
       {
-       "en": "[[to leave a mark on]]",
+       "en": "to leave a mark on",
        "ru": "оставить след в",
-       "ex": "Tolstoy [[left a mark on]] world literature."
+       "ex": "Tolstoy left a mark on world literature.",
+       "key": [
+        "to leave a mark on",
+        "left a mark on"
+       ]
       },
       {
-       "en": "a [[trailblazer]]",
+       "en": "a trailblazer",
        "ru": "первопроходец",
-       "ex": "Valentina Tereshkova was a real [[trailblazer]]."
+       "ex": "Valentina Tereshkova was a real trailblazer.",
+       "key": [
+        "trailblazer"
+       ]
       },
       {
-       "en": "[[to make headlines]]",
+       "en": "to make headlines",
        "ru": "попасть в заголовки",
-       "ex": "The launch [[made headlines]] around the world."
+       "ex": "The launch made headlines around the world.",
+       "key": [
+        "to make headlines",
+        "made headlines"
+       ]
       },
       {
-       "en": "[[to rise to fame]]",
+       "en": "to rise to fame",
        "ru": "прославиться",
-       "ex": "Chekhov [[rose to fame]] with his short stories."
+       "ex": "Chekhov rose to fame with his short stories.",
+       "key": [
+        "to rise to fame",
+        "rose to fame"
+       ]
       },
       {
-       "en": "[[to stand on the shoulders]] of giants",
+       "en": "to stand on the shoulders of giants",
        "ru": "опираться на труды предшественников",
-       "ex": "Every scientist [[stands on the shoulders]] of giants."
+       "ex": "Every scientist stands on the shoulders of giants.",
+       "key": [
+        "to stand on the shoulders",
+        "stands on the shoulders"
+       ]
       }
      ]
     }
@@ -2555,7 +3060,12 @@
         ]
        }
       ],
-      "trap": "Q2 contains two questions: name the people <b>and</b> say what they are famous for."
+      "trap": {
+       "text": "Q2 contains two questions: name the people and say what they are famous for.",
+       "key": [
+        "and"
+       ]
+      }
      }
     ],
     [
@@ -2661,7 +3171,12 @@
       ],
       "problem": "that can arise when young people choose a role model",
       "conclusion": "what makes a person a good role model",
-      "focus4": "a problem in <b>choosing</b> a role model",
+      "focus4": {
+       "text": "a problem in choosing a role model",
+       "key": [
+        "choosing"
+       ]
+      },
       "pool": [
        "a role model",
        "inspire",
@@ -2704,13 +3219,15 @@
       },
       {
        "img": "bowl_with_spoon",
-       "en": "borsch (U)",
-       "ru": "борщ"
+       "en": "borsch",
+       "ru": "борщ",
+       "uncountable": true
       },
       {
        "img": "hot_beverage",
-       "en": "tea (U) from a samovar",
-       "ru": "чай из самовара"
+       "en": "tea from a samovar",
+       "ru": "чай из самовара",
+       "uncountable": true
       },
       {
        "img": "hut",
@@ -2729,8 +3246,9 @@
       },
       {
        "img": "handshake",
-       "en": "hospitality (U)",
-       "ru": "гостеприимство"
+       "en": "hospitality",
+       "ru": "гостеприимство",
+       "uncountable": true
       },
       {
        "img": "busts_in_silhouette",
@@ -2749,110 +3267,251 @@
      "title": "Customs and cuisine",
      "items": [
       {
-       "en": "a [[custom]] · a [[tradition]]",
-       "ru": "обычай · традиция",
-       "ex": "It's a Russian [[custom]] to sit down before a long journey."
+       "en": "a custom",
+       "ru": "обычай",
+       "ex": "It's a Russian custom to sit down before a long journey.",
+       "key": [
+        "custom"
+       ],
+       "group": 1
       },
       {
-       "en": "[[to keep up]] / [[to follow]] a tradition",
-       "ru": "поддерживать / соблюдать традицию",
-       "ex": "My family still [[keeps up]] this tradition."
+       "en": "a tradition",
+       "ru": "традиция",
+       "key": [
+        "tradition"
+       ],
+       "group": 1
       },
       {
-       "en": "[[to be passed down]] [[from]] generation [[to]] generation",
+       "en": "to keep up a tradition",
+       "ru": "поддерживать традицию",
+       "ex": "My family still keeps up this tradition.",
+       "key": [
+        "to keep up",
+        "keeps up"
+       ],
+       "group": 2
+      },
+      {
+       "en": "to follow a tradition",
+       "ru": "соблюдать традицию",
+       "key": [
+        "to follow"
+       ],
+       "group": 2
+      },
+      {
+       "en": "to be passed down from generation to generation",
        "ru": "передаваться из поколения в поколение",
-       "ex": "Grandma's recipe [[has been passed down]] [[from]] generation [[to]] generation."
+       "ex": "Grandma's recipe has been passed down from generation to generation.",
+       "key": [
+        "to be passed down",
+        "from",
+        "to",
+        "has been passed down"
+       ]
       },
       {
-       "en": "[[to treat]] guests [[to]] sth",
+       "en": "to treat guests to sth",
        "ru": "угощать гостей",
-       "ex": "My grandma always [[treats]] guests [[to]] homemade pies."
+       "ex": "My grandma always treats guests to homemade pies.",
+       "key": [
+        "to treat",
+        "to",
+        "treats"
+       ]
       },
       {
-       "en": "[[to welcome]] guests [[with]] bread and salt",
+       "en": "to welcome guests with bread and salt",
        "ru": "встречать хлебом-солью",
-       "ex": "In the village they [[welcomed]] us [[with]] bread and salt."
+       "ex": "In the village they welcomed us with bread and salt.",
+       "key": [
+        "to welcome",
+        "with",
+        "welcomed"
+       ]
       },
       {
-       "en": "a [[national]] dish · [[cuisine]] (U)",
-       "ru": "национальное блюдо · кухня",
-       "ex": "Borsch is a [[national]] dish."
+       "en": "a national dish",
+       "ru": "национальное блюдо",
+       "ex": "Borsch is a national dish.",
+       "key": [
+        "national"
+       ],
+       "group": 3
       },
       {
-       "en": "[[to be served with]]",
+       "en": "cuisine",
+       "ru": "кухня (кулинарные традиции)",
+       "key": [
+        "cuisine"
+       ],
+       "uncountable": true,
+       "group": 3
+      },
+      {
+       "en": "to be served with",
        "ru": "подаваться с",
-       "ex": "Blini are often [[served with]] sour cream."
+       "ex": "Blini are often served with sour cream.",
+       "key": [
+        "to be served with",
+        "served with"
+       ]
       },
       {
-       "en": "a [[superstition]] · [[superstitious]]",
-       "ru": "примета · суеверный",
-       "ex": "My grandmother is very [[superstitious]]."
+       "en": "a superstition",
+       "ru": "суеверие, примета",
+       "key": [
+        "superstition"
+       ],
+       "group": 4
       },
       {
-       "en": "[[to bring]] good / bad luck",
-       "ru": "приносить удачу / неудачу",
-       "ex": "Some people think black cats [[bring]] bad luck."
+       "en": "superstitious",
+       "ru": "суеверный",
+       "ex": "My grandmother is very superstitious.",
+       "key": [
+        "superstitious"
+       ],
+       "group": 4
       },
       {
-       "en": "[[to spend]] the summer [[at]] the dacha",
+       "en": "to bring good luck",
+       "ru": "приносить удачу",
+       "key": [
+        "to bring"
+       ],
+       "group": 5
+      },
+      {
+       "en": "to bring bad luck",
+       "ru": "приносить неудачу",
+       "ex": "Some people think black cats bring bad luck.",
+       "key": [
+        "to bring",
+        "bring"
+       ],
+       "group": 5
+      },
+      {
+       "en": "to spend the summer at the dacha",
        "ru": "проводить лето на даче",
-       "ex": "We [[spend]] every summer [[at]] the dacha."
+       "ex": "We spend every summer at the dacha.",
+       "key": [
+        "to spend",
+        "at",
+        "spend"
+       ]
       },
       {
-       "en": "[[to grow]] vegetables",
+       "en": "to grow vegetables",
        "ru": "выращивать овощи",
-       "ex": "My grandparents [[grow]] vegetables and berries."
+       "ex": "My grandparents grow vegetables and berries.",
+       "key": [
+        "to grow",
+        "grow"
+       ]
       },
       {
-       "en": "a [[warm]] welcome",
+       "en": "a warm welcome",
        "ru": "радушный приём",
-       "ex": "Our hosts gave us a [[warm]] welcome."
+       "ex": "Our hosts gave us a warm welcome.",
+       "key": [
+        "warm"
+       ]
       },
       {
-       "en": "[[hospitality]] (U)",
+       "en": "hospitality",
        "ru": "гостеприимство",
-       "ex": "Russian [[hospitality]] is famous all over the world."
+       "ex": "Russian hospitality is famous all over the world.",
+       "key": [
+        "hospitality"
+       ],
+       "uncountable": true
       }
      ]
     },
     {
      "type": "note",
      "title": "Tricky for Russian speakers",
-     "html": "<b>treat</b> sb <b>to</b> sth = угостить (not «лечить» — that is <b>treat</b> a patient / <b>cure</b> a disease). <b>cuisine</b> = national cooking ≠ <b>kitchen</b> = a room. <b>custom</b> = обычай ≠ <b>customs</b> = таможня."
+     "text": {
+      "text": "treat sb to sth = угостить (not «лечить» — that is treat a patient / cure a disease). cuisine = national cooking ≠ kitchen = a room. custom = обычай ≠ customs = таможня.",
+      "key": [
+       "treat",
+       "to",
+       "cure",
+       "cuisine",
+       "kitchen",
+       "custom",
+       "customs"
+      ]
+     }
     },
     {
      "type": "expressions",
      "title": "B2+ expressions",
      "items": [
       {
-       "en": "[[Make yourself at home]]!",
+       "en": "Make yourself at home!",
        "ru": "будьте как дома",
-       "ex": "“Come in and [[make yourself at home]]!”"
+       "ex": "“Come in and make yourself at home!”",
+       "key": [
+        "Make yourself at home",
+        "make yourself at home"
+       ]
       },
       {
-       "en": "[[touch wood]] (BrE) · [[knock on wood]] (AmE)",
-       "ru": "постучать по дереву",
-       "ex": "I've never failed an exam, [[touch wood]]."
+       "en": "touch wood (BrE)",
+       "ru": "постучать по дереву (брит.)",
+       "ex": "I've never failed an exam, touch wood.",
+       "key": [
+        "touch wood"
+       ],
+       "group": 6
       },
       {
-       "en": "[[Old habits die hard]].",
+       "en": "knock on wood (AmE)",
+       "ru": "постучать по дереву (амер.)",
+       "key": [
+        "knock on wood"
+       ],
+       "group": 6
+      },
+      {
+       "en": "Old habits die hard.",
        "ru": "старые привычки трудно искоренить",
-       "ex": "Grandpa still gets up at 5 a.m. — [[old habits die hard]]."
+       "ex": "Grandpa still gets up at 5 a.m. — old habits die hard.",
+       "key": [
+        "Old habits die hard",
+        "old habits die hard"
+       ]
       },
       {
-       "en": "a home [[away from home]]",
+       "en": "a home away from home",
        "ru": "второй дом",
-       "ex": "The dacha is our home [[away from home]]."
+       "ex": "The dacha is our home away from home.",
+       "key": [
+        "away from home"
+       ]
       },
       {
-       "en": "[[to go back]] generations",
+       "en": "to go back generations",
        "ru": "уходить корнями в прошлое",
-       "ex": "This recipe [[goes back]] generations."
+       "ex": "This recipe goes back generations.",
+       "key": [
+        "to go back",
+        "goes back"
+       ]
       },
       {
-       "en": "[[to break bread]] with",
+       "en": "to break bread with",
        "ru": "разделить трапезу (formal)",
-       "ex": "It is an honour to [[break bread]] with your hosts."
+       "ex": "It is an honour to break bread with your hosts.",
+       "key": [
+        "to break bread",
+        "break bread"
+       ]
       }
      ]
     }
@@ -3230,7 +3889,12 @@
       ],
       "problem": "that can arise with keeping up family traditions",
       "conclusion": "the role of traditions in modern life",
-      "focus4": "a problem in <b>keeping up</b> family traditions",
+      "focus4": {
+       "text": "a problem in keeping up family traditions",
+       "key": [
+        "keeping up"
+       ]
+      },
       "pool": [
        "keep up",
        "get together",
@@ -3250,7 +3914,7 @@
  "revision": {
   "reading11": {
    "title": "Russia: a country of contrasts",
-   "text": "Russia is the largest country in the world, and it stretches from the Baltic Sea in the west {A}. Because of its size, the country has an enormous variety of landscapes and climates.<br>In the north, where winters are long and harsh, the land is covered with tundra and taiga, {B}. The south, by contrast, has a mild climate, and people can enjoy the warm beaches of the Black Sea.<br>Russia is also rich in cultural heritage. Its cities boast magnificent cathedrals, palaces and museums {C}. Many of these sights are listed as UNESCO World Heritage Sites.<br>The country is home to more than 190 ethnic groups, {D}. That is why Russian cuisine, traditions and holidays are so diverse.<br>Russians are proud of their history and {E}: Mendeleev's periodic table, the first artificial satellite and Yuri Gagarin's flight. {F}, Russia remains one of the most fascinating countries to explore.",
+   "text": "Russia is the largest country in the world, and it stretches from the Baltic Sea in the west {A}. Because of its size, the country has an enormous variety of landscapes and climates.\nIn the north, where winters are long and harsh, the land is covered with tundra and taiga, {B}. The south, by contrast, has a mild climate, and people can enjoy the warm beaches of the Black Sea.\nRussia is also rich in cultural heritage. Its cities boast magnificent cathedrals, palaces and museums {C}. Many of these sights are listed as UNESCO World Heritage Sites.\nThe country is home to more than 190 ethnic groups, {D}. That is why Russian cuisine, traditions and holidays are so diverse.\nRussians are proud of their history and {E}: Mendeleev's periodic table, the first artificial satellite and Yuri Gagarin's flight. {F}, Russia remains one of the most fascinating countries to explore.",
    "parts": [
     "that attract tourists from all over the world",
     "to the Pacific Ocean in the east",
@@ -3332,7 +3996,7 @@
     "INCREDIBLE"
    ]
   ],
-  "cloze": "Last summer my family went to St Petersburg, a city <b>30</b> ______ in history. On the first day we went on a guided <b>31</b> ______ of the Hermitage. The museum <b>32</b> ______ a collection of over three million works of art, so we only managed to see a small part of it. The next day we <b>33</b> ______ the sights of the city centre on foot. Our guide told us that the city <b>34</b> ______ back to 1703, when Peter the Great founded it. In the evening we took a boat trip along the Neva, which was an unforgettable <b>35</b> ______. St Petersburg is a real must-see, and it is well worth a <b>36</b> ______.",
+  "cloze": "Last summer my family went to St Petersburg, a city {30} in history. On the first day we went on a guided {31} of the Hermitage. The museum {32} a collection of over three million works of art, so we only managed to see a small part of it. The next day we {33} the sights of the city centre on foot. Our guide told us that the city {34} back to 1703, when Peter the Great founded it. In the evening we took a boat trip along the Neva, which was an unforgettable {35}. St Petersburg is a real must-see, and it is well worth a {36}.",
   "opts": [
    [
     30,

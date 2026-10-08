@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Img, Rich } from "./text";
+import { Img, Text } from "./text";
+import { RichText } from "../types";
 
 export const Banner = ({ kick, title, lede, pics = [] }: { kick: string; title: string; lede?: string; pics?: string[] }) => (
   <header className="page-banner">
@@ -9,10 +10,10 @@ export const Banner = ({ kick, title, lede, pics = [] }: { kick: string; title: 
 );
 
 /** Typical mistakes from the FIPI report; data marks each line "no" (mistake) or "yes" (correct) */
-export const Fipi = ({ items }: { items: [string, string][] }) => (
+export const Fipi = ({ items }: { items: [string, RichText][] }) => (
   <div className="exam-warnings">
     <div className="exam-warnings__header"><Img name="warning" className="exam-warnings__icon" /><span className="exam-warnings__title">Watch out</span><em className="exam-warnings__source">FIPI report · EGE 2026</em></div>
-    {items.map(([k, t], i) => <Rich key={i} as="div" className={`exam-warnings__item exam-warnings__item--${k === "yes" ? "correct" : "mistake"}`} html={t} />)}
+    {items.map(([k, t], i) => <Text key={i} as="div" className={`exam-warnings__item exam-warnings__item--${k === "yes" ? "correct" : "mistake"}`} value={t} />)}
   </div>
 );
 
