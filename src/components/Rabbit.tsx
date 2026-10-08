@@ -74,7 +74,7 @@ const Head = () => (
   </g>
 );
 
-/** Whole rabbit: big head, small body. Used for praise and for the wandering rabbit */
+/** Whole rabbit facing the viewer: big head, small body. Used for praise and when the wandering rabbit stops */
 const SittingRabbit = ({ svgRef, mood }: { svgRef?: RefObject<SVGSVGElement>; mood?: Mood }) => (
   <svg ref={svgRef} className={`rabbit rabbit--sitting${mood ? ` rabbit--${mood}` : ""}`} viewBox="0 0 120 156" aria-hidden="true">
     <Gradients />
@@ -182,42 +182,101 @@ export function Praise() {
   </div>;
 }
 
+/** The rabbit in profile, facing right, for walking; legs and head move in CSS (.rabbit--side) */
+const SideRabbit = () => (
+  <svg className="rabbit rabbit--side" viewBox="0 0 120 100" aria-hidden="true">
+    <Gradients />
+    <ellipse className="rabbit__ground rabbit__ground--soft" cx="56" cy="95" rx="40" ry="3.5" />
+    <ellipse className="rabbit__fur rabbit__leg rabbit__leg--back" cx="40" cy="86" rx="15" ry="5" />
+    <ellipse className="rabbit__fur" cx="50" cy="63" rx="30" ry="22" />
+    <ellipse className="rabbit__fur" cx="35" cy="68" rx="16" ry="15" />
+    <circle className="rabbit__belly" cx="19" cy="57" r="7" />
+    <ellipse className="rabbit__fur rabbit__leg rabbit__leg--front" cx="72" cy="81" rx="5" ry="9" />
+    <g className="rabbit__profile-head">
+      <ellipse className="rabbit__fur rabbit__ear--far" cx="67" cy="20" rx="5" ry="14" transform="rotate(-32 67 20)" />
+      <g className="rabbit__ear rabbit__ear--left">
+        <ellipse className="rabbit__fur" cx="75" cy="18" rx="5.5" ry="15" transform="rotate(-18 75 18)" />
+        <ellipse className="rabbit__ear-inner" cx="75" cy="19" rx="2.6" ry="10.5" transform="rotate(-18 75 19)" />
+      </g>
+      <ellipse className="rabbit__fur" cx="82" cy="42" rx="17" ry="15" />
+      <ellipse className="rabbit__fur" cx="95" cy="47" rx="7" ry="6" />
+      <circle className="rabbit__pink rabbit__cheek" cx="89" cy="50" r="3" />
+      <g className="rabbit__eyes">
+        <ellipse className="rabbit__eye" cx="88" cy="39" rx="2.4" ry="3" />
+        <circle className="rabbit__eye-glint" cx="88.8" cy="38" r=".8" />
+      </g>
+      <ellipse className="rabbit__nose" cx="101" cy="46" rx="1.8" ry="1.4" />
+      <path className="rabbit__line" d="M100.5 48q-1.5 2.5-4 2" strokeWidth="1" />
+    </g>
+  </svg>
+);
+
 const random = (min: number, max: number) => min + Math.random() * (max - min);
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-type Walk = { n: number; fromLeft: boolean; stop: number; phase: "enter" | "walk" | "look" | "leave" | "greet" };
+const hasMouse = () => window.matchMedia("(pointer: fine)").matches;
+const WIDTH = 96; // px, wanderer size on the screen (.wanderer__rabbit)
 
-/** Now and then a small rabbit hops onto the page, stops to look around and hops away. Tap it to say hello */
+type Phase = "enter" | "walk" | "look" | "greet" | "turn" | "leave";
+/** x, y: where the rabbit stops (px from the left / from the bottom); from: side it comes from; back: leaves the same way */
+type Walk = { n: number; from: "left" | "right"; x: number; y: number; back: boolean; phase: Phase };
+const PHASES: Record<Phase, [Phase | null, number]> = { enter: ["walk", 50], walk: ["look", 3000], look: ["turn", 3400], greet: ["turn", 1800], turn: ["leave", 50], leave: [null, 3000] };
+
+/** Now and then a rabbit hops along the bottom of the page in profile, turns to look around and hops away.
+    With a mouse: when the cursor rests in one place, the rabbit hops over at that height and looks at it. Tap it to say hello */
 export function Wanderer() {
+  const ref = useRef<SVGSVGElement>(null);
   const [walk, setWalk] = useState<Walk | null>(null);
-  const to = (phase: Walk["phase"]) => setWalk(w => (w ? { ...w, phase } : w));
+  const busy = useRef(false), lastVisit = useRef(0), n = useRef(0);
+  const to = (phase: Phase) => setWalk(w => (w ? { ...w, phase } : w));
+  useLook(ref);
+  busy.current = !!walk;
 
-  // appear every 1–2 minutes while the tab is visible
   useEffect(() => {
     if (reducedMotion()) return;
-    let timer = 0, n = 0;
-    const plan = (delay: number) => { timer = window.setTimeout(() => { if (!document.hidden) setWalk({ n: ++n, fromLeft: Math.random() < 0.5, stop: random(25, 70), phase: "enter" }); plan(random(60, 120) * 1000); }, delay); };
+    const go = (w: Omit<Walk, "n" | "phase">) => { if (!busy.current && !document.hidden) setWalk({ ...w, n: ++n.current, phase: "enter" }); };
+    // a stroll along the bottom every 1–2 minutes
+    let stroll = 0;
+    const plan = (delay: number) => { stroll = window.setTimeout(() => { go({ from: Math.random() < .5 ? "left" : "right", x: innerWidth * random(.25, .65), y: 0, back: false }); plan(random(60, 120) * 1000); }, delay); };
     plan(random(30, 60) * 1000);
-    return () => clearTimeout(timer);
+    // a visit to the place where the cursor has rested for 5 seconds (at most every 45 seconds)
+    let idle = 0;
+    const onMove = (e: PointerEvent) => {
+      clearTimeout(idle);
+      if (!hasMouse()) return;
+      const { clientX: cx, clientY: cy } = e;
+      idle = window.setTimeout(() => {
+        if (Date.now() - lastVisit.current < 45000 || document.activeElement?.matches("input, textarea")) return;
+        lastVisit.current = Date.now();
+        const from = cx > innerWidth / 2 ? "right" : "left";
+        const x = from === "left" ? Math.max(8, cx - WIDTH - 24) : Math.min(innerWidth - WIDTH - 8, cx + 24);
+        go({ from, x, y: Math.max(0, innerHeight - cy - WIDTH * 0.6), back: true });
+      }, 5000);
+    };
+    window.addEventListener("pointermove", onMove, { passive: true });
+    return () => { clearTimeout(stroll); clearTimeout(idle); window.removeEventListener("pointermove", onMove); };
   }, []);
 
-  // enter → walk to the stop → look around → leave on the other side
+  // enter → walk to the stop → turn and look around → turn back → leave
   useEffect(() => {
     if (!walk) return;
-    const next: Partial<Record<Walk["phase"], [Walk["phase"] | null, number]>> = { enter: ["walk", 50], walk: ["look", 3600], look: ["leave", 3200], greet: ["leave", 1800], leave: [null, 3600] };
-    const [phase, delay] = next[walk.phase]!;
+    const [phase, delay] = PHASES[walk.phase];
     const id = window.setTimeout(() => (phase ? to(phase) : setWalk(null)), delay);
     return () => clearTimeout(id);
   }, [walk?.n, walk?.phase]);
 
   if (!walk) return null;
-  const { fromLeft, stop, phase } = walk;
-  const start = fromLeft ? "-8rem" : "calc(100% + 1rem)", end = fromLeft ? "calc(100% + 1rem)" : "-8rem";
-  const left = phase === "enter" ? start : phase === "leave" ? end : `${stop}%`;
+  const { from, x, y, back, phase } = walk;
+  const outside = (side: "left" | "right") => (side === "left" ? -WIDTH - 20 : innerWidth + 20);
+  const exit = back ? from : from === "left" ? "right" : "left";
+  const left = phase === "enter" ? outside(from) : phase === "leave" ? outside(exit) : x;
   const moving = phase === "walk" || phase === "leave";
-  return <div className={`wanderer${moving ? " wanderer--moving" : ""}`} style={{ left }}>
+  const facing = phase === "leave" || phase === "turn" ? (exit === "right" ? "right" : "left") : (from === "left" ? "right" : "left");
+  return <div className={`wanderer${moving ? " wanderer--moving" : ""} wanderer--facing-${facing}`} style={{ left, bottom: y }}>
     {phase === "greet" && <span className="wanderer__speech" role="status">Hi there!</span>}
-    <button className="wanderer__rabbit" onClick={() => phase !== "leave" && to("greet")} aria-label="Say hello to the rabbit">
-      <span className="rabbit-hop"><SittingRabbit mood={phase === "look" ? "curious" : phase === "greet" ? "delighted" : undefined} /></span>
+    <button className="wanderer__rabbit" onClick={() => (phase === "look" || phase === "walk") && to("greet")} aria-label="Say hello to the rabbit">
+      {phase === "look" || phase === "greet"
+        ? <span className="wanderer__turn"><SittingRabbit svgRef={ref} mood={phase === "look" ? "curious" : "delighted"} /></span>
+        : <span className="wanderer__body"><SideRabbit /></span>}
     </button>
   </div>;
 }

@@ -630,12 +630,25 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 @keyframes heart-rise { 0% { opacity: 0; transform: translateY(.6rem) scale(.6); } 25% { opacity: 1; } 100% { opacity: 0; transform: translateY(-2.6rem) scale(1.15) rotate(-8deg); } }
 .praise--upset .praise__speech-title { color: var(--color-task-2); }
 
-/* wandering rabbit: hops along the bottom of the page, stops to look around, hops away */
-.wanderer { position: fixed; bottom: 0; z-index: 15; display: flex; flex-direction: column; align-items: center; transition: left 3.5s linear; pointer-events: none; }
-.wanderer__rabbit { width: max(4.5rem, 5vw); padding: 0; border: 0; background: none; pointer-events: auto; transform: translateY(8%); }
-.wanderer--moving .rabbit-hop { animation: wanderer-hop .45s ease-in-out infinite; }
-.wanderer__speech { margin-bottom: .2rem; padding: .35rem .7rem; border-radius: 1rem; background: var(--color-surface); font: 700 .85rem var(--font-text); box-shadow: 0 .5rem 1.2rem -.7rem var(--color-shadow); animation: speech-pop 1.8s ease-out forwards; }
-@keyframes wanderer-hop { 0%, 100% { transform: none; } 15% { transform: scale(1.06, .92); } 50% { transform: translateY(-18%) scale(.96, 1.05); } 85% { transform: scale(1.04, .95); } }
+/* wandering rabbit: hops in profile, turns to the viewer to look around (Rabbit.tsx, Wanderer) */
+.wanderer { position: fixed; z-index: 15; display: flex; flex-direction: column; align-items: center; width: 6rem; transition: left 3s linear; pointer-events: none; }
+.wanderer__rabbit { width: 100%; padding: 0; border: 0; background: none; pointer-events: auto; }
+.wanderer__body { display: block; }
+.wanderer--facing-left .wanderer__body { transform: scaleX(-1); }
+.wanderer--moving .rabbit--side { animation: rabbit-hop-side .5s ease-in-out infinite; transform-origin: 50% 90%; }
+.wanderer--moving .rabbit__leg--back { animation: rabbit-kick .5s ease-in-out infinite; }
+.wanderer--moving .rabbit__leg--front { animation: rabbit-reach .5s ease-in-out infinite; }
+.rabbit--side { width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 .25rem .35rem var(--color-shadow)); }
+.rabbit__leg, .rabbit__profile-head, .rabbit__ear--far { transform-box: fill-box; }
+.rabbit__leg--back { transform-origin: 70% 50%; } .rabbit__leg--front { transform-origin: 50% 0; }
+.rabbit__profile-head { transform-origin: 20% 80%; animation: rabbit-head-bob 1.8s ease-in-out infinite; }
+.wanderer__turn { display: block; animation: rabbit-turn .3s ease-out; }
+.wanderer__speech { margin-bottom: .2rem; padding: .35rem .7rem; border-radius: 1rem; background: var(--color-surface); font: 700 .85rem var(--font-text); white-space: nowrap; box-shadow: 0 .5rem 1.2rem -.7rem var(--color-shadow); animation: speech-pop 1.8s ease-out forwards; }
+@keyframes rabbit-hop-side { 0%, 100% { transform: none; } 15% { transform: scale(1.04, .94); } 45% { transform: translateY(-22%) rotate(-7deg); } 75% { transform: translateY(-6%) rotate(3deg); } }
+@keyframes rabbit-kick { 0%, 100% { transform: none; } 45% { transform: rotate(28deg) translateX(-10%); } }
+@keyframes rabbit-reach { 0%, 100% { transform: none; } 45% { transform: rotate(-35deg); } }
+@keyframes rabbit-head-bob { 0%, 100% { transform: none; } 30% { transform: rotate(-6deg); } 60% { transform: rotate(4deg); } }
+@keyframes rabbit-turn { from { transform: scaleX(.2); } }
 
 /* ===== tablets and phones (checked at 430px) ===== */
 @media (max-width: 860px) {
