@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Timer } from "./ui";
+import { rabbitSay } from "./Rabbit";
 
 /** Records the student's spoken answer; lets them listen, download and share the file */
 export default function Recorder({ name, maxSeconds }: { name: string; maxSeconds: number }) {
@@ -21,6 +22,7 @@ export default function Recorder({ name, maxSeconds }: { name: string; maxSecond
       mr.onstop = () => {
         const b = new Blob(chunks, { type: mr.mimeType || "audio/webm" });
         setBlob(b); setUrl(URL.createObjectURL(b)); setState("done");
+        rabbitSay("pleased", "Recorded!", "Listen back to your answer and see what you could improve.");
         stream.getTracks().forEach(t => t.stop()); clearInterval(timer.current);
       };
       rec.current = mr; mr.start(); setSec(0); setState("rec");

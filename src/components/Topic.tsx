@@ -7,6 +7,11 @@ import SpeechView from "./Speech";
 import { slotName } from "./Photo";
 import Speaking from "./Speaking";
 import { FlashCards, MatchPairs, QuickTest, unitCards } from "./Cards";
+import { rabbitSay } from "./Rabbit";
+import { useEffect } from "react";
+
+/** Units already greeted by the rabbit during this visit */
+const greeted = new Set<string>();
 
 export function TypologyBank({ topic }: { topic: Topic }) {
   return <section className="page">
@@ -27,6 +32,10 @@ export function UnitView({ unit, topic, tab, onTab }: { unit: Unit; topic: Topic
   const tabs = unit.speaking ? [0, 1, 2, 3, 4] : [0, 1, 2, 4];
   const cur = tabs.includes(tab) ? tab : 4; // a /speaking link to a unit without that tab opens Exam tasks
   const cards = unitCards(unit);
+  useEffect(() => {
+    const id = `${topic.id}-${unit.num}`;
+    if (!greeted.has(id)) { greeted.add(id); rabbitSay("curious", `Unit ${unit.num}`, `${unit.title}. Let's get started!`); }
+  }, [topic.id, unit.num]);
   let essayIdx = 0;
   const seen: Record<string, number> = {};
   const slot = (type: string) => slotName(topic.id, unit.num, type, seen[type] = (seen[type] || 0) + 1);

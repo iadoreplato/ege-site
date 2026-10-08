@@ -1,6 +1,9 @@
 /* The course mascot: an original SVG rabbit. Colours are CSS variables --color-rabbit-* (styles.css, :root);
-   animation lives in styles.css, sections "rabbit" and "praise". */
+   faces and animation live in styles.css, sections "rabbit", "praise" and "wandering rabbit". */
 import { CSSProperties, RefObject, useEffect, useRef, useState } from "react";
+
+/** The rabbit's moods; each one has its own face and movement (styles.css, .rabbit--<mood>) */
+export type Mood = "delighted" | "pleased" | "thoughtful" | "upset" | "curious" | "surprised";
 
 /** Eyes and head follow the pointer: sets --rabbit-* offsets on the svg */
 function useLook(ref: RefObject<SVGSVGElement>) {
@@ -24,7 +27,7 @@ function useLook(ref: RefObject<SVGSVGElement>) {
   }, [ref]);
 }
 
-/** Head with ears, drawn in a 64×64 box; every rabbit scales it */
+/** Head with ears, drawn in a 64×64 box; every rabbit scales it. Faces for all moods are drawn, CSS shows the right one */
 const Head = () => (
   <g className="rabbit__head">
     <g className="rabbit__ear rabbit__ear--left">
@@ -37,17 +40,40 @@ const Head = () => (
     </g>
     <ellipse className="rabbit__fur" cx="32" cy="41" rx="18" ry="16" />
     <ellipse className="rabbit__shadow" cx="32" cy="49" rx="9" ry="6" opacity=".55" />
-    <circle className="rabbit__pink" cx="21.5" cy="46" r="3.2" opacity=".75" />
-    <circle className="rabbit__pink" cx="42.5" cy="46" r="3.2" opacity=".75" />
+    <circle className="rabbit__pink rabbit__cheek" cx="21.5" cy="46" r="3.2" />
+    <circle className="rabbit__pink rabbit__cheek" cx="42.5" cy="46" r="3.2" />
     <g className="rabbit__eyes"><g className="rabbit__pupils">
       <ellipse className="rabbit__eye" cx="25" cy="39" rx="2.5" ry="3.1" />
       <ellipse className="rabbit__eye" cx="39" cy="39" rx="2.5" ry="3.1" />
       <circle className="rabbit__eye-glint" cx="25.9" cy="37.9" r=".9" />
       <circle className="rabbit__eye-glint" cx="39.9" cy="37.9" r=".9" />
     </g></g>
+    <path className="rabbit__line rabbit__happy-eyes" d="M22.3 40q2.7-3.4 5.4 0M36.3 40q2.7-3.4 5.4 0" strokeWidth="1.4" />
+    <path className="rabbit__line rabbit__brows" d="M21.3 33.6l5.6-1.7M42.7 33.6l-5.6-1.7" strokeWidth="1.2" />
+    <path className="rabbit__tear" d="M41.2 42.2q1.4 2.3 0 3.3q-1.4-1 0-3.3Z" />
     <path className="rabbit__nose" d="M29.6 44.4Q32 43.2 34.4 44.4Q33.2 46.7 32 46.9Q30.8 46.7 29.6 44.4Z" />
-    <path className="rabbit__mouth" d="M32 46.9v1.5m0 0q-1.9 1.7-3.5.5m3.5-.5q1.9 1.7 3.5.5" strokeWidth="1" />
+    <path className="rabbit__line rabbit__mouth rabbit__mouth--calm" d="M32 46.9v1.5m0 0q-1.9 1.7-3.5.5m3.5-.5q1.9 1.7 3.5.5" strokeWidth="1" />
+    <path className="rabbit__line rabbit__mouth rabbit__mouth--smile" d="M28.2 47.4q3.8 4 7.6 0" strokeWidth="1.2" />
+    <path className="rabbit__line rabbit__mouth rabbit__mouth--sad" d="M29 49.8q3-2.4 6 0" strokeWidth="1.2" />
+    <ellipse className="rabbit__mouth rabbit__mouth--open" cx="32" cy="49.4" rx="1.3" ry="1.7" />
   </g>
+);
+
+/** Whole rabbit: big head, small body. Used for praise and for the wandering rabbit */
+const SittingRabbit = ({ svgRef, mood }: { svgRef?: RefObject<SVGSVGElement>; mood?: Mood }) => (
+  <svg ref={svgRef} className={`rabbit rabbit--sitting${mood ? ` rabbit--${mood}` : ""}`} viewBox="0 0 120 156" aria-hidden="true">
+    <g className="rabbit__body">
+      <ellipse className="rabbit__fur" cx="60" cy="120" rx="22" ry="24" />
+      <ellipse className="rabbit__belly" cx="60" cy="124" rx="13" ry="15" />
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="46" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="74" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
+    </g>
+    <g transform="translate(8.8 2) scale(1.6)"><Head /></g>
+    <g className="rabbit__paws">
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="48" cy="101" rx="7" ry="6.5" strokeWidth="1.2" />
+      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="72" cy="101" rx="7" ry="6.5" strokeWidth="1.2" />
+    </g>
+  </svg>
 );
 
 /** Rabbit head for the header logo */
@@ -57,14 +83,26 @@ export function RabbitMark() {
   return <svg ref={ref} className="rabbit rabbit--logo" viewBox="0 0 64 64" aria-hidden="true"><Head /></svg>;
 }
 
-/** Rabbit reading an open book, for the cover; hops when clicked */
+/* What the cover rabbit does when it is clicked, in turn */
+const COVER_REACTIONS: { mood: Mood; text: string }[] = [
+  { mood: "delighted", text: "Hi! Ready to practise?" },
+  { mood: "surprised", text: "Oh! You found me." },
+  { mood: "curious", text: "What are we learning today?" },
+  { mood: "pleased", text: "Pick a unit and let's go!" },
+  { mood: "delighted", text: "Hey, that tickles!" },
+  { mood: "thoughtful", text: "Tip: start with the Vocabulary tab." },
+];
+
+/** Rabbit reading an open book, for the cover: smiles on hover, reacts to every click with a new mood and a few words */
 export function RabbitReader() {
   const ref = useRef<SVGSVGElement>(null);
   const [n, setN] = useState(0);
   useLook(ref);
-  return <button className="cover__rabbit-button" onClick={() => setN(n + 1)} aria-label="Make the rabbit hop">
-    <span key={n} className={`rabbit-hop${n ? " rabbit-hop--active" : ""}`}>
-      <svg ref={ref} className="rabbit rabbit--reader" viewBox="0 0 240 240" aria-hidden="true">
+  const reaction = n ? COVER_REACTIONS[(n - 1) % COVER_REACTIONS.length] : null;
+  return <button className="cover__rabbit-button" onClick={() => setN(n + 1)} aria-label="Talk to the rabbit">
+    {reaction && <span key={n} className="cover__rabbit-speech" role="status">{reaction.text}</span>}
+    <span key={`hop${n}`} className={`rabbit-hop${n ? " rabbit-hop--active" : ""}`}>
+      <svg ref={ref} className={`rabbit rabbit--reader rabbit--${reaction ? reaction.mood : "calm"}`} viewBox="0 0 240 240" aria-hidden="true">
         <ellipse className="rabbit__ground" cx="120" cy="222" rx="92" ry="9" />
         <ellipse className="rabbit__body rabbit__shadow" cx="120" cy="180" rx="42" ry="36" />
         <g transform="translate(38 0) scale(2.56)"><Head /></g>
@@ -80,37 +118,18 @@ export function RabbitReader() {
   </button>;
 }
 
-/** Whole rabbit: big head, small body. Peeks up from the bottom edge to praise */
-const PraiseRabbit = ({ svgRef }: { svgRef: RefObject<SVGSVGElement> }) => (
-  <svg ref={svgRef} className="rabbit rabbit--praise" viewBox="0 0 120 156" aria-hidden="true">
-    <g className="rabbit__body">
-      <ellipse className="rabbit__fur" cx="60" cy="120" rx="22" ry="24" />
-      <ellipse className="rabbit__belly" cx="60" cy="124" rx="13" ry="15" />
-      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="46" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
-      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="74" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
-    </g>
-    <g transform="translate(8.8 2) scale(1.6)"><Head /></g>
-    <g className="rabbit__paws">
-      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="48" cy="101" rx="7" ry="6.5" strokeWidth="1.2" />
-      <ellipse className="rabbit__fur rabbit__fur--outlined" cx="72" cy="101" rx="7" ry="6.5" strokeWidth="1.2" />
-    </g>
-  </svg>
-);
-
-/** Report a finished task to the rabbit (from "Check answers" and the AI check). `big` = large task: brighter praise */
-export const cheer = (score: number, total: number, big = total >= 15) =>
-  window.dispatchEvent(new CustomEvent("praise", { detail: { score, total, big } }));
+/** Ask the rabbit to peek out with a mood and a short message (big = jumps out fully) */
+export const rabbitSay = (mood: Mood, title: string, text = "", big = false) =>
+  window.dispatchEvent(new CustomEvent("rabbit-say", { detail: { mood, title, text, big } }));
 
 const pick = (xs: string[]) => xs[Math.floor(Math.random() * xs.length)];
-/** Always positive: the wording only gets warmer as the score grows */
-function praise(score: number, total: number, big: boolean): [string, string] {
+/** Reaction to a finished task: glad when it went well, a little upset (but encouraging) when it did not */
+export function cheer(score: number, total: number, big = total >= 15) {
   const r = total ? score / total : 0, s = `${score} / ${total}`;
-  if (big) return r >= 0.8 ? [pick(["Amazing work!", "Outstanding!", "You nailed it!"]), `${s} on a big task. Be proud of that!`]
-    : r >= 0.5 ? [pick(["Great effort!", "Well done!"]), `${s} on a big task. Check the corrections and you're there.`]
-    : ["You finished it!", `${s}. Big tasks take practice. Have another go!`];
-  return r >= 0.9 ? [pick(["Brilliant!", "Spot on!", "Top marks!"]), s]
-    : r >= 0.6 ? [pick(["Nice work!", "Good job!"]), `${s}. Look at the corrections.`]
-    : ["Good try!", `${s}. Have another go!`];
+  if (r >= 0.9) return rabbitSay("delighted", pick(big ? ["Amazing work!", "Outstanding!", "You nailed it!"] : ["Brilliant!", "Spot on!", "Top marks!"]), big ? `${s} on a big task. Be proud of that!` : s, big);
+  if (r >= 0.6) return rabbitSay("pleased", pick(["Nice work!", "Good job!"]), `${s}. Look at the corrections.`, big);
+  if (r >= 0.3) return rabbitSay("thoughtful", pick(["Almost there…", "Not bad…"]), `${s}. Check the corrections and try again.`);
+  rabbitSay("upset", pick(["Oh no…", "Hmm, that was tricky."]), `${s}. Don't worry: look at the corrections and have another go.`);
 }
 
 /* Confetti for big tasks: end positions as ready-made values (no calc in CSS) */
@@ -119,27 +138,66 @@ const BITS = Array.from({ length: 14 }, (_, i) => {
   return { "--confetti-x": `${Math.round(Math.cos(a) * d)}px`, "--confetti-y": `${Math.round(Math.sin(a) * d)}px`, "--confetti-rotation": `${(i * 67) % 360}deg` } as CSSProperties;
 });
 
-/** Rabbit that peeks out and praises after a finished task; hidden the rest of the time */
+type Message = { n: number; mood: Mood; title: string; text: string; big: boolean };
+
+/** Rabbit that peeks up from the bottom edge to react to what the student does; hidden the rest of the time */
 export function Praise() {
   const ref = useRef<SVGSVGElement>(null);
-  const [show, setShow] = useState<{ n: number; big: boolean; title: string; text: string } | null>(null);
+  const [show, setShow] = useState<Message | null>(null);
   useLook(ref);
   useEffect(() => {
     let n = 0;
-    const on = (e: Event) => {
-      const { score, total, big } = (e as CustomEvent<{ score: number; total: number; big: boolean }>).detail;
-      const [title, text] = praise(score, total, big);
-      setShow({ n: ++n, big, title, text });
-    };
-    window.addEventListener("praise", on);
-    return () => window.removeEventListener("praise", on);
+    const on = (e: Event) => setShow({ n: ++n, ...(e as CustomEvent<Omit<Message, "n">>).detail });
+    window.addEventListener("rabbit-say", on);
+    return () => window.removeEventListener("rabbit-say", on);
   }, []);
   if (!show) return null;
-  return <div key={show.n} className={`praise${show.big ? " praise--big" : ""}`} onAnimationEnd={e => e.target === e.currentTarget && setShow(null)}>
+  return <div key={show.n} className={`praise praise--${show.mood}${show.big ? " praise--big" : ""}`} onAnimationEnd={e => e.target === e.currentTarget && setShow(null)}>
     <p className="praise__speech" role="status"><b className="praise__speech-title">{show.title}</b> {show.text}</p>
     <button className="praise__rabbit-button" onClick={() => setShow(null)} aria-label="Close">
-      <PraiseRabbit svgRef={ref} />
-      {show.big && <span className="praise__confetti" aria-hidden="true">{BITS.map((style, i) => <i className="praise__confetti-piece" key={i} style={style} />)}</span>}
+      <SittingRabbit svgRef={ref} mood={show.mood} />
+      {show.mood === "delighted" && <span className="praise__hearts" aria-hidden="true"><i>♥</i><i>♥</i><i>♥</i></span>}
+      {show.big && show.mood === "delighted" && <span className="praise__confetti" aria-hidden="true">{BITS.map((style, i) => <i className="praise__confetti-piece" key={i} style={style} />)}</span>}
+    </button>
+  </div>;
+}
+
+const random = (min: number, max: number) => min + Math.random() * (max - min);
+const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+type Walk = { n: number; fromLeft: boolean; stop: number; phase: "enter" | "walk" | "look" | "leave" | "greet" };
+
+/** Now and then a small rabbit hops onto the page, stops to look around and hops away. Tap it to say hello */
+export function Wanderer() {
+  const [walk, setWalk] = useState<Walk | null>(null);
+  const to = (phase: Walk["phase"]) => setWalk(w => (w ? { ...w, phase } : w));
+
+  // appear every 1–2 minutes while the tab is visible
+  useEffect(() => {
+    if (reducedMotion()) return;
+    let timer = 0, n = 0;
+    const plan = (delay: number) => { timer = window.setTimeout(() => { if (!document.hidden) setWalk({ n: ++n, fromLeft: Math.random() < 0.5, stop: random(25, 70), phase: "enter" }); plan(random(60, 120) * 1000); }, delay); };
+    plan(random(30, 60) * 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // enter → walk to the stop → look around → leave on the other side
+  useEffect(() => {
+    if (!walk) return;
+    const next: Partial<Record<Walk["phase"], [Walk["phase"] | null, number]>> = { enter: ["walk", 50], walk: ["look", 3600], look: ["leave", 3200], greet: ["leave", 1800], leave: [null, 3600] };
+    const [phase, delay] = next[walk.phase]!;
+    const id = window.setTimeout(() => (phase ? to(phase) : setWalk(null)), delay);
+    return () => clearTimeout(id);
+  }, [walk?.n, walk?.phase]);
+
+  if (!walk) return null;
+  const { fromLeft, stop, phase } = walk;
+  const start = fromLeft ? "-8rem" : "calc(100% + 1rem)", end = fromLeft ? "calc(100% + 1rem)" : "-8rem";
+  const left = phase === "enter" ? start : phase === "leave" ? end : `${stop}%`;
+  const moving = phase === "walk" || phase === "leave";
+  return <div className={`wanderer${moving ? " wanderer--moving" : ""}`} style={{ left }}>
+    {phase === "greet" && <span className="wanderer__speech" role="status">Hi there!</span>}
+    <button className="wanderer__rabbit" onClick={() => phase !== "leave" && to("greet")} aria-label="Say hello to the rabbit">
+      <span className="rabbit-hop"><SittingRabbit mood={phase === "look" ? "curious" : phase === "greet" ? "delighted" : undefined} /></span>
     </button>
   </div>;
 }

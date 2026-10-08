@@ -7,3 +7,5 @@ dist/
 *.log
 .claude/settings.local.json
 .impeccable/
+node_modules
+node_modules.nosync/

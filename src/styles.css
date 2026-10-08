@@ -30,6 +30,7 @@
   --color-rabbit-fur: #F3E7D7;
   --color-rabbit-shadow: #E2CFB6;
   --color-rabbit-pink: #F2B49C;
+  --color-rabbit-tear: #8FB3DE;
 
   --font-text: "Manrope", system-ui, sans-serif;
   --font-accent: "Playfair Display", Georgia, serif;
@@ -495,7 +496,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .rabbit { display: block; overflow: visible; }
 .rabbit--logo { width: 2.6rem; height: 2.6rem; margin-top: -.4rem; }
 .rabbit--reader { position: relative; width: 100%; max-width: 24rem; }
-.rabbit--praise { width: 100%; height: auto; filter: drop-shadow(1.5px 0 0 var(--color-rabbit-shadow)) drop-shadow(-1.5px 0 0 var(--color-rabbit-shadow)) drop-shadow(0 -1.5px 0 var(--color-rabbit-shadow)); }
+.rabbit--sitting { width: 100%; height: auto; filter: drop-shadow(1.5px 0 0 var(--color-rabbit-shadow)) drop-shadow(-1.5px 0 0 var(--color-rabbit-shadow)) drop-shadow(0 -1.5px 0 var(--color-rabbit-shadow)); }
 .rabbit__fur { fill: var(--color-rabbit-fur); }
 .rabbit__fur--outlined, .rabbit__toe-lines { stroke: var(--color-rabbit-shadow); stroke-linecap: round; }
 .rabbit__shadow { fill: var(--color-rabbit-shadow); opacity: .6; }
@@ -557,6 +558,67 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 @keyframes praise-jump { 0% { transform: translateY(105%); } 12% { transform: translateY(-20%) scale(.95, 1.06); } 20% { transform: translateY(0) scale(1.08, .92); } 26% { transform: none; } 34% { transform: translateY(-14%) scale(.96, 1.05); } 42% { transform: translateY(0) scale(1.06, .94); } 47%, 86% { transform: none; } 100% { transform: translateY(105%); } }
 @keyframes confetti-burst { 0% { opacity: 1; translate: 0 0; rotate: 0deg; } 100% { opacity: 0; translate: var(--confetti-x) var(--confetti-y); rotate: var(--confetti-rotation); } }
 
+/* rabbit moods: faces (all drawn in Rabbit.tsx, hidden by default) and movements */
+.rabbit__line { fill: none; stroke: var(--color-main); stroke-linecap: round; }
+.rabbit__cheek { opacity: .75; }
+.rabbit__happy-eyes, .rabbit__brows, .rabbit__tear, .rabbit__mouth--smile, .rabbit__mouth--sad, .rabbit__mouth--open { display: none; }
+.rabbit__mouth--open { fill: var(--color-main); }
+.rabbit__tear { fill: var(--color-rabbit-tear); }
+/* delighted: eyes closed in a smile, big smile, pink cheeks; also when the cover rabbit is hovered */
+.rabbit--delighted .rabbit__eyes, .cover__rabbit-button:hover .rabbit--calm .rabbit__eyes { display: none; }
+.rabbit--delighted .rabbit__happy-eyes, .cover__rabbit-button:hover .rabbit--calm .rabbit__happy-eyes { display: block; }
+.rabbit--delighted .rabbit__mouth--calm, .rabbit--pleased .rabbit__mouth--calm, .cover__rabbit-button:hover .rabbit--calm .rabbit__mouth--calm { display: none; }
+.rabbit--delighted .rabbit__mouth--smile, .rabbit--pleased .rabbit__mouth--smile, .cover__rabbit-button:hover .rabbit--calm .rabbit__mouth--smile { display: block; }
+.rabbit--delighted .rabbit__cheek { opacity: 1; }
+/* pleased: smile and a nod */
+.rabbit--pleased .rabbit__head { animation: rabbit-nod 1.4s .4s ease-in-out 2; }
+/* thoughtful: head on one side, one ear bent */
+.rabbit--thoughtful .rabbit__head { animation: rabbit-think 3.6s ease-in-out forwards; }
+.rabbit--thoughtful .rabbit__ear--right { animation: rabbit-ear-bend 3.6s ease-in-out forwards; }
+/* upset: sad brows and mouth, ears drop, a tear, the head shakes slowly */
+.rabbit--upset .rabbit__brows, .rabbit--upset .rabbit__mouth--sad, .rabbit--upset .rabbit__tear { display: block; }
+.rabbit--upset .rabbit__mouth--calm { display: none; }
+.rabbit--upset .rabbit__ear--left { animation: rabbit-droop-left 3.6s ease-in-out forwards; }
+.rabbit--upset .rabbit__ear--right { animation: rabbit-droop-right 3.6s ease-in-out forwards; }
+.rabbit--upset .rabbit__head { animation: rabbit-sigh 3.6s ease-in-out forwards; }
+.rabbit--upset .rabbit__tear { transform-box: fill-box; animation: rabbit-tear 1.8s .8s ease-in 2; }
+/* curious: looks around, sniffs, ears twitch */
+.rabbit--curious .rabbit__head { animation: rabbit-look-around 3s ease-in-out; }
+.rabbit--curious .rabbit__nose { animation: rabbit-nose .9s ease-in-out infinite; }
+.rabbit--curious .rabbit__ear--left { animation: rabbit-ear-left 1.6s ease-in-out infinite; }
+/* surprised: wide eyes, round mouth, ears straight up */
+.rabbit--surprised .rabbit__mouth--calm { display: none; }
+.rabbit--surprised .rabbit__mouth--open { display: block; }
+.rabbit--surprised .rabbit__pupils { scale: 1.25; }
+.rabbit--surprised .rabbit__ear--left { animation: rabbit-perk-left 1.2s cubic-bezier(.16, 1, .3, 1) forwards; }
+.rabbit--surprised .rabbit__ear--right { animation: rabbit-perk-right 1.2s cubic-bezier(.16, 1, .3, 1) forwards; }
+@keyframes rabbit-nod { 30% { transform: rotate(0) translateY(5%); } 60% { transform: none; } }
+@keyframes rabbit-think { 15%, 85% { transform: rotate(-10deg); } }
+@keyframes rabbit-ear-bend { 15%, 85% { transform: rotate(35deg); } }
+@keyframes rabbit-droop-left { 20%, 100% { transform: rotate(-55deg); } }
+@keyframes rabbit-droop-right { 20%, 100% { transform: rotate(55deg); } }
+@keyframes rabbit-sigh { 20% { transform: translateY(6%); } 40% { transform: translateY(6%) rotate(-4deg); } 55% { transform: translateY(6%) rotate(4deg); } 70%, 100% { transform: translateY(6%); } }
+@keyframes rabbit-tear { 0% { opacity: 0; transform: none; } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(260%); } }
+@keyframes rabbit-look-around { 15%, 35% { transform: rotate(-12deg); } 55%, 75% { transform: rotate(12deg); } 90% { transform: none; } }
+
+/* cover rabbit: a short line above it after every click */
+.cover__rabbit-speech { position: absolute; left: 50%; top: -.5rem; z-index: 1; padding: .5rem .8rem; border-radius: 1rem 1rem 1rem .25rem; background: var(--color-surface); color: var(--color-main); font: 700 .9rem/1.3 var(--font-text); white-space: nowrap; box-shadow: 0 .6rem 1.4rem -.8rem var(--color-shadow); animation: speech-pop 3.5s ease-out forwards; }
+@keyframes speech-pop { 0% { opacity: 0; transform: translateY(.5rem) scale(.9); } 10%, 85% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+/* praise hearts for the delighted rabbit */
+.praise__hearts { position: absolute; left: 50%; top: 4%; pointer-events: none; }
+.praise__hearts i { position: absolute; font-style: normal; font-size: 1.1rem; color: var(--color-accent); opacity: 0; animation: heart-rise 1.4s .4s ease-out forwards; }
+.praise__hearts i:nth-child(1) { left: -2.2rem; } .praise__hearts i:nth-child(2) { left: -.4rem; animation-delay: .55s; } .praise__hearts i:nth-child(3) { left: 1.4rem; animation-delay: .7s; }
+@keyframes heart-rise { 0% { opacity: 0; transform: translateY(.6rem) scale(.6); } 25% { opacity: 1; } 100% { opacity: 0; transform: translateY(-2.6rem) scale(1.15) rotate(-8deg); } }
+.praise--upset .praise__speech-title { color: var(--color-task-2); }
+
+/* wandering rabbit: hops along the bottom of the page, stops to look around, hops away */
+.wanderer { position: fixed; bottom: 0; z-index: 15; display: flex; flex-direction: column; align-items: center; transition: left 3.5s linear; pointer-events: none; }
+.wanderer__rabbit { width: max(4.5rem, 5vw); padding: 0; border: 0; background: none; pointer-events: auto; transform: translateY(8%); }
+.wanderer--moving .rabbit-hop { animation: wanderer-hop .45s ease-in-out infinite; }
+.wanderer__speech { margin-bottom: .2rem; padding: .35rem .7rem; border-radius: 1rem; background: var(--color-surface); font: 700 .85rem var(--font-text); box-shadow: 0 .5rem 1.2rem -.7rem var(--color-shadow); animation: speech-pop 1.8s ease-out forwards; }
+@keyframes wanderer-hop { 0%, 100% { transform: none; } 15% { transform: scale(1.06, .92); } 50% { transform: translateY(-18%) scale(.96, 1.05); } 85% { transform: scale(1.04, .95); } }
+
 /* ===== tablets and phones (checked at 430px) ===== */
 @media (max-width: 860px) {
   .support__content { flex-direction: column; }
@@ -602,7 +664,8 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 @media (prefers-reduced-motion: reduce) {
   .rabbit *, .rabbit, .rabbit-hop, .dropdown, .contents-panel, .overlay, .match__card--wrong { animation: none !important; }
   .flash-card__side { transition: none; }
-  .praise__rabbit-button, .praise__speech { animation: none; }
+  .praise__rabbit-button, .praise__speech, .cover__rabbit-speech { animation: none; }
+  .wanderer { display: none; }
   .praise__rabbit-button { transform: translateY(31%); }
   .praise--big .praise__rabbit-button { transform: none; }
   .praise__confetti { display: none; }

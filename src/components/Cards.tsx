@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { CardTests, Unit, VocabItem } from "../types";
 import ExerciseView, { Head } from "./Exercises";
-import { cheer } from "./Rabbit";
+import { cheer, rabbitSay } from "./Rabbit";
 
 type Card = { en: string; ru: string; ex?: string };
 const shuffle = <T,>(items: T[]) => [...items].sort(() => Math.random() - 0.5);
@@ -18,7 +18,11 @@ export function FlashCards({ cards }: { cards: Card[] }) {
   const [deck, setDeck] = useState(cards);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
-  const go = (step: number) => { setFlipped(false); setIndex((index + step + deck.length) % deck.length); };
+  const go = (step: number) => {
+    const next = (index + step + deck.length) % deck.length;
+    if (next === deck.length - 1) rabbitSay("pleased", "That's all the cards!", `${deck.length} cards. Now try Match the pairs.`);
+    setFlipped(false); setIndex(next);
+  };
   const card = deck[index];
   if (!card) return null;
   return <div className="flash-cards">

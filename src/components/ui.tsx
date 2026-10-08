@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Img, Text } from "./text";
 import { RichText } from "../types";
+import { rabbitSay } from "./Rabbit";
 
 export const Banner = ({ kick, title, lede, pics = [] }: { kick: string; title: string; lede?: string; pics?: string[] }) => (
   <header className="page-banner">
@@ -22,7 +23,7 @@ export function Timer({ seconds, label }: { seconds: number; label: string }) {
   const [running, setRunning] = useState(false);
   useEffect(() => {
     if (!running) return;
-    if (left <= 0) { setRunning(false); return; }
+    if (left <= 0) { setRunning(false); rabbitSay("surprised", "Time's up!", "How did it go?"); return; }
     const id = setTimeout(() => setLeft(l => l - 1), 1000);
     return () => clearTimeout(id);
   }, [running, left]);

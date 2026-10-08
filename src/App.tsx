@@ -8,7 +8,7 @@ import { TypologyBank, UnitView } from "./components/Topic";
 import Revision, { Review } from "./components/Revision";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
-import { Praise } from "./components/Rabbit";
+import { Praise, Wanderer } from "./components/Rabbit";
 import { View, fromHash, label, toHash } from "./route";
 
 const universal = universalData as unknown as Universal;
@@ -85,6 +85,7 @@ export default function App() {
         {view.k === "review" && <Review key={`${view.t}-${view.i}`} topic={topics[view.t]} i={view.i} />}
       </main>
       <Praise />
+      {view.k !== "home" && <Wanderer />}
     </div>
   );
 }
