@@ -496,17 +496,35 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .rabbit { display: block; overflow: visible; }
 .rabbit--logo { width: 2.6rem; height: 2.6rem; margin-top: -.4rem; }
 .rabbit--reader { position: relative; width: 100%; max-width: 24rem; }
-.rabbit--sitting { width: 100%; height: auto; filter: drop-shadow(1.5px 0 0 var(--color-rabbit-shadow)) drop-shadow(-1.5px 0 0 var(--color-rabbit-shadow)) drop-shadow(0 -1.5px 0 var(--color-rabbit-shadow)); }
-.rabbit__fur { fill: var(--color-rabbit-fur); }
+.rabbit--sitting { width: 100%; height: auto; filter: drop-shadow(0 .3rem .45rem var(--color-shadow)); }
+/* volume: gradients defined in Rabbit.tsx (Gradients), their colours set here */
+.rabbit__light { stop-color: var(--color-surface); }
+.rabbit__tone { stop-color: var(--color-rabbit-fur); }
+.rabbit__edge { stop-color: var(--color-rabbit-shadow); }
+.rabbit__pink-light { stop-color: var(--color-rabbit-pink); }
+.rabbit__pink-edge { stop-color: var(--color-accent); stop-opacity: .55; }
+.rabbit__eye-light { stop-color: var(--color-main-hover); }
+.rabbit__eye-edge { stop-color: var(--color-main); }
+.rabbit__nose-light { stop-color: var(--color-accent-on-main); }
+.rabbit__nose-edge { stop-color: var(--color-accent); }
+.rabbit__fur { fill: url(#rabbit-fur); }
+.rabbit__ear-inner { fill: url(#rabbit-ear); }
+.rabbit__contact-shadow { fill: var(--color-rabbit-shadow); opacity: .7; filter: blur(2px); }
+.rabbit__ground--soft { filter: blur(2px); }
+.rabbit__nose-glint { fill: var(--color-surface); opacity: .8; }
+.rabbit__eye-glint--small { opacity: .7; }
 .rabbit__fur--outlined, .rabbit__toe-lines { stroke: var(--color-rabbit-shadow); stroke-linecap: round; }
 .rabbit__shadow { fill: var(--color-rabbit-shadow); opacity: .6; }
 .rabbit__body.rabbit__shadow { opacity: 1; }
 .rabbit__pink { fill: var(--color-rabbit-pink); }
-.rabbit__belly, .rabbit__book-page { fill: var(--color-surface); }
+.rabbit__cheek { filter: blur(.8px); }
+.rabbit__belly { fill: url(#rabbit-belly); }
+.rabbit__book-page { fill: var(--color-surface); }
 .rabbit__book-page--right { fill: var(--color-page-background); }
-.rabbit__eye { fill: var(--color-main); }
+.rabbit__eye { fill: url(#rabbit-eye); }
 .rabbit__eye-glint { fill: var(--color-surface); }
-.rabbit__nose, .rabbit__book-cover { fill: var(--color-accent); }
+.rabbit__nose { fill: url(#rabbit-nose); }
+.rabbit__book-cover { fill: var(--color-accent); }
 .rabbit__mouth { fill: none; stroke: var(--color-main); stroke-linecap: round; }
 .rabbit__book-lines { fill: none; stroke: var(--color-rabbit-shadow); stroke-linecap: round; }
 .rabbit__ground { fill: var(--color-main); opacity: .35; }

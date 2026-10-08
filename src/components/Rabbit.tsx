@@ -27,16 +27,28 @@ function useLook(ref: RefObject<SVGSVGElement>) {
   }, [ref]);
 }
 
+/** Light and shade that make the rabbit look round: light from the upper left, darker towards the edges.
+    Stop colours come from CSS (.rabbit__light, .rabbit__tone, .rabbit__edge…); every rabbit svg carries the same defs */
+const Gradients = () => (
+  <defs>
+    <radialGradient id="rabbit-fur" cx=".36" cy=".3" r=".85"><stop offset="0" className="rabbit__light" /><stop offset=".45" className="rabbit__tone" /><stop offset="1" className="rabbit__edge" /></radialGradient>
+    <radialGradient id="rabbit-belly" cx=".45" cy=".35" r=".75"><stop offset="0" className="rabbit__light" /><stop offset="1" className="rabbit__tone" /></radialGradient>
+    <radialGradient id="rabbit-ear" cx=".5" cy=".4" r=".7"><stop offset="0" className="rabbit__pink-light" /><stop offset="1" className="rabbit__pink-edge" /></radialGradient>
+    <radialGradient id="rabbit-eye" cx=".35" cy=".3" r=".8"><stop offset="0" className="rabbit__eye-light" /><stop offset="1" className="rabbit__eye-edge" /></radialGradient>
+    <radialGradient id="rabbit-nose" cx=".35" cy=".3" r=".8"><stop offset="0" className="rabbit__nose-light" /><stop offset="1" className="rabbit__nose-edge" /></radialGradient>
+  </defs>
+);
+
 /** Head with ears, drawn in a 64×64 box; every rabbit scales it. Faces for all moods are drawn, CSS shows the right one */
 const Head = () => (
   <g className="rabbit__head">
     <g className="rabbit__ear rabbit__ear--left">
       <ellipse className="rabbit__fur" cx="24" cy="15" rx="6.5" ry="14" transform="rotate(-12 24 15)" />
-      <ellipse className="rabbit__pink" cx="24" cy="16.5" rx="3.2" ry="10" transform="rotate(-12 24 16.5)" />
+      <ellipse className="rabbit__ear-inner" cx="24" cy="16.5" rx="3.2" ry="10" transform="rotate(-12 24 16.5)" />
     </g>
     <g className="rabbit__ear rabbit__ear--right">
       <ellipse className="rabbit__fur" cx="40" cy="15" rx="6.5" ry="14" transform="rotate(12 40 15)" />
-      <ellipse className="rabbit__pink" cx="40" cy="16.5" rx="3.2" ry="10" transform="rotate(12 40 16.5)" />
+      <ellipse className="rabbit__ear-inner" cx="40" cy="16.5" rx="3.2" ry="10" transform="rotate(12 40 16.5)" />
     </g>
     <ellipse className="rabbit__fur" cx="32" cy="41" rx="18" ry="16" />
     <ellipse className="rabbit__shadow" cx="32" cy="49" rx="9" ry="6" opacity=".55" />
@@ -47,11 +59,14 @@ const Head = () => (
       <ellipse className="rabbit__eye" cx="39" cy="39" rx="2.5" ry="3.1" />
       <circle className="rabbit__eye-glint" cx="25.9" cy="37.9" r=".9" />
       <circle className="rabbit__eye-glint" cx="39.9" cy="37.9" r=".9" />
+      <circle className="rabbit__eye-glint rabbit__eye-glint--small" cx="24.2" cy="40.5" r=".45" />
+      <circle className="rabbit__eye-glint rabbit__eye-glint--small" cx="38.2" cy="40.5" r=".45" />
     </g></g>
     <path className="rabbit__line rabbit__happy-eyes" d="M22.3 40q2.7-3.4 5.4 0M36.3 40q2.7-3.4 5.4 0" strokeWidth="1.4" />
     <path className="rabbit__line rabbit__brows" d="M21.3 33.6l5.6-1.7M42.7 33.6l-5.6-1.7" strokeWidth="1.2" />
     <path className="rabbit__tear" d="M41.2 42.2q1.4 2.3 0 3.3q-1.4-1 0-3.3Z" />
     <path className="rabbit__nose" d="M29.6 44.4Q32 43.2 34.4 44.4Q33.2 46.7 32 46.9Q30.8 46.7 29.6 44.4Z" />
+    <ellipse className="rabbit__nose-glint" cx="31.2" cy="44.5" rx=".8" ry=".4" />
     <path className="rabbit__line rabbit__mouth rabbit__mouth--calm" d="M32 46.9v1.5m0 0q-1.9 1.7-3.5.5m3.5-.5q1.9 1.7 3.5.5" strokeWidth="1" />
     <path className="rabbit__line rabbit__mouth rabbit__mouth--smile" d="M28.2 47.4q3.8 4 7.6 0" strokeWidth="1.2" />
     <path className="rabbit__line rabbit__mouth rabbit__mouth--sad" d="M29 49.8q3-2.4 6 0" strokeWidth="1.2" />
@@ -62,11 +77,14 @@ const Head = () => (
 /** Whole rabbit: big head, small body. Used for praise and for the wandering rabbit */
 const SittingRabbit = ({ svgRef, mood }: { svgRef?: RefObject<SVGSVGElement>; mood?: Mood }) => (
   <svg ref={svgRef} className={`rabbit rabbit--sitting${mood ? ` rabbit--${mood}` : ""}`} viewBox="0 0 120 156" aria-hidden="true">
+    <Gradients />
+    <ellipse className="rabbit__ground rabbit__ground--soft" cx="60" cy="150" rx="30" ry="4" />
     <g className="rabbit__body">
       <ellipse className="rabbit__fur" cx="60" cy="120" rx="22" ry="24" />
       <ellipse className="rabbit__belly" cx="60" cy="124" rx="13" ry="15" />
       <ellipse className="rabbit__fur rabbit__fur--outlined" cx="46" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
       <ellipse className="rabbit__fur rabbit__fur--outlined" cx="74" cy="144" rx="11" ry="5.5" strokeWidth="1.2" />
+      <ellipse className="rabbit__contact-shadow" cx="60" cy="98" rx="21" ry="6" />
     </g>
     <g transform="translate(8.8 2) scale(1.6)"><Head /></g>
     <g className="rabbit__paws">
@@ -80,7 +98,7 @@ const SittingRabbit = ({ svgRef, mood }: { svgRef?: RefObject<SVGSVGElement>; mo
 export function RabbitMark() {
   const ref = useRef<SVGSVGElement>(null);
   useLook(ref);
-  return <svg ref={ref} className="rabbit rabbit--logo" viewBox="0 0 64 64" aria-hidden="true"><Head /></svg>;
+  return <svg ref={ref} className="rabbit rabbit--logo" viewBox="0 0 64 64" aria-hidden="true"><Gradients /><Head /></svg>;
 }
 
 /* What the cover rabbit does when it is clicked, in turn */
@@ -103,8 +121,10 @@ export function RabbitReader() {
     {reaction && <span key={n} className="cover__rabbit-speech" role="status">{reaction.text}</span>}
     <span key={`hop${n}`} className={`rabbit-hop${n ? " rabbit-hop--active" : ""}`}>
       <svg ref={ref} className={`rabbit rabbit--reader rabbit--${reaction ? reaction.mood : "calm"}`} viewBox="0 0 240 240" aria-hidden="true">
+        <Gradients />
         <ellipse className="rabbit__ground" cx="120" cy="222" rx="92" ry="9" />
-        <ellipse className="rabbit__body rabbit__shadow" cx="120" cy="180" rx="42" ry="36" />
+        <ellipse className="rabbit__body rabbit__fur" cx="120" cy="180" rx="42" ry="36" />
+        <ellipse className="rabbit__contact-shadow" cx="120" cy="146" rx="38" ry="9" />
         <g transform="translate(38 0) scale(2.56)"><Head /></g>
         <path className="rabbit__book-cover" d="M44 184Q83 174 120 190Q157 174 196 184V218Q157 209 120 223Q83 209 44 218Z" />
         <path className="rabbit__book-page" d="M52 180Q88 170 120 186V216Q88 202 52 210Z" />
