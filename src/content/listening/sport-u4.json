@@ -1,0 +1,32 @@
+{
+  "id": "sport-u4",
+  "module": "sport",
+  "unit": 4,
+  "task": 1,
+  "title": "Traditional sports: six opinions",
+  "speakers": {"Speaker A": "male1", "Speaker B": "female1", "Speaker C": "male2", "Speaker D": "female2", "Speaker E": "male3", "Speaker F": "female3"},
+  "script": [
+    {"who": "Announcer", "text": "Speaker A"},
+    {"who": "Speaker A", "text": "Our grandfather taught my brother and me to play gorodki when we were about eight. Every summer the whole family gathers at his dacha, and we play for hours. He learnt the game from his own father, and now my cousin's little son is starting to throw the bat too. If it wasn't for our family, I doubt that I'd even know such a game existed."},
+    {"who": "Announcer", "text": "Speaker B"},
+    {"who": "Speaker B", "text": "Honestly, most of my classmates would laugh if I suggested playing lapta. They say it's something from our grandparents' time and that you can't make any money from it. They'd rather watch football on their phones or play computer games. I think it's a pity, but I can see why they feel that way. Nobody advertises these games, and they never appear on TV."},
+    {"who": "Announcer", "text": "Speaker C"},
+    {"who": "Speaker C", "text": "For me, sports like gorodki and lapta are a living piece of our history. Our ancestors played them for centuries, and if we stop, we'll simply lose something that belongs only to us. Every country has its own games, and I'm proud of ours. Museums can keep old objects, but a game survives only while people actually play it."},
+    {"who": "Announcer", "text": "Speaker D"},
+    {"who": "Speaker D", "text": "I work as a PE teacher, and I've started including sambo and lapta in my lessons. The children love them, and they don't need expensive equipment. I think every school should do the same. Otherwise, many pupils will never even try these games, because they simply don't know about them. A couple of lessons a month would be enough to arouse their interest."},
+    {"who": "Announcer", "text": "Speaker E"},
+    {"who": "Speaker E", "text": "What I like about gorodki is that anyone can play it. At our local club there's a ten-year-old girl and a retired engineer who's seventy-eight, and they often play on the same team. You don't have to be fast or strong, and nobody gets hurt. After a game we all have tea together, and no one asks how old you are."},
+    {"who": "Announcer", "text": "Speaker F"},
+    {"who": "Speaker F", "text": "People think gorodki is easy, but try hitting a wooden piece from across the court! You need a steady hand, good concentration and a lot of patience. I've noticed that since I started playing, I make fewer mistakes at school as well. Sambo taught my little brother to stay calm under pressure. These old games train your mind just as much as your body."}
+  ],
+  "options": [
+    "Traditional sports are an important part of a nation's heritage.",
+    "People of all ages can enjoy traditional games.",
+    "Many teenagers consider traditional sports to be out of date.",
+    "Traditional sports help to develop useful skills.",
+    "Schools should include traditional sports in their lessons.",
+    "Families keep sporting traditions alive.",
+    "Traditional sports are more dangerous than modern ones."
+  ],
+  "key": [6, 3, 1, 5, 2, 4]
+}

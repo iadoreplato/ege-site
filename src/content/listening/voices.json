@@ -1,0 +1,11 @@
+{
+  "_help": "Список голосов, из которых задания выбирают говорящих. Любые роли можно назначать любым говорящим в поле speakers задания: в беседе или интервью могут говорить два мужчины или две женщины. Один и тот же ID можно вписать в несколько ролей, но в одном задании у разных говорящих голоса должны отличаться.",
+  "announcer": "ueaEAMZOTexNDrB5caWI",
+  "announcer_ru": "hjdruXAvBENDZvoqzaNy",
+  "female1": "ii0s2u4R3UFnxKL6DOrz",
+  "female2": "FF59babHL8N8gfTgtBMT",
+  "female3": "ZtcPZrt9K4w8e1OB9M6w",
+  "male1": "s3TPKV1kjDlVtZbl4Ksh",
+  "male2": "lUTamkMw7gOzZbFIwmq4",
+  "male3": "wWWn96OtTHu1sn8SRGEr"
+}

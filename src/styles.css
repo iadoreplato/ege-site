@@ -1,4 +1,7 @@
 /* ЦВЕТА САЙТА. Все цвета задаются только здесь: чтобы поменять цвет, поменяйте значение. */
+/* Как устроен файл: сначала переменные (:root), потом разделы по частям сайта. Имена классов — по БЭМ:
+   блок__элемент--модификатор (exercise__header, option--correct). Модификаторы состояний (--correct, --active…)
+   ставит код компонентов. Разделы для телефонов и для «без анимации» — в самом конце. */
 :root {
   /* фон и поверхности */
   --color-page-background: #FBF7F1;  /* фон страницы */
@@ -36,7 +39,7 @@
   --font-accent: "Playfair Display", Georgia, serif;
 }
 
-/* ===== base: 1rem grows with the screen, so everything is larger on wide monitors ===== */
+/* ===== base: 1rem grows with the screen, so everything is larger on wide monitors ===== · основа: 1rem растёт с шириной экрана, поэтому на большом мониторе всё крупнее */
 html { font-size: clamp(1rem, 0.4vw + 0.65rem, 1.4rem); scroll-padding-top: 5rem; accent-color: var(--color-accent); scrollbar-color: var(--color-border) var(--color-page-background); }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--color-page-background); color: var(--color-main); font: 1rem/1.5 var(--font-text); }
@@ -47,7 +50,7 @@ b { font-weight: 700; }
 input, textarea { max-width: 100%; font: 1rem var(--font-text); color: var(--color-main); background: var(--color-page-background); border: 1px solid var(--color-border); border-radius: .5rem; padding: .4rem .65rem; }
 input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-color: var(--color-accent); }
 
-/* ===== layout ===== */
+/* ===== layout ===== · раскладка страницы */
 .site__main { padding: 1.75rem clamp(1rem, 3vw, 3rem) 9rem; }
 .page { max-width: 90rem; margin: 0 auto; }
 .page__blocks > * { margin-bottom: .9rem; }
@@ -57,7 +60,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .note { margin: .5rem 0 0; font-size: .9rem; color: var(--color-text-muted); }
 .error-text { color: var(--color-accent-hover); font-size: .9rem; }
 
-/* ===== buttons ===== */
+/* ===== buttons ===== · кнопки */
 .button { display: inline-block; border: 0; border-radius: .75rem; text-decoration: none; font-weight: 700; }
 .button--primary { background: var(--color-accent); color: var(--color-surface); padding: .75rem 1.4rem; font-weight: 800; }
 .button--primary:hover { background: var(--color-accent-hover); }
@@ -65,7 +68,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .button--secondary { background: var(--color-main); color: var(--color-surface); padding: .35rem .8rem; font-size: .85rem; border-radius: .5rem; }
 .button--secondary:hover { background: var(--color-main-hover); }
 
-/* ===== site header ===== */
+/* ===== site header ===== · шапка сайта (Header.tsx) */
 .site-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 1.75rem; height: 4rem; padding: 0 clamp(1rem, 3vw, 3rem); background: var(--color-main); color: var(--color-on-main); box-shadow: 0 .4rem 1.1rem -.6rem var(--color-shadow); }
 .site-header__logo { display: flex; align-items: center; gap: .6rem; flex: none; color: var(--color-on-main); text-decoration: none; font: 800 1.2rem var(--font-text); }
 .site-header__logo-dot { font-style: normal; color: var(--color-accent-on-main); }
@@ -79,7 +82,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .site-header__contents-button { display: none; align-items: center; gap: .5rem; margin-left: auto; padding: .55rem .9rem; border: 0; border-radius: .6rem; background: var(--color-main-hover); color: var(--color-on-main); font-weight: 700; font-size: .9rem; }
 .site-header__contents-icon { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
 
-/* drop-down menu (header menus, Task 11 answers) */
+/* drop-down menu (header menus, Task 11 answers) · выпадающее меню (меню шапки, ответы задания 11) */
 .dropdown { z-index: 30; min-width: 18rem; max-width: min(24rem, calc(100vw - 1.5rem)); max-height: var(--radix-dropdown-menu-content-available-height); overflow-y: auto; padding: .4rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: .9rem; box-shadow: 0 1rem 2.5rem -.75rem var(--color-shadow); color: var(--color-main); transform-origin: var(--radix-dropdown-menu-content-transform-origin); animation: dropdown-open .18s cubic-bezier(.16, 1, .3, 1); }
 .dropdown--numbers { min-width: 0; display: grid; grid-template-columns: repeat(7, 2.4rem); gap: .25rem; }
 .dropdown__title { padding: .5rem .65rem .65rem; margin-bottom: .25rem; border-bottom: 1px solid var(--color-border); font: italic 600 .9rem/1.35 var(--font-accent); color: var(--color-main-hover); }
@@ -90,7 +93,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .dropdown__number { width: 1.1rem; flex: none; text-align: right; color: var(--color-accent); font-weight: 700; font-variant-numeric: tabular-nums; }
 @keyframes dropdown-open { from { opacity: 0; transform: translateY(-.4rem) scale(.98); } }
 
-/* contents panel (phones) */
+/* contents panel (phones) · панель «Contents» (главное меню на телефонах) */
 .overlay { position: fixed; inset: 0; z-index: 40; background: var(--color-shadow); animation: fade-in .2s ease-out; }
 .contents-panel { position: fixed; z-index: 41; top: 0; right: 0; bottom: 0; width: min(28rem, 100%); overflow-y: auto; padding: 0 1rem 2.5rem; background: var(--color-page-background); box-shadow: -1.25rem 0 2.5rem -1.25rem var(--color-shadow); outline: none; animation: panel-open .28s cubic-bezier(.16, 1, .3, 1); }
 .contents-panel__header { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; padding: .9rem 0 .75rem; background: var(--color-page-background); }
@@ -100,7 +103,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 @keyframes fade-in { from { opacity: 0; } }
 @keyframes panel-open { from { transform: translateX(2.5rem); opacity: 0; } }
 
-/* ===== cover ===== */
+/* ===== cover ===== · обложка (Cover.tsx) */
 .cover { max-width: 96rem; margin: 0 auto; }
 .cover__hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: center; gap: clamp(1.25rem, 3vw, 3rem); padding: clamp(1.75rem, 4vw, 4rem); border-radius: 1.75rem; background: var(--color-main); color: var(--color-on-main); overflow: hidden; }
 .cover__title { margin: 0; font: 800 clamp(2.9rem, 6vw, 5.5rem)/.94 var(--font-text); letter-spacing: -.035em; text-wrap: balance; }
@@ -121,7 +124,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .cover__contents { margin-top: 3rem; }
 .cover__contents-title { margin: 0 0 1.25rem; font: italic 600 clamp(2rem, 3vw, 2.6rem) var(--font-accent); }
 
-/* table of contents (cover and phone panel) */
+/* table of contents (cover and phone panel) · оглавление (на обложке и в панели) */
 .contents { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 1.25rem; align-items: start; }
 .contents__module { padding: 1.4rem 1.4rem .9rem; border: 1px solid var(--color-border); border-radius: 1.25rem; background: var(--color-surface); }
 .contents__module-header { display: flex; gap: .9rem; align-items: flex-start; padding-bottom: .9rem; margin-bottom: .5rem; border-bottom: 1px solid var(--color-border); }
@@ -140,7 +143,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .contents__link-tag { flex: none; font-size: .8rem; color: var(--color-text-muted); white-space: nowrap; }
 .contents__last-badge { flex: none; padding: .2rem .55rem; border-radius: 999px; background: var(--color-accent); color: var(--color-surface); font: normal 700 .75rem var(--font-text); white-space: nowrap; }
 
-/* ===== page banner and unit tabs ===== */
+/* ===== page banner and unit tabs ===== · баннер страницы и вкладки юнита */
 .page-banner { display: flex; align-items: center; gap: 1rem; margin-bottom: .9rem; padding: 1.4rem 1.6rem; border-radius: 1.25rem; background: var(--color-main); color: var(--color-on-main); }
 .page-banner__text { flex: 1; }
 .page-banner__kicker { font: 800 .7rem var(--font-text); letter-spacing: .24em; text-transform: uppercase; color: var(--color-accent-on-main); }
@@ -153,7 +156,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .unit-tabs__tab--active { background: var(--color-accent); color: var(--color-surface); }
 .unit-tabs__number { margin-right: .4rem; }
 
-/* ===== cards and simple blocks ===== */
+/* ===== cards and simple blocks ===== · карточки и простые блоки */
 .info-card { margin-bottom: .9rem; padding: 1rem 1.1rem; border: 1px solid var(--color-border); border-radius: 1rem; background: var(--color-surface); }
 .info-card--soft { border-color: transparent; background: var(--color-surface-muted); }
 .info-card__header { display: flex; align-items: center; gap: .5rem; margin-bottom: .6rem; font: 800 1rem var(--font-text); }
@@ -175,7 +178,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .useful-language { display: flex; align-items: baseline; gap: .6rem; margin: .6rem 0 .25rem; padding: .5rem .75rem; border-radius: .75rem; background: var(--color-surface-muted); }
 .useful-language__title { flex: none; font: 800 .7rem var(--font-text); letter-spacing: .1em; text-transform: uppercase; color: var(--color-accent); }
 
-/* content markup: [[key element]], (U), sb / sth */
+/* content markup: [[key element]], (U), sb / sth · оформление текста из JSON: ключевые элементы, значок U, пометы sb / sth (text.tsx) */
 .key-element { padding: 0 .2rem; border-radius: .25rem; background: var(--color-highlight); color: var(--color-accent-hover); font-weight: 800; }
 .word-list__example .key-element { padding: 0; border-radius: 0; background: none; border-bottom: 2px solid var(--color-accent-on-main); }
 .uncountable { display: inline-grid; place-items: center; flex: none; width: 1rem; height: 1rem; margin-left: .25rem; padding: 0; border-radius: 50%; background: var(--color-task-2); color: var(--color-surface); font: 800 .55rem/1 var(--font-text); font-style: normal; vertical-align: .05em; }
@@ -184,7 +187,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .gap-line { display: inline-block; width: 3rem; height: .75rem; margin: 0 .2rem; border-bottom: 2px solid var(--color-accent); }
 .legend { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin: 0 0 .5rem; font-size: .8rem; color: var(--color-text-muted); }
 
-/* ===== universal block (exam pages) ===== */
+/* ===== universal block (exam pages) ===== · универсальный блок, страницы «The exam» (Universal.tsx) */
 .table-scroll { overflow-x: auto; }
 .info-table, .criteria-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .info-table__heading, .criteria-table__heading { padding: .4rem; border-bottom: 1px solid var(--color-border); text-align: left; font: 800 .7rem var(--font-text); letter-spacing: .08em; text-transform: uppercase; color: var(--color-accent); }
@@ -259,7 +262,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .compare-cards__title { display: block; font: 800 1.4rem var(--font-text); color: var(--color-accent); }
 .compare-cards__example { display: block; margin-top: .4rem; font: italic .95rem var(--font-accent); }
 
-/* ===== vocabulary ===== */
+/* ===== vocabulary ===== · лексика (Vocab.tsx) */
 .picture-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; margin-bottom: .5rem; }
 .picture-grid--columns-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .picture-grid--columns-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .picture-grid--columns-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); } .picture-grid--columns-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
@@ -286,7 +289,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .three-types__title { font: 800 1.25rem var(--font-text); }
 .three-types__subtitle { margin-bottom: .4rem; font: 800 .7rem var(--font-text); letter-spacing: .14em; text-transform: uppercase; color: var(--color-accent); }
 .three-types__text { margin: 0; font-size: .9rem; }
-/* table "where sport happens": rows with fixed columns, as in the original design; on narrow screens it scrolls inside its frame */
+/* table "where sport happens": rows with fixed columns, as in the original design; on narrow screens it scrolls inside its frame · таблица «где занимаются спортом»: на узком экране прокручивается внутри рамки */
 .venue-table { overflow-x: auto; padding: .25rem 1rem; border: 1px solid var(--color-border); border-radius: 1rem; background: var(--color-surface); }
 .venue-table__row { display: flex; align-items: center; gap: .75rem; min-width: 45rem; padding: .5rem 0; border-bottom: 1px dashed var(--color-border); }
 .venue-table__row:last-child { border-bottom: 0; }
@@ -301,7 +304,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .venue-table__row--header .venue-table__preposition { font: inherit; color: inherit; }
 .venue-table__note { flex: 0 0 10.6rem; font-size: .8rem; color: var(--color-text-muted); }
 
-/* flash cards: part 1 of the Memorise tab */
+/* flash cards: part 1 of the Memorise tab · карточки: часть 1 вкладки Memorise (Cards.tsx) */
 .flash-cards { display: grid; justify-items: center; gap: .75rem; margin-bottom: 1rem; }
 .flash-card { position: relative; width: min(36rem, 100%); height: 15rem; padding: 0; border: 0; background: none; perspective: 75rem; }
 .flash-card__side { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .6rem; padding: 1.25rem; border-radius: 1.4rem; text-align: center; backface-visibility: hidden; transition: transform .5s cubic-bezier(.3, .7, .2, 1); }
@@ -318,18 +321,18 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .flash-cards__controls .button--secondary { padding: .5rem .9rem; font-size: .9rem; }
 .flash-cards__counter { min-width: 4.5rem; text-align: center; font-weight: 800; }
 
-/* ===== exercises ===== */
+/* ===== exercises ===== · упражнения (Exercises.tsx) */
 .exercise { margin-bottom: 1rem; padding: 1.1rem 1.25rem; border: 1px solid var(--color-border); border-radius: 1.1rem; background: var(--color-surface); }
 .exercise__header { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
 .exercise__number { flex: 0 0 2.1rem; height: 2.1rem; border-radius: .6rem; background: var(--color-accent); color: var(--color-surface); text-align: center; font: 800 1rem/2.1rem var(--font-text); }
 .exercise__title { font: 800 1.05rem var(--font-text); }
 .exercise__instruction { font-size: .85rem; color: var(--color-text-muted); }
-/* items fill the width: two columns on wide screens, one on narrow ones */
+/* items fill the width: two columns on wide screens, one on narrow ones · пункты: две колонки на широком экране, одна на узком */
 .exercise__items { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(32rem, 100%), 1fr)); column-gap: 2.5rem; }
 .exercise__item { display: flex; gap: .4rem; padding: .6rem 0; border-bottom: 1px dashed var(--color-border); }
 .exercise__item-number { flex: 0 0 1.6rem; font: normal 800 1rem var(--font-text); color: var(--color-accent); }
 .exercise__content { flex: 1; min-width: 0; }
-/* collocations: number · phrase · options, the phrase column fits the phrase so the options use the rest of the line */
+/* collocations: number · phrase · options, the phrase column fits the phrase so the options use the rest of the line · сочетания: номер · фраза · варианты */
 .exercise__item--collocation { display: grid; grid-template-columns: 1.6rem minmax(12rem, max-content) 1fr; align-items: center; column-gap: 1rem; }
 .exercise__options { display: flex; flex-wrap: wrap; gap: .4rem; }
 .exercise__item--sentence { font: italic 1.05rem/1.8 var(--font-accent); }
@@ -354,7 +357,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .answer-textarea { width: 100%; }
 .answer-textarea--long { font: 1rem/1.6 var(--font-accent); }
 
-/* match the pairs */
+/* match the pairs · «Match the pairs» (Cards.tsx) */
 .match { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
 .match__column { display: grid; align-content: start; gap: .5rem; }
 .match__card { min-height: 3rem; padding: .6rem .75rem; border: 1px solid var(--color-border); border-radius: .75rem; background: var(--color-surface); text-align: left; font-size: .95rem; }
@@ -365,7 +368,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .match__card--wrong { background: var(--color-wrong-background); animation: shake .4s; }
 @keyframes shake { 25% { transform: translateX(-.25rem); } 75% { transform: translateX(.25rem); } }
 
-/* ===== exam tasks ===== */
+/* ===== exam tasks ===== · экзаменационные задания (Speech.tsx) */
 .exam-task { overflow: hidden; margin-bottom: 1.1rem; border: 1px solid var(--color-border); border-radius: 1.1rem; background: var(--color-surface); }
 .exam-task__header { display: flex; align-items: center; gap: .6rem; padding: .6rem 1rem; background: var(--color-main); color: var(--color-surface); }
 .exam-task--task-1 .exam-task__header { background: var(--color-task-1); } .exam-task--task-2 .exam-task__header { background: var(--color-task-2); }
@@ -436,8 +439,15 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .ai-check__criterion { padding: .4rem 0; border-bottom: 1px dashed var(--color-border); }
 .ai-check__comment { margin: .25rem 0 0; font-size: .9rem; }
 .ai-check__corrections { margin: .25rem 0 0; padding-left: 1.1rem; font-size: .9rem; }
+.ai-check__mistake { margin-bottom: .35rem; }
+.ai-check__wrong { color: var(--color-accent-hover); }
+.ai-check__right { color: var(--color-correct); }
+.ai-check__type { margin-left: .4rem; padding: 0 .4rem; border-radius: .4rem; background: var(--color-surface-muted); font-size: .75rem; color: var(--color-text-muted); }
+.ai-check__explanation { display: block; color: var(--color-text-muted); }
+.ai-check__summary { font-weight: 700; cursor: pointer; }
+.ai-check__corrected { margin: .4rem 0 0; white-space: pre-wrap; font-size: .9rem; }
 
-/* timer and voice recorder */
+/* timer and voice recorder · таймер и диктофон (ui.tsx, Recorder.tsx) */
 .speaking-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin: .5rem 0; }
 .timer { display: inline-flex; align-items: center; gap: .5rem; margin-bottom: .6rem; padding: .25rem .4rem .25rem .9rem; border-radius: 2rem; background: var(--color-page-background); }
 .speaking-tools .timer { margin-bottom: 0; }
@@ -453,7 +463,52 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .recorder__audio { height: 2.1rem; max-width: 16rem; }
 @keyframes blink { 50% { opacity: .2; } }
 
-/* ===== comparison bank (Task 4) ===== */
+/* ===== listening ===== · аудирование (Player.tsx, Listening.tsx). Высота кнопок не меньше 2.75rem (44px) — удобно пальцем */
+.player { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin: .9rem 0; padding: .6rem; border-radius: .9rem; background: var(--color-surface-muted); }
+.player__play { flex: none; width: 2.75rem; height: 2.75rem; border: 0; border-radius: 50%; background: var(--color-accent); color: var(--color-surface); font-size: .95rem; }
+.player__play:hover { background: var(--color-accent-hover); }
+.player__skip { flex: none; min-height: 2.75rem; padding: 0 .65rem; border: 1px solid var(--color-border); border-radius: .6rem; background: var(--color-surface); font-size: .8rem; font-weight: 700; }
+.player__bar { flex: 1 1 8rem; min-width: 0; height: 2.75rem; padding: 0; border: 0; background: none; cursor: pointer; }
+.player__time { flex: none; font-size: .85rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.listening__title { margin: 0 0 .35rem; font: 800 1.05rem var(--font-text); }
+.listening__instruction { margin: 0; font-size: .95rem; }
+.listening__options { margin: 0 0 .9rem; padding-left: 1.5rem; }
+.listening__options li { margin: .2rem 0; }
+.listening__row { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .6rem; padding: .6rem 0; border-top: 1px solid var(--color-border); }
+.listening__label { flex: none; min-width: 2rem; padding: .2rem .45rem; border-radius: .4rem; background: var(--color-surface-muted); text-align: center; font-weight: 800; }
+.listening__row--right .listening__label { background: var(--color-correct); color: var(--color-surface); }
+.listening__row--wrong .listening__label { background: var(--color-accent-hover); color: var(--color-surface); }
+.listening__text { flex: 1 1 14rem; min-width: 0; margin: 0; }
+.listening__select { min-height: 2.75rem; min-width: 4.5rem; padding: 0 .5rem; border: 1px solid var(--color-border); border-radius: .6rem; background: var(--color-surface); font: 1rem var(--font-text); color: var(--color-main); }
+.listening__row--right .listening__select { border-color: var(--color-correct); background: var(--color-correct-background); }
+.listening__row--wrong .listening__select { border-color: var(--color-accent-hover); background: var(--color-wrong-background); }
+.listening__select--repeat { border: 2px dashed var(--color-accent-hover); }
+.listening__hint { font-size: .8rem; color: var(--color-text-muted); }
+.listening__choices { flex: 1 1 100%; display: flex; flex-wrap: wrap; gap: .4rem; }
+.listening--task-3 .listening__choices { flex-direction: column; }
+.listening__choice { display: flex; align-items: center; gap: .45rem; min-height: 2.75rem; padding: .35rem .75rem; border: 1px solid var(--color-border); border-radius: .6rem; background: var(--color-surface); cursor: pointer; }
+.listening__choice:hover { border-color: var(--color-accent); }
+.listening__choice input { flex: none; margin: 0; padding: 0; }
+.listening__choice b { color: var(--color-accent); }
+.listening__choice--right { border-color: var(--color-correct); background: var(--color-correct-background); }
+.listening__choice--wrong { border-color: var(--color-accent-hover); background: var(--color-wrong-background); }
+.listening__choice--key { box-shadow: inset 0 0 0 2px var(--color-correct); }
+.listening .exercise__check-bar { flex-wrap: wrap; }
+.listening .button { min-height: 2.75rem; }
+.listening__key { margin-top: .9rem; border-collapse: collapse; }
+.listening__key th, .listening__key td { min-width: 2.2rem; padding: .3rem .5rem; border: 1px solid var(--color-border); text-align: center; }
+.listening__key th { background: var(--color-surface-muted); }
+.listening__transcript { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--color-border); }
+.listening__transcript summary { min-height: 2.75rem; display: flex; align-items: center; font-weight: 800; color: var(--color-accent); cursor: pointer; }
+.listening__transcript p { margin: .4rem 0; }
+.listening__announce { margin: .9rem 0 .2rem; font: 800 .8rem var(--font-text); letter-spacing: .1em; text-transform: uppercase; color: var(--color-accent); }
+/* телефон: ползунок на всю ширину над кнопками */
+@media (max-width: 600px) {
+  .player__bar { order: -1; flex-basis: 100%; }
+  .player__time { margin-left: auto; }
+}
+
+/* ===== comparison bank (Task 4) ===== · банк сравнений для задания 4 (Topic.tsx) */
 .comparison-card { margin-bottom: .75rem; padding: .9rem 1rem; border: 1px solid var(--color-border); border-radius: 1rem; background: var(--color-surface); }
 .comparison-card__header { display: flex; align-items: center; margin-bottom: .5rem; }
 .comparison-card__activity { flex: 1; display: flex; align-items: center; gap: .5rem; }
@@ -471,7 +526,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .comparison-card__difference { margin-top: .5rem; padding: .4rem .75rem; border-radius: .6rem; background: var(--color-page-background); font: italic .95rem var(--font-accent); }
 .comparison-card__difference-label { font: normal 800 .65rem var(--font-text); letter-spacing: .1em; text-transform: uppercase; color: var(--color-accent); }
 
-/* ===== revision ===== */
+/* ===== revision ===== · повторение (Revision.tsx) */
 .word-gaps__item { display: flex; align-items: baseline; gap: .5rem; margin-bottom: .5rem; padding: .6rem .9rem; border: 1px solid var(--color-border); border-radius: .75rem; background: var(--color-surface); }
 .word-gaps__sentence { flex: 1; font: italic 1.05rem/2 var(--font-accent); }
 .word-gaps__sentence .answer-input { width: min(12.5rem, 100%); min-width: 0; font-style: normal; }
@@ -492,12 +547,12 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .number-choice--wrong { background: var(--color-wrong-background); border-color: var(--color-accent-hover); }
 .number-choice__arrow { font-size: .7rem; color: var(--color-text-muted); }
 
-/* ===== rabbit (Rabbit.tsx) ===== */
+/* ===== rabbit (Rabbit.tsx) ===== · кролик */
 .rabbit { display: block; overflow: visible; }
 .rabbit--logo { width: 2.6rem; height: 2.6rem; margin-top: -.4rem; }
 .rabbit--reader { position: relative; width: 100%; max-width: 24rem; }
 .rabbit--sitting { width: 100%; height: auto; filter: drop-shadow(0 .3rem .45rem var(--color-shadow)); }
-/* volume: gradients defined in Rabbit.tsx (Gradients), their colours set here */
+/* volume: gradients defined in Rabbit.tsx (Gradients), their colours set here · объём: градиенты нарисованы в Rabbit.tsx, их цвета задаются здесь */
 .rabbit__light { stop-color: var(--color-surface); }
 .rabbit__tone { stop-color: var(--color-rabbit-fur); }
 .rabbit__edge { stop-color: var(--color-rabbit-shadow); }
@@ -509,7 +564,6 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .rabbit__nose-edge { stop-color: var(--color-accent); }
 .rabbit__fur { fill: url(#rabbit-fur); }
 .rabbit__ear-inner { fill: url(#rabbit-ear); }
-.rabbit__contact-shadow { fill: var(--color-rabbit-shadow); opacity: .7; filter: blur(2px); }
 .rabbit__ground--soft { filter: blur(2px); }
 .rabbit__nose-glint { fill: var(--color-surface); opacity: .8; }
 .rabbit__eye-glint--small { opacity: .7; }
@@ -528,7 +582,7 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 .rabbit__mouth { fill: none; stroke: var(--color-main); stroke-linecap: round; }
 .rabbit__book-lines { fill: none; stroke: var(--color-rabbit-shadow); stroke-linecap: round; }
 .rabbit__ground { fill: var(--color-main); opacity: .35; }
-/* moving parts turn around their own box; the pointer offsets come from Rabbit.tsx (useLook) */
+/* moving parts turn around their own box; the pointer offsets come from Rabbit.tsx (useLook) · движущиеся части; сдвиги «взгляд за курсором» приходят из Rabbit.tsx (useLook) */
 .rabbit__head, .rabbit__ear, .rabbit__eyes, .rabbit__pupils, .rabbit__nose, .rabbit__body { transform-box: fill-box; }
 .rabbit__head { transform-origin: 50% 85%; animation: rabbit-tilt 8s ease-in-out infinite; rotate: var(--rabbit-head-rotation, 0deg); translate: var(--rabbit-head-x, 0px) var(--rabbit-head-y, 0px); transition: rotate .4s ease-out, translate .4s ease-out; }
 .rabbit__ear { transform-origin: 50% 92%; }
@@ -553,7 +607,8 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 @keyframes rabbit-perk-right { 30%, 70% { transform: rotate(-10deg) translateY(-6%); } }
 
 /* praise: the rabbit peeks up from the bottom edge after a finished task; big tasks: it jumps out with confetti.
-   Its size follows the screen width, so it stays visible on large monitors */
+   Its size follows the screen width, so it stays visible on large monitors 
+   Похвала: кролик выглядывает снизу после выполненного задания; после крупного — выпрыгивает с конфетти (Rabbit.tsx, Praise) */
 .praise { position: fixed; right: 1rem; bottom: 0; z-index: 25; display: flex; flex-direction: column; align-items: flex-end; pointer-events: none; animation: praise-life 3.8s linear forwards; }
 .praise--big { animation-duration: 5.6s; }
 .praise > * { pointer-events: auto; }
@@ -576,35 +631,35 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 @keyframes praise-jump { 0% { transform: translateY(105%); } 12% { transform: translateY(-20%) scale(.95, 1.06); } 20% { transform: translateY(0) scale(1.08, .92); } 26% { transform: none; } 34% { transform: translateY(-14%) scale(.96, 1.05); } 42% { transform: translateY(0) scale(1.06, .94); } 47%, 86% { transform: none; } 100% { transform: translateY(105%); } }
 @keyframes confetti-burst { 0% { opacity: 1; translate: 0 0; rotate: 0deg; } 100% { opacity: 0; translate: var(--confetti-x) var(--confetti-y); rotate: var(--confetti-rotation); } }
 
-/* rabbit moods: faces (all drawn in Rabbit.tsx, hidden by default) and movements */
+/* rabbit moods: faces (all drawn in Rabbit.tsx, hidden by default) and movements · настроения кролика: лица (все нарисованы, по умолчанию скрыты) и движения */
 .rabbit__line { fill: none; stroke: var(--color-main); stroke-linecap: round; }
 .rabbit__cheek { opacity: .75; }
 .rabbit__happy-eyes, .rabbit__brows, .rabbit__tear, .rabbit__mouth--smile, .rabbit__mouth--sad, .rabbit__mouth--open { display: none; }
 .rabbit__mouth--open { fill: var(--color-main); }
 .rabbit__tear { fill: var(--color-rabbit-tear); }
-/* delighted: eyes closed in a smile, big smile, pink cheeks; also when the cover rabbit is hovered */
+/* delighted: eyes closed in a smile, big smile, pink cheeks; also when the cover rabbit is hovered · восторг: глаза-улыбки, широкая улыбка, румянец */
 .rabbit--delighted .rabbit__eyes, .cover__rabbit-button:hover .rabbit--calm .rabbit__eyes { display: none; }
 .rabbit--delighted .rabbit__happy-eyes, .cover__rabbit-button:hover .rabbit--calm .rabbit__happy-eyes { display: block; }
 .rabbit--delighted .rabbit__mouth--calm, .rabbit--pleased .rabbit__mouth--calm, .cover__rabbit-button:hover .rabbit--calm .rabbit__mouth--calm { display: none; }
 .rabbit--delighted .rabbit__mouth--smile, .rabbit--pleased .rabbit__mouth--smile, .cover__rabbit-button:hover .rabbit--calm .rabbit__mouth--smile { display: block; }
 .rabbit--delighted .rabbit__cheek { opacity: 1; }
-/* pleased: smile and a nod */
+/* pleased: smile and a nod · доволен: улыбка и кивок */
 .rabbit--pleased .rabbit__head { animation: rabbit-nod 1.4s .4s ease-in-out 2; }
-/* thoughtful: head on one side, one ear bent */
+/* thoughtful: head on one side, one ear bent · задумался: голова набок, одно ухо согнуто */
 .rabbit--thoughtful .rabbit__head { animation: rabbit-think 3.6s ease-in-out forwards; }
 .rabbit--thoughtful .rabbit__ear--right { animation: rabbit-ear-bend 3.6s ease-in-out forwards; }
-/* upset: sad brows and mouth, ears drop, a tear, the head shakes slowly */
+/* upset: sad brows and mouth, ears drop, a tear, the head shakes slowly · огорчён: грустные брови, уши опущены, слеза */
 .rabbit--upset .rabbit__brows, .rabbit--upset .rabbit__mouth--sad, .rabbit--upset .rabbit__tear { display: block; }
 .rabbit--upset .rabbit__mouth--calm { display: none; }
 .rabbit--upset .rabbit__ear--left { animation: rabbit-droop-left 3.6s ease-in-out forwards; }
 .rabbit--upset .rabbit__ear--right { animation: rabbit-droop-right 3.6s ease-in-out forwards; }
 .rabbit--upset .rabbit__head { animation: rabbit-sigh 3.6s ease-in-out forwards; }
 .rabbit--upset .rabbit__tear { transform-box: fill-box; animation: rabbit-tear 1.8s .8s ease-in 2; }
-/* curious: looks around, sniffs, ears twitch */
+/* curious: looks around, sniffs, ears twitch · любопытство: оглядывается, принюхивается */
 .rabbit--curious .rabbit__head { animation: rabbit-look-around 3s ease-in-out; }
 .rabbit--curious .rabbit__nose { animation: rabbit-nose .9s ease-in-out infinite; }
 .rabbit--curious .rabbit__ear--left { animation: rabbit-ear-left 1.6s ease-in-out infinite; }
-/* surprised: wide eyes, round mouth, ears straight up */
+/* surprised: wide eyes, round mouth, ears straight up · удивление: большие глаза, рот буквой О, уши торчком */
 .rabbit--surprised .rabbit__mouth--calm { display: none; }
 .rabbit--surprised .rabbit__mouth--open { display: block; }
 .rabbit--surprised .rabbit__pupils { scale: 1.25; }
@@ -619,38 +674,32 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
 @keyframes rabbit-tear { 0% { opacity: 0; transform: none; } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(260%); } }
 @keyframes rabbit-look-around { 15%, 35% { transform: rotate(-12deg); } 55%, 75% { transform: rotate(12deg); } 90% { transform: none; } }
 
-/* cover rabbit: a short line above it after every click */
+/* cover rabbit: a short line above it after every click · кролик на обложке: реплика после каждого нажатия */
 .cover__rabbit-speech { position: absolute; left: 50%; top: -.5rem; z-index: 1; padding: .5rem .8rem; border-radius: 1rem 1rem 1rem .25rem; background: var(--color-surface); color: var(--color-main); font: 700 .9rem/1.3 var(--font-text); white-space: nowrap; box-shadow: 0 .6rem 1.4rem -.8rem var(--color-shadow); animation: speech-pop 3.5s ease-out forwards; }
 @keyframes speech-pop { 0% { opacity: 0; transform: translateY(.5rem) scale(.9); } 10%, 85% { opacity: 1; transform: none; } 100% { opacity: 0; } }
 
-/* praise hearts for the delighted rabbit */
+/* praise hearts for the delighted rabbit · сердечки у кролика в восторге */
 .praise__hearts { position: absolute; left: 50%; top: 4%; pointer-events: none; }
 .praise__hearts i { position: absolute; font-style: normal; font-size: 1.1rem; color: var(--color-accent); opacity: 0; animation: heart-rise 1.4s .4s ease-out forwards; }
 .praise__hearts i:nth-child(1) { left: -2.2rem; } .praise__hearts i:nth-child(2) { left: -.4rem; animation-delay: .55s; } .praise__hearts i:nth-child(3) { left: 1.4rem; animation-delay: .7s; }
 @keyframes heart-rise { 0% { opacity: 0; transform: translateY(.6rem) scale(.6); } 25% { opacity: 1; } 100% { opacity: 0; transform: translateY(-2.6rem) scale(1.15) rotate(-8deg); } }
 .praise--upset .praise__speech-title { color: var(--color-task-2); }
 
-/* wandering rabbit: hops in profile, turns to the viewer to look around (Rabbit.tsx, Wanderer) */
-.wanderer { position: fixed; z-index: 15; display: flex; flex-direction: column; align-items: center; width: 6rem; transition: left 3s linear; pointer-events: none; }
-.wanderer__rabbit { width: 100%; padding: 0; border: 0; background: none; pointer-events: auto; }
-.wanderer__body { display: block; }
-.wanderer--facing-left .wanderer__body { transform: scaleX(-1); }
-.wanderer--moving .rabbit--side { animation: rabbit-hop-side .5s ease-in-out infinite; transform-origin: 50% 90%; }
-.wanderer--moving .rabbit__leg--back { animation: rabbit-kick .5s ease-in-out infinite; }
-.wanderer--moving .rabbit__leg--front { animation: rabbit-reach .5s ease-in-out infinite; }
-.rabbit--side { width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 .25rem .35rem var(--color-shadow)); }
-.rabbit__leg, .rabbit__profile-head, .rabbit__ear--far { transform-box: fill-box; }
-.rabbit__leg--back { transform-origin: 70% 50%; } .rabbit__leg--front { transform-origin: 50% 0; }
-.rabbit__profile-head { transform-origin: 20% 80%; animation: rabbit-head-bob 1.8s ease-in-out infinite; }
-.wanderer__turn { display: block; animation: rabbit-turn .3s ease-out; }
-.wanderer__speech { margin-bottom: .2rem; padding: .35rem .7rem; border-radius: 1rem; background: var(--color-surface); font: 700 .85rem var(--font-text); white-space: nowrap; box-shadow: 0 .5rem 1.2rem -.7rem var(--color-shadow); animation: speech-pop 1.8s ease-out forwards; }
-@keyframes rabbit-hop-side { 0%, 100% { transform: none; } 15% { transform: scale(1.04, .94); } 45% { transform: translateY(-22%) rotate(-7deg); } 75% { transform: translateY(-6%) rotate(3deg); } }
-@keyframes rabbit-kick { 0%, 100% { transform: none; } 45% { transform: rotate(28deg) translateX(-10%); } }
-@keyframes rabbit-reach { 0%, 100% { transform: none; } 45% { transform: rotate(-35deg); } }
-@keyframes rabbit-head-bob { 0%, 100% { transform: none; } 30% { transform: rotate(-6deg); } 60% { transform: rotate(4deg); } }
-@keyframes rabbit-turn { from { transform: scaleX(.2); } }
+/* peeking rabbit (Rabbit.tsx, Peeker): peeks out from behind the bottom, left or right edge of the screen, then hides.
+   The box turns round its bottom centre so that the rabbit's feet always sit on the edge; --peek-at is set in Rabbit.tsx 
+   Выглядывающий кролик: появляется из-за края экрана и прячется; коробка поворачивается вокруг низа, чтобы лапы стояли на краю */
+.peeker { position: fixed; z-index: 15; width: 6rem; transform-origin: 50% 100%; pointer-events: none; }
+.peeker--bottom { bottom: 0; left: var(--peek-at); }
+.peeker--left { left: -3rem; top: var(--peek-at); rotate: 90deg; }
+.peeker--right { right: -3rem; top: var(--peek-at); rotate: -90deg; }
+.peeker__rabbit { display: block; width: 100%; padding: 0; border: 0; background: none; pointer-events: auto; transform: translateY(100%); animation: rabbit-peek 7s cubic-bezier(.2, .8, .3, 1) forwards; }
+.peeker__speech { position: absolute; bottom: 100%; left: 50%; translate: -50% 0; margin-bottom: .2rem; padding: .35rem .7rem; border-radius: 1rem; background: var(--color-surface); font: 700 .85rem var(--font-text); white-space: nowrap; box-shadow: 0 .5rem 1.2rem -.7rem var(--color-shadow); animation: speech-pop 1.8s ease-out forwards; }
+.peeker--left .peeker__speech { bottom: 55%; rotate: -90deg; }
+.peeker--right .peeker__speech { bottom: 55%; rotate: 90deg; }
+/* out to the shoulders, a little bob, a long look, back behind the edge · выглянуть до плеч, качнуться, посмотреть, спрятаться */
+@keyframes rabbit-peek { 0% { transform: translateY(100%); } 10% { transform: translateY(38%); } 14% { transform: translateY(44%); } 18%, 86% { transform: translateY(42%); } 100% { transform: translateY(100%); } }
 
-/* ===== tablets and phones (checked at 430px) ===== */
+/* ===== tablets and phones (checked at 430px) ===== · планшеты и телефоны (проверено на ширине 430px) */
 @media (max-width: 860px) {
   .support__content { flex-direction: column; }
 }
@@ -692,11 +741,12 @@ input:focus, textarea:focus { outline: 2px solid var(--color-highlight); border-
   .praise__speech { max-width: 13.5rem; font-size: .85rem; }
 }
 
+/* пользователь отключил анимацию в настройках системы: движения выключаются, выглядывающий кролик не появляется */
 @media (prefers-reduced-motion: reduce) {
   .rabbit *, .rabbit, .rabbit-hop, .dropdown, .contents-panel, .overlay, .match__card--wrong { animation: none !important; }
   .flash-card__side { transition: none; }
   .praise__rabbit-button, .praise__speech, .cover__rabbit-speech { animation: none; }
-  .wanderer { display: none; }
+  .peeker { display: none; }
   .praise__rabbit-button { transform: translateY(31%); }
   .praise--big .praise__rabbit-button { transform: none; }
   .praise__confetti { display: none; }

@@ -1,3 +1,5 @@
+/* НЕ ИСПОЛЬЗУЕТСЯ НА САЙТЕ. Готовый компонент библиотеки shadcn/ui или Magic UI (стили — Tailwind, src/tailwind.css).
+   Лежит про запас; можно удалить вместе с Tailwind, см. docs/CODE.md, раздел 11. */
 import { type ComponentPropsWithoutRef } from "react"
 
 import { cn } from "@/lib/utils"

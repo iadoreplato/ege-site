@@ -1,18 +1,25 @@
+/* ДИКТОФОН И ПАНЕЛЬ УСТНЫХ ЗАДАНИЙ. Запись идёт через микрофон браузера (MediaRecorder) и живёт только
+   в браузере ученика: её можно прослушать, скачать или отправить через меню «Поделиться» телефона.
+   На сервер запись не уходит. */
 import { useEffect, useRef, useState } from "react";
 import { Timer } from "./ui";
 import { rabbitSay } from "./Rabbit";
 
-/** Records the student's spoken answer; lets them listen, download and share the file */
+/** Records the student's spoken answer; lets them listen, download and share the file
+    Диктофон. name — имя файла записи (sport-u1-task3), maxSeconds — через сколько секунд запись остановится сама.
+    state: idle — ещё не записывали, rec — идёт запись, done — запись готова, error — нет доступа к микрофону */
 export default function Recorder({ name, maxSeconds }: { name: string; maxSeconds: number }) {
   const [state, setState] = useState<"idle" | "rec" | "done" | "error">("idle");
-  const [url, setUrl] = useState<string>("");
-  const [blob, setBlob] = useState<Blob | null>(null);
-  const [sec, setSec] = useState(0);
-  const rec = useRef<MediaRecorder | null>(null);
-  const timer = useRef<number>();
+  const [url, setUrl] = useState<string>("");          // временная ссылка на запись (для плеера и скачивания)
+  const [blob, setBlob] = useState<Blob | null>(null); // сама запись (файл в памяти)
+  const [sec, setSec] = useState(0);                   // сколько секунд уже записано
+  const rec = useRef<MediaRecorder | null>(null);      // объект записи браузера
+  const timer = useRef<number>();                      // номер секундного счётчика, чтобы его остановить
 
+  // уборка: освободить память старой записи и остановить счётчик
   useEffect(() => () => { if (url) URL.revokeObjectURL(url); clearInterval(timer.current); }, [url]);
 
+  /** Начать запись: спросить доступ к микрофону, собирать кусочки звука (chunks), по остановке склеить их в файл */
   async function start() {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -23,9 +30,10 @@ export default function Recorder({ name, maxSeconds }: { name: string; maxSecond
         const b = new Blob(chunks, { type: mr.mimeType || "audio/webm" });
         setBlob(b); setUrl(URL.createObjectURL(b)); setState("done");
         rabbitSay("pleased", "Recorded!", "Listen back to your answer and see what you could improve.");
-        stream.getTracks().forEach(t => t.stop()); clearInterval(timer.current);
+        stream.getTracks().forEach(t => t.stop()); clearInterval(timer.current); // выключить микрофон
       };
       rec.current = mr; mr.start(); setSec(0); setState("rec");
+      // каждую секунду +1; на пределе maxSeconds запись останавливается
       timer.current = window.setInterval(() => setSec(s => {
         if (s + 1 >= maxSeconds) mr.state === "recording" && mr.stop();
         return s + 1;
@@ -33,9 +41,11 @@ export default function Recorder({ name, maxSeconds }: { name: string; maxSecond
     } catch { setState("error"); }
   }
   const stop = () => rec.current?.state === "recording" && rec.current.stop();
+  // расширение файла зависит от браузера: Safari пишет mp4 (m4a), Firefox — ogg, Chrome — webm
   const ext = blob?.type.includes("mp4") ? "m4a" : blob?.type.includes("ogg") ? "ogg" : "webm";
   const fileName = `${name}.${ext}`;
 
+  /** Отправить файл через меню «Поделиться» (на телефоне: мессенджер, почта). Если браузер не умеет — подсказка скачать */
   async function share() {
     if (!blob) return;
     const file = new File([blob], fileName, { type: blob.type });
@@ -56,6 +66,8 @@ export default function Recorder({ name, maxSeconds }: { name: string; maxSecond
 }
 
 /** Speaking tools in one row that wraps when it doesn't fit: an optional preparation timer,
-    a timer for answering aloud without recording, and the recorder */
+    a timer for answering aloud without recording, and the recorder
+    Ряд инструментов устного задания: таймер подготовки (если задан preparation), таймер ответа (seconds) и диктофон.
+    maxSeconds — предел записи (по умолчанию равен seconds) */
 export const SpeakBar = ({ name, seconds, label, maxSeconds = seconds, preparation }: { name: string; seconds: number; label: string; maxSeconds?: number; preparation?: number }) =>
   <div className="speaking-tools">{preparation && <Timer seconds={preparation} label="Preparation" />}<Timer seconds={seconds} label={label} /><Recorder name={name} maxSeconds={maxSeconds} /></div>;

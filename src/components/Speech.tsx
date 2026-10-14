@@ -1,3 +1,7 @@
+/* ВКЛАДКА EXAM TASKS: экзаменационные задания в формате ЕГЭ — 1 (чтение вслух), 2 (вопросы по рекламе),
+   3 (интервью), 4 (монолог по фото), 37 (письмо), 38 (эссе по данным опроса).
+   Формулировки заданий записаны здесь, в коде: они дословно из демоверсии и одинаковы во всех модулях.
+   Из JSON берутся только изменяемые части (тема, вопросы, данные опроса…). Поля — docs/CODE.md, 3.4. */
 import { ReactNode, useState } from "react";
 import { Topic } from "../types";
 import { Chips, Img, Text } from "./text";
@@ -8,54 +12,73 @@ import { Photo } from "./Photo";
 import AiCheck from "./AiCheck";
 import universal from "../content/universal.json";
 
+/** Шаблоны ответов из universal.json: FR.t4, FR.t37, FR.t38 */
 const FR = (universal as any).frames as Record<string, [string, string][]>;
+/** Женские имена отправителей письма (задание 37): для них пишется «answer her questions», для остальных — his.
+    НОВОЕ ЖЕНСКОЕ ИМЯ В ПИСЬМЕ — ДОБАВЬТЕ СЮДА */
 const HER = new Set(["Ella", "Sophia", "Helen"]);
 
-/** Card of one exam task; `task` = task number, used for the header colour */
+/** Card of one exam task; `task` = task number, used for the header colour
+    Карточка задания: шапка «Task N» (цвет зависит от номера задания) и содержимое */
 const TCard = ({ task, title, icon, children }: { task: number; title: string; icon: string; children: ReactNode }) =>
   <div className={`exam-task exam-task--task-${task}`}><div className="exam-task__header"><Img name={icon} className="exam-task__icon" /><span className="exam-task__label">Task {task}</span><span className="exam-task__title">{title}</span></div><div className="exam-task__body">{children}</div></div>;
 
-/** Pool + frame is hidden until the student asks for support */
+/** Pool + frame is hidden until the student asks for support
+    Поддержка (готовые фразы + шаблон ответа) спрятана, пока ученик не нажмёт «Show support» */
 function Support({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
   return <div className="support"><button className="button button--secondary" onClick={() => setOpen(!open)}>{open ? "Hide support" : "Show support: vocabulary pool and frame"}</button>{open && <div className="support__content">{children}</div>}</div>;
 }
 
+/** Цвета секторов круговой диаграммы — CSS-переменные из styles.css, по кругу */
 const CHART = ["--color-task-38", "--color-accent", "--color-task-2", "--color-task-37", "--color-task-1", "--color-text-muted"];
+/** Круговая диаграмма для задания 38. data — [["вариант", процент], …], проценты в сумме 100.
+    Каждый сектор рисуется в SVG дугой: a0 — угол начала, a1 — угол конца (начинаем сверху, -90°).
+    Число процентов ставится в середину сектора (угол am) */
 function Pie({ data }: { data: [string, number][] }) {
   const color = (i: number) => `var(${CHART[i % CHART.length]})`;
   let a0 = -Math.PI / 2;
   return <div className="pie-chart"><svg className="pie-chart__circle" viewBox="0 0 120 120">{data.map(([, v], i) => {
     const a1 = a0 + (2 * Math.PI * v) / 100, r = 56;
+    // M — в центр, L — к началу дуги, A — дуга до конца (флаг «большая дуга», если больше 50 %), Z — обратно в центр
     const d = `M60,60 L${60 + r * Math.cos(a0)},${60 + r * Math.sin(a0)} A${r},${r} 0 ${v > 50 ? 1 : 0},1 ${60 + r * Math.cos(a1)},${60 + r * Math.sin(a1)} Z`;
     const am = (a0 + a1) / 2; a0 = a1;
     return <g key={i}><path className="pie-chart__slice" d={d} style={{ fill: color(i) }} /><text className="pie-chart__value" x={60 + 37 * Math.cos(am)} y={63 + 37 * Math.sin(am)}>{v}%</text></g>;
   })}</svg><div className="pie-chart__legend">{data.map(([l], i) => <div className="pie-chart__legend-item" key={l}><i className="pie-chart__swatch" style={{ background: color(i) }} />{l}</div>)}</div></div>;
 }
 
+/** Абзац инструкции задания */
 const Instruction = ({ children }: { children: ReactNode }) => <p className="exam-task__instruction">{children}</p>;
+/** Маркированный план ответа */
 const Plan = ({ items }: { items: ReactNode[] }) => <ul className="plan-list exam-task__plan">{items.map((x, i) => <li className="plan-list__item" key={i}>{x}</li>)}</ul>;
 
+/** Поле для письма (37) или эссе (38) + счётчик слов + ИИ-проверка.
+    min/max — границы, за которыми 0 баллов / проверяется только начало; ok — целевой диапазон; prompt — описание задания для ИИ */
 function Writing({ min, max, ok, task, prompt }: { min: number; max: number; ok: [number, number]; task: "37" | "38"; prompt: string }) {
   const [text, setText] = useState("");
   return <div className="writing"><textarea className="answer-textarea answer-textarea--long" rows={12} value={text} onChange={e => setText(e.target.value)} placeholder="Write your answer here…" />
     <WordStatus n={countWords(text)} min={min} max={max} ok={ok} /><AiCheck task={task} prompt={prompt} answer={text} /></div>;
 }
 
+/** Задания 3 и 4: ученик печатает то, что сказал, и отправляет на ИИ-проверку (S3 / S4) */
 function Transcript({ task, prompt }: { task: "S3" | "S4"; prompt: string }) {
   const [open, setOpen] = useState(false);
   const [text, setText] = useState("");
-  return <div className="support"><button className="button button--secondary" onClick={() => setOpen(!open)}>{open ? "Hide" : "Type what you said and check it with Claude"}</button>
+  return <div className="support"><button className="button button--secondary" onClick={() => setOpen(!open)}>{open ? "Hide" : "Type what you said and check it with AI"}</button>
     {open && <div className="writing"><textarea className="answer-textarea" rows={6} value={text} onChange={e => setText(e.target.value)} placeholder="Type your answer as you said it…" /><AiCheck task={task} prompt={prompt} answer={text} /></div>}</div>;
 }
 
-/** `slot`: base file name for this task's photos and recording, see Photo.tsx */
+/** `slot`: base file name for this task's photos and recording, see Photo.tsx
+    Одно экзаменационное задание по s.type. s — данные задания из JSON; topic — модуль;
+    idx — номер эссе в юните (чётный — таблица, нечётный — круговая диаграмма); slot — имя файла фото и записи.
+    prompt в каждом задании — краткое описание задания по-английски, которое уходит ИИ-проверке вместе с ответом */
 export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Topic; idx: number; slot: string }) {
-  const [showKey, setShowKey] = useState(false);
-  const [adAns, setAdAns] = useState<Record<number, string>>({});
+  const [showKey, setShowKey] = useState(false);                     // задание 2: показаны ли образцы вопросов
+  const [adAns, setAdAns] = useState<Record<number, string>>({});    // задание 2: вопросы, которые напечатал ученик
   switch (s.type) {
+    // ЗАДАНИЕ 3 — интервью: 5 вопросов с подсказками, таймер 40 с на ответ, запись до 260 с
     case "interview": {
-      const topicText = s.topic[0].toLowerCase() + s.topic.slice(1);
+      const topicText = s.topic[0].toLowerCase() + s.topic.slice(1); // тема с маленькой буквы для фразы интервьюера
       const prompt = `Task 3 interview on ${topicText}. Questions: ${s.questions.map((q: any, i: number) => `${i + 1}) ${q.q}`).join(" ")}`;
       return <TCard task={3} title="Interview" icon="studio_microphone">
         <Instruction>You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.</Instruction>
@@ -69,8 +92,9 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         <Transcript task="S3" prompt={prompt} />
       </TCard>;
     }
+    // ЗАДАНИЕ 4 — монолог по двум фото: подготовка 2,5 мин, ответ 3 мин; поддержка — фразы и шаблон FR.t4
     case "photo": {
-      const pb = topic.photo_pool_base, p = s.pool;
+      const pb = topic.photo_pool_base, p = s.pool; // общие фразы модуля и фразы этого задания
       const prompt = `Task 4 project "${s.project}". Photo 1: ${s.p1[1]}. Photo 2: ${s.p2[1]}. Plan: explain the choice, differences; advantages (1–2) of ${s.focus}; disadvantages (1–2) of ${s.focus}; opinion — ${s.opinion}.`;
       return <TCard task={4} title={`Project “${s.project}”`} icon="speaking_head">
         <Instruction>Imagine that you and your friend are doing a school project “{s.project}”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project.</Instruction>
@@ -85,8 +109,9 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         <Transcript task="S4" prompt={prompt} />
       </TCard>;
     }
+    // ЗАДАНИЕ 38 — эссе по данным опроса: таблица или круговая диаграмма, план, поддержка, поле с ИИ-проверкой
     case "essay": {
-      const pie = idx % 2 === 1;
+      const pie = idx % 2 === 1; // 1-е эссе юнита — таблица, 2-е — диаграмма, 3-е — таблица…
       const prompt = `Task 38. Project on ${s.subject}. Survey among ${s.audience}. Question: ${s.q} (choose one option). Data: ${s.data.map((d: any) => `${d[0]} ${d[1]}%`).join("; ")}. Plan point 4: outline a problem ${s.problem} and suggest a solution. Point 5: opinion on ${s.conclusion}.`;
       return <TCard task={38} title={s.subject[0].toUpperCase() + s.subject.slice(1)} icon="bar_chart">
         <Instruction>Imagine that you are doing a project on {s.subject}. You have found some data on the subject – the results of a survey conducted among {s.audience} (see the {pie ? "pie chart" : "table"} below).</Instruction>
@@ -101,8 +126,9 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         <Writing min={180} max={275} ok={[200, 250]} task="38" prompt={prompt} />
       </TCard>;
     }
+    // ЗАДАНИЕ 37 — письмо другу: текст письма, план, поддержка, поле с ИИ-проверкой
     case "email": {
-      const pr = HER.has(s.sender) ? "her" : "his";
+      const pr = HER.has(s.sender) ? "her" : "his"; // местоимение по имени отправителя
       const prompt = `Task 37. Email from ${s.sender}, subject "${s.subject}": ${s.text.replace(/\n/g, " ")} Task: answer ${pr} questions; ask 3 questions ${s.ask}.`;
       return <TCard task={37} title={`An email from ${s.sender}`} icon="envelope">
         <Instruction>You have received an email message from your English-speaking pen-friend {s.sender}:</Instruction>
@@ -114,6 +140,8 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         <Writing min={90} max={154} ok={[100, 140]} task="37" prompt={prompt} />
       </TCard>;
     }
+    // ЗАДАНИЕ 2 — четыре вопроса по рекламе. Образцы вопросов берутся из ad_keys модуля:
+    // сначала по точному названию рекламы, иначе по первому слову названия
     case "ad": {
       const key = topic.ad_keys.find(([t]) => t === s.title) || topic.ad_keys.find(([t]) => s.title.toLowerCase().includes(t.toLowerCase().split(" ")[0]));
       return <TCard task={2} title="Direct questions" icon="speech_balloon">
@@ -128,6 +156,7 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         {showKey && key && <div className="exercise__answer">{key[1]}</div>}
       </TCard>;
     }
+    // ЗАДАНИЕ 1 — чтение вслух: таймер 1,5 мин на чтение про себя, затем запись
     case "reading":
       return <TCard task={1} title="Reading aloud" icon="open_book">
         <Instruction>Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.</Instruction>

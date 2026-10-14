@@ -1,3 +1,7 @@
+/* ШАПКА САЙТА: логотип с кроликом, выпадающие меню «The exam» и «Module N»,
+   кнопка «Contents» (оглавление во всплывающей панели; на телефонах меню скрыты и остаётся только она).
+   Выпадающие меню и панель сделаны на библиотеке Radix (radix-ui): она отвечает за открытие/закрытие,
+   клавиатуру и доступность, а внешний вид задаёт styles.css. */
 import { useState } from "react";
 import { Dialog, DropdownMenu } from "radix-ui";
 import { Topic, Universal } from "../types";
@@ -5,9 +9,12 @@ import { View, moduleItems, samePage, toHash } from "../route";
 import { RabbitMark } from "./Rabbit";
 import { Contents } from "./Cover";
 
+/** here — открытая страница (для подсветки), last — последняя открытая (передаётся в оглавление) */
 type Props = { topics: Topic[]; universal: Universal; here: View; last: View | null };
 
-/** One dropdown in the header: a trigger and a list of links */
+/** One dropdown in the header: a trigger and a list of links
+    Одно выпадающее меню: name — надпись на кнопке, sub — заголовок внутри меню, on — подсветить кнопку
+    (открыт этот раздел), items — ссылки. aria-current="page" отмечает текущую страницу */
 function Menu({ name, sub, on, items, here, topics }: { name: string; sub?: string; on: boolean; items: { v: View; text: string; no?: string | number }[]; here: View; topics: Topic[] }) {
   return <DropdownMenu.Root modal={false}>
     <DropdownMenu.Trigger className={`site-header__menu-button${on ? " site-header__menu-button--active" : ""}`}>{name}<svg className="site-header__menu-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg></DropdownMenu.Trigger>
@@ -22,6 +29,8 @@ function Menu({ name, sub, on, items, here, topics }: { name: string; sub?: stri
   </DropdownMenu.Root>;
 }
 
+/** Шапка целиком. open — открыта ли панель «Contents».
+    Меню модуля подсвечивается, если у открытой страницы есть номер модуля t и он совпадает ("t" in here) */
 export default function Header(p: Props) {
   const { topics, universal, here } = p;
   const [open, setOpen] = useState(false);

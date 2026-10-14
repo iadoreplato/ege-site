@@ -1,0 +1,35 @@
+{
+  "id": "sport-u2",
+  "module": "sport",
+  "unit": 2,
+  "task": 2,
+  "title": "Back in shape: two friends meet after the exams",
+  "speakers": {"Kate": "female1", "Tom": "male1"},
+  "script": [
+    {"who": "Kate", "text": "Tom! Oh my goodness, is that really you? You look fantastic!"},
+    {"who": "Tom", "text": "Ha, thanks, Kate! You should have seen me in March. I could hardly run for a bus."},
+    {"who": "Kate", "text": "No way! So what happened?"},
+    {"who": "Tom", "text": "Well, I got a gym membership as a birthday present from my parents, and honestly, I felt so out of shape that I decided to hit the gym three times a week."},
+    {"who": "Kate", "text": "Three times a week? Wow, that's impressive!"},
+    {"who": "Tom", "text": "It was a disaster at first. In the second week I overdid it. I tried to lift the same weights as my cousin, and I pulled a muscle in my shoulder. I couldn't train for ten days, and I was so frustrated!"},
+    {"who": "Kate", "text": "Oh no, poor you! Did you see a doctor?"},
+    {"who": "Tom", "text": "Not exactly. My aunt is a physiotherapist, so she showed me a few exercises. Since then I always warm up properly. It takes about fifteen minutes, but it's definitely worth it."},
+    {"who": "Kate", "text": "That's so sensible. I never warm up. I just jump straight into running."},
+    {"who": "Tom", "text": "You really should! Anyway, the most important thing is a routine. I'm not a morning person at all, but I train before school, because if I leave it until the evening, I'll find a hundred excuses."},
+    {"who": "Kate", "text": "Ha, that's so true! I've been trying to get back into shape for months. I run twice a week, but I'm still out of breath after ten minutes."},
+    {"who": "Tom", "text": "Just give it time. It took me two months to build up some stamina. And push yourself a little! My trainer always says, \"No pain, no gain.\""},
+    {"who": "Kate", "text": "Oh, I hate that saying! But OK, you've convinced me. Would you like to come for a run on Saturday?"},
+    {"who": "Tom", "text": "I'd love to! Let's meet in the park at nine. Bring some water, and don't forget to warm up!"},
+    {"who": "Kate", "text": "Yes, coach! See you on Saturday!"}
+  ],
+  "statements": [
+    "Tom received his gym membership as a gift.",
+    "Tom's cousin has been going to the gym for many years.",
+    "Tom injured himself during his first week at the gym.",
+    "After injuring himself, Tom had to stop training for more than a week.",
+    "Tom finds it easier to train in the evening.",
+    "Kate has recently bought a gym membership.",
+    "Tom believes that you have to push yourself to make progress."
+  ],
+  "key": [1, 3, 2, 1, 2, 3, 1]
+}

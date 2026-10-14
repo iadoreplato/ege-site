@@ -1,0 +1,32 @@
+{
+  "id": "sport-u1",
+  "module": "sport",
+  "unit": 1,
+  "task": 1,
+  "title": "Taking part in sports competitions: six opinions",
+  "speakers": {"Speaker A": "male1", "Speaker B": "female1", "Speaker C": "male2", "Speaker D": "female2", "Speaker E": "male3", "Speaker F": "female3"},
+  "script": [
+    {"who": "Announcer", "text": "Speaker A"},
+    {"who": "Speaker A", "text": "For me, a competition is the best reason to train. Last winter I just went swimming whenever I felt like it, and my times never improved. Then I signed up for a regional tournament in spring, and suddenly I had a date in my diary. I was in the pool every morning at six. When you know exactly what you are working towards, it's much easier to get out of bed."},
+    {"who": "Announcer", "text": "Speaker B"},
+    {"who": "Speaker B", "text": "I'm a good player in training, but in a real match everything changes. My hands start shaking, the crowd seems to be staring at me, and I forget everything my coach has taught me. Last month I made three stupid mistakes in the first set simply because I was so nervous. I think the problem is that everybody expects me to win, and that's too much."},
+    {"who": "Announcer", "text": "Speaker C"},
+    {"who": "Speaker C", "text": "We were knocked out in the quarter-finals last year, and I cried all the way home. But after a few days I sat down with my coach and we watched the match again. I realised I'd been lazy in defence. If we had won easily, I would never have noticed it. So now, honestly, I think a narrow defeat can be worth more than a comfortable win."},
+    {"who": "Announcer", "text": "Speaker D"},
+    {"who": "Speaker D", "text": "I used to think that I was only playing for myself, but our hockey tournament changed that. We spent four days in the same hotel, travelled on one bus and cheered each other up after every game. People I had hardly spoken to before became my closest friends. We still meet every weekend, even though that tournament ended two years ago."},
+    {"who": "Announcer", "text": "Speaker E"},
+    {"who": "Speaker E", "text": "I'd love to take part in more competitions, but it really adds up. There's the entry fee, the new equipment, the train tickets and a hotel for the weekend. Last season we spent almost half of our family's holiday budget on my tournaments. A friend of mine who's just as talented had to give up completely, because her parents simply couldn't afford it."},
+    {"who": "Announcer", "text": "Speaker F"},
+    {"who": "Speaker F", "text": "Whatever the sport is, the whole competition depends on the referee. I once played in a final where the umpire missed a clear foul, and the game was decided by a goal that should never have counted. Everybody felt cheated, even the winners. If the officials aren't fair, there's no point in having a tournament at all."}
+  ],
+  "options": [
+    "Competitions give people a clear aim to train for.",
+    "Taking part in competitions can be too expensive.",
+    "Competitions work best for professional athletes only.",
+    "Losing can teach a person something useful.",
+    "Competitions help team members to become closer.",
+    "Decisions made by judges must be fair.",
+    "Too much pressure can spoil a performance."
+  ],
+  "key": [1, 7, 4, 5, 2, 6]
+}

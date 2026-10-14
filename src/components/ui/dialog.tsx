@@ -1,3 +1,5 @@
+/* НЕ ИСПОЛЬЗУЕТСЯ НА САЙТЕ. Готовый компонент библиотеки shadcn/ui или Magic UI (стили — Tailwind, src/tailwind.css).
+   Лежит про запас; можно удалить вместе с Tailwind, см. docs/CODE.md, раздел 11. */
 import * as React from "react"
 import { cn } from "@/lib/utils"
 import { XIcon } from "lucide-react"

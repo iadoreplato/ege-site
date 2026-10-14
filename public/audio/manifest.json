@@ -1,0 +1,20 @@
+{
+  "sport-u1": {
+    "file": "sport-u1.mp3",
+    "seconds": 398,
+    "hash": "160cd5d6d8e6b6c4",
+    "mock": false
+  },
+  "sport-u2": {
+    "file": "sport-u2.mp3",
+    "seconds": 296,
+    "hash": "aa96f52cf79bb576",
+    "mock": false
+  },
+  "sport-u3": {
+    "file": "sport-u3.mp3",
+    "seconds": 456,
+    "hash": "3e7fdb4d92b2607f",
+    "mock": false
+  }
+}

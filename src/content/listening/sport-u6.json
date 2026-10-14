@@ -1,0 +1,38 @@
+{
+  "id": "sport-u6",
+  "module": "sport",
+  "unit": 6,
+  "task": 3,
+  "title": "Morning Talk: a sports psychologist on motivation",
+  "speakers": {"Presenter": "female1", "Martin": "male3"},
+  "script": [
+    {"who": "Presenter", "text": "Welcome to Morning Talk. Today we're asking why so many people give up exercising after only a few weeks. With me is Dr Martin Reeves, a sports psychologist who has worked with Olympic athletes and with complete beginners. Dr Reeves, thank you for joining us."},
+    {"who": "Martin", "text": "My pleasure."},
+    {"who": "Presenter", "text": "Let's begin with an obvious question. Why do people lose interest so quickly?"},
+    {"who": "Martin", "text": "In my experience, it's rarely about laziness. Most people set goals that are simply unrealistic. They decide to run five kilometres every day, and after ten days they're exhausted and frustrated. If you start with something small and realistic, you're far more likely to stick to it."},
+    {"who": "Presenter", "text": "Many people also say they just don't have the time. Is that true?"},
+    {"who": "Martin", "text": "Sometimes, but more often it's an excuse. When I ask my clients to keep a diary for a week, they're usually shocked by how much time they spend on their phones. Half an hour of exercise is possible for almost everybody. The real question is what you're prepared to give up."},
+    {"who": "Presenter", "text": "What about money? Gyms aren't cheap."},
+    {"who": "Martin", "text": "That's a genuine barrier, and I don't want to dismiss it. But you can exercise for free: running, skipping, even climbing the stairs. Interestingly, people who pay a lot for a gym membership don't necessarily go more often. Some of them feel they've done their duty simply by signing the contract."},
+    {"who": "Presenter", "text": "And how much influence do friends have?"},
+    {"who": "Martin", "text": "It works both ways. Peer pressure can be positive: with a workout buddy, you're less likely to cancel, because you don't want to let anyone down. But if your friends laugh at you for going to the gym, that can be really discouraging. So choose your company carefully."},
+    {"who": "Presenter", "text": "Is it important to track your progress?"},
+    {"who": "Martin", "text": "Very. A sense of achievement is a powerful incentive. I ask my clients to write down everything they've done, even if it's only a ten-minute walk. When you look back after a month and see twenty entries, you think, I can do this. But I wouldn't check the numbers all the time, because then it becomes another source of stress."},
+    {"who": "Presenter", "text": "What do you say to someone who has missed a few weeks?"},
+    {"who": "Martin", "text": "Don't punish yourself, because everybody gets off track sometimes. The hardest part is always getting started again, so make it as easy as possible. Put your trainers by the door and promise yourself just five minutes. Once you've begun, you'll usually carry on for much longer."},
+    {"who": "Presenter", "text": "Finally, what is your key message?"},
+    {"who": "Martin", "text": "Find something you actually enjoy. If you hate running, don't run. Try swimming, dancing or climbing, whatever you like. When you look forward to it, you won't need willpower at all. And don't be afraid to give it a go; you may discover a hobby you never expected."},
+    {"who": "Presenter", "text": "Dr Reeves, thank you very much."},
+    {"who": "Martin", "text": "Thank you."}
+  ],
+  "questions": [
+    {"q": "According to Martin, people usually stop exercising because they …", "options": ["are naturally lazy.", "choose the wrong sport.", "expect too much of themselves."]},
+    {"q": "What does Martin think about lack of time?", "options": ["It is often just an excuse.", "It is a real problem for most people.", "It affects only people with full-time jobs."]},
+    {"q": "What does Martin say about expensive gym memberships?", "options": ["They make people train more often.", "They do not guarantee regular attendance.", "They are essential for beginners."]},
+    {"q": "What does Martin say about friends?", "options": ["They rarely influence a person's habits.", "Their attitude can either help or discourage.", "They only help people who are already fit."]},
+    {"q": "Martin advises writing down your activities because it …", "options": ["lets you compare yourself with others.", "shows which exercises work best.", "makes you feel you have achieved something."]},
+    {"q": "What does Martin suggest to a person who has stopped exercising?", "options": ["Commit to a very short session.", "Make a long, detailed plan.", "Wait for a better moment."]},
+    {"q": "Martin's main message is that people should …", "options": ["follow a strict plan.", "choose an activity they enjoy.", "join the most popular club."]}
+  ],
+  "key": [3, 1, 2, 2, 3, 1, 2]
+}

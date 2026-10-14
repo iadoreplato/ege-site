@@ -1,3 +1,7 @@
+/* ПОВТОРЕНИЕ:
+   - Revision — итоговое повторение модуля в формате ЕГЭ: задание 11, 19–24, 25–29, 30–36, перефраз, перевод;
+   - Review — мини-повторение после юнитов: тексты 30–36 + перефраз.
+   Данные — поля revision и reviews модуля (docs/CODE.md, 3.5 и 3.6). Формат ключей строгий: «A — 2 · B — 4», «30 — 3». */
 import { useState } from "react";
 import { DropdownMenu } from "radix-ui";
 import { Topic } from "../types";
@@ -6,6 +10,7 @@ import { isCorrect, Text } from "./text";
 import { Banner } from "./ui";
 import { CheckBar, Transform, Translate } from "./Exercises";
 
+/** Официальные русские инструкции к заданиям из демоверсии (одинаковы во всех модулях, поэтому здесь, а не в JSON) */
 const RU = {
   t11: "Прочитайте текст и заполните пропуски A–F частями предложений, обозначенными цифрами 1–7. Одна из частей в списке 1–7 лишняя. Занесите цифры, обозначающие соответствующие части предложений, в таблицу.",
   t19: "Прочитайте приведённый ниже текст. Преобразуйте, если необходимо, слова, напечатанные заглавными буквами в конце строк, обозначенных номерами 19–24, так, чтобы они грамматически соответствовали содержанию текста. Заполните пропуски полученными словами. Каждый пропуск соответствует отдельному заданию из группы 19–24.",
@@ -13,7 +18,8 @@ const RU = {
   t30: "Прочитайте текст с пропусками, обозначенными номерами 30–36. Эти номера соответствуют заданиям 30–36, в которых представлены возможные варианты ответов. Запишите в поле ответа цифру 1, 2, 3 или 4, соответствующую выбранному Вами варианту ответа.",
 };
 
-/** Answer 1–7 for Task 11: a drop-down in the site's own style instead of the browser's list */
+/** Answer 1–7 for Task 11: a drop-down in the site's own style instead of the browser's list
+    Выпадающий список 1–7 для задания 11 в стиле сайта. state — "correct" / "wrong" после проверки */
 function NumberChoice({ value, disabled, state, onChange }: { value: string; disabled: boolean; state: string; onChange: (v: string) => void }) {
   return <DropdownMenu.Root modal={false}>
     <DropdownMenu.Trigger className={`number-choice${state ? ` number-choice--${state}` : ""}`} disabled={disabled}>{value || "—"}<span className="number-choice__arrow" aria-hidden="true">▾</span></DropdownMenu.Trigger>
@@ -23,6 +29,9 @@ function NumberChoice({ value, disabled, state, onChange }: { value: string; dis
   </DropdownMenu.Root>;
 }
 
+/** Задание 11: текст с пропусками {A}…{F} и 7 частей предложений (одна лишняя).
+    key — ключ из строки "A — 2 · B — 4 · …" → объект { A: "2", B: "4", … }; val — ответы ученика по буквам.
+    text.split по {A}… даёт [текст, "A", текст, "B", …]: чётные куски — текст, нечётные — буквы пропусков */
 function Task11({ r }: { r: any }) {
   const key = Object.fromEntries([...r.key.matchAll(/([A-F]) — (\d)/g)].map(m => [m[1], m[2]]));
   const [val, setVal] = useState<Record<string, string>>({});
@@ -38,6 +47,8 @@ function Task11({ r }: { r: any }) {
   </div>;
 }
 
+/** Задания 19–24 и 25–29: строка = [номер, текст до пропуска, текст после, СЛОВО справа].
+    keys — правильные ответы в том же порядке, что строки; instr — русская инструкция */
 function Gaps({ rows, keys, instr }: { rows: [number, string, string, string][]; keys: string[]; instr: string }) {
   const [val, setVal] = useState<Record<number, string>>({});
   const [checked, setChecked] = useState(false);
@@ -49,6 +60,8 @@ function Gaps({ rows, keys, instr }: { rows: [number, string, string, string][];
   })}</div><CheckBar big checked={checked} score={score} total={rows.length} onCheck={() => setChecked(true)} onReset={() => { setChecked(false); setVal({}); }} /></div>;
 }
 
+/** Задания 30–36: текст с номерами пропусков {30}…; opts — [номер, вариант1, …, вариант4];
+    key3 — правильный номер варианта для каждого пропуска: { "30": "3", … } */
 function Cloze({ text, opts, key3 }: { text: string; opts: any[]; key3: Record<string, string> }) {
   const [val, setVal] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState(false);
@@ -63,7 +76,8 @@ function Cloze({ text, opts, key3 }: { text: string; opts: any[]; key3: Record<s
     <CheckBar big checked={checked} score={score} total={opts.length} onCheck={() => setChecked(true)} onReset={() => { setChecked(false); setVal({}); }} /></div>;
 }
 
-/** Mini-review after every two units (topic.reviews): Tasks 30–36 format + harder paraphrase */
+/** Mini-review after every two units (topic.reviews): Tasks 30–36 format + harder paraphrase
+    Мини-повторение i: каждый текст cloze + перефраз. Ключ — массив номеров, превращаем его в { "30": "3", … } */
 export function Review({ topic, i }: { topic: Topic; i: number }) {
   const r = topic.reviews![i];
   return <section className="page">
@@ -74,6 +88,9 @@ export function Review({ topic, i }: { topic: Topic; i: number }) {
   </section>;
 }
 
+/** Итоговый Revision модуля. k — ключи из revision.keys: { "19–24": "ответ · ответ…", "25–29": …, "30–36": … };
+    key3 — для 30–36 из строки "30 — 3 overcome · 31 — 2 take" берём номер пропуска и номер варианта.
+    Заголовок — первая часть названия модуля (до «:» и « &»): «Sport & Healthy Lifestyle» → «Sport» */
 export default function Revision({ topic }: { topic: Topic }) {
   const R = topic.revision;
   const k = Object.fromEntries(R.keys as [string, string][]);
