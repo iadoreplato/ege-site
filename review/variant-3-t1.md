@@ -4,36 +4,36 @@
 ## Текст записи
 **Announcer:** Speaker A
 
-**Speaker A:** For two weeks in Year Eleven I worked in a law office, and until then I had been sure that was my future. On day three I was asked to file papers for eight hours. By Friday I knew that sitting in an office was not for me. My parents thought the fortnight was wasted. I don't. It is much cheaper to find out at seventeen what you don't want to do than after five years at university.
+**Speaker A:** For two weeks in Year Eleven I did work experience in a law office, and until then I'd been sure it was my future. On day three I was asked to file papers for eight hours, and by lunchtime I was bored. By Friday I knew. My parents think the fortnight was wasted, because they hoped I'd become a lawyer. I'm seventeen, and I've already crossed one job off my list.
 
 **Announcer:** Speaker B
 
-**Speaker B:** People see a chef bringing out a beautiful plate and think that is the job. They don't see me arriving at six to clean the kitchen, peel forty kilos of potatoes and prepare the sauces that take hours. By the time the first customer comes in at noon, three quarters of my work has been done. If something goes wrong with the invisible part, the visible part falls apart completely.
+**Speaker B:** People see a chef bring out a beautiful plate and think that's the job. They don't see me arriving at six to clean the kitchen and peel forty kilos of potatoes. We're a team of eight, and by the time the first customer comes in at noon, most of the work is done. Nobody writes about that in the newspaper, and nobody posts photos of it.
 
 **Announcer:** Speaker C
 
-**Speaker C:** My friends from school earn twice what I do. I play the cello in an orchestra, and although the salary is modest, I wouldn't swap my job for any of theirs. When I'm on stage and three hundred people go silent at the same moment, I feel something you can't buy. I've seen colleagues who left music for finance and ended up miserable, whatever their bank balance said.
+**Speaker C:** My school friends earn twice what I do. I play the cello in an orchestra, and the salary is modest, but I really enjoy my job. When three hundred people go silent at the same moment, I feel something I can't buy. Two of my colleagues left music for finance. They have a lot more in the bank, and every time we meet, they ask me about rehearsals.
 
 **Announcer:** Speaker D
 
-**Speaker D:** I spent eleven years working in a bank before I retrained as a primary school teacher at thirty-five. Everyone said it was a risk, and my mother didn't speak to me for a week. But a career isn't a railway line you can never get off. People change, and the job that suits you at twenty-two may not suit you at thirty-five. I have never regretted the decision.
+**Speaker D:** I spent eleven years in a bank before I retrained as a primary school teacher at thirty-five. My mother didn't speak to me for a week. The experience wasn't wasted, though: I know how to manage a budget, and by thirty I knew something was missing. The career that suits you at twenty-two may not suit you at thirty-five. I've never gone back.
 
 **Announcer:** Speaker E
 
-**Speaker E:** I work as a tour guide, and nobody told me that my most important tool would be my voice and my patience. A group of forty tired tourists will forgive an occasional wrong date, but not a guide who mumbles or loses their temper. The same goes for doctors, lawyers and shop assistants. Whatever you choose, learn to explain things clearly and to listen to people properly.
+**Speaker E:** I'm a tour guide, and nobody told me that my most important skills would be my voice and my patience. A group of forty tired tourists will forgive a wrong date, but not a guide who mumbles. My sister is a doctor, and she says that most of her day is spent explaining things and listening. A friend of mine who works in a shop says the same about customers. Our company has a team of twenty guides, but on the road each of us is alone with the group.
 
 **Announcer:** Speaker F
 
-**Speaker F:** After university I took a job in Canada for a year, with no friends and an accent that nobody understood. It was lonely at first, but it changed how I think. I learnt to manage in an unfamiliar system, and I came home with ideas about work that nobody around me had. I would advise anyone who gets the opportunity to try a different country early in their career.
+**Speaker F:** After university I took a job abroad, in Canada, for a year, with no friends and an accent nobody understood. It was my first real work experience, and it was lonely at first. I learnt how to work in a system where nothing was done the way I knew, and I came home with ideas none of my colleagues had. I started my career with a much wider outlook than the people around me.
 
 ## Задание
-- 1. Enjoying your work counts for more than a big salary.
-- 2. Work experience can help you to find out which jobs are not right for you.
-- 3. The ability to communicate well is valuable in nearly any occupation.
-- 4. Much of the effort in a profession goes unnoticed by the public.
-- 5. Working in another country early on can widen your outlook.
-- 6. People shouldn't be afraid to start a different career later in life.
-- 7. Working in a team usually achieves more than working alone.
+- 1. Enjoying your job is more important than a high salary.
+- 2. Work experience shows you which jobs are not for you.
+- 3. Good communication skills are useful in almost every job.
+- 4. Much of the work in a profession is never seen by the public.
+- 5. Working abroad early in your career widens your outlook.
+- 6. It is never too late to change your career.
+- 7. A team can achieve more than one person working alone.
 
 **Ключ:** A–2, B–4, C–1, D–6, E–3, F–5
 
@@ -44,5 +44,5 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 432 слов, около 3.3 мин без пауз; 2273 знаков
-- слов у говорящих: 78, 70, 68, 68, 67, 69
+- 444 слов, около 3.4 мин без пауз; 2263 знаков
+- слов у говорящих: 71, 66, 68, 63, 90, 74

@@ -80,8 +80,8 @@
     {
       "q": "How did Rachel begin working at the shelter?",
       "options": [
-        "She answered an advert for weekend helpers.",
-        "She offered to help after a conversation with the manager.",
+        "She responded to an advertisement for extra helpers at weekends.",
+        "She offered to help after chatting to the manager.",
         "The manager asked her to join a training course for volunteers."
       ]
     },
@@ -89,16 +89,16 @@
       "q": "What does Rachel say about her experience of animals before she started?",
       "options": [
         "She had looked after several pets when she was a child.",
-        "She had studied animal care at school.",
-        "She had hardly any first-hand knowledge of animals."
+        "She had studied animal care at school for two years.",
+        "She had very little experience of them."
       ]
     },
     {
       "q": "Why does Rachel mention the files kept on each animal?",
       "options": [
-        "They tell new volunteers how each animal is likely to behave.",
+        "They tell newcomers how each animal behaves.",
         "They take more time than looking after the animals themselves.",
-        "They are the least popular part of the volunteers' work."
+        "They are the least popular part of the work."
       ]
     },
     {
@@ -114,23 +114,23 @@
       "options": [
         "Many bring them back to the shelter soon afterwards.",
         "Some pick one without working out the likely cost.",
-        "Many adopt animals to give them as presents."
+        "Most are not interested in adopting older animals."
       ]
     },
     {
       "q": "How has volunteering affected Rachel?",
       "options": [
-        "It has given her far more confidence in herself.",
+        "It has made her more self-confident.",
         "It has helped her to find a new job.",
-        "It has made her prefer the company of animals to people."
+        "It has made her prefer animals to people."
       ]
     },
     {
       "q": "What advice does Rachel give to new volunteers?",
       "options": [
         "Choose the shelter with the best reputation.",
-        "Begin by volunteering for as many hours as possible.",
-        "Pick a place that is not far from where you live."
+        "Begin with a large number of hours.",
+        "Pick a place that is easy to reach."
       ]
     }
   ],

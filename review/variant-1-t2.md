@@ -8,7 +8,7 @@
 
 **Hannah:** Well, the owner is looking for someone to work at weekends, and she asked whether I knew anybody. I thought of you at once.
 
-**Dan:** Me? I've never had a proper job, never mind in a café. I can barely make a decent cup of tea.
+**Dan:** Me? I've never worked anywhere, never mind a café. I can barely make a decent cup of tea.
 
 **Hannah:** Nobody expects you to be a barista on the first day. I've been there since March, and for the first two weeks all I did was wash cups and wipe tables.
 
@@ -62,4 +62,4 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 400 слов, около 3.1 мин без пауз; 2070 знаков
+- 397 слов, около 3.1 мин без пауз; 2066 знаков

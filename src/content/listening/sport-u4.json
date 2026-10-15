@@ -1,34 +1,89 @@
 {
   "id": "sport-u4",
+  "section": "listening",
   "module": "sport",
   "unit": 4,
   "task": 1,
   "title": "Traditional sports: six opinions",
   "level": "B2+",
-  "speakers": {"Speaker A": "male1", "Speaker B": "female1", "Speaker C": "male2", "Speaker D": "female2", "Speaker E": "male3", "Speaker F": "female3"},
+  "speakers": {
+    "Speaker A": "male1",
+    "Speaker B": "female1",
+    "Speaker C": "male2",
+    "Speaker D": "female2",
+    "Speaker E": "male3",
+    "Speaker F": "female3"
+  },
   "script": [
-    {"who": "Announcer", "text": "Speaker A"},
-    {"who": "Speaker A", "text": "My friends would rather watch a football match on their phones than try lapta, and honestly I can't blame them. Have you ever seen it on a sports channel? Neither have I. Turn on any evening programme and you get the same three sports over and over. Some people say traditional games are only for pensioners, but I'd put that down to ignorance. Young people can't like something they've never even had the chance to see."},
-    {"who": "Announcer", "text": "Speaker B"},
-    {"who": "Speaker B", "text": "I think a country is a bit like a person: you can tell a lot about it from the games it invented. When we play gorodki, we're doing exactly what people have done for centuries in these same villages. My grandfather used to play it, of course, but that's not the point. Museums can protect old objects, yet a game stays alive only as long as somebody keeps playing it, and it's part of what makes us who we are."},
-    {"who": "Announcer", "text": "Speaker C"},
-    {"who": "Speaker C", "text": "I've been teaching PE for eleven years, and more and more pupils have never touched a bat or a ball for anything other than football. Some parents show their kids old games at weekends, but many simply don't have the time. That's why I now put sambo and lapta into the timetable. If a school doesn't do it, I'm afraid nobody else will. And the children enjoy them, which still surprises me."},
-    {"who": "Announcer", "text": "Speaker D"},
-    {"who": "Speaker D", "text": "At our club in the park, the youngest player is nine and the oldest is seventy-six. They stand in the same line, throw from the same distance and, believe it or not, the nine-year-old beats the old man about half of the time. People imagine gorodki as something for retired gentlemen, but our Saturday game proves otherwise. You don't need to be strong or fast, so nobody sits on the bench."},
-    {"who": "Announcer", "text": "Speaker E"},
-    {"who": "Speaker E", "text": "When I started gorodki, I was a very impatient person. I'd throw the bat and complain when I missed. My coach just said, 'Breathe, look at the target, forget everything else.' It took months, but now I find it easier to concentrate on a maths test or a long conversation, too. I've also stopped panicking when things go wrong. I'd never have guessed that a game with wooden sticks could change me so much."},
-    {"who": "Announcer", "text": "Speaker F"},
-    {"who": "Speaker F", "text": "Nobody ever signed me up for a club. My grandfather simply put a bat in my hand one summer in his garden and said, 'Try.' Then my father joined in, then my uncle, and it became our August habit. I've never read a rulebook. I learnt it all by watching them. If it hadn't been for those summers, I doubt I'd even know the game exists."}
+    {
+      "who": "Announcer",
+      "text": "Speaker A"
+    },
+    {
+      "who": "Speaker A",
+      "text": "My grandad says lapta is an old man's game, and he's the only one in our family who ever mentions it. I've never seen it on television, not once, and I do check. Sports channels show the same three sports on repeat. My friends would rather watch football on their phones, and I can't blame them."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker B"
+    },
+    {
+      "who": "Speaker B",
+      "text": "My grandfather played gorodki on this very field, and so did his father, but that isn't why I play. When I throw the bat, I'm doing what people in this country have done for hundreds of years, and no other country has this game. Museums look after old things, but a traditional game stays alive only while somebody plays it."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker C"
+    },
+    {
+      "who": "Speaker C",
+      "text": "I've taught PE for eleven years, and most of my pupils have never held a bat. Some parents show their children traditional games like lapta at weekends, but many work too much. So I've put lapta and gorodki into the timetable, one lesson a month. If schools don't teach them, I don't think anybody will."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker D"
+    },
+    {
+      "who": "Speaker D",
+      "text": "Our Saturday group in the park has players from nine to seventy-six. People think traditional games are for retired gentlemen, and half of our regulars are indeed retired. But last week a nine-year-old and a seventy-six-year-old played in the same team, and it was the nine-year-old who threw the winning bat."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker E"
+    },
+    {
+      "who": "Speaker E",
+      "text": "When I started gorodki, I couldn't stand losing. I'd throw, miss and shout. My coach, a quiet man in his sixties, kept saying 'Be patient, breathe, look at the target.' It took months. Last week I managed to control my temper through a very long exam, and my mother asked what had happened to me."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker F"
+    },
+    {
+      "who": "Speaker F",
+      "text": "Nobody at school ever taught me gorodki; we only had football and volleyball. My grandfather put a bat in my hand in his garden one August, then my father joined in, then my uncle. I learnt the game from my relatives, and I've never read the rules. I just watched them."
+    }
   ],
   "options": [
-    "Traditional games are mainly of interest to the older generation.",
-    "Traditional games are part of what gives a nation its identity.",
-    "Traditional games can bring different age groups together.",
-    "Traditional games help to develop character and self-control.",
-    "Schools should take responsibility for teaching traditional games.",
-    "Children usually discover traditional games through their relatives.",
-    "Television pays little attention to traditional sports."
+    "Traditional games are mainly for the older generation.",
+    "Traditional games are part of what makes a country different.",
+    "Traditional games bring different age groups together.",
+    "Traditional games teach children patience and self-control.",
+    "Schools should teach traditional games.",
+    "Children usually learn traditional games from relatives.",
+    "Television shows traditional sports very rarely."
   ],
-  "key": [7, 2, 5, 3, 4, 6],
-  "discuss": ["Which traditional games did you play as a child, and who taught you?", "Should traditional sports be shown on television more often? Would you watch them?", "Can games that are hundreds of years old still be attractive to teenagers today?"]
+  "key": [
+    7,
+    2,
+    5,
+    3,
+    4,
+    6
+  ],
+  "discuss": [
+    "Which traditional game or sport from your region would you recommend to a foreign friend? Why?",
+    "Should schools spend lesson time on traditional sports? Give arguments for and against.",
+    "Speaker A says the media ignore traditional sports. How could they become more popular among teenagers?"
+  ]
 }

@@ -88,25 +88,25 @@
     {
       "q": "Why did Oliver begin to bake bread at university?",
       "options": [
-        "He needed extra money to pay for his university studies.",
-        "His chemistry course required practical baking.",
-        "He was dissatisfied with the loaves sold in the shops."
+        "He needed extra money to pay for his studies.",
+        "He was dissatisfied with the loaves sold in the shops.",
+        "His chemistry course required practical baking."
       ]
     },
     {
       "q": "What finally persuaded Oliver to become a baker?",
       "options": [
-        "The attitude of a baker he worked with abroad.",
         "Advice from one of his university teachers.",
-        "A growing demand for his bread among customers."
+        "A growing demand for his bread among customers.",
+        "The attitude of a baker he worked with abroad."
       ]
     },
     {
       "q": "How did Oliver's family react to his plan?",
       "options": [
+        "Only his grandmother backed him seriously.",
         "Everybody encouraged him straight away.",
-        "His parents refused to help him financially.",
-        "Only his grandmother backed him seriously."
+        "His parents refused to help him financially."
       ]
     },
     {
@@ -120,8 +120,8 @@
     {
       "q": "What does Oliver say about using local flour?",
       "options": [
-        "He prefers its taste and knows the growers.",
-        "It costs less than flour from big factories.",
+        "He values its flavour and likes knowing the producers.",
+        "It is cheaper than the industrial kind.",
         "His customers suggested it to him."
       ]
     },
@@ -129,27 +129,27 @@
       "q": "What happened after Oliver made a mistake with the rolls?",
       "options": [
         "Customers stopped buying his bread.",
-        "Customers began to trust him more.",
-        "He had to close the bakery for a day."
+        "He had to close the bakery for a day.",
+        "Customers began to trust him more."
       ]
     },
     {
       "q": "What advice does Oliver give to young entrepreneurs?",
       "options": [
-        "Leave your studies as soon as you have an idea.",
-        "Avoid listening to criticism.",
-        "Try your idea on a small scale first."
+        "Leave your studies immediately.",
+        "Try your idea on a small scale first.",
+        "Avoid listening to criticism."
       ]
     }
   ],
   "key": [
+    2,
     3,
     1,
-    3,
     2,
     1,
-    2,
-    3
+    3,
+    2
   ],
   "discuss": [
     "Would you like to run your own business one day? What kind?",

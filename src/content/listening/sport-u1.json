@@ -1,34 +1,90 @@
 {
   "id": "sport-u1",
+  "section": "listening",
   "module": "sport",
   "unit": 1,
   "task": 1,
   "title": "Taking part in sports competitions: six opinions",
   "level": "B2–B2+",
-  "speakers": {"Speaker A": "male1", "Speaker B": "female1", "Speaker C": "male2", "Speaker D": "female2", "Speaker E": "male3", "Speaker F": "female3"},
+  "speakers": {
+    "Speaker A": "male1",
+    "Speaker B": "female1",
+    "Speaker C": "male2",
+    "Speaker D": "female2",
+    "Speaker E": "male3",
+    "Speaker F": "female3"
+  },
   "script": [
-    {"who": "Announcer", "text": "Speaker A"},
-    {"who": "Speaker A", "text": "People say playing at home is all about the crowd, but I think it goes deeper than that. I know every bump on our pitch, I can find my teammates without even looking, and nobody has to explain the changing rooms to me. Last season I scored nine times at home and only twice away, with the same coach and the same tactics. I'm not a better footballer on Saturdays. I'm just one who feels at home."},
-    {"who": "Announcer", "text": "Speaker B"},
-    {"who": "Speaker B", "text": "Most players think my job is to spot fouls. In reality, I spend half the match making sure everyone understands the rules in the same way, because if one side believes it can get away with things, the game turns ugly very quickly. Of course, every player wants to win, and I understand that. But once a team stops trusting the officials, the result stops meaning anything, and that's what worries me most."},
-    {"who": "Announcer", "text": "Speaker C"},
-    {"who": "Speaker C", "text": "When I lost the semi-final last spring, my coach said, 'Well, at least you took part,' and I nearly threw my racket at him. Honestly, that sentence is useless to me. What helped was watching the video. I'd been giving up on long rallies without noticing it. I changed my fitness plan the next day, and this year I'm beating girls who beat me then. So that defeat turned out to be a favour."},
-    {"who": "Announcer", "text": "Speaker D"},
-    {"who": "Speaker D", "text": "I volunteered at the city marathon last year, expecting to hand out water bottles and go home. What I didn't expect was the atmosphere afterwards. The cafés were full, local kids were asking about running clubs, and my neighbour, who usually complains about everything, offered to host two runners from abroad. Sure, the roads were closed for a day, but the whole town seemed to gain something that weekend."},
-    {"who": "Announcer", "text": "Speaker E"},
-    {"who": "Speaker E", "text": "I've held a season ticket for fifteen years, and the games I remember are never the ones we win four-nil. They're the matches where nobody in the stadium can guess what's going to happen, so you hold your breath until the final whistle. A friend of mine only goes when we're playing the top teams, because he wants to see us win. I'd rather watch an even game and lose than watch a walkover."},
-    {"who": "Announcer", "text": "Speaker F"},
-    {"who": "Speaker F", "text": "I swim well in training, and my times are nearly a second faster than the other girls in my group. Then on race day my legs feel like stone. My mother tells me to enjoy myself, my coach tells me to relax, but all I can think about is what will happen if I come last. Last month I was disqualified for a false start, simply because I was so tense. It's not my fitness that lets me down."}
+    {
+      "who": "Announcer",
+      "text": "Speaker A"
+    },
+    {
+      "who": "Speaker A",
+      "text": "Everybody says our crowd wins matches at home, and it's true that I like it when the stands are full. But last season one home match was played in front of nobody because of the rain, and I still scored twice. I know our pitch: where the ball jumps off the fence, which corner stays muddy. Away, I play like a stranger, and I can't predict a single bounce."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker B"
+    },
+    {
+      "who": "Speaker B",
+      "text": "People think a referee is there to catch players out. In fact most of my work happens before the whistle: I explain to both captains how I'll treat a tackle from behind, so that they trust me when it happens. Everyone takes part to win, of course, and a good team will push hard. But once the players stop believing the official is fair, the match is just a fight."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker C"
+    },
+    {
+      "who": "Speaker C",
+      "text": "After we lost the semi-final, my coach said that at least I'd taken part, which didn't help at all. I never watch videos after a win, but that evening I watched the whole match three times and counted how many long rallies I'd given away. Eleven. I changed my training, and this spring I beat the same girl in two sets."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker D"
+    },
+    {
+      "who": "Speaker D",
+      "text": "I took part in the town marathon as a volunteer, expecting to hand out water and go home. Nobody could predict who would win the women's race, so the whole main street stood and waited. Afterwards people from other cities packed the cafés, my neighbour, who complains about everything, offered a room to two runners from Poland, and the shops did more business than in a normal week."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker E"
+    },
+    {
+      "who": "Speaker E",
+      "text": "I've had a season ticket for fifteen years, and I remember almost nothing about the 4–0 games. What I remember is a match we lost 3–2 in the last minute. Nobody in the stadium knew how it would end, so everybody stood and held their breath. My friend only comes when we play the big teams, because he wants to see us win."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker F"
+    },
+    {
+      "who": "Speaker F",
+      "text": "In training I'm the fastest in my group, almost a second ahead, and I know every tile of our home pool. Then on the day my arms feel like rubber. My mum says 'Enjoy it', my coach says 'Relax', and I'm thinking about coming last. Last month I was so tense that I left the block too early, and the referee told me my time wouldn't count."
+    }
   ],
   "options": [
-    "Taking part matters more than winning.",
-    "A familiar place can help athletes to perform better.",
-    "Competitive sport depends on rules that everyone respects.",
-    "A big sporting event can bring benefits to a whole community.",
-    "Nerves can prevent an athlete from showing their real ability.",
-    "A defeat can become a source of progress.",
-    "Spectators get most enjoyment from games with an uncertain result."
+    "Taking part is more important than winning.",
+    "A team plays better on its home pitch.",
+    "Every competition needs a referee that players trust.",
+    "A big race can bring visitors and money to a town.",
+    "Nerves on the day can spoil an athlete's result.",
+    "Losing a match can teach an athlete a lot.",
+    "The best matches are the ones nobody can predict."
   ],
-  "key": [2, 3, 6, 4, 7, 5],
-  "discuss": ["Do you agree that taking part matters more than winning? Why or why not?", "Have you ever lost a competition or a match? What did you learn from it?", "Why do you think some athletes perform better at home than away?"]
+  "key": [
+    2,
+    3,
+    6,
+    4,
+    7,
+    5
+  ],
+  "discuss": [
+    "Which of the six speakers do you agree with most, and why?",
+    "Speaker C calls a defeat 'a favour'. Have you ever learnt something important from losing?",
+    "Is it worth putting up with road closures and crowds when your city hosts a big sporting event?",
+    "Would you rather watch a close match between two average teams or a one-sided game with a famous star?"
+  ]
 }

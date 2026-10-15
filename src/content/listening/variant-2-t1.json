@@ -21,7 +21,7 @@
     },
     {
       "who": "Speaker A",
-      "text": "Before going to Portugal I spent a month learning phrases from a phone app, and I felt silly saying them aloud on the first morning. The baker, however, smiled so widely that she gave me a free pastry. Nobody expects a visitor to speak perfectly. But a 'good morning' and a 'thank you' in their own language told people that I respected their country, and doors opened everywhere, from taxis to family kitchens."
+      "text": "Before Portugal I spent a month learning a few words from an app, and I felt silly saying them aloud on the first morning. The baker laughed, then gave me a free pastry. My pronunciation was terrible. But after 'good morning' and 'thank you' in their language, people started talking to me, in the market, in taxis, even in somebody's kitchen."
     },
     {
       "who": "Announcer",
@@ -29,7 +29,7 @@
     },
     {
       "who": "Speaker B",
-      "text": "On my first trip abroad I packed three pairs of boots, two coats and a hairdryer. The airline lost my suitcase for four days, and I discovered that the small bag I had kept with me contained everything I really needed. Since then I carry one backpack, whatever the destination. I move through stations faster, nobody waits for me at baggage reclaim, and I'm never tempted to buy souvenirs, because I simply have no room."
+      "text": "The first time I went abroad, I packed three pairs of boots and a hairdryer. The airline lost my suitcase for four days, and I managed with the small bag I'd kept with me. The trip also cost much less than planned, because I had nothing to put souvenirs in. Since then I take one small bag. I walk past baggage reclaim and I'm in the city before the others."
     },
     {
       "who": "Announcer",
@@ -37,7 +37,7 @@
     },
     {
       "who": "Speaker C",
-      "text": "We were heading for a famous castle when our train broke down in the middle of nowhere. The driver suggested a village two kilometres away, and we walked there rather reluctantly. It turned out to be market day: there was music, grandmothers selling honey, and a man who insisted on showing us his collection of old bicycles. We never reached the castle. If you asked me now, I would say that afternoon was the best of the whole holiday."
+      "text": "Our train broke down in the middle of nowhere, on the way to a famous castle. The driver told us about a village two kilometres away, so we walked there, not very happily. It was market day: music, grandmothers selling honey, a man showing us his old bicycles. We changed all our plans and never saw the castle. I didn't take a single photo, and I still remember that afternoon."
     },
     {
       "who": "Announcer",
@@ -45,7 +45,7 @@
     },
     {
       "who": "Speaker D",
-      "text": "Guidebooks tell you where to eat, but they can't tell you what people are really worried about or what makes them laugh. In Georgia I stayed with a family whose daughter was my age, and over breakfast she explained local traditions, the school system and even the jokes that everybody tells. I learnt more in a week at that table than in a month of museum visits. Whenever I can, I choose to stay with the people who actually live there."
+      "text": "Guidebooks tell you where to eat, but not what local people are worried about or what makes them laugh. In Georgia I stayed with a family. I knew five words of the language, so we mostly used English and our hands. Their daughter was my age, and at breakfast she explained the school system and the jokes everybody tells. I did the museums too, and I remember them less."
     },
     {
       "who": "Announcer",
@@ -53,7 +53,7 @@
     },
     {
       "who": "Speaker E",
-      "text": "Many of my friends think that a good trip means a luxury hotel and a rented car. I went around Scotland last summer with a tent, a bicycle and about two hundred pounds. I washed in rivers, cooked on a small stove and met more interesting people on campsites than I would have in any resort. It was tough sometimes, particularly in the rain, but I came home with stories I still tell every week."
+      "text": "A lot of my friends think a good trip means a nice hotel and a rented car. I went around Scotland with a tent, a bicycle and about two hundred pounds. I washed in rivers and cooked on a tiny stove. In the rain it was hard, and I carried everything on my back, but I met more interesting people on campsites than in any resort. I still tell those stories every week."
     },
     {
       "who": "Announcer",
@@ -61,25 +61,25 @@
     },
     {
       "who": "Speaker F",
-      "text": "Last year six of us travelled to Italy, and by the third day we were arguing about everything: Francesca wanted museums, Tom wanted the beach, and I just wanted lunch. We finally agreed to take turns choosing the day's programme, and, strangely, I enjoyed the museums more than I had expected. Going with others means you won't always get your way, but you also see things you would never have chosen for yourself."
+      "text": "Six of us went to Italy last year. By the third day we were arguing about everything: Francesca wanted museums, Tom wanted the beach, and I wanted lunch. Our plan fell apart on the second morning. In the end we took turns choosing the day, and I liked the museums more than I'd expected."
     }
   ],
   "options": [
-    "An inexpensive journey can be just as satisfying as a costly one.",
-    "An unexpected change of plan can turn into the highlight of a journey.",
-    "Travelling in a group means being ready to give way to others.",
-    "It is worth learning some phrases of the local language.",
-    "Contact with local residents shows you what a place is really like.",
-    "Photographs are a poor substitute for real memories.",
-    "Taking only a small amount of luggage makes travelling easier."
+    "Travelling with only a small bag makes a trip easier.",
+    "Meeting local people shows you what a place is really like.",
+    "A change of plan can become the best part of a trip.",
+    "In a group you must sometimes give way to others.",
+    "A cheap trip can be as good as an expensive one.",
+    "It pays to know some basic phrases in the local language.",
+    "Photos can never replace real memories."
   ],
   "key": [
-    4,
-    7,
+    6,
+    1,
+    3,
     2,
     5,
-    1,
-    3
+    4
   ],
   "discuss": [
     "Which speaker's advice would you follow? Why?",

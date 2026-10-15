@@ -40,33 +40,33 @@
 
 ## Задание
 1. Why did Oliver begin to bake bread at university?
-   1) He needed extra money to pay for his university studies.
-   2) His chemistry course required practical baking.
-   3) He was dissatisfied with the loaves sold in the shops.  ✔
+   1) He needed extra money to pay for his studies.
+   2) He was dissatisfied with the loaves sold in the shops.  ✔
+   3) His chemistry course required practical baking.
 2. What finally persuaded Oliver to become a baker?
-   1) The attitude of a baker he worked with abroad.  ✔
-   2) Advice from one of his university teachers.
-   3) A growing demand for his bread among customers.
+   1) Advice from one of his university teachers.
+   2) A growing demand for his bread among customers.
+   3) The attitude of a baker he worked with abroad.  ✔
 3. How did Oliver's family react to his plan?
-   1) Everybody encouraged him straight away.
-   2) His parents refused to help him financially.
-   3) Only his grandmother backed him seriously.  ✔
+   1) Only his grandmother backed him seriously.  ✔
+   2) Everybody encouraged him straight away.
+   3) His parents refused to help him financially.
 4. What did Oliver not expect when he opened the bakery?
    1) The very early start to each working day.
    2) The quantity of bureaucracy involved.  ✔
    3) The difficulty of the baking itself.
 5. What does Oliver say about using local flour?
-   1) He prefers its taste and knows the growers.  ✔
-   2) It costs less than flour from big factories.
+   1) He values its flavour and likes knowing the producers.  ✔
+   2) It is cheaper than the industrial kind.
    3) His customers suggested it to him.
 6. What happened after Oliver made a mistake with the rolls?
    1) Customers stopped buying his bread.
-   2) Customers began to trust him more.  ✔
-   3) He had to close the bakery for a day.
+   2) He had to close the bakery for a day.
+   3) Customers began to trust him more.  ✔
 7. What advice does Oliver give to young entrepreneurs?
-   1) Leave your studies as soon as you have an idea.
-   2) Avoid listening to criticism.
-   3) Try your idea on a small scale first.  ✔
+   1) Leave your studies immediately.
+   2) Try your idea on a small scale first.  ✔
+   3) Avoid listening to criticism.
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)

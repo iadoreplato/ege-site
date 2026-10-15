@@ -1,5 +1,5 @@
 /* ДОМАШНИЕ СТРАНИЦЫ И ВХОД (МОДЕЛЬ):
-   - Landing — главная: два раздела сайта, бесплатные варианты ЕГЭ и учебник по подписке;
+   - Landing — главная: первый экран, два раздела (бесплатные варианты ЕГЭ и учебник по подписке), три шага, цифры курса;
    - FreeHome — домашняя страница бесплатных вариантов;
    - Login — демо-вход: выбрать, кем войти (без пароля, всё остаётся в браузере);
    - Locked — что видит гость на странице учебника. */
@@ -12,90 +12,56 @@ import { Topic } from "../types";
 import { unitCards } from "./Cards";
 import { RabbitReader } from "./Rabbit";
 
-/** Как устроена подготовка: три шага */
-const STEPS = [
-  ["Try a free variant", "Do a full exam variant in the 2027 format, in exam mode with a timer or in practice mode."],
-  ["See your score and weak points", "Tasks 1–36 are checked at once; writing and speaking get AI feedback by the FIPI criteria. You see your test score and which skills need work."],
-  ["Practise with the textbook", "Each weak point links to the unit and task type that trains it. Your teacher sees your progress and sets homework."],
+/** Два раздела сайта: что внутри (три пункта) и куда ведёт кнопка */
+const PATHS = [
+  { kick: "Free", title: "Practice tests", text: "Full EGE variants in the 2027 format.", points: ["All 38 tasks, with real exam audio", "Tasks 1–36 checked at once", "Your score and your weak points"] },
+  { kick: "Subscription", title: "Textbook", text: "Topic units that close the gaps.", points: ["B2–B2+ topics with exam tasks", "Vocabulary, practice, speaking", "Progress your teacher can see"] },
 ];
-/** Методика: на чём построены задания и кабинеты */
-const METHODS = [
-  ["Practice by skill, not just by score", "Every task is linked to an exam skill, such as listening for detail or word formation. A skill counts as weak only after several attempts, so one bad day does not change the picture."],
-  ["Feedback straight after the answer", "The student sees the correct answer and the transcript or text right away, while the task is still fresh."],
-  ["Exam criteria from FIPI", "Writing and speaking are assessed by the official criteria, so the feedback matches what examiners look for."],
-  ["Words in many formats", "Vocabulary is practised in several formats: cards, pairs, gaps and exam tasks, so students recall words rather than just reread them."],
-  ["The teacher stays in charge", "Discussion questions are for the lesson, and the teacher's account suggests what to do next for the class and for each student."],
-];
-/** Частые вопросы */
-const FAQ = [
-  ["Is it really free?", "Yes: exam variants with checking and feedback are free. The topic-based textbook is part of the subscription."],
-  ["Do I need an account?", "Not for the free variants. To open the textbook and save progress, students and teachers log in to their accounts."],
-  ["Which exam format is used?", "The EGE 2027 format: listening, reading, grammar and vocabulary, writing (tasks 37–38) and the oral part (tasks 1–4)."],
-  ["Who can see my results?", "Only you and your teacher. In this model of the site, results are kept in your browser and are not sent anywhere."],
-];
+/** Как это работает: три шага */
+const STEPS = [["Take a test", "A full variant, section by section."], ["See your gaps", "Your score and weak skills, right away."], ["Close them", "Every gap links to the unit that trains it."]];
 
-/** Главная: о сайте, два раздела, как это работает, для кого, методика, что внутри учебника, вопросы.
-    Цифры о курсе считаются по контенту (topics), не вписываются руками */
+/** Главная: крупный первый экран, два раздела, три шага, цифры курса и финальная кнопка.
+    Цифры считаются по контенту (варианты, юниты, слова, экзаменационные задания), не вписываются руками */
 export function Landing({ topics }: { topics: Topic[] }) {
   const user = useUser();
   const units = topics.flatMap(t => t.units);
   const facts: [number, string][] = [
-    [topics.length, "topic modules"], [units.length, "units"],
+    [variants().length, "practice tests"], [units.length, "topic units"],
     [units.reduce((n, u) => n + unitCards(u).length, 0), "words and phrases"],
-    [units.reduce((n, u) => n + u.exercises.length, 0), "practice exercises"],
-    [units.reduce((n, u) => n + u.speech.flat().length, 0), "exam tasks"],
+    [units.reduce((n, u) => n + u.speech.flat().length, 0), "exam tasks in the textbook"],
   ];
   const book = user ? "#/book" : "#/login";
   return <section className="page landing">
-    <div className="cover__hero">
-      <div className="cover__text">
-        <h1 className="cover__title">EGE English<em className="cover__subtitle">exam variants and a topic-based textbook</em></h1>
-        <p className="cover__lead">Check your level with a free exam variant, get feedback on every section, then close the gaps with B2–B2+ topic units. Teachers see their students' progress and weak points.</p>
-        <div className="cover__actions">
-          <a className="cover__button" href="#/free">Try a free variant <span className="cover__button-arrow" aria-hidden="true">→</span></a>
-          <a className="landing__link" href={book}>{user ? "Open the textbook" : "Log in to the textbook"}</a>
+    <div className="hero">
+      <div className="hero__text">
+        <p className="hero__kick">EGE English · 2027 format</p>
+        <h1 className="hero__title">Ready for the exam, <em className="hero__accent">one step at a time</em></h1>
+        <p className="hero__lead">Start with a free practice test. See your score and weak points, then close the gaps with the topic-based textbook.</p>
+        <div className="hero__actions">
+          <a className="hero__button" href="#/free">Start a free test <span aria-hidden="true">→</span></a>
+          <a className="hero__button hero__button--ghost" href={book}>{user ? "Open the textbook" : "Log in to the textbook"}</a>
         </div>
-        <ul className="cover__facts">{[["EGE 2027", "format"], ["1–38", "all exam tasks"], ["B2–B2+", "level"], ["FIPI", "criteria"]].map(([n, t]) =>
-          <li className="cover__fact" key={t}><b className="cover__fact-number">{n}</b> {t}</li>)}</ul>
+        <ul className="hero__chips">{["FIPI criteria", "Instant feedback", "No account for tests"].map(x => <li className="hero__chip" key={x}>✓ {x}</li>)}</ul>
       </div>
-      <div className="cover__illustration"><RabbitReader /></div>
+      <div className="hero__art" aria-hidden="true">
+        <RabbitReader />
+        <span className="hero__float hero__float--1"><b>Listening · Task 1</b>6 / 6 ✓</span>
+        <span className="hero__float hero__float--2"><b>Essay · Task 38</b>AI feedback</span>
+        <span className="hero__float hero__float--3"><b>Weak spot</b>practise in Unit 3 →</span>
+      </div>
     </div>
 
-    <div className="home-cards">
-      <a className="home-card" href="#/free"><span className="home-card__kick">Free</span><b className="home-card__title">EGE variants</b>
-        <span className="home-card__text">Full exam variants in the 2027 format. Automatic checking, AI feedback on writing and speaking, your score and your weak points.</span>
-        <span className="home-card__action">Try a variant →</span></a>
-      <a className="home-card home-card--book" href={book}><span className="home-card__kick">Subscription</span><b className="home-card__title">Textbook</b>
-        <span className="home-card__text">Topic modules: vocabulary, practice and exam tasks for every section. Progress is saved; teachers see their students' strengths and weak points.</span>
-        <span className="home-card__action">{user ? "Open the textbook →" : "Log in →"}</span></a>
+    <div className="paths">{PATHS.map((p, i) => <a key={p.title} className={`path reveal${i ? " path--book" : ""}`} href={i ? book : "#/free"}>
+      <span className="path__kick">{p.kick}</span><b className="path__title">{p.title}</b><span className="path__text">{p.text}</span>
+      <ul className="path__list">{p.points.map(x => <li key={x}>{x}</li>)}</ul>
+      <span className="path__go">{i ? (user ? "Open the textbook" : "Log in") : "Choose a test"} →</span></a>)}</div>
+
+    <ol className="how reveal">{STEPS.map(([t, x], i) => <li className="how__step" key={t}><b className="how__number">{i + 1}</b><b className="how__title">{t}</b><span className="how__text">{x}</span></li>)}</ol>
+
+    <div className="band reveal">
+      <ul className="band__numbers">{facts.map(([n, t]) => <li key={t}><b className="band__value">{n}</b>{t}</li>)}</ul>
+      <div className="band__cta"><b className="band__title">See where you are today</b><a className="hero__button" href="#/free">Start a free test <span aria-hidden="true">→</span></a></div>
     </div>
-
-    <h3 className="section-heading">How it works</h3>
-    <ol className="steps">{STEPS.map(([t, x], i) => <li className="steps__item" key={t}><b className="steps__number">{i + 1}</b><b className="steps__title">{t}</b><span>{x}</span></li>)}</ol>
-
-    <h3 className="section-heading">For students and teachers</h3>
-    <div className="home-cards">
-      <div className="exercise audience"><b className="audience__title">Students</b><ul className="plan-list">
-        {["Exam tasks in the real format, with timers and audio", "Instant checking and a clear explanation of the score", "Your skills, homework and what to review today in one place", "Record your speaking answers and listen back"].map(x => <li className="plan-list__item" key={x}>{x}</li>)}</ul></div>
-      <div className="exercise audience"><b className="audience__title">Teachers</b><ul className="plan-list">
-        {["Your class at a glance: activity, average score, weak points", "A skills map for every student and the whole class", "Hints on what to do next: whole-class topics, students who need a nudge, progress to praise", "Set homework from any unit or exam task with a due date"].map(x => <li className="plan-list__item" key={x}>{x}</li>)}</ul></div>
-    </div>
-
-    <h3 className="section-heading">The exam at a glance</h3>
-    <div className="exam-glance">{SECTIONS.map(s => <div className="exam-glance__item" key={s.id}><b className="exam-glance__name">{s.label}</b><span>{s.ege}</span>{s.minutes && <span className="exam-glance__time">{s.minutes} min</span>}</div>)}</div>
-    <p className="note">Maximum {scale.max} primary points: written part {scale.parts.written}, oral part {scale.parts.oral}. More in <a href="#/exam/1">About the exam</a>.</p>
-
-    <h3 className="section-heading">How we teach</h3>
-    <div className="methods">{METHODS.map(([t, x]) => <div className="methods__item" key={t}><b className="methods__title">{t}</b><p className="methods__text">{x}</p></div>)}</div>
-
-    <h3 className="section-heading">Inside the textbook</h3>
-    <ul className="numbers">{facts.map(([n, t]) => <li className="numbers__item" key={t}><b className="numbers__value">{n}</b>{t}</li>)}</ul>
-    <p className="note">Every unit: vocabulary, memory cards, practice in Cambridge exam formats, and exam tasks for listening, reading, writing and speaking.</p>
-
-    <h3 className="section-heading">Questions</h3>
-    <div className="faq">{FAQ.map(([q, a]) => <details className="faq__item" key={q}><summary className="faq__question">{q}</summary><p className="faq__answer">{a}</p></details>)}</div>
-
-    <div className="landing__final"><b className="landing__final-title">Ready to see where you are?</b><a className="cover__button" href="#/free">Try a free variant <span className="cover__button-arrow" aria-hidden="true">→</span></a></div>
   </section>;
 }
 

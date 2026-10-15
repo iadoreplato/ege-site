@@ -109,7 +109,7 @@ export default function VariantView({ i, tab, onTab, topics }: { i: number; tab:
     <Banner kick="Free · Practice test" title={v.title} lede={v.lede} pics={["memo", "stopwatch"]} />
     <nav className="unit-tabs">{tabs.map((n, k) => <button key={n} className={`unit-tabs__tab${n === cur ? " unit-tabs__tab--active" : ""}`} onClick={() => onTab(n)}><b className="unit-tabs__number">{k + 1}</b>{SECTIONS.find(s => s.id === VTABS[n])?.label ?? "Result"}</button>)}</nav>
     {sec && <><h3 className="section-heading">{sec.label} · {sec.ege}{sec.minutes ? ` · ${sec.minutes} min` : ""}</h3>
-      {sec.minutes && <Timer key={sec.id} seconds={sec.minutes * 60} label="Section time" />}</>}
+      {sec.minutes && sec.id !== "listening" && <Timer key={sec.id} seconds={sec.minutes * 60} label="Section time" />}</>}
     {VTABS[cur] === "listening" && audio && (heard.length ? heard.map((t, n) => <ListeningCard key={t.id} t={t} audio={audio[t.id]} where={where} n={n + 1} discuss={false} />)
       : <p className="note">The recordings for this variant are being prepared.</p>)}
     {VTABS[cur] === "reading" && reading.map((t, n) => <ReadingCard key={t.id} t={t} where={where} n={n + 1} discuss={false} />)}

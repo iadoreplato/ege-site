@@ -56,13 +56,13 @@
    2) They show how people really act under pressure.  ✔
    3) They are mainly attended by sceptical managers.
 5. What did Laura learn from her solo trek in Nepal?
-   1) She depends on others more than she had thought.  ✔
+   1) She prefers solitude to company.
    2) She should avoid going on long treks.
-   3) She prefers solitude to company.
+   3) She depends on others more than she had thought.  ✔
 6. How did Laura feel before the sunrise in Peru?
-   1) Worried about the weather
+   1) Tempted to abandon the climb  ✔
    2) Determined to reach the summit
-   3) Tempted to abandon the climb  ✔
+   3) Worried about the weather
 7. What advice does Laura give to beginners?
    1) Test themselves in front of friends.
    2) Increase the difficulty gradually.  ✔

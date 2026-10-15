@@ -4,36 +4,36 @@
 ## Текст записи
 **Announcer:** Speaker A
 
-**Speaker A:** People say playing at home is all about the crowd, but I think it goes deeper than that. I know every bump on our pitch, I can find my teammates without even looking, and nobody has to explain the changing rooms to me. Last season I scored nine times at home and only twice away, with the same coach and the same tactics. I'm not a better footballer on Saturdays. I'm just one who feels at home.
+**Speaker A:** Everybody says our crowd wins matches at home, and it's true that I like it when the stands are full. But last season one home match was played in front of nobody because of the rain, and I still scored twice. I know our pitch: where the ball jumps off the fence, which corner stays muddy. Away, I play like a stranger, and I can't predict a single bounce.
 
 **Announcer:** Speaker B
 
-**Speaker B:** Most players think my job is to spot fouls. In reality, I spend half the match making sure everyone understands the rules in the same way, because if one side believes it can get away with things, the game turns ugly very quickly. Of course, every player wants to win, and I understand that. But once a team stops trusting the officials, the result stops meaning anything, and that's what worries me most.
+**Speaker B:** People think a referee is there to catch players out. In fact most of my work happens before the whistle: I explain to both captains how I'll treat a tackle from behind, so that they trust me when it happens. Everyone takes part to win, of course, and a good team will push hard. But once the players stop believing the official is fair, the match is just a fight.
 
 **Announcer:** Speaker C
 
-**Speaker C:** When I lost the semi-final last spring, my coach said, 'Well, at least you took part,' and I nearly threw my racket at him. Honestly, that sentence is useless to me. What helped was watching the video. I'd been giving up on long rallies without noticing it. I changed my fitness plan the next day, and this year I'm beating girls who beat me then. So that defeat turned out to be a favour.
+**Speaker C:** After we lost the semi-final, my coach said that at least I'd taken part, which didn't help at all. I never watch videos after a win, but that evening I watched the whole match three times and counted how many long rallies I'd given away. Eleven. I changed my training, and this spring I beat the same girl in two sets.
 
 **Announcer:** Speaker D
 
-**Speaker D:** I volunteered at the city marathon last year, expecting to hand out water bottles and go home. What I didn't expect was the atmosphere afterwards. The cafés were full, local kids were asking about running clubs, and my neighbour, who usually complains about everything, offered to host two runners from abroad. Sure, the roads were closed for a day, but the whole town seemed to gain something that weekend.
+**Speaker D:** I took part in the town marathon as a volunteer, expecting to hand out water and go home. Nobody could predict who would win the women's race, so the whole main street stood and waited. Afterwards people from other cities packed the cafés, my neighbour, who complains about everything, offered a room to two runners from Poland, and the shops did more business than in a normal week.
 
 **Announcer:** Speaker E
 
-**Speaker E:** I've held a season ticket for fifteen years, and the games I remember are never the ones we win four-nil. They're the matches where nobody in the stadium can guess what's going to happen, so you hold your breath until the final whistle. A friend of mine only goes when we're playing the top teams, because he wants to see us win. I'd rather watch an even game and lose than watch a walkover.
+**Speaker E:** I've had a season ticket for fifteen years, and I remember almost nothing about the 4–0 games. What I remember is a match we lost 3–2 in the last minute. Nobody in the stadium knew how it would end, so everybody stood and held their breath. My friend only comes when we play the big teams, because he wants to see us win.
 
 **Announcer:** Speaker F
 
-**Speaker F:** I swim well in training, and my times are nearly a second faster than the other girls in my group. Then on race day my legs feel like stone. My mother tells me to enjoy myself, my coach tells me to relax, but all I can think about is what will happen if I come last. Last month I was disqualified for a false start, simply because I was so tense. It's not my fitness that lets me down.
+**Speaker F:** In training I'm the fastest in my group, almost a second ahead, and I know every tile of our home pool. Then on the day my arms feel like rubber. My mum says 'Enjoy it', my coach says 'Relax', and I'm thinking about coming last. Last month I was so tense that I left the block too early, and the referee told me my time wouldn't count.
 
 ## Задание
-- 1. Taking part matters more than winning.
-- 2. A familiar place can help athletes to perform better.
-- 3. Competitive sport depends on rules that everyone respects.
-- 4. A big sporting event can bring benefits to a whole community.
-- 5. Nerves can prevent an athlete from showing their real ability.
-- 6. A defeat can become a source of progress.
-- 7. Spectators get most enjoyment from games with an uncertain result.
+- 1. Taking part is more important than winning.
+- 2. A team plays better on its home pitch.
+- 3. Every competition needs a referee that players trust.
+- 4. A big race can bring visitors and money to a town.
+- 5. Nerves on the day can spoil an athlete's result.
+- 6. Losing a match can teach an athlete a lot.
+- 7. The best matches are the ones nobody can predict.
 
 **Ключ:** A–2, B–3, C–6, D–4, E–7, F–5
 
@@ -44,5 +44,5 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 458 слов, около 3.5 мин без пауз; 2426 знаков
-- слов у говорящих: 77, 73, 74, 69, 74, 79
+- 410 слов, около 3.2 мин без пауз; 2132 знаков
+- слов у говорящих: 69, 70, 61, 68, 63, 67

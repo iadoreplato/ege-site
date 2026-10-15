@@ -1,5 +1,6 @@
 {
   "id": "sport-u2",
+  "section": "listening",
   "module": "sport",
   "unit": 2,
   "task": 2,
@@ -37,5 +38,5 @@
     "Tom's trainer advised him to take things more slowly."
   ],
   "key": [1, 2, 2, 1, 3, 2, 1],
-  "discuss": ["Is a gym membership a good present? What would you give a friend who wants to get fit?", "Why do so many people start a new sport enthusiastically and then give up?", "Would you prefer to train with a personal trainer or on your own? Why?"]
+  "discuss": ["Tom says it is easier to train with a friend. Do you agree? What are the pros and cons of working out with someone?", "What do you think about the 'no pain, no gain' approach?", "How would you persuade a friend who is out of shape to start exercising?"]
 }

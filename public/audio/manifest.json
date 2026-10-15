@@ -1,8 +1,8 @@
 {
   "sport-u1": {
     "file": "sport-u1.mp3",
-    "seconds": 433,
-    "hash": "cb041359bc672e89",
+    "seconds": 404,
+    "hash": "0a9cb1908ee1e22e",
     "mock": false
   },
   "sport-u2": {
@@ -19,8 +19,8 @@
   },
   "sport-u4": {
     "file": "sport-u4.mp3",
-    "seconds": 433,
-    "hash": "a928d3f689ed06b5",
+    "seconds": 371,
+    "hash": "ac4341f174c753fc",
     "mock": false
   },
   "sport-u5": {
@@ -37,14 +37,14 @@
   },
   "sport-u7": {
     "file": "sport-u7.mp3",
-    "seconds": 446,
-    "hash": "aac4140a5e258fec",
+    "seconds": 390,
+    "hash": "70b175b4d0278f8a",
     "mock": false
   },
   "variant-1-t1": {
     "file": "variant-1-t1.mp3",
-    "seconds": 464,
-    "hash": "9e55ed3cb35615e9",
+    "seconds": 389,
+    "hash": "c62dbddaea5a800a",
     "mock": false
   },
   "variant-1-t2": {
@@ -61,8 +61,8 @@
   },
   "variant-2-t1": {
     "file": "variant-2-t1.mp3",
-    "seconds": 450,
-    "hash": "5dd7f72266650eda",
+    "seconds": 413,
+    "hash": "6d6cd5ab6a6974a0",
     "mock": false
   },
   "variant-2-t2": {
@@ -79,8 +79,8 @@
   },
   "variant-3-t1": {
     "file": "variant-3-t1.mp3",
-    "seconds": 423,
-    "hash": "a3efb4eb1c912b71",
+    "seconds": 422,
+    "hash": "a7273e38ea900e2e",
     "mock": false
   },
   "variant-3-t2": {

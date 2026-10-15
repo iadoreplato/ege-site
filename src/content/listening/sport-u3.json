@@ -1,5 +1,6 @@
 {
   "id": "sport-u3",
+  "section": "listening",
   "module": "sport",
   "unit": 3,
   "task": 3,
@@ -31,10 +32,10 @@
     {"q": "Why did Laura go to the climbing wall at the age of fifteen?", "options": ["She wanted to overcome her fear of heights.", "Her school had made the trip compulsory.", "A friend had challenged her to go."]},
     {"q": "According to Laura, what is the main cause of climbing accidents?", "options": ["Overconfident attitudes", "Poor-quality equipment", "A lack of qualified instructors"]},
     {"q": "What does Laura say about her courses for companies?", "options": ["They quickly solve long-standing workplace problems.", "They show how people really act under pressure.", "They are mainly attended by sceptical managers."]},
-    {"q": "What did Laura learn from her solo trek in Nepal?", "options": ["She depends on others more than she had thought.", "She should avoid going on long treks.", "She prefers solitude to company."]},
-    {"q": "How did Laura feel before the sunrise in Peru?", "options": ["Worried about the weather", "Determined to reach the summit", "Tempted to abandon the climb"]},
+    {"q": "What did Laura learn from her solo trek in Nepal?", "options": ["She prefers solitude to company.", "She should avoid going on long treks.", "She depends on others more than she had thought."]},
+    {"q": "How did Laura feel before the sunrise in Peru?", "options": ["Tempted to abandon the climb", "Determined to reach the summit", "Worried about the weather"]},
     {"q": "What advice does Laura give to beginners?", "options": ["Test themselves in front of friends.", "Increase the difficulty gradually.", "Choose sports that carry fewer risks."]}
   ],
-  "key": [2, 3, 1, 2, 1, 3, 2],
-  "discuss": ["What is the difference between a calculated risk and a reckless one? Give an example.", "Would you like to try an extreme sport? Which one, and what would you need to prepare?", "Can outdoor activities teach people to work as a team better than an office or a classroom?"]
+  "key": [2, 3, 1, 2, 3, 1, 2],
+  "discuss": ["Laura says that overconfidence is more dangerous than any cliff. Do you agree?", "Would you like to try an extreme sport? Which one, and what would worry you?", "Is it better to take on a challenge alone or with a team? Explain with examples."]
 }

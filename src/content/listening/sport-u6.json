@@ -1,5 +1,6 @@
 {
   "id": "sport-u6",
+  "section": "listening",
   "module": "sport",
   "unit": 6,
   "task": 3,
@@ -36,5 +37,5 @@
     {"q": "What is Martin's main piece of advice?", "options": ["Rely mainly on willpower.", "Follow a strict training programme.", "Choose an activity you enjoy doing."]}
   ],
   "key": [2, 3, 1, 3, 2, 1, 3],
-  "discuss": ["Have you ever given up an exercise plan? What went wrong?", "Do friends make it easier or harder for you to stick to a sport or a hobby?", "What realistic goal could you set yourself for the next month?"]
+  "discuss": ["Dr Reeves says time is less of an obstacle than we like to believe. Do you agree?", "Which is more useful for staying motivated: a workout buddy or a record of your progress? Why?", "Think of something you gave up. What made you stop, and what could have helped you to carry on?"]
 }

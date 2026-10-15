@@ -45,7 +45,7 @@
 - B. Jack's mother thought he should see a doctor as soon as he fell ill.  → **True**
 - C. Jack's sister is still ill.  → **Not stated**
 - D. The doctor disapproved of Jack's sleeping habits.  → **True**
-- E. Jack uses his phone at night only for homework.  → **False**
+- E. Jack says that he uses his phone at night only for homework.  → **False**
 - F. The doctor has limited the kind of exercise Jack can do for now.  → **True**
 - G. Jack has already asked his mother whether he can go out with Olivia.  → **False**
 

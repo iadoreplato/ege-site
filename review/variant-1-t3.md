@@ -36,17 +36,17 @@
 
 ## Задание
 1. How did Rachel begin working at the shelter?
-   1) She answered an advert for weekend helpers.
-   2) She offered to help after a conversation with the manager.  ✔
+   1) She responded to an advertisement for extra helpers at weekends.
+   2) She offered to help after chatting to the manager.  ✔
    3) The manager asked her to join a training course for volunteers.
 2. What does Rachel say about her experience of animals before she started?
    1) She had looked after several pets when she was a child.
-   2) She had studied animal care at school.
-   3) She had hardly any first-hand knowledge of animals.  ✔
+   2) She had studied animal care at school for two years.
+   3) She had very little experience of them.  ✔
 3. Why does Rachel mention the files kept on each animal?
-   1) They tell new volunteers how each animal is likely to behave.  ✔
+   1) They tell newcomers how each animal behaves.  ✔
    2) They take more time than looking after the animals themselves.
-   3) They are the least popular part of the volunteers' work.
+   3) They are the least popular part of the work.
 4. How does Rachel feel now when an animal leaves the shelter?
    1) She still finds it very hard to cope with.
    2) She tries hard not to become attached to the animals.
@@ -54,15 +54,15 @@
 5. What does Rachel say about people who adopt animals?
    1) Many bring them back to the shelter soon afterwards.
    2) Some pick one without working out the likely cost.  ✔
-   3) Many adopt animals to give them as presents.
+   3) Most are not interested in adopting older animals.
 6. How has volunteering affected Rachel?
-   1) It has given her far more confidence in herself.  ✔
+   1) It has made her more self-confident.  ✔
    2) It has helped her to find a new job.
-   3) It has made her prefer the company of animals to people.
+   3) It has made her prefer animals to people.
 7. What advice does Rachel give to new volunteers?
    1) Choose the shelter with the best reputation.
-   2) Begin by volunteering for as many hours as possible.
-   3) Pick a place that is not far from where you live.  ✔
+   2) Begin with a large number of hours.
+   3) Pick a place that is easy to reach.  ✔
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)

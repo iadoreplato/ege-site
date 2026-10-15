@@ -39,8 +39,8 @@
 **Anna:** Thank you.
 
 ## Задание
-1. What first made Anna take photography seriously?
-   1) A magazine printed one of her early pictures.
+1. What made Anna think that photography could be more than a hobby?
+   1) A magazine printed one of her pictures.
    2) Her grandfather praised her work.
    3) A picture of hers won a school contest.  ✔
 2. What does Anna say about her trip to the Carpathians?
