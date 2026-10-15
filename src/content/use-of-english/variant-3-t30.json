@@ -1,0 +1,69 @@
+{
+  "id": "variant-3-t30",
+  "section": "use-of-english",
+  "module": "variant",
+  "unit": 3,
+  "task": 30,
+  "title": "Vocabulary: a trip to Berlin",
+  "text": "When I was ten, my parents took me to Berlin for the first time. I remember being <b>30</b> ______ by the size of the railway station, which seemed bigger than our whole town. My father <b>31</b> ______ on a guided tour, but I wanted to see the zoo instead. We argued for a while, and in the end we <b>32</b> ______ a compromise: the tour in the morning and the zoo in the afternoon. The guide spoke so <b>33</b> ______ that I could hardly hear a word, and I soon lost <b>34</b> ______ in the explanations. When we reached the zoo, however, I was delighted. We spent <b>35</b> ______ hours watching the monkeys, and I still keep the photograph we <b>36</b> ______ that day.",
+  "opts": [
+    [
+      30,
+      "impress",
+      "impressed",
+      "impression",
+      "impressing"
+    ],
+    [
+      31,
+      "suggested",
+      "demanded",
+      "required",
+      "insisted"
+    ],
+    [
+      32,
+      "reached",
+      "took",
+      "did",
+      "gave"
+    ],
+    [
+      33,
+      "loudly",
+      "slowly",
+      "quietly",
+      "rarely"
+    ],
+    [
+      34,
+      "interest",
+      "attention",
+      "touch",
+      "sight"
+    ],
+    [
+      35,
+      "much",
+      "plenty",
+      "a lot",
+      "many"
+    ],
+    [
+      36,
+      "made",
+      "took",
+      "had",
+      "gave"
+    ]
+  ],
+  "key": [
+    2,
+    4,
+    1,
+    3,
+    1,
+    4,
+    2
+  ]
+}

@@ -4,38 +4,38 @@
 ## Текст записи
 **Announcer:** Speaker A
 
-**Speaker A:** For me, a competition is the best reason to train. Last winter I just went swimming whenever I felt like it, and my times never improved. Then I signed up for a regional tournament in spring, and suddenly I had a date in my diary. I was in the pool every morning at six. When you know exactly what you are working towards, it's much easier to get out of bed.
+**Speaker A:** People say playing at home is all about the crowd, but I think it goes deeper than that. I know every bump on our pitch, I can find my teammates without even looking, and nobody has to explain the changing rooms to me. Last season I scored nine times at home and only twice away, with the same coach and the same tactics. I'm not a better footballer on Saturdays. I'm just one who feels at home.
 
 **Announcer:** Speaker B
 
-**Speaker B:** I'm a good player in training, but in a real match everything changes. My hands start shaking, the crowd seems to be staring at me, and I forget everything my coach has taught me. Last month I made three stupid mistakes in the first set simply because I was so nervous. I think the problem is that everybody expects me to win, and that's too much.
+**Speaker B:** Most players think my job is to spot fouls. In reality, I spend half the match making sure everyone understands the rules in the same way, because if one side believes it can get away with things, the game turns ugly very quickly. Of course, every player wants to win, and I understand that. But once a team stops trusting the officials, the result stops meaning anything, and that's what worries me most.
 
 **Announcer:** Speaker C
 
-**Speaker C:** We were knocked out in the quarter-finals last year, and I cried all the way home. But after a few days I sat down with my coach and we watched the match again. I realised I'd been lazy in defence. If we had won easily, I would never have noticed it. So now, honestly, I think a narrow defeat can be worth more than a comfortable win.
+**Speaker C:** When I lost the semi-final last spring, my coach said, 'Well, at least you took part,' and I nearly threw my racket at him. Honestly, that sentence is useless to me. What helped was watching the video. I'd been giving up on long rallies without noticing it. I changed my fitness plan the next day, and this year I'm beating girls who beat me then. So that defeat turned out to be a favour.
 
 **Announcer:** Speaker D
 
-**Speaker D:** I used to think that I was only playing for myself, but our hockey tournament changed that. We spent four days in the same hotel, travelled on one bus and cheered each other up after every game. People I had hardly spoken to before became my closest friends. We still meet every weekend, even though that tournament ended two years ago.
+**Speaker D:** I volunteered at the city marathon last year, expecting to hand out water bottles and go home. What I didn't expect was the atmosphere afterwards. The cafés were full, local kids were asking about running clubs, and my neighbour, who usually complains about everything, offered to host two runners from abroad. Sure, the roads were closed for a day, but the whole town seemed to gain something that weekend.
 
 **Announcer:** Speaker E
 
-**Speaker E:** I'd love to take part in more competitions, but it really adds up. There's the entry fee, the new equipment, the train tickets and a hotel for the weekend. Last season we spent almost half of our family's holiday budget on my tournaments. A friend of mine who's just as talented had to give up completely, because her parents simply couldn't afford it.
+**Speaker E:** I've held a season ticket for fifteen years, and the games I remember are never the ones we win four-nil. They're the matches where nobody in the stadium can guess what's going to happen, so you hold your breath until the final whistle. A friend of mine only goes when we're playing the top teams, because he wants to see us win. I'd rather watch an even game and lose than watch a walkover.
 
 **Announcer:** Speaker F
 
-**Speaker F:** Whatever the sport is, the whole competition depends on the referee. I once played in a final where the umpire missed a clear foul, and the game was decided by a goal that should never have counted. Everybody felt cheated, even the winners. If the officials aren't fair, there's no point in having a tournament at all.
+**Speaker F:** I swim well in training, and my times are nearly a second faster than the other girls in my group. Then on race day my legs feel like stone. My mother tells me to enjoy myself, my coach tells me to relax, but all I can think about is what will happen if I come last. Last month I was disqualified for a false start, simply because I was so tense. It's not my fitness that lets me down.
 
 ## Задание
-- 1. Competitions give people a clear aim to train for.
-- 2. Taking part in competitions can be too expensive.
-- 3. Competitions work best for professional athletes only.
-- 4. Losing can teach a person something useful.
-- 5. Competitions help team members to become closer.
-- 6. Decisions made by judges must be fair.
-- 7. Too much pressure can spoil a performance.
+- 1. Taking part matters more than winning.
+- 2. A familiar place can help athletes to perform better.
+- 3. Competitive sport depends on rules that everyone respects.
+- 4. A big sporting event can bring benefits to a whole community.
+- 5. Nerves can prevent an athlete from showing their real ability.
+- 6. A defeat can become a source of progress.
+- 7. Spectators get most enjoyment from games with an uncertain result.
 
-**Ключ:** A–1, B–7, C–4, D–5, E–2, F–6
+**Ключ:** A–2, B–3, C–6, D–4, E–7, F–5
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)
@@ -44,5 +44,5 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 397 слов, около 3.1 мин без пауз; 2099 знаков
-- слов у говорящих: 71, 66, 67, 61, 63, 57
+- 458 слов, около 3.5 мин без пауз; 2426 знаков
+- слов у говорящих: 77, 73, 74, 69, 74, 79

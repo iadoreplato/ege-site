@@ -1,0 +1,73 @@
+{
+  "id": "variant-2",
+  "section": "writing",
+  "module": "variant",
+  "unit": 2,
+  "tasks": [
+    {
+      "type": "email",
+      "sender": "Alex",
+      "subject": "Help with a birthday present!",
+      "text": "…Thanks for the photos! My mum's birthday is next month and I want to give her something special, but I have no idea what. What presents do you usually give to your family, and why? Do you prefer buying gifts or making them yourself? How do you celebrate birthdays in your family? By the way, I've just got a puppy…",
+      "ask": "about his new puppy",
+      "pool": {
+        "answers": [
+          "flowers / a book / a scarf",
+          "show how much I care",
+          "make a card myself",
+          "a family dinner",
+          "invite relatives",
+          "a cake with candles"
+        ],
+        "questions": [
+          "What is his name?",
+          "What breed is he?",
+          "How often do you walk him?",
+          "Does he sleep in your room?"
+        ]
+      }
+    },
+    {
+      "type": "essay",
+      "subject": "what young people in Zetland read in their free time",
+      "audience": "young Zetlanders",
+      "q": "What do you usually read in your free time?",
+      "data": [
+        [
+          "Novels and stories",
+          31
+        ],
+        [
+          "News on websites",
+          25
+        ],
+        [
+          "Comics",
+          18
+        ],
+        [
+          "Magazines",
+          16
+        ],
+        [
+          "Poetry",
+          10
+        ]
+      ],
+      "problem": "that young people may have with finding time to read",
+      "conclusion": "the importance of reading in our lives",
+      "focus4": "the problem must be about <b>finding time to read</b>",
+      "pool": [
+        "be keen on reading",
+        "bookworm",
+        "free time",
+        "be busy with homework",
+        "get distracted",
+        "a page-turner",
+        "broaden your vocabulary",
+        "improve imagination",
+        "e-book"
+      ]
+    }
+  ]
+}

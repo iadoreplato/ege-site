@@ -1,0 +1,69 @@
+{
+  "id": "variant-1-t30",
+  "section": "use-of-english",
+  "module": "variant",
+  "unit": 1,
+  "task": 30,
+  "title": "Vocabulary: lost in the city",
+  "text": "Last Saturday I went to the city centre to buy a birthday present for my sister. I had never been to that part of town, so I <b>30</b> ______ the directions on my phone. Unfortunately, the battery <b>31</b> ______ out after ten minutes, and I found myself in a narrow street with no idea where to go. I <b>32</b> ______ a few passers-by, but they were all in a hurry and none of them could <b>33</b> ______ me the way. In the end I walked into a small bookshop, where the owner <b>34</b> ______ out a map and showed me the quickest route to the main square. I bought a book there out of <b>35</b> ______. It was not what I had planned, but my sister said it was the best present she had ever <b>36</b> ______.",
+  "opts": [
+    [
+      30,
+      "followed",
+      "chased",
+      "joined",
+      "reached"
+    ],
+    [
+      31,
+      "came",
+      "fell",
+      "ran",
+      "lost"
+    ],
+    [
+      32,
+      "told",
+      "said",
+      "spoke",
+      "asked"
+    ],
+    [
+      33,
+      "say",
+      "tell",
+      "speak",
+      "talk"
+    ],
+    [
+      34,
+      "made",
+      "took",
+      "had",
+      "set"
+    ],
+    [
+      35,
+      "thanks",
+      "favour",
+      "gratitude",
+      "pleasure"
+    ],
+    [
+      36,
+      "made",
+      "found",
+      "owned",
+      "received"
+    ]
+  ],
+  "key": [
+    1,
+    3,
+    4,
+    2,
+    2,
+    3,
+    4
+  ]
+}

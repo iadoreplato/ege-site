@@ -1,0 +1,132 @@
+{
+  "id": "variant-2",
+  "section": "speaking",
+  "module": "variant",
+  "unit": 2,
+  "tasks": [
+    {
+      "type": "reading",
+      "title": "Honey bees",
+      "text": "Honey bees live in large groups called colonies, and every bee in a colony has its own job. Young bees clean the hive and feed the babies, while older ones fly out to collect nectar from flowers. A single bee may visit hundreds of flowers in one day. When it finds a good place, it returns to the hive and performs a special dance to tell the others where to go. Bees are important not only for honey: they also help plants to produce fruit and seeds. Without them, many of the fruits and vegetables that we like would become rare and expensive."
+    },
+    {
+      "type": "ad",
+      "title": "Escape room challenge",
+      "slogan": "Can you get out in 60 minutes?",
+      "img": "puzzle_piece",
+      "consider": "visiting the escape room with friends",
+      "points": [
+        "location",
+        "price per person",
+        "number of players",
+        "age restrictions"
+      ],
+      "questions": [
+        "Where is the escape room located?",
+        "How much does it cost per person?",
+        "How many players can take part in one game?",
+        "Is there an age limit for players?"
+      ]
+    },
+    {
+      "type": "interview",
+      "topic": "Music",
+      "questions": [
+        {
+          "q": "What kind of music do you usually listen to? Why?",
+          "pool": [
+            "I usually listen to…",
+            "pop / rock / rap",
+            "cheer me up",
+            "relax"
+          ]
+        },
+        {
+          "q": "Do you play any musical instrument? If not, would you like to?",
+          "pool": [
+            "I play the…",
+            "take lessons",
+            "I'd love to learn",
+            "guitar / piano"
+          ]
+        },
+        {
+          "q": "Have you ever been to a concert? What was it like?",
+          "pool": [
+            "I went to…",
+            "the atmosphere",
+            "sing along",
+            "crowded"
+          ]
+        },
+        {
+          "q": "Do you listen to music when you study? Does it help you?",
+          "pool": [
+            "help me concentrate",
+            "distract me",
+            "in the background",
+            "prefer silence"
+          ]
+        },
+        {
+          "q": "Do you think music lessons should be compulsory at school? Why?",
+          "pool": [
+            "In my opinion…",
+            "develop creativity",
+            "waste of time",
+            "for those who are interested"
+          ]
+        }
+      ],
+      "trap": "Q5 asks about <b>school lessons for everybody</b>, not only about your own taste."
+    },
+    {
+      "type": "photo",
+      "project": "Shopping",
+      "p1": [
+        [
+          "money_bag",
+          "wrapped_gift"
+        ],
+        "a young woman choosing clothes in a big shopping centre"
+      ],
+      "p2": [
+        [
+          "mobile_phone",
+          "envelope"
+        ],
+        "a boy ordering something online on his phone at home"
+      ],
+      "focus": "the two ways of shopping",
+      "opinion": "which way of shopping you prefer and why",
+      "basis": "try it on or just click? · in a crowd or at home? (bank: 1, 6)",
+      "pool": {
+        "describe": [
+          "browse the shelves",
+          "try on clothes",
+          "in a shopping centre",
+          "order online",
+          "on a phone",
+          "at home on the sofa"
+        ],
+        "difference": [
+          "in a shop — on the internet",
+          "see things in person — see only pictures",
+          "wait in a queue — wait for delivery"
+        ],
+        "pros": [
+          "check the size and quality",
+          "get things at once",
+          "save time",
+          "compare prices easily"
+        ],
+        "cons": [
+          "queues and crowds",
+          "spend too much",
+          "wait for delivery",
+          "can't try it on"
+        ]
+      }
+    }
+  ]
+}

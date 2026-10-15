@@ -1,0 +1,54 @@
+{
+  "id": "variant-1-t19",
+  "section": "use-of-english",
+  "module": "variant",
+  "unit": 1,
+  "task": 19,
+  "title": "Grammar: a summer job",
+  "rows": [
+    [
+      19,
+      "Last summer my cousin",
+      "a job at a seaside café.",
+      "FIND"
+    ],
+    [
+      20,
+      "She",
+      "there for only three weeks when the manager offered her a better position.",
+      "WORK"
+    ],
+    [
+      21,
+      "It was one of the",
+      "experiences of her life, she says.",
+      "GOOD"
+    ],
+    [
+      22,
+      "She met many interesting",
+      "from different countries.",
+      "PERSON"
+    ],
+    [
+      23,
+      "If she",
+      "to save more money, she would work there again next summer.",
+      "WANT"
+    ],
+    [
+      24,
+      "The café",
+      "by the same family for thirty years, so many customers know the staff by name.",
+      "OWN"
+    ]
+  ],
+  "key": [
+    "found",
+    "had been working / had worked",
+    "best",
+    "people",
+    "wanted",
+    "has been owned"
+  ]
+}

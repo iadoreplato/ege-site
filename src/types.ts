@@ -48,8 +48,8 @@ export interface Topic {
    Общие поля у всех трёх форматов; поле task говорит, какой формат, и от него зависят остальные поля
    (это «дискриминируемый union»: TypeScript по значению task знает, есть ли options, statements или questions). */
 /** Общие поля. speakers — кто какой голос озвучивает (на сайте не показывается); script — текст записи по репликам
-    (who — кто говорит, text — что); key — правильные ответы по порядку */
-interface ListeningBase { id: string; module: string; unit: number; title: string; speakers: Record<string, string>; script: { who: string; text: string }[]; key: number[] }
+    (who — кто говорит, text — что); key — правильные ответы по порядку; discuss — вопросы для обсуждения после проверки */
+interface ListeningBase { id: string; section?: "listening"; module: string; unit: number; title: string; level: string; speakers: Record<string, string>; script: { who: string; text: string }[]; key: number[]; discuss?: string[] }
 /** Задание 1: 6 говорящих A–F, 7 утверждений (options), key — номер утверждения для каждого говорящего */
 export interface Listening1 extends ListeningBase { task: 1; options: string[] }
 /** Задание 2: 7 утверждений A–G, key — 1 True, 2 False, 3 Not stated */
@@ -57,5 +57,16 @@ export interface Listening2 extends ListeningBase { task: 2; statements: string[
 /** Задания 3–9: 7 вопросов по 3 варианта (q — вопрос, options — варианты), key — номер верного варианта (1–3) */
 export interface Listening3 extends ListeningBase { task: 3; questions: { q: string; options: string[] }[] }
 export type ListeningTask = Listening1 | Listening2 | Listening3;
+
+/* READING: задания на чтение из src/content/reading/<module>-u<N>.json (см. docs/CODE.md, 3.7). Устроены так же: поле task */
+/** Общие поля. key — правильные ответы по порядку; discuss — вопросы для обсуждения после проверки */
+interface ReadingBase { id: string; section: "reading"; module: string; unit: number; title: string; level: string; key: number[]; discuss: string[] }
+/** Задание 10: 7 текстов A–G (texts) и 8 заголовков (headings), key — номер заголовка для каждого текста */
+export interface Reading10 extends ReadingBase { task: 10; texts: string[]; headings: string[] }
+/** Задание 11: текст с пропусками {A}…{F} и 7 частей предложений (parts), key — номер части для каждого пропуска */
+export interface Reading11 extends ReadingBase { task: 11; text: string; parts: string[] }
+/** Задания 12–18: текст по абзацам (text) и 7 вопросов по 4 варианта, key — номер верного варианта (1–4) */
+export interface Reading12 extends ReadingBase { task: 12; text: string[]; questions: { q: string; options: string[] }[] }
+export type ReadingTask = Reading10 | Reading11 | Reading12;
 /** Запись в public/audio/manifest.json: файл, длительность в секундах, mock — запись-заглушка (такую не показываем) */
 export type AudioInfo = { file: string; seconds: number; hash?: string; mock?: boolean };

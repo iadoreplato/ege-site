@@ -2,44 +2,52 @@
 Задание 2, юнит 2, модуль sport
 
 ## Текст записи
-**Kate:** Tom! Oh my goodness, is that really you? You look fantastic!
+**Kate:** Tom! I almost didn't recognise you. Have you been working out?
 
-**Tom:** Ha, thanks, Kate! You should have seen me in March. I could hardly run for a bus.
+**Tom:** If you'd asked me in September, I'd have said I was hopelessly out of shape. I could barely climb the stairs at school without puffing.
 
-**Kate:** No way! So what happened?
+**Kate:** And now? Don't tell me you've joined a gym.
 
-**Tom:** Well, I got a gym membership as a birthday present from my parents, and honestly, I felt so out of shape that I decided to hit the gym three times a week.
+**Tom:** Well, I've got a gym membership, which isn't quite the same thing. My cousin gave it to me for my birthday, probably as a hint. He's been going for about two years, though to hear him talk, you'd think he'd been there forever.
 
-**Kate:** Three times a week? Wow, that's impressive!
+**Kate:** That's quite a present. So have you actually used it?
 
-**Tom:** It was a disaster at first. In the second week I overdid it. I tried to lift the same weights as my cousin, and I pulled a muscle in my shoulder. I couldn't train for ten days, and I was so frustrated!
+**Tom:** Not at first. For three weeks it sat in my wallet. Then I thought, well, I'd better hit the gym before it expires. I started with twice a week, but after ten days I was so enthusiastic that I went every single evening.
 
-**Kate:** Oh no, poor you! Did you see a doctor?
+**Kate:** Uh-oh. I can see where this is going.
 
-**Tom:** Not exactly. My aunt is a physiotherapist, so she showed me a few exercises. Since then I always warm up properly. It takes about fifteen minutes, but it's definitely worth it.
+**Tom:** You've guessed it. I overdid it, and on the eleventh day I pulled a muscle in my back. Nothing dramatic, but I couldn't even tie my shoelaces for a few days.
 
-**Kate:** That's so sensible. I never warm up. I just jump straight into running.
+**Kate:** Oh no! Did you see a doctor?
 
-**Tom:** You really should! Anyway, the most important thing is a routine. I'm not a morning person at all, but I train before school, because if I leave it until the evening, I'll find a hundred excuses.
+**Tom:** No, I just rested. I was back after a week, a lot more careful, and I've learnt to warm up properly, which I'd completely ignored before.
 
-**Kate:** Ha, that's so true! I've been trying to get back into shape for months. I run twice a week, but I'm still out of breath after ten minutes.
+**Kate:** Sensible. I never am. I always rush into things. What's your routine now?
 
-**Tom:** Just give it time. It took me two months to build up some stamina. And push yourself a little! My trainer always says, "No pain, no gain."
+**Tom:** Mondays, Wednesdays and Saturdays. I'm not a morning person at all, so I go after dinner. When I tried going before school, I lasted three days.
 
-**Kate:** Oh, I hate that saying! But OK, you've convinced me. Would you like to come for a run on Saturday?
+**Kate:** I can imagine.
 
-**Tom:** I'd love to! Let's meet in the park at nine. Bring some water, and don't forget to warm up!
+**Tom:** What about you? I thought you were the sporty one.
 
-**Kate:** Yes, coach! See you on Saturday!
+**Kate:** I used to be, but I've gone downhill since the exams. I signed up for a swimming class, but it's been cancelled twice already, which is typical.
+
+**Tom:** You should come with me, honestly. It's much easier to build up stamina with somebody next to you, and you can't make excuses.
+
+**Kate:** Maybe. But I'm not keen on that whole no pain, no gain thing. People at gyms always seem to push themselves far too hard.
+
+**Tom:** That's what I thought, too, but my trainer says it's nonsense. You should feel tired, not in agony. He's actually told me to slow down a little.
+
+**Kate:** Now that's something I could do. Let me think about it, and I'll text you on Friday.
 
 ## Задание
-- A. Tom received his gym membership as a gift.  → **True**
-- B. Tom's cousin has been going to the gym for many years.  → **Not stated**
-- C. Tom injured himself during his first week at the gym.  → **False**
-- D. After injuring himself, Tom had to stop training for more than a week.  → **True**
-- E. Tom finds it easier to train in the evening.  → **False**
-- F. Kate has recently bought a gym membership.  → **Not stated**
-- G. Tom believes that you have to push yourself to make progress.  → **True**
+- A. Tom received his gym membership as a birthday present.  → **True**
+- B. Tom's cousin has been training regularly for more than five years.  → **False**
+- C. Tom started going to the gym as soon as he got his membership.  → **False**
+- D. Tom hurt himself during the second week of his training.  → **True**
+- E. Tom's mother taught him how to warm up before exercise.  → **Not stated**
+- F. Kate thinks that people have to push themselves hard to make progress.  → **False**
+- G. Tom's trainer advised him to take things more slowly.  → **True**
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)
@@ -48,4 +56,4 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 303 слов, около 2.3 мин без пауз; 1541 знаков
+- 383 слов, около 2.9 мин без пауз; 1996 знаков

@@ -1,0 +1,151 @@
+{
+  "id": "variant-1-t3",
+  "section": "listening",
+  "module": "variant",
+  "unit": 1,
+  "task": 3,
+  "title": "Community Voices: volunteering at an animal shelter",
+  "level": "B2+",
+  "speakers": {
+    "Presenter": "male1",
+    "Rachel": "female1"
+  },
+  "script": [
+    {
+      "who": "Presenter",
+      "text": "Welcome to Community Voices. This week I'm joined by Rachel Moore, who has been volunteering at an animal shelter in Leeds for four years. Rachel, how did you end up there?"
+    },
+    {
+      "who": "Rachel",
+      "text": "Quite by accident. I'd gone to the shelter to drop off some old blankets, and the manager and I started chatting. She mentioned they were short of people at weekends, so I said I'd help for a month. Four years later I'm still there, although I'd never have predicted it."
+    },
+    {
+      "who": "Presenter",
+      "text": "Was that because you'd always loved animals?"
+    },
+    {
+      "who": "Rachel",
+      "text": "I'd always liked them, but I'd never had a pet; my parents were allergic to practically everything. So, in fact, I knew very little. On my first day I was frightened of the dogs, to be honest, and I spent most of the time cleaning kennels, which is not as pleasant as it sounds."
+    },
+    {
+      "who": "Presenter",
+      "text": "What does a typical Saturday look like?"
+    },
+    {
+      "who": "Rachel",
+      "text": "It starts at seven with feeding, then we walk the dogs in groups, and after lunch we spend time with the cats, who are shyer, so you sit quietly in the room and let them come to you. What people don't realise is how much writing there is. Every animal has a file with its vaccinations and notes about its character, and if you don't fill it in properly, the next volunteer won't know that a particular dog gets nervous around men in hats."
+    },
+    {
+      "who": "Presenter",
+      "text": "Do you ever get attached?"
+    },
+    {
+      "who": "Rachel",
+      "text": "Constantly! At the beginning I cried every time one left. Now I see it differently. An animal going to a new home isn't a loss; it's the whole point of the place. What is hard is when an animal has been with us for a very long time. We had a grey cat called Pepper who stayed for fourteen months because nobody wanted an older cat. When a family with two small children finally adopted her, the whole shelter celebrated."
+    },
+    {
+      "who": "Presenter",
+      "text": "There's a lot of talk about animals being given as presents and then returned. Is that a problem?"
+    },
+    {
+      "who": "Rachel",
+      "text": "It's less common than people think. The real trouble is families who choose on impulse, without thinking about the cost. A large dog can need hundreds of pounds a year for food and vet visits. That's why we ask everyone to visit at least twice before they take an animal home."
+    },
+    {
+      "who": "Presenter",
+      "text": "Has anything about volunteering surprised you?"
+    },
+    {
+      "who": "Rachel",
+      "text": "How much it changed me, honestly. I used to be very shy, and I wouldn't have dared to speak at a public meeting. Now I run the training for new volunteers, which means standing in front of twenty people every month. I think the confidence came from knowing the animals depended on me."
+    },
+    {
+      "who": "Presenter",
+      "text": "What would you say to someone who's thinking of volunteering?"
+    },
+    {
+      "who": "Rachel",
+      "text": "Don't start by looking for the perfect place. Choose something close to home, because if you have to travel for an hour, you'll find excuses. And start small. A couple of hours a week is better than a heroic first month followed by nothing."
+    },
+    {
+      "who": "Presenter",
+      "text": "Rachel, thank you very much."
+    },
+    {
+      "who": "Rachel",
+      "text": "Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "q": "How did Rachel begin working at the shelter?",
+      "options": [
+        "She answered an advert for weekend helpers.",
+        "She offered to help after a conversation with the manager.",
+        "The manager asked her to join a training course for volunteers."
+      ]
+    },
+    {
+      "q": "What does Rachel say about her experience of animals before she started?",
+      "options": [
+        "She had looked after several pets when she was a child.",
+        "She had studied animal care at school.",
+        "She had hardly any first-hand knowledge of animals."
+      ]
+    },
+    {
+      "q": "Why does Rachel mention the files kept on each animal?",
+      "options": [
+        "They tell new volunteers how each animal is likely to behave.",
+        "They take more time than looking after the animals themselves.",
+        "They are the least popular part of the volunteers' work."
+      ]
+    },
+    {
+      "q": "How does Rachel feel now when an animal leaves the shelter?",
+      "options": [
+        "She still finds it very hard to cope with.",
+        "She tries hard not to become attached to the animals.",
+        "She sees it as a sign that the shelter works."
+      ]
+    },
+    {
+      "q": "What does Rachel say about people who adopt animals?",
+      "options": [
+        "Many bring them back to the shelter soon afterwards.",
+        "Some pick one without working out the likely cost.",
+        "Many adopt animals to give them as presents."
+      ]
+    },
+    {
+      "q": "How has volunteering affected Rachel?",
+      "options": [
+        "It has given her far more confidence in herself.",
+        "It has helped her to find a new job.",
+        "It has made her prefer the company of animals to people."
+      ]
+    },
+    {
+      "q": "What advice does Rachel give to new volunteers?",
+      "options": [
+        "Choose the shelter with the best reputation.",
+        "Begin by volunteering for as many hours as possible.",
+        "Pick a place that is not far from where you live."
+      ]
+    }
+  ],
+  "key": [
+    2,
+    3,
+    1,
+    3,
+    2,
+    1,
+    3
+  ],
+  "discuss": [
+    "Would you like to volunteer? Where, and what would you do?",
+    "Rachel says people sometimes choose a pet on impulse. What should a family think about before getting a pet?",
+    "Is it better to adopt an animal from a shelter or to buy one? Give reasons."
+  ]
+}

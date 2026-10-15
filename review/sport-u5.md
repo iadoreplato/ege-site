@@ -2,50 +2,52 @@
 Задание 2, юнит 5, модуль sport
 
 ## Текст записи
-**Olivia:** Jack! Oh no, you look awful. Are you all right?
+**Olivia:** Jack! You're back at school. I heard you'd been off for nearly two weeks.
 
-**Jack:** Hi, Olivia. Honestly, I've been a bit under the weather all week. I feel completely run-down.
+**Jack:** Ten days, actually, though it felt like a month. I caught the flu from my little sister, and I've been in bed with a high temperature since the Monday before last.
 
-**Olivia:** Poor you! Have you been to the doctor?
+**Olivia:** Poor you. Were you taking any medicine?
 
-**Jack:** Not yet. I'm going for a check-up on Friday. I think it's just stress. The exams finished last Tuesday, but I'm still exhausted.
+**Jack:** Only paracetamol. My mum wanted me to see a doctor right away, but I said I'd wait a couple of days. In the end she dragged me to the clinic on Thursday.
 
-**Olivia:** Well, no wonder. You were burning the candle at both ends for weeks. I saw you in the library at midnight!
+**Olivia:** Good for her. What did the doctor say?
 
-**Jack:** I know, I know. I'm a real night owl. I can't concentrate in the mornings, so I work late and then sleep for five hours.
+**Jack:** That I'd been run-down for weeks and the flu just finished me off. She asked about my sleep, and I admitted that I go to bed at one or two. She wasn't impressed.
 
-**Olivia:** Five hours? That's not nearly enough!
+**Olivia:** I'm not surprised. You're always on your phone at midnight.
 
-**Jack:** Ha, my mum says the same. She keeps telling me to eat properly, too. But I never have time. I usually skip breakfast and grab a sandwich on my way to school.
+**Jack:** It's only for homework, honestly. Well, mostly. Anyway, she told me to cut down on screen time and eat more regularly. I've been skipping breakfast for ages.
 
-**Olivia:** Eating on the go all the time isn't good for you either. And what about lunch?
+**Olivia:** Seriously? My brother used to do that, and he was permanently tired.
 
-**Jack:** Mostly crisps and a fizzy drink. I know it's junk food, but it's quick.
+**Jack:** Did he change?
 
-**Olivia:** Oh, Jack! No wonder your immune system is so weak. Listen, I used to be exactly the same. Last year I caught three colds in two months. Then my aunt, who's a nutritionist, helped me to cut down on sugar and eat more fruit and vegetables.
+**Olivia:** He did, after our dad started cooking porridge every morning for a month. Now he says he can't live without it.
 
-**Jack:** And it worked?
+**Jack:** I'm not sure I'm ready for porridge. But I'd try fruit and yoghurt.
 
-**Olivia:** Totally! I haven't been ill since September. I still have a little chocolate now and then, of course. I also bought a fitness tracker, which tells me when to go to bed. It's actually fun.
+**Olivia:** That's a start. What about exercise? You used to cycle everywhere.
 
-**Jack:** A fitness tracker? I'm not sure about that. I spend too much time looking at screens as it is.
+**Jack:** I know, but the doctor says nothing strenuous for two weeks. I'm itching to start again. Staying in was driving me crazy.
 
-**Olivia:** That's true. Well, then start with something simple. Put your phone away an hour before bed.
+**Olivia:** Well, I'm going for a jog on Saturday. You could come for a short walk instead. Fresh air will do you good.
 
-**Jack:** Hmm, that's going to be hard. But OK, I'll give it a go.
+**Jack:** Maybe. Honestly, I'm more worried about the amount of homework I've missed. Mr Dawson promised to send me the notes, but I wouldn't hold my breath.
 
-**Olivia:** Great! And if you feel better by Saturday, come cycling with us.
+**Olivia:** I can lend you mine. They're a mess, but they're complete.
 
-**Jack:** Deal! Thanks, Olivia. You've cheered me up.
+**Jack:** That would be great. And a walk sounds nice. I should ask my mum first, though. She's quite strict at the moment.
+
+**Olivia:** Of course. Just text me.
 
 ## Задание
-- A. Jack has already had a medical check-up.  → **False**
-- B. Jack works late at night because he finds it hard to concentrate in the morning.  → **True**
-- C. Jack's mother is worried about the way he eats.  → **True**
-- D. The canteen at Jack's school serves unhealthy food.  → **Not stated**
-- E. Olivia's aunt helped her to improve her diet.  → **True**
-- F. Olivia has completely given up sugar.  → **False**
-- G. Olivia's fitness tracker was expensive.  → **Not stated**
+- A. Jack has been absent from school for more than two weeks.  → **False**
+- B. Jack's mother thought he should see a doctor as soon as he fell ill.  → **True**
+- C. Jack's sister is still ill.  → **Not stated**
+- D. The doctor disapproved of Jack's sleeping habits.  → **True**
+- E. Jack uses his phone at night only for homework.  → **False**
+- F. The doctor has limited the kind of exercise Jack can do for now.  → **True**
+- G. Jack has already asked his mother whether he can go out with Olivia.  → **False**
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)
@@ -54,4 +56,4 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 322 слов, около 2.5 мин без пауз; 1662 знаков
+- 330 слов, около 2.5 мин без пауз; 1739 знаков

@@ -1,0 +1,130 @@
+{
+  "id": "variant-2-t2",
+  "section": "listening",
+  "module": "variant",
+  "unit": 2,
+  "task": 2,
+  "title": "A surprise party: Maya and Ben make plans",
+  "level": "B2",
+  "speakers": {
+    "Maya": "female2",
+    "Ben": "male2"
+  },
+  "script": [
+    {
+      "who": "Maya",
+      "text": "Ben, thanks for coming. I wanted to talk about Lucy's party before the others arrive."
+    },
+    {
+      "who": "Ben",
+      "text": "Sure. Her birthday is on the twenty-first, right? I thought we'd just go out for pizza."
+    },
+    {
+      "who": "Maya",
+      "text": "That's what I'd planned originally, but then her sister told me Lucy is expecting exactly that, so there wouldn't be any surprise."
+    },
+    {
+      "who": "Ben",
+      "text": "Fair point. What's the new idea?"
+    },
+    {
+      "who": "Maya",
+      "text": "Her aunt has a garden house just outside town. It's empty in October, and she says we can use it for free, as long as we clean it afterwards."
+    },
+    {
+      "who": "Ben",
+      "text": "Free is good. Is it big enough?"
+    },
+    {
+      "who": "Maya",
+      "text": "For about twenty people. I've counted: there'll be fifteen if everybody from her class comes, plus a few from the swimming club."
+    },
+    {
+      "who": "Ben",
+      "text": "What about getting there? It's not on a bus route, is it?"
+    },
+    {
+      "who": "Maya",
+      "text": "There's a bus until six, but after that, nothing. My dad has offered to drive some of us in his van, and I'm sure other parents will help."
+    },
+    {
+      "who": "Ben",
+      "text": "Brilliant. And food?"
+    },
+    {
+      "who": "Maya",
+      "text": "That's your department, I thought. You're the one who made that enormous chocolate cake for the school fair."
+    },
+    {
+      "who": "Ben",
+      "text": "Ha! It collapsed halfway through the fair, you know. But I'll try again with a different recipe. Should I do a cake with candles, or is that too childish?"
+    },
+    {
+      "who": "Maya",
+      "text": "She'll love it. Her favourite is lemon, by the way, not chocolate, so keep that in mind."
+    },
+    {
+      "who": "Ben",
+      "text": "Lemon. Noted. What about music? I could bring my speakers."
+    },
+    {
+      "who": "Maya",
+      "text": "Tom has promised to put together a playlist, but the speakers would be useful, because the ones in the house are ancient."
+    },
+    {
+      "who": "Ben",
+      "text": "No problem. How are we going to get Lucy there without her suspecting?"
+    },
+    {
+      "who": "Maya",
+      "text": "Her sister will tell her that the family are going for a walk in the countryside. When they arrive at the garden house, all of us will be hiding inside."
+    },
+    {
+      "who": "Ben",
+      "text": "And if she guesses?"
+    },
+    {
+      "who": "Maya",
+      "text": "She won't. She guessed last time because somebody posted a photo online, so I've asked everybody not to put anything on social media until the party is over."
+    },
+    {
+      "who": "Ben",
+      "text": "Sensible. Are we buying a present together?"
+    },
+    {
+      "who": "Maya",
+      "text": "I'd like us to give one big present rather than twenty small ones. I'm thinking of a good camera, since she's always wanted to take up photography. We'd need about eight pounds each."
+    },
+    {
+      "who": "Ben",
+      "text": "That's fine. I'll collect the money from the boys."
+    },
+    {
+      "who": "Maya",
+      "text": "Thank you. I'll send everyone the details this evening."
+    }
+  ],
+  "statements": [
+    "Maya had first intended to celebrate Lucy's birthday with a pizza meal.",
+    "Lucy's aunt expects to be paid for the use of her garden house.",
+    "Every guest can reach the garden house by bus.",
+    "Ben has previously baked a cake for a school event.",
+    "Lucy's family are planning a separate dinner on the day of her birthday.",
+    "The guests are going to give Lucy several small gifts.",
+    "Tom will play the music at the party himself."
+  ],
+  "key": [
+    1,
+    2,
+    2,
+    1,
+    3,
+    2,
+    3
+  ],
+  "discuss": [
+    "Have you ever organised a surprise for someone? What happened?",
+    "How do you usually celebrate your birthday? Would you like a surprise party?",
+    "Is it better to give one big present from a group or many small ones?"
+  ]
+}

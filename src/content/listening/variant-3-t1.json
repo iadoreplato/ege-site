@@ -1,0 +1,89 @@
+{
+  "id": "variant-3-t1",
+  "section": "listening",
+  "module": "variant",
+  "unit": 3,
+  "task": 1,
+  "title": "Choosing a career: six opinions",
+  "level": "B2+",
+  "speakers": {
+    "Speaker A": "male1",
+    "Speaker B": "female1",
+    "Speaker C": "male2",
+    "Speaker D": "female2",
+    "Speaker E": "male3",
+    "Speaker F": "female3"
+  },
+  "script": [
+    {
+      "who": "Announcer",
+      "text": "Speaker A"
+    },
+    {
+      "who": "Speaker A",
+      "text": "For two weeks in Year Eleven I worked in a law office, and until then I had been sure that was my future. On day three I was asked to file papers for eight hours. By Friday I knew that sitting in an office was not for me. My parents thought the fortnight was wasted. I don't. It is much cheaper to find out at seventeen what you don't want to do than after five years at university."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker B"
+    },
+    {
+      "who": "Speaker B",
+      "text": "People see a chef bringing out a beautiful plate and think that is the job. They don't see me arriving at six to clean the kitchen, peel forty kilos of potatoes and prepare the sauces that take hours. By the time the first customer comes in at noon, three quarters of my work has been done. If something goes wrong with the invisible part, the visible part falls apart completely."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker C"
+    },
+    {
+      "who": "Speaker C",
+      "text": "My friends from school earn twice what I do. I play the cello in an orchestra, and although the salary is modest, I wouldn't swap my job for any of theirs. When I'm on stage and three hundred people go silent at the same moment, I feel something you can't buy. I've seen colleagues who left music for finance and ended up miserable, whatever their bank balance said."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker D"
+    },
+    {
+      "who": "Speaker D",
+      "text": "I spent eleven years working in a bank before I retrained as a primary school teacher at thirty-five. Everyone said it was a risk, and my mother didn't speak to me for a week. But a career isn't a railway line you can never get off. People change, and the job that suits you at twenty-two may not suit you at thirty-five. I have never regretted the decision."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker E"
+    },
+    {
+      "who": "Speaker E",
+      "text": "I work as a tour guide, and nobody told me that my most important tool would be my voice and my patience. A group of forty tired tourists will forgive an occasional wrong date, but not a guide who mumbles or loses their temper. The same goes for doctors, lawyers and shop assistants. Whatever you choose, learn to explain things clearly and to listen to people properly."
+    },
+    {
+      "who": "Announcer",
+      "text": "Speaker F"
+    },
+    {
+      "who": "Speaker F",
+      "text": "After university I took a job in Canada for a year, with no friends and an accent that nobody understood. It was lonely at first, but it changed how I think. I learnt to manage in an unfamiliar system, and I came home with ideas about work that nobody around me had. I would advise anyone who gets the opportunity to try a different country early in their career."
+    }
+  ],
+  "options": [
+    "Enjoying your work counts for more than a big salary.",
+    "Work experience can help you to find out which jobs are not right for you.",
+    "The ability to communicate well is valuable in nearly any occupation.",
+    "Much of the effort in a profession goes unnoticed by the public.",
+    "Working in another country early on can widen your outlook.",
+    "People shouldn't be afraid to start a different career later in life.",
+    "Working in a team usually achieves more than working alone."
+  ],
+  "key": [
+    2,
+    4,
+    1,
+    6,
+    3,
+    5
+  ],
+  "discuss": [
+    "What job would you like to do in ten years? Why?",
+    "Is a high salary more important than enjoying your work?",
+    "Would you consider working abroad? What are the advantages and disadvantages?"
+  ]
+}

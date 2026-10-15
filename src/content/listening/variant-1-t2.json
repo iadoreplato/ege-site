@@ -1,0 +1,126 @@
+{
+  "id": "variant-1-t2",
+  "section": "listening",
+  "module": "variant",
+  "unit": 1,
+  "task": 2,
+  "title": "A weekend job: Hannah and Dan talk about a café",
+  "level": "B2",
+  "speakers": {
+    "Hannah": "female1",
+    "Dan": "male1"
+  },
+  "script": [
+    {
+      "who": "Hannah",
+      "text": "Dan! Over here. Did you get my message about the café?"
+    },
+    {
+      "who": "Dan",
+      "text": "The one near the station? I did, but I haven't had a chance to think about it. Tell me properly."
+    },
+    {
+      "who": "Hannah",
+      "text": "Well, the owner is looking for someone to work at weekends, and she asked whether I knew anybody. I thought of you at once."
+    },
+    {
+      "who": "Dan",
+      "text": "Me? I've never had a proper job, never mind in a café. I can barely make a decent cup of tea."
+    },
+    {
+      "who": "Hannah",
+      "text": "Nobody expects you to be a barista on the first day. I've been there since March, and for the first two weeks all I did was wash cups and wipe tables."
+    },
+    {
+      "who": "Dan",
+      "text": "That doesn't sound very exciting."
+    },
+    {
+      "who": "Hannah",
+      "text": "It isn't, but the staff are lovely and the tips are surprisingly good. Last Saturday I took home nearly thirty pounds extra."
+    },
+    {
+      "who": "Dan",
+      "text": "Thirty pounds? That's more than I get for a week of mowing my uncle's lawn. What about the hours?"
+    },
+    {
+      "who": "Hannah",
+      "text": "Saturday and Sunday from nine until three, with a half-hour break. You'd still have Sunday evening for your homework."
+    },
+    {
+      "who": "Dan",
+      "text": "Hmm. And what about football? We have training on Saturday mornings."
+    },
+    {
+      "who": "Hannah",
+      "text": "I asked about that for you. The owner says you could start at eleven on Saturdays, if you're willing to finish a bit later."
+    },
+    {
+      "who": "Dan",
+      "text": "That's quite flexible, actually. Is it hard to learn the till?"
+    },
+    {
+      "who": "Hannah",
+      "text": "Not at all. I was nervous about it as well, but there are pictures on the buttons. The hardest thing is remembering everybody's orders when the place is full. Oh, and you have to wear a uniform: a green apron and a cap."
+    },
+    {
+      "who": "Dan",
+      "text": "A cap! My friends would never let me forget it."
+    },
+    {
+      "who": "Hannah",
+      "text": "They'd forget it as soon as they tried the cakes. The owner bakes everything herself, and she lets the staff take home whatever is left at closing time."
+    },
+    {
+      "who": "Dan",
+      "text": "Now you're just trying to bribe me."
+    },
+    {
+      "who": "Hannah",
+      "text": "Maybe a little. But honestly, it taught me a lot about being on time and talking to people. I used to be terribly shy."
+    },
+    {
+      "who": "Dan",
+      "text": "You? Shy? I can't picture it."
+    },
+    {
+      "who": "Hannah",
+      "text": "Ask my mum. Anyway, the owner would like to meet you on Thursday. You could come straight after school with me."
+    },
+    {
+      "who": "Dan",
+      "text": "I need to ask my parents first. Dad was worried about my marks last year, when I had a paper round."
+    },
+    {
+      "who": "Hannah",
+      "text": "Show him the hours. I'll send you a photo of the schedule tonight."
+    },
+    {
+      "who": "Dan",
+      "text": "Please do. Thanks, Hannah. I'll let you know tomorrow."
+    }
+  ],
+  "statements": [
+    "Hannah thought of Dan immediately when the owner asked for help.",
+    "Dan has some previous experience of working in hospitality.",
+    "The café owner is a relative of Hannah's.",
+    "Dan would have to miss his football training if he took the job.",
+    "Employees may carry leftover cakes home when the café closes.",
+    "Hannah receives an hourly wage from the café.",
+    "Dan agrees to accept the job during the conversation."
+  ],
+  "key": [
+    1,
+    2,
+    3,
+    2,
+    1,
+    3,
+    2
+  ],
+  "discuss": [
+    "Would you like to have a weekend job? What kind?",
+    "Hannah says a job taught her to be on time and to talk to people. What else can a part-time job teach a teenager?",
+    "Can a job get in the way of studying? How can you avoid it?"
+  ]
+}

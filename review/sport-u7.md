@@ -4,38 +4,38 @@
 ## Текст записи
 **Announcer:** Speaker A
 
-**Speaker A:** I do have a few hobbies, but honestly, nothing beats hanging out with my friends. We just meet in the park, buy ice cream and chat for hours. Sometimes we don't even do anything special. But those evenings are what I remember most from the summer. Hobbies are great, but good friends are what make free time really enjoyable.
+**Speaker A:** I'd been meaning to learn the guitar for years, but every time I sat down alone with a video tutorial, I lasted about twenty minutes. It was only when my cousin and two classmates started a little band that things changed. We're terrible, obviously, yet we turn up every Thursday, and I've learnt more in two months than in two years on my own. I suppose it's the shared effort that makes progress feel real, rather than just a number on an app.
 
 **Announcer:** Speaker B
 
-**Speaker B:** After a long day at school, my brain feels like porridge. The best thing for me is to put on my headphones, lie on the sofa and do some knitting. It sounds boring, I know, but it helps me unwind completely. When I wake up the next morning, I feel recharged and ready for more lessons.
+**Speaker B:** I'll be honest. Last weekend I disappeared into a series of short videos and surfaced four hours later with a headache and no memory of what I'd watched. At the time it felt like relaxing. Afterwards it felt as if I'd stolen an evening from myself. When I spend the same four hours baking bread or cycling to the lake, I come home tired, but with something to show for it. That, to me, is the real difference.
 
 **Announcer:** Speaker C
 
-**Speaker C:** I started repairing bicycles just for fun when I was twelve. Now I fix them for the whole neighbourhood, and I've already decided to study engineering. My uncle says that most people never find work they actually love, so I feel lucky. If you take your hobby seriously enough, one day it may become your job.
+**Speaker C:** People assume that if you're not doing something productive in your free time, you're being lazy. Every Sunday afternoon I do absolutely nothing. I lie on the sofa, stare at the ceiling and let my mind wander. I used to feel guilty about it, as though I should be learning Spanish or something. Now I take it seriously, because it's the only thing that gets me through the following week without burning out.
 
 **Announcer:** Speaker D
 
-**Speaker D:** Last Sunday I looked at my phone and realised I'd spent five hours scrolling through videos. I couldn't even remember what I'd watched! That's not a hobby, that's just killing time. Now I try to switch my phone off in the evenings and do something real, like cycling or cooking. I feel much better, and I actually have something to show for my day.
+**Speaker D:** Fixing bikes started as a way of avoiding my maths revision, I'll admit. Spare parts can be expensive, but there's a scrapyard near us where you can pick up almost anything for pocket money. Last summer a local shop owner saw me working on a neighbour's wheel and offered me a Saturday job. Now I'm applying to study mechanical engineering, which I'd never have considered if I hadn't ended up covered in oil.
 
 **Announcer:** Speaker E
 
-**Speaker E:** Drawing is my way of telling the world what I think. At school we all have to follow strict rules, but on a blank page I can do whatever I like. Last month I painted my street the way I see it, with purple trees and yellow roofs. My friends laughed at first, but they said it looked like me. That's exactly what I wanted.
+**Speaker E:** At school I'm the quiet one who gets average marks and nobody remembers. But on Wednesday evenings at the art studio, people ask for my opinion and call me 'the one who paints the weird skies'. It's silly, but that label matters to me. It's the one place where I feel like someone in particular, not just a name on a register. I'd probably be much less confident without it.
 
 **Announcer:** Speaker F
 
-**Speaker F:** My timetable is crazy. I get home at five, then I have English lessons, maths revision and a mountain of homework. By ten o'clock I'm exhausted. Sometimes I envy my parents, who say they had loads of free afternoons when they were at school. I'd love to take up photography, but I simply can't find the time.
+**Speaker F:** By the time I've finished football training, homework and a language class, it's nine at night and my brain has simply switched off. My grandparents talk about long afternoons spent doing whatever they liked, which sounds like science fiction to me. I've got a drawer full of hobbies I'd love to try, from pottery to photography, but there's no room for them in my week. Free time is something I read about, rather than something I actually have.
 
 ## Задание
-- 1. Hobbies allow people to relax after a busy day.
-- 2. Time spent online is often wasted.
-- 3. Free time gives people a chance to express themselves creatively.
-- 4. Spending time with friends is the most important thing.
-- 5. Young people have too little free time.
-- 6. A hobby can turn into a future career.
-- 7. Most hobbies cost too much money.
+- 1. Time spent passively in front of a screen usually leaves people dissatisfied.
+- 2. A pastime can unexpectedly lead to a career.
+- 3. Doing nothing in particular can be an effective way to recover.
+- 4. Hobbies are a privilege that depends on how much money a family has.
+- 5. Learning something new is more rewarding when you do it with other people.
+- 6. Young people are too busy to enjoy any free time.
+- 7. A hobby can give a young person an identity that school does not.
 
-**Ключ:** A–4, B–1, C–6, D–2, E–3, F–5
+**Ключ:** A–5, B–1, C–3, D–2, E–7, F–6
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)
@@ -44,5 +44,5 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 369 слов, около 2.8 мин без пауз; 1948 знаков
-- слов у говорящих: 59, 56, 56, 64, 65, 57
+- 467 слов, около 3.6 мин без пауз; 2545 знаков
+- слов у говорящих: 83, 78, 73, 73, 70, 78

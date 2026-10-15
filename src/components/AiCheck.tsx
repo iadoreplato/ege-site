@@ -29,8 +29,8 @@ async function ask(r: Response) {
 /** Sends an open answer to the serverless function /api/check (YandexGPT, see netlify/functions/check.mjs):
     starts the check, then asks every few seconds whether it is ready
     task — какое задание ("37", "38", "S3" — задание 3, "S4" — задание 4); prompt — описание задания для ИИ;
-    answer — текст ученика. res — результат, busy — идёт проверка, err — текст ошибки */
-export default function AiCheck({ task, prompt, answer }: { task: "37" | "38" | "S3" | "S4"; prompt: string; answer: string }) {
+    answer — текст ученика; onResult — кому сообщить итог (вариант ЕГЭ записывает балл). res — результат, busy — идёт проверка, err — текст ошибки */
+export default function AiCheck({ task, prompt, answer, onResult }: { task: "37" | "38" | "S3" | "S4"; prompt: string; answer: string; onResult?: (total: number, max: number) => void }) {
   const [res, setRes] = useState<Result | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
@@ -52,6 +52,7 @@ export default function AiCheck({ task, prompt, answer }: { task: "37" | "38" | 
       }
       if (!alive.current) return;
       setRes(data.result);
+      onResult?.(data.result.total, data.result.max);
       cheer(data.result.total, data.result.max, true);
     } catch (e: any) { if (alive.current) setErr(e.message); } finally { if (alive.current) setBusy(false); }
   }

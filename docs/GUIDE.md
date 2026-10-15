@@ -141,11 +141,40 @@ const HER = new Set(["Ella", "Sophia", "Helen"]);
 1. Положите файл задания в `src/content/listening/` с именем `<id модуля>-u<номер юнита>.json`
    (образец — `sport-u1.json`, поля описаны в `docs/CODE.md`, раздел 3.7). `module` и `unit` внутри должны совпадать с юнитом.
 2. Положите запись в `public/audio/<id>.mp3` и добавьте её в `public/audio/manifest.json` с `"mock": false` и `seconds`.
-3. `npm run dev` → откройте юнит → вкладка Exam tasks → внизу подраздел Listening.
-   Пока записи нет (или `mock: true`), задание на сайте не видно — это нормально.
+3. `npm run dev` → откройте юнит → вкладка Listening.
+   Пока записи нет (или `mock: true`), вкладки Listening у юнита нет — это нормально.
+4. Вопросы для обсуждения под заданием — поле `"discuss": ["…", "…", "…"]`. Нет поля — нет блока Discuss.
 
-Формулировки заданий над плеером — в `src/texts.ts`. Ученик сам видит свой результат: отметка «✓ done» в оглавлении
+### Добавить задание на чтение
+1. Положите файл в `src/content/reading/` с именем `<id модуля>-u<номер юнита>.json` (поля — `docs/CODE.md`, раздел 3.7).
+2. Проверьте формат и ключ: `node scripts/check-reading.mjs`.
+3. `npm run dev` → откройте юнит → вкладка Reading.
+
+### Названия разделов, номера ЕГЭ и русские формулировки
+Всё это в `src/content/sections.json`: `label` — название вкладки, `ege` — номера заданий, `types` — подписи
+типов в заголовке карточки, `ru` — русская формулировка над заданием (дословно из демоверсии).
+Порядок `types` не меняйте: по нему считается номер в метке «EGE …» (у Speaking reading = 1, ad = 2…).
+
+Ученик сам видит свой результат: отметка «✓ done» в оглавлении (проверены Listening и Reading юнита)
 хранится только в его браузере.
+
+### Добавить тренировочный вариант (Practice tests)
+Вариант N — это 11 файлов с `"module": "variant"` и `"unit": N` (образец — вариант 1):
+1. Аудирование: `src/content/listening/variant-N-t1.json`, `-t2`, `-t3`; озвучка — `node scripts/make-audio.mjs` (тратит кредиты ElevenLabs).
+   Пока записи нет, задание на сайте не показывается.
+2. Чтение: `src/content/reading/variant-N-t10.json`, `-t11`, `-t12`.
+3. Use of English: `src/content/use-of-english/variant-N-t19.json`, `-t25`, `-t30`.
+4. Письмо: `src/content/writing/variant-N.json` (email и essay); устная часть: `src/content/speaking/variant-N.json`
+   (reading, ad с четырьмя образцами вопросов в `questions`, interview, photo).
+5. Проверка: `node scripts/check-variants.mjs`, `node scripts/check-reading.mjs`, `node scripts/make-audio.mjs --check`.
+6. Вариант сам появится в меню «Practice tests» и на странице `#/free`.
+
+### Демо-кабинеты (модель)
+Сайт пока работает как модель: вход без пароля (страница `#/login`), данные лежат только в браузере.
+- Пользователи и вымышленная история занятий — `src/content/demo.json` (`users`, `homework`, `results`; `daysAgo` — сколько дней назад).
+  Новый демо-ученик: строка в `users` с `"teacher": "daria"`.
+- Начать модель с чистого листа: в браузере очистите данные сайта (или выйдите и войдите заново — история из `demo.json` останется).
+- Шкала перевода баллов — `src/content/scale.json` (сейчас 2026 год, источник указан в файле; сверьте с fipi.ru).
 
 ### Картинка-иконка
 Иконки лежат в `public/img/` (Fluent Emoji). В JSON пишется имя файла без `.svg`: `"img": "soccer_ball"`.

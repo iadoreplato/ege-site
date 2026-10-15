@@ -1,0 +1,72 @@
+{
+  "id": "variant-3",
+  "section": "writing",
+  "module": "variant",
+  "unit": 3,
+  "tasks": [
+    {
+      "type": "email",
+      "sender": "Maria",
+      "subject": "Exchange programme",
+      "text": "…Great news: our school is starting an exchange programme with a school in Spain, and I've decided to apply! My parents aren't sure that it's a good idea. What do you think are the advantages of studying abroad for a short time? Have you ever stayed with a host family? What would you like to see in a foreign country? By the way, I've just joined a drama club…",
+      "ask": "about her drama club",
+      "pool": {
+        "answers": [
+          "improve your language skills",
+          "get to know another culture",
+          "become more independent",
+          "I've never stayed with…",
+          "famous sights · local food"
+        ],
+        "questions": [
+          "How often do you rehearse?",
+          "What play are you going to perform?",
+          "Which role do you play?",
+          "When is the performance?"
+        ]
+      }
+    },
+    {
+      "type": "essay",
+      "subject": "how teenagers in Zetland spend their summer holidays",
+      "audience": "young Zetlanders",
+      "q": "How do you usually spend your summer holidays?",
+      "data": [
+        [
+          "Go to the seaside",
+          35
+        ],
+        [
+          "Stay with relatives in the countryside",
+          24
+        ],
+        [
+          "Work part-time",
+          17
+        ],
+        [
+          "Go to a summer camp",
+          14
+        ],
+        [
+          "Stay at home",
+          10
+        ]
+      ],
+      "problem": "that can arise when working part-time during the holidays",
+      "conclusion": "the best way to spend the summer holidays",
+      "focus4": "the problem must be about <b>working part-time</b>",
+      "pool": [
+        "have a rest",
+        "recharge your batteries",
+        "earn pocket money",
+        "get work experience",
+        "be tired",
+        "miss the chance to travel",
+        "meet new people",
+        "make friends",
+        "summer job"
+      ]
+    }
+  ]
+}

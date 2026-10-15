@@ -1,0 +1,32 @@
+{
+  "id": "variant-3-t11",
+  "section": "reading",
+  "module": "variant",
+  "unit": 3,
+  "task": 11,
+  "title": "A short history of the bicycle",
+  "level": "B2",
+  "text": "The bicycle is one of the simplest and most successful machines ever invented. Its ancestor appeared in Germany in 1817, when Karl von Drais built a wooden 'running machine' {A}. It had no pedals, and riders had to push themselves along with their feet.\n\nPedals came about forty years later, when French mechanics attached them directly to the front wheel {B}. These early bicycles were nicknamed 'boneshakers', since the iron wheels made every stone on the road painfully obvious. The next version, the 'penny-farthing', had an enormous front wheel, {C}, but it was dangerous: a rider who hit an obstacle could be thrown over the handlebars.\n\nThe breakthrough came in the 1880s with the 'safety bicycle', which had two wheels of equal size and a chain driving the back wheel. Rubber tyres filled with air soon made riding comfortable, {D}. Suddenly everybody wanted one, including women, for whom the bicycle became a symbol of independence.\n\nToday more than a billion bicycles are in use around the world. Cities such as Copenhagen and Amsterdam have built hundreds of kilometres of cycle lanes, {E}, and electric models allow people to travel further without getting tired. Perhaps the secret of the bicycle's success is that its design has hardly changed, {F}.",
+  "parts": [
+    "which let the rider cover more distance with each turn of the pedals",
+    "because the basic idea was right more than a century ago",
+    "so that the front wheel could be made much smaller",
+    "so that riders no longer had to push with their feet",
+    "and prices fell until ordinary workers could afford a bicycle",
+    "in order to move quickly around the forests he supervised",
+    "which have made cycling safer and encouraged people to leave their cars at home"
+  ],
+  "key": [
+    6,
+    4,
+    1,
+    5,
+    7,
+    2
+  ],
+  "discuss": [
+    "Do you ride a bicycle? Where and how often?",
+    "Why do some cities have so many cyclists and others very few?",
+    "Would you rather travel to school by bicycle or by public transport? Why?"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "sport-u2",
+  "section": "reading",
+  "module": "sport",
+  "unit": 2,
+  "task": 12,
+  "title": "Why rest days matter",
+  "level": "B2+–C1",
+  "text": [
+    "Walk into any gym in January and you will find the same scene: people training harder than they ever have before, convinced that every missed session is a small failure. The logic seems reasonable. If exercise makes you stronger, then more exercise should make you stronger still. Unfortunately, the body does not work in such a straightforward way, and many enthusiastic beginners discover this the hard way, when their progress stops or an injury forces them to stop altogether. Social media does not help, because it is full of photographs of people who seem to train every single day, and nobody posts a picture of their day off.",
+    "The key point is that muscles do not grow during a workout. Training actually creates tiny damage in muscle fibres, and it is during the hours and days afterwards that the body repairs them, leaving them slightly stronger than before. This process needs time, food and, above all, sleep. If a person trains the same muscles again before the repair is complete, the damage accumulates faster than the body can mend it. Strength does not rise; it falls. Researchers who track these changes in laboratories have found that the biggest gains usually come after a period of recovery, not at the end of the hardest week of training.",
+    "Sports scientists use the word overtraining for this situation, and the signs are often easy to miss. A runner may notice that a usual pace suddenly feels exhausting. Others report a low mood, irritability or trouble sleeping, which is ironic, since sleep is exactly what they need. Because these symptoms appear gradually, many people blame them on stress at school or work and carry on training, which makes the problem worse. A resting heart rate that stays higher than usual for several mornings in a row is another warning sign. Young people may be especially likely to ignore all of this, because teenagers expect to feel tired and rarely think of it as a problem that can be solved.",
+    "Fortunately, the cure is not complicated. Most coaches recommend at least one or two days a week without hard training, and they plan easier weeks every month or so. A common pattern is three hard days followed by one easy day, although the exact rhythm depends on age, experience and the sport. This does not mean lying on the sofa. Many athletes prefer 'active recovery': a gentle walk, a slow swim or some stretching, which keep the blood flowing without placing new demands on tired muscles. Professionals take the idea very seriously. In top teams, a specialist often decides who rests and who plays, even when the athlete himself feels fine.",
+    "Not everyone is convinced. Some argue that rest days encourage laziness and that real champions simply work harder than everyone else. There is some truth in this, since commitment is certainly necessary. In fact, a few days without training cause only a very small loss of fitness, while the benefit to tired muscles begins almost at once. However, the athletes who last longest are rarely those who train the most; they are those who recover the best. A teenager preparing for a school competition, for example, will usually gain more from a good night's sleep before the event than from an extra late-night workout.",
+    "The lesson, then, is a modest one. Progress comes from a cycle of effort and recovery, and neglecting the second half of that cycle is as unwise as neglecting the first. A training plan that includes rest is not a weaker plan; it is a smarter one. The best athletes are the ones who know when to ease off, and that is a skill worth learning early. So the next time you feel guilty about a day off, remember that your muscles are quietly doing some of their best work."
+  ],
+  "questions": [
+    {
+      "q": "The author begins by describing the gym in January in order to show that …",
+      "options": [
+        "many people start exercising for the wrong reasons.",
+        "gyms are overcrowded at the start of the year.",
+        "beginners often misunderstand how progress is made.",
+        "enthusiasm for exercise usually disappears quickly."
+      ]
+    },
+    {
+      "q": "In paragraph 2, what does 'This process' in 'This process needs time, food and, above all, sleep' refer to?",
+      "options": [
+        "The repair of damaged muscle fibres.",
+        "The creation of damage during a workout.",
+        "The growth of muscles while exercising.",
+        "The planning of a weekly training programme."
+      ]
+    },
+    {
+      "q": "Which sign of overtraining is NOT mentioned in paragraph 3?",
+      "options": [
+        "Trouble sleeping.",
+        "A change of mood.",
+        "A raised resting heart rate.",
+        "Frequent muscle cramps."
+      ]
+    },
+    {
+      "q": "The word ironic in paragraph 3 most probably means …",
+      "options": [
+        "amusing.",
+        "paradoxical.",
+        "understandable.",
+        "unavoidable."
+      ]
+    },
+    {
+      "q": "What does the author say about 'active recovery'?",
+      "options": [
+        "It keeps the body moving without extra strain.",
+        "It replaces rest days for experienced athletes.",
+        "It is suitable only for professional athletes.",
+        "It should be avoided in the first week of training."
+      ]
+    },
+    {
+      "q": "What is the author's view of the opinion that rest days encourage laziness?",
+      "options": [
+        "It is popular mainly among young athletes.",
+        "It is entirely mistaken and based on old ideas.",
+        "It contains some truth but ignores an important point.",
+        "It has been proved wrong by recent research."
+      ]
+    },
+    {
+      "q": "The author concludes that …",
+      "options": [
+        "people who feel guilty about resting need professional advice.",
+        "most training plans are weaker than they appear.",
+        "recovery should be the main focus of any programme.",
+        "effort and rest are equally important parts of progress."
+      ]
+    }
+  ],
+  "key": [
+    3,
+    1,
+    4,
+    2,
+    1,
+    3,
+    4
+  ],
+  "discuss": [
+    "Have you ever overdone it with training or revision? What happened?",
+    "The author says progress is a cycle of effort and recovery. Does the same apply to studying for exams?",
+    "How do you recover after a hard day? Which methods work best for you?"
+  ]
+}

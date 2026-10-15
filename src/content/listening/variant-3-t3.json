@@ -1,0 +1,159 @@
+{
+  "id": "variant-3-t3",
+  "section": "listening",
+  "module": "variant",
+  "unit": 3,
+  "task": 3,
+  "title": "Behind the Lens: a wildlife photographer",
+  "level": "B2+",
+  "speakers": {
+    "Presenter": "male3",
+    "Anna": "female3"
+  },
+  "script": [
+    {
+      "who": "Presenter",
+      "text": "This week on Behind the Lens my guest is Anna Kowalski, a wildlife photographer whose pictures have appeared in magazines all over Europe. Anna, welcome."
+    },
+    {
+      "who": "Anna",
+      "text": "Thank you, it's a pleasure."
+    },
+    {
+      "who": "Presenter",
+      "text": "You started when you were fourteen. What did you photograph first?"
+    },
+    {
+      "who": "Anna",
+      "text": "Our neighbour's cat, if you can believe it. My grandfather gave me an old camera, and for months I photographed anything that moved in the garden: sparrows, hedgehogs, a very unfriendly squirrel. Most of the pictures were awful, but one of the hedgehogs won a school competition, and that was the moment I thought it might be more than a hobby."
+    },
+    {
+      "who": "Presenter",
+      "text": "Wildlife photography sounds romantic. What is the reality?"
+    },
+    {
+      "who": "Anna",
+      "text": "Mostly waiting. I once spent nine days in a tiny shelter in the Carpathians hoping to photograph a lynx, and I never saw one. I came home with pictures of fog. People imagine adventure, but the work is largely patience, cold feet and cold sandwiches."
+    },
+    {
+      "who": "Presenter",
+      "text": "Has it ever been dangerous?"
+    },
+    {
+      "who": "Anna",
+      "text": "Less than you'd think. The worst moment was in Norway, when I misjudged the ice on a frozen lake and fell through up to my waist. Fortunately my guide was close. Since then I always travel with a partner, whatever the location."
+    },
+    {
+      "who": "Presenter",
+      "text": "Many photographers now use drones. What do you think of that?"
+    },
+    {
+      "who": "Anna",
+      "text": "I have mixed feelings. Drones allow pictures that were impossible before, such as a bird's-eye view of a migrating herd. But they can frighten animals, especially birds with nests, so I only use one where it's permitted and never near breeding colonies. A good picture is never worth disturbing a living creature."
+    },
+    {
+      "who": "Presenter",
+      "text": "What about editing? Is it acceptable to improve a photograph with software?"
+    },
+    {
+      "who": "Anna",
+      "text": "Small corrections, yes: brightness, cropping, removing dust. What's unacceptable is adding things that weren't there. A few years ago a famous competition withdrew an award because the winner had moved an animal into the picture. It destroyed his reputation overnight, and rightly so."
+    },
+    {
+      "who": "Presenter",
+      "text": "What equipment would you recommend for a beginner?"
+    },
+    {
+      "who": "Anna",
+      "text": "Honestly, nothing expensive. A modern phone has an excellent camera, and what matters in the beginning is learning to look: how light falls, how an animal moves, when to press the button. I know professionals who still do their best work with one cheap lens."
+    },
+    {
+      "who": "Presenter",
+      "text": "And finally, what are you working on now?"
+    },
+    {
+      "who": "Anna",
+      "text": "A project about urban wildlife: foxes in car parks, falcons on skyscrapers. It's important to show that nature isn't something far away; it's all around us, if we pay attention."
+    },
+    {
+      "who": "Presenter",
+      "text": "Anna Kowalski, thank you very much."
+    },
+    {
+      "who": "Anna",
+      "text": "Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What first made Anna take photography seriously?",
+      "options": [
+        "A magazine printed one of her early pictures.",
+        "Her grandfather praised her work.",
+        "A picture of hers won a school contest."
+      ]
+    },
+    {
+      "q": "What does Anna say about her trip to the Carpathians?",
+      "options": [
+        "She eventually succeeded in capturing an image of a lynx.",
+        "She came back without the pictures she wanted.",
+        "She had to leave early because of illness."
+      ]
+    },
+    {
+      "q": "What does Anna say about the accident in Norway?",
+      "options": [
+        "She now always works with a companion.",
+        "A guide had warned her about the ice.",
+        "She now avoids travelling to cold regions."
+      ]
+    },
+    {
+      "q": "What is Anna's attitude to drones?",
+      "options": [
+        "They should be banned from nature reserves.",
+        "They are acceptable if used with care.",
+        "They have improved all wildlife photographs."
+      ]
+    },
+    {
+      "q": "What does Anna say about editing photographs?",
+      "options": [
+        "Software has made rules unnecessary.",
+        "Competitions should accept altered pictures.",
+        "Only minor corrections are acceptable."
+      ]
+    },
+    {
+      "q": "What does Anna recommend to beginners?",
+      "options": [
+        "Concentrate on learning to observe.",
+        "Buy a professional camera as soon as possible.",
+        "Photograph pets before wild animals."
+      ]
+    },
+    {
+      "q": "Anna's current project aims to show that ...",
+      "options": [
+        "wildlife is disappearing from cities.",
+        "nature can be found close to home.",
+        "animals adapt to city life easily."
+      ]
+    }
+  ],
+  "key": [
+    3,
+    2,
+    1,
+    2,
+    3,
+    1,
+    2
+  ],
+  "discuss": [
+    "Anna says that waiting is the main part of her job. Are you a patient person?",
+    "Would you like to be a photographer or an explorer? Why?",
+    "Is it acceptable to edit photographs? Where is the line?"
+  ]
+}

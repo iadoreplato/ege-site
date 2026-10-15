@@ -1,0 +1,159 @@
+{
+  "id": "variant-2-t3",
+  "section": "listening",
+  "module": "variant",
+  "unit": 2,
+  "task": 3,
+  "title": "Young Entrepreneurs: a baker talks about his business",
+  "level": "B2+",
+  "speakers": {
+    "Presenter": "female2",
+    "Oliver": "male2"
+  },
+  "script": [
+    {
+      "who": "Presenter",
+      "text": "Today on Young Entrepreneurs I'm speaking to Oliver Grant, who opened his own bakery in Bristol at the age of twenty-three. Oliver, welcome."
+    },
+    {
+      "who": "Oliver",
+      "text": "Thank you for having me."
+    },
+    {
+      "who": "Presenter",
+      "text": "Most people your age are still deciding what to do with their lives. Why did you start baking?"
+    },
+    {
+      "who": "Oliver",
+      "text": "It began at university, where I was studying chemistry and planning to work in a laboratory. In my second year I started baking bread in my student flat, because the loaves in the shops were so bad. My flatmates began to pay me to make extra ones, and by the end of the year I was selling forty loaves a week from the kitchen window."
+    },
+    {
+      "who": "Presenter",
+      "text": "That sounds like a hobby that got out of control."
+    },
+    {
+      "who": "Oliver",
+      "text": "Exactly. But what finally convinced me was a summer I spent working in a small bakery in France. The owner got up at two in the morning every day, and he was the happiest man I'd ever met. I thought: if that's what a job looks like, I want one."
+    },
+    {
+      "who": "Presenter",
+      "text": "Did your family support the idea?"
+    },
+    {
+      "who": "Oliver",
+      "text": "My parents were doubtful, to put it politely. They'd paid for my degree, after all. My grandmother was the only one who took it seriously, and she lent me the money for my first oven, which was second-hand and very temperamental."
+    },
+    {
+      "who": "Presenter",
+      "text": "What was the hardest part of the first year?"
+    },
+    {
+      "who": "Oliver",
+      "text": "The hours, honestly. A baker's day starts in the middle of the night, so my social life more or less disappeared. But I'd expected that. What I hadn't expected was the amount of official paperwork: taxes, insurance, health inspections. I spent more time with forms than with dough."
+    },
+    {
+      "who": "Presenter",
+      "text": "Your bakery is known for using local flour. Why is that important?"
+    },
+    {
+      "who": "Oliver",
+      "text": "Partly for flavour, because flour from a nearby mill tastes different from the industrial kind, and partly because I like knowing the farmers. But it isn't cheap, and some customers complain about the price. I tell them to taste the bread and decide for themselves."
+    },
+    {
+      "who": "Presenter",
+      "text": "Have you ever had a disaster in the bakery?"
+    },
+    {
+      "who": "Oliver",
+      "text": "Plenty. The worst was last winter, when I mixed up salt and sugar in a batch of two hundred rolls. I only noticed when the first customer came back, looking rather pale. I gave everybody their money back and a free loaf, and strangely, that made them trust me more."
+    },
+    {
+      "who": "Presenter",
+      "text": "What would you say to young people with an idea for a business?"
+    },
+    {
+      "who": "Oliver",
+      "text": "Test it before you give anything up. Sell something at a weekend market, ask people what they think, and don't be afraid of criticism. And be prepared to work harder than you've ever worked, but on something that belongs to you."
+    },
+    {
+      "who": "Presenter",
+      "text": "Oliver, thank you very much."
+    },
+    {
+      "who": "Oliver",
+      "text": "Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why did Oliver begin to bake bread at university?",
+      "options": [
+        "He needed extra money to pay for his university studies.",
+        "His chemistry course required practical baking.",
+        "He was dissatisfied with the loaves sold in the shops."
+      ]
+    },
+    {
+      "q": "What finally persuaded Oliver to become a baker?",
+      "options": [
+        "The attitude of a baker he worked with abroad.",
+        "Advice from one of his university teachers.",
+        "A growing demand for his bread among customers."
+      ]
+    },
+    {
+      "q": "How did Oliver's family react to his plan?",
+      "options": [
+        "Everybody encouraged him straight away.",
+        "His parents refused to help him financially.",
+        "Only his grandmother backed him seriously."
+      ]
+    },
+    {
+      "q": "What did Oliver not expect when he opened the bakery?",
+      "options": [
+        "The very early start to each working day.",
+        "The quantity of bureaucracy involved.",
+        "The difficulty of the baking itself."
+      ]
+    },
+    {
+      "q": "What does Oliver say about using local flour?",
+      "options": [
+        "He prefers its taste and knows the growers.",
+        "It costs less than flour from big factories.",
+        "His customers suggested it to him."
+      ]
+    },
+    {
+      "q": "What happened after Oliver made a mistake with the rolls?",
+      "options": [
+        "Customers stopped buying his bread.",
+        "Customers began to trust him more.",
+        "He had to close the bakery for a day."
+      ]
+    },
+    {
+      "q": "What advice does Oliver give to young entrepreneurs?",
+      "options": [
+        "Leave your studies as soon as you have an idea.",
+        "Avoid listening to criticism.",
+        "Try your idea on a small scale first."
+      ]
+    }
+  ],
+  "key": [
+    3,
+    1,
+    3,
+    2,
+    1,
+    2,
+    3
+  ],
+  "discuss": [
+    "Would you like to run your own business one day? What kind?",
+    "Oliver says he trusts criticism. How do you react when people criticise your work?",
+    "What are the advantages and disadvantages of working for yourself?"
+  ]
+}

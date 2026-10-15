@@ -1,0 +1,42 @@
+{
+  "id": "variant-1-t10",
+  "section": "reading",
+  "module": "variant",
+  "unit": 1,
+  "task": 10,
+  "title": "Getting around the city: seven short texts",
+  "level": "B2+",
+  "headings": [
+    "The last mile",
+    "Cars without owners",
+    "Palaces for passengers",
+    "Planes versus trains",
+    "A comeback on rails",
+    "Paying to drive in",
+    "Good for business",
+    "Rules on the run"
+  ],
+  "texts": [
+    "In many European cities, trams are returning after decades of absence. They carry far more passengers than buses, produce no exhaust fumes and run on tracks that no car can block. Opponents point out that building the lines is expensive and disrupts the streets for years. Planners reply that the investment pays off, because a tram makes a district attractive to live and work in.",
+    "Pick up a bicycle at one station and leave it at another: that is the idea behind bike-sharing. The first schemes failed because the bikes were stolen. Modern ones use locks and apps, and a half-hour ride is often free. Cities report that commuters mostly use them for the final stretch of a journey, from the railway station to the office.",
+    "When a main street is closed to traffic, shopkeepers usually fear the worst. Yet studies from several countries suggest that people on foot spend more in total than drivers, because they linger and look at the windows. Cafés put tables outside, musicians appear, and the noise of engines is replaced by conversation. Many shop owners who protested now defend the change.",
+    "Some of the world's finest architecture is hidden underground. Moscow's stations have marble columns and chandeliers, Stockholm's are carved from rock and painted in bright colours, and Naples has a gallery of modern art. Some stations also host concerts and small exhibitions. They were designed as public palaces, so that ordinary people would spend part of every day in beautiful surroundings.",
+    "Electric scooters appeared on pavements almost overnight, and cities were not ready. Riders leave them in doorways, ride among pedestrians and, according to hospitals, injure themselves more often than expected. Some cities have banned them; others have introduced parking zones and speed limits of fifteen kilometres an hour. Both sides agree on one thing: the regulations came too late.",
+    "In 2003 London began charging drivers to enter its centre. Traffic fell by almost a fifth at first, and buses ran faster. The money went to public transport. Not everybody was satisfied: delivery companies complained about costs, and some residents said that traffic had simply moved to neighbouring streets. Still, other cities, including Stockholm and Milan, have since followed the example.",
+    "More young people in big cities no longer buy a car. A car costs a great deal, spends most of its life parked, and finding a space can take half an hour. With car-sharing, you book a vehicle by phone for a couple of hours and pay only for the time you use it. For occasional trips to a furniture shop, say, it is far cheaper than ownership."
+  ],
+  "key": [
+    5,
+    1,
+    7,
+    3,
+    8,
+    6,
+    2
+  ],
+  "discuss": [
+    "How do you usually get around your city or town? What would you improve?",
+    "Would you like trams or bike-sharing in your town? Why or why not?",
+    "Should cities ban cars from the centre? Give arguments for and against."
+  ]
+}

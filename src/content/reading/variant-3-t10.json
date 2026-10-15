@@ -1,0 +1,42 @@
+{
+  "id": "variant-3-t10",
+  "section": "reading",
+  "module": "variant",
+  "unit": 3,
+  "task": 10,
+  "title": "Gadgets in everyday life: seven short texts",
+  "level": "B2+",
+  "headings": [
+    "Families across borders",
+    "Someone is listening",
+    "Power from the roof",
+    "Paper fights back",
+    "Smart toys for children",
+    "Chores without effort",
+    "Make it yourself",
+    "Counting every step"
+  ],
+  "texts": [
+    "Millions of households now have a small speaker that answers questions, plays music and switches on the lights when you ask it to. Owners enjoy the convenience, but privacy experts warn that the devices are always waiting for their wake-up word. Manufacturers insist that nothing is recorded before that, yet several companies have admitted that employees sometimes listened to recordings.",
+    "A round machine that cleans the floor on its own has become the most popular household robot. It maps the room, avoids the furniture and returns to its charger when the battery is low. Owners say that the real benefit is not clean floors but free time, although pet owners warn that the machine can have unpleasant surprises in store.",
+    "Electronic readers can hold thousands of books, which weigh less than a single paperback. The screens look like paper and can be read in sunlight, and the battery lasts for weeks. Even so, sales have stopped growing, and many people have returned to printed books. They say they remember a story better when they can feel the pages.",
+    "A small bracelet counts your steps, measures your heartbeat and reminds you to stand up when you have been sitting for too long. For many wearers, the numbers become a game, and they walk around the block at midnight to reach their target. Doctors welcome the motivation but remind us that the readings are not always accurate.",
+    "Not long ago, speaking to a relative on another continent meant an expensive phone call and a bad line. Today a grandmother in Siberia can watch her grandchildren in Spain open their presents in real time, at no cost. The technology has changed family life, although some people complain that a screen can never replace a hug.",
+    "Rooftop panels turn sunlight into electricity, and in sunny regions a family can supply most of its needs. The price has fallen sharply in ten years, and many governments offer grants. In northern countries the winter months are a problem, but batteries and smart systems are slowly solving it, and the panels become cheaper every year.",
+    "Home 3D printers build objects layer by layer from melted plastic. Enthusiasts print toys, spare parts for broken appliances and even artificial hands for people who cannot afford them. The machines are slow and the results are not always perfect, so printers remain a hobby rather than a household necessity, but fans insist that this will change within a decade."
+  ],
+  "key": [
+    2,
+    6,
+    4,
+    8,
+    1,
+    3,
+    7
+  ],
+  "discuss": [
+    "Which of these gadgets would you most like to have at home? Why?",
+    "Are you worried about your privacy when you use smart devices?",
+    "Which gadget could you easily live without?"
+  ]
+}

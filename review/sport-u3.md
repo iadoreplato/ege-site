@@ -2,37 +2,37 @@
 Задание 3, юнит 3, модуль sport
 
 ## Текст записи
-**Presenter:** Good evening, and welcome to Outdoor Hour. My guest tonight is Laura Hayes, a mountaineer and climbing instructor who has climbed on four continents. Laura, welcome to the programme.
+**Presenter:** Good evening, and welcome to Outdoor Hour. My guest tonight is Laura Hayes, a mountaineer and instructor who has led expeditions on four continents. Laura, welcome to the programme.
 
-**Laura:** Thank you, it's lovely to be here.
+**Laura:** Thank you. It's good to be here.
 
-**Presenter:** Laura, newspapers often call you an adrenaline junkie. Is that fair?
+**Presenter:** Laura, newspapers love to call you an adrenaline junkie. How do you feel about that?
 
-**Laura:** Not really, and I must admit the label annoys me a little. Of course, I enjoy the adrenaline rush, but a real expert tries to avoid surprises. I spend far more time planning a route and checking the weather than actually climbing. I take calculated risks, never foolish ones, and there's a big difference between the two.
+**Laura:** It's a label that has followed me around for years, and it has never put clients off, so I've stopped trying to shake it off. But it misses the point rather badly. Yes, the adrenaline rush is part of what draws me to climbing, but if that were all I was after, I'd have given up long ago. What keeps me going is the preparation: weeks of planning and checking forecasts. Thrill-seeking without preparation is just recklessness. I take calculated risks, and I'm not interested in any other kind.
 
-**Presenter:** How did you get into climbing in the first place?
+**Presenter:** Was it that kind of passion that first took you up a mountain?
 
-**Laura:** By accident, really. When I was fifteen, my school organised a trip to an indoor climbing wall, and I was terrified of heights, so I almost refused to go. But our instructor was very patient and let us go up at our own pace, and after an hour I was completely hooked.
+**Laura:** Quite the opposite, actually. At fifteen I was terrified of heights, and I only went on the school trip to the climbing wall because my best friend bet me I wouldn't. I remember standing at the bottom with my legs shaking, and the instructor, a very patient man, simply said, 'You don't have to reach the top today. Just go as far as feels right.' Forty minutes later I was at the top, and I've never really come down since.
 
-**Presenter:** Is extreme sport as dangerous as people think?
+**Presenter:** You have seen some accidents over the years. What causes them?
 
-**Laura:** It can be, but most accidents happen because people ignore the basic rules. Good safety gear is essential, and you should always learn from a qualified instructor, not from videos on the internet. In twenty years I've seen a life-threatening injury only once, and it happened to a man who borrowed old equipment from a friend.
+**Laura:** People tend to imagine dramatic falls, but in my experience accidents are usually the result of small, boring decisions: borrowing a friend's old rope, skipping the safety check because you're running late, assuming the weather will hold. Safety gear and a qualified instructor matter, certainly, but the single biggest factor is attitude. Overconfidence is far more dangerous than any cliff.
 
-**Presenter:** You also run courses for companies. Why do they invite you?
+**Presenter:** You also run team-building courses for companies. Do they really work?
 
-**Laura:** They hope their employees will build some team spirit. On a mountain, you can't hide behind anybody, and if you don't pull your weight, the whole group suffers. After a weekend on the rocks, colleagues who hardly spoke to each other in the office often become real friends.
+**Laura:** Some of the managers who come to me are sceptical, and fair enough. One weekend can't turn a dysfunctional office into a happy family. What it can do is show people how they behave when the pressure is on. On a rope team you can't hide. If someone isn't pulling their weight, everybody feels it within minutes. I once saw two colleagues who hadn't spoken for months end up sharing a tent and laughing about it.
 
-**Presenter:** Some people say it's better to go it alone. What do you think?
+**Presenter:** Some adventurers prefer to go it alone. Have you ever done that?
 
-**Laura:** I respect that, and I once did a solo trek in Nepal, which was wonderful. But even then, I told several people exactly where I was going. On a serious climb, you rely on your partner for everything, so going alone is simply too risky.
+**Laura:** Once, in Nepal, and I'm glad I did, though not for the reason people expect. It wasn't peaceful. I was anxious the whole time and talked to myself far too much. What it taught me was how much I rely on others. I'd never have admitted it before, but I missed having someone to share the view with. Since then I've been much more willing to ask for help, and to offer it.
 
-**Presenter:** What has been the most memorable moment of your career?
+**Presenter:** And what is the moment you would call the high point of your career?
 
-**Laura:** Probably a sunrise in Peru. We had been climbing since midnight, and I was cold and exhausted, and honestly wanted to give up. Then the sun came up above the clouds, and the view simply took my breath away. In that moment I forgot all about the tiredness.
+**Laura:** Peru, no question. We'd been climbing since midnight in the dark, and honestly I was ready to turn back. My hands were numb, and I was working out how soon I could decently suggest giving up. Then the sun rose above a sea of cloud, and the view was so unbelievable that it took our breath away. Nobody said a word, and nobody turned back.
 
-**Presenter:** And what would you say to someone who wants to try extreme sports?
+**Presenter:** What would you say to someone who wants to try extreme sports for the first time?
 
-**Laura:** Start small, and step out of your comfort zone gradually. Don't push your limits just to impress your friends, and don't compare yourself with others. If you let fear stop you from trying, you'll never know what you can do. But if you ignore it completely, you can let the team down, and yourself.
+**Laura:** Don't be in a hurry to prove anything. People who push their limits to impress others tend to get hurt or, worse, they quit. Step out of your comfort zone gradually, one small challenge at a time. And be honest about why you're doing it. If the answer is 'because my friends will think I'm brave', stay on the ground for now.
 
 **Presenter:** Wise words. Laura, thank you very much for talking to us.
 
@@ -40,33 +40,33 @@
 
 ## Задание
 1. What does Laura say about being called an adrenaline junkie?
-   1) She is proud of the label.
-   2) She thinks it does not describe her.  ✔
-   3) She would like journalists to use it more.
-2. Laura first went to a climbing wall because …
-   1) a friend persuaded her.
-   2) she wanted to overcome a fear.
-   3) her school organised a trip.  ✔
-3. According to Laura, most accidents happen because …
-   1) people ignore basic safety rules.  ✔
-   2) equipment is too expensive.
-   3) weather conditions change quickly.
-4. Why do companies invite Laura to work with their teams?
-   1) They want to reward their best workers.
-   2) They want to make their staff fitter.
-   3) They want their employees to become closer.  ✔
-5. What is Laura's opinion about climbing alone?
-   1) It is too risky on serious climbs.  ✔
-   2) It is the best way to enjoy nature.
-   3) It is a good test of character.
-6. What happened to Laura at the top of the mountain in Peru?
-   1) She wanted to stop climbing.
-   2) She forgot how tired she was.  ✔
-   3) She felt disappointed by the view.
-7. What does Laura advise beginners to do?
-   1) Take on difficult challenges immediately.
-   2) Avoid situations where they might fail.
-   3) Increase the difficulty gradually.  ✔
+   1) The label accurately explains why she climbs.
+   2) The label ignores the less exciting side of her work.  ✔
+   3) The label has harmed her reputation as an instructor.
+2. Why did Laura go to the climbing wall at the age of fifteen?
+   1) She wanted to overcome her fear of heights.
+   2) Her school had made the trip compulsory.
+   3) A friend had challenged her to go.  ✔
+3. According to Laura, what is the main cause of climbing accidents?
+   1) Overconfident attitudes  ✔
+   2) Poor-quality equipment
+   3) A lack of qualified instructors
+4. What does Laura say about her courses for companies?
+   1) They quickly solve long-standing workplace problems.
+   2) They show how people really act under pressure.  ✔
+   3) They are mainly attended by sceptical managers.
+5. What did Laura learn from her solo trek in Nepal?
+   1) She depends on others more than she had thought.  ✔
+   2) She should avoid going on long treks.
+   3) She prefers solitude to company.
+6. How did Laura feel before the sunrise in Peru?
+   1) Worried about the weather
+   2) Determined to reach the summit
+   3) Tempted to abandon the climb  ✔
+7. What advice does Laura give to beginners?
+   1) Test themselves in front of friends.
+   2) Increase the difficulty gradually.  ✔
+   3) Choose sports that carry fewer risks.
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)
@@ -75,4 +75,4 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 485 слов, около 3.7 мин без пауз; 2661 знаков
+- 646 слов, около 5.0 мин без пауз; 3523 знаков

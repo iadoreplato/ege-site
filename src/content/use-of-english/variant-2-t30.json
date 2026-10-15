@@ -1,0 +1,69 @@
+{
+  "id": "variant-2-t30",
+  "section": "use-of-english",
+  "module": "variant",
+  "unit": 2,
+  "task": 30,
+  "title": "Vocabulary: a week at the seaside",
+  "text": "Last summer our family spent a week at the seaside. We stayed in a small hotel <b>30</b> ______ the beach, so we could hear the waves from our window. Every evening my father <b>31</b> ______ the alarm clock for seven because he wanted to avoid the crowds. After breakfast we <b>32</b> ______ for a walk along the coast, where my sister collected shells. In the afternoon the weather <b>33</b> ______ for the worse, and it started to rain, so we spent several hours in a museum. I was <b>34</b> ______ to discover that it was actually very interesting. On our last day we went <b>35</b> ______ a boat trip to a small island, which was the <b>36</b> ______ of the holiday.",
+  "opts": [
+    [
+      30,
+      "along",
+      "across",
+      "opposite",
+      "through"
+    ],
+    [
+      31,
+      "put",
+      "set",
+      "made",
+      "fixed"
+    ],
+    [
+      32,
+      "did",
+      "made",
+      "took",
+      "went"
+    ],
+    [
+      33,
+      "became",
+      "changed",
+      "grew",
+      "went"
+    ],
+    [
+      34,
+      "surprising",
+      "surprise",
+      "astonishing",
+      "surprised"
+    ],
+    [
+      35,
+      "by",
+      "on",
+      "in",
+      "at"
+    ],
+    [
+      36,
+      "top",
+      "main",
+      "highlight",
+      "centre"
+    ]
+  ],
+  "key": [
+    3,
+    2,
+    4,
+    2,
+    4,
+    2,
+    3
+  ]
+}

@@ -1,4 +1,4 @@
-/* ВКЛАДКА EXAM TASKS: экзаменационные задания в формате ЕГЭ — 1 (чтение вслух), 2 (вопросы по рекламе),
+/* ВКЛАДКИ SPEAKING И WRITING: экзаменационные задания в формате ЕГЭ — 1 (чтение вслух), 2 (вопросы по рекламе),
    3 (интервью), 4 (монолог по фото), 37 (письмо), 38 (эссе по данным опроса).
    Формулировки заданий записаны здесь, в коде: они дословно из демоверсии и одинаковы во всех модулях.
    Из JSON берутся только изменяемые части (тема, вопросы, данные опроса…). Поля — docs/CODE.md, 3.4. */
@@ -18,10 +18,11 @@ const FR = (universal as any).frames as Record<string, [string, string][]>;
     НОВОЕ ЖЕНСКОЕ ИМЯ В ПИСЬМЕ — ДОБАВЬТЕ СЮДА */
 const HER = new Set(["Ella", "Sophia", "Helen"]);
 
-/** Card of one exam task; `task` = task number, used for the header colour
-    Карточка задания: шапка «Task N» (цвет зависит от номера задания) и содержимое */
-const TCard = ({ task, title, icon, children }: { task: number; title: string; icon: string; children: ReactNode }) =>
-  <div className={`exam-task exam-task--task-${task}`}><div className="exam-task__header"><Img name={icon} className="exam-task__icon" /><span className="exam-task__label">Task {task}</span><span className="exam-task__title">{title}</span></div><div className="exam-task__body">{children}</div></div>;
+/** Card of one exam task; `task` = EGE task number, used for the header colour
+    Карточка задания: шапка (цвет зависит от номера задания ЕГЭ) с общей строкой-заголовком head (TaskHead из Task.tsx),
+    title — название этого задания, если оно не совпадает с подписью типа; дальше содержимое */
+const TCard = ({ task, head, title, icon, children }: { task: number; head: ReactNode; title?: string; icon: string; children: ReactNode }) =>
+  <div className={`exam-task exam-task--task-${task}`}><div className="exam-task__header"><Img name={icon} className="exam-task__icon" />{head}{title && <span className="exam-task__title">{title}</span>}</div><div className="exam-task__body">{children}</div></div>;
 
 /** Pool + frame is hidden until the student asks for support
     Поддержка (готовые фразы + шаблон ответа) спрятана, пока ученик не нажмёт «Show support» */
@@ -54,10 +55,10 @@ const Plan = ({ items }: { items: ReactNode[] }) => <ul className="plan-list exa
 
 /** Поле для письма (37) или эссе (38) + счётчик слов + ИИ-проверка.
     min/max — границы, за которыми 0 баллов / проверяется только начало; ok — целевой диапазон; prompt — описание задания для ИИ */
-function Writing({ min, max, ok, task, prompt }: { min: number; max: number; ok: [number, number]; task: "37" | "38"; prompt: string }) {
+function Writing({ min, max, ok, task, prompt, onScore }: { min: number; max: number; ok: [number, number]; task: "37" | "38"; prompt: string; onScore?: (total: number, max: number) => void }) {
   const [text, setText] = useState("");
   return <div className="writing"><textarea className="answer-textarea answer-textarea--long" rows={12} value={text} onChange={e => setText(e.target.value)} placeholder="Write your answer here…" />
-    <WordStatus n={countWords(text)} min={min} max={max} ok={ok} /><AiCheck task={task} prompt={prompt} answer={text} /></div>;
+    <WordStatus n={countWords(text)} min={min} max={max} ok={ok} /><AiCheck task={task} prompt={prompt} answer={text} onResult={onScore} /></div>;
 }
 
 /** Задания 3 и 4: ученик печатает то, что сказал, и отправляет на ИИ-проверку (S3 / S4) */
@@ -70,9 +71,10 @@ function Transcript({ task, prompt }: { task: "S3" | "S4"; prompt: string }) {
 
 /** `slot`: base file name for this task's photos and recording, see Photo.tsx
     Одно экзаменационное задание по s.type. s — данные задания из JSON; topic — модуль;
+    onScore — кому сообщить балл ИИ-проверки письма и эссе (вариант ЕГЭ); head — строка-заголовок карточки («Unit 1 · Speaking · Task 2», EGE 3, тип) из Topic.tsx;
     idx — номер эссе в юните (чётный — таблица, нечётный — круговая диаграмма); slot — имя файла фото и записи.
     prompt в каждом задании — краткое описание задания по-английски, которое уходит ИИ-проверке вместе с ответом */
-export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Topic; idx: number; slot: string }) {
+export default function SpeechView({ s, topic, idx, slot, head, onScore }: { s: any; topic: Topic; idx: number; slot: string; head: ReactNode; onScore?: (total: number, max: number) => void }) {
   const [showKey, setShowKey] = useState(false);                     // задание 2: показаны ли образцы вопросов
   const [adAns, setAdAns] = useState<Record<number, string>>({});    // задание 2: вопросы, которые напечатал ученик
   switch (s.type) {
@@ -80,7 +82,7 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
     case "interview": {
       const topicText = s.topic[0].toLowerCase() + s.topic.slice(1); // тема с маленькой буквы для фразы интервьюера
       const prompt = `Task 3 interview on ${topicText}. Questions: ${s.questions.map((q: any, i: number) => `${i + 1}) ${q.q}`).join(" ")}`;
-      return <TCard task={3} title="Interview" icon="studio_microphone">
+      return <TCard task={3} head={head} icon="studio_microphone">
         <Instruction>You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.</Instruction>
         <Photo name={slot} alt={`Interview: ${s.topic}`} className="exam-task__photo" />
         <SpeakBar name={slot} seconds={40} label="Each answer" maxSeconds={260} />
@@ -96,7 +98,7 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
     case "photo": {
       const pb = topic.photo_pool_base, p = s.pool; // общие фразы модуля и фразы этого задания
       const prompt = `Task 4 project "${s.project}". Photo 1: ${s.p1[1]}. Photo 2: ${s.p2[1]}. Plan: explain the choice, differences; advantages (1–2) of ${s.focus}; disadvantages (1–2) of ${s.focus}; opinion — ${s.opinion}.`;
-      return <TCard task={4} title={`Project “${s.project}”`} icon="speaking_head">
+      return <TCard task={4} head={head} title={`Project “${s.project}”`} icon="speaking_head">
         <Instruction>Imagine that you and your friend are doing a school project “{s.project}”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project.</Instruction>
         <div className="photo-pair">{[s.p1, s.p2].map((ph: any, i: number) => <div className="photo-pair__item" key={i}><div className="photo-pair__picture"><Photo name={`${slot}-photo${i + 1}`} alt={ph[1]} className="photo-pair__photo">{ph[0].map((x: string) => <Img key={x} name={x} className="photo-pair__icon" />)}</Photo></div><div className="photo-pair__caption"><span className="photo-pair__label">Photo {i + 1}</span>{ph[1]}</div></div>)}</div>
         <Instruction>In 2.5 minutes be ready to:</Instruction>
@@ -113,7 +115,7 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
     case "essay": {
       const pie = idx % 2 === 1; // 1-е эссе юнита — таблица, 2-е — диаграмма, 3-е — таблица…
       const prompt = `Task 38. Project on ${s.subject}. Survey among ${s.audience}. Question: ${s.q} (choose one option). Data: ${s.data.map((d: any) => `${d[0]} ${d[1]}%`).join("; ")}. Plan point 4: outline a problem ${s.problem} and suggest a solution. Point 5: opinion on ${s.conclusion}.`;
-      return <TCard task={38} title={s.subject[0].toUpperCase() + s.subject.slice(1)} icon="bar_chart">
+      return <TCard task={38} head={head} title={s.subject[0].toUpperCase() + s.subject.slice(1)} icon="bar_chart">
         <Instruction>Imagine that you are doing a project on {s.subject}. You have found some data on the subject – the results of a survey conducted among {s.audience} (see the {pie ? "pie chart" : "table"} below).</Instruction>
         <Instruction>Comment on the survey data and give your opinion on the subject of the project.</Instruction>
         <div className="survey-question"><span className="survey-question__label">The survey question:</span><b>{s.q}</b><em className="survey-question__hint">Choose one option</em></div>
@@ -123,28 +125,29 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
           `outline a problem ${s.problem} and suggest a way of solving it;`, `conclude by giving and explaining your opinion on ${s.conclusion}.`]} />
         <p className="russian-instruction">В ответе на задание 38 числительные пишите цифрами.</p>
         <Support><div><div className="support__focus"><span className="support__focus-label">Point 4</span><b className="support__focus-text"><Text value={s.focus4} /> · audience throughout: {s.audience}</b></div><Pool groups={[["topic", s.pool], ["data", topic.data_verbs]]} /></div><Skel lines={FR.t38} small /></Support>
-        <Writing min={180} max={275} ok={[200, 250]} task="38" prompt={prompt} />
+        <Writing min={180} max={275} ok={[200, 250]} task="38" prompt={prompt} onScore={onScore} />
       </TCard>;
     }
     // ЗАДАНИЕ 37 — письмо другу: текст письма, план, поддержка, поле с ИИ-проверкой
     case "email": {
       const pr = HER.has(s.sender) ? "her" : "his"; // местоимение по имени отправителя
       const prompt = `Task 37. Email from ${s.sender}, subject "${s.subject}": ${s.text.replace(/\n/g, " ")} Task: answer ${pr} questions; ask 3 questions ${s.ask}.`;
-      return <TCard task={37} title={`An email from ${s.sender}`} icon="envelope">
+      return <TCard task={37} head={head} title={`An email from ${s.sender}`} icon="envelope">
         <Instruction>You have received an email message from your English-speaking pen-friend {s.sender}:</Instruction>
         <div className="email-message"><div className="email-message__header"><span>From: {s.sender}@mail.uk</span><span>To: Russian_friend@ege.ru</span><span>Subject: {s.subject}</span></div><Text as="p" className="email-message__text" value={s.text} /></div>
         <Instruction>Write an email to {s.sender}.<br />In your message:</Instruction>
         <Plan items={[`answer ${pr} questions;`, `ask 3 questions ${s.ask}.`]} />
         <Instruction>Write 100–140 words.<br />Remember the rules of email writing.</Instruction>
         <Support><Pool groups={[["answers", s.pool.answers], ["questions", s.pool.questions]]} /><Skel lines={FR.t37} small /></Support>
-        <Writing min={90} max={154} ok={[100, 140]} task="37" prompt={prompt} />
+        <Writing min={90} max={154} ok={[100, 140]} task="37" prompt={prompt} onScore={onScore} />
       </TCard>;
     }
-    // ЗАДАНИЕ 2 — четыре вопроса по рекламе. Образцы вопросов берутся из ad_keys модуля:
-    // сначала по точному названию рекламы, иначе по первому слову названия
+    // ЗАДАНИЕ 2 — четыре вопроса по рекламе. Образцы вопросов: поле questions задания (варианты ЕГЭ), иначе ad_keys модуля —
+    // сначала по точному названию рекламы, иначе по первому слову названия. Скрыты до нажатия «Possible questions»
     case "ad": {
-      const key = topic.ad_keys.find(([t]) => t === s.title) || topic.ad_keys.find(([t]) => s.title.toLowerCase().includes(t.toLowerCase().split(" ")[0]));
-      return <TCard task={2} title="Direct questions" icon="speech_balloon">
+      const found = topic.ad_keys.find(([t]) => t === s.title) || topic.ad_keys.find(([t]) => s.title.toLowerCase().includes(t.toLowerCase().split(" ")[0]));
+      const key = s.questions ? <ol className="plan-list">{s.questions.map((q: string) => <li className="plan-list__item" key={q}>{q}</li>)}</ol> : found?.[1];
+      return <TCard task={2} head={head} icon="speech_balloon">
         <Instruction>Study the advertisement.</Instruction>
         <div className="advert"><Photo name={slot} alt={s.title} className="advert__photo"><Img name={s.img} className="advert__icon" /></Photo><div><div className="advert__title">{s.title}</div><div className="advert__slogan">“{s.slogan}”</div></div></div>
         <Instruction>You are considering {s.consider} and now you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:</Instruction>
@@ -152,13 +155,13 @@ export default function SpeechView({ s, topic, idx, slot }: { s: any; topic: Top
         <Instruction>You have 20 seconds to ask each question.</Instruction>
         <SpeakBar name={slot} seconds={20} label="Each question" maxSeconds={90} />
         <div className="answer-frame answer-frame--small">{["Wh-word", "do / does / is / can", "the / your + noun", "verb", "?"].map(x => <span className="answer-frame__slot" key={x}>{x}</span>)}</div>
-        {key && <div className="exercise__check-bar"><button className="button button--primary" onClick={() => setShowKey(!showKey)}>{showKey ? "Hide sample questions" : "Show sample questions"}</button></div>}
-        {showKey && key && <div className="exercise__answer">{key[1]}</div>}
+        {key && <div className="exercise__check-bar"><button className="button button--primary" aria-expanded={showKey} onClick={() => setShowKey(!showKey)}>{showKey ? "Hide possible questions" : "Possible questions"}</button></div>}
+        {showKey && key && <div className="exercise__answer">{key}</div>}
       </TCard>;
     }
     // ЗАДАНИЕ 1 — чтение вслух: таймер 1,5 мин на чтение про себя, затем запись
     case "reading":
-      return <TCard task={1} title="Reading aloud" icon="open_book">
+      return <TCard task={1} head={head} icon="open_book">
         <Instruction>Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.</Instruction>
         <Timer seconds={90} label="Silent reading" />
         <div className="read-aloud-text"><b className="read-aloud-text__title">{s.title}</b><br />{s.text}</div>

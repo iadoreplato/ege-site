@@ -1,0 +1,132 @@
+{
+  "id": "variant-3",
+  "section": "speaking",
+  "module": "variant",
+  "unit": 3,
+  "tasks": [
+    {
+      "type": "reading",
+      "title": "The Moon",
+      "text": "The Moon is the only natural satellite of the Earth, and it is the brightest object in the night sky. It does not produce light of its own: we see it because it reflects the light of the Sun. The Moon travels around the Earth in about a month, which is why its shape seems to change from a thin crescent to a full circle and back again. It also affects our planet, because its gravity causes the tides in the oceans. In 1969, astronauts landed on the Moon for the first time, and since then people have kept dreaming of returning."
+    },
+    {
+      "type": "ad",
+      "title": "Language camp in Brighton",
+      "slogan": "Learn English by the sea!",
+      "img": "world_map",
+      "consider": "going to the language camp",
+      "points": [
+        "duration of the camp",
+        "accommodation",
+        "age of participants",
+        "price"
+      ],
+      "questions": [
+        "How long does the camp last?",
+        "Where will the students live?",
+        "What is the age of the participants?",
+        "How much does the camp cost?"
+      ]
+    },
+    {
+      "type": "interview",
+      "topic": "Holidays",
+      "questions": [
+        {
+          "q": "Where did you go on holiday last year? Did you enjoy it?",
+          "pool": [
+            "Last year I went to…",
+            "by the sea / in the mountains",
+            "have a great time",
+            "stay with relatives"
+          ]
+        },
+        {
+          "q": "Do you prefer holidays by the sea or in the mountains? Why?",
+          "pool": [
+            "I prefer…",
+            "swim and sunbathe",
+            "hike",
+            "fresh air"
+          ]
+        },
+        {
+          "q": "Who do you usually go on holiday with? Why?",
+          "pool": [
+            "with my family",
+            "with friends",
+            "more fun",
+            "feel free"
+          ]
+        },
+        {
+          "q": "What do you usually do on holiday to relax?",
+          "pool": [
+            "read a book",
+            "go for walks",
+            "sleep late",
+            "do nothing"
+          ]
+        },
+        {
+          "q": "Would you like to live in another country one day? Why?",
+          "pool": [
+            "I'd love to live in…",
+            "learn the language",
+            "different culture",
+            "miss my family"
+          ]
+        }
+      ],
+      "trap": "Q5 is about the <b>future</b>: use <i>would like to</i> and <i>I'd love to</i>."
+    },
+    {
+      "type": "photo",
+      "project": "Free time",
+      "p1": [
+        [
+          "camping",
+          "evergreen_tree"
+        ],
+        "a group of friends sitting around a campfire near a forest"
+      ],
+      "p2": [
+        [
+          "video_game",
+          "television"
+        ],
+        "two teenagers playing video games on a sofa at home"
+      ],
+      "focus": "the two ways of spending free time",
+      "opinion": "which way of spending free time you prefer and why",
+      "basis": "outdoors or indoors? · with friends or with a screen? (bank: 1, 6)",
+      "pool": {
+        "describe": [
+          "sit around a campfire",
+          "in the forest",
+          "play video games",
+          "on a sofa",
+          "hold a controller",
+          "have fun"
+        ],
+        "difference": [
+          "outdoors — indoors",
+          "fresh air — a screen",
+          "move around — sit still"
+        ],
+        "pros": [
+          "get fresh air",
+          "stay active",
+          "enjoy nature",
+          "relax at home in any weather"
+        ],
+        "cons": [
+          "depend on the weather",
+          "need special equipment",
+          "sit for hours",
+          "strain your eyes"
+        ]
+      }
+    }
+  ]
+}

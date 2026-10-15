@@ -1,20 +1,98 @@
 {
   "sport-u1": {
     "file": "sport-u1.mp3",
-    "seconds": 398,
-    "hash": "160cd5d6d8e6b6c4",
+    "seconds": 433,
+    "hash": "cb041359bc672e89",
     "mock": false
   },
   "sport-u2": {
     "file": "sport-u2.mp3",
-    "seconds": 295,
-    "hash": "bde2cd5236c93a0a",
+    "seconds": 343,
+    "hash": "3fd54e3fd7b8551e",
     "mock": false
   },
   "sport-u3": {
     "file": "sport-u3.mp3",
-    "seconds": 454,
-    "hash": "ab6a5ab580ec73f6",
+    "seconds": 565,
+    "hash": "2778e105ddf43d53",
+    "mock": false
+  },
+  "sport-u4": {
+    "file": "sport-u4.mp3",
+    "seconds": 433,
+    "hash": "a928d3f689ed06b5",
+    "mock": false
+  },
+  "sport-u5": {
+    "file": "sport-u5.mp3",
+    "seconds": 305,
+    "hash": "66bfd1f60e0e3bda",
+    "mock": false
+  },
+  "sport-u6": {
+    "file": "sport-u6.mp3",
+    "seconds": 545,
+    "hash": "25ec85ef522d2fa0",
+    "mock": false
+  },
+  "sport-u7": {
+    "file": "sport-u7.mp3",
+    "seconds": 446,
+    "hash": "aac4140a5e258fec",
+    "mock": false
+  },
+  "variant-1-t1": {
+    "file": "variant-1-t1.mp3",
+    "seconds": 464,
+    "hash": "9e55ed3cb35615e9",
+    "mock": false
+  },
+  "variant-1-t2": {
+    "file": "variant-1-t2.mp3",
+    "seconds": 347,
+    "hash": "87ed3e96f36f0ca8",
+    "mock": false
+  },
+  "variant-1-t3": {
+    "file": "variant-1-t3.mp3",
+    "seconds": 452,
+    "hash": "9e692c7952342bac",
+    "mock": false
+  },
+  "variant-2-t1": {
+    "file": "variant-2-t1.mp3",
+    "seconds": 450,
+    "hash": "5dd7f72266650eda",
+    "mock": false
+  },
+  "variant-2-t2": {
+    "file": "variant-2-t2.mp3",
+    "seconds": 353,
+    "hash": "940516805d755e15",
+    "mock": false
+  },
+  "variant-2-t3": {
+    "file": "variant-2-t3.mp3",
+    "seconds": 421,
+    "hash": "3ebdbc33e4cac401",
+    "mock": false
+  },
+  "variant-3-t1": {
+    "file": "variant-3-t1.mp3",
+    "seconds": 423,
+    "hash": "a3efb4eb1c912b71",
+    "mock": false
+  },
+  "variant-3-t2": {
+    "file": "variant-3-t2.mp3",
+    "seconds": 343,
+    "hash": "0e2f505ac205321c",
+    "mock": false
+  },
+  "variant-3-t3": {
+    "file": "variant-3-t3.mp3",
+    "seconds": 450,
+    "hash": "7a2d7dc5e4e7fe42",
     "mock": false
   }
 }

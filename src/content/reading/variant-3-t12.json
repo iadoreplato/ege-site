@@ -1,0 +1,96 @@
+{
+  "id": "variant-3-t12",
+  "section": "reading",
+  "module": "variant",
+  "unit": 3,
+  "task": 12,
+  "title": "The key to the workshop",
+  "level": "B2+",
+  "text": [
+    "When I was small, the most interesting place in the world was my grandfather's workshop. It was a wooden shed at the end of his garden, smelling of oil and sawdust, with tools hanging on the wall in the order of their size. Grandfather had been a clockmaker for forty years, and even after retirement he spent every morning there, repairing the watches of neighbours who could easily have bought new ones. I was not allowed to touch anything, which of course made it all the more attractive. A cat called Tick slept on the warm radiator and was the only creature allowed to walk across the workbench.",
+    "Gradually, the rules changed. At eight, I was permitted to hold the tweezers; at ten, to sit on a stool and watch him open a pocket watch under a magnifying glass. He rarely explained what he was doing. Instead, he would murmur to himself, 'Patience, patience,' and wait for a tiny spring to slip into place. I found it hypnotic. My friends were playing football in the street, and I sat on a stool for hours, hardly daring to breathe. Sometimes a neighbour would knock, put a watch on the table and describe, almost apologetically, how it had fallen into the sink; Grandfather listened to each story with the same seriousness.",
+    "The first time I repaired something myself, I was twelve. It was a small alarm clock that had belonged to my grandmother, and it had not ticked for twenty years. Grandfather put it in front of me without a word and went off to make tea. I took it apart, cleaned each part with a soft brush and put it together again, and when I finally wound it up, it started to tick. He came back with two cups, looked at the clock and said only, 'Not bad.' From him, that was a medal.",
+    "As I grew older, however, my interest drifted. I started to study for exams, discovered computers and decided that fixing old clocks was a hobby for people who had nothing better to do. My visits to the shed grew rarer and shorter. When I told Grandfather that I wanted to study programming, he nodded and asked only whether the university had a decent library. In those years I told myself that the clocks could wait and that there would always be time for them later. I felt guilty for years, as if I had abandoned him, although he never mentioned it.",
+    "Grandfather died in the spring of my second year at university. In his will he left me one thing: the workshop key, taped to an envelope. Inside was a note: 'Machines are only ever as good as the people who care for them. Look after the clocks.' I stood in the shed for a long time that afternoon. The tools hung where they had always hung, and on the bench lay an unfinished watch with its back open, as though he might return at any moment.",
+    "I finished that watch over the summer. It took me three weeks, and I ruined two springs, but when it finally ticked, I understood something that I couldn't have put into words as a child: patience is not waiting; it is paying attention. Now I work as a software engineer, and I still spend Sundays in the shed. Colleagues find it funny that someone who builds programs relaxes by repairing old clocks. To me, it is the same job. Last year I even repaired my grandmother's alarm clock again, after it stopped for the second time."
+  ],
+  "questions": [
+    {
+      "q": "Why did the workshop attract the author so much as a child?",
+      "options": [
+        "He was forbidden to touch anything there.",
+        "His grandfather let him play with the tools.",
+        "It was a good place to meet his friends.",
+        "It was full of valuable antiques."
+      ]
+    },
+    {
+      "q": "What does the author mean by 'I found it hypnotic' in paragraph 2?",
+      "options": [
+        "He fell asleep while he watched.",
+        "He found the work boring.",
+        "He was fascinated and could not look away.",
+        "He was afraid of breaking something under the glass."
+      ]
+    },
+    {
+      "q": "How did Grandfather react when the author repaired the clock?",
+      "options": [
+        "He praised him warmly at once.",
+        "He showed his approval in very few words.",
+        "He criticised the way it had been done.",
+        "He offered to teach him to repair watches."
+      ]
+    },
+    {
+      "q": "In paragraph 4, what does 'it' in 'although he never mentioned it' refer to?",
+      "options": [
+        "How seldom he came to the workshop.",
+        "The university's library service.",
+        "The death of the author's grandmother.",
+        "His own success in the exams."
+      ]
+    },
+    {
+      "q": "Which of the following is NOT mentioned in paragraph 5?",
+      "options": [
+        "A note from Grandfather.",
+        "A key left for the author.",
+        "An unfinished watch on the bench.",
+        "Watches belonging to neighbours."
+      ]
+    },
+    {
+      "q": "What did the author learn from finishing the watch?",
+      "options": [
+        "Repairing old things is easier than he had thought.",
+        "Being patient is about focusing on the task.",
+        "He had no talent for clockmaking.",
+        "Hobbies are more important than careers."
+      ]
+    },
+    {
+      "q": "What does the author suggest about his two occupations in the last paragraph?",
+      "options": [
+        "They have very little in common.",
+        "He will soon have to choose between the two.",
+        "He treats them as similar kinds of work.",
+        "His colleagues have copied his hobby."
+      ]
+    }
+  ],
+  "key": [
+    1,
+    3,
+    2,
+    1,
+    4,
+    2,
+    3
+  ],
+  "discuss": [
+    "Do you have a hobby that someone in your family taught you?",
+    "Grandfather said very little but taught a lot. Have you learnt anything from a person who spoke little?",
+    "Is it better to follow a family tradition or to choose your own path?"
+  ]
+}

@@ -47,7 +47,8 @@ ege-site 2/
     ├── App.tsx                главный компонент: выбирает, какую страницу показать
     ├── route.ts               адреса страниц (#/sport/unit/1) ⇄ описание страницы
     ├── types.ts               типы TypeScript: как выглядят данные
-    ├── texts.ts               тексты интерфейса: формулировки заданий на аудирование (ЕГЭ 2027)
+    ├── sections.ts            разделы ЕГЭ из content/sections.json: названия, номера заданий, подписи типов
+    ├── demo.ts                кабинеты (модель): вход, результаты, домашние задания — всё в браузере
     ├── vite-env.d.ts          служебный файл для TypeScript (не трогать)
     ├── styles.css             всё оформление сайта
     ├── tailwind.css           Tailwind для папки components/ui (сейчас не используется)
@@ -56,22 +57,35 @@ ege-site 2/
     │   ├── universal.json     универсальный блок «About the exam» + шаблоны ответов
     │   ├── sport.json         модуль 1: Sport & Healthy Lifestyle
     │   ├── russia.json        модуль 2: Russia
-    │   └── listening/         задания на аудирование <module>-u<N>.json (+ voices.json — голоса для озвучки, сайт его не читает)
+    │   ├── sections.json      разделы ЕГЭ: названия вкладок, номера заданий, подписи типов, русские формулировки
+    │   ├── scale.json         перевод первичных баллов в тестовые (шкала 2026, источник в файле) + максимум баллов каждого задания (points)
+    │   ├── demo.json          демо-пользователи и вымышленная история занятий для модели кабинетов
+    │   ├── listening/         задания на аудирование <module>-u<N>.json и variant-N-t1…t3.json (+ voices.json — голоса для озвучки, сайт его не читает)
+    │   ├── reading/           задания на чтение <module>-u<N>.json и variant-N-t10…t12.json
+    │   ├── use-of-english/    задания 19–36 тренировочных вариантов: variant-N-t19, -t25, -t30.json
+    │   ├── writing/           задания 37–38 вариантов: variant-N.json (tasks: email, essay)
+    │   └── speaking/          устная часть вариантов: variant-N.json (tasks: reading, ad, interview, photo)
     └── components/            React-компоненты (детали интерфейса)
         ├── Header.tsx         шапка сайта с меню
-        ├── Cover.tsx          обложка (главная) и оглавление
+        ├── Pages.tsx          главная, бесплатные варианты, демо-вход, «войдите» для учебника
+        ├── Cabinet.tsx        кабинеты ученика и учителя
+        ├── Variant.tsx        тренировочный вариант ЕГЭ (Practice tests): разделы и итог
+        ├── UseOfEnglish.tsx   задания 19–24, 25–29 (Gaps) и 30–36 (Cloze): общие для Revision, Review и вариантов
+        ├── Cover.tsx          обложка учебника и оглавление
         ├── Universal.tsx      страницы универсального блока
         ├── Topic.tsx          страница юнита (вкладки) и банк сравнений
         ├── Vocab.tsx          вкладка Vocabulary: блоки лексики
         ├── Cards.tsx          вкладка Memorise: карточки, пары, быстрый тест
         ├── Exercises.tsx      вкладка Practice: упражнения + общая панель «Check answers»
-        ├── Speaking.tsx       вкладка Speaking
-        ├── Speech.tsx         вкладка Exam tasks: задания 1, 2, 3, 4, 37, 38
+        ├── Speaking.tsx       «More speaking practice» в конце вкладки Speaking
+        ├── Speech.tsx         вкладки Speaking и Writing: задания 1, 2, 3, 4, 37, 38
         ├── Revision.tsx       итоговый Revision модуля и мини-Review после юнитов
         ├── Recorder.tsx       диктофон и панель таймеров для устных заданий
         ├── Photo.tsx          фото к заданию (или иконка, если фото нет)
         ├── AiCheck.tsx        кнопка «Check with AI» и вывод оценки
-        ├── Listening.tsx      задание на аудирование (вкладка Exam tasks, подраздел Listening)
+        ├── Task.tsx           общие части заданий: строка-заголовок, проверка, Discuss
+        ├── Listening.tsx      вкладка Listening: задание на аудирование
+        ├── Reading.tsx        вкладка Reading: задание на чтение (+ текст с пропусками для задания 11)
         ├── Player.tsx         аудиоплеер для Listening
         ├── Rabbit.tsx         кролик-маскот: все его виды и поведение
         ├── text.tsx           показ текста из JSON + проверка ответов + мелкие общие детали
@@ -207,8 +221,9 @@ App.tsx     →  читает адрес страницы (#/...), решает,
   "num": 1, "title": "...", "lede": "...", "pics": [...],
   "vocab": [...],        // вкладка Vocabulary
   "exercises": [...],    // вкладка Practice
-  "speaking": [...],     // вкладка Speaking (необязательно: если поля нет, вкладка скрыта)
-  "speech": [[...], [...]],  // вкладка Exam tasks: массив групп заданий
+  "speaking": [...],     // «More speaking practice» в конце вкладки Speaking (необязательно)
+  "speech": [[...], [...]],  // экзаменационные задания: типы reading, ad, interview, photo — вкладка Speaking,
+                             // email, essay — вкладка Writing (по полю types в sections.json)
   "cards": { "gaps": [...], "contrast": [...] }   // быстрый тест во вкладке Memorise (необязательно)
 }
 ```
@@ -304,26 +319,72 @@ App.tsx     →  читает адрес страницы (#/...), решает,
 ### 3.7. Аудирование (`src/content/listening/<module>-u<N>.json`)
 
 Один файл = одно задание для одного юнита. Сайт сам находит все файлы в папке (кроме `voices.json`)
-и показывает задание на вкладке Exam tasks того юнита, у которого совпадают `module` (id модуля) и `unit` (номер).
+и показывает задание на вкладке Listening того юнита, у которого совпадают `module` (id модуля) и `unit` (номер).
 
 ```json
 { "id": "sport-u1",            // имя записи: public/audio/sport-u1.mp3 и ключ в manifest.json
+  "section": "listening",       // раздел (необязательно)
   "module": "sport", "unit": 1,
   "task": 1,                   // 1 — говорящие A–F; 2 — True / False / Not stated; 3 — вопросы 3–9
   "title": "…",                // заголовок карточки
+  "level": "B2–B2+",           // уровень задания (для учителя; сайт его не показывает)
   "speakers": { "Speaker A": "male1" },   // голоса для озвучки (на сайте не показываются)
   "script": [ { "who": "Speaker A", "text": "…" } ],  // текст записи; виден только после Check (Transcript)
   "key": [1, 7, 4, 5, 2, 6],   // правильные ответы по порядку
   "options": ["…7 утверждений"]                          // только task 1
   "statements": ["…7 утверждений A–G"]                   // только task 2; key: 1 True, 2 False, 3 Not stated
-  "questions": [ { "q": "…", "options": ["…", "…", "…"] } ]  // только task 3; key: номер варианта 1–3
+  "questions": [ { "q": "…", "options": ["…", "…", "…"] } ],  // только task 3; key: номер варианта 1–3
+  "discuss": ["…"]             // вопросы для блока Discuss под заданием (необязательно: нет поля — нет блока)
 }
 ```
-Реплики `"who": "Announcer"` (диктор называет «Speaker A») в Transcript становятся подзаголовками.
+Реплики `"who": "Announcer"` (диктор называет «Speaker A») в Transcript не показываются; у каждой реплики — имя говорящего.
 
 `public/audio/manifest.json`: `{ "sport-u1": { "file": "sport-u1.mp3", "seconds": 416, "hash": "…", "mock": false } }`.
 Карточка показывается, только если запись есть в manifest и `mock` равно `false`, и если mp3 открывается.
 Длительность в плеере берётся из `seconds`.
+
+**Чтение** (`src/content/reading/<module>-u<N>.json`) устроено так же: одно задание на юнит, вкладка Reading.
+
+```json
+{ "id": "sport-u1", "section": "reading", "module": "sport", "unit": 1, "title": "…", "level": "B2+",
+  "task": 10,                  // 10 — тексты и заголовки; 11 — текст с пропусками; 12 — текст и вопросы 12–18
+  "key": [3, 6, 8, 7, 5, 1, 2],
+  "texts": ["…7 текстов A–G"], "headings": ["…8 заголовков"],        // только task 10; key: номер заголовка
+  "text": "…{A}…{F}…", "parts": ["…7 частей"],                       // только task 11; key: номер части для A–F
+  "text": ["…абзацы"], "questions": [ { "q": "…", "options": ["…4"] } ],  // только task 12; key: 1–4
+  "discuss": ["…3 вопроса"]    // блок Discuss под заданием
+}
+```
+Проверка формата и ключей: `node scripts/check-reading.mjs`.
+
+### 3.8а. Тренировочные варианты ЕГЭ (Practice tests)
+Вариант — набор обычных файлов с `"module": "variant"` и `"unit": N` (номер варианта); список вариантов сайт строит по этим файлам.
+| Файл | Что внутри |
+|---|---|
+| `listening/variant-N-t1.json`, `-t2`, `-t3` | аудирование, форматы 1, 2, 3 — как у юнитов (раздел 3.7); озвучка — `make-audio.mjs`, звук `public/audio/<id>.mp3` |
+| `reading/variant-N-t10.json`, `-t11`, `-t12` | чтение, как у юнитов |
+| `use-of-english/variant-N-t19.json`, `-t25` | `rows: [[номер, "до пропуска", "после", "СЛОВО"], …]`, `key: ["ответ", "a / b", …]` (`/` — допустимые варианты) |
+| `use-of-english/variant-N-t30.json` | `text` с метками `<b>30</b> ______`, `opts: [[30, "в1", "в2", "в3", "в4"], …]`, `key: [3, 2, …]` |
+| `writing/variant-N.json` | `tasks: [email, essay]` — поля как у unit.speech (раздел 3.4) |
+| `speaking/variant-N.json` | `tasks: [reading, ad, interview, photo]`; у `ad` есть `questions` — 4 образца вопросов (кнопка «Possible questions») |
+
+В `trap` и `focus4` вариантов встречаются `<b>…</b>` и `<i>…</i>`: `Variant.tsx` (функция `rich`) превращает их в RichText — `<b>` → `key`, `<i>` → `example`.
+Проверка: `node scripts/check-variants.mjs` (19–36, письмо, устная часть, картинки, комплектность), чтение и аудирование — `check-reading.mjs` и `make-audio.mjs --check`.
+Пока записи нет в `manifest.json`, карточка аудирования не показывается (вместо всех — «The recordings for this variant are being prepared»).
+
+### 3.8. Разделы ЕГЭ (`src/content/sections.json`)
+
+```json
+{ "sections": [ { "id": "listening", "label": "Listening", "ege": "Tasks 1–9", "minutes": 30,
+    "types": { "1": "Six speakers: matching", … }, "ru": { "1": "Вы услышите 6 высказываний…", … } }, … ] }
+```
+- Порядок разделов = порядок вкладок после Practice; `id` — часть адреса (`#/sport/unit/1/listening`), `label` — название вкладки.
+- Строка над заданиями вкладки: `label · ege · minutes min`.
+- `types` — подписи в строке-заголовке карточки. По ним же задания `unit.speech` делятся на Speaking и Writing.
+- `ru` — русская формулировка над заданием, дословно (есть у listening и reading; формулировка 11 — и в Revision).
+- Номер ЕГЭ в метке «EGE …» считается из `ege` и `types` (`egeNumber` в `sections.ts`): тип-число — сам номер,
+  последний тип-число занимает остаток диапазона (3 → «3–9», 12 → «12–18»); тип-слово — по порядку от начала
+  диапазона (speaking: reading 1, ad 2, interview 3, photo 4; writing: email 37, essay 38). **Порядок `types` не менять.**
 
 ---
 
@@ -347,6 +408,8 @@ App.tsx     →  читает адрес страницы (#/...), решает,
 | `Exercise` | упражнение; `type` — одно из пяти слов (`"collocation" \| "choose" \| …`) |
 | `Topic` | весь модуль |
 | `ListeningTask` | задание на аудирование: `Listening1 \| Listening2 \| Listening3` (раздел 3.7). Общие поля одинаковые, а по значению `task` (1, 2, 3) TypeScript знает, какое ещё поле есть: `options`, `statements` или `questions` |
+| `ReadingTask` | задание на чтение: `Reading10 \| Reading11 \| Reading12` (раздел 3.7), устроено так же |
+| `Section` (в `sections.ts`) | раздел из `sections.json` (раздел 3.8) |
 | `AudioInfo` | запись в `public/audio/manifest.json` |
 
 Как читать запись типа:
@@ -369,7 +432,12 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 **Тип `View`**: описание открытой страницы. Поле `k` (kind, вид) выбирает вариант:
 | `View` | Страница | Адрес |
 |---|---|---|
-| `{ k: "home" }` | обложка | `#/` |
+| `{ k: "landing" }` | главная: два раздела | `#/` |
+| `{ k: "free" }` | бесплатные варианты ЕГЭ | `#/free` |
+| `{ k: "variant", i, tab }` | вариант i, вкладка tab (`VTABS`: разделы + `result`) | `#/free/variant/1/reading` |
+| `{ k: "login" }` | демо-вход | `#/login` |
+| `{ k: "cabinet" }` | кабинет ученика или учителя | `#/cabinet` |
+| `{ k: "home" }` | обложка учебника | `#/book` |
 | `{ k: "u", i }` | страница универсального блока (i с нуля) | `#/exam/1` |
 | `{ k: "bank", t }` | банк сравнений модуля t | `#/sport/bank` |
 | `{ k: "unit", t, i, tab }` | юнит i модуля t, вкладка tab | `#/sport/unit/3/practice` |
@@ -380,9 +448,10 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 
 | Функция / константа | Что делает |
 |---|---|
-| `TABS` | названия вкладок в адресе: `vocabulary, memorise, practice, speaking, exam-tasks`. Номер вкладки = позиция в массиве |
+| `TABS` | названия вкладок в адресе: `vocabulary, memorise, practice`, затем `id` разделов из `sections.json` (`listening, reading, use-of-english, writing, speaking`). Номер вкладки = позиция в массиве. Старый адрес `exam-tasks` открывает Speaking |
 | `toHash(v, topics)` | `View` → адрес (`"/sport/unit/3/practice"`) |
-| `fromHash(hash, topics, universal)` | адрес → `View`. Всё неизвестное или несуществующее открывает обложку |
+| `fromHash(hash, topics, universal)` | адрес → `View`. Всё неизвестное или несуществующее открывает главную |
+| `isBook(v)` | страница учебника (`home`, `bank`, `unit`, `rev`, `review`): открывается только после входа. «The exam» и варианты бесплатные |
 | `label(v, topics, universal)` | человеческое название страницы (для кнопки «Continue» и вкладки браузера) |
 | `reviewTitle(t, i)` | «Review: Units 1–2» |
 | `Item` | тип строки оглавления: `{ v, no, title, tag? }` |
@@ -400,7 +469,7 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 | `LAST`, `SCROLL` | ключи в `localStorage` (память браузера): последняя открытая страница и прокрутка |
 | `load(k)`, `save(k, v)` | безопасно читают/пишут `localStorage` (в приватном режиме просто ничего не делают) |
 | `read(h)`, `name(v)`, `href(v)` | короткие обёртки над `fromHash`, `label`, `toHash` |
-| `start()` | какую страницу открыть при запуске: из адреса, иначе ту, где ученик остановился, иначе обложку |
+| `start()` | какую страницу открыть при запуске: из адреса, иначе ту, где ученик остановился, иначе главную |
 | `first` | результат `start()`, вычисляется один раз при загрузке |
 
 Внутри `App`:
@@ -409,10 +478,11 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 - эффект 2: при смене страницы меняет заголовок вкладки браузера, запоминает страницу и позицию прокрутки;
 - эффект 3: при запуске возвращает прокрутку на сохранённое место;
 - `setTab(tab)` — переключение вкладки юнита: меняет адрес без добавления шага в историю «Назад»;
+- `user` — кто вошёл (`useUser` из `demo.ts`); гостю на страницах учебника показывается `Locked`;
 - разметка: `Header`, одна страница по `view.k`, `Praise`, `Peeker`.
 
 Все данные ученика хранятся только в его браузере. На сервер ничего не отправляется,
-кроме текста, который ученик сам отдаёт на ИИ-проверку.
+кроме текста, который ученик сам отдаёт на ИИ-проверку. Кабинеты — пока модель (раздел «`demo.ts`» ниже).
 
 ---
 
@@ -489,12 +559,16 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 | внутр. `greeted` | какие юниты кролик уже поприветствовал за этот визит (чтобы не повторять) |
 
 Что делает `UnitView`:
-- если у юнита нет `speaking`, вкладка Speaking скрыта (а ссылка на неё открывает Exam tasks);
+- вкладка раздела без заданий не показывается (Use of English пока у всех; Writing — у юнитов без 37/38;
+  Listening — пока нет записи в manifest); ссылка на такую вкладку открывает Vocabulary;
+- на телефоне полоса вкладок листается вбок, открытая вкладка прокручивается в видимую часть;
+- задания каждого раздела нумеруются по порядку: Task 1, Task 2… (номер считается здесь, в JSON его нет);
 - при первом открытии юнита кролик говорит «Unit N. … Let's get started!»;
 - для каждого экзаменационного задания вычисляет `slot` — имя файла фото/записи (см. `Photo.tsx`).
 
 Вкладки: 0 Vocabulary → `VocabBlock`; 1 Memorise → `FlashCards`, `MatchPairs`, `QuickTest`;
-2 Practice → `ExerciseView`; 3 Speaking → `Speaking`; 4 Exam tasks → `SpeechView`.
+2 Practice → `ExerciseView`; 3 Listening → `ListeningCard`; 4 Reading → `ReadingCard`; 5 Use of English (пока пусто);
+6 Writing → `SpeechView` (email, essay); 7 Speaking → `SpeechView` (reading, ad, interview, photo), затем «More speaking practice» → `Speaking`.
 
 ### `Vocab.tsx`: лексика
 
@@ -534,7 +608,7 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 Все упражнения устроены одинаково. Ответы хранятся в состоянии (`useState`) как объект «номер пункта → ответ».
 Флаг `checked` говорит, нажата ли проверка. Счёт `score` пересчитывается при каждой перерисовке.
 
-### `Speaking.tsx`: вкладка Speaking
+### `Speaking.tsx`: «More speaking practice» (конец вкладки Speaking)
 
 `Speaking({ tasks })` (по умолчанию): список заданий `SpeakTask` — заголовок, задание, подсказки, «Useful language».
 
@@ -542,10 +616,10 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 
 | Имя | Что делает |
 |---|---|
-| `SpeechView({ s, topic, idx, slot })` (по умолчанию) | одно задание по `s.type` (таблица в разделе 3.4). Формулировки заданий (Instruction) написаны здесь, в коде: они дословно из демоверсии и одинаковы во всех модулях. `idx` — номер эссе в юните, `slot` — имя файла фото/записи |
+| `SpeechView({ s, topic, idx, slot, head })` (по умолчанию) | одно задание по `s.type` (таблица в разделе 3.4). Формулировки заданий (Instruction) написаны здесь, в коде: они дословно из демоверсии и одинаковы во всех модулях. `idx` — номер эссе в юните, `slot` — имя файла фото/записи, `head` — строка-заголовок (`TaskHead`) |
 | внутр. `FR` | шаблоны `frames` из `universal.json` |
 | внутр. `HER` | женские имена отправителей письма (для her/his) |
-| внутр. `TCard` | карточка задания с цветной шапкой «Task N» |
+| внутр. `TCard` | карточка задания с цветной шапкой (цвет — по номеру ЕГЭ): строка-заголовок `head` и название задания `title` (у фото, письма, эссе) |
 | внутр. `Support` | скрытая поддержка (фразы + шаблон), открывается кнопкой |
 | внутр. `CHART`, `Pie` | цвета и круговая диаграмма для задания 38 (рисуется в SVG) |
 | внутр. `Instruction`, `Plan` | абзац инструкции и маркированный план |
@@ -560,11 +634,14 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 |---|---|
 | `Revision({ topic })` (по умолчанию) | итоговый Revision: задание 11, 19–24, 25–29, 30–36, перефраз, перевод |
 | `Review({ topic, i })` | мини-повторение i: тексты 30–36 + перефраз |
-| внутр. `RU` | официальные русские инструкции к заданиям 11, 19–24, 25–29, 30–36 |
-| внутр. `NumberChoice` | выпадающий список 1–7 в стиле сайта (задание 11) |
-| внутр. `Task11` | задание 11; ключ разбирается из строки `"A — 2 · …"` |
-| внутр. `Gaps` | задания 19–24 и 25–29 (поле ввода в предложении + слово справа) |
-| внутр. `Cloze` | задания 30–36: текст с номерами + варианты 1)–4) |
+| внутр. `Task11` | задание 11: общий `GappedText` из `Reading.tsx`; ключ разбирается из строки `"A — 2 · …"` |
+
+### `UseOfEnglish.tsx`: задания 19–36
+Русские инструкции — `sections.json`, раздел `use-of-english`, поле `ru` ("19", "25", "30").
+| Имя | Что делает |
+|---|---|
+| `Gaps({ rows, keys, type: "19" \| "25", onCheck? })` | задания 19–24 и 25–29 (поле ввода в предложении + слово справа); `onCheck(score, total)` — для варианта |
+| `Cloze({ text, opts, answers, onCheck? })` | задания 30–36: текст с метками `{30}` или `<b>30</b> ______` + варианты 1)–4); `answers` — номера правильных вариантов по порядку |
 
 ### `Recorder.tsx`: диктофон и таймеры
 
@@ -604,26 +681,90 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 | внутр. `ask(r)` | читает ответ сервера; при ошибке выбрасывает понятное сообщение |
 | внутр. `wait(ms)` | пауза между опросами |
 
+### `src/demo.ts`: кабинеты (модель)
+Единственное место, где хранятся данные кабинетов. Сейчас всё в `localStorage` этого браузера, вход без пароля.
+Когда появится сервер, меняется только этот файл.
+
+| Имя | Что делает |
+|---|---|
+| `USERS` | пользователи из `demo.json`: `{ id, name, role: "student" \| "teacher", teacher? }` (ученик привязан к учителю) |
+| `currentUser()`, `useUser()` | кто вошёл; хук перерисовывает компонент после входа, выхода и новых результатов (событие `demo-change`) |
+| `login(id)`, `logout()` | вход и выход (ключ `demo:user`) |
+| `record(r)` | записать результат вошедшего ученика: `{ skill, title, score, max, href }` (ключ `demo:results`); вызывает `useAnswers` при Check |
+| `results(user)` | история ученика: из `demo.json` (`daysAgo` → дата) + сделанное на сайте |
+| `studentsOf(teacher)` | ученики учителя |
+| `homework(user)`, `assign(h)`, `markDone(id)` | домашние задания (ключи `demo:homework`, `demo:hw-done`) |
+| `skills(results)` | навыки ученика: по последним трём попыткам — `recent` %, `trend`, `level` (≥ 80 % strong, < 60 % weak, одна попытка — new) |
+| `skillLabel(skill)` | название навыка и номер ЕГЭ из `sections.json` (`"listening:3"` → «Listening · Interview: multiple choice», «3–9») |
+| `ago(t)` | «today», «3 days ago» |
+
+**Навык** = раздел и тип задания из `sections.json` (`"reading:12"`, `"writing:essay"`).
+
+### `Pages.tsx`: главная, варианты, вход
+`Landing({ topics })` — главная: о сайте, два раздела, как это работает, для учеников и учителей, экзамен коротко, методика, цифры учебника (считаются по контенту), вопросы; `FreeHome` — устройство экзамена из `sections.json`,
+баллы из `scale.json`, список вариантов; `Login` — карточки демо-пользователей; `Locked` — «войдите» на страницах учебника.
+
+### `Variant.tsx`: вариант ЕГЭ
+`VariantView({ i, tab, onTab, topics })`: вкладки разделов, где у варианта есть задания, и **Result**.
+- Данные — файлы с `module: "variant"` (раздел 3.8а), собираются в `VARIANTS` по `unit`.
+- Listening / Reading — те же `ListeningCard` и `ReadingCard` с заголовком «Variant 1 · … · Task N» и без Discuss (`discuss={false}`); у раздела таймер на время из `sections.json`. Аудирование — только задания с готовой записью.
+- Use of English — `Gaps` и `Cloze` из `UseOfEnglish.tsx` (те же, что в Revision), счёт передаётся через `onCheck`.
+- Writing и Speaking — `SpeechView` + самооценка по критериям (`SelfScore`, максимум из `scale.json` → `points`); балл ИИ-проверки письма ставится сам (`onScore`).
+  Образцы вопросов к рекламе — из `questions` задания (`ad_keys` модуля не используются). Ключ результата `variant:variant-N:<раздел>:<тип>` → `{ score, max, by: "check" | "ai" | "self" }`.
+- Result — баллы по заданиям (лучший результат 1–36, балл 37–38), слабые места (< 60 %) со ссылкой на юнит учебника (`practice` из `Cabinet.tsx`).
+  Первичные баллы — по `scale.json` → `points` (максимум каждого задания, в сумме 82). Задания 1, 2, 10, 11 дают 2–3 балла за 6–7 ответов:
+  пока в `scale.json` нет схемы частичных баллов (`partial: null`), у них показываются только верные ответы, а тестовый балл не считается.
+- `variants()` — список вариантов для `FreeHome` и меню «Practice tests» в шапке (`Header.tsx`; на телефоне — ссылки в панели Contents).
+
+### `Cabinet.tsx`: кабинеты
+| Имя | Что делает |
+|---|---|
+| `Cabinet({ user, topics })` (по умолчанию) | кабинет по роли вошедшего; без входа — «Please log in» |
+| внутр. `StudentCabinet` | домашние задания (кнопка Done), «Review today» — слабые навыки со ссылкой на задание, навыки, последние результаты |
+| внутр. `TeacherCabinet` | таблица класса, карточка ученика (по клику на имя), карта «ученик × навык», «What to do next», выдача домашнего задания |
+| внутр. `tasksOf(topics)`, `practice(skill)` | все вкладки разделов ЕГЭ в юнитах (+ Revision) с их навыками; где потренировать навык |
+| внутр. `SkillRow`, `Recent`, `HomeworkList` | полоска навыка, последние результаты, список домашних заданий |
+
+Подсказки учителю («What to do next»): навык слабый у двух и больше учеников; ученик не занимался 5+ дней;
+рост навыка на 15+ %; просроченное домашнее задание.
+
+### `Task.tsx`: общие части заданий по разделам
+| Что | Что делает |
+|---|---|
+| `TaskHead({ unit, section, n, type })` | строка-заголовок карточки: «Unit 3 · Reading · Task 1», метка «EGE 11», подпись типа (всё из `sections.json`). Её показывают и Listening/Reading, и карточки Speaking/Writing |
+| `TaskCard({ unit, section, type, title, column?, children })` | рамка задания listening/reading: `TaskHead`, название, русская формулировка `ru`, содержимое; `column` — варианты столбиком |
+| `useAnswers(section, type, unit, id, key)` | состояние ответов: `ans`, `checked`, `shown`, `score`, `pick`, `row(i)`, `check`, `show`, `reset`. Check записывает в `localStorage` под ключом `<section>:<id>` → `{"best": 5, "max": 6}` (в try/catch), отправляет результат в кабинет (`record` из `demo.ts`) и зовёт кролика |
+| `isDone(section, id)` | проверялось ли задание (для «✓ done» в оглавлении) |
+| `Select({ a, i, n, label })` | выпадающий список 1…n (задания 1 и 10); повтор цифры после Check обводится пунктиром |
+| `Choices({ a, i, name, options, numbered? })` | варианты-кружки (задания 2, 3–9, 12–18) |
+| `AnswerBar({ a, labels })` | Check → «N of M», Show answers, Try again; таблица ответов как в бланке |
+| `Discuss({ questions })` | блок «Discuss» под заданием (виден всегда): список вопросов из `discuss` для обсуждения с учителем, без таймера и записи. Нет вопросов — нет блока |
+
 ### `Listening.tsx`: задание на аудирование
 | Что | Что делает |
 |---|---|
 | `TASKS` | все задания из `src/content/listening/*.json`, кроме `voices.json` (`import.meta.glob` — Vite сам подключает файлы папки) |
-| `listeningFor(module, unit)` | задание для юнита или `undefined`; вызывает `UnitView` (Topic.tsx) |
+| `listeningFor(module, unit)` | задание для юнита или `undefined`; вызывают `UnitView` и оглавление |
 | `getManifest()` | один раз за визит читает `public/audio/manifest.json`; при ошибке — пустой список |
-| `loadProgress` / `saveProgress` | результат в `localStorage` под ключом `listening:<id>` → `{"best": 5, "max": 6}` (в try/catch) |
-| `listeningDone(module, unit)` | проверялось ли задание юнита; для «✓ done» в оглавлении (Cover.tsx) |
-| `ListeningCard({ t })` | карточка: заголовок «Listening», формулировка из `texts.ts`, `Player`, строки ответов по `t.task`, Check / Show answers / Try again, таблица ответов, Transcript |
+| `useAudio(id)` | запись задания из manifest: `undefined` — ещё читаем, `null` — нет или `mock` (тогда нет и вкладки) |
+| `ListeningCard({ t, audio })` | `TaskCard` + `Player` + строки ответов по `t.task` + `AnswerBar`; после Check — Transcript (без реплик Announcer); внизу `Discuss` |
 
-Состояние карточки: `ans` — ответы ученика (0 — не выбран), `checked` — нажата Check (ответы заблокированы, виден Transcript),
-`shown` — нажата Show answers. В task 1 одинаковая цифра у двух говорящих не запрещена, после Check она обводится пунктиром.
+### `Reading.tsx`: задание на чтение
+| Что | Что делает |
+|---|---|
+| `readingFor(module, unit)` | задание из `src/content/reading/*.json` для юнита или `undefined` |
+| `GappedText({ title?, text, parts, keys, ans, checked, reveal, pick })` | текст с пропусками {A}…{F} и части 1–7 (задание 11). Общий: его показывают вкладка Reading и Revision |
+| внутр. `NumberChoice` | выпадающий список 1–7 в стиле сайта (для `GappedText`) |
+| `ReadingCard({ t })` | `TaskCard` + текст и ответы по `t.task` (10, 11, 12) + `AnswerBar` + `Discuss`. Тексты видны всегда |
 
 ### `Player.tsx`: аудиоплеер
 `Player({ src, seconds, onMissing })`: ▶/❚❚, −10 s / +10 s, ползунок, «0:00 / 6:56».
 Пока ползунок тянут, меняется только цифра (`drag`), а запись перематывается один раз, когда палец отпущен.
 `preload="none"` — mp3 скачивается после ▶. Если файл не открылся, вызывается `onMissing` и карточка исчезает.
 
-### `src/texts.ts`: тексты интерфейса
-`LISTENING_INSTRUCTIONS` — формулировки заданий 1, 2, 3 (ключ — поле `task`). Править текст можно только здесь.
+### `src/sections.ts`: разделы ЕГЭ
+`SECTIONS` — разделы из `sections.json`; `sectionById(id)`; `sectionOfType(type)` — раздел по типу задания (`interview` → speaking);
+`egeNumber(section, type)` — номер ЕГЭ для метки (раздел 3.8).
 
 ### `Rabbit.tsx`: кролик
 
@@ -657,6 +798,8 @@ TypeScript не сверяет JSON с типом полностью. Поэто
 ```
 App
 ├─ Header ─ Menu, RabbitMark, Contents
+├─ Landing, FreeHome, Login, Locked (Pages.tsx)
+├─ Cabinet ─ StudentCabinet / TeacherCabinet ─ SkillRow, Recent, HomeworkList ──> demo.ts
 ├─ Cover ─ Contents ─ Line, RabbitReader
 ├─ UniversalPage ─ Banner, Block ─ Card, Chips, Text, Fipi, Pool, Skel, Img
 ├─ TypologyBank ─ Banner, Img
@@ -664,14 +807,16 @@ App
 │   ├─ Legend, VocabBlock ─ PicGrid, List, Card, Text
 │   ├─ FlashCards, MatchPairs, QuickTest ─ ExerciseView
 │   ├─ ExerciseView ─ Head, Pick/Transform/Translate/QuickGaps ─ CheckBar
-│   ├─ Speaking ─ Head, Chips
-│   ├─ SpeechView ─ TCard, Photo, SpeakBar(Timer, Recorder), Support(Pool, Skel), Writing/Transcript ─ AiCheck
-│   └─ ListeningCard ─ Player
-├─ Revision / Review ─ Banner, Task11, Gaps, Cloze, Transform, Translate ─ CheckBar
+│   ├─ Speaking ─ Head, Chips (конец вкладки Speaking)
+│   ├─ SpeechView ─ TCard(TaskHead), Photo, SpeakBar(Timer, Recorder), Support(Pool, Skel), Writing/Transcript ─ AiCheck
+│   ├─ ListeningCard ─ TaskCard, Player, Select/Choices, AnswerBar, Discuss
+│   └─ ReadingCard ─ TaskCard, GappedText, Select/Choices, AnswerBar, Discuss
+├─ Revision / Review ─ Banner, Task11(GappedText), Gaps, Cloze (UseOfEnglish), Transform, Translate ─ CheckBar
+├─ VariantView ─ Banner, Timer, ListeningCard, ReadingCard, Gaps, Cloze, SpeechView, SelfScore
 ├─ Praise ─ SittingRabbit
 └─ Peeker ─ SittingRabbit
-CheckBar, AiCheck, Timer, Recorder, FlashCards, MatchPairs, UnitView, ListeningCard ──(rabbitSay / cheer)──> Praise
-Contents (Line) ──listeningDone──> Listening.tsx (отметка «✓ done»)
+CheckBar, AiCheck, Timer, Recorder, FlashCards, MatchPairs, UnitView, useAnswers ──(rabbitSay / cheer)──> Praise
+Contents (Line) ──unitDone (isDone)──> отметка «✓ done»: проверены и Listening, и Reading юнита
 ```
 
 ---
@@ -714,8 +859,8 @@ Contents (Line) ──listeningDone──> Listening.tsx (отметка «✓ d
 цвета → base → layout → buttons → site header (+ dropdown, contents panel) → cover (+ table of contents)
 → page banner and unit tabs → cards and simple blocks → content markup (key-element, uncountable, grammar-pattern)
 → universal block → vocabulary (+ venue table, flash cards) → exercises (+ match the pairs) → exam tasks
-(+ timer and recorder) → listening (плеер и задание; свой `@media (max-width: 600px)`) → comparison bank → revision → rabbit (+ praise, moods, cover rabbit, peeking rabbit)
-→ tablets and phones (`@media (max-width: 860px)`, `760px`) → reduced motion (`prefers-reduced-motion`).
+(+ timer and recorder) → listening & reading (плеер, `task-card`, `task-head`, `discuss`; свой `@media (max-width: 600px)`) → comparison bank → revision → rabbit (+ praise, moods, cover rabbit, peeking rabbit)
+→ home pages and accounts (главная, вход, кабинеты) → tablets and phones (`@media (max-width: 860px)`, `760px`, `600px`, `400px`) → reduced motion (`prefers-reduced-motion`).
 
 ### Состояния, которые ставит код
 
@@ -724,6 +869,7 @@ Contents (Line) ──listeningDone──> Listening.tsx (отметка «✓ d
 | `option--selected` / `--correct` / `--wrong` | выбранный вариант / после проверки |
 | `answer-input--correct` / `--wrong` | поле ввода после проверки |
 | `unit-tabs__tab--active` | открытая вкладка |
+| `task-card__row--right` / `--wrong`, `task-card__choice--right` / `--wrong` / `--key`, `task-card__select--repeat` | ответы в Listening/Reading после Check и Show answers |
 | `site-header__menu-button--active` | меню текущего раздела |
 | `contents__link--last` | «you stopped here» |
 | `flash-card--flipped` | карточка перевёрнута |
@@ -815,6 +961,6 @@ GET  /api/check?id=…&task=…&note=…               → { done: false }  … 
   итог по критериям надо воспринимать как ориентир, а не как балл эксперта.
 - Многие данные типизированы как `any`, поэтому `npm run build` не найдёт ошибку в структуре JSON
   (например, пропущенное поле в задании). После правок контента смотрите страницу глазами.
-- Формулировки экзаменационных заданий (`Speech.tsx`) и русские инструкции (`Revision.tsx`) записаны в коде,
-  а не в JSON: они одинаковы во всех модулях.
+- Формулировки экзаменационных заданий (`Speech.tsx`) записаны в коде, а не в JSON: они одинаковы во всех модулях.
+  Русские инструкции к заданиям — в `sections.json`.
 - Подсказка «Tricky for Russian speakers» в `Vocab.tsx` (блок `venues`) тоже записана в коде и относится к спорту.

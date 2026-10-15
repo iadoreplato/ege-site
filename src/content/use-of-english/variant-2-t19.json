@@ -1,0 +1,54 @@
+{
+  "id": "variant-2-t19",
+  "section": "use-of-english",
+  "module": "variant",
+  "unit": 2,
+  "task": 19,
+  "title": "Grammar: the school concert",
+  "rows": [
+    [
+      19,
+      "Last Friday our school",
+      "its annual concert in the main hall.",
+      "HOLD"
+    ],
+    [
+      20,
+      "By seven o'clock all the seats",
+      "",
+      "TAKE"
+    ],
+    [
+      21,
+      "I was so nervous that my hands",
+      "when I walked on stage.",
+      "SHAKE"
+    ],
+    [
+      22,
+      "Fortunately, the audience was",
+      "than I had expected, and they applauded warmly.",
+      "FRIENDLY"
+    ],
+    [
+      23,
+      "My brother said he had never",
+      "such a good school concert before.",
+      "ATTEND"
+    ],
+    [
+      24,
+      "Next year we hope",
+      "even more guests from other schools.",
+      "INVITE"
+    ]
+  ],
+  "key": [
+    "held",
+    "had been taken",
+    "were shaking / shook",
+    "friendlier / more friendly",
+    "attended",
+    "to invite"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "year": 2026,
+  "source": "Т—Ж, «Как переводятся баллы ЕГЭ по английскому», 15.04.2026: https://t-j.ru/perevod-ballov-ege-english/ (не официальный документ ФИПИ; сверить с fipi.ru)",
+  "max": 82,
+  "pass": 22,
+  "parts": { "written": 62, "oral": 20 },
+  "points": { "listening:1": 2, "listening:2": 3, "listening:3": 7, "reading:10": 3, "reading:11": 2, "reading:12": 7, "use-of-english:19": 6, "use-of-english:25": 5, "use-of-english:30": 7, "writing:email": 6, "writing:essay": 14, "speaking:reading": 1, "speaking:ad": 4, "speaking:interview": 5, "speaking:photo": 10 },
+  "partial": null,
+  "test": [0, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100]
+}

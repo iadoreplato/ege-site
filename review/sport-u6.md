@@ -2,71 +2,71 @@
 Задание 3, юнит 6, модуль sport
 
 ## Текст записи
-**Presenter:** Welcome to Morning Talk. Today we're asking why so many people give up exercising after only a few weeks. With me is Dr Martin Reeves, a sports psychologist who has worked with Olympic athletes and with complete beginners. Dr Reeves, thank you for joining us.
+**Presenter:** Welcome to Morning Talk. Why do so many of us abandon our exercise plans within weeks? With me is the sports psychologist Dr Martin Reeves, who has coached Olympic athletes as well as complete beginners. Dr Reeves, thank you for joining us.
 
-**Martin:** My pleasure.
+**Martin:** Thank you for having me.
 
-**Presenter:** Let's begin with an obvious question. Why do people lose interest so quickly?
+**Presenter:** Let's start with the obvious explanation. Is it simply laziness?
 
-**Martin:** In my experience, it's rarely about laziness. Most people set goals that are simply unrealistic. They decide to run five kilometres every day, and after ten days they're exhausted and frustrated. If you start with something small and realistic, you're far more likely to stick to it.
+**Martin:** That is the explanation people reach for, and I think it's almost always wrong. Most of my clients are highly disciplined in their working lives. Where they go astray is in the goals they set. They decide to run five kilometres every morning, having not run since school, and they're surprised when it falls apart after ten days. Ambition isn't the problem. Calibration is.
 
-**Presenter:** Many people also say they just don't have the time. Is that true?
+**Presenter:** Many people also say they simply haven't got the time.
 
-**Martin:** Sometimes, but more often it's an excuse. When I ask my clients to keep a diary for a week, they're usually shocked by how much time they spend on their phones. Half an hour of exercise is possible for almost everybody. The real question is what you're prepared to give up.
+**Martin:** Sometimes that is true, particularly for parents. But when I ask clients to keep a diary for a week, they're often startled to find they've spent two hours scrolling through their phones. Scheduling apps haven't helped them either. I'm not criticising them. We all do it. My point is that time is less of an obstacle than we like to believe. The real question is what we're prepared to give up for thirty minutes of movement.
 
-**Presenter:** What about money? Gyms aren't cheap.
+**Presenter:** Gyms aren't cheap, though. Is money a barrier?
 
-**Martin:** That's a genuine barrier, and I don't want to dismiss it. But you can exercise for free: running, skipping, even climbing the stairs. Interestingly, people who pay a lot for a gym membership don't necessarily go more often. Some of them feel they've done their duty simply by signing the contract.
+**Martin:** It's a genuine one, and I never dismiss it. But there is an odd paradox. The people who pay the most for a membership are not necessarily those who turn up most often. Some seem to feel that signing the contract was the achievement. Meanwhile, those who exercise at home or in the park for nothing often turn out to be the most consistent.
 
-**Presenter:** And how much influence do friends have?
+**Presenter:** What about the influence of friends?
 
-**Martin:** It works both ways. Peer pressure can be positive: with a workout buddy, you're less likely to cancel, because you don't want to let anyone down. But if your friends laugh at you for going to the gym, that can be really discouraging. So choose your company carefully.
+**Martin:** It cuts both ways. A workout buddy is one of the most powerful incentives I know. You don't cancel, because you don't want to let somebody down. But I've also seen people drop out because friends teased them for taking it seriously. Peer pressure doesn't care whether it's pushing you in a good direction or a bad one, so choose your company carefully.
 
-**Presenter:** Is it important to track your progress?
+**Presenter:** Is it useful to track your progress?
 
-**Martin:** Very. A sense of achievement is a powerful incentive. I ask my clients to write down everything they've done, even if it's only a ten-minute walk. When you look back after a month and see twenty entries, you think, I can do this. But I wouldn't check the numbers all the time, because then it becomes another source of stress.
+**Martin:** Up to a point. A sense of achievement is a powerful motivator, so I ask clients to note down everything, even a ten-minute walk. After a month, twenty entries tell you something no pep talk can. It isn't about comparing myself with other clients, or about hunting for the perfect exercise. It's simply evidence. But I'm wary of people who check their numbers every day. That tends to turn exercise into an exam, and nobody looks forward to exams.
 
-**Presenter:** What do you say to someone who has missed a few weeks?
+**Presenter:** And if someone has fallen off the wagon?
 
-**Martin:** Don't punish yourself, because everybody gets off track sometimes. The hardest part is always getting started again, so make it as easy as possible. Put your trainers by the door and promise yourself just five minutes. Once you've begun, you'll usually carry on for much longer.
+**Martin:** Please don't punish yourself. Everybody gets off track occasionally, and guilt is a terrible coach. Forget elaborate plans for next month, and don't wait until you feel motivated, because motivation tends to follow action rather than precede it. The hardest part is always getting started again, so lower the bar. Put your trainers by the door and promise yourself five minutes. You can always stop after five. Almost nobody does.
 
-**Presenter:** Finally, what is your key message?
+**Presenter:** Finally, if you had to give just one piece of advice?
 
-**Martin:** Find something you actually enjoy. If you hate running, don't run. Try swimming, dancing or climbing, whatever you like. When you look forward to it, you won't need willpower at all. And don't be afraid to give it a go; you may discover a hobby you never expected.
+**Martin:** Find something you actually enjoy. If you hate running, don't run, and forget strict programmes that you dread. Try dancing, climbing, swimming, whatever you fancy. When you look forward to it, willpower stops being an issue. And don't be afraid to give things a go. You may stumble across a hobby you never expected, and you might even discover you are naturally sporty after all.
 
 **Presenter:** Dr Reeves, thank you very much.
 
 **Martin:** Thank you.
 
 ## Задание
-1. According to Martin, people usually stop exercising because they …
-   1) are naturally lazy.
-   2) choose the wrong sport.
-   3) expect too much of themselves.  ✔
-2. What does Martin think about lack of time?
-   1) It is often just an excuse.  ✔
-   2) It is a real problem for most people.
-   3) It affects only people with full-time jobs.
+1. According to Martin, why do people usually stop exercising?
+   1) They lack discipline in every area of life.
+   2) They set targets they cannot realistically meet.  ✔
+   3) They are not ambitious enough with their goals.
+2. What does Martin suggest about lack of time?
+   1) It mostly affects people with children.
+   2) It can be solved with the help of scheduling apps.
+   3) It is often less of a problem than people think.  ✔
 3. What does Martin say about expensive gym memberships?
-   1) They make people train more often.
-   2) They do not guarantee regular attendance.  ✔
-   3) They are essential for beginners.
-4. What does Martin say about friends?
-   1) They rarely influence a person's habits.
-   2) Their attitude can either help or discourage.  ✔
-   3) They only help people who are already fit.
-5. Martin advises writing down your activities because it …
-   1) lets you compare yourself with others.
-   2) shows which exercises work best.
-   3) makes you feel you have achieved something.  ✔
-6. What does Martin suggest to a person who has stopped exercising?
-   1) Commit to a very short session.  ✔
-   2) Make a long, detailed plan.
-   3) Wait for a better moment.
-7. Martin's main message is that people should …
-   1) follow a strict plan.
-   2) choose an activity they enjoy.  ✔
-   3) join the most popular club.
+   1) They do not guarantee regular attendance.  ✔
+   2) They encourage people to train more often.
+   3) They are a sensible choice only for beginners.
+4. What is Martin's view of the influence of friends?
+   1) It matters less than the support of family.
+   2) It is helpful only when friends are equally fit.
+   3) It can encourage or discourage, depending on the people.  ✔
+5. Why does Martin recommend keeping a record of activities?
+   1) It lets people compare themselves with others.
+   2) It gives people evidence of their own progress.  ✔
+   3) It helps people to find the best exercises.
+6. What does Martin recommend to someone who has stopped exercising?
+   1) Set a very small target to begin with.  ✔
+   2) Make a detailed plan for the next month.
+   3) Wait until motivation returns.
+7. What is Martin's main piece of advice?
+   1) Rely mainly on willpower.
+   2) Follow a strict training programme.
+   3) Choose an activity you enjoy doing.  ✔
 
 ## Что проверить вручную
 - [ ] Каждый ответ однозначно следует из текста (или однозначно не следует, для Not stated)
@@ -75,4 +75,4 @@
 - [ ] Тема и лексика юнита встречаются в записи
 
 ## Автоматическая проверка
-- 470 слов, около 3.6 мин без пауз; 2644 знаков
+- 596 слов, около 4.6 мин без пауз; 3380 знаков

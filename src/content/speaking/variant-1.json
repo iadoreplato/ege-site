@@ -1,0 +1,132 @@
+{
+  "id": "variant-1",
+  "section": "speaking",
+  "module": "variant",
+  "unit": 1,
+  "tasks": [
+    {
+      "type": "reading",
+      "title": "The tram",
+      "text": "Trams appeared in big cities more than a hundred years ago. At first, passengers were afraid of the new electric cars, which moved without horses and made a strange humming sound. Within a few years, however, trams became one of the most popular forms of city transport. They were cheap, quiet and could carry hundreds of people at once. Today many cities are building new tram lines, because trams do not pollute the air and a modern tram can be as fast as a bus. For tourists, a ride on an old red tram is also a pleasant way to see the city."
+    },
+    {
+      "type": "ad",
+      "title": "Cycling weekend in the Lake District",
+      "slogan": "Explore on two wheels!",
+      "img": "person_biking",
+      "consider": "going on the cycling weekend",
+      "points": [
+        "location",
+        "price",
+        "what to bring",
+        "accommodation"
+      ],
+      "questions": [
+        "Where does the weekend start?",
+        "How much does it cost?",
+        "What should I bring with me?",
+        "Where will we stay at night?"
+      ]
+    },
+    {
+      "type": "interview",
+      "topic": "Food and cooking",
+      "questions": [
+        {
+          "q": "What do you usually have for breakfast? Is it a healthy meal?",
+          "pool": [
+            "I usually have…",
+            "cereal / porridge / a sandwich",
+            "healthy enough",
+            "skip breakfast"
+          ]
+        },
+        {
+          "q": "Do you cook at home? What dishes can you make?",
+          "pool": [
+            "I can cook…",
+            "scrambled eggs / pasta",
+            "follow a recipe",
+            "my speciality"
+          ]
+        },
+        {
+          "q": "Who does most of the cooking in your family? Why?",
+          "pool": [
+            "my mum / my grandmother",
+            "enjoy cooking",
+            "have little time",
+            "take turns"
+          ]
+        },
+        {
+          "q": "Do you prefer eating at home or in a restaurant? Why?",
+          "pool": [
+            "I'd rather eat…",
+            "cosy atmosphere",
+            "cost a lot",
+            "home-made food"
+          ]
+        },
+        {
+          "q": "Do you think young people eat too much fast food? Why?",
+          "pool": [
+            "I think…",
+            "convenient and cheap",
+            "bad for your health",
+            "tasty but unhealthy"
+          ]
+        }
+      ],
+      "trap": "Q5 asks for your <b>opinion about young people</b>, not only about you."
+    },
+    {
+      "type": "photo",
+      "project": "Ways of learning",
+      "p1": [
+        [
+          "school",
+          "books"
+        ],
+        "a class of teenagers listening to a teacher in a classroom"
+      ],
+      "p2": [
+        [
+          "mobile_phone",
+          "open_book"
+        ],
+        "a girl studying alone at home with a tablet"
+      ],
+      "focus": "the two ways of learning",
+      "opinion": "which way of learning you would prefer and why",
+      "basis": "with people or alone? · fixed time or free? (bank: 1, 6)",
+      "pool": {
+        "describe": [
+          "listen to the teacher",
+          "take notes",
+          "at a desk",
+          "study alone",
+          "at home",
+          "wear headphones"
+        ],
+        "difference": [
+          "in a group — on your own",
+          "a fixed timetable — your own pace",
+          "face to face — online"
+        ],
+        "pros": [
+          "ask the teacher questions",
+          "stay focused",
+          "study at your own pace",
+          "save travel time"
+        ],
+        "cons": [
+          "less flexible",
+          "get distracted easily",
+          "feel lonely",
+          "hard to stay motivated"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "variant-1",
+  "section": "writing",
+  "module": "variant",
+  "unit": 1,
+  "tasks": [
+    {
+      "type": "email",
+      "sender": "Jess",
+      "subject": "School trip: your ideas?",
+      "text": "…Thanks for your last message! Our class is organising a trip at the end of term, and our teacher says each of us should suggest a place. I'm thinking about the science museum, but I'm not sure. Which places are best for a school trip, in your opinion, and why? How often do you go on school trips? Would you rather go with classmates or with your family? By the way, I've just started learning the guitar…",
+      "ask": "about her guitar lessons",
+      "pool": {
+        "answers": [
+          "a museum / a national park",
+          "learn something new",
+          "once or twice a year",
+          "with classmates",
+          "more fun",
+          "get to know each other better"
+        ],
+        "questions": [
+          "How long have you been learning?",
+          "Do you have lessons at school or privately?",
+          "What kind of music do you want to play?",
+          "How often do you practise?"
+        ]
+      }
+    },
+    {
+      "type": "essay",
+      "subject": "how teenagers in Zetland get to school",
+      "audience": "students of Zetland",
+      "q": "How do you usually get to school?",
+      "data": [
+        [
+          "Walk",
+          34
+        ],
+        [
+          "Take the bus",
+          28
+        ],
+        [
+          "Cycle",
+          17
+        ],
+        [
+          "Get a lift from parents",
+          15
+        ],
+        [
+          "Take the tram",
+          6
+        ]
+      ],
+      "problem": "that can arise when travelling to school by bus",
+      "conclusion": "the best way to get to school",
+      "focus4": "the problem must be about travelling <b>by bus</b>",
+      "pool": [
+        "commute",
+        "public transport",
+        "be crowded",
+        "be late for classes",
+        "wait at the stop",
+        "rush hour",
+        "fresh air",
+        "stay in shape",
+        "cost of tickets"
+      ]
+    }
+  ]
+}

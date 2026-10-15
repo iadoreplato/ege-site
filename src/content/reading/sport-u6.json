@@ -1,0 +1,21 @@
+{
+  "id": "sport-u6",
+  "section": "reading",
+  "module": "sport",
+  "unit": 6,
+  "task": 11,
+  "title": "How long does it take to form a habit?",
+  "level": "B2–B2+",
+  "text": "Many people believe that a new habit needs exactly twenty-one days to form. This idea has been repeated in books and videos for years, {A} evidence for it. In 2009, researchers at University College London followed ninety-six volunteers who tried to turn a simple action, such as drinking a glass of water with lunch or running for fifteen minutes before dinner, into a daily routine. It took the volunteers on average sixty-six days, {B}. For some people it was only eighteen days, while for others it was more than eight months.\n\nThe study also contained good news. Missing a single day did not seriously damage the process, {C}. What mattered was returning to the routine the next day. Simple actions became automatic more quickly than complicated ones, {D} anyone who has tried to learn a long routine. Experts therefore advise beginners to start with small, specific tasks {E}, and to attach them to something they already do every day, {F}.",
+  "parts": [
+    "such as brushing their teeth",
+    "although the figure varied enormously",
+    "that the twenty-one-day rule was correct",
+    "that take only a couple of minutes",
+    "as long as it did not happen too often",
+    "although there is little scientific",
+    "which will hardly surprise"
+  ],
+  "key": [6, 2, 5, 7, 4, 1],
+  "discuss": ["Think of a habit you formed or failed to form. What helped you and what got in the way?", "Do you agree that small steps work better than big goals?", "Which habit would you recommend to a friend, and how would you help them to keep it up?"]
+}

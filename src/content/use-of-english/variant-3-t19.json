@@ -1,0 +1,54 @@
+{
+  "id": "variant-3-t19",
+  "section": "use-of-english",
+  "module": "variant",
+  "unit": 3,
+  "task": 19,
+  "title": "Grammar: a trip to the mountains",
+  "rows": [
+    [
+      19,
+      "Last weekend my friends and I",
+      "to the mountains by train.",
+      "TRAVEL"
+    ],
+    [
+      20,
+      "We",
+      "for two hours when it suddenly began to snow.",
+      "WALK"
+    ],
+    [
+      21,
+      "It was the",
+      "snow I had seen in my whole life.",
+      "HEAVY"
+    ],
+    [
+      22,
+      "Luckily, we found a hut which",
+      "by a shepherd many years ago.",
+      "BUILD"
+    ],
+    [
+      23,
+      "If we",
+      "our warm jackets at home, we would have been in serious trouble.",
+      "LEAVE"
+    ],
+    [
+      24,
+      "I am sure that none of us",
+      "this adventure for a long time.",
+      "FORGET"
+    ]
+  ],
+  "key": [
+    "travelled",
+    "had been walking / had walked",
+    "heaviest",
+    "had been built / was built",
+    "had left",
+    "will forget / is going to forget"
+  ]
+}
