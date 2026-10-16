@@ -8,7 +8,7 @@ import { Chips, Img, Text } from "./text";
 import { countWords, Timer, WordStatus } from "./ui";
 import { Pool, Skel } from "./Universal";
 import { SpeakBar } from "./Recorder";
-import { Photo } from "./Photo";
+import { Photo, photoNames } from "./Photo";
 import AiCheck from "./AiCheck";
 import universal from "../content/universal.json";
 
@@ -62,6 +62,16 @@ function Writing({ min, max, ok, task, prompt, onScore }: { min: number; max: nu
 }
 
 /** Задания 3 и 4: ученик печатает то, что сказал, и отправляет на ИИ-проверку (S3 / S4) */
+/** Одно фото задания 4. Есть настоящее фото — описание (ph[1]) прячется в «Подсказку»: на экзамене его нет.
+    Фото нет — эмодзи из ph[0] и описание видно сразу, иначе непонятно, что на картинке */
+function PhotoItem({ ph, i, slot }: { ph: [string[], string]; i: number; slot: string }) {
+  const [real, setReal] = useState(false);
+  return <div className="photo-pair__item"><div className={`photo-pair__picture${real ? " photo-pair__picture--real" : ""}`}>
+    <Photo name={photoNames(slot, i ? "photo2" : "photo1")} alt="" className="photo-pair__photo" onFound={() => setReal(true)}>{ph[0].map(x => <Img key={x} name={x} className="photo-pair__icon" />)}</Photo></div>
+    <div className="photo-pair__caption"><span className="photo-pair__label">Photo {i + 1}</span>
+      {real ? <details className="photo-pair__hint"><summary className="photo-pair__hint-summary">Подсказка</summary>{ph[1]}</details> : ph[1]}</div></div>;
+}
+
 function Transcript({ task, prompt }: { task: "S3" | "S4"; prompt: string }) {
   const [open, setOpen] = useState(false);
   const [text, setText] = useState("");
@@ -100,7 +110,7 @@ export default function SpeechView({ s, topic, idx, slot, head, onScore }: { s: 
       const prompt = `Task 4 project "${s.project}". Photo 1: ${s.p1[1]}. Photo 2: ${s.p2[1]}. Plan: explain the choice, differences; advantages (1–2) of ${s.focus}; disadvantages (1–2) of ${s.focus}; opinion — ${s.opinion}.`;
       return <TCard task={4} head={head} title={`Project “${s.project}”`} icon="speaking_head">
         <Instruction>Imagine that you and your friend are doing a school project “{s.project}”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project.</Instruction>
-        <div className="photo-pair">{[s.p1, s.p2].map((ph: any, i: number) => <div className="photo-pair__item" key={i}><div className="photo-pair__picture"><Photo name={`${slot}-photo${i + 1}`} alt={ph[1]} className="photo-pair__photo">{ph[0].map((x: string) => <Img key={x} name={x} className="photo-pair__icon" />)}</Photo></div><div className="photo-pair__caption"><span className="photo-pair__label">Photo {i + 1}</span>{ph[1]}</div></div>)}</div>
+        <div className="photo-pair">{[s.p1, s.p2].map((ph: any, i: number) => <PhotoItem key={i} ph={ph} i={i} slot={slot} />)}</div>
         <Instruction>In 2.5 minutes be ready to:</Instruction>
         <Plan items={["explain the choice of the illustrations for the project by briefly describing them and noting the differences;", `mention the advantages (1–2) of ${s.focus};`,
           `mention the disadvantages (1–2) of ${s.focus};`, `express your opinion on the subject of the project – say ${s.opinion}.`]} />
@@ -149,7 +159,7 @@ export default function SpeechView({ s, topic, idx, slot, head, onScore }: { s: 
       const key = s.questions ? <ol className="plan-list">{s.questions.map((q: string) => <li className="plan-list__item" key={q}>{q}</li>)}</ol> : found?.[1];
       return <TCard task={2} head={head} icon="speech_balloon">
         <Instruction>Study the advertisement.</Instruction>
-        <div className="advert"><Photo name={slot} alt={s.title} className="advert__photo"><Img name={s.img} className="advert__icon" /></Photo><div><div className="advert__title">{s.title}</div><div className="advert__slogan">“{s.slogan}”</div></div></div>
+        <div className="advert"><Photo name={photoNames(slot, "ad")} alt="" className="advert__photo"><Img name={s.img} className="advert__icon" /></Photo><div><div className="advert__title">{s.title}</div><div className="advert__slogan">“{s.slogan}”</div></div></div>
         <Instruction>You are considering {s.consider} and now you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:</Instruction>
         {s.points.map((p: string, i: number) => <div className="question-point" key={p}><span className="question-point__number">{i + 1})</span><b className="question-point__topic">{p}{i < 3 ? ";" : "."}</b><input className="answer-input question-point__input" value={adAns[i] || ""} onChange={e => setAdAns({ ...adAns, [i]: e.target.value })} placeholder="Type your question…" /></div>)}
         <Instruction>You have 20 seconds to ask each question.</Instruction>

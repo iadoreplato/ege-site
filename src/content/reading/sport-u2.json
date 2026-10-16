@@ -4,78 +4,79 @@
   "module": "sport",
   "unit": 2,
   "task": 12,
-  "title": "Why rest days matter",
-  "level": "B2+–C1",
+  "title": "The day I stopped running",
+  "level": "публицистика/эссе: текст B2+–C1, задания B1+–B2",
   "text": [
-    "Walk into any gym in January and you will find the same scene: people training harder than they ever have before, convinced that every missed session is a small failure. The logic seems reasonable. If exercise makes you stronger, then more exercise should make you stronger still. Unfortunately, the body does not work in such a straightforward way, and many enthusiastic beginners discover this the hard way, when their progress stops or an injury forces them to stop altogether. Social media does not help, because it is full of photographs of people who seem to train every single day, and nobody posts a picture of their day off.",
-    "The key point is that muscles do not grow during a workout. Training actually creates tiny damage in muscle fibres, and it is during the hours and days afterwards that the body repairs them, leaving them slightly stronger than before. This process needs time, food and, above all, sleep. If a person trains the same muscles again before the repair is complete, the damage accumulates faster than the body can mend it. Strength does not rise; it falls. Researchers who track these changes in laboratories have found that the biggest gains usually come after a period of recovery, not at the end of the hardest week of training.",
-    "Sports scientists use the word overtraining for this situation, and the signs are often easy to miss. A runner may notice that a usual pace suddenly feels exhausting. Others report a low mood, irritability or trouble sleeping, which is ironic, since sleep is exactly what they need. Because these symptoms appear gradually, many people blame them on stress at school or work and carry on training, which makes the problem worse. A resting heart rate that stays higher than usual for several mornings in a row is another warning sign. Young people may be especially likely to ignore all of this, because teenagers expect to feel tired and rarely think of it as a problem that can be solved.",
-    "Fortunately, the cure is not complicated. Most coaches recommend at least one or two days a week without hard training, and they plan easier weeks every month or so. A common pattern is three hard days followed by one easy day, although the exact rhythm depends on age, experience and the sport. This does not mean lying on the sofa. Many athletes prefer 'active recovery': a gentle walk, a slow swim or some stretching, which keep the blood flowing without placing new demands on tired muscles. Professionals take the idea very seriously. In top teams, a specialist often decides who rests and who plays, even when the athlete himself feels fine.",
-    "Not everyone is convinced. Some argue that rest days encourage laziness and that real champions simply work harder than everyone else. There is some truth in this, since commitment is certainly necessary. In fact, a few days without training cause only a very small loss of fitness, while the benefit to tired muscles begins almost at once. However, the athletes who last longest are rarely those who train the most; they are those who recover the best. A teenager preparing for a school competition, for example, will usually gain more from a good night's sleep before the event than from an extra late-night workout.",
-    "The lesson, then, is a modest one. Progress comes from a cycle of effort and recovery, and neglecting the second half of that cycle is as unwise as neglecting the first. A training plan that includes rest is not a weaker plan; it is a smarter one. The best athletes are the ones who know when to ease off, and that is a skill worth learning early. So the next time you feel guilty about a day off, remember that your muscles are quietly doing some of their best work."
+    "When I was seventeen I was convinced that rest was something other people needed. My coach, a quiet man who rarely raised his voice, had written one day off into my weekly plan, and I treated it like a clerical error. Every Sunday I laced up my trainers anyway and ran the river loop, partly out of stubbornness, and partly because I could not bear the thought that a rival somewhere was gaining ground while I lay on the sofa.",
+    "For a few months it seemed to work, which is the cruel part. My times dropped, my friends admired my discipline, and I wore my tiredness like a medal. Then, in March, I began to notice small things. My legs felt heavy on the stairs. I woke before the alarm and could not get back to sleep, yet I dragged myself through lessons in a fog. Worse, the running that had once cleared my head now felt like paying off a debt.",
+    "Looking back, the strangest thing is how reasonable it all felt at the time. Nobody around me suggested that I was doing anything wrong; on the contrary, my parents were proud of my routine, my classmates teased me about my 'iron will', and my phone filled up with photographs of other teenagers who seemed to train every single day. Not one of them posted a picture of a rest day, and so I assumed such days simply did not exist for anyone serious.",
+    "I did what many young athletes do: I blamed everything except the obvious cause. Exams, I told myself. A cold, the weather, a bad batch of pasta. When my coach suggested a week of easy jogging, I nodded politely and ran harder behind his back, a decision I now find almost comic. It all came to a head at the regional trials, where I started well, **hit a wall** at the halfway mark and finished almost a minute behind my own best time.",
+    "The doctor who examined me afterwards was kind but unsparing. My resting heart rate was unusually high and my iron level was low, and my body, she said, had been sending signals for weeks, only I had not been listening. She did not forbid sport; she asked me to do something far harder, which was to do less of it. Two weeks of walking and sleeping felt like a punishment, and I resented every hour, until I noticed that the heaviness in my legs was beginning to lift.",
+    "What surprised me most was that recovery was not a pause in training but a part of it. When I returned, I was slower for a fortnight, then noticeably quicker than before. My coach, to his credit, never said 'I told you so'. He simply moved the rest day to a different place in the week, as though nothing had happened, and left me to draw my own conclusions. It was the most useful piece of coaching I ever received, and he never once raised the subject.",
+    "I am not suggesting that talent can do without effort; it cannot, and anyone who tells you otherwise is selling something. But I have come to think that the ability to stop is every bit as valuable as the willingness to push. These days, when the old guilt creeps in on a day off, I remind myself that the athletes who last longest are seldom the ones who train hardest, only the ones who have learnt to listen to their own bodies, however loudly the voice inside them insists otherwise."
   ],
   "questions": [
     {
-      "q": "The author begins by describing the gym in January in order to show that …",
+      "q": "Why did the author run on her rest day?",
       "options": [
-        "many people start exercising for the wrong reasons.",
-        "gyms are overcrowded at the start of the year.",
-        "beginners often misunderstand how progress is made.",
-        "enthusiasm for exercise usually disappears quickly."
+        "She wanted to please her coach.",
+        "She enjoyed running alone.",
+        "She feared that other runners would overtake her.",
+        "She had no other free time."
       ]
     },
     {
-      "q": "In paragraph 2, what does 'This process' in 'This process needs time, food and, above all, sleep' refer to?",
+      "q": "What does 'it' in 'For a few months it seemed to work' refer to?",
       "options": [
-        "The repair of damaged muscle fibres.",
-        "The creation of damage during a workout.",
-        "The growth of muscles while exercising.",
-        "The planning of a weekly training programme."
+        "Running every day.",
+        "Her coach's weekly plan.",
+        "Her habit of resting on Sundays.",
+        "Her preparation for exams."
       ]
     },
     {
-      "q": "Which sign of overtraining is NOT mentioned in paragraph 3?",
+      "q": "'Hit a wall' in paragraph 4 means that the author …",
       "options": [
-        "Trouble sleeping.",
-        "A change of mood.",
-        "A raised resting heart rate.",
-        "Frequent muscle cramps."
+        "fell over on the track.",
+        "was stopped by another runner.",
+        "changed her running style.",
+        "suddenly lost all her energy."
       ]
     },
     {
-      "q": "The word ironic in paragraph 3 most probably means …",
+      "q": "How did the author react to her coach's advice about easy jogging?",
       "options": [
-        "amusing.",
-        "paradoxical.",
-        "understandable.",
-        "unavoidable."
+        "She followed it carefully.",
+        "She pretended to agree but ignored it.",
+        "She argued with him openly.",
+        "She asked the doctor for her opinion."
       ]
     },
     {
-      "q": "What does the author say about 'active recovery'?",
+      "q": "What did the doctor ask the author to do?",
       "options": [
-        "It keeps the body moving without extra strain.",
-        "It replaces rest days for experienced athletes.",
-        "It is suitable only for professional athletes.",
-        "It should be avoided in the first week of training."
+        "Stop all sport for a month.",
+        "Do less training than before.",
+        "Change her diet completely.",
+        "Take medicine every day."
       ]
     },
     {
-      "q": "What is the author's view of the opinion that rest days encourage laziness?",
+      "q": "Which fact is NOT mentioned in the text?",
       "options": [
-        "It is popular mainly among young athletes.",
-        "It is entirely mistaken and based on old ideas.",
-        "It contains some truth but ignores an important point.",
-        "It has been proved wrong by recent research."
+        "The author's heart rate was high.",
+        "The author's legs felt heavy.",
+        "The author lost her place in the team.",
+        "The author's times improved at first."
       ]
     },
     {
       "q": "The author concludes that …",
       "options": [
-        "people who feel guilty about resting need professional advice.",
-        "most training plans are weaker than they appear.",
-        "recovery should be the main focus of any programme.",
-        "effort and rest are equally important parts of progress."
+        "talent is more important than effort.",
+        "coaches should plan more rest days.",
+        "young athletes should avoid trials.",
+        "knowing when to stop is important."
       ]
     }
   ],
@@ -84,13 +85,13 @@
     1,
     4,
     2,
-    1,
+    2,
     3,
     4
   ],
   "discuss": [
     "Have you ever overdone it with training or revision? What happened?",
-    "The author says progress is a cycle of effort and recovery. Does the same apply to studying for exams?",
-    "How do you recover after a hard day? Which methods work best for you?"
+    "The author says the ability to stop is as valuable as the willingness to push. Does the same apply to studying for exams?",
+    "Why do some people find it so hard to take a day off?"
   ]
 }

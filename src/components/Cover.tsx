@@ -29,12 +29,12 @@ function Line({ v, no, title, tag, done, p }: { v: View; no?: string | number; t
 }
 
 /** Table of contents of the whole course; used on the cover and as the phone menu
-    Оглавление всего курса: раздел 0 «About the exam», затем каждый модуль со своими страницами */
+    Оглавление всего курса: раздел 0 «Универсальный блок», затем каждый модуль со своими страницами */
 export function Contents(p: Props) {
   const { topics, universal } = p;
   return <div className="contents">
     <section className="contents__module">
-      <div className="contents__module-header"><span className="contents__module-number">0</span><div><h3 className="contents__module-title">About the exam</h3><p className="contents__module-text">{universal.subtitle}</p></div></div>
+      <div className="contents__module-header"><span className="contents__module-number">0</span><div><h3 className="contents__module-title">Универсальный блок</h3><p className="contents__module-text">{universal.subtitle}</p></div></div>
       {universal.pages.map((pg, i) => <Line key={i} p={p} v={{ k: "u", i }} no={i + 1} title={pg.title} tag={pg.kick} />)}
     </section>
     {topics.map((t, ti) => <section className="contents__module" key={t.id}>
@@ -54,8 +54,8 @@ export default function Cover(p: Props) {
   return <div className="cover">
     <section className="cover__hero">
       <div className="cover__text">
-        <h1 className="cover__title">EGE English<em className="cover__subtitle">a topic-based exam course</em></h1>
-        <p className="cover__lead">A universal block with exam structure, criteria and frames, plus topic modules with B2–B2+ vocabulary, practice and exam tasks.</p>
+        <h1 className="cover__title">ЕГЭ по английскому<em className="cover__subtitle">тематический курс подготовки</em></h1>
+        <p className="cover__lead">Универсальный блок со структурой экзамена, критериями, алгоритмами и речевыми схемами, а также тематические модули с лексикой B2–B2+, упражнениями и заданиями в формате ЕГЭ.</p>
         <div className="cover__actions">
           <a className="cover__button" href={"#" + toHash(start, topics)}>{last ? "Continue" : "Start with the exam"} <span className="cover__button-arrow" aria-hidden="true">→</span></a>
           {last && <span className="cover__last-page">{label(last, topics, universal)}</span>}

@@ -5,24 +5,24 @@
   "unit": 3,
   "task": 11,
   "title": "A short history of the bicycle",
-  "level": "B2",
-  "text": "The bicycle is one of the simplest and most successful machines ever invented. Its ancestor appeared in Germany in 1817, when Karl von Drais built a wooden 'running machine' {A}. It had no pedals, and riders had to push themselves along with their feet.\n\nPedals came about forty years later, when French mechanics attached them directly to the front wheel {B}. These early bicycles were nicknamed 'boneshakers', since the iron wheels made every stone on the road painfully obvious. The next version, the 'penny-farthing', had an enormous front wheel, {C}, but it was dangerous: a rider who hit an obstacle could be thrown over the handlebars.\n\nThe breakthrough came in the 1880s with the 'safety bicycle', which had two wheels of equal size and a chain driving the back wheel. Rubber tyres filled with air soon made riding comfortable, {D}. Suddenly everybody wanted one, including women, for whom the bicycle became a symbol of independence.\n\nToday more than a billion bicycles are in use around the world. Cities such as Copenhagen and Amsterdam have built hundreds of kilometres of cycle lanes, {E}, and electric models allow people to travel further without getting tired. Perhaps the secret of the bicycle's success is that its design has hardly changed, {F}.",
+  "level": "научно-популярный текст B2, задание B2",
+  "text": "The first machine that looked like a bicycle was built in 1817 {A}. It had no pedals, so riders pushed themselves along with their feet. Half a century later, French engineers {B} pedals to the front wheel, {C} the ride was also much more dangerous. The 'penny-farthing', with its enormous front wheel, was fashionable among young men {D}.\n\nThe decisive change came in the 1880s with the 'safety bicycle'. Both wheels were of equal size and a chain drove the rear one, {E}. Suddenly, cycling was open to everybody. Women in particular welcomed the new freedom, {F}.\n\nToday more than a billion bicycles are in use around the world. In crowded cities they are often quicker than cars, they cost little to maintain and they produce no fumes. Many municipalities now build special lanes to protect cyclists, and some employers even pay people who cycle to work. Cities from Copenhagen to Bogotá regularly close whole streets to cars on Sundays so that families can ride in safety.",
   "parts": [
-    "which let the rider cover more distance with each turn of the pedals",
-    "because the basic idea was right more than a century ago",
-    "so that the front wheel could be made much smaller",
-    "so that riders no longer had to push with their feet",
-    "and prices fell until ordinary workers could afford a bicycle",
-    "in order to move quickly around the forests he supervised",
-    "which have made cycling safer and encouraged people to leave their cars at home"
+    "which made it far easier to keep your balance",
+    "managed to find a clever way of attaching",
+    "which had to be paid for in advance",
+    "although it was hard to get onto",
+    "by a German baron who wanted to travel faster",
+    "many of whom felt it gave them independence",
+    "which increased the speed quite considerably, but"
   ],
   "key": [
-    6,
+    5,
+    2,
+    7,
     4,
     1,
-    5,
-    7,
-    2
+    6
   ],
   "discuss": [
     "Do you ride a bicycle? Where and how often?",

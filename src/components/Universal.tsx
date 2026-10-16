@@ -9,13 +9,18 @@ import { Banner, Fipi } from "./ui";
     "t37" из JSON → "task-37" для CSS-класса, который красит шапку в цвет задания */
 const task = (tone: string) => tone.replace(/^t/, "task-");
 
+/** «балл / балла / баллов» по числу: 1 балл, 2 балла, 5 баллов, 11 баллов, 21 балл */
+/** Слово по числу: plural(2, ["шаг", "шага", "шагов"]) → «шага» */
+const plural = (n: number, [one, few, many]: string[]) => n % 10 === 1 && n % 100 !== 11 ? one : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? few : many;
+const balls = (n: number) => plural(n, ["балл", "балла", "баллов"]);
+
 /** Один блок страницы. switch выбирает разметку по b.type.
     ЧТОБЫ ДОБАВИТЬ НОВЫЙ ВИД БЛОКА: добавьте сюда новый `case "имя": return <…>;` и оформление в styles.css.
     Блок с неизвестным type не показывается (default: return null) */
 function Block({ b }: { b: any }) {
   switch (b.type) {
     // формулировка задания из демоверсии
-    case "demo": return <div className="demo-wording"><div className="demo-wording__title">Task wording · EGE 2027 demo version</div><p className="demo-wording__text">{b.text}</p></div>;
+    case "demo": return <div className="demo-wording"><div className="demo-wording__title">Формулировка задания · демоверсия ЕГЭ 2027</div><p className="demo-wording__text">{b.text}</p></div>;
     // таблица: head — заголовки столбцов, rows — строки; data-label нужен телефонной версии (таблица превращается в карточки)
     case "table": return <Card title={b.title} icon={b.icon}><div className="table-scroll"><table className="info-table"><thead><tr>{b.head.map((h: string) => <th className="info-table__heading" key={h}>{h}</th>)}</tr></thead>
       <tbody>{b.rows.map((r: any[], i: number) => <tr className="info-table__row" key={i}>{r.map((c, j) => <td className="info-table__cell" key={j} data-label={b.head[j]}><Text value={c} /></td>)}</tr>)}</tbody></table></div>{b.note && <p className="note">{b.note}</p>}</Card>;
@@ -23,12 +28,12 @@ function Block({ b }: { b: any }) {
     case "stats": return <div className="exam-stats">{b.items.map(([a, c, d]: string[]) => <div className="exam-stats__item" key={c}><b className="exam-stats__number">{a}</b><span className="exam-stats__label">{c}</span><em className="exam-stats__comment">{d}</em></div>)}</div>;
     // таблица критериев: столбцы — баллы (scores), строки — [критерий, ячейки]; aspects — проверяемые аспекты
     case "criteria_detail": {
-      const pts = (s: string) => `${s} pt${s === "1" ? "" : "s"}`; // "1 pt", "2 pts"
+      const pts = (s: string) => `${s} ${balls(Number(s))}`; // «1 балл», «2 балла», «0 баллов»
       return <div className={`criteria criteria--${task(b.tone)}`}>
-        <div className="criteria__header"><Img name={b.icon} className="criteria__icon" /><span className="criteria__task">Task {b.task}</span><span>{b.title}</span></div>
+        <div className="criteria__header"><Img name={b.icon} className="criteria__icon" /><span className="criteria__task">Задание {b.task}</span><span>{b.title}</span></div>
         <div className="criteria__body"><div className="table-scroll"><table className="criteria-table"><thead><tr><th className="criteria-table__heading" />{b.scores.map((s: string) => <th className="criteria-table__heading" key={s}>{pts(s)}</th>)}</tr></thead>
           <tbody>{b.rows.map(([n, cells]: [string, string[]]) => <tr className="criteria-table__row" key={n}><td className="criteria-table__criterion">{n}</td>{cells.map((c, i) => <td className="criteria-table__cell" key={i} data-label={pts(b.scores[i])}><Text value={c} /></td>)}</tr>)}</tbody></table></div>
-          {b.aspects && <div className="criteria__aspects"><span className="criteria__aspects-title">Aspects checked</span>{b.aspects.map((a: string, i: number) => <em className="criteria__aspect" key={i}><b className="criteria__aspect-number">{i + 1}</b>{a}</em>)}</div>}
+          {b.aspects && <div className="criteria__aspects"><span className="criteria__aspects-title">Проверяемые аспекты</span>{b.aspects.map((a: string, i: number) => <em className="criteria__aspect" key={i}><b className="criteria__aspect-number">{i + 1}</b>{a}</em>)}</div>}
           {b.checklist && <p className="note">{b.checklist}</p>}</div>
       </div>;
     }
@@ -40,7 +45,7 @@ function Block({ b }: { b: any }) {
     case "steps": return <Card title={b.title} icon={b.icon}><ol className="steps-list">{b.items.map((x: any, i: number) => <Text key={i} as="li" className="steps-list__item" value={x} />)}</ol></Card>;
     // сетка пар («hit / heat»)
     case "pairs": return <Card title={b.title} icon={b.icon} soft><div className="pairs-grid">{b.items.map((x: any, i: number) => <Text className="pairs-grid__item" key={i} value={x} />)}</div></Card>;
-    // «Watch out» из отчёта ФИПИ
+    // «Обратите внимание» из отчёта ФИПИ
     case "fipi": return <Fipi items={b.items} />;
     // схема построения (slots) и примеры к ней
     case "frame": return <Card title={b.title} icon={b.icon}><div className="answer-frame">{b.slots.map((s: string) => <span className="answer-frame__slot" key={s}>{s}</span>)}</div>
@@ -59,6 +64,8 @@ function Block({ b }: { b: any }) {
     case "thesis": return <Card title={b.title} icon={b.icon} soft><div className="thesis-list">{b.items.map((x: string, i: number) => <div className="thesis-list__item" key={i}><b className="thesis-list__number">{i + 1}</b><Text value={x} /></div>)}</div></Card>;
     // карточки сравнения: [заголовок, текст, пример]
     case "compare": return <div className="compare-cards">{b.items.map(([a, s, e]: string[]) => <div className="compare-cards__item" key={a}><b className="compare-cards__title">{a}</b><Text value={s} /><Text as="em" className="compare-cards__example" value={e} /></div>)}</div>;
+    // алгоритм: цепочка шагов со стрелками (do — шаг, warn — ловушка, ask — вопрос с ветвями Да/Нет, end — итог)
+    case "flow": return <FlowCard title={b.title} icon={b.icon} nodes={b.nodes} />;
     default: return null;
   }
 }
@@ -72,6 +79,40 @@ export const Pool = ({ groups }: { groups: [string, string[]][] }) =>
 export const Skel = ({ lines, small }: { lines: [string, string][]; small?: boolean }) => (
   <div className={`answer-skeleton${small ? " answer-skeleton--small" : ""}`}>{lines.map(([a, s], i) => <div className="answer-skeleton__line" key={i}><span className="answer-skeleton__label">{a}</span><p className="answer-skeleton__text"><Slots text={s} /></p></div>)}</div>
 );
+
+type FlowNode = { k: "do" | "warn" | "ask" | "end"; t: string; s?: string; m?: string; yes?: string; no?: string };
+/** Алгоритм как блок-схема: слева сквозная линия пути, на ней значки разной формы
+    (do — кружок с номером, ask — ромб с номером, warn — «!» сбоку от пути, end — ✓).
+    Номер получают только do и ask; m — метка времени; у ask линия раздваивается на «Да» и «Нет» */
+/** Шапка алгоритма: «Задание 1 · соответствие…» делится на надпись («Задание 1») и заголовок; ниже сводка «5 шагов · 1 развилка · 1 ловушка» */
+function FlowCard({ title, icon, nodes }: { title: string; icon?: string; nodes: FlowNode[] }) {
+  const cut = title.indexOf(" · "), kick = cut > 0 ? title.slice(0, cut) : "", head = cut > 0 ? title.slice(cut + 3) : title;
+  const count = (k: string) => nodes.filter(x => x.k === k).length, steps = count("do") + count("ask"), asks = count("ask"), warns = count("warn");
+  const meta = [`${steps} ${plural(steps, ["шаг", "шага", "шагов"])}`, asks && `${asks} ${plural(asks, ["развилка", "развилки", "развилок"])}`, warns && `${warns} ${plural(warns, ["ловушка", "ловушки", "ловушек"])}`].filter(Boolean).join(" · ");
+  return <section className="info-card flow-card">
+    <header className="flow-card__head">{icon && <Img name={icon} className="flow-card__icon" />}
+      <div>{kick && <span className="flow-card__kick">{kick}</span>}<h3 className="flow-card__title">{head}</h3><p className="flow-card__meta">{meta}</p></div></header>
+    <Flow nodes={nodes} />
+  </section>;
+}
+
+function Flow({ nodes }: { nodes: FlowNode[] }) {
+  let n = 0;
+  return <ol className="flow"><li className="flow__start" aria-hidden="true">Старт</li>{nodes.map((x, i) => {
+    const mark = x.k === "warn" ? "!" : x.k === "end" ? "✓" : String(++n);
+    return <li className={`flow__node flow__node--${x.k}`} key={i}>
+      <span className="flow__mark" aria-hidden="true"><span className="flow__mark-text">{mark}</span></span>
+      <div className="flow__body">
+        <div className="flow__head"><b className="flow__title">{x.t}</b>{x.m && <span className="flow__time">⏱ {x.m}</span>}</div>
+        {x.s && <p className="flow__text">{x.s}</p>}
+        {x.k === "ask" && <div className="flow__branches">
+          <p className="flow__branch flow__branch--yes"><b className="flow__branch-label">Да</b>{x.yes}</p>
+          <p className="flow__branch flow__branch--no"><b className="flow__branch-label">Нет</b>{x.no}</p>
+        </div>}
+      </div>
+    </li>;
+  })}</ol>;
+}
 
 /** Страница универсального блока: баннер + все блоки по порядку */
 export default function UniversalPage({ page }: { page: Page }) {

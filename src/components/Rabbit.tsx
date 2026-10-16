@@ -6,6 +6,7 @@
    - rabbitSay, cheer — «позвать» кролика из любого места сайта; Praise — кролик, который хвалит;
    - Peeker — кролик, который раз в 4–5 минут выглядывает из-за края экрана. */
 import { CSSProperties, RefObject, useEffect, useRef, useState } from "react";
+import { play } from "../sound";
 
 /** The rabbit's moods; each one has its own face and movement (styles.css, .rabbit--<mood>)
     Настроения: delighted — восторг, pleased — доволен, thoughtful — задумался, upset — огорчён,
@@ -169,6 +170,7 @@ const pick = (xs: string[]) => xs[Math.floor(Math.random() * xs.length)];
     big (по умолчанию — если 15 пунктов и больше) — крупное задание: другие фразы и прыжок с конфетти */
 export function cheer(score: number, total: number, big = total >= 15) {
   const r = total ? score / total : 0, s = `${score} / ${total}`;
+  play(r >= 0.9 ? "perfect" : r >= 0.6 ? "good" : "soft"); // звук и вибрация (sound.ts)
   if (r >= 0.9) return rabbitSay("delighted", pick(big ? ["Amazing work!", "Outstanding!", "You nailed it!"] : ["Brilliant!", "Spot on!", "Top marks!"]), big ? `${s} on a big task. Be proud of that!` : s, big);
   if (r >= 0.6) return rabbitSay("pleased", pick(["Nice work!", "Good job!"]), `${s}. Look at the corrections.`, big);
   if (r >= 0.3) return rabbitSay("thoughtful", pick(["Almost there…", "Not bad…"]), `${s}. Check the corrections and try again.`);

@@ -1,6 +1,6 @@
 /* КАБИНЕТЫ (МОДЕЛЬ). Единственное место, где хранится всё про учеников и учителя: кто вошёл, результаты заданий,
    домашние задания. Сейчас это демо: вход без пароля, данные лежат только в этом браузере (localStorage),
-   на сервер ничего не уходит. Пользователи и история занятий для примера — src/content/demo.json.
+   на сервер ничего не уходит. Пользователи для входа — src/content/demo.json (там же можно задать историю для примера, сейчас она пустая).
    Когда появится настоящий сервер, меняется только этот файл: страницы зовут те же функции. */
 import { useEffect, useState } from "react";
 import data from "./content/demo.json";
@@ -16,9 +16,12 @@ export type Homework = { id: string; to: string; title: string; href: string; du
 const DAY = 86400000;
 export const USERS = data.users as User[];
 const NOW = Date.now();
-/** история из demo.json: «daysAgo» превращается в дату относительно сегодняшнего дня */
-const SEED: Result[] = data.results.map(r => ({ user: r.user, at: NOW - r.daysAgo * DAY, skill: r.skill, title: r.title, score: r.score, max: r.max }));
-const SEED_HW: Homework[] = data.homework.map((h, i) => ({ id: `seed-${i}`, to: h.to, title: h.title, href: h.href, due: NOW + h.daysLeft * DAY }));
+/** история из demo.json (сейчас пустая: кабинет заполняется тем, что ученик делает на сайте);
+    «daysAgo» превращается в дату относительно сегодняшнего дня */
+type SeedResult = Omit<Result, "at" | "href"> & { daysAgo: number };
+type SeedHomework = Omit<Homework, "id" | "due"> & { daysLeft: number };
+const SEED: Result[] = (data.results as SeedResult[]).map(r => ({ user: r.user, at: NOW - r.daysAgo * DAY, skill: r.skill, title: r.title, score: r.score, max: r.max }));
+const SEED_HW: Homework[] = (data.homework as SeedHomework[]).map((h, i) => ({ id: `seed-${i}`, to: h.to, title: h.title, href: h.href, due: NOW + h.daysLeft * DAY }));
 
 /* память браузера; в приватном режиме недоступна — тогда модель работает, но ничего не запоминает */
 const get = <T,>(k: string, empty: T): T => { try { return JSON.parse(localStorage.getItem(k) ?? "null") ?? empty; } catch { return empty; } };

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { CardTests, Unit, VocabItem } from "../types";
 import ExerciseView, { Head } from "./Exercises";
 import { cheer, rabbitSay } from "./Rabbit";
+import { play } from "../sound";
 
 /** Одна карточка: английский, русский, пример */
 type Card = { en: string; ru: string; ex?: string };
@@ -35,7 +36,7 @@ export function FlashCards({ cards }: { cards: Card[] }) {
   const card = deck[index];
   if (!card) return null; // в юните нет слов с переводом
   return <div className="flash-cards">
-    <button className={`flash-card${flipped ? " flash-card--flipped" : ""}`} onClick={() => setFlipped(!flipped)} aria-label="Turn the card over">
+    <button className={`flash-card${flipped ? " flash-card--flipped" : ""}`} onClick={() => { setFlipped(!flipped); play("flip"); }} aria-label="Turn the card over">
       <span className="flash-card__side flash-card__side--front"><small className="flash-card__language">Russian</small><b className="flash-card__phrase">{card.ru}</b><em className="flash-card__hint">tap to see the English</em></span>
       <span className="flash-card__side flash-card__side--back"><small className="flash-card__language">English</small><b className="flash-card__phrase">{card.en}</b>{card.ex && <em className="flash-card__hint">{card.ex}</em>}</span>
     </button>
@@ -66,9 +67,10 @@ export function MatchPairs({ cards, number }: { cards: Card[]; number: number })
   /** Нажата английская фраза: верно — пара найдена; неверно — +1 ошибка. Когда всё найдено, кролик оценивает */
   const choose = (card: Card) => {
     if (!selected || matched.includes(card)) return;
-    if (card !== selected) { setMistakes(mistakes + 1); setWrong(card); setTimeout(() => setWrong(null), 500); return; }
+    if (card !== selected) { play("miss"); setMistakes(mistakes + 1); setWrong(card); setTimeout(() => setWrong(null), 500); return; }
     const now = [...matched, card];
     setMatched(now); setSelected(null);
+    if (now.length < set.length) play("pop"); // последняя пара — сразу похвала кролика со своим звуком
     if (now.length === set.length) cheer(Math.max(0, set.length - mistakes), set.length);
   };
   /** CSS-класс кнопки: найдена / выбрана / ошибка. extra — выбранная (слева) или ошибочная (справа) карточка */

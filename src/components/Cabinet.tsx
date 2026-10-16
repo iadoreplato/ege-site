@@ -12,6 +12,7 @@ import { Homework, Result, Skill, User, ago, assign, homework, logout, markDone,
 import { listeningFor } from "./Listening";
 import { readingFor } from "./Reading";
 import { Banner } from "./ui";
+import { play } from "../sound";
 
 const DAY = 86400000;
 const LEVEL = { strong: "strong", developing: "developing", weak: "needs work", new: "first try" };
@@ -92,7 +93,7 @@ const dueText = (h: Homework) => { const d = Math.ceil((h.due - Date.now()) / DA
 const HomeworkList = ({ hw, mark }: { hw: Homework[]; mark?: boolean }) => hw.length ? <ul className="homework">{hw.map(h =>
   <li key={h.id} className={`homework__item${h.done ? " homework__item--done" : ""}${!h.done && h.due < Date.now() ? " homework__item--late" : ""}`}><a href={h.href}>{h.title}</a>
     <span className="homework__due">{dueText(h)}</span>
-    {mark && !h.done && <button className="button button--secondary" onClick={() => markDone(h.id)}>Done</button>}</li>)}</ul> : <p className="note">No homework.</p>;
+    {mark && !h.done && <button className="button button--secondary" onClick={() => { markDone(h.id); play("pop"); }}>Done</button>}</li>)}</ul> : <p className="note">No homework.</p>;
 
 /** Кабинет ученика */
 function StudentCabinet({ user, topics }: { user: User; topics: Topic[] }) {
@@ -115,17 +116,18 @@ function StudentCabinet({ user, topics }: { user: User; topics: Topic[] }) {
         <span className="week__note">{days.filter(d => d.on).length} of 7 days with practice</span></div>
     </div>
     <h3 className="section-heading">My exam sections</h3>
-    <div className="section-rings">{sectionsOf(rs).map(s => <Ring key={s.id} {...s} />)}</div>
-    <p className="note">Average of your last five results in each section; ▲▼ — change since the three results before.</p>
+    {rs.length ? <><div className="section-rings">{sectionsOf(rs).map(s => <Ring key={s.id} {...s} />)}</div>
+      <p className="note">Average of your last five results in each section; ▲▼ — change since the three results before.</p></>
+      : <p className="cabinet-empty">No results yet. Check any task in the textbook or a practice test, and your scores by exam section will appear here.</p>}
     {review.length > 0 && <><h3 className="section-heading">Review next</h3>
       <ul className="focus-list">{review.map(s => { const p = practice(s.skill, topics);
         return <li key={s.skill} className="focus-list__item"><span><b>{skillLabel(s.skill).name}</b> <span className="focus-list__meta">EGE {skillLabel(s.skill).ege} · {s.recent}%</span></span>{p && <a className="focus-list__go" href={p.href}>Practise →</a>}</li>; })}</ul></>}
     <h3 className="section-heading">Homework</h3><HomeworkList hw={hw} mark />
-    <details className="details"><summary className="details__summary">Show details: every task type and recent results</summary>
+    {rs.length > 0 && <details className="details"><summary className="details__summary">Show details: every task type and recent results</summary>
       <p className="note">Based on your last three attempts at each kind of task. One bad try won't make a skill “needs work”.</p>
       <div className="skills">{sk.map(s => <SkillRow key={s.skill} s={s} />)}</div>
       <h4 className="student-card__heading">Recent results</h4><Recent rs={rs} />
-    </details>
+    </details>}
   </>;
 }
 
@@ -149,6 +151,7 @@ function TeacherCabinet({ user, topics }: { user: User; topics: Topic[] }) {
   const inWindow = (from: number, to: number) => students.flatMap(s => s.rs.filter(r => now - r.at >= from * DAY && now - r.at < to * DAY).map(pct));
   const avgNow = mean(inWindow(0, 14)), avgBefore = mean(inWindow(14, 28));
   const active = students.filter(s => now - s.last < 7 * DAY).length;
+  const started = students.some(s => s.rs.length); // есть ли у класса хоть один результат
   const hwAll = students.flatMap(s => s.hw), hwLate = hwAll.filter(h => !h.done && h.due < now).length;
 
   // «Needs attention»: просрочено → давно не занимался → общая слабая зона; показываем не больше трёх. Отдельно — кого похвалить
@@ -157,7 +160,7 @@ function TeacherCabinet({ user, topics }: { user: User; topics: Topic[] }) {
   for (const s of students) { const late = s.hw.filter(h => !h.done && h.due < now); if (late.length) alerts.push({ kind: "late", text: `${s.u.name}: overdue homework — ${late.map(h => h.title).join(", ")}`, action: "Open", run: () => setOpen(s.u.id) }); }
   // «лёгкое задание» — по самому сильному навыку ученика (skills отсортированы от слабого к сильному)
   for (const s of students) { const d = Math.floor((now - s.last) / DAY); const easy = [...s.sk].reverse().find(x => practice(x.skill, topics));
-    if (d >= 5) alerts.push({ kind: "idle", text: `${s.u.name} has not practised for ${d} days`, action: "Set an easy task", run: () => prefill(s.u.id, easy?.skill) }); }
+    if (s.rs.length && d >= 5) alerts.push({ kind: "idle", text: `${s.u.name} has not practised for ${d} days`, action: "Set an easy task", run: () => prefill(s.u.id, easy?.skill) }); }
   const shared = [...new Set(students.flatMap(s => s.sk.map(x => x.skill)))].map(k => ({ k, who: students.filter(s => s.sk.find(x => x.skill === k)?.level === "weak") }))
     .filter(x => x.who.length >= 2).sort((a, b) => b.who.length - a.who.length);
   for (const x of shared) alerts.push({ kind: "class", text: `${skillLabel(x.k).name} is weak for ${x.who.map(s => s.u.name).join(" and ")}`, action: "Set for the class", run: () => prefill("all", x.k) });
@@ -176,6 +179,7 @@ function TeacherCabinet({ user, topics }: { user: User; topics: Topic[] }) {
     {alerts.length ? <ul className="alerts">{alerts.slice(0, 3).map(a => <li key={a.text} className={`alert alert--${a.kind}`}><span className="alert__icon" aria-hidden="true">{ICON[a.kind]}</span>
       <span className="alert__text">{a.text}</span><button className="button button--secondary" onClick={a.run}>{a.action}</button></li>)}</ul>
       : <p className="note">Nothing needs attention right now.</p>}
+    {!started && <p className="cabinet-empty">No results yet. When your students check tasks on the site, their scores, weak spots and progress appear here. Start by setting homework below.</p>}
     {praise.length > 0 && <p className="cabinet-praise">👏 Worth praising: {praise.map(({ s, up }) => `${s.u.name} (${chip(up!.skill)}, +${up!.trend}%)`).join(" · ")}</p>}
 
     <h3 className="section-heading">Students</h3>
@@ -185,7 +189,7 @@ function TeacherCabinet({ user, topics }: { user: User; topics: Topic[] }) {
         <span className="student-row__who"><b className="student-row__name">{s.u.name}</b><span className="student-row__last">{s.rs.length ? `active ${ago(s.last)}` : "no activity yet"}</span></span>
         <Spark values={s.rs.slice(-12).map(pct)} />
         <b className={`student-row__avg student-row__avg--${levelOf(s.avg)}`}>{s.avg ?? "—"}{s.avg !== null && "%"}</b>
-        <span className="student-row__weak">{weak.length ? weak.map(x => <span key={x.skill} className="tag tag--weak">{chip(x.skill)}</span>) : <span className="tag tag--ok">no weak spots</span>}</span>
+        <span className="student-row__weak">{weak.length ? weak.map(x => <span key={x.skill} className="tag tag--weak">{chip(x.skill)}</span>) : s.rs.length > 0 && <span className="tag tag--ok">no weak spots</span>}</span>
       </button>
       {open === s.u.id && <div className="student-card">
         <div className="student-card__chart"><span className="note">Last {Math.min(20, s.rs.length)} results, % (dotted line — 80 %)</span><Spark values={s.rs.slice(-20).map(pct)} big /></div>
@@ -199,12 +203,12 @@ function TeacherCabinet({ user, topics }: { user: User; topics: Topic[] }) {
           <div className="skills">{s.sk.map(x => <SkillRow key={x.skill} s={x} />)}</div><Recent rs={s.rs} /></details>
       </div>}</li>; })}</ul>
 
-    <h3 className="section-heading">Class by exam section</h3>
+    {started && <><h3 className="section-heading">Class by exam section</h3>
     <div className="cabinet-scroll"><table className="heat"><thead><tr><th />{SECTIONS.map(s => <th key={s.id}>{s.label}</th>)}</tr></thead>
       <tbody>{students.map(s => <tr key={s.u.id}><th>{s.u.name}</th>{s.sec.map(x => <td key={x.id} className={`heat__cell heat__cell--${levelOf(x.value)}`}>{x.value === null ? "—" : `${x.value}%`}</td>)}</tr>)}
         <tr className="heat__total"><th>Class</th>{SECTIONS.map((sec, i) => { const v = mean(students.map(s => s.sec[i].value).filter((x): x is number => x !== null));
           return <td key={sec.id} className={`heat__cell heat__cell--${levelOf(v)}`}>{v === null ? "—" : `${v}%`}</td>; })}</tr></tbody></table></div>
-    <p className="heat__legend"><span className="heat__key heat__key--strong" />80 % and more <span className="heat__key heat__key--developing" />60–79 % <span className="heat__key heat__key--weak" />under 60 %</p>
+    <p className="heat__legend"><span className="heat__key heat__key--strong" />80 % and more <span className="heat__key heat__key--developing" />60–79 % <span className="heat__key heat__key--weak" />under 60 %</p></>}
 
     <h3 className="section-heading" id="set-homework">Set homework</h3>
     <div className="exercise assign">

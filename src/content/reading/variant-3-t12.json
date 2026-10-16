@@ -5,88 +5,88 @@
   "unit": 3,
   "task": 12,
   "title": "The key to the workshop",
-  "level": "B2+",
+  "level": "художественный текст B2+–C1, задания B1+–B2",
   "text": [
-    "When I was small, the most interesting place in the world was my grandfather's workshop. It was a wooden shed at the end of his garden, smelling of oil and sawdust, with tools hanging on the wall in the order of their size. Grandfather had been a clockmaker for forty years, and even after retirement he spent every morning there, repairing the watches of neighbours who could easily have bought new ones. I was not allowed to touch anything, which of course made it all the more attractive. A cat called Tick slept on the warm radiator and was the only creature allowed to walk across the workbench.",
-    "Gradually, the rules changed. At eight, I was permitted to hold the tweezers; at ten, to sit on a stool and watch him open a pocket watch under a magnifying glass. He rarely explained what he was doing. Instead, he would murmur to himself, 'Patience, patience,' and wait for a tiny spring to slip into place. I found it hypnotic. My friends were playing football in the street, and I sat on a stool for hours, hardly daring to breathe. Sometimes a neighbour would knock, put a watch on the table and describe, almost apologetically, how it had fallen into the sink; Grandfather listened to each story with the same seriousness.",
-    "The first time I repaired something myself, I was twelve. It was a small alarm clock that had belonged to my grandmother, and it had not ticked for twenty years. Grandfather put it in front of me without a word and went off to make tea. I took it apart, cleaned each part with a soft brush and put it together again, and when I finally wound it up, it started to tick. He came back with two cups, looked at the clock and said only, 'Not bad.' From him, that was a medal.",
-    "As I grew older, however, my interest drifted. I started to study for exams, discovered computers and decided that fixing old clocks was a hobby for people who had nothing better to do. My visits to the shed grew rarer and shorter. When I told Grandfather that I wanted to study programming, he nodded and asked only whether the university had a decent library. In those years I told myself that the clocks could wait and that there would always be time for them later. I felt guilty for years, as if I had abandoned him, although he never mentioned it.",
-    "Grandfather died in the spring of my second year at university. In his will he left me one thing: the workshop key, taped to an envelope. Inside was a note: 'Machines are only ever as good as the people who care for them. Look after the clocks.' I stood in the shed for a long time that afternoon. The tools hung where they had always hung, and on the bench lay an unfinished watch with its back open, as though he might return at any moment.",
-    "I finished that watch over the summer. It took me three weeks, and I ruined two springs, but when it finally ticked, I understood something that I couldn't have put into words as a child: patience is not waiting; it is paying attention. Now I work as a software engineer, and I still spend Sundays in the shed. Colleagues find it funny that someone who builds programs relaxes by repairing old clocks. To me, it is the same job. Last year I even repaired my grandmother's alarm clock again, after it stopped for the second time."
+    "The key had been lying at the bottom of an old biscuit tin for as long as Misha could remember, but it was only after his grandfather's funeral that anyone paid it any attention. His mother found it while sorting through papers, and handed it to him without a word. It was small, heavy and slightly warm from her hand. 'The workshop,' she said finally. 'He always said it would be yours one day, if you wanted it.' Misha felt a **lump in his throat** and nodded, because he could not speak.",
+    "The workshop was at the end of a narrow courtyard, behind a door that had not been painted for twenty years. Inside, the air smelled of oil, dust and old wood. Clocks hung on every wall, and none of them agreed about the time. Misha, who had been in this room only as a small child, stood still for a while, surprised by how little had changed, and by how much smaller everything seemed. On a shelf above the door stood a row of tins labelled in his grandfather's neat handwriting, each one full of tiny screws sorted by size.",
+    "On the workbench, under a green lamp, he found a half-finished clock. Its case was beautifully carved, but the mechanism lay in pieces, each part laid out on a cloth in a careful row, as if the owner had only stepped out for a moment. Beside it was a sheet of paper in his grandfather's shaky handwriting: 'For Misha's eighteenth birthday. Needs a new spring. Be patient.' It dawned on him that the old man had known exactly how little time he had left.",
+    "For the next few weeks Misha came every afternoon after school. He had to learn the whole craft from scratch, with only a few books and the occasional visit from the neighbour, a retired engineer named Mr Orlov, who gave advice but refused to touch anything. Springs snapped, screws vanished between the floorboards, and more than once Misha was ready to throw the whole thing into a drawer and forget the workshop altogether. His friends thought he had lost his mind, and Katya, who sat next to him in class, asked him twice whether he was ill, since he had stopped coming to the café.",
+    "Mr Orlov's patience was the only thing that never ran out. 'A clock is not a problem to be solved,' he said once, watching Misha curse at a tiny wheel. 'It is a conversation. You must listen to what the parts want.' Misha did not understand, but a week later, as he fitted a spring that finally held, he thought that perhaps he did. The wheel turned, hesitated, and began to tick. He stood very still, afraid that even a breath might spoil it.",
+    "On the evening of his birthday the clock stood on the kitchen table, running two minutes slow. His mother looked at it for a long time, and then, to his surprise, she laughed. 'He was always two minutes late for everything,' she said. Misha adjusted nothing. He decided that the clock was keeping exactly the right time, his grandfather's, and that it could go on doing so for as long as it liked. The next morning he would carry it to the neighbour's flat, to show it to the one person who would understand it better than anyone else."
   ],
   "questions": [
     {
-      "q": "Why did the workshop attract the author so much as a child?",
+      "q": "Why did Misha's mother give him the key?",
       "options": [
-        "He was forbidden to touch anything there.",
-        "His grandfather let him play with the tools.",
-        "It was a good place to meet his friends.",
-        "It was full of valuable antiques."
+        "She wanted him to sell the workshop.",
+        "She was too sad to go there herself.",
+        "It was his grandfather's wish.",
+        "He had asked her for it."
       ]
     },
     {
-      "q": "What does the author mean by 'I found it hypnotic' in paragraph 2?",
+      "q": "What does 'It' in 'It is a conversation' refer to?",
       "options": [
-        "He fell asleep while he watched.",
-        "He found the work boring.",
-        "He was fascinated and could not look away.",
-        "He was afraid of breaking something under the glass."
+        "A problem.",
+        "A clock.",
+        "A spring.",
+        "A lesson."
       ]
     },
     {
-      "q": "How did Grandfather react when the author repaired the clock?",
+      "q": "'A lump in his throat' in paragraph 1 means that Misha felt …",
       "options": [
-        "He praised him warmly at once.",
-        "He showed his approval in very few words.",
-        "He criticised the way it had been done.",
-        "He offered to teach him to repair watches."
+        "too emotional to speak.",
+        "unwell.",
+        "afraid of his mother.",
+        "hungry."
       ]
     },
     {
-      "q": "In paragraph 4, what does 'it' in 'although he never mentioned it' refer to?",
+      "q": "What did the note on the workbench show?",
       "options": [
-        "How seldom he came to the workshop.",
-        "The university's library service.",
-        "The death of the author's grandmother.",
-        "His own success in the exams."
+        "The clock was almost ready.",
+        "Grandfather wanted Misha to sell the clock.",
+        "Grandfather was angry with him.",
+        "The old man did not expect to finish the work."
       ]
     },
     {
-      "q": "Which of the following is NOT mentioned in paragraph 5?",
+      "q": "What was Mr Orlov's role in the story?",
       "options": [
-        "A note from Grandfather.",
-        "A key left for the author.",
-        "An unfinished watch on the bench.",
-        "Watches belonging to neighbours."
+        "He repaired the clock for Misha.",
+        "He guided Misha without doing the work.",
+        "He sold Misha the parts.",
+        "He discouraged Misha from continuing."
       ]
     },
     {
-      "q": "What did the author learn from finishing the watch?",
+      "q": "Which of these is NOT mentioned in the text?",
       "options": [
-        "Repairing old things is easier than he had thought.",
-        "Being patient is about focusing on the task.",
-        "He had no talent for clockmaking.",
-        "Hobbies are more important than careers."
+        "The workshop smelled of oil.",
+        "The clocks showed different times.",
+        "Misha's friends came to help him.",
+        "The finished clock was a little slow."
       ]
     },
     {
-      "q": "What does the author suggest about his two occupations in the last paragraph?",
+      "q": "How does Misha feel about the clock at the end?",
       "options": [
-        "They have very little in common.",
-        "He will soon have to choose between the two.",
-        "He treats them as similar kinds of work.",
-        "His colleagues have copied his hobby."
+        "Glad that it recalls his grandfather.",
+        "Upset by the clock's mistakes.",
+        "Keen to sell it as soon as possible.",
+        "Angry with his mother for laughing."
       ]
     }
   ],
   "key": [
-    1,
     3,
     2,
     1,
     4,
     2,
-    3
+    3,
+    1
   ],
   "discuss": [
     "Do you have a hobby that someone in your family taught you?",

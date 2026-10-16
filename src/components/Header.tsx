@@ -1,5 +1,5 @@
 /* ШАПКА САЙТА: логотип с кроликом (ведёт на главную), меню «Practice tests» (бесплатные варианты), выпадающие меню «The exam»
-   и «Module N» (учебник), кнопка кабинета («Log in» или имя вошедшего),
+   и «Module N» (учебник), кнопка звука (вкл/выкл звуки и вибрацию, sound.ts), кнопка кабинета («Log in» или имя вошедшего),
    кнопка «Contents» (оглавление во всплывающей панели; на телефонах меню скрыты и остаётся только она).
    Выпадающие меню и панель сделаны на библиотеке Radix (radix-ui): она отвечает за открытие/закрытие,
    клавиатуру и доступность, а внешний вид задаёт styles.css. */
@@ -11,6 +11,7 @@ import { RabbitMark } from "./Rabbit";
 import { Contents } from "./Cover";
 import { useUser } from "../demo";
 import { variants } from "./Variant";
+import { setSound, useSound } from "../sound";
 
 /** here — открытая страница (для подсветки), last — последняя открытая (передаётся в оглавление) */
 type Props = { topics: Topic[]; universal: Universal; here: View; last: View | null };
@@ -38,6 +39,7 @@ export default function Header(p: Props) {
   const { topics, universal, here } = p;
   const [open, setOpen] = useState(false);
   const user = useUser();
+  const sound = useSound(); // звук и вибрация включены?
   // меню «Practice tests»: варианты из файлов контента (module = "variant") и страница со всеми вариантами
   const tests: { v: View; text: string; no: string | number }[] = [...variants().map((x, i) => ({ v: { k: "variant", i, tab: 0 } as View, text: x.title, no: i + 1 })), { v: { k: "free" }, text: "All practice tests", no: "·" }];
   // кабинет: гость — «Log in», вошедший — его имя (на телефоне — только первая буква)
@@ -52,6 +54,9 @@ export default function Header(p: Props) {
       {topics.map((t, ti) => <Menu key={t.id} name={`Module ${ti + 1}`} sub={t.title} on={"t" in here && here.t === ti} here={here} topics={topics}
         items={moduleItems(t, ti).map(x => ({ v: x.v, text: x.title, no: x.no }))} />)}
     </nav>
+    <button className="site-header__sound" onClick={() => setSound(!sound)} aria-pressed={sound} aria-label="Sounds and vibration" title={sound ? "Sounds on" : "Sounds off"}>
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path className="site-header__sound-speaker" d="M3 8h3l4-3v10l-4-3H3z" />{sound ? <path d="M13 7.5a3.5 3.5 0 0 1 0 5M15.2 5.3a6.5 6.5 0 0 1 0 9.4" /> : <path d="M13 8l4 4M17 8l-4 4" />}</svg>
+    </button>
     {account}
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger className="site-header__contents-button"><svg className="site-header__contents-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h9" /></svg>Contents</Dialog.Trigger>

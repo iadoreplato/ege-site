@@ -5,33 +5,33 @@
   "unit": 1,
   "task": 10,
   "title": "Getting around the city: seven short texts",
-  "level": "B2+",
+  "level": "научно-популярные тексты B2–B2+, задание B2",
   "headings": [
-    "The last mile",
-    "Cars without owners",
-    "Palaces for passengers",
-    "Planes versus trains",
-    "A comeback on rails",
-    "Paying to drive in",
-    "Good for business",
-    "Rules on the run"
+    "Streets for people",
+    "Rides on demand",
+    "Cars of the future",
+    "Two wheels, no queue",
+    "Travel for all",
+    "Rush-hour pressure",
+    "One card for everything",
+    "Cleaner streets"
   ],
   "texts": [
-    "In many European cities, trams are returning after decades of absence. They carry far more passengers than buses, produce no exhaust fumes and run on tracks that no car can block. Opponents point out that building the lines is expensive and disrupts the streets for years. Planners reply that the investment pays off, because a tram makes a district attractive to live and work in.",
-    "Pick up a bicycle at one station and leave it at another: that is the idea behind bike-sharing. The first schemes failed because the bikes were stolen. Modern ones use locks and apps, and a half-hour ride is often free. Cities report that commuters mostly use them for the final stretch of a journey, from the railway station to the office.",
-    "When a main street is closed to traffic, shopkeepers usually fear the worst. Yet studies from several countries suggest that people on foot spend more in total than drivers, because they linger and look at the windows. Cafés put tables outside, musicians appear, and the noise of engines is replaced by conversation. Many shop owners who protested now defend the change.",
-    "Some of the world's finest architecture is hidden underground. Moscow's stations have marble columns and chandeliers, Stockholm's are carved from rock and painted in bright colours, and Naples has a gallery of modern art. Some stations also host concerts and small exhibitions. They were designed as public palaces, so that ordinary people would spend part of every day in beautiful surroundings.",
-    "Electric scooters appeared on pavements almost overnight, and cities were not ready. Riders leave them in doorways, ride among pedestrians and, according to hospitals, injure themselves more often than expected. Some cities have banned them; others have introduced parking zones and speed limits of fifteen kilometres an hour. Both sides agree on one thing: the regulations came too late.",
-    "In 2003 London began charging drivers to enter its centre. Traffic fell by almost a fifth at first, and buses ran faster. The money went to public transport. Not everybody was satisfied: delivery companies complained about costs, and some residents said that traffic had simply moved to neighbouring streets. Still, other cities, including Stockholm and Milan, have since followed the example.",
-    "More young people in big cities no longer buy a car. A car costs a great deal, spends most of its life parked, and finding a space can take half an hour. With car-sharing, you book a vehicle by phone for a couple of hours and pay only for the time you use it. For occasional trips to a furniture shop, say, it is far cheaper than ownership."
+    "Anyone who has ever searched for coins at a ticket machine will appreciate the modern travel pass. One plastic card, topped up online, is accepted on trams, buses and the underground alike, and the system calculates the cheapest fare automatically at the end of the day. Regular passengers say they no longer think about the cost of each ride, only about where they want to go.",
+    "The newest buses in several cities run on batteries instead of diesel. They are nearly silent, and nothing comes out of the exhaust pipe, so the smell that used to hang around bus stops has disappeared. Local officials hope that ordinary cars will follow the example in the future, although the high price of the vehicles means that renewal will take many years.",
+    "In a city where traffic often crawls, many commuters have discovered that the quickest way to the office is also the cheapest one. Hire bikes are waiting in racks on almost every corner, and a short journey of three or four kilometres takes less time than a bus. Cyclists glide past rows of stationary cars, arrive without a parking problem and, as a bonus, get some exercise on the way.",
+    "In the old centre, traffic is banned from nine in the morning until late evening. Where lorries and cars used to fight for space, there are now benches, flower beds and the tables of small cafés. Shop owners feared they would lose customers, but turnover has actually grown, because people who walk slowly look at windows and stop for a coffee. The air in these narrow streets is cleaner, too.",
+    "Between eight and nine in the morning, the picture on many platforms is the same: people stand shoulder to shoulder, and the first carriage that arrives is already too full to board. Passengers let one train pass, then another, form a long queue at the stairs and finally push their way in, holding their bags above their heads. Some companies now let staff start later, which spreads the load across the morning.",
+    "For a passenger in a wheelchair or with a pushchair, a staircase can be a wall. That is why newer stations are fitted with lifts, buses have low floors with ramps, and announcements are made aloud as well as shown on screens, which helps people with poor sight. Engineers add that these changes benefit everybody, from parents with luggage to tourists who simply cannot read the signs.",
+    "A decade ago you had to phone a dispatcher and hope for the best. Now a few taps on a smartphone summon a driver who is already nearby, and the screen shows both the car and the price. The fare rises when many people want to go home at once, and some passengers resent it, but few would go back to waiting at the roadside."
   ],
   "key": [
-    5,
-    1,
     7,
-    3,
     8,
+    4,
+    1,
     6,
+    5,
     2
   ],
   "discuss": [

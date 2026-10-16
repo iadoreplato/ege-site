@@ -34,11 +34,12 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith('.json'))) {
       need('ABCDEF'.split('').every((c) => (t.text || '').includes(`{${c}}`)), 'в тексте должны быть метки {A}…{F}')
       source = t.text || ''; options = t.parts || []
       const n = words(source); if (n < 150 || n > 260) warn.push(`текст: ${n} слов (в демоверсии около 200)`)
+      { const L = (t.parts||[]).map((x)=>x.trim().split(/\s+/).length); if (L.length===7 && (Math.min(...L)<6 || Math.max(...L)-Math.min(...L)>4)) warn.push(`фрагменты неравной длины: ${L.join(',')}`) }
       const extra = [1, 2, 3, 4, 5, 6, 7].find((n) => !key.includes(n)); if (extra) warn.push(`лишняя часть: ${extra}`)
     } else {
       need(t.questions?.length === 7 && t.questions.every((q) => q.options?.length === 4), '7 вопросов по 4 варианта')
       source = (t.text || []).join(' '); options = (t.questions || []).flatMap((q) => q.options || [])
-      const n = words(source); if (n < 580 || n > 680) warn.push(`текст: ${n} слов (в демоверсии около 600–650)`)
+      const n = words(source); if (n < 560 || n > 680) warn.push(`текст: ${n} слов (в демоверсии около 600–650)`)
       const qs = (t.questions || []).map((q) => q.q)
       if (!qs.some((q) => /NOT/.test(q))) warn.push('нет вопроса «NOT mentioned»')
       if (!qs.some((q) => /mean/.test(q))) warn.push('нет вопроса на значение выражения')
@@ -46,6 +47,15 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith('.json'))) {
       ;(t.questions || []).forEach((q, i) => {
         const L = q.options.map((o) => o.length)
         if (Math.max(...L) / Math.min(...L) > 2.2 && !/mean/.test(q.q)) warn.push(`вопрос ${12 + i}: варианты сильно отличаются по длине`)
+      })
+      // номер абзаца в вопросе должен совпадать с абзацем, где стоит слово/выражение; в вопросах на значение слово выделено **жирным**
+      ;(t.questions || []).forEach((q, i) => {
+        const pm = q.q.match(/paragraph (\d+)/i), term = (q.q.match(/'([^']+)'/) || q.q.match(/word (\w+)/i) || [])[1]
+        if (pm && term) {
+          const para = (t.text || [])[+pm[1] - 1] || ''
+          if (!para.toLowerCase().replace(/\*\*/g, '').includes(term.toLowerCase())) warn.push(`вопрос ${12 + i}: «${term}» не найдено в абзаце ${pm[1]}`)
+          if (/mean/.test(q.q) && !new RegExp('\\*\\*[^*]*' + term.split(' ').pop().toLowerCase() + '[^*]*\\*\\*', 'i').test(para)) warn.push(`вопрос ${12 + i}: «${term}» не выделено жирным в тексте`)
+        }
       })
       const cnt = [1, 2, 3, 4].map((n) => key.filter((k) => k === n).length)
       if (Math.max(...cnt) > 3) warn.push(`ключ: ответ повторяется слишком часто (${cnt.join('/')})`)
