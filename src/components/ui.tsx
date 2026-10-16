@@ -23,7 +23,7 @@ export const Fipi = ({ items }: { items: [string, RichText][] }) => (
   </div>
 );
 
-/** Таймер обратного отсчёта: seconds — сколько секунд, label — подпись. Кнопки «Старт/Пауза» и «Сброс».
+/** Таймер обратного отсчёта: seconds — сколько секунд, label — подпись. Кнопки Start/Pause и Reset (таймер есть только в юнитах и вариантах — они на английском).
     Когда время вышло, кролик говорит «Time's up!» */
 export function Timer({ seconds, label }: { seconds: number; label: string }) {
   const [left, setLeft] = useState(seconds);       // сколько секунд осталось
@@ -39,8 +39,8 @@ export function Timer({ seconds, label }: { seconds: number; label: string }) {
   return (
     <div className={`timer${left === 0 ? " timer--finished" : ""}`}>
       <span className="timer__label">{label}</span><b className="timer__time">{Math.floor(left / 60)}:{String(left % 60).padStart(2, "0")}</b>
-      <button className="timer__button" onClick={() => setRunning(r => !r)}>{running ? "Пауза" : "Старт"}</button>
-      <button className="timer__button" onClick={() => { setRunning(false); setLeft(seconds); }}>Сброс</button>
+      <button className="timer__button" onClick={() => setRunning(r => !r)}>{running ? "Pause" : "Start"}</button>
+      <button className="timer__button" onClick={() => { setRunning(false); setLeft(seconds); }}>Reset</button>
     </div>
   );
 }
@@ -48,11 +48,9 @@ export function Timer({ seconds, label }: { seconds: number; label: string }) {
 /** EGE word count: every token separated by spaces counts; 25%, can't, good-looking = one word
     Подсчёт слов по правилам ЕГЭ: словом считается всё, что отделено пробелами */
 export const countWords = (t: string) => (t.trim() ? t.trim().split(/\s+/).length : 0);
-/** Строка под полем письма/эссе: «N слов · нужно 100–140 · статус».
+/** Строка под полем письма/эссе: «N words · target 100–140 · статус».
     min — меньше этого 0 баллов; max — больше этого проверяется только начало; ok — целевой диапазон из задания */
-/** «слово / слова / слов» по числу */
-const words = (n: number) => n % 10 === 1 && n % 100 !== 11 ? "слово" : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? "слова" : "слов";
 export function WordStatus({ n, min, max, ok }: { n: number; min: number; max: number; ok: [number, number] }) {
-  const status = n === 0 ? "" : n < min ? `меньше ${min} слов: ответ получит 0 баллов` : n > max ? `больше ${max}: проверяются только первые ${ok[1]} слов` : n < ok[0] || n > ok[1] ? "в пределах допуска ±10%" : "объём в норме";
-  return <div className="word-count"><b className="word-count__number">{n}</b> {words(n)} · нужно {ok[0]}–{ok[1]} · <span className="word-count__status">{status}</span></div>;
+  const status = n === 0 ? "" : n < min ? `under ${min} words: the answer gets 0` : n > max ? `over ${max}: only the first ${ok[1]} words are checked` : n < ok[0] || n > ok[1] ? "within the ±10% tolerance" : "word count OK";
+  return <div className="word-count"><b className="word-count__number">{n}</b> words · target {ok[0]}–{ok[1]} · <span className="word-count__status">{status}</span></div>;
 }

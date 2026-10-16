@@ -10,7 +10,10 @@ import { record } from "../demo";
     where — где задание («Unit 3» или «Variant 1»); n — номер задания по порядку в разделе; type — тип из sections.json ("11", "interview", "essay"…) */
 export function TaskHead({ where, section, n, type }: { where: string; section: string; n: number; type: string }) {
   const s = sectionById(section);
-  return <div className="task-head"><span className="task-head__name">{where} · {s.label} · Task {n}</span><span className="task-head__ege">EGE {egeNumber(s, type)}</span><span className="task-head__type">{s.types[type]}</span></div>;
+  // крупный номер — номер задания в этом разделе юнита; «EGE task N» — какому заданию экзамена соответствует формат
+  return <div className="task-head"><b className="task-head__no" aria-hidden="true">{n}</b>
+    <span className="task-head__text"><span className="task-head__name">{where} · {s.label} · Task {n}</span><span className="task-head__type">{s.types[type]}</span></span>
+    <span className="task-head__ege" title="The EGE exam task with this format">EGE task {egeNumber(s, type)}</span></div>;
 }
 
 /** Карточка задания listening или reading: заголовок, название, русская формулировка (поле ru в sections.json), содержимое.

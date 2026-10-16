@@ -467,7 +467,13 @@ a.site-header__menu-button { text-decoration: none; }
 .photo-pair__photo { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .photo-probe { position: absolute !important; width: 1px !important; height: 1px !important; margin: 0 !important; opacity: 0; pointer-events: none; } /* фото пробуется: невидимо, но грузится */
 .photo-pair__picture--real { display: block; min-height: 0; }
-.photo-pair__hint-summary { cursor: pointer; font: normal 700 .8rem var(--font-text); color: var(--color-text-muted); }
+/* реклама с настоящим фото на широком экране — постер: фото во всю ширину (21 : 9), название и слоган поверх на тёмной полосе */
+@media (min-width: 820px) {
+  .advert:has(> .advert__photo:not(.photo-probe)) { position: relative; overflow: hidden; padding: 0; }
+  .advert:has(> .advert__photo:not(.photo-probe)) .advert__photo { aspect-ratio: 21 / 9; border-radius: 0; }
+  .advert:has(> .advert__photo:not(.photo-probe)) .advert__text { position: absolute; left: 0; right: 0; bottom: 0; padding: 2.5rem 1.25rem .9rem; background: linear-gradient(transparent, rgba(29, 43, 74, .85)); color: var(--color-on-main); }
+  .advert:has(> .advert__photo:not(.photo-probe)) .advert__slogan { color: var(--color-accent-on-main); }
+}
 .photo-pair__caption { padding: .5rem .75rem; font: italic .95rem var(--font-accent); }
 .photo-pair__label { display: block; font: normal 800 .7rem var(--font-text); letter-spacing: .14em; text-transform: uppercase; color: var(--color-accent); }
 .support { margin-top: .75rem; }
@@ -492,7 +498,7 @@ a.site-header__menu-button { text-decoration: none; }
 .email-message { margin-bottom: .6rem; padding: .6rem .9rem; border-radius: .75rem; background: var(--color-page-background); }
 .email-message__header { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: .4rem; padding-bottom: .25rem; border-bottom: 1px dashed var(--color-border); font: 700 .75rem var(--font-text); color: var(--color-text-muted); }
 .email-message__text { margin: 0; font: italic 1rem/1.5 var(--font-accent); }
-.advert { max-width: 40rem; display: flex; flex-wrap: wrap; align-items: center; gap: .9rem; margin-bottom: .6rem; padding: .75rem; border-radius: .75rem; background: var(--color-surface-muted); }
+.advert { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem; margin-bottom: .6rem; padding: .75rem; border-radius: .75rem; background: var(--color-surface-muted); }
 .advert__icon { width: 4rem; height: 4rem; }
 .advert__photo { flex: 1 1 100%; width: 100%; aspect-ratio: 3 / 2; border-radius: .6rem; object-fit: cover; } /* фото во всю ширину над заголовком */
 .advert__title { font: 800 1.25rem var(--font-text); }
@@ -580,12 +586,16 @@ a.site-header__menu-button { text-decoration: none; }
 .task-card .sentence-gaps { margin: .9rem 0; }
 .task-card .number-choice { min-height: 2.75rem; min-width: 3.5rem; justify-content: center; }
 /* строка-заголовок карточки (Task.tsx TaskHead): в шапке устного/письменного задания белая, в карточке Listening/Reading — акцентная */
-.task-head { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .6rem; }
+.task-head { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .75rem; }
+.task-head__no { flex: none; width: 2.3rem; height: 2.3rem; border-radius: .65rem; background: var(--color-accent); color: var(--color-surface); text-align: center; font: 800 1.15rem/2.3rem var(--font-text); }
+.exam-task__header .task-head__no { background: var(--color-surface); color: var(--color-main); }
+.task-head__text { flex: 1 1 12rem; display: flex; flex-direction: column; min-width: 0; }
+@media (max-width: 600px) { .exam-task__icon { display: none; } } /* на телефоне номер задания заменяет иконку */
 .task-card > .task-head, .page > .task-head { margin-bottom: .5rem; color: var(--color-accent); }
 .page > .task-head { margin-top: 1.2rem; }
 .task-head__name { font: 800 .75rem var(--font-text); letter-spacing: .1em; text-transform: uppercase; }
-.task-head__ege { padding: .05rem .5rem; border: 1px solid currentColor; border-radius: 2rem; font: 800 .7rem var(--font-text); letter-spacing: .06em; white-space: nowrap; }
-.task-head__type { font-size: .85rem; opacity: .85; }
+.task-head__ege { padding: .1rem .55rem; border: 1px dashed currentColor; border-radius: 2rem; font: 700 .7rem var(--font-text); letter-spacing: .04em; white-space: nowrap; opacity: .8; }
+.task-head__type { font-size: .95rem; font-weight: 700; }
 .exam-task__header { flex-wrap: wrap; }
 /* вопросы для обсуждения с учителем (Task.tsx Discuss) */
 .discuss { margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--color-border); }
