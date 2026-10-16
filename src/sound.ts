@@ -1,5 +1,6 @@
 /* ЗВУКИ И ВИБРАЦИЯ. Звуки не файлы: короткие ноты синтезируются в браузере (Web Audio), поэтому сайт не тяжелеет.
-   Вибрация работает только на телефонах Android (iPhone её сайтам не даёт) — там просто тишина.
+   Вибрация работает только на телефонах Android (iPhone её сайтам не даёт).
+   На iPhone в беззвучном режиме Safari глушит звуки сайтов — это настройка телефона, сайт её не обходит.
    Кнопка в шапке выключает и звук, и вибрацию; выбор хранится только в этом браузере (ячейка ege:sound).
    ЧТОБЫ ДОБАВИТЬ ЗВУК: новая строка в SOUNDS и вызов play("имя") в нужном месте. */
 import { useEffect, useState } from "react";
@@ -33,6 +34,19 @@ const SOUNDS = {
 export type SoundName = keyof typeof SOUNDS;
 
 let ctx: AudioContext | null = null;
+/* iPhone (Safari) разрешает звук только после касания экрана: при первом касании или нажатии клавиши
+   создаём аудио и проигрываем пустой звук — «будим» его, чтобы следующие звуки точно были слышны */
+function unlock() {
+  try {
+    ctx ??= new AudioContext();
+    if (ctx.state === "suspended") void ctx.resume();
+    const src = ctx.createBufferSource();
+    src.buffer = ctx.createBuffer(1, 1, 22050);
+    src.connect(ctx.destination); src.start(0);
+  } catch { /* no Web Audio */ }
+  if (ctx?.state === "running") ["touchend", "pointerdown", "keydown"].forEach(e => window.removeEventListener(e, unlock));
+}
+if (typeof window !== "undefined") ["touchend", "pointerdown", "keydown"].forEach(e => window.addEventListener(e, unlock, { passive: true }));
 /** Проиграть звук и, где можно, коротко вибрировать. Ничего не делает, если звук выключен или браузер не умеет */
 export function play(name: SoundName) {
   if (!soundOn()) return;
